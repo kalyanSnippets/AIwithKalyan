@@ -1,0 +1,228 @@
+[00:13.640 → 00:32.700]
+  So normally, after I record a YouTube video, that's when the real work starts. I have to go through all the raw footage, find the mistakes, remove the bad takes, trim the pauses, clean the audio, plan the visuals, find B-rolls, add captions, music, sound effects, and then finally export everything.
+[00:33.320 → 00:55.020]  (+0.62s gap)
+  And honestly, editing is probably the part I enjoy the least. So this time, I wanted to try something different. Instead of opening an editor and doing all of that myself, I gave the raw entire footage to Claude Code. I gave the entire raw footage to Claude Code, the mistakes, the retakes, the awkward pauses, the bad audio, everything.
+[01:02.400 → 01:03.300]  (+7.38s gap)
+  This is the...
+[01:09.120 → 01:09.420]  (+5.82s gap)
+  This.
+[01:21.140 → 01:22.120]  (+11.72s gap)
+  So this is the--
+[01:23.380 → 01:23.540]  (+1.26s gap)
+  So--
+[01:24.520 → 01:27.140]  (+0.98s gap)
+  And this is what the raw footage look like.
+[01:27.760 → 01:31.520]  (+0.62s gap)
+  No cuts, no graphics, no captions, no music, nothing.
+[01:32.160 → 01:34.660]  (+0.64s gap)
+  Just the original recording straight from the camera.
+[01:36.620 → 01:38.400]  (+1.96s gap)
+  And now compare that with this.
+[01:49.000 → 01:49.800]  (+10.60s gap)
+  This is the final
+[01:50.580 → 01:55.580]  (+0.78s gap)
+  version. This is the final version. The mistakes were removed, the pauses were tightened, the audio was cleaned,
+[01:56.180 → 02:12.100]  (+0.60s gap)
+  graphics were added, captions, music, sound effects, everything. And the interesting part is I didn't even manually edit it. I didn't manually build this entire edit inside a traditional video editor. Claude Code managed the workflow, not with one mag--
+[02:12.720 → 02:13.000]  (+0.62s gap)
+  Not...
+[02:18.600 → 02:26.260]  (+5.60s gap)
+  Claude Code managed the workflow, not with one magical AI tool, but by coordinating with different tools, not different...
+[02:29.380 → 02:34.300]  (+3.12s gap)
+  Not with one magical AI tool, but by coordinating different tools to--
+[02:34.980 → 02:39.740]  (+0.68s gap)
+  different tools for different jobs. And that is what we are going to...
+[02:42.820 → 02:44.480]  (+3.08s gap)
+  Claude Code managed the workflow,
+[02:45.100 → 02:54.440]  (+0.62s gap)
+  not with one magical AI tool, but by coordinating different tools for different jobs. And that is what we are going to build step by step by step today.
+[03:00.240 → 03:08.220]  (+5.80s gap)
+  So to make this simple, I have divided the entire workflow into six different steps. So first step is we build the end--
+[03:09.240 → 03:26.780]  (+1.02s gap)
+  So first step, we build the editing engine, and the step two is the Claude decodes the entire raw footage. And the step three is we shape the actual edit. And the step four is Claude designs the visual experience. And the step five is everything get assembled.
+[03:32.500 → 03:43.360]  (+5.72s gap)
+  And the step fi- And the step five is everything get assembled into first complete version. And step six is we review the run final checks.
+[03:47.120 → 03:54.980]  (+3.76s gap)
+  And step six is we review and run the final checks and then export it. So let's start the first step.
+[03:56.300 → 03:58.080]  (+1.32s gap)
+  So let's start with step one.
+[04:03.580 → 04:06.280]  (+5.50s gap)
+  So before Claude could edit anything...
+[04:15.560 → 04:26.500]  (+9.28s gap)
+  So before Claude could edit anything, I need to give it the right tools because Claude Code itself isn't really a video editor. Think of it more like the brain, coordinating everything.
+[04:28.300 → 04:34.000]  (+1.80s gap)
+  Coordinating everything. So I used ElevenLabs for transcription, music, and sound effects,
+[04:34.620 → 04:44.100]  (+0.62s gap)
+  FFmpeg for the cutting, processing, and rendering, Descript for cleaning the audio, Hyperframes for motion graphics, and the browse res- browser research.
+[04:49.500 → 04:54.100]  (+5.40s gap)
+  And browse, and browser research for supporting visuals and B-roll.
+[05:00.320 → 05:14.340]  (+6.22s gap)
+  Then I gave the Claude one setup prompt. Basically, set up this entire project, install and verify everything you need, and only ask me when human input is actually required. Things like login, password, or authentication.
+[05:18.120 → 05:18.780]  (+3.78s gap)
+  Claude checked
+[05:19.480 → 05:24.760]  (+0.70s gap)
+  all the dependencies, updated the hyper- up- updated the Hyperframes skills,
+[05:25.660 → 05:27.400]  (+0.90s gap)
+  updated the Hyperframe skills.
+[05:36.000 → 05:55.180]  (+8.60s gap)
+  Updated the Hyperframe skills, created the folders, prepared the environment file, and even updated agents.md. And that's important because agents.md became the permanent editing rule book for this project. For example, I told Claude, whenever I ask to transcribe footage,
+[05:56.940 → 06:03.760]  (+1.76s gap)
+  use ElevenLabs by default, so next time I edit another video, I don't have to set everything up again.
+[06:32.930 → 06:34.110]  (+29.17s gap)
+  So now the step two.
+[06:34.730 → 06:35.030]  (+0.62s gap)
+  Uh,
+[06:36.170 → 06:37.390]  (+1.14s gap)
+  now I dropped the
+[06:38.150 → 06:44.030]  (+0.76s gap)
+  raw video into the project, and before making a single cut, I told Claude, "Inspect everything first."
+[06:46.550 → 06:48.250]  (+2.52s gap)
+  FF-FFMG--
+[06:49.330 → 06:50.750]  (+1.08s gap)
+  FFmpeg analyzed
+[06:51.530 → 06:51.950]  (+0.78s gap)
+  the du...
+[06:53.850 → 06:59.190]  (+1.90s gap)
+  FF-FFmpeg analyzed the duration, resolution, frame rate,
+[06:59.850 → 07:04.090]  (+0.66s gap)
+  codec, and audio. This particular clip was around fifty seconds,
+[07:04.690 → 07:05.970]  (+0.60s gap)
+  vertical four-K at...
+[07:07.030 → 07:08.890]  (+1.06s gap)
+  But technically, that's still just
+[07:26.970 → 07:34.870]  (+18.08s gap)
+  Now I dropped the entire raw video into the project, and before making a single cut, I told Claude, "Inspect everything first."
+[07:37.170 → 07:38.750]  (+2.30s gap)
+  FFmpeg analyzed,
+[07:39.950 → 07:43.350]  (+1.20s gap)
+  FFmpeg analyzed the duration, resolution, frame rate,
+[07:44.070 → 07:59.810]  (+0.72s gap)
+  codec, and audio. This particular clip was around fifty seconds, vertical four-K at thirty frames per second. But technically, that's still just a video file. Claude needs to understand, understand what I am actually saying. So next, it used e...
+[08:00.790 → 08:06.530]  (+0.98s gap)
+  So next, it used ElevenLabs to transcribe the whole thing with word-level timestamps.
+[08:09.370 → 08:24.790]  (+2.84s gap)
+  And this is where the things gets interesting. Now Claude can see every word, every pause, every mistake, and every retake as text. For example, here I messed up one sentence, and then a few seconds later, I said the same line properly.
+[08:25.430 → 08:29.170]  (+0.64s gap)
+  Claude could identify both versions, so suddenly...
+[08:31.030 → 08:36.210]  (+1.86s gap)
+  Both versions, so suddenly editing the video starts looking a lot more like editing a document.
+[08:39.590 → 08:46.350]  (+3.38s gap)
+  But I still didn't want Claude randomly making cuts, so before touching the actual video, we move to step three:
+[08:47.730 → 08:48.650]  (+1.38s gap)
+  shape the edit.
+[08:50.790 → 08:58.250]  (+2.14s gap)
+  Before making any cuts, I asked Claude to create an edit plan. Show me what you want to keep, remove...
+[08:59.710 → 09:03.690]  (+1.46s gap)
+  Show me what you want, what to keep, what to remove or shorten.
+[09:06.170 → 09:09.170]  (+2.48s gap)
+  Claude found, Claude found the dead air.
+[09:15.710 → 09:25.070]  (+6.54s gap)
+  Claude found the dead air at the beginning. Long pauses between lines and then repeated the bad takes. But I gave Claude one important rule
+[09:25.710 → 09:25.970]  (+0.64s gap)
+  that
+[09:26.990 → 09:32.050]  (+1.02s gap)
+  don't remove every pause because fast editing doesn't mean speaking like a robot.
+[09:33.230 → 09:39.270]  (+1.18s gap)
+  Keep the pauses that feel natural or emotional. Only remove the silences that adds nothing.
+[09:42.470 → 09:50.150]  (+3.20s gap)
+  The original clip, the original clip was around fifty seconds. After the plan cuts, it came down to roughly forty-one seconds.
+[09:50.970 → 10:04.310]  (+0.82s gap)
+  Once I approved the plan, Claude used FFmpeg to create the clean, rough cut. At this point, there were still no graphics, no B-rolls, no music, just the strongest version of my actual recording.
+[10:07.490 → 10:16.110]  (+3.18s gap)
+  So-- But there was one problem. I recorded this video without my proper mic, so even though the edit was cleaner, the audio,
+[10:17.190 → 10:18.750]  (+1.08s gap)
+  the audio still needed work.
+[10:19.430 → 10:20.090]  (+0.68s gap)
+  Play raw...
+[10:21.390 → 10:35.570]  (+1.30s gap)
+  So I used Descript audio sound, so I used Descript audio sound to reduce the room noise, impru-improve clarity, and make the voice feel more like studio audio, but still keep my natural voice.
+[10:38.110 → 10:38.250]  (+2.54s gap)
+  We--
+[10:38.890 → 10:43.830]  (+0.64s gap)
+  Now we finally have a clean foundation, which means we can move to the visual edit.
+[10:53.750 → 10:55.850]  (+9.92s gap)
+  So step four is the design.
+[10:57.650 → 11:00.930]  (+1.80s gap)
+  This time, I didn't ask Claude what should I cut.
+[11:02.710 → 11:09.030]  (+1.78s gap)
+  I didn't ask Claude what should I cut. I asked, "What should the viewer see while I'm saying this?"
+[11:14.190 → 11:24.610]  (+5.16s gap)
+  Claude analyzed the transcript again and decided where I should stay full screen, where we need typography, graphics, screen visuals, B-rolls, or picture-in-picture.
+[11:27.910 → 11:33.810]  (+3.30s gap)
+  When the information was more important than my face, I wanted my video in a rounded card
+[11:34.610 → 11:42.250]  (+0.80s gap)
+  in the bottom left while the main screen explains what I am talking about. Then I added one permanent rule: never cover my face.
+[11:45.550 → 12:02.690]  (+3.30s gap)
+  For this-- For the style, I wanted something clean, premium, modern with that Apple-style liquid glass look. They-- That's where hyperframes came in. Claude could use hyperframes to build and animate the graphics and render them directly into the video.
+[12:10.222 → 12:21.042]  (+7.53s gap)
+  I also gave it a rough visual balance around forty percent me on camera, thirty percent graphics and typography, twenty-five percent supporting screen visuals, and around,
+[12:21.982 → 12:34.562]  (+0.94s gap)
+  and around five percent B-rolls and transitions. Not because those numbers have to be exact, but because I don't want AI adding random animations everywhere. The visuals should help the explanation.
+[12:39.522 → 12:43.222]  (+4.96s gap)
+  So step five. The step five is to assemble the video.
+[12:45.782 → 12:56.522]  (+2.56s gap)
+  Once the visuals were ready, we moved to the final build. ElevenLabs generated the background music and a few subtle sound effects and, and I specifically told Claude,
+[12:57.142 → 13:00.762]  (+0.62s gap)
+  "Keep them minimal. The voice should always be the focus."
+[13:05.602 → 13:13.742]  (+4.84s gap)
+  And then Claude brought all together the rough cut, graphic captions, supporting visuals, music, and sound effects and created,
+[13:16.222 → 13:18.142]  (+2.48s gap)
+  and created review version one.
+[13:22.622 → 13:26.782]  (+4.48s gap)
+  This was the first moment I could actually see the full edit coming together.
+[13:27.902 → 13:42.262]  (+1.12s gap)
+  This was the first moment I could actually see the full edit coming together. But I still didn't just accept whatever Claude created. I watched the whole thing and gave timestamped feedback, things like the graphic comes in too early,
+[13:43.322 → 13:48.562]  (+1.06s gap)
+  things like graphic comes in too early, the music is too loud, keep me on screen longer here,
+[13:49.222 → 13:51.862]  (+0.66s gap)
+  remove this transaction, show feedback.
+[13:54.802 → 14:06.842]  (+2.94s gap)
+  Claude applied only the changes I approved, and then I asked it to save the reusable rule behind those changes. So instead of remembering a specific timestamp, it remembers things like don't cover fi--
+[14:07.442 → 14:09.342]  (+0.60s gap)
+  don't cover my face, keep the m-
+[14:10.002 → 14:15.702]  (+0.66s gap)
+  keep the music subtle, don't overuse, don't overuse B-roll, and preserve natural pauses.
+[14:16.382 → 14:19.582]  (+0.68s gap)
+  That means the next video can start closer to my style.
+[14:21.822 → 14:25.762]  (+2.24s gap)
+  And the final step, and the final step is review and export.
+[14:27.422 → 14:32.442]  (+1.66s gap)
+  Finally, I didn't want Claude to just export the video and say done.
+[14:33.502 → 14:36.122]  (+1.06s gap)
+  I asked it to run a complete QA check.
+[14:37.842 → 14:43.562]  (+1.72s gap)
+  Claude checked for black frames, frozen frames, long silences, audio sync, missing assets,
+[14:44.382 → 14:46.802]  (+0.82s gap)
+  broken graphics, and anything covering my face.
+[14:51.602 → 14:55.102]  (+4.80s gap)
+  It also checked the graphic contrast and final edit.
+[14:56.402 → 14:59.802]  (+1.30s gap)
+  It also checked the graphic contrast and final...
+[15:00.442 → 15:00.842]  (+0.64s gap)
+  And the f-
+[15:01.842 → 15:11.662]  (+1.00s gap)
+  It also checked the graphic, it also checked the graphic contrast and the final edit passed all twenty-five checks. And finally, it exported the fi--
+[15:12.582 → 15:14.202]  (+0.92s gap)
+  it exported the finished video.
+[15:16.942 → 15:20.302]  (+2.74s gap)
+  The final clip came out at around forty-one point eight seconds,
+[15:21.402 → 15:29.122]  (+1.10s gap)
+  thousand eighty by nine twenty, thirty frames per second, with the final audio normalized for playback. And this was the result.
+[15:33.202 → 15:34.422]  (+4.08s gap)
+  And this was the result.
+[15:50.262 → 15:54.402]  (+15.84s gap)
+  So finally the con-- so the finally the conclusion is,
+[15:55.382 → 15:58.222]  (+0.98s gap)
+  so did Claude Code edit the entire video?
+[15:59.162 → 16:18.802]  (+0.94s gap)
+  In a way, yes. But Claude itself didn't replace every tool. Claude Code was the coordinator. ElevenLabs understood the footage and handled the sound. FFmpeg processed the video. Descript changed the audio. Hyperframes created the visual layer. And Claude managed how everything worked together.
+[16:19.882 → 16:23.582]  (+1.08s gap)
+  I still made the creative decisions, but a lot of the repetitive,
+[16:24.422 → 16:24.642]  (+0.84s gap)
+  but...
+[16:26.702 → 16:32.862]  (+2.06s gap)
+  I still made the creative decisions, but a lot of the repetitive editing work was handled by the system.
+[16:33.462 → 16:40.502]  (+0.60s gap)
+  And now, because Claude has saved my editing preferences, the next video should be even easier, and that's
+[16:41.122 → 16:42.962]  (+0.62s gap)
+  where this gets really interesting.

@@ -11,7 +11,8 @@
     "media": "node scripts/media.mjs",
     "hf": "hyperframes",
     "skills:update": "hyperframes skills update talking-head-recut embedded-captions motion-graphics general-video && for s in .claude/skills/*/; do n=$(basename $s); [ -d ~/.claude/skills/$n ] && rm -rf .claude/skills/$n && cp -r ~/.claude/skills/$n .claude/skills/$n; done",
-    "setup": "bash scripts/setup.sh"
+    "setup": "bash scripts/setup.sh",
+    "edl": "node scripts/edl.mjs"
   },
   "repository": {
     "type": "git",

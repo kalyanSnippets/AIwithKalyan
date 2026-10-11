@@ -1,0 +1,10 @@
+{
+  "generation_id": "t5wJItLsTWLS7E88jVGT",
+  "model_id": "eleven_scribe_v1",
+  "word_count": 1740,
+  "language_code": "eng",
+  "language_probability": 0.9723391532897949,
+  "spoken_duration_secs": 1003.02,
+  "flow_id": "wiGv1Rn3E3eBtGr4A8dy",
+  "source_audio": "media/audio/CLD_1279-16k.flac (concat of seg01..seg10, 1006.83s)"
+}
