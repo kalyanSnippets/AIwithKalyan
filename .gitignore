@@ -1,0 +1,25 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Heavy media — source footage lives in Google Drive ("Claude video editor"); keep only notes here
+media/**
+!media/**/
+!media/**/.gitkeep
+!media/broll/SOURCES.md
+renders/**
+!renders/.gitkeep
+
+# HyperFrames caches / build output
+.hyperframes/
+**/.cache/
+capture*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

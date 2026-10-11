@@ -1,0 +1,37 @@
+{
+  "name": "aiwithkalyan-video",
+  "version": "1.0.0",
+  "description": "AI-assisted video editing: ElevenLabs (transcription, music, SFX) + HyperFrames motion graphics + FFmpeg",
+  "scripts": {
+    "doctor": "NODE_USE_ENV_PROXY=1 node scripts/doctor.mjs",
+    "transcribe": "NODE_USE_ENV_PROXY=1 node scripts/transcribe.mjs",
+    "music": "NODE_USE_ENV_PROXY=1 node scripts/music.mjs",
+    "sfx": "NODE_USE_ENV_PROXY=1 node scripts/sfx.mjs",
+    "broll": "node scripts/broll.mjs",
+    "media": "node scripts/media.mjs",
+    "hf": "hyperframes",
+    "skills:update": "hyperframes skills update talking-head-recut embedded-captions motion-graphics general-video && for s in .claude/skills/*/; do n=$(basename $s); [ -d ~/.claude/skills/$n ] && rm -rf .claude/skills/$n && cp -r ~/.claude/skills/$n .claude/skills/$n; done",
+    "setup": "bash scripts/setup.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyanSnippets/AIwithKalyan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalyanSnippets/AIwithKalyan/issues"
+  },
+  "homepage": "https://github.com/kalyanSnippets/AIwithKalyan#readme",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "hyperframes": "^0.8.146",
+    "playwright-core": "^1.64.0"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.71.0",
+    "gsap": "^3.14.2"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
