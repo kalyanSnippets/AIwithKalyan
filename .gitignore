@@ -23,3 +23,6 @@ capture*/
 .DS_Store
 Thumbs.db
 *.log
+
+# Staged media for compositions (re-creatable from media/ and renders/)
+compositions/**/media/

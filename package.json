@@ -25,7 +25,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "hyperframes": "^0.8.146",
+    "hyperframes": "^0.8.160",
     "playwright-core": "^1.64.0"
   },
   "dependencies": {
