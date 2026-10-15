@@ -85,19 +85,34 @@ if (opts.render) {
       if (b - a > 0.02) pieces.push({ file: segMap.segs[i], ss: a - s0, t: b - a });
     }
   }
+  // --audio-concat <wav>: replacement audio laid out as every piece's source audio back to back
+  // (e.g. a Studio Sound pass over an earlier render's audio); piece k starts at the sum of the
+  // exact lengths of pieces 0..k-1.
+  let audioOffset = 0;
   const list = [];
+  const timeline = [];
+  let outT = 0;
   pieces.forEach((p, k) => {
     const out = join(work, `${String(k).padStart(4, "0")}.mov`);
-    const fade = Math.min(0.012, p.t / 4);
+    // Snap every piece to whole frames and force its audio to exactly that length; otherwise the
+    // sub-frame differences accumulate across pieces and the sound drifts ahead of the picture.
+    const frames = Math.max(1, Math.round(p.t * 25));
+    const d = frames / 25;
+    const fade = Math.min(0.012, d / 4);
+    const audioIn = opts["audio-concat"] ? ["-ss", audioOffset.toFixed(6), "-t", d.toFixed(6), "-i", opts["audio-concat"]] : [];
     process.stdout.write(`\rpiece ${k + 1}/${pieces.length}`);
     ffmpeg([
-      "-ss", p.ss.toFixed(3), "-i", p.file, "-t", p.t.toFixed(3),
-      "-vf", `scale=-2:${height}:flags=lanczos,format=yuv420p`, "-r", "25",
+      "-ss", p.ss.toFixed(3), "-t", (d + 0.2).toFixed(3), "-i", p.file, ...audioIn,
+      "-map", "0:v:0", "-map", opts["audio-concat"] ? "1:a:0" : "0:a:0",
+      "-vf", `scale=-2:${height}:flags=lanczos,format=yuv420p`, "-r", "25", "-frames:v", String(frames),
       "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-g", "50",
-      "-af", `afade=t=in:d=${fade},afade=t=out:st=${(p.t - fade).toFixed(3)}:d=${fade}`,
-      "-c:a", "pcm_s16le", "-ar", "48000", "-loglevel", "error", "-nostats", out,
+      "-af", `aresample=48000,afade=t=in:d=${fade},apad,atrim=end=${d.toFixed(6)},afade=t=out:st=${(d - fade).toFixed(6)}:d=${fade}`,
+      "-ac", "2", "-c:a", "pcm_s24le", "-loglevel", "error", "-nostats", out,
     ]);
     list.push(`file '${out}'`);
+    timeline.push({ out: Math.round(outT * 1000) / 1000, src: Math.round((segMap.starts[segMap.segs.indexOf(p.file)] + p.ss) * 1000) / 1000, dur: d });
+    outT += d;
+    audioOffset += p.t;
   });
   console.log();
   writeFileSync(join(work, "list.txt"), list.join("\n"));
@@ -105,5 +120,7 @@ if (opts.render) {
   ffmpeg(["-f", "concat", "-safe", "0", "-i", join(work, "list.txt"), "-c:v", "copy",
     "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", resolve(opts.render)]);
   rmSync(work, { recursive: true, force: true });
+  // Source→output map for placing graphics on the rendered timeline.
+  writeFileSync(resolve(opts.render).replace(/\.\w+$/, ".timeline.json"), JSON.stringify(timeline, null, 1));
   console.log(`rendered ${opts.render} (${probeDuration(resolve(opts.render)).toFixed(2)} s)`);
 }
