@@ -9,41 +9,22 @@
 // EDL format: spans of inclusive word indices (from transcripts/<name>/words.json, timeline of the
 // joined camera segments). Inside a span, gaps longer than rules.maxGap are tightened to
 // rules.tightGap unless listed in `preserve` ({wordIndex: pauseSeconds}, pause after that word).
+// --video-src / --audio-src: render from one proxy + one cleaned audio file on the joined timeline.
 // `segments` is the path prefix of the camera files (sorted = timeline order).
 // `hold` keeps N seconds of real footage after the span, `tailPause` sets the pause before the next
 // span, `startAt` overrides the span's first cut-in time (for cutting inside a stumble).
 import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { die, ffmpeg, parseArgs, probeDuration, ROOT } from "./lib/common.mjs";
+import { computeRanges } from "./lib/edl-ranges.mjs";
 
 const { opts, positional } = parseArgs();
 if (!positional[0]) die("usage: npm run edl -- <edits/name.edl.json> [--json out] [--render out.mp4]");
 const edl = JSON.parse(readFileSync(positional[0], "utf-8"));
 const words = JSON.parse(readFileSync(resolve(ROOT, edl.transcript), "utf-8"));
-const { maxGap, tightGap, lead, tail } = edl.rules;
 const r3 = (n) => Math.round(n * 1000) / 1000;
 
-// ── Compute source ranges ──────────────────────────────────────────────────
-const ranges = []; // {start, end, span}
-edl.spans.forEach((span, si) => {
-  const [a, b] = span.words;
-  const prevWordEnd = a > 0 ? words[a - 1].end : 0;
-  const nextWordStart = b + 1 < words.length ? words[b + 1].start : Infinity;
-  const preserve = span.preserve ?? {};
-  let start = span.startAt ?? Math.max(words[a].start - lead, prevWordEnd + 0.02, 0);
-  for (let i = a; i < b; i++) {
-    const gap = words[i + 1].start - words[i].end;
-    const keep = preserve[i] ?? tightGap;
-    if (gap > Math.max(maxGap, keep)) {
-      const before = Math.min(tail, keep / 2 + 0.03);
-      ranges.push({ start, end: words[i].end + before, span: si });
-      start = words[i + 1].start - (keep - before);
-    }
-  }
-  const tailLen = span.hold ?? (span.tailPause ? span.tailPause - lead : tail);
-  ranges.push({ start, end: Math.min(words[b].end + tailLen, nextWordStart - 0.02), span: si });
-});
-for (const r of ranges) Object.assign(r, { start: r3(r.start), end: r3(r.end) });
+const ranges = computeRanges(edl, words);
 
 const total = ranges.reduce((s, r) => s + r.end - r.start, 0);
 const sourceLen = words.at(-1).end;
@@ -67,12 +48,18 @@ if (opts.json) writeFileSync(opts.json, JSON.stringify(ranges, null, 1));
 
 // ── Render ─────────────────────────────────────────────────────────────────
 if (opts.render) {
-  // Camera segments in timeline order; their durations give each one's offset on the joined timeline.
-  const dir = resolve(ROOT, dirname(edl.segments));
-  const prefix = edl.segments.split("/").pop();
-  const segs = readdirSync(dir).filter((f) => f.startsWith(prefix)).sort().map((f) => join(dir, f));
-  const durs = segs.map(probeDuration);
-  const segMap = { segs, durs, starts: durs.map((_, i) => durs.slice(0, i).reduce((s, d) => s + d, 0)) };
+  // Video source: either one file on the joined timeline (--video-src, e.g. a full-length proxy)
+  // or the camera segments (EDL "segments" prefix), whose durations give each one's offset.
+  let segMap;
+  if (opts["video-src"]) {
+    segMap = { segs: [resolve(opts["video-src"])], durs: [probeDuration(resolve(opts["video-src"]))], starts: [0] };
+  } else {
+    const dir = resolve(ROOT, dirname(edl.segments));
+    const prefix = edl.segments.split("/").pop();
+    const segs = readdirSync(dir).filter((f) => f.startsWith(prefix)).sort().map((f) => join(dir, f));
+    const durs = segs.map(probeDuration);
+    segMap = { segs, durs, starts: durs.map((_, i) => durs.slice(0, i).reduce((s, d) => s + d, 0)) };
+  }
   const height = Number(opts.height ?? 1080);
   const work = join(ROOT, "media/proxies", `.edl-${process.pid}`);
   mkdirSync(work, { recursive: true });
@@ -99,11 +86,13 @@ if (opts.render) {
     const frames = Math.max(1, Math.round(p.t * 25));
     const d = frames / 25;
     const fade = Math.min(0.012, d / 4);
-    const audioIn = opts["audio-concat"] ? ["-ss", audioOffset.toFixed(6), "-t", d.toFixed(6), "-i", opts["audio-concat"]] : [];
+    const srcT = segMap.starts[segMap.segs.indexOf(p.file)] + p.ss;
+    const audioIn = opts["audio-src"] ? ["-ss", srcT.toFixed(6), "-t", d.toFixed(6), "-i", opts["audio-src"]]
+      : opts["audio-concat"] ? ["-ss", audioOffset.toFixed(6), "-t", d.toFixed(6), "-i", opts["audio-concat"]] : [];
     process.stdout.write(`\rpiece ${k + 1}/${pieces.length}`);
     ffmpeg([
       "-ss", p.ss.toFixed(3), "-t", (d + 0.2).toFixed(3), "-i", p.file, ...audioIn,
-      "-map", "0:v:0", "-map", opts["audio-concat"] ? "1:a:0" : "0:a:0",
+      "-map", "0:v:0", "-map", audioIn.length ? "1:a:0" : "0:a:0",
       "-vf", `scale=-2:${height}:flags=lanczos,format=yuv420p`, "-r", "25", "-frames:v", String(frames),
       "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-g", "50",
       "-af", `aresample=48000,afade=t=in:d=${fade},apad,atrim=end=${d.toFixed(6)},afade=t=out:st=${(d - fade).toFixed(6)}:d=${fade}`,

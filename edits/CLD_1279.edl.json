@@ -3,72 +3,452 @@
   "transcript": "transcripts/CLD_1279/words.json",
   "segments": "media/raw/CLD_1279-",
   "rules": {
-    "maxGap": 0.5,
-    "tightGap": 0.3,
+    "maxGap": 0.35,
+    "tightGap": 0.22,
     "lead": 0.12,
     "tail": 0.15
   },
   "spans": [
-    { "words": [0, 81], "note": "Cold open: the editing pain + 'Instead of … myself,'" },
-    { "words": [91, 110], "note": "Clean retake 'I gave the entire raw footage to Claude Code…' (drops 'raw entire' fluff)" },
-    { "words": [120, 151], "hold": 1.0, "note": "Raw footage intro; hold after 'compare that with this.' for the final-version insert" },
-    { "words": [157, 186], "note": "Second 'This is the final version…' (first, broken take dropped)" },
-    { "words": [193, 204], "note": "'I didn't manually build this entire edit…' (drops 'I didn't even manually edit it.')" },
-    { "words": [259, 289], "note": "Final take of 'Claude Code managed the workflow…' (3 broken takes dropped)" },
-    { "words": [292, 292], "note": "'today.' (drops the extra 'by step')" },
-    { "words": [293, 307], "note": "'…six different steps.'" },
-    { "words": [316, 355], "note": "Steps 1–4 (first 'we build the end--' dropped)" },
-    { "words": [368, 379], "note": "Clean 'And the step five is everything get assembled into first complete version.'" },
-    { "words": [390, 404], "note": "Clean step six line" },
-    { "words": [411, 416], "note": "'So let's start with step one.'" },
-    { "words": [423, 454], "note": "Step 1 intro (false start dropped)" },
-    { "words": [457, 482], "note": "Tool list (repeated 'Coordinating everything.' dropped)" },
-    { "words": [491, 498], "note": "'and browser research for supporting visuals and B-roll.'" },
-    { "words": [499, 539], "note": "Setup prompt + 'Claude checked all the dependencies,'" },
-    { "words": [552, 610], "note": "Clean 'Updated the Hyperframe skills…' through 'set everything up again.'" },
-    { "words": [611, 615], "note": "'So now the step two.' ('Uh,' and the 29 s of dead air dropped)" },
-    { "words": [668, 689], "note": "Clean retake of 'Now I dropped the entire raw video…' (whole first take dropped)" },
-    { "words": [692, 726], "note": "FFmpeg analysis (false starts dropped)" },
-    { "words": [728, 733], "note": "'understand what I am actually saying.' (doubled 'understand' dropped)" },
-    { "words": [739, 794], "note": "ElevenLabs transcription + example" },
-    { "words": [795, 799], "note": "'Claude could identify both versions,'" },
-    { "words": [804, 817], "note": "'so suddenly editing the video … editing a document.'" },
-    { "words": [818, 852], "preserve": { "837": 0.7 }, "note": "Step 3 intro (keeps the beat before 'shape the edit')" },
-    { "words": [853, 859], "note": "'Show me what you want to keep,'" },
-    { "words": [869, 873], "note": "'what to remove or shorten.'" },
-    { "words": [881, 905], "tailPause": 0.5, "note": "Clean 'Claude found the dead air…' + 'one important rule' (pause kept)" },
-    { "words": [907, 934], "note": "The pause rule ('that' dropped)" },
-    { "words": [938, 989], "note": "'the original clip was around fifty seconds…' → rough cut description" },
-    { "words": [991, 1010], "note": "'But there was one problem…' ('So--' dropped)" },
-    { "words": [1013, 1017], "hold": 1.0, "note": "'the audio still needed work.' Hold for the raw-audio demo ('Play raw…' note dropped)" },
-    { "words": [1026, 1036], "note": "Second 'so I used Descript audio sound … room noise,'" },
-    { "words": [1037, 1053], "startAt": 628.88, "note": "'improve clarity …' (cut inside the 'impru-improve' stumble)" },
-    { "words": [1055, 1070], "note": "'Now we finally have a clean foundation…' ('We--' dropped)" },
-    { "words": [1071, 1086], "note": "Step 4 + 'This time, I didn't ask Claude what should I cut.'" },
-    { "words": [1095, 1169], "note": "'I asked, What should the viewer see…' through 'never cover my face.'" },
-    { "words": [1172, 1186], "note": "Style line ('For this--' dropped)" },
-    { "words": [1188, 1233], "note": "HyperFrames + visual balance ('They--' dropped)" },
-    { "words": [1236, 1266], "note": "'and around five percent B-rolls…' (first 'and around,' dropped)" },
-    { "words": [1267, 1268], "note": "'So step'" },
-    { "words": [1272, 1277], "note": "'five is to assemble the video.'" },
-    { "words": [1278, 1299], "note": "Final build + music/SFX" },
-    { "words": [1301, 1315], "note": "'and I specifically told Claude…' (doubled 'and,' dropped)" },
-    { "words": [1316, 1333], "note": "Assembly list" },
-    { "words": [1336, 1339], "note": "'created review version one.'" },
-    { "words": [1354, 1385], "note": "Second 'This was the first moment…' + feedback" },
-    { "words": [1394, 1416], "note": "Clean feedback examples" },
-    { "words": [1417, 1447], "note": "Reusable rules" },
-    { "words": [1451, 1454], "note": "'don't cover my face,'" },
-    { "words": [1458, 1461], "note": "'keep the music subtle,'" },
-    { "words": [1464, 1481], "note": "'don't overuse B-roll … closer to my style.'" },
-    { "words": [1486, 1493], "note": "'and the final step is review and export.'" },
-    { "words": [1494, 1535], "note": "QA checks" },
-    { "words": [1561, 1576], "note": "Clean 'it also checked the graphic contrast … twenty-five checks. And finally,'" },
-    { "words": [1581, 1585], "note": "'it exported the finished video.'" },
-    { "words": [1586, 1617], "hold": 1.0, "note": "Final specs + 'And this was the result.' Hold for the result insert" },
-    { "words": [1623, 1625], "note": "'So finally the'" },
-    { "words": [1631, 1632], "note": "'conclusion is,'" },
-    { "words": [1633, 1684], "preserve": { "1640": 0.7 }, "note": "Conclusion (beat after the question kept)" },
-    { "words": [1698, 1739], "preserve": { "1734": 0.6 }, "hold": 0.8, "note": "Clean 'I still made the creative decisions…' to the end" }
+    {
+      "words": [
+        0,
+        81
+      ],
+      "note": "Cold open: the editing pain + 'Instead of … myself,'"
+    },
+    {
+      "words": [
+        91,
+        110
+      ],
+      "note": "Clean retake 'I gave the entire raw footage to Claude Code…' (drops 'raw entire' fluff)"
+    },
+    {
+      "words": [
+        120,
+        151
+      ],
+      "hold": 1.0,
+      "note": "Raw footage intro; hold after 'compare that with this.' for the final-version insert"
+    },
+    {
+      "words": [
+        157,
+        186
+      ],
+      "note": "Second 'This is the final version…' (first, broken take dropped)"
+    },
+    {
+      "words": [
+        193,
+        204
+      ],
+      "note": "'I didn't manually build this entire edit…' (drops 'I didn't even manually edit it.')"
+    },
+    {
+      "words": [
+        259,
+        289
+      ],
+      "note": "Final take of 'Claude Code managed the workflow…' (3 broken takes dropped)"
+    },
+    {
+      "words": [
+        292,
+        292
+      ],
+      "note": "'today.' (drops the extra 'by step')"
+    },
+    {
+      "words": [
+        293,
+        307
+      ],
+      "note": "'…six different steps.'"
+    },
+    {
+      "words": [
+        316,
+        355
+      ],
+      "note": "Steps 1–4 (first 'we build the end--' dropped)"
+    },
+    {
+      "words": [
+        368,
+        379
+      ],
+      "note": "Clean 'And the step five is everything get assembled into first complete version.'"
+    },
+    {
+      "words": [
+        390,
+        404
+      ],
+      "note": "Clean step six line"
+    },
+    {
+      "words": [
+        411,
+        416
+      ],
+      "note": "'So let's start with step one.'"
+    },
+    {
+      "words": [
+        423,
+        454
+      ],
+      "note": "Step 1 intro (false start dropped)"
+    },
+    {
+      "words": [
+        457,
+        482
+      ],
+      "note": "Tool list (repeated 'Coordinating everything.' dropped)"
+    },
+    {
+      "words": [
+        491,
+        498
+      ],
+      "note": "'and browser research for supporting visuals and B-roll.'"
+    },
+    {
+      "words": [
+        499,
+        539
+      ],
+      "note": "Setup prompt + 'Claude checked all the dependencies,'"
+    },
+    {
+      "words": [
+        552,
+        610
+      ],
+      "note": "Clean 'Updated the Hyperframe skills…' through 'set everything up again.'"
+    },
+    {
+      "words": [
+        611,
+        615
+      ],
+      "note": "'So now the step two.' ('Uh,' and the 29 s of dead air dropped)"
+    },
+    {
+      "words": [
+        668,
+        689
+      ],
+      "note": "Clean retake of 'Now I dropped the entire raw video…' (whole first take dropped)"
+    },
+    {
+      "words": [
+        692,
+        726
+      ],
+      "note": "FFmpeg analysis (false starts dropped)"
+    },
+    {
+      "words": [
+        728,
+        733
+      ],
+      "note": "'understand what I am actually saying.' (doubled 'understand' dropped)"
+    },
+    {
+      "words": [
+        739,
+        794
+      ],
+      "note": "ElevenLabs transcription + example"
+    },
+    {
+      "words": [
+        795,
+        799
+      ],
+      "note": "'Claude could identify both versions,'"
+    },
+    {
+      "words": [
+        804,
+        817
+      ],
+      "note": "'so suddenly editing the video … editing a document.'"
+    },
+    {
+      "words": [
+        818,
+        852
+      ],
+      "preserve": {
+        "837": 0.7
+      },
+      "note": "Step 3 intro (keeps the beat before 'shape the edit')"
+    },
+    {
+      "words": [
+        853,
+        859
+      ],
+      "note": "'Show me what you want to keep,'"
+    },
+    {
+      "words": [
+        869,
+        873
+      ],
+      "note": "'what to remove or shorten.'"
+    },
+    {
+      "words": [
+        881,
+        905
+      ],
+      "tailPause": 0.5,
+      "note": "Clean 'Claude found the dead air…' + 'one important rule' (pause kept)"
+    },
+    {
+      "words": [
+        907,
+        934
+      ],
+      "note": "The pause rule ('that' dropped)"
+    },
+    {
+      "words": [
+        938,
+        989
+      ],
+      "note": "'the original clip was around fifty seconds…' → rough cut description"
+    },
+    {
+      "words": [
+        991,
+        1010
+      ],
+      "note": "'But there was one problem…' ('So--' dropped)"
+    },
+    {
+      "words": [
+        1013,
+        1017
+      ],
+      "hold": 1.0,
+      "note": "'the audio still needed work.' Hold for the raw-audio demo ('Play raw…' note dropped)"
+    },
+    {
+      "words": [
+        1026,
+        1036
+      ],
+      "note": "Second 'so I used Descript audio sound … room noise,'"
+    },
+    {
+      "words": [
+        1037,
+        1053
+      ],
+      "startAt": 628.88,
+      "note": "'improve clarity …' (cut inside the 'impru-improve' stumble)"
+    },
+    {
+      "words": [
+        1055,
+        1070
+      ],
+      "note": "'Now we finally have a clean foundation…' ('We--' dropped)"
+    },
+    {
+      "words": [
+        1071,
+        1086
+      ],
+      "note": "Step 4 + 'This time, I didn't ask Claude what should I cut.'"
+    },
+    {
+      "words": [
+        1095,
+        1169
+      ],
+      "note": "'I asked, What should the viewer see…' through 'never cover my face.'"
+    },
+    {
+      "words": [
+        1172,
+        1186
+      ],
+      "note": "Style line ('For this--' dropped)"
+    },
+    {
+      "words": [
+        1188,
+        1233
+      ],
+      "note": "HyperFrames + visual balance ('They--' dropped)"
+    },
+    {
+      "words": [
+        1236,
+        1266
+      ],
+      "note": "'and around five percent B-rolls…' (first 'and around,' dropped)"
+    },
+    {
+      "words": [
+        1267,
+        1268
+      ],
+      "note": "'So step'"
+    },
+    {
+      "words": [
+        1272,
+        1277
+      ],
+      "note": "'five is to assemble the video.'"
+    },
+    {
+      "words": [
+        1278,
+        1299
+      ],
+      "note": "Final build + music/SFX"
+    },
+    {
+      "words": [
+        1301,
+        1315
+      ],
+      "note": "'and I specifically told Claude…' (doubled 'and,' dropped)"
+    },
+    {
+      "words": [
+        1316,
+        1333
+      ],
+      "note": "Assembly list"
+    },
+    {
+      "words": [
+        1336,
+        1339
+      ],
+      "note": "'created review version one.'"
+    },
+    {
+      "words": [
+        1354,
+        1385
+      ],
+      "note": "Second 'This was the first moment…' + feedback"
+    },
+    {
+      "words": [
+        1394,
+        1414
+      ],
+      "note": "Clean feedback examples ('show feedback.' dropped in v2)"
+    },
+    {
+      "words": [
+        1417,
+        1447
+      ],
+      "note": "Reusable rules"
+    },
+    {
+      "words": [
+        1451,
+        1454
+      ],
+      "note": "'don't cover my face,'"
+    },
+    {
+      "words": [
+        1458,
+        1461
+      ],
+      "note": "'keep the music subtle,'"
+    },
+    {
+      "words": [
+        1464,
+        1481
+      ],
+      "note": "'don't overuse B-roll … closer to my style.'"
+    },
+    {
+      "words": [
+        1486,
+        1493
+      ],
+      "note": "'and the final step is review and export.'"
+    },
+    {
+      "words": [
+        1494,
+        1535
+      ],
+      "note": "QA checks"
+    },
+    {
+      "words": [
+        1561,
+        1576
+      ],
+      "note": "Clean 'it also checked the graphic contrast … twenty-five checks. And finally,'"
+    },
+    {
+      "words": [
+        1581,
+        1585
+      ],
+      "note": "'it exported the finished video.'"
+    },
+    {
+      "words": [
+        1586,
+        1612
+      ],
+      "note": "Final specs (v2: 'And this was the result.' replaced by an announcement reveal)"
+    },
+    {
+      "words": [
+        1623,
+        1625
+      ],
+      "note": "'So finally the'"
+    },
+    {
+      "words": [
+        1631,
+        1632
+      ],
+      "note": "'conclusion is,'"
+    },
+    {
+      "words": [
+        1633,
+        1684
+      ],
+      "preserve": {
+        "1640": 0.7
+      },
+      "note": "Conclusion (beat after the question kept)"
+    },
+    {
+      "words": [
+        1698,
+        1739
+      ],
+      "preserve": {
+        "1734": 0.6
+      },
+      "hold": 0.8,
+      "note": "Clean 'I still made the creative decisions…' to the end"
+    }
   ]
 }
