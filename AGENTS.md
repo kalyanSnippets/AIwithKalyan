@@ -112,6 +112,69 @@ start time). Transcribe the joined file, or each segment with `--offset`.
 8. **Export:** H.264 High, yuv420p, 1920×1080 (or the requested aspect), source frame rate,
    CRF 18, AAC 320k, `-movflags +faststart`, written to `renders/`.
 
+## Kalyan's editing preferences
+
+Learned from his review notes on CLD_1279 (v1 → v3). Apply them to every new video.
+
+**Pacing and voice**
+- Start on the first real line. No separate hook unless he asks for one.
+- Cut every hesitation, stumble, false start and retake, including small ones. Keep silences
+  under about 0.35 s, but keep pauses that carry emotion.
+- If he misspeaks a word or number, cut it. If the sentence still reads, let the graphic carry
+  the fact (the "passed all … checks" fix with a 25/25 ring).
+- Lines like "And this was the result" become an announcement card plus the reveal.
+  Don't leave a flat line.
+
+**Face and eye contact**
+- Never cover his face. Never put graphics over the plant or tree behind him.
+- Don't split the frame or slide him to one side. When information matters more than his face,
+  use a full-screen graphic with him in the rounded PiP card, bottom-left.
+- Run `scripts/gaze.py` (MediaPipe) on the kept ranges. Cover look-aways while he's full-frame
+  with a relevant full-screen visual, not a plain text card on black.
+- No shots of him pointing to the side. Put the thing he points at on screen as he says the
+  line, with no PiP in that moment.
+
+**Showing clips and demos**
+- When he introduces a clip ("this is the raw footage…", "compare that with…"), show the clip
+  while he says it, play it with its own sound, then continue the explanation.
+- Don't show screen recordings of prompts being copy-pasted. Show prompts as a large,
+  readable, typed prompt window with key phrases highlighted.
+- Claude's output is an animated terminal: lines tick off as he says them, and nothing sits
+  on top of the text.
+- Keep AGENTS.md / rule-book visuals in the step where those rules are actually written,
+  not in the setup step.
+
+**Motion graphics**
+- Every sentence gets a visual that explains it with icons, animated visuals or real footage
+  frames. Avoid text lists in boxes, and don't reuse the same layout beat after beat.
+- Make it big and fill the frame. No dead or blank stretches: every scene has content from
+  its first frame.
+- Give each step of a step-by-step section a full-screen numbered transition. In the overview,
+  the named step grows with its own icon.
+- Keep graphics and icons off text. Rows of icons go beside or under a card, never over it.
+- Style: dark glass, Claude coral `#E8775F` accent, Inter, quick back-out/power3 eases.
+- Captions: short phrases (≤ 5 words), bottom-centre. Hide them while kinetic text already
+  shows the same words.
+
+**Audio**
+- Music stays subtle (bed about 0.11, dipped under clips that play with their own sound). SFX
+  are sparse: ≥ 0.9 s apart, mostly whooshes and pops.
+- Studio Sound (Descript) on his voice. Mix to −14 LUFS integrated, −1 dBTP.
+- Comparison or sample sections use the sample video's own audio (e.g. the teleprompter
+  raw vs Claude-edited clip), not generic before/after audio.
+
+**Ending**
+- Rich conclusion with visuals (split screens, flow cards, a big closing line).
+- Then his outro voice recording (ElevenLabs voice clone, voice only) over full-screen graphics:
+  - a recap
+  - Like → Subscribe → bell for "AI with Kalyan"
+  - a description panel and a pinned-comment card
+  - a "Thanks for watching / See you in the next video" end card
+
+**Review loop**
+- Send a compressed review copy (< 30 MB) after each version. He marks up screenshots;
+  treat each mark ("remove", "replace", "improve", "diff approach") as a required change.
+
 ## B-roll rules
 
 - Research on the open web. Prefer primary sources: official product pages, docs, announcements,

@@ -312,3 +312,24 @@ svg.ic { display: block; }
 .endc .t1 { position: absolute; left: 0; right: 0; top: 410px; font-size: 130px; font-weight: 700; letter-spacing: -0.03em; opacity: 0; }
 .endc .t2 { position: absolute; left: 0; right: 0; top: 590px; font-size: 56px; color: var(--peach); font-weight: 700; opacity: 0; }
 .endc .ch { position: absolute; left: 0; right: 0; top: 700px; font-size: 30px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--muted); opacity: 0; }
+
+/* Claude cutting the real footage (0:30) */
+.cedit2 { position: absolute; z-index: 16; left: 0; top: 0; width: 1920px; height: 1080px; }
+.cedit2 .hd { position: absolute; left: 560px; top: 90px; width: 1320px; display: flex; align-items: center; gap: 26px; font-size: 54px; font-weight: 700; opacity: 0; }
+.cedit2 .track { position: absolute; left: 540px; top: 300px; width: 1360px; height: 170px; border-radius: 26px; padding: 18px 20px; background: rgba(14,14,22,0.88); border: 1.5px solid var(--line); display: flex; gap: 18px; }
+.cedit2 .th { position: relative; width: 205px; height: 134px; flex: none; border-radius: 14px; overflow: hidden; border: 3px solid rgba(138,160,255,0.9); opacity: 0; }
+.cedit2 .th img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cedit2 .th.bad { border-color: var(--red); box-shadow: 0 0 30px rgba(255,77,79,0.6); }
+.cedit2 .th.bad img { filter: saturate(0.4) brightness(0.7); }
+.cedit2 .ph { position: absolute; left: 20px; top: 8px; bottom: 8px; width: 5px; border-radius: 3px; background: #fff; box-shadow: 0 0 16px #fff; }
+.cedit2 .done { position: absolute; left: 1010px; top: 560px; height: 92px; padding: 0 40px 0 22px; border-radius: 46px; display: flex; align-items: center; gap: 16px; font-size: 44px; font-weight: 700; color: #0b0b12; background: var(--green); box-shadow: 0 0 60px rgba(76,214,138,0.55); opacity: 0; }
+.cedit2 .done svg { width: 54px; height: 54px; padding: 10px; border-radius: 50%; background: rgba(255,255,255,0.6); }
+.cflag { position: absolute; z-index: 17; top: 500px; width: 220px; margin-left: -110px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; opacity: 0; }
+.cflag svg { width: 78px; height: 78px; padding: 18px; border-radius: 50%; background: var(--red); box-shadow: 0 0 30px rgba(255,77,79,0.6); }
+.cflag b { font-size: 28px; padding: 4px 12px; border-radius: 12px; background: rgba(8,8,14,0.6); }
+
+/* look-away cover over the opening line: drifting reels of the raw footage */
+.cover.reelc .in { background: #07070c; }
+.cover .reel { position: absolute; left: -60px; display: flex; gap: 22px; }
+.cover .reel img { width: 384px; height: 216px; border-radius: 18px; object-fit: cover; opacity: 0.55; border: 2px solid rgba(255,255,255,0.18); }
+.cover .reel.r0 { top: 90px; } .cover .reel.r1 { top: 774px; }

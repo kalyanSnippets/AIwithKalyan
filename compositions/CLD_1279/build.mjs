@@ -120,8 +120,6 @@ function spark(size = 180, color = "#e8775f") {
 const CAM = {
   full: { x: 0, y: 0, scale: 1, borderRadius: 0 },
   pip: { x: 48, y: 760, scale: 470 / 1920, borderRadius: 110 },
-  // Kalyan slides to the left third; graphics get the clean right panel (no tree, no face)
-  side: { x: -470, y: 0, scale: 1, borderRadius: 0 },
 };
 const modes = [];
 const mode = (t, m) => modes.push([r3(t), m]);
@@ -268,24 +266,42 @@ const tstrip = (cls, n, w, pattern) => `<div class="tstrip ${cls}" style="width:
   joins.push(at("the least"));
 }
 
-// ══ "I gave the entire raw footage to Claude Code" — Kalyan slides left, Claude edits on the right ═══
+// ══ "I gave the entire raw footage to Claude Code" — full-screen: Claude cuts his real footage ═══
 {
   const g = find("i gave the entire raw footage");
   const t0 = T(g + 6) - 0.2, t1 = at("and this is what the raw footage") - 0.15; // "Claude Code,"
-  mode(t0 - 0.1, "side"); mode(t1, "full");
+  // overlaps the raw-clip scene; the PiP fades out (no pointing shot) and returns full-frame behind it
+  scene(t0, t1 + 0.6, { pip: false });
+  mode(t0, "pip"); mode(t1 + 0.1, "full");
+  to("#cam", { opacity: 0, duration: 0.3, ease: "power2.in" }, t1 - 0.3);
+  set("#cam", { opacity: 1 }, t1 + 0.85);
   const id = nid("cedit");
-  const strip = tstrip("", 14, 760, (k) => ([2, 5, 9, 12].includes(k) ? "bad" : [7].includes(k) ? "dead" : ""));
-  clipDiv(id, "cedit", t0, t1, `<div class="spark" style="left:270px;top:0">${spark(220)}</div><div class="lbl" style="top:236px;font-size:44px">Claude Code is editing…</div>${strip}`, "left:1100px;top:40px;width:800px;height:440px", 16);
-  fromTo(`#${id}`, { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, t0 + 0.1);
-  js.push(`tl.to("#${id} .spark",{rotation:360,duration:${r3(t1 - t0)},ease:"none"},${r3(t0)});`);
-  js.push(`tl.fromTo("#${id} .ph",{x:0},{x:720,duration:${r3(Math.min(4, t1 - t0 - 1))},ease:"none"},${r3(t0 + 0.4)});`);
-  to(`#${id} i.bad, #${id} i.dead`, { scaleY: 0, opacity: 0, duration: 0.25, stagger: 0.35, ease: "power3.in" }, t0 + 1.0);
-  leave(`#${id}`, t1 - 0.35);
+  const thumbs = [0, 3, 6, 9, 12, 15].map((f, k) => `<div class="th" id="${id}-t${k}"><img src="media/strip/f${f}.jpg" /><div class="tag" id="${id}-g${k}"></div></div>`).join("");
+  clipDiv(id, "cedit2", t0, t1, `<div class="hd">${spark(96)}<span>Claude Code is editing the raw footage…</span></div><div class="track">${thumbs}<div class="ph" id="${id}-ph"></div></div><div class="done" id="${id}-ok">${icon("check", 34, "#0b0b12", 3.5)}Clean cut</div>`, "", 16);
+  fromTo(`#${id} .hd`, { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t0 + 0.1);
+  js.push(`tl.to("#${id} .hd svg",{rotation:360,duration:${r3(t1 - t0)},ease:"none"},${r3(t0)});`);
+  [0, 1, 2, 3, 4, 5].forEach((k) => fromTo(`#${id}-t${k}`, { opacity: 0, y: 60, scale: 0.85 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.6)" }, t0 + 0.25 + k * 0.08));
+  js.push(`tl.fromTo("#${id}-ph",{x:0},{x:1300,duration:${r3(Math.max(2, t1 - t0 - 1.2))},ease:"none"},${r3(t0 + 0.5)});`);
   sfx(t0, "whoosh", 0.2);
-  // "the mistakes, the retakes, the awkward pauses, the bad audio, everything" — under it, same panel
+  // each problem is named → its clip is flagged; on "everything" the flagged clips are cut out
   const m = find("the mistakes, the retakes", g);
-  const items = [["mistakes", "x-circle", "Mistakes", 1100, 520], ["retakes", "rotate-ccw", "Retakes", 1380, 520], ["awkward", "pause-circle", "Awkward pauses", 1660, 520], ["bad audio", "mic-off", "Bad audio", 1380, 770], ["everything", "layers", "Everything", 1660, 770]];
-  items.forEach(([p, ic, label, x, y]) => pop({ x, y, ic, label, t: at(p, m), t1, color: p === "everything" ? "#e8775f" : "#ff8a8a", glow: "rgba(255,77,79,0.4)" }));
+  const flags = [["mistakes", 1, "x-circle", "Mistake"], ["retakes", 2, "rotate-ccw", "Retake"], ["awkward", 3, "pause-circle", "Awkward pause"], ["bad audio", 4, "mic-off", "Bad audio"]];
+  flags.forEach(([p, k, ic, label]) => {
+    const t = at(p, m);
+    html.push(`<div id="${id}-f${k}" class="cflag" style="left:${r3(560 + k * 223 + 102)}px">${icon(ic, 40, "#fff")}<b>${label}</b></div>`);
+    fromTo(`#${id}-f${k}`, { opacity: 0, y: 30, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "back.out(2.2)" }, t);
+    set(`#${id}-t${k}`, { className: "th bad" }, t);
+    sfx(t, "pop", 0.16);
+  });
+  const te = at("everything", m);
+  flags.forEach(([, k], j) => {
+    to(`#${id}-t${k}`, { y: 140, rotation: j % 2 ? 8 : -8, opacity: 0, duration: 0.45, ease: "power3.in" }, te + j * 0.08);
+    to(`#${id}-f${k}`, { y: 140, opacity: 0, duration: 0.45, ease: "power3.in" }, te + j * 0.08);
+  });
+  sfx(te, "snip", 0.3);
+  fromTo(`#${id}-ok`, { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2.5)" }, te + 0.5);
+  [1, 2, 3, 4].forEach((k) => leave(`#${id}-f${k}`, t1 - 0.35));
+  leave(`#${id}`, t1 - 0.35);
 }
 
 // ══ RAW sample: plays first (with sound), then Kalyan continues ═══════════
@@ -995,7 +1011,11 @@ for (const wnd of gaze.windows) {
   const ws = words.map((w, i) => i).filter((i) => kept(i) && T(i) >= t0 - 0.6 && T(i) <= t1).slice(0, 7);
   if (!ws.length) continue;
   const id = nid("cover");
-  clipDiv(id, "cover", t0, t1, `<div class="in"></div>`, "z-index:40", 12);
+  // over the opening line ("…go through all the raw footage") the cover is the footage itself: reels of his clips drifting past
+  const reel = t0 < 15;
+  const rows = reel ? [0, 1].map((r) => `<div class="reel r${r}" id="${nid("reel")}">${Array.from({ length: 10 }, (_, k) => `<img src="media/strip/f${(k * 3 + r * 5) % 16}.jpg" />`).join("")}</div>`).join("") : "";
+  clipDiv(id, `cover${reel ? " reelc" : ""}`, t0, t1, `<div class="in">${rows}</div>`, "z-index:40", 12);
+  if (reel) { to(`#${id} .reel.r0`, { x: -420, duration: r3(t1 - t0), ease: "none" }, t0); fromTo(`#${id} .reel.r1`, { x: -420 }, { x: 0, duration: r3(t1 - t0), ease: "none" }, t0); }
   fromTo(`#${id} .in`, { opacity: 0 }, { opacity: 1, duration: 0.2 }, t0);
   leave(`#${id} .in`, t1 - 0.25, {}, 0.25);
   kinetic({ x: 160, y: 380, w: 1600, size: 96, align: "center", z: 41, t1, parts: ws.map((i) => ({ text: words[i].text.replace(/[".,]/g, ""), t: Math.max(t0, T(i)) })) });
