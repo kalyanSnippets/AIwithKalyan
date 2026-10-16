@@ -58,7 +58,11 @@ addInsert("before", "still needed work", 0.3, 3.5);
 addInsert("after", "keep my natural voice", 0.3, 3.5);
 addInsert("result", "normalized for playback", 0.25, 2.8 + 41.73);
 inserts.sort((a, b) => a.at - b.at);
-const TOTAL = r3(RC_LEN + inserts.reduce((s, x) => s + x.dur, 0));
+// Outro: Kalyan's ElevenLabs voice recording (no camera) after the last spoken word
+const OUTRO = JSON.parse(readFileSync(join(ROOT, "transcripts/CLD_1279-outro/words.json"), "utf-8"));
+const OUTRO_DUR = 25.52;
+const OUTRO_AT = r3(RC_LEN + inserts.reduce((s, x) => s + x.dur, 0) + 0.4);
+const TOTAL = r3(OUTRO_AT + OUTRO_DUR + 1.8);
 
 // ── accumulators ───────────────────────────────────────────────────────────
 const html = [];
@@ -66,6 +70,7 @@ const js = [];
 const sfxList = [];
 const covered = []; // [t0,t1] where Kalyan is not full-frame (scene, PiP, insert, transition)
 const noCaps = []; // [t0,t1] caption-free windows
+const OUTRO_CAPS = []; // outro words on the final timeline
 let uid = 0;
 const nid = (p) => `${p}-${++uid}`;
 const sfx = (t, name, vol) => sfxList.push([r3(t), name, vol]);
@@ -115,6 +120,8 @@ function spark(size = 180, color = "#e8775f") {
 const CAM = {
   full: { x: 0, y: 0, scale: 1, borderRadius: 0 },
   pip: { x: 48, y: 760, scale: 470 / 1920, borderRadius: 110 },
+  // Kalyan slides to the left third; graphics get the clean right panel (no tree, no face)
+  side: { x: -470, y: 0, scale: 1, borderRadius: 0 },
 };
 const modes = [];
 const mode = (t, m) => modes.push([r3(t), m]);
@@ -213,6 +220,25 @@ function prompt({ t0, t1, title, text, typeDur = 3.2, file, highlights = [] }) {
   leave(`#${id} .win`, t1 - 0.35);
   sfx(t0, "whoosh", 0.22);
 }
+/** Claude Code output as motion graphics: each result line lands as it is said (bar fills, then a tick). */
+function terminal({ t0, t1, title, lines }) {
+  const id = nid("term");
+  const body = lines.map((l, k) => `<div class="tl ${l.kind}" id="${id}-l${k}">${l.kind === "ok" ? `<span class="tick">${icon("check", 26, "#0b0b12", 3.5)}</span>` : l.kind === "cmd" ? '<span class="pr">❯</span>' : `<span class="pr">${icon(l.icon ?? "settings-2", 28, "#e8775f")}</span>`}<span class="tx">${l.text}</span>${l.kind === "ok" ? '<span class="bar"><i></i></span>' : ""}</div>`).join("");
+  clipDiv(id, "term", t0, t1, `<div class="win in"><div class="bar0"><i></i><i></i><i></i><b>✳ Claude Code</b><span>${title}</span></div><div class="body">${body}<span class="cursor"></span></div></div>`, "", 18);
+  enter(`#${id} .win`, t0, { y: 60, scale: 0.94 }, 0.55, "power3.out");
+  lines.forEach((l, k) => {
+    fromTo(`#${id}-l${k}`, { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, l.t);
+    if (l.kind === "ok") {
+      fromTo(`#${id}-l${k} .bar i`, { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, l.t + 0.1);
+      fromTo(`#${id}-l${k} .tick`, { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.4, ease: "back.out(3)" }, l.t + 0.6);
+      to(`#${id}-l${k} .bar`, { opacity: 0, duration: 0.2 }, l.t + 0.65);
+      sfx(l.t + 0.6, "pop", 0.13);
+    }
+  });
+  fromTo(`#${id} .win`, { scale: 1 }, { scale: 1.04, duration: r3(t1 - t0 - 1), ease: "none", immediateRender: false }, t0 + 0.6);
+  leave(`#${id} .win`, t1 - 0.35);
+  sfx(t0, "whoosh", 0.2);
+}
 /** Screen recording in a window with a Ken-Burns zoom to the readable part. */
 function screen({ src, t0, t1, label, mediaStart = 0, zoom = [[1, 0, 0], [1.5, -300, -80]] }) {
   const id = nid("screen");
@@ -242,22 +268,23 @@ const tstrip = (cls, n, w, pattern) => `<div class="tstrip ${cls}" style="width:
   joins.push(at("the least"));
 }
 
-// ══ "I gave the entire raw footage to Claude Code" — Claude auto-editing ═══
+// ══ "I gave the entire raw footage to Claude Code" — Kalyan slides left, Claude edits on the right ═══
 {
   const g = find("i gave the entire raw footage");
   const t0 = T(g + 6) - 0.2, t1 = at("and this is what the raw footage") - 0.15; // "Claude Code,"
+  mode(t0 - 0.1, "side"); mode(t1, "full");
   const id = nid("cedit");
-  const strip = tstrip("", 14, 640, (k) => ([2, 5, 9, 12].includes(k) ? "bad" : [7].includes(k) ? "dead" : ""));
-  clipDiv(id, "cedit", t0, t1, `<div class="spark">${spark(190)}</div><div class="lbl">Claude Code is editing…</div>${strip}`, "left:1160px;top:70px;transform-origin:100% 0", 16);
-  fromTo(`#${id}`, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1.18, duration: 0.6, ease: "back.out(1.5)" }, t0);
+  const strip = tstrip("", 14, 760, (k) => ([2, 5, 9, 12].includes(k) ? "bad" : [7].includes(k) ? "dead" : ""));
+  clipDiv(id, "cedit", t0, t1, `<div class="spark" style="left:270px;top:0">${spark(220)}</div><div class="lbl" style="top:236px;font-size:44px">Claude Code is editing…</div>${strip}`, "left:1100px;top:40px;width:800px;height:440px", 16);
+  fromTo(`#${id}`, { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, t0 + 0.1);
   js.push(`tl.to("#${id} .spark",{rotation:360,duration:${r3(t1 - t0)},ease:"none"},${r3(t0)});`);
-  js.push(`tl.fromTo("#${id} .ph",{x:0},{x:600,duration:${r3(Math.min(4, t1 - t0 - 1))},ease:"none"},${r3(t0 + 0.4)});`);
+  js.push(`tl.fromTo("#${id} .ph",{x:0},{x:720,duration:${r3(Math.min(4, t1 - t0 - 1))},ease:"none"},${r3(t0 + 0.4)});`);
   to(`#${id} i.bad, #${id} i.dead`, { scaleY: 0, opacity: 0, duration: 0.25, stagger: 0.35, ease: "power3.in" }, t0 + 1.0);
   leave(`#${id}`, t1 - 0.35);
   sfx(t0, "whoosh", 0.2);
-  // "the mistakes, the retakes, the awkward pauses, the bad audio, everything"
+  // "the mistakes, the retakes, the awkward pauses, the bad audio, everything" — under it, same panel
   const m = find("the mistakes, the retakes", g);
-  const items = [["mistakes", "x-circle", "Mistakes", 110, 140], ["retakes", "rotate-ccw", "Retakes", 110, 420], ["awkward", "pause-circle", "Awkward pauses", 380, 640], ["bad audio", "mic-off", "Bad audio", 1160, 650], ["everything", "layers", "Everything", 1480, 650]];
+  const items = [["mistakes", "x-circle", "Mistakes", 1100, 520], ["retakes", "rotate-ccw", "Retakes", 1380, 520], ["awkward", "pause-circle", "Awkward pauses", 1660, 520], ["bad audio", "mic-off", "Bad audio", 1380, 770], ["everything", "layers", "Everything", 1660, 770]];
   items.forEach(([p, ic, label, x, y]) => pop({ x, y, ic, label, t: at(p, m), t1, color: p === "everything" ? "#e8775f" : "#ff8a8a", glow: "rgba(255,77,79,0.4)" }));
 }
 
@@ -265,13 +292,18 @@ const tstrip = (cls, n, w, pattern) => `<div class="tstrip ${cls}" style="width:
 {
   const t0 = insertStart("raw"), d = 7.6;
   const t1 = end("straight from the camera") + 0.5;
+  // no pointing shot: the clip is already on screen while he introduces it
+  const s0 = at("and this is what the raw footage") - 0.12;
+  scene(s0, t0 + d, { pip: false });
   const id = "rawcard";
   html.push(`<div id="${id}" class="vcard raw" style="left:726px;top:60px;width:540px;height:960px">
+    <video id="raw-a" class="clip" src="media/sample-raw.mp4" muted playsinline data-start="${r3(s0)}" data-duration="${r3(t0 - s0)}" data-media-start="${r3(34.35 - (t0 - s0))}" data-track-index="7"></video>
     <video id="raw-b" class="clip" src="media/sample-raw.mp4" playsinline data-has-audio="true" data-start="${t0}" data-duration="${d}" data-media-start="34.35" data-track-index="7"></video>
     <video id="raw-c" class="clip" src="media/sample-raw.mp4" muted playsinline data-start="${r3(t0 + d)}" data-duration="${r3(t1 - t0 - d)}" data-media-start="${r3(34.35 + d)}" data-track-index="6"></video>
     <div class="pill"><span class="dot"></span>Raw footage</div></div>`);
-  fromTo(`#${id}`, { opacity: 0, scale: 0.7, rotation: -6 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, t0 - 0.05);
-  sfx(t0, "whoosh", 0.28);
+  fromTo(`#${id}`, { opacity: 0, scale: 0.7, rotation: -6 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, s0);
+  sfx(s0, "whoosh", 0.28);
+  kinetic({ x: 90, y: 380, w: 600, size: 66, t1: t0 + 0.2, parts: spoken("this is what the raw footage look like", 7, find("and this is what the raw footage"), { raw: "hl", footage: "hl" }) });
   // timeline strip under it with the mistakes marked
   const sid = nid("raws");
   clipDiv(sid, "", t0 + 0.3, t0 + d, tstrip("", 12, 760, (k) => (k === 4 ? "bad" : k === 5 ? "dead" : "")), "position:absolute;left:1300px;top:820px;z-index:24", 24);
@@ -297,13 +329,18 @@ const tstrip = (cls, n, w, pattern) => `<div class="tstrip ${cls}" style="width:
 {
   const t0 = insertStart("edit"), d = 6.25;
   const t1 = end("sound effects, everything", find("graphics were added")) + 0.6;
+  const s0 = at("and now compare that with this") - 0.12;
+  scene(s0, t0 + d, { pip: false });
+  leave("#rawcard", s0 - 0.3); // the raw card makes way
   const id = "editcard";
   html.push(`<div id="${id}" class="vcard edit" style="left:726px;top:60px;width:540px;height:960px">
+    <video id="edit-a" class="clip" src="media/sample-edited.mp4" muted playsinline data-start="${r3(s0)}" data-duration="${r3(t0 - s0)}" data-media-start="${r3(32.15 - (t0 - s0))}" data-track-index="7"></video>
     <video id="edit-b" class="clip" src="media/sample-edited.mp4" playsinline data-has-audio="true" data-start="${t0}" data-duration="${d}" data-media-start="32.15" data-track-index="7"></video>
     <video id="edit-c" class="clip" src="media/sample-edited.mp4" muted playsinline data-start="${r3(t0 + d)}" data-duration="${r3(t1 - t0 - d)}" data-media-start="9.6" data-track-index="6"></video>
     <div class="pill">${spark(24)}Edited by Claude</div></div>`);
-  fromTo(`#${id}`, { opacity: 0, scale: 0.7, rotation: 6 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, t0 - 0.05);
-  sfx(t0, "riser", 0.3);
+  fromTo(`#${id}`, { opacity: 0, scale: 0.7, rotation: 6 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, s0);
+  sfx(s0, "riser", 0.3);
+  kinetic({ x: 90, y: 400, w: 600, size: 66, t1: t0 + 0.2, parts: spoken("now compare that with this", 5, find("and now compare that with this"), { compare: "hl", this: "hl" }) });
   const sid = nid("edts");
   clipDiv(sid, "", t0 + 0.3, t0 + d, tstrip("", 9, 640, () => ""), "position:absolute;left:1320px;top:820px;z-index:24", 24);
   fromTo(`#${sid} .tstrip`, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4 }, t0 + 0.3);
@@ -349,10 +386,18 @@ function orbit(t0, t1, lights, { title } = {}) {
   const s = find("claude code managed the workflow", 255);
   const t0 = T(s) - 0.2, t1 = at("so to make this simple") - 0.1;
   scene(t0, t1);
-  // "one magical AI tool" — a single wand appears… then shatters into the tool orbit
-  const wand = nid("wand");
+  // "Claude Code managed the workflow" — big, from the first word
   const wt = at("one magical ai tool", s);
-  clipDiv(wand, "pop", wt, at("different tools", s) + 0.3, `<div class="in"><div class="bub" style="width:200px;height:200px">${icon("wand-sparkles", 110, "#f6b39b")}</div><div class="lbl">One magic AI tool?</div></div>`, "left:840px;top:330px", 16);
+  const hub = nid("hub");
+  clipDiv(hub, "", t0, wt + 0.1, `<div class="in" style="position:absolute;left:820px;top:90px">${spark(300)}</div>`, "position:absolute;left:0;top:0;z-index:16", 16);
+  fromTo(`#${hub} .in`, { opacity: 0, scale: 0.2, rotation: -120 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.8, ease: "back.out(1.6)" }, t0 + 0.1);
+  js.push(`tl.to("#${hub} .in svg",{rotation:200,duration:${r3(wt - t0)},ease:"none"},${r3(t0)});`);
+  to(`#${hub} .in`, { opacity: 0, scale: 0.4, duration: 0.3, ease: "power2.in" }, wt - 0.25);
+  kinetic({ x: 300, y: 450, w: 1320, size: 96, align: "center", t1: wt - 0.05, parts: spoken("claude code managed the workflow", 5, s, { claude: "hl", code: "hl", workflow: "hl" }) });
+  sfx(t0 + 0.1, "riser", 0.25);
+  // "one magical AI tool" — a single big wand appears… then shatters into the tool orbit
+  const wand = nid("wand");
+  clipDiv(wand, "pop", wt, at("different tools", s) + 0.3, `<div class="in"><div class="bub" style="width:300px;height:300px">${icon("wand-sparkles", 170, "#f6b39b")}</div><div class="lbl" style="font-size:54px;margin-top:24px">One magic AI tool?</div></div>`, "left:610px;top:200px;width:700px", 16);
   enter(`#${wand} .in`, wt, { scale: 0.2, rotation: -30 }, 0.6);
   to(`#${wand} .in`, { scale: 1.6, opacity: 0, rotation: 25, duration: 0.45, ease: "power3.in" }, at("but by coordinating", s));
   sfx(at("but by coordinating", s), "snip", 0.3);
@@ -446,20 +491,24 @@ const PROMPT1 = "Hey Claude, set up this project for AI video editing using Elev
   const s = find("then i gave the claude");
   const t0 = T(s) - 0.1, t1 = at("claude checked all the") - 0.1;
   scene(t0, t1);
-  // the real recording first, zoomed onto the prompt text, then the prompt typed big
-  screen({ src: "sr-setup.mp4", t0, t1: t0 + 3.0, label: "My setup prompt", mediaStart: 17.6, zoom: [[1.2, -200, -60], [1.85, -862, -162]] });
-  prompt({ t0: t0 + 2.7, t1, title: "Prompt 1 · Setup", text: PROMPT1, typeDur: 4.2, highlights: [
+  prompt({ t0, t1, title: "Prompt 1 · Setup", text: PROMPT1, typeDur: 4.2, highlights: [
     { phrase: "Install and verify all dependencies,", t: at("install and verify", s) },
     { phrase: "only ask me", t: at("only ask me", s) },
     { phrase: "login, password,", t: at("login, password", s) },
   ] });
-  // Output: the real recording, zoomed into Claude's progress log
-  const o0 = at("claude checked all the"), o1 = at("so now the step two") - 0.15;
+  // Output: animated Claude Code log, each line on the word that names it
+  const o0 = at("claude checked all the") - 0.1, o1 = at("so now the step two") - 0.15;
   scene(o0, o1);
-  screen({ src: "sr-skills.mp4", t0: o0, t1: o1, label: "Claude Code · output", zoom: [[1, 0, 0], [1.75, -420, -150]] });
   const c = find("claude checked all the");
-  const done = [["dependencies", "package-check", "Dependencies"], ["hyperframe skills, created", "layers", "HyperFrames skills"], ["folders", "folder-open", "Folders"], ["environment file", "key-round", ".env file"]];
-  done.forEach(([p, ic, label], k) => pop({ x: 1640, y: 110 + k * 210, ic, label, t: at(p, c), t1: o1, check: true, size: 52, color: "#9af0c0", glow: "rgba(76,214,138,0.4)" }));
+  terminal({ t0: o0, t1: o1, title: "Output · setting up the editing engine", lines: [
+    { kind: "cmd", text: "Setting up AI video editing…", t: o0 + 0.3 },
+    { kind: "ok", text: "Dependencies verified — Node · FFmpeg · Chrome · ElevenLabs SDK", t: at("dependencies", c) },
+    { kind: "ok", text: "HyperFrames skills installed", t: at("hyperframe skills, created", c) },
+    { kind: "ok", text: "Folders — media/ · transcripts/ · edits/ · renders/", t: at("folders", c) },
+    { kind: "ok", text: ".env ready — ELEVENLABS_API_KEY · git-ignored", t: at("environment file", c) },
+    { kind: "cfg", icon: "audio-waveform", text: "Default transcription → ElevenLabs Scribe", t: at("use elevenlabs by default", c) },
+    { kind: "ok", text: "Set up once — every next video starts here", t: at("set everything up again", c) },
+  ] });
 }
 
 // ══ STEP 2 ═════════════════════════════════════════════════════════════════
@@ -469,8 +518,7 @@ const PROMPT2 = "I've added the raw talking-head video. Inspect it with FFmpeg, 
   const s = find("now i dropped the entire raw video");
   const t0 = T(s) - 0.1, t1 = at("ffmpeg analyzed the duration") - 0.1;
   scene(t0, t1);
-  screen({ src: "sr-step2.mp4", t0, t1: t0 + 2.8, label: "Prompt 2 + raw.mp4", mediaStart: 0, zoom: [[1.2, -200, -200], [1.85, -849, -615]] });
-  prompt({ t0: t0 + 2.5, t1, title: "Prompt 2 · Decode the footage", text: PROMPT2, typeDur: 3.0, file: "raw.mp4", highlights: [
+  prompt({ t0, t1, title: "Prompt 2 · Decode the footage", text: PROMPT2, typeDur: 3.0, file: "raw.mp4", highlights: [
     { phrase: "Inspect it with FFmpeg,", t: at("inspect everything first", s) },
   ] });
   // FFmpeg scan: the real raw clip with spec tags flying out
@@ -501,7 +549,7 @@ const PROMPT2 = "I've added the raw talking-head video. Inspect it with FFmpeg, 
   leave(`#${doc} .doc`, e1 - 0.35);
   const ev = find("every word, every pause", e);
   [["every word", "type", "Every word"], ["every pause", "pause-circle", "Every pause"], ["every mistake", "x-circle", "Every mistake"], ["every retake", "rotate-ccw", "Every retake"]].forEach(([p, ic, label], k) =>
-    pop({ x: 1650, y: 70 + k * 220, ic, label, t: at(p, ev), t1: at("for example, here i messed") + 0.2, size: 52 }));
+    pop({ x: 620 + k * 300, y: 730, ic, label, t: at(p, ev), t1: at("for example, here i messed") + 0.2, size: 52 }));
   fromTo(`#${doc}-l1`, { scale: 1 }, { scale: 1.06, duration: 0.3, yoyo: true, repeat: 1 }, at("messed up one sentence", e));
   fromTo(`#${doc}-l4`, { scale: 1 }, { scale: 1.06, duration: 0.3, yoyo: true, repeat: 1 }, at("same line properly", e));
   // "editing the video starts looking a lot more like editing a document"
@@ -521,12 +569,16 @@ const PROMPT2 = "I've added the raw talking-head video. Inspect it with FFmpeg, 
   const p0 = T(p), p1 = at("claude found the dead air at the beginning") - 0.1;
   scene(p0, p1);
   const id = nid("board");
-  const cols = [["k", "check-circle-2", "Keep", ["Best take of each line", "Natural pauses", "Emotional beats"]], ["r", "x-circle", "Remove", ["False starts", "Repeated takes", "Dead air"]], ["s", "timer", "Shorten", ["Long pauses → 0.3 s", "Slow intros", "Gaps between lines"]]];
-  clipDiv(id, "board", p0, p1, cols.map(([c, ic, h, items], k) => `<div class="col ${c}" id="${id}-c${k}"><div class="hd">${icon(ic, 40)}${h}</div>${items.map((it, j) => `<div class="it" id="${id}-c${k}i${j}">${it}</div>`).join("")}</div>`).join(""), "", 16);
+  const cols = [["k", "check-circle-2", "Keep", [["trophy", "Best take of each line"], ["heart", "Natural pauses"], ["sparkles", "Emotional beats"]]], ["r", "x-circle", "Remove", [["corner-up-left", "False starts"], ["rotate-ccw", "Repeated takes"], ["volume-x", "Dead air"]]], ["s", "timer", "Shorten", [["timer-reset", "Long pauses → 0.3 s"], ["fast-forward", "Slow intros"], ["move-horizontal", "Gaps between lines"]]]];
+  clipDiv(id, "board", p0, p1, `<div class="ttl0" id="${id}-h">${icon("clipboard-list", 46, "#e8775f")}The edit plan</div>` + cols.map(([c, ic, h, items], k) => `<div class="col ${c}" id="${id}-c${k}"><div class="hd">${icon(ic, 48)}${h}</div>${items.map(([ii, it], j) => `<div class="it" id="${id}-c${k}i${j}">${icon(ii, 30, ["#4cd68a", "#ff4d4f", "#ffb547"][k])}${it}</div>`).join("")}</div>`).join(""), "", 16);
+  fromTo(`#${id}-h`, { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.45 }, p0 + 0.1);
   const sayCol = [at("keep", p), at("remove", p), at("shorten", p)];
   cols.forEach((col, k) => {
-    fromTo(`#${id}-c${k}`, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.5, ease: "back.out(1.4)" }, Math.min(sayCol[k], p0 + 0.6 + k * 0.4) - 0.3);
-    col[3].forEach((_, j) => fromTo(`#${id}-c${k}i${j}`, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.3 }, sayCol[k] + 0.1 + j * 0.25));
+    const tc = p0 + 0.4 + k * 0.45;
+    fromTo(`#${id}-c${k}`, { opacity: 0, y: 80, rotation: k === 1 ? 0 : k ? 3 : -3 }, { opacity: 1, y: 0, rotation: 0, duration: 0.55, ease: "back.out(1.5)" }, tc);
+    col[3].forEach((_, j) => fromTo(`#${id}-c${k}i${j}`, { opacity: 0, x: -30, scale: 0.9 }, { opacity: 1, x: 0, scale: 1, duration: 0.35, ease: "back.out(2)" }, tc + 0.45 + j * 0.25));
+    const tk = Math.max(sayCol[k], tc + 1.3);
+    if (tk < p1 - 1) { to(`#${id}-c${k}`, { scale: 1.07, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, tk); sfx(tk, "pop", 0.14); }
   });
   leave(`#${id}`, p1 - 0.35);
   // Dead air / long pauses / repeated takes on a timeline that gets cut
@@ -764,9 +816,11 @@ const PROMPT4 = "Review the latest edited version, add clean captions where usef
   fromTo(`#${qa}`, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.4)" }, q0);
   js.push(`tl.fromTo("#${qa}-sw",{rotation:0},{rotation:${360 * Math.max(1, Math.floor((q1 - q0) / 1.5))},duration:${r3(q1 - q0 - 0.4)},ease:"none"},${r3(q0)});`);
   checks.forEach(([p], k) => { const t = at(p, q); fromTo(`#${qa}-c${k}`, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2.5)" }, t); fromTo(`#${qa}-n`, { textContent: k * 3 }, { textContent: (k + 1) * 3, duration: 0.3, snap: { textContent: 1 } }, t); sfx(t, "pop", 0.12); });
-  fromTo(`#${qa}-n`, { textContent: 24 }, { textContent: 25, duration: 0.6, snap: { textContent: 1 } }, at("twenty-five checks", q));
-  to(`#${qa} .ctr`, { color: "#4cd68a", scale: 1.15, duration: 0.3, yoyo: true, repeat: 1 }, at("twenty-five checks", q) + 0.5);
-  sfx(at("twenty-five checks", q), "riser", 0.2);
+  // the spoken number was cut; the ring lands on 25/25 as he says "passed all … checks"
+  const pa = at("passed all", q) + 0.2;
+  fromTo(`#${qa}-n`, { textContent: 24 }, { textContent: 25, duration: 0.6, snap: { textContent: 1 } }, pa);
+  to(`#${qa} .ctr`, { color: "#4cd68a", scale: 1.15, duration: 0.3, yoyo: true, repeat: 1 }, pa + 0.5);
+  sfx(pa, "riser", 0.2);
   leave(`#${qa}`, q1 - 0.35);
   // export + final specs
   const e = find("and finally", q);
@@ -816,21 +870,115 @@ const PROMPT4 = "Review the latest edited version, add clean captions where usef
   const cc = find("claude code was the coordinator");
   orbit(o0, o1, [at("elevenlabs understood", cc), at("ffmpeg processed", cc), at("descript changed", cc), at("hyperframes created", cc), at("hyperframes created", cc) + 0.9], { title: "the coordinator" });
   kinetic({ x: 560, y: 960, w: 1300, size: 44, align: "center", z: 20, t1: o1, parts: spoken("claude managed how everything worked together", 6, cc, { managed: "hl" }) });
-  // human creative decisions vs the system's repetitive work
+  // human creative decisions vs the system's repetitive work — split screen
   const h = find("i still made the creative decisions");
-  const h1 = at("and now, because claude has saved") - 0.1;
-  pop({ x: 110, y: 160, ic: "lightbulb", label: "Creative decisions", sub: "me", t: at("creative decisions", h), t1: h1, size: 86, color: "#ffd166", glow: "rgba(255,209,102,0.5)" });
-  pop({ x: 1500, y: 160, ic: "bot", label: "Repetitive editing", sub: "the system", t: at("repetitive editing work", h), t1: h1, size: 86, color: "#e8775f" });
-  // saved preferences → the next video gets easier
   const n = find("and now, because claude has saved");
-  const n1 = TE(words.length - 1) + 0.2;
-  pop({ x: 110, y: 160, ic: "file-text", label: "AGENTS.md", sub: "my editing preferences", t: at("saved my editing preferences", n), t1: n1, size: 80 });
-  pop({ x: 1500, y: 160, ic: "rocket", label: "Next video: faster", t: at("next video should be even easier", n), t1: n1, size: 86, color: "#9af0c0", glow: "rgba(76,214,138,0.45)" });
-  kinetic({ x: 420, y: 760, w: 1100, size: 64, align: "center", t1: n1, parts: spoken("where this gets really interesting", 5, n, { interesting: "hl" }) });
-  const last = TE(words.length - 1);
-  clipDiv("endtag", "endtag", last - 2.5, TOTAL, `<div class="in pill">${spark(22)}Edited with Claude Code · AI with Kalyan</div>`, "", 45);
-  enter("#endtag .in", last - 2.5, { y: -20 });
-  joins.push(at("really interesting", n));
+  const h0 = T(h) - 0.1, h1 = T(n) - 0.1;
+  scene(h0, h1);
+  const vs = nid("vs");
+  const side = (cls, ic, col, title, who, chips) => `<div class="side ${cls}"><div class="ico">${icon(ic, 120, col, 1.6)}</div><div class="who">${who}</div><div class="tt">${title}</div>${chips.map((c, j) => `<div class="chip" id="${vs}-${cls}${j}">${c}</div>`).join("")}</div>`;
+  clipDiv(vs, "vs", h0, h1, side("me", "lightbulb", "#ffd166", "Creative decisions", "Me", ["The story", "The style", "What stays in"]) + `<div class="badge">VS</div>` + side("sys", "bot", "#e8775f", "Repetitive editing", "The system", ["Cuts & pauses", "Captions & sync", "Renders & QA"]), "", 16);
+  const tMe = at("creative decisions", h), tSys = at("repetitive editing work", h);
+  fromTo(`#${vs} .me`, { opacity: 0, x: -160, rotation: -4 }, { opacity: 1, x: 0, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, tMe - 0.2);
+  fromTo(`#${vs} .badge`, { opacity: 0, scale: 3 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power4.in" }, tSys - 0.4);
+  fromTo(`#${vs} .sys`, { opacity: 0, x: 160, rotation: 4 }, { opacity: 1, x: 0, rotation: 0, duration: 0.6, ease: "back.out(1.4)" }, tSys - 0.2);
+  [0, 1, 2].forEach((j) => { fromTo(`#${vs}-me${j}`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, tMe + 0.3 + j * 0.2); fromTo(`#${vs}-sys${j}`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3 }, tSys + 0.3 + j * 0.2); });
+  js.push(`tl.fromTo("#${vs} .me .ico",{scale:1},{scale:1.1,duration:0.5,yoyo:true,repeat:${Math.max(1, Math.floor((h1 - tMe) / 0.5) - 2)},ease:"sine.inOut"},${r3(tMe + 0.6)});`);
+  js.push(`tl.to("#${vs} .sys .ico",{rotation:10,duration:0.25,yoyo:true,repeat:${Math.max(1, Math.floor((h1 - tSys) / 0.25) - 3)},ease:"sine.inOut"},${r3(tSys + 0.6)});`);
+  sfx(tMe, "whoosh", 0.2); sfx(tSys - 0.3, "stamp", 0.3);
+  leave(`#${vs}`, h1 - 0.35);
+  // saved preferences → the next video gets easier → "really interesting"
+  const ri = find("that's where this gets", n);
+  const n0 = T(n) - 0.1, r0 = T(ri) - 0.1;
+  const n1 = r3(OUTRO_AT + 0.6); // runs under the outro's fade-in so the camera never flashes back
+  scene(n0, n1);
+  const nx = nid("nx");
+  clipDiv(nx, "nx", n0, r0, `<div class="card a"><div class="h">${icon("file-text", 40, "#b4524a")}AGENTS.md</div><div class="r">Never cover my face</div><div class="r">Keep the music subtle</div><div class="r">Don't overuse B-roll</div><div class="r">Preserve natural pauses</div></div><div class="arrow">${icon("arrow-right", 90, "#e8775f", 2.5)}</div><div class="card b"><div class="h2">${icon("rocket", 64, "#4cd68a")}Next video</div><div class="lb">Editing effort</div><div class="meter"><i></i></div><div class="lb">Setup</div><div class="meter m2"><i></i></div></div>`, "", 16);
+  fromTo(`#${nx} .a`, { opacity: 0, x: -120 }, { opacity: 1, x: 0, duration: 0.55, ease: "power3.out" }, at("saved my editing preferences", n) - 0.2);
+  fromTo(`#${nx} .a .r`, { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.25, stagger: 0.12 }, at("saved my editing preferences", n) + 0.3);
+  const ez = at("next video should be even easier", n);
+  fromTo(`#${nx} .arrow`, { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, ez - 0.3);
+  fromTo(`#${nx} .b`, { opacity: 0, x: 120, scale: 0.9 }, { opacity: 1, x: 0, scale: 1, duration: 0.55, ease: "back.out(1.5)" }, ez);
+  fromTo(`#${nx} .meter i`, { scaleX: 1 }, { scaleX: 0.25, duration: 1.2, ease: "power3.inOut", stagger: 0.2 }, ez + 0.5);
+  fromTo(`#${nx} .h2 svg`, { y: 0, x: 0 }, { y: -14, x: 14, duration: 0.35, yoyo: true, repeat: 5, ease: "sine.inOut" }, ez + 0.4);
+  sfx(ez, "whoosh", 0.22);
+  leave(`#${nx}`, r0 - 0.3);
+  const rb = nid("burst");
+  clipDiv(rb, "", r0, n1, `<div class="in" style="position:absolute;left:810px;top:110px">${spark(300)}</div>`, "position:absolute;left:0;top:0;z-index:16", 16);
+  fromTo(`#${rb} .in`, { opacity: 0, scale: 0.1, rotation: -180 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.8, ease: "back.out(1.7)" }, r0);
+  js.push(`tl.to("#${rb} .in svg",{rotation:180,duration:${r3(n1 - r0)},ease:"none"},${r3(r0)});`);
+  kinetic({ x: 300, y: 480, w: 1320, size: 104, align: "center", t1: OUTRO_AT - 0.2, parts: spoken("that's where this gets really interesting", 6, n, { really: "hl", interesting: "hl" }) });
+  sfx(r0, "riser", 0.3);
+}
+
+// ══ OUTRO — Kalyan's voice recording over full-screen graphics ══════════════
+{
+  const o = OUTRO_AT, oe = TOTAL;
+  const ow = (phrase, from = 0) => { const p = phrase.split(/\s+/).map(norm); for (let i = from; i <= OUTRO.length - p.length; i++) if (p.every((t, k) => norm(OUTRO[i + k].text) === t)) return i; throw new Error(`outro phrase not found: ${phrase}`); };
+  const ot = (phrase) => r3(o + OUTRO[ow(phrase)].start);
+  const ospoken = (phrase, n, mark = {}) => Array.from({ length: n }, (_, k) => ow(phrase) + k).map((j) => ({ text: OUTRO[j].text, t: r3(o + OUTRO[j].start), cls: mark[norm(OUTRO[j].text)] ?? "" }));
+  scene(o - 0.4, oe, { pip: false });
+  html.push(`<audio id="outro-voice" class="clip" src="media/outro-voice.wav" data-start="${o}" data-duration="${OUTRO_DUR}" data-volume="1" data-track-index="3"></audio>`);
+  // 1) "And that's how I used Claude Code to edit this video." — the toolkit converges on Claude
+  const b1 = ot("if you enjoyed") - 0.15;
+  const rc1 = nid("recap");
+  const tools = ["audio-waveform", "scissors", "mic", "layers", "globe"];
+  clipDiv(rc1, "recap", o - 0.2, b1, `<div class="core">${spark(240)}</div>` + tools.map((ic, k) => `<div class="tb" id="${rc1}-t${k}">${icon(ic, 64)}</div>`).join(""), "", 16);
+  fromTo(`#${rc1} .core`, { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 1, duration: 0.7, ease: "back.out(1.7)" }, o);
+  tools.forEach((_, k) => { const a = (-90 + k * 72) * Math.PI / 180; fromTo(`#${rc1}-t${k}`, { opacity: 0, x: r3(700 * Math.cos(a)), y: r3(500 * Math.sin(a)) }, { opacity: 1, x: r3(230 * Math.cos(a)), y: r3(190 * Math.sin(a)), duration: 0.8, ease: "power3.out" }, o + 0.3 + k * 0.1); });
+  js.push(`tl.to("#${rc1} .core svg",{rotation:180,duration:${r3(b1 - o)},ease:"none"},${o});`);
+  leave(`#${rc1}`, b1 - 0.3);
+  kinetic({ x: 160, y: 840, w: 1600, size: 64, align: "center", t1: b1, parts: ospoken("that's how i used claude code to edit this video.", 9, { claude: "hl", code: "hl" }) });
+  sfx(o, "riser", 0.3);
+  // 2) "…more practical AI tools, tutorials, and experiments"
+  const b2 = ot("make sure") - 0.15;
+  const cards = nid("more");
+  clipDiv(cards, "more", b1, b2, [["tools,", "wrench", "AI tools"], ["tutorials,", "graduation-cap", "Tutorials"], ["experiments,", "flask-conical", "Experiments"]].map(([, ic, l], k) => `<div class="mc" id="${cards}-c${k}">${icon(ic, 110, ["#6ea8ff", "#ffd166", "#a78bfa"][k], 1.6)}<b>${l}</b></div>`).join(""), "", 16);
+  kinetic({ x: 160, y: 150, w: 1600, size: 60, align: "center", t1: b2, parts: ospoken("want to see more practical ai", 6, { more: "hl", practical: "hl" }) });
+  ["tools,", "tutorials,", "experiments,"].forEach((p, k) => { const t = r3(o + OUTRO[ow(p, 20)].start); fromTo(`#${cards}-c${k}`, { opacity: 0, y: 120, scale: 0.7, rotation: k === 1 ? 0 : k ? 6 : -6 }, { opacity: 1, y: 0, scale: 1, rotation: 0, duration: 0.55, ease: "back.out(1.7)" }, t); sfx(t, "pop", 0.16); });
+  leave(`#${cards}`, b2 - 0.3);
+  // 3) like + subscribe + bell
+  const b3 = ot("i've also shared") - 0.15;
+  const sub = nid("sub");
+  clipDiv(sub, "subs", b2, b3, `<div class="like" id="${sub}-l">${icon("thumbs-up", 70)}<span>Like</span></div><div class="sbtn" id="${sub}-s"><span class="a">Subscribe</span><span class="b">${icon("check", 40)}Subscribed</span></div><div class="bell" id="${sub}-b">${icon("bell-ring", 90, "#ffd166", 2)}</div><div class="ch" id="${sub}-c">${spark(54)}AI with Kalyan</div>`, "", 16);
+  const tl0 = ot("like"), ts0 = ot("subscribe"), tch = ot("ai with kalyan.");
+  fromTo(`#${sub}-l`, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, tl0 - 0.35);
+  to(`#${sub}-l`, { scale: 0.85, duration: 0.1, yoyo: true, repeat: 1 }, tl0 + 0.1);
+  set(`#${sub}-l`, { className: "like on" }, tl0 + 0.2);
+  fromTo(`#${sub}-s`, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, ts0 - 0.4);
+  to(`#${sub}-s`, { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 }, ts0 + 0.3);
+  set(`#${sub}-s`, { className: "sbtn on" }, ts0 + 0.4);
+  fromTo(`#${sub}-b`, { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2.5)" }, ts0 + 0.5);
+  to(`#${sub}-b`, { rotation: 18, duration: 0.09, yoyo: true, repeat: 9, ease: "sine.inOut", transformOrigin: "50% 10%" }, ts0 + 0.9);
+  fromTo(`#${sub}-c`, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45 }, tch - 0.1);
+  sfx(tl0 + 0.1, "pop", 0.25); sfx(ts0 + 0.3, "stamp", 0.3); sfx(ts0 + 0.9, "pop", 0.2);
+  leave(`#${sub}`, b3 - 0.3);
+  // 4) prompts, tools & resources in the description + pinned comment
+  const b4 = ot("thanks for watching") - 0.2;
+  const ds = nid("desc");
+  clipDiv(ds, "desc", b3, b4, `<div class="panel" id="${ds}-p"><div class="h">${icon("align-left", 34, "#aaa")}Description</div>${[["prompts,", "file-text", "All the prompts"], ["tools,", "wrench", "Tools I used"], ["resources", "link", "Useful resources"]].map(([, ic, l], k) => `<div class="row" id="${ds}-r${k}">${icon(ic, 36, "#e8775f")}${l}</div>`).join("")}</div><div class="down" id="${ds}-d">${icon("arrow-down", 80, "#fff", 2.5)}</div><div class="pin" id="${ds}-pin"><div class="ph">${icon("pin", 28, "#ffd166")}Pinned by AI with Kalyan</div><div class="pt">Prompts + tools for this edit are in the description ⬇</div></div>`, "", 16);
+  fromTo(`#${ds}-p`, { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, b3 + 0.1);
+  [["prompts,", 0], ["tools,", 40], ["resources", 40]].forEach(([p, from], k) => { const t = r3(o + OUTRO[ow(p, from)].start); fromTo(`#${ds}-r${k}`, { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "back.out(2)" }, t); sfx(t, "pop", 0.13); });
+  const tbelow = ot("below");
+  fromTo(`#${ds}-d`, { opacity: 0, y: -30 }, { opacity: 1, y: 0, duration: 0.3 }, tbelow - 0.2);
+  js.push(`tl.to("#${ds}-d",{y:24,duration:0.3,yoyo:true,repeat:5,ease:"sine.inOut"},${r3(tbelow + 0.2)});`);
+  const tpin = ot("pinned comment,");
+  fromTo(`#${ds}-pin`, { opacity: 0, x: 140, rotation: 4 }, { opacity: 1, x: 0, rotation: 0, duration: 0.5, ease: "back.out(1.6)" }, tpin - 0.2);
+  sfx(tpin, "whoosh", 0.2);
+  const tco = ot("check them out.");
+  to(`#${ds}-p, #${ds}-pin`, { scale: 1.05, duration: 0.25, yoyo: true, repeat: 1 }, tco);
+  leave(`#${ds}`, b4 - 0.3);
+  // 5) end card
+  const ec = nid("endc");
+  clipDiv(ec, "endc", b4, oe, `<div class="sp">${spark(180)}</div><div class="t1">Thanks for watching</div><div class="t2">See you in the next video</div><div class="ch">AI with Kalyan</div>`, "", 16);
+  fromTo(`#${ec} .sp`, { opacity: 0, scale: 0.2, rotation: -90 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.7)" }, b4 + 0.1);
+  js.push(`tl.to("#${ec} .sp svg",{rotation:120,duration:${r3(oe - b4)},ease:"none"},${r3(b4)});`);
+  fromTo(`#${ec} .t1`, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, ot("thanks for watching"));
+  fromTo(`#${ec} .t2`, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, ot("see you in the next video"));
+  fromTo(`#${ec} .ch`, { opacity: 0 }, { opacity: 1, duration: 0.5 }, ot("see you in the next video") + 0.5);
+  noCaps.push([b4, oe + 1]);
+  // outro captions use the same caption style as the rest of the video
+  OUTRO_CAPS.push(...OUTRO.map((w) => ({ t: r3(o + w.start), e: r3(o + w.end), text: w.text })));
 }
 
 // ══ look-away covers: if Kalyan's eyes leave the lens while he's full-frame, a full-screen
@@ -857,7 +1005,7 @@ for (const wnd of gaze.windows) {
 
 // ══ captions: short phrases, current word highlighted ══════════════════════
 {
-  const capWords = words.map((w, i) => i).filter(kept).map((i) => ({ i, t: T(i), e: TE(i), text: words[i].text.replace(/^"|"$/g, "").replace("transaction", "transition") }));
+  const capWords = words.map((w, i) => i).filter(kept).map((i) => ({ i, t: T(i), e: TE(i), text: words[i].text.replace(/^"|"$/g, "").replace("transaction", "transition") })).concat(OUTRO_CAPS);
   const off = (t) => noCaps.some(([a, b]) => t >= a && t <= b);
   const groups = [];
   let g = [];
@@ -913,14 +1061,14 @@ for (const [t, m] of modes) {
   if (m === "full") set("#cam", { zIndex: 1 }, t + 0.6);
   cur = m;
 }
-const inPip = (t) => { let m = "full"; for (const [mt, mm] of modes) if (mt <= t) m = mm; return m === "pip"; };
+const inPip = (t) => { let m = "full"; for (const [mt, mm] of modes) if (mt <= t) m = mm; return m !== "full"; };
 let zoomed = false, lastToggle = -Infinity;
 for (const t of [...new Set(joins)].sort((a, b) => a - b)) {
   if (t - lastToggle < 5 || inPip(t)) continue;
   zoomed = !zoomed; lastToggle = t;
   set("#cam-zoom", { scale: zoomed ? 1.12 : 1 }, t);
 }
-for (const [t, m] of modes) if (m === "pip") set("#cam-zoom", { scale: 1 }, t);
+for (const [t, m] of modes) if (m !== "full") set("#cam-zoom", { scale: 1 }, t);
 
 // ── assemble ────────────────────────────────────────────────────────────────
 const page = `<!doctype html>

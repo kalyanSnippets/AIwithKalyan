@@ -397,9 +397,16 @@
     {
       "words": [
         1561,
+        1572
+      ],
+      "note": "'it also checked the graphic contrast and the final edit passed all'"
+    },
+    {
+      "words": [
+        1574,
         1576
       ],
-      "note": "Clean 'it also checked the graphic contrast … twenty-five checks. And finally,'"
+      "note": "'checks. And finally,' — the misspoken number (1573) is cut; the QA ring shows 25/25"
     },
     {
       "words": [

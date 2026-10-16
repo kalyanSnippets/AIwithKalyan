@@ -1,0 +1,452 @@
+[
+ {
+  "text": "And",
+  "start": 0.14,
+  "end": 0.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "that's",
+  "start": 0.36,
+  "end": 0.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "how",
+  "start": 0.62,
+  "end": 0.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "I",
+  "start": 0.88,
+  "end": 0.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "used",
+  "start": 1.0,
+  "end": 1.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "Claude",
+  "start": 1.32,
+  "end": 1.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "Code",
+  "start": 1.66,
+  "end": 1.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "to",
+  "start": 2.12,
+  "end": 2.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "edit",
+  "start": 2.3,
+  "end": 2.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "this",
+  "start": 2.58,
+  "end": 2.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "video.",
+  "start": 2.8,
+  "end": 3.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "If",
+  "start": 3.98,
+  "end": 4.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "you",
+  "start": 4.14,
+  "end": 4.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "enjoyed",
+  "start": 4.28,
+  "end": 4.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "this",
+  "start": 4.72,
+  "end": 4.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "experiment",
+  "start": 4.92,
+  "end": 5.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 5.68,
+  "end": 5.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "want",
+  "start": 5.86,
+  "end": 6.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "to",
+  "start": 6.06,
+  "end": 6.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "see",
+  "start": 6.2,
+  "end": 6.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "more",
+  "start": 6.44,
+  "end": 6.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "practical",
+  "start": 6.68,
+  "end": 7.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "AI",
+  "start": 7.3,
+  "end": 7.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "tools,",
+  "start": 7.64,
+  "end": 7.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "tutorials,",
+  "start": 8.18,
+  "end": 8.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 8.84,
+  "end": 8.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "experiments,",
+  "start": 8.98,
+  "end": 9.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "make",
+  "start": 10.3,
+  "end": 10.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "sure",
+  "start": 10.52,
+  "end": 10.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "to",
+  "start": 10.74,
+  "end": 10.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "like",
+  "start": 10.86,
+  "end": 11.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "this",
+  "start": 11.1,
+  "end": 11.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "video",
+  "start": 11.32,
+  "end": 11.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 11.74,
+  "end": 11.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "subscribe",
+  "start": 11.9,
+  "end": 12.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "to",
+  "start": 12.46,
+  "end": 12.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "AI",
+  "start": 12.66,
+  "end": 12.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "with",
+  "start": 12.98,
+  "end": 13.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "Kalyan.",
+  "start": 13.16,
+  "end": 13.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "I've",
+  "start": 14.38,
+  "end": 14.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "also",
+  "start": 14.56,
+  "end": 14.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "shared",
+  "start": 14.9,
+  "end": 15.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "the",
+  "start": 15.2,
+  "end": 15.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "prompts,",
+  "start": 15.36,
+  "end": 15.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "tools,",
+  "start": 16.02,
+  "end": 16.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 16.44,
+  "end": 16.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "other",
+  "start": 16.6,
+  "end": 16.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "useful",
+  "start": 16.88,
+  "end": 17.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "resources",
+  "start": 17.26,
+  "end": 17.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "in",
+  "start": 17.98,
+  "end": 18.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "the",
+  "start": 18.1,
+  "end": 18.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "description",
+  "start": 18.22,
+  "end": 18.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "below",
+  "start": 18.8,
+  "end": 19.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 19.62,
+  "end": 19.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "the",
+  "start": 19.76,
+  "end": 19.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "pinned",
+  "start": 19.92,
+  "end": 20.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "comment,",
+  "start": 20.26,
+  "end": 20.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "so",
+  "start": 21.12,
+  "end": 21.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "don't",
+  "start": 21.28,
+  "end": 21.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "forget",
+  "start": 21.52,
+  "end": 21.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "to",
+  "start": 21.86,
+  "end": 21.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "check",
+  "start": 22.0,
+  "end": 22.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "them",
+  "start": 22.22,
+  "end": 22.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "out.",
+  "start": 22.42,
+  "end": 22.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "Thanks",
+  "start": 23.0,
+  "end": 23.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "for",
+  "start": 23.3,
+  "end": 23.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "watching,",
+  "start": 23.46,
+  "end": 23.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "and",
+  "start": 23.98,
+  "end": 24.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "I'll",
+  "start": 24.1,
+  "end": 24.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "see",
+  "start": 24.3,
+  "end": 24.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "you",
+  "start": 24.44,
+  "end": 24.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "in",
+  "start": 24.54,
+  "end": 24.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "the",
+  "start": 24.66,
+  "end": 24.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "next",
+  "start": 24.78,
+  "end": 25.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "text": "video",
+  "start": 25.06,
+  "end": 25.38,
+  "speaker": "speaker_0"
+ }
+]
