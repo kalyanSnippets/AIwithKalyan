@@ -67,6 +67,8 @@ const TOTAL = r3(HOOK + RC_LEN + inserts.reduce((s, x) => s + x.dur, 0));
 // ── HTML + timeline accumulators ───────────────────────────────────────────
 const html = [];
 const js = [];
+const sfxList = []; // [time, name, volume]
+const sfx = (t, name, vol) => sfxList.push([r3(t), name, vol]);
 let uid = 0;
 const id = (p) => `${p}-${++uid}`;
 const clip = (cls, start, dur, inner, extra = "", track = 5) =>
@@ -114,6 +116,7 @@ for (let k = 1; k < pieces.length; k++) {
 const glass = "glass";
 /** Chapter chip, top-left. */
 function chapter(n, title, t, dur = 4.5) {
+  sfx(t, "whoosh", 0.22);
   html.push(clip("chapter", t, dur, `<div class="in ${glass}"><span class="num">0${n}</span><span>${title}</span></div>`, "", 20));
   pop(`#chapter-${uid} .in`, t, { x: -30 });
   fade(`#chapter-${uid} .in`, t + dur - 0.35, { x: -20 });
@@ -127,6 +130,7 @@ function panel({ side = "left", top = 150, width = 560, t0, t1, title, items, cl
     .join("");
   html.push(`<div id="${pid}" class="clip panel ${cls}" data-start="${r3(t0)}" data-duration="${r3(t1 - t0)}" data-track-index="10" style="${pos}top:${top}px;width:${width}px;"><div class="in ${glass}">${title ? `<div class="ptitle">${title}</div>` : ""}${rows}</div></div>`);
   pop(`#${pid} .in`, t0, { x: side === "left" ? -50 : 50, scale: 0.97 });
+  sfx(t0, "whoosh", 0.2);
   items.forEach((it, k) => pop(`#${pid}-r${k}`, Math.max(t0 + 0.2, it.t), { y: 14 }, 0.4));
   fade(`#${pid} .in`, t1 - 0.35, { x: side === "left" ? -30 : 30 });
   return pid;
@@ -140,6 +144,7 @@ function screen({ src, t0, t1, mediaStart = 0, label, exit = true }) {
   const sid = id("screen");
   html.push(`<div id="${sid}" class="screenwin" style="opacity:0"><div class="bar"><i></i><i></i><i></i><span>${label ?? ""}</span></div><video id="${sid}-v" class="clip" src="media/${src}" muted playsinline data-start="${r3(t0)}" data-duration="${r3(t1 - t0)}" data-media-start="${mediaStart}" data-track-index="8"></video></div>`);
   js.push(`tl.fromTo("#${sid}",{opacity:0,scale:0.96},{opacity:1,scale:1,duration:0.5,ease:"power3.out"},${r3(t0)});`);
+  sfx(t0, "whoosh", 0.2);
   js.push(`tl.to("#${sid}",{opacity:0,duration:0.3,ease:"power2.in"},${r3(t1 - 0.3)});`);
   mode(t0, "pip");
   if (exit) mode(t1 - 0.3, "full");
@@ -150,6 +155,7 @@ function chips({ x, y, t1, items, w = 420 }) {
     const cid = id("chip");
     html.push(`<div id="${cid}" class="clip chip" data-start="${r3(it.t)}" data-duration="${r3(t1 - it.t)}" data-track-index="12" style="left:${x}px;top:${y + it.k * 72}px;width:${w}px"><div class="in ${glass}">${it.html}</div></div>`);
     pop(`#${cid} .in`, it.t, { y: 14, scale: 0.95 }, 0.4);
+    sfx(it.t, "pop", 0.16);
     fade(`#${cid} .in`, t1 - 0.3);
   });
 }
@@ -166,6 +172,7 @@ function chips({ x, y, t1, items, w = 420 }) {
     html.push(`<video id="blooper-${k}" class="clip full" src="media/${c.src}" playsinline data-has-audio="true" data-start="${r3(t)}" data-duration="${c.dur}" data-track-index="2"></video>`);
     html.push(clip("stamp", t + c.x, c.dur - c.x, `<div class="in">✕</div>`, "", 3));
     js.push(`tl.fromTo("#stamp-${uid} .in",{opacity:0,scale:2.4,rotation:-18},{opacity:1,scale:1,rotation:-8,duration:0.18,ease:"power4.in"},${r3(t + c.x)});`);
+    sfx(t + c.x + 0.12, "stamp", 0.5);
     t += c.dur;
   });
   html.push(clip("rawtag", 0.1, t - 0.1, `<div class="in ${glass}"><span class="dot"></span>Raw footage · 16:47</div>`, "", 4));
@@ -176,7 +183,11 @@ function chips({ x, y, t1, items, w = 420 }) {
   html.push(clip("hookend", t0, t1 - t0, `<div class="bg"></div><div class="in"><div class="kicker">✳ Edited by Claude Code</div><div class="track">${blocks}</div><div class="times"><span id="from">16:47</span><span class="arrow">→</span><span id="tot">9:56</span></div><div class="sub">No timeline. No manual cuts. One conversation.</div></div>`, "", 4));
   const hid = `#hookend-${uid}`;
   js.push(`tl.fromTo("${hid} .bg",{opacity:0},{opacity:1,duration:0.25},${r3(t0)});`);
+  js.push(`tl.fromTo("${hid} .in",{opacity:0},{opacity:1,duration:0.2},${r3(t0)});`);
   pop(`${hid} .kicker`, t0 + 0.1, { y: -14 }, 0.4);
+  sfx(t0, "riser", 0.45);
+  sfx(t0 + 1.5, "snip", 0.4);
+  sfx(t0 + 1.8, "snip", 0.35);
   pop(`${hid} .track`, t0 + 0.2, { scaleX: 0.6 }, 0.45);
   js.push(`tl.to("${hid} .track i.cut",{background:"#ff4d4f",duration:0.12,stagger:0.08},${r3(t0 + 0.8)});`);
   js.push(`tl.to("${hid} .track i.cut",{scaleY:0,opacity:0,duration:0.3,ease:"power3.in",stagger:0.05},${r3(t0 + 1.5)});`);
@@ -216,6 +227,7 @@ function chips({ x, y, t1, items, w = 420 }) {
     <video id="raw-a" class="clip" src="media/sample-raw.mp4" muted playsinline data-start="${rawIn}" data-duration="${r3(rawLead)}" data-media-start="${r3(rawMedia0)}" data-track-index="6"></video>
     <video id="raw-b" class="clip" src="media/sample-raw.mp4" playsinline data-has-audio="true" data-start="${rawIns}" data-duration="7.6" data-media-start="34.35" data-track-index="7"></video>
     <div class="pill ${glass}"><span class="dot"></span>Raw footage</div></div>`);
+  sfx(rawIn, "whoosh", 0.2);
   js.push(`tl.fromTo("#rawcard",{opacity:0,x:-80,scale:0.96},{opacity:1,x:0,scale:1,duration:0.55,ease:"power3.out"},${rawIn});`);
   // Centre stage during the audible insert
   js.push(`tl.to("#rawcard",{x:576,y:-64,scale:${r3(960 / 832)},duration:0.5,ease:"power3.inOut"},${r3(rawIns - 0.1)});`);
@@ -236,6 +248,7 @@ function chips({ x, y, t1, items, w = 420 }) {
     <video id="edit-b" class="clip" src="media/sample-edited.mp4" playsinline data-has-audio="true" data-start="${editIns}" data-duration="6.25" data-media-start="32.15" data-track-index="7"></video>
     <video id="edit-c" class="clip" src="media/sample-edited.mp4" muted playsinline data-start="${r3(editIns + 6.25)}" data-duration="${r3(editPostEnd - editIns - 6.25)}" data-media-start="9.6" data-track-index="6"></video>
     <div class="pill ${glass}"><span class="star">✳</span>Edited by Claude</div></div>`);
+  sfx(editIn, "whoosh", 0.2);
   js.push(`tl.fromTo("#editcard",{opacity:0,x:80,scale:0.96},{opacity:1,x:0,scale:1,duration:0.55,ease:"power3.out"},${editIn});`);
   js.push(`tl.to("#editcard",{x:-630,y:-36,scale:${r3(960 / 746)},duration:0.5,ease:"power3.inOut"},${r3(editIns - 0.1)});`);
   js.push(`tl.to("#editcard",{x:0,y:0,scale:1,duration:0.5,ease:"power3.inOut"},${r3(editIns + 6.25 - 0.1)});`);
@@ -486,6 +499,23 @@ function abCard(which, t, dur, label, sub) {
   pop(`.endtag .in`, last - 2.2, { y: 20 });
 }
 
+// ── Music bed (ElevenLabs) + SFX ───────────────────────────────────────────
+{
+  const BED = 0.11; // ≈ −19 dB under the voice
+  const res0 = insertStart("full"), res1 = r3(res0 + 41.73);
+  const lane = (pts) => JSON.stringify({ version: 1, lanes: [{ target: "volume", points: pts.map(([t, v]) => ({ t: r3(t), v })) }] });
+  const audio = (aid, src, start, dur, mediaStart, pts) =>
+    html.push(`<audio id="${aid}" class="clip" src="media/${src}" data-start="${r3(start)}" data-duration="${r3(dur)}" data-media-start="${r3(mediaStart)}" data-volume="1" data-track-index="${aid === "music-b" ? 33 : 30}" data-automation='${lane(pts)}'></audio>`);
+  // A: hook → 300 s (louder under the wordless hook payoff), crossfades into B
+  audio("music-a", "music-a.wav", 0, 300, 0, [[0, 0.18], [3.6, 0.18], [4.2, 0.38], [6.6, 0.38], [7.6, BED], [297, BED], [300, 0]]);
+  // B: 297 s → the result insert (the sample has its own music, so the bed fades out under it)
+  audio("music-b", "music-b.wav", 297, res0 + 0.6 - 297, 0, [[0, 0], [3, BED], [res0 - 297 - 1.5, BED], [res0 - 297 + 0.6, 0]]);
+  // Outro: back in after the result, out at the end
+  audio("music-c", "music-a.wav", res1 - 0.2, TOTAL - res1 + 0.2, 120, [[0, 0], [1.5, BED], [TOTAL - res1 - 3, BED], [TOTAL - res1 + 0.2, 0]]);
+  sfxList.sort((a, b) => a[0] - b[0]).forEach(([t, name, vol], k) =>
+    html.push(`<audio id="sfx-${k}" class="clip" src="media/sfx-${name}.wav" data-start="${t}" data-duration="${{ riser: 2.5, whoosh: 0.83, pop: 0.52, stamp: 0.62, snip: 0.73 }[name]}" data-volume="${vol}" data-track-index="${40 + (k % 4)}"></audio>`));
+}
+
 // ── Camera mode + punch-in tweens ──────────────────────────────────────────
 modes.sort((a, b) => a[0] - b[0]);
 for (let k = modes.length - 2; k >= 0; k--) {
@@ -546,4 +576,4 @@ ${html.map((h) => "  " + h).join("\n")}
 `;
 writeFileSync(join(HERE, "index.html"), page);
 writeFileSync(join(HERE, "inserts.json"), JSON.stringify({ hook: HOOK, inserts: inserts.map((x) => ({ ...x, final: insertStart(x.id) })), total: TOTAL }, null, 1));
-console.log(`index.html: ${TOTAL.toFixed(2)} s, ${html.length} graphic nodes, ${js.length} tweens`);
+console.log(`index.html: ${TOTAL.toFixed(2)} s, ${html.length} nodes, ${js.length} tweens, ${sfxList.length} SFX`);
