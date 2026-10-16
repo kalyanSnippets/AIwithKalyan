@@ -402,7 +402,7 @@ function orbit(t0, t1, lights, { title } = {}) {
   to(`#${wand} .in`, { scale: 1.6, opacity: 0, rotation: 25, duration: 0.45, ease: "power3.in" }, at("but by coordinating", s));
   sfx(at("but by coordinating", s), "snip", 0.3);
   const dt = at("different tools", s);
-  orbit(dt - 0.3, t1, [0, 1, 2, 3, 4].map((k) => dt + k * 0.22));
+  orbit(Math.min(dt - 0.3, at("but by coordinating", s) - 0.05), t1, [0, 1, 2, 3, 4].map((k) => dt + k * 0.22));
   kinetic({ x: 560, y: 905, w: 1300, size: 58, align: "center", t1, parts: spoken("different tools for different jobs", 5, s, { tools: "hl", jobs: "hl" }) });
 }
 
