@@ -1,0 +1,139 @@
+{
+ "option": "04",
+ "file": "thumbnail-04-human-vs-ai",
+ "archetype": "Comparison",
+ "headline": "ME vs AI",
+ "story": "A neutral face-off: Kalyan (the creative decisions) against Claude Code's real 'Review version v1… stopped here for your feedback' panel. Nobody is shown winning.",
+ "evidence": [
+  "media/raw CLD_1279 @ 330 s (face)",
+  "Screen Recording 2026-10-09 at 12.37.52 pm @ 5 s (Claude Code review v1 panel, sidebar cropped out)",
+  "Screen Recording 2026-10-09 at 1.32.59 pm @ 78 s (timeline)"
+ ],
+ "layers": [
+  {
+   "id": "bg-left",
+   "type": "shape",
+   "x": 0,
+   "y": 0,
+   "w": 640,
+   "h": 720,
+   "background": "linear-gradient(160deg,#1b1b2a,#0b0b12)"
+  },
+  {
+   "id": "bg-right",
+   "type": "shape",
+   "x": 640,
+   "y": 0,
+   "w": 640,
+   "h": 720,
+   "background": "radial-gradient(600px 500px at 60% 40%, rgba(232,119,95,.28), transparent 70%), #120d10"
+  },
+  {
+   "id": "cc-panel",
+   "type": "image",
+   "role": "evidence",
+   "src": "Thumbnail-Pack/assets/screens/cc-review-mid.png",
+   "x": 690,
+   "y": 150,
+   "w": 548,
+   "h": 411,
+   "radius": 18,
+   "border": "3px solid #E8775F",
+   "shadow": "0 24px 60px rgba(0,0,0,.7)",
+   "position": "left top"
+  },
+  {
+   "id": "timeline",
+   "type": "image",
+   "role": "evidence",
+   "src": "Thumbnail-Pack/assets/screens/hf-timeline.png",
+   "x": 690,
+   "y": 586,
+   "w": 548,
+   "h": 118,
+   "radius": 14,
+   "border": "2px solid rgba(255,255,255,.35)",
+   "position": "left top"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k330.png",
+   "x": -341,
+   "y": 20,
+   "w": 1230,
+   "h": 710,
+   "fit": "contain",
+   "overflow": "visible",
+   "faceBox": {
+    "x": 205,
+    "y": 150,
+    "w": 285,
+    "h": 300
+   },
+   "canva": "separate",
+   "filter": "contrast(1.05)"
+  },
+  {
+   "id": "divider",
+   "type": "shape",
+   "x": 636,
+   "y": 0,
+   "w": 8,
+   "h": 720,
+   "background": "linear-gradient(#E8775F,#E8775F)"
+  },
+  {
+   "id": "h-me",
+   "type": "text",
+   "role": "headline",
+   "text": "ME",
+   "x": 40,
+   "y": 26,
+   "size": 128,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 30px rgba(0,0,0,.65)"
+  },
+  {
+   "id": "h-vs",
+   "type": "text",
+   "role": "headline",
+   "text": "vs",
+   "x": 566,
+   "y": 310,
+   "size": 76,
+   "color": "#0B0B12",
+   "bg": {
+    "color": "#E8775F",
+    "padX": 20,
+    "padY": 14,
+    "radius": 60
+   },
+   "css": "filter:drop-shadow(0 0 0 #0B0B12) drop-shadow(0 10px 30px rgba(0,0,0,.6));"
+  },
+  {
+   "id": "h-ai",
+   "type": "text",
+   "role": "headline",
+   "text": "AI",
+   "x": 1080,
+   "y": 10,
+   "size": 128,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 30px rgba(0,0,0,.65)"
+  },
+  {
+   "id": "claude-wordmark",
+   "type": "image",
+   "role": "logo",
+   "src": "Thumbnail-Pack/assets/logo/claude-wordmark.png",
+   "x": 698,
+   "y": 44,
+   "w": 300,
+   "h": 65,
+   "fit": "contain",
+   "canva": "separate"
+  }
+ ]
+}

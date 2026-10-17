@@ -1,0 +1,95 @@
+{
+ "option": "02",
+ "file": "thumbnail-02-ai-editor",
+ "archetype": "Experiment / face + tool",
+ "headline": "AI EDITOR?!",
+ "story": "Kalyan's genuine sceptical look (2:01 of the raw take) next to the real editing timeline Claude Code built in HyperFrames Studio.",
+ "evidence": [
+  "media/raw CLD_1279 @ 121 s (face, unaltered cutout)",
+  "Screen Recording 2026-10-09 at 1.32.59 pm @ 78 s (HyperFrames Studio timeline of the sample short)",
+  "Claude wordmark from claude.com"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 600px at 75% 30%, rgba(232,119,95,.22), transparent 70%), radial-gradient(800px 600px at 0% 100%, rgba(90,100,255,.16), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "glow",
+   "type": "shape",
+   "x": 700,
+   "y": 0,
+   "w": 620,
+   "h": 620,
+   "radius": 310,
+   "background": "radial-gradient(circle, rgba(232,119,95,.5), rgba(232,119,95,0) 68%)"
+  },
+  {
+   "id": "timeline",
+   "type": "image",
+   "role": "evidence",
+   "src": "Thumbnail-Pack/assets/screens/hf-timeline.png",
+   "x": 24,
+   "y": 470,
+   "w": 820,
+   "h": 196,
+   "radius": 16,
+   "border": "2px solid rgba(255,255,255,.4)",
+   "shadow": "0 20px 50px rgba(0,0,0,.6)",
+   "rotate": -2,
+   "position": "left top"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k121.png",
+   "x": 183,
+   "y": -64,
+   "w": 1393,
+   "h": 814,
+   "fit": "contain",
+   "overflow": "visible",
+   "faceBox": {
+    "x": 830,
+    "y": 92,
+    "w": 322,
+    "h": 330
+   },
+   "canva": "separate",
+   "filter": "drop-shadow(0 0 20px rgba(232,119,95,.5)) contrast(1.05)"
+  },
+  {
+   "id": "claude-wordmark",
+   "type": "image",
+   "role": "logo",
+   "src": "Thumbnail-Pack/assets/logo/claude-wordmark.png",
+   "x": 50,
+   "y": 46,
+   "w": 300,
+   "h": 65,
+   "fit": "contain",
+   "canva": "separate"
+  },
+  {
+   "id": "headline",
+   "type": "text",
+   "role": "headline",
+   "text": "AI\nEDITOR?!",
+   "x": 46,
+   "y": 140,
+   "size": 150,
+   "color": "#FFFFFF",
+   "highlight": [
+    {
+     "word": "?!",
+     "color": "#E8775F"
+    }
+   ],
+   "shadow": "0 6px 30px rgba(0,0,0,.65)",
+   "lineHeight": 0.92
+  }
+ ]
+}

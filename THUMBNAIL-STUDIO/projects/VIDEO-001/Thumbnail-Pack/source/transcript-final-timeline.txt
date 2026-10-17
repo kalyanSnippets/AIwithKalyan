@@ -1,0 +1,103 @@
+[0:00.12] So normally, after I record a YouTube video, that's when the real work starts.
+[0:04.72] I have to go through all the raw footage, find the mistakes, remove the bad takes, trim the pauses, clean the audio, plan the visuals, find B-rolls, add captions, music, sound effects, and then finally export everything.
+[0:18.28] And honestly, editing is probably the part I enjoy the least.
+[0:22.16] So this time, I wanted to try something different.
+[0:24.94] Instead of opening an editor and doing all of that myself, I gave the entire raw footage to Claude Code, the mistakes, the retakes, the awkward pauses, the bad audio, everything.
+[0:35.64] And this is what the raw footage look like.
+[0:38.48] No cuts, no graphics, no captions, no music, nothing.
+[0:38.51] ⟦INSERT raw: sample clip plays with its own audio (7.6s)⟧
+[0:50.04] Just the original recording straight from the camera.
+[0:52.76] And now compare that with this.
+[0:54.84] ⟦INSERT edit: sample clip plays with its own audio (6.2s)⟧
+[1:01.81] This is the final version.
+[1:02.87] The mistakes were removed, the pauses were tightened, the audio was cleaned, graphics were added, captions, music, sound effects, everything.
+[1:10.61] And the interesting part is I didn't manually build this entire edit inside a traditional video editor.
+[1:16.97] Claude Code managed the workflow, not with one magical AI tool, but by coordinating different tools for different jobs.
+[1:24.09] And that is what we are going to build step by step today.
+[1:27.61] So to make this simple, I have divided the entire workflow into six different steps.
+[1:32.93] So first step, we build the editing engine, and the step two is the Claude decodes the entire raw footage.
+[1:39.73] And the step three is we shape the actual edit.
+[1:42.85] And the step four is Claude designs the visual experience.
+[1:46.41] And the step five is everything get assembled into first complete version.
+[1:51.57] And step six is we review and run the final checks and then export it.
+[1:56.77] So let's start with step one.
+[1:58.81] So before Claude could edit anything, I need to give it the right tools because Claude Code itself isn't really a video editor.
+[2:06.21] Think of it more like the brain, coordinating everything.
+[2:09.53] So I used ElevenLabs for transcription, music, and sound effects, FFmpeg for the cutting, processing, and rendering, Descript for cleaning the audio, Hyperframes for motion graphics, and browser research for supporting visuals and B-roll.
+[2:24.85] Then I gave the Claude one setup prompt.
+[2:27.49] Basically, set up this entire project, install and verify everything you need, and only ask me when human input is actually required.
+[2:35.73] Things like login, password, or authentication.
+[2:38.85] Claude checked all the dependencies, Updated the Hyperframe skills, created the folders, prepared the environment file, and even updated agents.md.
+[2:48.45] And that's important because agents.md became the permanent editing rule book for this project.
+[2:54.57] For example, I told Claude, whenever I ask to transcribe footage, use ElevenLabs by default, so next time I edit another video, I don't have to set everything up again.
+[3:05.93] So now the step two.
+[3:07.37] Now I dropped the entire raw video into the project, and before making a single cut, I told Claude, "Inspect everything first." FFmpeg analyzed the duration, resolution, frame rate, codec, and audio.
+[3:20.13] This particular clip was around fifty seconds, vertical four-K at thirty frames per second.
+[3:25.47] But technically, that's still just a video file.
+[3:28.33] Claude needs to understand what I am actually saying.
+[3:31.33] So next, it used ElevenLabs to transcribe the whole thing with word-level timestamps.
+[3:37.05] And this is where the things gets interesting.
+[3:39.41] Now Claude can see every word, every pause, every mistake, and every retake as text.
+[3:45.13] For example, here I messed up one sentence, and then a few seconds later, I said the same line properly.
+[3:51.97] Claude could identify both versions, so suddenly editing the video starts looking a lot more like editing a document.
+[3:59.13] But I still didn't want Claude randomly making cuts, so before touching the actual video, we move to step three: shape the edit.
+[4:07.73] Before making any cuts, I asked Claude to create an edit plan.
+[4:11.97] Show me what you want to keep, what to remove or shorten.
+[4:16.37] Claude found the dead air at the beginning.
+[4:19.19] Long pauses between lines and then repeated the bad takes.
+[4:23.37] But I gave Claude one important rule don't remove every pause because fast editing doesn't mean speaking like a robot.
+[4:31.17] Keep the pauses that feel natural or emotional.
+[4:34.51] Only remove the silences that adds nothing.
+[4:37.49] the original clip was around fifty seconds.
+[4:39.97] After the plan cuts, it came down to roughly forty-one seconds.
+[4:43.85] Once I approved the plan, Claude used FFmpeg to create the clean, rough cut.
+[4:49.11] At this point, there were still no graphics, no B-rolls, no music, just the strongest version of my actual recording.
+[4:56.57] But there was one problem.
+[4:58.73] I recorded this video without my proper mic, so even though the edit was cleaner, the audio still needed work.
+[5:05.87] ⟦INSERT before: sample clip plays with its own audio (3.5s)⟧
+[5:09.83] so I used Descript audio sound to reduce the room noise, clarity, and make the voice feel more like studio audio, but still keep my natural voice.
+[5:20.15] Now we finally have a clean foundation, which means we can move to the visual edit.
+[5:20.19] ⟦INSERT after: sample clip plays with its own audio (3.5s)⟧
+[5:28.85] So step four is the design.
+[5:31.17] This time, I didn't ask Claude what should I cut.
+[5:34.73] I asked, "What should the viewer see while I'm saying this?" Claude analyzed the transcript again and decided where I should stay full screen, where we need typography, graphics, screen visuals, B-rolls, or picture-in-picture.
+[5:48.49] When the information was more important than my face, I wanted my video in a rounded card in the bottom left while the main screen explains what I am talking about.
+[5:58.57] Then I added one permanent rule: never cover my face.
+[6:02.05] For the style, I wanted something clean, premium, modern with that Apple-style liquid glass look.
+[6:08.21] That's where hyperframes came in.
+[6:10.29] Claude could use hyperframes to build and animate the graphics and render them directly into the video.
+[6:17.29] I also gave it a rough visual balance around forty percent me on camera, thirty percent graphics and typography, twenty-five percent supporting screen visuals, and around five percent B-rolls and transitions.
+[6:29.79] Not because those numbers have to be exact, but because I don't want AI adding random animations everywhere.
+[6:36.85] The visuals should help the explanation.
+[6:39.33] So step five is to assemble the video.
+[6:42.33] Once the visuals were ready, we moved to the final build.
+[6:45.57] ElevenLabs generated the background music and a few subtle sound effects and I specifically told Claude, "Keep them minimal.
+[6:53.29] The voice should always be the focus." And then Claude brought all together the rough cut, graphic captions, supporting visuals, music, and sound effects and created review version one.
+[7:05.09] This was the first moment I could actually see the full edit coming together.
+[7:09.29] But I still didn't just accept whatever Claude created.
+[7:13.01] I watched the whole thing and gave timestamped feedback, things like graphic comes in too early, the music is too loud, keep me on screen longer here, remove this transaction, Claude applied only the changes I approved, and then I asked it to save the reusable rule behind those changes.
+[7:30.37] So instead of remembering a specific timestamp, it remembers things like don't cover my face, keep the music subtle, don't overuse B-roll, and preserve natural pauses.
+[7:40.53] That means the next video can start closer to my style.
+[7:44.01] and the final step is review and export.
+[7:46.41] Finally, I didn't want Claude to just export the video and say done.
+[7:51.17] I asked it to run a complete QA check.
+[7:54.01] Claude checked for black frames, frozen frames, long silences, audio sync, missing assets, broken graphics, and anything covering my face.
+[8:02.65] it also checked the graphic contrast and the final edit passed all checks.
+[8:06.93] And finally, it exported the finished video.
+[8:09.65] The final clip came out at around forty-one point eight seconds, thousand eighty by nine twenty, thirty frames per second, with the final audio normalized for playback.
+[8:19.32] ⟦INSERT result: sample clip plays with its own audio (44.5s)⟧
+[9:03.86] So finally the conclusion is, so did Claude Code edit the entire video?
+[9:09.93] In a way, yes.
+[9:11.06] But Claude itself didn't replace every tool.
+[9:13.94] Claude Code was the coordinator.
+[9:16.14] ElevenLabs understood the footage and handled the sound.
+[9:19.86] FFmpeg processed the video.
+[9:21.76] Descript changed the audio.
+[9:23.34] Hyperframes created the visual layer.
+[9:25.70] And Claude managed how everything worked together.
+[9:28.78] I still made the creative decisions, but a lot of the repetitive editing work was handled by the system.
+[9:35.14] And now, because Claude has saved my editing preferences, the next video should be even easier, and that's where this gets really interesting.
+[9:45.32] And that's how I used Claude Code to edit this video.
+[9:49.16] If you enjoyed this experiment and want to see more practical AI tools, tutorials, and experiments, make sure to like this video and subscribe to AI with Kalyan.
+[9:59.56] I've also shared the prompts, tools, and other useful resources in the description below and the pinned comment, so don't forget to check them out.
+[10:08.18] Thanks for watching, and I'll see you in the next video

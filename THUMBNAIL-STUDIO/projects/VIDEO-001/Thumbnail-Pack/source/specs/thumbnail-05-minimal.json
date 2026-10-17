@@ -1,0 +1,63 @@
+{
+ "option": "05",
+ "file": "thumbnail-05-minimal",
+ "archetype": "Minimal premium",
+ "headline": "CAN IT EDIT?",
+ "story": "Just the question and the real Claude Code panel reporting its rough cut and review version, lit like a product shot.",
+ "evidence": [
+  "Screen Recording 2026-10-09 at 12.37.52 pm @ 5 s (Claude Code panel: 'Rough cut is done… Review version v1')"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(700px 520px at 78% 48%, rgba(232,119,95,.38), transparent 68%), radial-gradient(1200px 700px at 30% 120%, rgba(40,40,80,.5), transparent 70%), #07070b"
+  },
+  {
+   "id": "panel",
+   "type": "image",
+   "role": "focal",
+   "src": "Thumbnail-Pack/assets/screens/cc-review-mid.png",
+   "x": 640,
+   "y": 96,
+   "w": 720,
+   "h": 540,
+   "radius": 20,
+   "border": "2px solid rgba(255,255,255,.28)",
+   "shadow": "0 0 90px rgba(232,119,95,.45), 0 40px 80px rgba(0,0,0,.8)",
+   "css": "transform:perspective(1400px) rotateY(-14deg) rotateX(3deg);",
+   "position": "left top"
+  },
+  {
+   "id": "claude-wordmark",
+   "type": "image",
+   "role": "logo",
+   "src": "Thumbnail-Pack/assets/logo/claude-wordmark.png",
+   "x": 60,
+   "y": 70,
+   "w": 220,
+   "h": 48,
+   "fit": "contain",
+   "canva": "separate"
+  },
+  {
+   "id": "headline",
+   "type": "text",
+   "role": "headline",
+   "text": "CAN IT\nEDIT?",
+   "x": 56,
+   "y": 210,
+   "size": 158,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 30px rgba(0,0,0,.65)",
+   "highlight": [
+    {
+     "word": "EDIT?",
+     "color": "#E8775F"
+    }
+   ],
+   "lineHeight": 0.9
+  }
+ ]
+}

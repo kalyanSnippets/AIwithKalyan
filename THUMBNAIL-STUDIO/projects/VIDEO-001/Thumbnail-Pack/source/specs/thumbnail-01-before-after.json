@@ -1,0 +1,88 @@
+{
+ "option": "01",
+ "file": "thumbnail-01-before-after",
+ "archetype": "Before vs After",
+ "headline": "RAW → EDITED",
+ "story": "The same 41 s clip before and after the Claude Code + HyperFrames workflow: plain raw take on the left, the edited short with motion graphics on the right.",
+ "evidence": [
+  "compositions/CLD_1279/media/sample-raw.mp4 @ 36 s (raw take, shown at 0:38 of the final video)",
+  "compositions/CLD_1279/media/sample-edited.mp4 @ 21 s (Claude-edited short, shown at 0:54 and 8:13–8:55)"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 600px at 75% 30%, rgba(232,119,95,.22), transparent 70%), radial-gradient(800px 600px at 0% 100%, rgba(90,100,255,.16), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "raw-card",
+   "type": "image",
+   "role": "evidence",
+   "src": "Thumbnail-Pack/assets/frames/raw-36.png",
+   "x": 36,
+   "y": 30,
+   "w": 372,
+   "h": 660,
+   "radius": 26,
+   "border": "3px solid rgba(255,255,255,.35)",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "filter": "saturate(.9)"
+  },
+  {
+   "id": "edited-card",
+   "type": "image",
+   "role": "focal",
+   "src": "Thumbnail-Pack/assets/frames/edited-21.png",
+   "x": 872,
+   "y": 30,
+   "w": 372,
+   "h": 660,
+   "radius": 26,
+   "border": "4px solid #E8775F",
+   "shadow": "0 0 60px rgba(232,119,95,.55), 0 24px 60px rgba(0,0,0,.6)"
+  },
+  {
+   "id": "h-raw",
+   "type": "text",
+   "role": "headline",
+   "text": "RAW",
+   "x": 452,
+   "y": 132,
+   "size": 150,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 30px rgba(0,0,0,.65)",
+   "align": "center",
+   "w": 376
+  },
+  {
+   "id": "arrow",
+   "type": "icon",
+   "name": "arrow-right",
+   "x": 580,
+   "y": 300,
+   "w": 120,
+   "h": 120,
+   "color": "#E8775F",
+   "stroke": 3
+  },
+  {
+   "id": "h-edited",
+   "type": "text",
+   "role": "headline",
+   "text": "EDITED",
+   "x": 440,
+   "y": 452,
+   "size": 100,
+   "color": "#0B0B12",
+   "align": "center",
+   "w": 400,
+   "bg": {
+    "color": "#E8775F",
+    "padX": 18,
+    "padY": 8,
+    "radius": 14
+   }
+  }
+ ]
+}

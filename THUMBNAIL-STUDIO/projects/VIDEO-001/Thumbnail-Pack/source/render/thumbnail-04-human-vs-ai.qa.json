@@ -1,0 +1,159 @@
+{
+ "pass": true,
+ "checks": [
+  {
+   "name": "export exists",
+   "pass": true,
+   "detail": "764805 bytes",
+   "severity": "error"
+  },
+  {
+   "name": "dimensions 1280x720",
+   "pass": true,
+   "detail": "1280x720",
+   "severity": "error"
+  },
+  {
+   "name": "format png",
+   "pass": true,
+   "detail": "png",
+   "severity": "error"
+  },
+  {
+   "name": "not blank",
+   "pass": true,
+   "detail": "pixel stdev 66.7 (blank/placeholder images are near 0)",
+   "severity": "error"
+  },
+  {
+   "name": "headline 0–4 words",
+   "pass": true,
+   "detail": "3 words: \"ME vs AI\"",
+   "severity": "warn"
+  },
+  {
+   "name": "total text ≤ 8 words",
+   "pass": true,
+   "detail": "3 words across 3 text layers",
+   "severity": "warn"
+  },
+  {
+   "name": "text size \"ME\"",
+   "pass": true,
+   "detail": "128px → 32px on a 320px-wide mobile thumbnail (min 64px)",
+   "severity": "error"
+  },
+  {
+   "name": "contrast \"ME\"",
+   "pass": true,
+   "detail": "11.46:1 vs background rgb(62,56,55) (min 4.5:1; strokes/shadows not counted)",
+   "severity": "warn"
+  },
+  {
+   "name": "inside frame \"ME\"",
+   "pass": true,
+   "detail": "box {\"x\":40,\"y\":26,\"w\":194,\"h\":122}",
+   "severity": "error"
+  },
+  {
+   "name": "clear of timestamp \"ME\"",
+   "pass": true,
+   "detail": "bottom-right duration badge area",
+   "severity": "warn"
+  },
+  {
+   "name": "text size \"vs\"",
+   "pass": true,
+   "detail": "76px → 19px on a 320px-wide mobile thumbnail (min 64px)",
+   "severity": "error"
+  },
+  {
+   "name": "contrast \"vs\"",
+   "pass": true,
+   "detail": "6.76:1 vs background rgb(232,119,95) (min 4.5:1; strokes/shadows not counted)",
+   "severity": "warn"
+  },
+  {
+   "name": "inside frame \"vs\"",
+   "pass": true,
+   "detail": "box {\"x\":566,\"y\":310,\"w\":124,\"h\":100}",
+   "severity": "error"
+  },
+  {
+   "name": "clear of timestamp \"vs\"",
+   "pass": true,
+   "detail": "bottom-right duration badge area",
+   "severity": "warn"
+  },
+  {
+   "name": "text size \"AI\"",
+   "pass": true,
+   "detail": "128px → 32px on a 320px-wide mobile thumbnail (min 64px)",
+   "severity": "error"
+  },
+  {
+   "name": "contrast \"AI\"",
+   "pass": true,
+   "detail": "11.46:1 vs background rgb(62,56,55) (min 4.5:1; strokes/shadows not counted)",
+   "severity": "warn"
+  },
+  {
+   "name": "inside frame \"AI\"",
+   "pass": true,
+   "detail": "box {\"x\":1080,\"y\":10,\"w\":129,\"h\":122}",
+   "severity": "error"
+  },
+  {
+   "name": "clear of timestamp \"AI\"",
+   "pass": true,
+   "detail": "bottom-right duration badge area",
+   "severity": "warn"
+  },
+  {
+   "name": "text off face \"ME\"",
+   "pass": true,
+   "detail": "0% of the text box overlaps the face box",
+   "severity": "error"
+  },
+  {
+   "name": "text off face \"vs\"",
+   "pass": true,
+   "detail": "0% of the text box overlaps the face box",
+   "severity": "error"
+  },
+  {
+   "name": "text off face \"AI\"",
+   "pass": true,
+   "detail": "0% of the text box overlaps the face box",
+   "severity": "error"
+  },
+  {
+   "name": "one focal point",
+   "pass": true,
+   "detail": "1 layers marked focal/face",
+   "severity": "warn"
+  }
+ ],
+ "metrics": {
+  "texts": [
+   {
+    "text": "ME",
+    "fontSize": 128,
+    "mobilePx": 32,
+    "contrast": 11.46
+   },
+   {
+    "text": "vs",
+    "fontSize": 76,
+    "mobilePx": 19,
+    "contrast": 6.76
+   },
+   {
+    "text": "AI",
+    "fontSize": 128,
+    "mobilePx": 32,
+    "contrast": 11.46
+   }
+  ]
+ }
+}
