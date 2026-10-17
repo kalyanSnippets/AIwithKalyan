@@ -1,0 +1,23 @@
+{
+  "option": "A",
+  "revision": 0,
+  "archetype": "Before/After | Face + Emotion | Minimalist Tech | Curiosity/Mystery | AI Workflow/Result",
+  "headline": "0-4 WORDS",
+  "titleSynergy": "the video title this thumbnail pairs with",
+  "story": "",
+  "curiosity": "",
+  "composition": "",
+  "evidence": "real files under assets/ and where they come from",
+  "background": "",
+  "typography": "",
+  "colors": "",
+  "canva": "which layers are baked, which are separate uploads, which are native text",
+  "image_prompts": [],
+  "why": [],
+  "risks": [],
+  "layers": [
+    { "id": "bg", "type": "fill", "role": "background", "background": "radial-gradient(900px 620px at 65% 40%, rgba(232,119,95,.28), transparent 70%), #0B0B12" },
+    { "id": "face", "type": "image", "role": "face", "src": "assets/cutouts/<name>.png", "x": 0, "y": 0, "w": 1280, "h": 720, "fit": "contain", "faceBox": { "x": 0, "y": 0, "w": 0, "h": 0 }, "canva": "separate" },
+    { "id": "head", "type": "text", "role": "headline", "text": "HEADLINE", "x": 48, "y": 300, "size": 112, "color": "#FFFFFF", "highlight": [{ "word": "HEADLINE", "color": "#E8775F" }], "shadow": "0 6px 24px rgba(0,0,0,.65)" }
+  ]
+}

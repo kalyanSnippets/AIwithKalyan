@@ -1,0 +1,20 @@
+{
+ "option": "A",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 3,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 4,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 4
+ },
+ "verdict": "Strong proof concept. The raw camera frame vs the finished edit's real 25/25 QA screen tells the story in one glance. Two big labels read at 320 px.",
+ "notes": [
+  "rev0 failed: the EDITED label sat on the frame's own truncated UI text plus a burned-in caption, so I swapped in the cropped QA frame and moved the labels to the bottom",
+  "White-on-coral label failed contrast (2.9:1), so it's now ink on coral",
+  "Edge chips on the QA screen are clipped. Acceptable as texture, but the busiest part of the frame"
+ ],
+ "revisions": 1
+}

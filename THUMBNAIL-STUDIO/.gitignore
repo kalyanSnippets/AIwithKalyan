@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+!.env.example
+models/
+*.notext.png
+projects/*/assets/frames/
+projects/*/exports/*.html
+.DS_Store
+# heavy, regenerable inputs (from Kalyan's own footage; commands in each project's assets/README.md)
+projects/*/assets/cutouts/*.png
+projects/*/assets/evidence/
+projects/*/assets/strip/
+projects/*/canva/*.png
+projects/*/exports/history/
+projects/*/canva/*.html

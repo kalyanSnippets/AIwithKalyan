@@ -1,0 +1,155 @@
+{
+ "option": "E",
+ "revision": 1,
+ "titleSynergy": "I Let Claude Code Edit My Entire YouTube Video",
+ "archetype": "AI Workflow/Result",
+ "headline": "RAW → DONE",
+ "story": "The pipeline in one glance: raw footage in, Claude Code orchestrating the tools, a finished video out that passed 25/25 automated QA checks (true: the final edit's QA ring).",
+ "curiosity": "What happens in the middle step, and what are the tools?",
+ "composition": "Three-beat flow left to right: the raw frame card, then a Claude Code terminal tile, then the biggest element, the finished edit's real 25/25 QA screen, with a green proof badge. 'RAW → DONE' runs along the top.",
+ "evidence": "assets/frames/k3.png (raw camera frame); assets/evidence/final-486-qa-crop.png (the real 25/25 QA ring in the finished edit)",
+ "background": "Ink with a soft coral bloom behind the middle tile (CSS).",
+ "typography": "'RAW → DONE' in Inter Display Black at 112 px. The green proof badge reads 'ALL CHECKS PASSED' at 40 px. A 'Claude Code' label sits under the terminal icon.",
+ "colors": "Ink, white, coral for the process and green for verified.",
+ "canva": "Cards are separate uploads; arrows, tiles and the badge are shapes; text is native.",
+ "image_prompts": [],
+ "why": [
+  "Specific, verifiable proof (25/25 QA) that competitors can't claim",
+  "Explains the 'how' the video promises"
+ ],
+ "risks": [
+  "Three objects is more than one focal point; the result card must dominate",
+  "The 25/25 badge must stay true to the video (it is)"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 620px at 50% 55%, rgba(232,119,95,.28), transparent 70%), radial-gradient(700px 600px at 10% 100%, rgba(110,120,255,.20), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "raw",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/frames/k3.png",
+   "x": 36,
+   "y": 268,
+   "w": 330,
+   "h": 186,
+   "radius": 16,
+   "filter": "saturate(.5) brightness(.85)",
+   "border": "3px solid rgba(255,255,255,.5)",
+   "canva": "separate"
+  },
+  {
+   "id": "a1",
+   "type": "icon",
+   "name": "chevron-right",
+   "x": 368,
+   "y": 329,
+   "w": 64,
+   "h": 64,
+   "color": "#E8775F",
+   "stroke": 3.5
+  },
+  {
+   "id": "tile",
+   "type": "shape",
+   "x": 430,
+   "y": 268,
+   "w": 200,
+   "h": 186,
+   "radius": 26,
+   "background": "rgba(18,18,26,.95)",
+   "border": "3px solid #E8775F",
+   "shadow": "0 0 60px rgba(232,119,95,.5)"
+  },
+  {
+   "id": "term",
+   "type": "icon",
+   "name": "square-terminal",
+   "x": 480,
+   "y": 284,
+   "w": 100,
+   "h": 100,
+   "color": "#E8775F",
+   "stroke": 2
+  },
+  {
+   "id": "tlabel",
+   "type": "text",
+   "role": "detail",
+   "text": "Claude Code",
+   "x": 448,
+   "y": 398,
+   "w": 164,
+   "size": 30,
+   "font": "heavy",
+   "color": "#FFFFFF",
+   "align": "center",
+   "letterSpacing": "0"
+  },
+  {
+   "id": "a2",
+   "type": "icon",
+   "name": "chevron-right",
+   "x": 632,
+   "y": 329,
+   "w": 64,
+   "h": 64,
+   "color": "#E8775F",
+   "stroke": 3.5
+  },
+  {
+   "id": "done",
+   "type": "image",
+   "role": "focal",
+   "src": "assets/evidence/final-486-qa-crop.png",
+   "x": 700,
+   "y": 180,
+   "w": 540,
+   "h": 360,
+   "fit": "cover",
+   "radius": 22,
+   "border": "4px solid rgba(255,255,255,.9)",
+   "shadow": "0 30px 80px rgba(0,0,0,.6)",
+   "canva": "separate"
+  },
+  {
+   "id": "badge",
+   "type": "text",
+   "role": "proof",
+   "text": "✓ ALL CHECKS PASSED",
+   "x": 720,
+   "y": 562,
+   "size": 40,
+   "font": "display",
+   "color": "#0B0B12",
+   "bg": {
+    "color": "#4CD68A",
+    "padX": 22,
+    "padY": 8,
+    "radius": 14
+   },
+   "letterSpacing": "0"
+  },
+  {
+   "id": "head",
+   "type": "text",
+   "role": "headline",
+   "text": "RAW → DONE",
+   "x": 40,
+   "y": 64,
+   "size": 112,
+   "color": "#FFFFFF",
+   "highlight": [
+    {
+     "word": "DONE",
+     "color": "#E8775F"
+    }
+   ],
+   "shadow": "0 6px 24px rgba(0,0,0,.65)"
+  }
+ ]
+}

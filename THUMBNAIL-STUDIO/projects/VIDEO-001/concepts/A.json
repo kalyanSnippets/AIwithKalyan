@@ -1,0 +1,117 @@
+{
+ "option": "A",
+ "revision": 1,
+ "titleSynergy": "I Let Claude Code Edit My Entire YouTube Video",
+ "archetype": "Before/After",
+ "headline": "RAW → EDITED",
+ "story": "The same video, before and after Claude Code edited it. Left: Kalyan's untouched camera frame. Right: the finished edit's real QA screen, where all 25 automated checks passed.",
+ "curiosity": "How did a plain raw recording become this, without a human editor?",
+ "composition": "Hard vertical split with a thin coral seam and a round arrow badge at centre. Labels sit bottom-left on each half, clear of the duration badge. The raw half stays slightly desaturated so the edited half's bright 25/25 wins attention.",
+ "evidence": "assets/frames/k330.png (raw 4K camera frame, CLD_1279 at 5:30); assets/evidence/final-486-qa-crop.png (finished edit at 8:06, the real 25/25 QA ring, cropped above the caption)",
+ "background": "The two real frames are the background; nothing is generated.",
+ "typography": "Two pill labels: 'RAW' (ink on white) and 'EDITED' (ink on coral, 6.5:1), in Inter Display Black at 72 px.",
+ "colors": "Left is muted lavender and grey, right is the dark ink QA screen with a green progress arc and white 25/25. The coral seam and badge tie them together.",
+ "canva": "Base image: both halves baked into one PNG. Labels become native Canva text so the wording can change.",
+ "image_prompts": [],
+ "why": [
+  "Real transformation proof; competitors mostly show logos or timelines",
+  "Instantly understood at feed size: two halves, an arrow and the word EDITED"
+ ],
+ "risks": [
+  "The QA ring's small check labels won't read on mobile; the big 25/25 carries it",
+  "Before/after split layouts are common in editing videos generally"
+ ],
+ "layers": [
+  {
+   "id": "raw",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/frames/k330.png",
+   "x": -330,
+   "y": 0,
+   "w": 1280,
+   "h": 720,
+   "fit": "cover",
+   "filter": "saturate(.55) brightness(.92)",
+   "css": "clip-path: inset(0 310px 0 330px);",
+   "canva": "bake"
+  },
+  {
+   "id": "edit",
+   "type": "image",
+   "role": "focal",
+   "src": "assets/evidence/final-486-qa-crop.png",
+   "x": 640,
+   "y": 0,
+   "w": 640,
+   "h": 720,
+   "fit": "cover",
+   "canva": "bake"
+  },
+  {
+   "id": "seam",
+   "type": "shape",
+   "x": 637,
+   "y": 0,
+   "w": 6,
+   "h": 720,
+   "background": "#E8775F",
+   "shadow": "0 0 30px rgba(232,119,95,.9)"
+  },
+  {
+   "id": "badge",
+   "type": "shape",
+   "x": 590,
+   "y": 310,
+   "w": 100,
+   "h": 100,
+   "radius": 50,
+   "background": "#E8775F",
+   "shadow": "0 8px 30px rgba(0,0,0,.5)"
+  },
+  {
+   "id": "arrow",
+   "type": "icon",
+   "name": "arrow-right",
+   "x": 612,
+   "y": 332,
+   "w": 56,
+   "h": 56,
+   "color": "#FFFFFF",
+   "stroke": 3
+  },
+  {
+   "id": "lab-raw",
+   "type": "text",
+   "role": "label",
+   "text": "RAW",
+   "x": 36,
+   "y": 590,
+   "size": 72,
+   "color": "#1A1A22",
+   "bg": {
+    "color": "rgba(255,255,255,.88)",
+    "padX": 22,
+    "padY": 8,
+    "radius": 14
+   }
+  },
+  {
+   "id": "lab-edit",
+   "type": "text",
+   "role": "headline",
+   "text": "EDITED",
+   "x": 676,
+   "y": 590,
+   "size": 72,
+   "color": "#0B0B12",
+   "bg": {
+    "color": "#E8775F",
+    "padX": 22,
+    "padY": 8,
+    "radius": 14
+   },
+   "shadow": "none"
+  }
+ ]
+}

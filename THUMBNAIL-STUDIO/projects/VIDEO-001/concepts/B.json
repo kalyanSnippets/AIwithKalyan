@@ -1,0 +1,106 @@
+{
+ "option": "B",
+ "revision": 0,
+ "titleSynergy": "I Let Claude Code Edit My Entire YouTube Video",
+ "archetype": "Face + Emotion",
+ "headline": "I DIDN'T EDIT THIS",
+ "story": "Kalyan reacts, half impressed and half sceptical, to a video he didn't edit himself. The edit came from one instruction to Claude Code.",
+ "curiosity": "If he didn't edit it, who did, and how good is it?",
+ "composition": "Face right of centre at about 50% of frame height, sharply lit, with a coral rim glow. Text block left-aligned on the left third with the prompt card above it. The face looks into the lens.",
+ "evidence": "assets/frames/k121.png (genuine expression from CLD_1279 at 2:01, own footage); the prompt matches what he typed in the video",
+ "background": "Dark ink with a coral glow behind the head (CSS gradient). In the Canva version, optionally the generated studio background (Canva media MAHYQV3aO4o).",
+ "typography": "'I DIDN'T EDIT THIS' in Inter Display Black, two lines, 112 px, with DIDN'T in coral. The prompt card text is 36 px, secondary.",
+ "colors": "Ink background, white text, one coral accent. Warm skin against the cool dark background separates the subject.",
+ "canva": "Upload the face cutout separately (canva: separate) so it can be nudged. Text is native.",
+ "image_prompts": [
+  "Cinematic out-of-focus background of a dark modern video editing studio at night… (used: Canva generate-image → MAHYQV3aO4o)"
+ ],
+ "why": [
+  "A real, believable face (vidIQ penalised performative faces)",
+  "The claim is literally true per the video ('I didn't manually edit it')",
+  "The text poses a question the title answers ('Claude Code')"
+ ],
+ "risks": [
+  "4-word headline plus a prompt card is the busiest of the five",
+  "Face-plus-text-on-dark is a familiar layout"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 620px at 72% 38%, rgba(232,119,95,.28), transparent 70%), radial-gradient(700px 600px at 10% 100%, rgba(110,120,255,.20), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "glow",
+   "type": "shape",
+   "x": 700,
+   "y": 20,
+   "w": 560,
+   "h": 560,
+   "radius": 280,
+   "background": "radial-gradient(circle, rgba(232,119,95,.55), rgba(232,119,95,0) 68%)"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k121.png",
+   "x": 79,
+   "y": -100,
+   "w": 1519,
+   "h": 888,
+   "fit": "contain",
+   "faceBox": {
+    "x": 784,
+    "y": 70,
+    "w": 351,
+    "h": 360
+   },
+   "filter": "drop-shadow(0 0 18px rgba(232,119,95,.55)) contrast(1.06) saturate(1.05)",
+   "overflow": "visible",
+   "canva": "separate"
+  },
+  {
+   "id": "card",
+   "type": "shape",
+   "x": 48,
+   "y": 92,
+   "w": 560,
+   "h": 104,
+   "radius": 18,
+   "background": "rgba(18,18,26,.92)",
+   "border": "2px solid rgba(255,255,255,.18)",
+   "shadow": "0 18px 50px rgba(0,0,0,.5)"
+  },
+  {
+   "id": "prompt",
+   "type": "text",
+   "role": "detail",
+   "text": "› edit my entire video",
+   "x": 76,
+   "y": 122,
+   "size": 40,
+   "font": "bold",
+   "color": "#F6B39B",
+   "letterSpacing": "0"
+  },
+  {
+   "id": "head",
+   "type": "text",
+   "role": "headline",
+   "text": "I DIDN'T\nEDIT THIS",
+   "x": 44,
+   "y": 300,
+   "size": 116,
+   "color": "#FFFFFF",
+   "highlight": [
+    {
+     "word": "DIDN'T",
+     "color": "#E8775F"
+    }
+   ],
+   "shadow": "0 6px 24px rgba(0,0,0,.65)"
+  }
+ ]
+}

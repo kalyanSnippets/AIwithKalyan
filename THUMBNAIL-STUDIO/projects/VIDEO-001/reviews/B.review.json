@@ -1,0 +1,20 @@
+{
+ "option": "B",
+ "scores": {
+  "legibility": 4,
+  "curiosity": 5,
+  "hierarchy": 4,
+  "isolation": 5,
+  "uniqueness": 3,
+  "synergy": 4,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Most human and emotionally direct. A real raised-brow expression, coral rim light and a true four-word claim that the title resolves.",
+ "notes": [
+  "The prompt card text (40 px) is secondary and soft on mobile; the headline carries the thumbnail",
+  "Face-plus-headline-on-dark is a common layout in the niche (similar-thumbnail search), so it differs less from references than A, C or E",
+  "'I didn't edit this' is accurate: the video says 'I didn't even manually edit it'"
+ ],
+ "revisions": 0
+}

@@ -1,0 +1,14 @@
+{
+  "export": { "width": 1280, "height": 720, "format": "png" },
+  "options": ["A", "B", "C", "D", "E"],
+  "archetypes": {
+    "A": "Before/After",
+    "B": "Face + Emotion",
+    "C": "Minimalist Tech",
+    "D": "Curiosity/Mystery",
+    "E": "AI Workflow/Result"
+  },
+  "research": { "minVideos": 15, "referenceThumbnails": [5, 10], "windows": ["threeMonths", "oneYear"] },
+  "review": { "maxRevisionsPerConcept": 2, "reviseBelowScore": 70 },
+  "cutoutModelUrl": "https://storage.googleapis.com/mediapipe-models/image_segmenter/selfie_multiclass_256x256/float32/latest/selfie_multiclass_256x256.tflite"
+}

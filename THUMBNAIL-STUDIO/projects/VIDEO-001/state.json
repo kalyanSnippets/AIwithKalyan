@@ -1,0 +1,65 @@
+{
+  "id": "VIDEO-001",
+  "topic": "Claude Code edits my entire YouTube video",
+  "workingTitle": "I Let Claude Code Edit My Entire YouTube Video",
+  "notes": "",
+  "createdAt": "2026-10-17T09:10:33.654Z",
+  "stage": "delivered",
+  "options": {
+    "A": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "B": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "C": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "D": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "E": {
+      "rendered": true,
+      "qaPass": true
+    }
+  },
+  "approved": null,
+  "history": [
+    {
+      "at": "2026-10-17T09:34:28.267Z",
+      "event": "rendered A,B,C,D,E"
+    },
+    {
+      "at": "2026-10-17T09:34:46.839Z",
+      "event": "rendered A,B,C,D,E"
+    },
+    {
+      "at": "2026-10-17T09:35:48.706Z",
+      "event": "rendered A"
+    },
+    {
+      "at": "2026-10-17T09:36:03.226Z",
+      "event": "rendered A"
+    },
+    {
+      "at": "2026-10-17T09:36:31.637Z",
+      "event": "rendered E"
+    },
+    {
+      "at": "2026-10-17T09:36:41.222Z",
+      "event": "rendered E"
+    },
+    {
+      "at": "2026-10-17T09:40:33.795Z",
+      "event": "rendered A,B,C,D,E"
+    },
+    {
+      "at": "2026-10-17T09:40:49.461Z",
+      "event": "delivered"
+    }
+  ]
+}

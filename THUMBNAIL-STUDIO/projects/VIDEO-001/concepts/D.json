@@ -1,0 +1,105 @@
+{
+ "option": "D",
+ "revision": 0,
+ "titleSynergy": "I Let Claude Code Edit My Entire YouTube Video",
+ "archetype": "Curiosity/Mystery",
+ "headline": "WHO EDITED THIS?",
+ "story": "Kalyan presents a finished, polished frame of his own video and poses the question. The title answers it: Claude Code.",
+ "curiosity": "An explicit open question (vidIQ flagged a missing open question as a weakness on a reference).",
+ "composition": "Kalyan on the left mid-explanation (a natural expression), the finished frame as a tilted card on the right, and a coral question badge on the card's corner. The question sits above the card.",
+ "evidence": "assets/frames/k45.png (own footage, 0:45); assets/evidence/final-186.5.png (finished edit, the step 02 card)",
+ "background": "Ink with a blue-left / coral-right glow (CSS).",
+ "typography": "'WHO EDITED THIS?' in Inter Display Black at 92 px, white with EDITED in coral, placed over the right half.",
+ "colors": "Ink, white, coral; the coral-heavy step 02 frame makes the card glow.",
+ "canva": "Face cutout and finished frame are separate uploads; the question is native text.",
+ "image_prompts": [],
+ "why": [
+  "Genuine curiosity gap with a truthful answer",
+  "Shows the real finished output as the 'mystery object'"
+ ],
+ "risks": [
+  "The question format is common; it relies on the card looking impressive at small size",
+  "The face is smaller than in B"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 620px at 80% 45%, rgba(232,119,95,.28), transparent 70%), radial-gradient(700px 600px at 10% 100%, rgba(110,120,255,.20), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k45.png",
+   "x": -390,
+   "y": -10,
+   "w": 1334,
+   "h": 772,
+   "fit": "contain",
+   "faceBox": {
+    "x": 181,
+    "y": 120,
+    "w": 298,
+    "h": 330
+   },
+   "filter": "drop-shadow(0 0 16px rgba(110,120,255,.45)) contrast(1.05)",
+   "overflow": "visible",
+   "canva": "separate"
+  },
+  {
+   "id": "card",
+   "type": "image",
+   "role": "focal",
+   "src": "assets/evidence/final-186.5.png",
+   "x": 640,
+   "y": 250,
+   "w": 600,
+   "h": 338,
+   "radius": 22,
+   "rotate": 3,
+   "border": "4px solid rgba(255,255,255,.85)",
+   "shadow": "0 30px 80px rgba(0,0,0,.6)",
+   "canva": "separate"
+  },
+  {
+   "id": "qbadge",
+   "type": "shape",
+   "x": 1150,
+   "y": 210,
+   "w": 104,
+   "h": 104,
+   "radius": 52,
+   "background": "#E8775F",
+   "shadow": "0 10px 30px rgba(0,0,0,.5)"
+  },
+  {
+   "id": "q",
+   "type": "text",
+   "role": "detail",
+   "text": "?",
+   "x": 1180,
+   "y": 216,
+   "size": 88,
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "head",
+   "type": "text",
+   "role": "headline",
+   "text": "WHO EDITED\nTHIS?",
+   "x": 650,
+   "y": 36,
+   "size": 96,
+   "color": "#FFFFFF",
+   "highlight": [
+    {
+     "word": "EDITED",
+     "color": "#E8775F"
+    }
+   ],
+   "shadow": "0 6px 24px rgba(0,0,0,.65)"
+  }
+ ]
+}

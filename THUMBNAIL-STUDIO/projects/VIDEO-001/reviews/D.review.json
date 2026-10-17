@@ -1,0 +1,19 @@
+{
+ "option": "D",
+ "scores": {
+  "legibility": 4,
+  "curiosity": 5,
+  "hierarchy": 3,
+  "isolation": 4,
+  "uniqueness": 3,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 4
+ },
+ "verdict": "Best curiosity gap: 'Who edited this?' is answered by the title. Face, card and question compete for first look.",
+ "notes": [
+  "Three focal candidates (face, card, question) make it the least disciplined hierarchy",
+  "The step-02 card is a real frame from the finished edit"
+ ],
+ "revisions": 0
+}

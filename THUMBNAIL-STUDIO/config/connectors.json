@@ -1,0 +1,91 @@
+{
+  "_note": "Audited capabilities. MCP tools are called by Claude Code during /thumbnail, never by these scripts. Re-run the audit (studio doctor + the skill's connector check) whenever the environment changes. Statuses: verified = called successfully in this environment; available = tool schemas present, not yet exercised; blocked = known not to work here; manual = needs the user.",
+  "vidiq": {
+    "kind": "mcp",
+    "server": "vidIQ",
+    "tools": {
+      "vidiq_balance": "0 credits",
+      "vidiq_youtube_search": "5 credits",
+      "vidiq_outliers": "5 credits",
+      "vidiq_trending_videos": "5 credits",
+      "vidiq_similar_thumbnails": "5 credits",
+      "vidiq_get_videos_by_ids": "5 credits",
+      "vidiq_video_stats": "5 credits",
+      "vidiq_score_thumbnail": "5 credits \u2014 requires videoId + title; custom image must be a URL or an uploaded file reference"
+    },
+    "budget": {
+      "perProjectResearchCredits": 80,
+      "askAboveCredits": 80
+    },
+    "status": {
+      "verified": "2026-10-17",
+      "calls": [
+        "vidiq_balance",
+        "vidiq_outliers",
+        "vidiq_youtube_search",
+        "vidiq_similar_thumbnails",
+        "vidiq_score_thumbnail (on published videos)",
+        "vidiq_video_change_history"
+      ],
+      "note": "vidiq_score_thumbnail needs a published videoId + title; a custom image must be a URL or an uploaded file reference, so unpublished local PNGs cannot be scored from this sandbox"
+    }
+  },
+  "canva": {
+    "kind": "mcp",
+    "server": "Canva",
+    "tools": [
+      "create-upload-url",
+      "create-design",
+      "get-create-design-async-job",
+      "read-design",
+      "edit-design",
+      "get-export-formats",
+      "export-design",
+      "remove-background",
+      "generate-image",
+      "create-folder",
+      "list-brand-kits",
+      "search-brand-templates"
+    ],
+    "notes": "edit-design changes are drafts until committed; commit only after the user approves the preview. import-design-from-url / upload-asset-from-url need public URLs \u2014 never re-host private files to get one.",
+    "status": {
+      "verified": "2026-10-17",
+      "works": [
+        "create-design + get-create-design-async-job",
+        "read-design (open_transaction)",
+        "edit-design (replace/format/position/resize text, insert/delete shapes)",
+        "generate-image + get-generate-image-job"
+      ],
+      "uploads": "BLOCKED here: create-upload-url works, but POSTing bytes to www.canva.com is refused by the sandbox network policy (proxy 403). Fix: add www.canva.com to the environment's Allowed domains, see README.",
+      "commit": "edit-design commit requires the user's approval of the preview",
+      "export": "not exercised: export-design download URLs are on export-download.canva.com, which is likely also outside the allow-list"
+    }
+  },
+  "imageGeneration": {
+    "providers": [
+      "Canva generate-image (MCP)",
+      "ElevenLabs creative_generate_image (MCP)"
+    ],
+    "rules": "Backgrounds, props and abstract elements only. Never generate or alter Kalyan's face.",
+    "status": {
+      "verified": "2026-10-17",
+      "note": "Canva generate-image works (media MAHYQV3aO4o), but only a 199x112 preview reaches the sandbox; full resolution is usable inside Canva designs only"
+    }
+  },
+  "local": {
+    "renderer": "playwright-core + Chromium",
+    "imaging": [
+      "sharp",
+      "ffmpeg",
+      "imagemagick"
+    ],
+    "cutout": "MediaPipe selfie_multiclass (scripts/cutout.py)"
+  },
+  "youtube": {
+    "kind": "via vidIQ",
+    "notes": "i.ytimg.com thumbnail downloads may be blocked by the sandbox network policy; record when they are.",
+    "status": {
+      "note": "i.ytimg.com blocked by the sandbox network policy (proxy 403), so competitor thumbnail images cannot be downloaded; visual evidence comes from vidIQ feedback"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "option": "E",
+ "scores": {
+  "legibility": 4,
+  "curiosity": 3,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 4,
+  "synergy": 4,
+  "authenticity": 5,
+  "brand": 4
+ },
+ "verdict": "Explains the 'how' with verifiable proof. The revision made the result card dominant and the proof badge readable.",
+ "notes": [
+  "rev0 scored about 71 on this rubric: small cards and a 4-icon row unreadable at 320 px, so I enlarged the result card, labelled the middle tile and added the 'ALL CHECKS PASSED' badge",
+  "The 'Claude Code' tile label is 30 px (QA warning); it's supporting, not primary",
+  "Shares the QA-screen evidence with A; pick one of A/E so the set doesn't repeat it"
+ ],
+ "revisions": 1
+}

@@ -1,0 +1,20 @@
+{
+ "option": "C",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 3,
+  "hierarchy": 5,
+  "isolation": 4,
+  "uniqueness": 4,
+  "synergy": 3,
+  "authenticity": 4,
+  "brand": 5
+ },
+ "verdict": "Cleanest and lowest-entropy design: one command line, one real filmstrip. Unmissable at feed size, but it repeats the title's idea rather than adding to it.",
+ "notes": [
+  "Lowercase command is calmer than competitors' all-caps claims",
+  "'edit my video' is a paraphrase of his real prompts, not a verbatim command, so authenticity gets 4",
+  "No face; may lose human attention to face-led thumbnails"
+ ],
+ "revisions": 0
+}

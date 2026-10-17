@@ -1,0 +1,42 @@
+{
+  "channel": "AI with Kalyan",
+  "audience": "Global English-speaking tech enthusiasts, creators, working professionals and beginners interested in practical AI, Claude Code, automation and creator workflows.",
+  "voice": "Practical, honest, experiment-driven. Shows real results, never hype.",
+  "colors": {
+    "coral": "#E8775F",
+    "peach": "#F6B39B",
+    "ink": "#0B0B12",
+    "paper": "#F7F5F2",
+    "white": "#FFFFFF",
+    "green": "#4CD68A",
+    "red": "#FF4D4F",
+    "amber": "#FFB547",
+    "violet": "#A78BFA",
+    "blue": "#6EA8FF"
+  },
+  "fonts": {
+    "display": "Inter Display Black (brand/fonts/InterDisplay-Black.otf)",
+    "heavy": "Inter Display ExtraBold",
+    "bold": "Inter Display Bold",
+    "sans": "Inter SemiBold"
+  },
+  "signature": [
+    "Dark ink backgrounds with a single coral accent",
+    "Kalyan's real face from his own footage or photos — never generated or altered identity",
+    "Real evidence (actual screens, real footage frames, real outputs) over fake UI",
+    "0–4 words, Inter Display Black, white or coral, no more than two text colours"
+  ],
+  "rules": [
+    "16:9, 1280x720 PNG",
+    "One focal point",
+    "Readable at 320x180",
+    "No fake results, fake metrics, misleading arrows or exaggerated claims",
+    "No copied competitor layouts; learn principles only",
+    "Product logos only from official sources and only when the product is in the video",
+    "Keep the bottom-right 190x80 px clear (YouTube duration badge)"
+  ],
+  "faceSources": [
+    "media/proxies/CLD_1279-full-1080.mp4 (Kalyan's own camera footage, AIwithKalyan repo)",
+    "brand/faces/ (put approved reference photos here)"
+  ]
+}

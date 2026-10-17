@@ -1,0 +1,64 @@
+{
+  "option": "B",
+  "title": "AI with Kalyan — VIDEO-001 — Option B (Face + Emotion)",
+  "size": {
+    "width": 1280,
+    "height": 720
+  },
+  "steps": [
+    "create-design (brief: blank 1280x720 YouTube thumbnail) → design_id; or reuse canva/<OPT>.json design_id",
+    "create-upload-url + POST bytes for each upload → media ids",
+    "read-design open_transaction → page id + existing element ids; delete generated elements",
+    "edit-design insert_fill base at 0,0 1280x720; insert_fill separate layers at their place",
+    "edit-design add_text + format_text for each text layer",
+    "show the preview; commit only after the user approves; export-design png 1280x720"
+  ],
+  "uploads": [
+    {
+      "name": "B-base.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-001/canva/B-base.png",
+      "place": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "kalyan-k121.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-001/assets/cutouts/kalyan-k121.png",
+      "place": {
+        "left": 79,
+        "top": -100,
+        "width": 1519,
+        "height": 888
+      },
+      "note": "upload, then insert_fill at place"
+    }
+  ],
+  "texts": [
+    {
+      "text": "› edit my entire video",
+      "left": 76,
+      "top": 122,
+      "formatting": {
+        "font_size": 40,
+        "font_weight": "bold",
+        "color": "#F6B39B",
+        "text_align": "start"
+      }
+    },
+    {
+      "text": "I DIDN'T\nEDIT THIS",
+      "left": 44,
+      "top": 300,
+      "formatting": {
+        "font_size": 116,
+        "font_weight": "bold",
+        "color": "#FFFFFF",
+        "text_align": "start"
+      },
+      "note": "stroke/shadow are not settable through the Canva MCP; add an outline effect in the Canva editor if needed"
+    }
+  ]
+}

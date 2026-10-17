@@ -1,0 +1,22 @@
+{
+ "option": "C",
+ "design_id": "DAHYQY_liMY",
+ "title": "Claude Code video thumbnail",
+ "edit_url": "https://www.canva.com/d/FyHANhcfo2BSKgT",
+ "view_url": "https://www.canva.com/d/cmd8xhfFDmNn6Nf",
+ "created": "2026-10-17",
+ "state": "draft \u2014 edits applied in transaction 1193973150352962459, NOT committed (Canva requires the user to approve the preview before saving)",
+ "native_layers": [
+  "text: CLAUDE CODE (40px, #E8775F)",
+  "text: \u203a edit my video (150px, #FFFFFF)",
+  "shape: cursor 26x130 #E8775F",
+  "8 shapes: stylised timeline clips (2 red = cut)",
+  "shape: coral track line"
+ ],
+ "differences_from_local_render": [
+  "Canva default bold font instead of Inter Display Black (fonts can't be set through the Canva MCP)",
+  "the real footage-frame filmstrip is replaced by native shapes because image uploads to www.canva.com are blocked by this environment's network policy",
+  "the background is a near-black image Canva generated; the local render uses a CSS bloom"
+ ],
+ "verified": "after-edit thumbnail and returned document checked against concepts/C.json positions and colours"
+}

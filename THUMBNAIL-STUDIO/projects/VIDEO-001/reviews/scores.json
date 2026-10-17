@@ -1,0 +1,160 @@
+{
+  "disclaimer": "Internal design rubric (1–5 per criterion, weighted to 100). Not a CTR prediction.",
+  "rubric": [
+    {
+      "key": "legibility",
+      "label": "Mobile legibility",
+      "weight": 20,
+      "ask": "Can the text and focal point be read at 320x180 in a feed?"
+    },
+    {
+      "key": "curiosity",
+      "label": "Curiosity & clarity",
+      "weight": 15,
+      "ask": "Is there a clear question or tension a viewer wants resolved, without confusion?"
+    },
+    {
+      "key": "hierarchy",
+      "label": "Focal hierarchy",
+      "weight": 15,
+      "ask": "Is there one immediately identifiable focal point, then text, then supporting detail?"
+    },
+    {
+      "key": "isolation",
+      "label": "Subject isolation",
+      "weight": 10,
+      "ask": "Does the subject separate cleanly from the background (edge, contrast, light)?"
+    },
+    {
+      "key": "uniqueness",
+      "label": "Visual uniqueness",
+      "weight": 10,
+      "ask": "Does it stand apart from the reference thumbnails instead of copying them?"
+    },
+    {
+      "key": "synergy",
+      "label": "Title/thumbnail synergy",
+      "weight": 10,
+      "ask": "Does the image add information the title does not repeat?"
+    },
+    {
+      "key": "authenticity",
+      "label": "Authenticity & accuracy",
+      "weight": 15,
+      "ask": "Is every claim, result and graphic true to the video? Real face, real evidence?"
+    },
+    {
+      "key": "brand",
+      "label": "Brand consistency",
+      "weight": 5,
+      "ask": "Does it feel like AI with Kalyan (coral accent, dark tech, clean type) without being a clone of the others?"
+    }
+  ],
+  "rows": [
+    {
+      "option": "A",
+      "archetype": "Before/After",
+      "headline": "RAW → EDITED",
+      "revision": 1,
+      "scores": {
+        "legibility": 5,
+        "curiosity": 3,
+        "hierarchy": 4,
+        "isolation": 4,
+        "uniqueness": 4,
+        "synergy": 5,
+        "authenticity": 5,
+        "brand": 4
+      },
+      "score": 86,
+      "qaPass": true,
+      "verdict": "Strong proof concept. The raw camera frame vs the finished edit's real 25/25 QA screen tells the story in one glance. Two big labels read at 320 px.",
+      "revise": false,
+      "rank": 2
+    },
+    {
+      "option": "B",
+      "archetype": "Face + Emotion",
+      "headline": "I DIDN'T EDIT THIS",
+      "revision": 0,
+      "scores": {
+        "legibility": 4,
+        "curiosity": 5,
+        "hierarchy": 4,
+        "isolation": 5,
+        "uniqueness": 3,
+        "synergy": 4,
+        "authenticity": 5,
+        "brand": 5
+      },
+      "score": 87,
+      "qaPass": true,
+      "verdict": "Most human and emotionally direct. A real raised-brow expression, coral rim light and a true four-word claim that the title resolves.",
+      "revise": false,
+      "rank": 1
+    },
+    {
+      "option": "C",
+      "archetype": "Minimalist Tech",
+      "headline": "› edit my video",
+      "revision": 0,
+      "scores": {
+        "legibility": 5,
+        "curiosity": 3,
+        "hierarchy": 5,
+        "isolation": 4,
+        "uniqueness": 4,
+        "synergy": 3,
+        "authenticity": 4,
+        "brand": 5
+      },
+      "score": 83,
+      "qaPass": true,
+      "verdict": "Cleanest and lowest-entropy design: one command line, one real filmstrip. Unmissable at feed size, but it repeats the title's idea rather than adding to it.",
+      "revise": false,
+      "rank": 3
+    },
+    {
+      "option": "D",
+      "archetype": "Curiosity/Mystery",
+      "headline": "WHO EDITED THIS?",
+      "revision": 0,
+      "scores": {
+        "legibility": 4,
+        "curiosity": 5,
+        "hierarchy": 3,
+        "isolation": 4,
+        "uniqueness": 3,
+        "synergy": 5,
+        "authenticity": 5,
+        "brand": 4
+      },
+      "score": 83,
+      "qaPass": true,
+      "verdict": "Best curiosity gap: 'Who edited this?' is answered by the title. Face, card and question compete for first look.",
+      "revise": false,
+      "rank": 4
+    },
+    {
+      "option": "E",
+      "archetype": "AI Workflow/Result",
+      "headline": "RAW → DONE",
+      "revision": 1,
+      "scores": {
+        "legibility": 4,
+        "curiosity": 3,
+        "hierarchy": 4,
+        "isolation": 4,
+        "uniqueness": 4,
+        "synergy": 4,
+        "authenticity": 5,
+        "brand": 4
+      },
+      "score": 80,
+      "qaPass": true,
+      "verdict": "Explains the 'how' with verifiable proof. The revision made the result card dominant and the proof badge readable.",
+      "revise": false,
+      "rank": 5
+    }
+  ]
+}
