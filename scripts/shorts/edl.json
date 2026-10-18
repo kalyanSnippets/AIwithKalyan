@@ -1,0 +1,20 @@
+{
+  "_doc": "Shorts cut lists in CAM time (renders/CLD_1279-cam.timeline.json 'out' axis = compositions/CLD_1279/media/cam.mp4). Inserts play sample clips with their own audio.",
+  "short-01": [
+    {"cam": [24.88, 38.36]},
+    {"insert": "sample-raw.mp4", "media": [34.35, 38.95]},
+    {"cam": [38.44, 46.98]},
+    {"insert": "sample-edited.mp4", "media": [32.15, 38.40]},
+    {"cam": [47.92, 70.12]}
+  ],
+  "short-02": [
+    {"cam": [194.40, 203.12]},
+    {"cam": [205.48, 225.24]},
+    {"cam": [233.80, 237.92]},
+    {"cam": [249.44, 260.56]},
+    {"cam": [263.56, 275.04]}
+  ],
+  "short-03": [
+    {"cam": [478.40, 518.60]}
+  ]
+}
