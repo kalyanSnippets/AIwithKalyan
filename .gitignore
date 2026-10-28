@@ -26,3 +26,11 @@ Thumbs.db
 
 # Staged media for compositions (re-creatable from media/ and renders/)
 compositions/**/media/
+
+# REA video project (same rules as the root media/ and renders/)
+REA/media/**
+!REA/media/**/
+!REA/media/**/.gitkeep
+REA/renders/**
+!REA/renders/.gitkeep
+REA/compositions/**/media/
