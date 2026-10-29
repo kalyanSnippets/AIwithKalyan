@@ -1,0 +1,164 @@
+[00:00.33-00:06.25] Hey guys, have you ever seen a cool feature in some app and thought, I want this in my own project,
+[00:06.57-00:13.19] but you have no idea how it is built? Well, this is a tool for exactly that right now everyone in the AI
+[00:13.19-00:19.78] and developer world is talking about. It is called Reverse Engineer Anything. Yes, this is the real
+[00:19.78-00:28.84] name, REA for short. So, now look at this, on GitHub, it has almost 400,000 stars. That is a crazy number
+[00:28.84-00:35.78] for a developer tool and it is free and open source. So what is it? Simple. You see a feature
+[00:35.78-00:43.46] you like in an app, your AI agent like cloud code uses rea to inspect that app, explain how it works,
+[00:43.66-00:48.50] show you the evidence and then help you build your own version. And people are doing some
+[00:48.50-00:54.74] wild things with it. Some traced how the Notion desktop app handles copy and paste all the way
+[00:54.74-01:00.24] from the screen to the main process, people rebuild the sound panning of DXBolt and check
+[01:00.24-01:01.52] it against the original.
+[01:01.82-01:07.16] And one guide shows how to record a web app session and turn it into a practical environment
+[01:07.16-01:08.92] for all the AI agents.
+[01:09.28-01:10.08] So why the hype?
+[01:10.48-01:12.40] I think there are three reasons for it.
+[01:12.86-01:15.40] One, it is free and open source for everyone.
+[01:15.78-01:20.04] Two, it works on many things like websites, apps, even old binaries.
+[01:20.04-01:27.99] And 3. It shows evidence for every findings with AI that matters a lot because we all know AI can make things up
+[01:27.99-01:32.66] But when you ask me is it really that good? Today I will test it for you
+[01:32.66-01:38.59] I will use it to study a real app and then rebuild my own version with just few problems
+[01:38.59-01:46.88] And stay with me until the end of this video because I will tell you honestly what worked, what did not and downsides nobody is talking about
+[01:47.12-01:52.56] Oh, and by the way, I'm Kalyan, and this is AI with Kalyan, where I share simple practical
+[01:52.56-01:54.38] AI you can try do away.
+[01:54.80-01:57.70] If you like this, tap subscribe, it really helps.
+[01:58.12-01:59.16] Okay, let's go.
+[01:59.44-02:01.54] Let me explain what we are going to do.
+[02:01.84-02:04.28] In simple words, why I picked Weacon?
+[02:04.58-02:06.38] I needed a real app to study.
+[02:06.68-02:10.62] Weacon is an open source, can when bored, a bit like Trello.
+[02:11.00-02:16.31] If you have never used one, you have columns, like to do, doing, and done.
+[02:16.31-02:20.05] Inside each column you have cards and those are your tasks.
+[02:20.56-02:24.08] When the work moves forward, you drag the card to the next column.
+[02:24.54-02:31.22] It has a public demo that anyone can open and it has an MIT license which means it is open source.
+[02:31.68-02:33.34] So I am not touching anything private.
+[02:34.00-02:38.59] And there is one more reason, a Kanban app has a lot of behavior inside.
+[02:39.15-02:42.73] Drag and drop, labels, due dates, checklists, saving data.
+[02:43.23-02:44.93] So it is a great test for VR.
+[02:44.93-02:50.54] What we are trying to achieve? I am not trying to copy the whole vehicle. That would take
+[02:50.54-02:56.60] a lot of time and big team and a lot of prompts. My goal is a small working version. My own
+[02:56.60-03:02.32] app which I will call RIA board. It will have columns, cards, drag and drop, color
+[03:02.32-03:08.19] labels, due dates with red overdue badge and checklists. It will save the data only
+[03:08.19-03:13.51] in my browser. So it will not have login, real time sync between users or a server.
+[03:13.62-03:21.87] In simple words, the expectation is this, a working copy of how the board behaves with my own name and design.
+[03:22.13-03:23.09] Not the full product.
+[03:23.64-03:24.64] Ok, now the setup.
+[03:25.00-03:26.66] First, what we need before we start.
+[03:27.16-03:28.88] So, I am using a Windows laptop.
+[03:29.57-03:32.87] So, Cloud Code needs Windows 10 or the newer version.
+[03:33.25-03:39.01] An internet connection, a cloud account because you signed in the first time, you use Cloud Code.
+[03:39.46-03:43.53] So, the next step is open the PowerShell and type this command.
+[03:43.53-03:48.19] and wait for it to finish, then close the terminal and open it again.
+[03:48.74-03:50.42] Now type this to check it worked.
+[03:50.84-03:52.64] Type clod-version.
+[03:52.82-03:56.28] If you see a version number, clod code is installed.
+[03:56.66-04:01.40] The first time you run it, it opens your browser so you can sign in with your clod account.
+[04:01.89-04:03.21] Just sign in and come back.
+[04:03.84-04:05.52] Next is to check your node version.
+[04:05.90-04:08.68] REA needs nodejs and clod code does not.
+[04:08.98-04:10.36] So this check matters.
+[04:10.36-04:15.04] RIA needs node version 22 or 24 of the newer version.
+[04:15.48-04:21.02] If you get an older version or an error, install the latest node from nodejs.org.
+[04:21.76-04:22.46] Then check again.
+[04:22.80-04:27.58] In the RIA setup, type this command and it may ask OK to proceed.
+[04:28.00-04:30.62] Type yes and then it asks which agent you want.
+[04:30.86-04:31.84] I choose plot code.
+[04:32.39-04:34.65] Then it shows a list of changes it will make.
+[04:35.28-04:36.30] Read it and say yes.
+[04:36.88-04:38.04] And this is very important.
+[04:38.40-04:40.62] It will offer to install hopper.
+[04:40.62-04:45.63] Say no, because we are only working with websites so we do not need it.
+[04:45.97-04:49.21] The next step is restart clod code and check ria.
+[04:49.76-04:52.38] If the clod code is open, close in.
+[04:52.88-04:55.44] Then type this, clod mcp list.
+[04:55.93-04:57.69] You should see ria in the list.
+[04:58.09-05:00.03] If you see it, ria is connected.
+[05:00.49-05:01.61] Add the chrome extension.
+[05:02.29-05:05.25] Install the clod in the chrome extension from the chrome web store.
+[05:05.63-05:08.23] This lets clod test the app in a real browser.
+[05:08.23-05:12.07] If you want the link, I'll put the link in the description below.
+[05:12.60-05:16.30] So the next step is, make a project folder and start clod code.
+[05:16.82-05:19.02] Type these two lines, then start clod.
+[05:19.57-05:20.37] And that is it.
+[05:20.77-05:22.01] Now the real fun begins.
+[05:22.68-05:28.10] Here I'm giving the weekend board demo link and saying it is a web app.
+[05:28.50-05:30.84] So use only the website analysis tools.
+[05:31.22-05:32.90] Do not touch desktop app tools.
+[05:33.16-05:34.94] Do not build anything yet.
+[05:35.18-05:40.06] So in simple words, I said like study this app, but do not build anything yet.
+[05:40.40-05:43.54] And my favorite trick here is the last line.
+[05:43.94-05:48.86] I asked Claude to label every point as absorbed, inferred, or not sure.
+[05:49.12-05:50.72] So it does not just guess.
+[05:51.45-05:54.37] While Claude is working on this, here is a question for you.
+[05:54.81-05:57.13] Think about the apps on your phone right now.
+[05:57.51-06:00.87] Which app would you love to rebuild as your own version?
+[06:00.87-06:06.71] Maybe a Todo app, a habit tracker, a notes app, write in the comments below.
+[06:07.15-06:10.27] I will read them and the best ideas can be my next video.
+[06:10.51-06:11.87] Ok, let's see what cloud form.
+[06:12.38-06:13.14] And look at this.
+[06:13.56-06:18.98] It explains how the lists and cards are structured, how drag and drop works and where the data
+[06:18.98-06:19.50] is stored.
+[06:19.88-06:23.24] And the labels observed, inferred and not sure.
+[06:23.58-06:25.04] This is what makes it trustworthy.
+[06:25.54-06:27.88] This is a part that normally takes hours.
+[06:28.53-06:31.11] So now the cloud knows how the app works.
+[06:31.11-06:32.37] It's time to build.
+[06:32.99-06:36.35] Notice one thing, I tell Claude to use only how the app behaves.
+[06:36.95-06:42.25] My own name, my own sample content, I am not copying anyone's logo, text or images.
+[06:42.71-06:43.73] That is very important.
+[06:44.34-06:47.58] And now this part takes a few minutes, so I'll speed it up.
+[06:48.01-06:49.57] And remember, stay till the end.
+[06:49.89-06:52.87] Because after this, I will tell you the honest downside.
+[06:53.48-06:54.62] Okay, here it is guys.
+[06:54.88-06:57.64] This is my rear board running on my computer.
+[06:58.12-06:59.72] Let me show you what in build.
+[06:59.92-07:04.77] First column, I can add a column, rename it and delete it.
+[07:04.96-07:10.46] So the next cards, I can add a card, edit it and delete it.
+[07:10.78-07:18.46] And the fun part is drawing a card to another column with a real mouse drag and reorder inside
+[07:18.46-07:18.90] the column.
+[07:19.39-07:20.03] And it works.
+[07:20.45-07:25.05] Then the next class, column name is a new date in the past and see the red overview
+[07:25.05-07:25.63] of the batch.
+[07:26.07-07:30.33] And set list with the pro-vizma in the sign panel for editing a card.
+[07:30.89-07:34.23] If I refresh the page, everything is still saved.
+[07:34.55-07:36.73] Here is how close it looks to the webinar.
+[07:37.16-07:38.68] Now what if it did not be?
+[07:39.11-07:40.57] And which part is where you want?
+[07:40.85-07:43.87] So my app saves data only in this browser.
+[07:44.13-07:48.79] So there is no lobby, no rear-tancing between users and no server or database.
+[07:49.21-07:53.05] The original weaker has all of them and my version was not.
+[07:53.60-07:55.68] I did not ask for it in my prompts.
+[07:56.31-07:57.47] The port did not remain.
+[07:57.47-08:03.45] So, give the working copy of how the board behaves, not the full retracement of the real
+[08:03.45-08:03.77] board.
+[08:04.51-08:08.68] Ok, for now the question I promised you is VR worth the fight?
+[08:08.96-08:10.86] My honest answer is yes.
+[08:11.24-08:12.30] It is worth trying.
+[08:12.62-08:17.50] For web apps, going from online disk each other to where I understand how it works and
+[08:17.50-08:21.44] I have a working version in two rows is very powerful.
+[08:21.98-08:25.78] And the evidence, labels, observed, inferred and not sure.
+[08:25.78-08:34.38] That is what I really like the one but begin not imagine even the downside number one is setup is not a log link
+[08:34.38-08:36.22] You need to install more JS
+[08:36.22-08:45.06] cloud code and for testing the crawling thing if you are a company beginner it will take some number to eat
+[08:45.30-08:51.62] Installing website shows from the outside. It cannot see the private code driving on the company server
+[08:51.62-08:54.32] So, you get the behavior, not the full power.
+[08:55.01-08:57.67] Number 3 is result depends on your problem.
+[08:58.32-09:03.17] If you are worried, you get a rig and you still have to test the output yourself.
+[09:03.68-09:04.56] Do not trust it.
+[09:04.70-09:07.94] Number 4 is the tool changes very fast.
+[09:08.76-09:11.14] So some steps may look different when you try.
+[09:11.66-09:15.02] And please remember, use this only on apps you own.
+[09:15.32-09:17.76] Open those apps all when you have Permitian.
+[09:18.02-09:19.94] Learn from them and build your own.
+[09:20.09-09:24.08] Do not copy other pieces of work from my worldly t-shirt.
+[09:24.64-09:27.36] I'll be snorty really for learning and programming.
+[09:28.08-09:32.44] Now the best fact guys, this method is not only for the can-do boards.
+[09:32.76-09:37.96] Step 1. Ask plot to study with viewer century, anything and report it with evidence.
+[09:38.34-09:43.98] Step 2. Ask plot to build your own version, match their look, test it with the real browser,
+[09:44.50-09:49.08] a google app, a notes app, a habit tracker, a booking page, anything.
+[10:15.56-10:19.32] Just change the website link and a feature list in the browser.
+[10:20.00-10:20.22] So here is my home
+[10:20.22-10:21.70] not miss the next video.
+[10:22.32-10:25.02] More AI tutorials are coming and I made them right.
+[10:25.96-10:31.50] If you want to see all I edit my videos you'll need to learn that video is right here.
+[10:31.76-10:33.22] Click on it and watch it next.
+[10:33.73-10:36.77] Thank you so much for watching and see you in the next one.

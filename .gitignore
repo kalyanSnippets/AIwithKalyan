@@ -34,3 +34,8 @@ REA/media/**
 REA/renders/**
 !REA/renders/.gitkeep
 REA/compositions/**/media/
+
+# REA remotion working media (re-creatable from REA/media and REA/renders)
+REA/remotion/public/media/*.mp4
+REA/remotion/public/media/*.wav
+REA/remotion/out/

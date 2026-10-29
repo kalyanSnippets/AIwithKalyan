@@ -1,0 +1,655 @@
+1
+00:00:00,330 --> 00:00:06,250
+Hey guys, have you ever seen a cool feature in some app and thought, I want this in my own project,
+
+2
+00:00:06,570 --> 00:00:13,190
+but you have no idea how it is built? Well, this is a tool for exactly that right now everyone in the AI
+
+3
+00:00:13,190 --> 00:00:19,780
+and developer world is talking about. It is called Reverse Engineer Anything. Yes, this is the real
+
+4
+00:00:19,780 --> 00:00:28,840
+name, REA for short. So, now look at this, on GitHub, it has almost 400,000 stars. That is a crazy number
+
+5
+00:00:28,840 --> 00:00:35,780
+for a developer tool and it is free and open source. So what is it? Simple. You see a feature
+
+6
+00:00:35,780 --> 00:00:43,460
+you like in an app, your AI agent like cloud code uses rea to inspect that app, explain how it works,
+
+7
+00:00:43,660 --> 00:00:48,500
+show you the evidence and then help you build your own version. And people are doing some
+
+8
+00:00:48,500 --> 00:00:54,740
+wild things with it. Some traced how the Notion desktop app handles copy and paste all the way
+
+9
+00:00:54,740 --> 00:01:00,240
+from the screen to the main process, people rebuild the sound panning of DXBolt and check
+
+10
+00:01:00,240 --> 00:01:01,520
+it against the original.
+
+11
+00:01:01,820 --> 00:01:07,160
+And one guide shows how to record a web app session and turn it into a practical environment
+
+12
+00:01:07,160 --> 00:01:08,920
+for all the AI agents.
+
+13
+00:01:09,280 --> 00:01:10,080
+So why the hype?
+
+14
+00:01:10,480 --> 00:01:12,400
+I think there are three reasons for it.
+
+15
+00:01:12,860 --> 00:01:15,400
+One, it is free and open source for everyone.
+
+16
+00:01:15,780 --> 00:01:20,040
+Two, it works on many things like websites, apps, even old binaries.
+
+17
+00:01:20,040 --> 00:01:27,990
+And 3. It shows evidence for every findings with AI that matters a lot because we all know AI can make things up
+
+18
+00:01:27,990 --> 00:01:32,660
+But when you ask me is it really that good? Today I will test it for you
+
+19
+00:01:32,660 --> 00:01:38,590
+I will use it to study a real app and then rebuild my own version with just few problems
+
+20
+00:01:38,590 --> 00:01:46,880
+And stay with me until the end of this video because I will tell you honestly what worked, what did not and downsides nobody is talking about
+
+21
+00:01:47,120 --> 00:01:52,560
+Oh, and by the way, I'm Kalyan, and this is AI with Kalyan, where I share simple practical
+
+22
+00:01:52,560 --> 00:01:54,380
+AI you can try do away.
+
+23
+00:01:54,800 --> 00:01:57,700
+If you like this, tap subscribe, it really helps.
+
+24
+00:01:58,120 --> 00:01:59,160
+Okay, let's go.
+
+25
+00:01:59,440 --> 00:02:01,540
+Let me explain what we are going to do.
+
+26
+00:02:01,840 --> 00:02:04,280
+In simple words, why I picked Weacon?
+
+27
+00:02:04,580 --> 00:02:06,380
+I needed a real app to study.
+
+28
+00:02:06,680 --> 00:02:10,620
+Weacon is an open source, can when bored, a bit like Trello.
+
+29
+00:02:11,000 --> 00:02:16,310
+If you have never used one, you have columns, like to do, doing, and done.
+
+30
+00:02:16,310 --> 00:02:20,050
+Inside each column you have cards and those are your tasks.
+
+31
+00:02:20,560 --> 00:02:24,080
+When the work moves forward, you drag the card to the next column.
+
+32
+00:02:24,540 --> 00:02:31,220
+It has a public demo that anyone can open and it has an MIT license which means it is open source.
+
+33
+00:02:31,680 --> 00:02:33,340
+So I am not touching anything private.
+
+34
+00:02:34,000 --> 00:02:38,590
+And there is one more reason, a Kanban app has a lot of behavior inside.
+
+35
+00:02:39,150 --> 00:02:42,730
+Drag and drop, labels, due dates, checklists, saving data.
+
+36
+00:02:43,230 --> 00:02:44,930
+So it is a great test for VR.
+
+37
+00:02:44,930 --> 00:02:50,540
+What we are trying to achieve? I am not trying to copy the whole vehicle. That would take
+
+38
+00:02:50,540 --> 00:02:56,600
+a lot of time and big team and a lot of prompts. My goal is a small working version. My own
+
+39
+00:02:56,600 --> 00:03:02,320
+app which I will call RIA board. It will have columns, cards, drag and drop, color
+
+40
+00:03:02,320 --> 00:03:08,190
+labels, due dates with red overdue badge and checklists. It will save the data only
+
+41
+00:03:08,190 --> 00:03:13,510
+in my browser. So it will not have login, real time sync between users or a server.
+
+42
+00:03:13,620 --> 00:03:21,870
+In simple words, the expectation is this, a working copy of how the board behaves with my own name and design.
+
+43
+00:03:22,130 --> 00:03:23,090
+Not the full product.
+
+44
+00:03:23,640 --> 00:03:24,640
+Ok, now the setup.
+
+45
+00:03:25,000 --> 00:03:26,660
+First, what we need before we start.
+
+46
+00:03:27,160 --> 00:03:28,880
+So, I am using a Windows laptop.
+
+47
+00:03:29,570 --> 00:03:32,870
+So, Cloud Code needs Windows 10 or the newer version.
+
+48
+00:03:33,250 --> 00:03:39,010
+An internet connection, a cloud account because you signed in the first time, you use Cloud Code.
+
+49
+00:03:39,460 --> 00:03:43,530
+So, the next step is open the PowerShell and type this command.
+
+50
+00:03:43,530 --> 00:03:48,190
+and wait for it to finish, then close the terminal and open it again.
+
+51
+00:03:48,740 --> 00:03:50,420
+Now type this to check it worked.
+
+52
+00:03:50,840 --> 00:03:52,640
+Type clod-version.
+
+53
+00:03:52,820 --> 00:03:56,280
+If you see a version number, clod code is installed.
+
+54
+00:03:56,660 --> 00:04:01,400
+The first time you run it, it opens your browser so you can sign in with your clod account.
+
+55
+00:04:01,890 --> 00:04:03,210
+Just sign in and come back.
+
+56
+00:04:03,840 --> 00:04:05,520
+Next is to check your node version.
+
+57
+00:04:05,900 --> 00:04:08,680
+REA needs nodejs and clod code does not.
+
+58
+00:04:08,980 --> 00:04:10,360
+So this check matters.
+
+59
+00:04:10,360 --> 00:04:15,040
+RIA needs node version 22 or 24 of the newer version.
+
+60
+00:04:15,480 --> 00:04:21,020
+If you get an older version or an error, install the latest node from nodejs.org.
+
+61
+00:04:21,760 --> 00:04:22,460
+Then check again.
+
+62
+00:04:22,800 --> 00:04:27,580
+In the RIA setup, type this command and it may ask OK to proceed.
+
+63
+00:04:28,000 --> 00:04:30,620
+Type yes and then it asks which agent you want.
+
+64
+00:04:30,860 --> 00:04:31,840
+I choose plot code.
+
+65
+00:04:32,390 --> 00:04:34,650
+Then it shows a list of changes it will make.
+
+66
+00:04:35,280 --> 00:04:36,300
+Read it and say yes.
+
+67
+00:04:36,880 --> 00:04:38,040
+And this is very important.
+
+68
+00:04:38,400 --> 00:04:40,620
+It will offer to install hopper.
+
+69
+00:04:40,620 --> 00:04:45,630
+Say no, because we are only working with websites so we do not need it.
+
+70
+00:04:45,970 --> 00:04:49,210
+The next step is restart clod code and check ria.
+
+71
+00:04:49,760 --> 00:04:52,380
+If the clod code is open, close in.
+
+72
+00:04:52,880 --> 00:04:55,440
+Then type this, clod mcp list.
+
+73
+00:04:55,930 --> 00:04:57,690
+You should see ria in the list.
+
+74
+00:04:58,090 --> 00:05:00,030
+If you see it, ria is connected.
+
+75
+00:05:00,490 --> 00:05:01,610
+Add the chrome extension.
+
+76
+00:05:02,290 --> 00:05:05,250
+Install the clod in the chrome extension from the chrome web store.
+
+77
+00:05:05,630 --> 00:05:08,230
+This lets clod test the app in a real browser.
+
+78
+00:05:08,230 --> 00:05:12,070
+If you want the link, I'll put the link in the description below.
+
+79
+00:05:12,600 --> 00:05:16,300
+So the next step is, make a project folder and start clod code.
+
+80
+00:05:16,820 --> 00:05:19,020
+Type these two lines, then start clod.
+
+81
+00:05:19,570 --> 00:05:20,370
+And that is it.
+
+82
+00:05:20,770 --> 00:05:22,010
+Now the real fun begins.
+
+83
+00:05:22,680 --> 00:05:28,100
+Here I'm giving the weekend board demo link and saying it is a web app.
+
+84
+00:05:28,500 --> 00:05:30,840
+So use only the website analysis tools.
+
+85
+00:05:31,220 --> 00:05:32,900
+Do not touch desktop app tools.
+
+86
+00:05:33,160 --> 00:05:34,940
+Do not build anything yet.
+
+87
+00:05:35,180 --> 00:05:40,060
+So in simple words, I said like study this app, but do not build anything yet.
+
+88
+00:05:40,400 --> 00:05:43,540
+And my favorite trick here is the last line.
+
+89
+00:05:43,940 --> 00:05:48,860
+I asked Claude to label every point as absorbed, inferred, or not sure.
+
+90
+00:05:49,120 --> 00:05:50,720
+So it does not just guess.
+
+91
+00:05:51,450 --> 00:05:54,370
+While Claude is working on this, here is a question for you.
+
+92
+00:05:54,810 --> 00:05:57,130
+Think about the apps on your phone right now.
+
+93
+00:05:57,510 --> 00:06:00,870
+Which app would you love to rebuild as your own version?
+
+94
+00:06:00,870 --> 00:06:06,710
+Maybe a Todo app, a habit tracker, a notes app, write in the comments below.
+
+95
+00:06:07,150 --> 00:06:10,270
+I will read them and the best ideas can be my next video.
+
+96
+00:06:10,510 --> 00:06:11,870
+Ok, let's see what cloud form.
+
+97
+00:06:12,380 --> 00:06:13,140
+And look at this.
+
+98
+00:06:13,560 --> 00:06:18,980
+It explains how the lists and cards are structured, how drag and drop works and where the data
+
+99
+00:06:18,980 --> 00:06:19,500
+is stored.
+
+100
+00:06:19,880 --> 00:06:23,240
+And the labels observed, inferred and not sure.
+
+101
+00:06:23,580 --> 00:06:25,040
+This is what makes it trustworthy.
+
+102
+00:06:25,540 --> 00:06:27,880
+This is a part that normally takes hours.
+
+103
+00:06:28,530 --> 00:06:31,110
+So now the cloud knows how the app works.
+
+104
+00:06:31,110 --> 00:06:32,370
+It's time to build.
+
+105
+00:06:32,990 --> 00:06:36,350
+Notice one thing, I tell Claude to use only how the app behaves.
+
+106
+00:06:36,950 --> 00:06:42,250
+My own name, my own sample content, I am not copying anyone's logo, text or images.
+
+107
+00:06:42,710 --> 00:06:43,730
+That is very important.
+
+108
+00:06:44,340 --> 00:06:47,580
+And now this part takes a few minutes, so I'll speed it up.
+
+109
+00:06:48,010 --> 00:06:49,570
+And remember, stay till the end.
+
+110
+00:06:49,890 --> 00:06:52,870
+Because after this, I will tell you the honest downside.
+
+111
+00:06:53,480 --> 00:06:54,620
+Okay, here it is guys.
+
+112
+00:06:54,880 --> 00:06:57,640
+This is my rear board running on my computer.
+
+113
+00:06:58,120 --> 00:06:59,720
+Let me show you what in build.
+
+114
+00:06:59,920 --> 00:07:04,770
+First column, I can add a column, rename it and delete it.
+
+115
+00:07:04,960 --> 00:07:10,460
+So the next cards, I can add a card, edit it and delete it.
+
+116
+00:07:10,780 --> 00:07:18,460
+And the fun part is drawing a card to another column with a real mouse drag and reorder inside
+
+117
+00:07:18,460 --> 00:07:18,900
+the column.
+
+118
+00:07:19,390 --> 00:07:20,030
+And it works.
+
+119
+00:07:20,450 --> 00:07:25,050
+Then the next class, column name is a new date in the past and see the red overview
+
+120
+00:07:25,050 --> 00:07:25,630
+of the batch.
+
+121
+00:07:26,070 --> 00:07:30,330
+And set list with the pro-vizma in the sign panel for editing a card.
+
+122
+00:07:30,890 --> 00:07:34,230
+If I refresh the page, everything is still saved.
+
+123
+00:07:34,550 --> 00:07:36,730
+Here is how close it looks to the webinar.
+
+124
+00:07:37,160 --> 00:07:38,680
+Now what if it did not be?
+
+125
+00:07:39,110 --> 00:07:40,570
+And which part is where you want?
+
+126
+00:07:40,850 --> 00:07:43,870
+So my app saves data only in this browser.
+
+127
+00:07:44,130 --> 00:07:48,790
+So there is no lobby, no rear-tancing between users and no server or database.
+
+128
+00:07:49,210 --> 00:07:53,050
+The original weaker has all of them and my version was not.
+
+129
+00:07:53,600 --> 00:07:55,680
+I did not ask for it in my prompts.
+
+130
+00:07:56,310 --> 00:07:57,470
+The port did not remain.
+
+131
+00:07:57,470 --> 00:08:03,450
+So, give the working copy of how the board behaves, not the full retracement of the real
+
+132
+00:08:03,450 --> 00:08:03,770
+board.
+
+133
+00:08:04,510 --> 00:08:08,680
+Ok, for now the question I promised you is VR worth the fight?
+
+134
+00:08:08,960 --> 00:08:10,860
+My honest answer is yes.
+
+135
+00:08:11,240 --> 00:08:12,300
+It is worth trying.
+
+136
+00:08:12,620 --> 00:08:17,500
+For web apps, going from online disk each other to where I understand how it works and
+
+137
+00:08:17,500 --> 00:08:21,440
+I have a working version in two rows is very powerful.
+
+138
+00:08:21,980 --> 00:08:25,780
+And the evidence, labels, observed, inferred and not sure.
+
+139
+00:08:25,780 --> 00:08:34,380
+That is what I really like the one but begin not imagine even the downside number one is setup is not a log link
+
+140
+00:08:34,380 --> 00:08:36,220
+You need to install more JS
+
+141
+00:08:36,220 --> 00:08:45,060
+cloud code and for testing the crawling thing if you are a company beginner it will take some number to eat
+
+142
+00:08:45,300 --> 00:08:51,620
+Installing website shows from the outside. It cannot see the private code driving on the company server
+
+143
+00:08:51,620 --> 00:08:54,320
+So, you get the behavior, not the full power.
+
+144
+00:08:55,010 --> 00:08:57,670
+Number 3 is result depends on your problem.
+
+145
+00:08:58,320 --> 00:09:03,170
+If you are worried, you get a rig and you still have to test the output yourself.
+
+146
+00:09:03,680 --> 00:09:04,560
+Do not trust it.
+
+147
+00:09:04,700 --> 00:09:07,940
+Number 4 is the tool changes very fast.
+
+148
+00:09:08,760 --> 00:09:11,140
+So some steps may look different when you try.
+
+149
+00:09:11,660 --> 00:09:15,020
+And please remember, use this only on apps you own.
+
+150
+00:09:15,320 --> 00:09:17,760
+Open those apps all when you have Permitian.
+
+151
+00:09:18,020 --> 00:09:19,940
+Learn from them and build your own.
+
+152
+00:09:20,090 --> 00:09:24,080
+Do not copy other pieces of work from my worldly t-shirt.
+
+153
+00:09:24,640 --> 00:09:27,360
+I'll be snorty really for learning and programming.
+
+154
+00:09:28,080 --> 00:09:32,440
+Now the best fact guys, this method is not only for the can-do boards.
+
+155
+00:09:32,760 --> 00:09:37,960
+Step 1. Ask plot to study with viewer century, anything and report it with evidence.
+
+156
+00:09:38,340 --> 00:09:43,980
+Step 2. Ask plot to build your own version, match their look, test it with the real browser,
+
+157
+00:09:44,500 --> 00:09:49,080
+a google app, a notes app, a habit tracker, a booking page, anything.
+
+158
+00:10:15,560 --> 00:10:19,320
+Just change the website link and a feature list in the browser.
+
+159
+00:10:20,000 --> 00:10:20,220
+So here is my home
+
+160
+00:10:20,220 --> 00:10:21,700
+not miss the next video.
+
+161
+00:10:22,320 --> 00:10:25,020
+More AI tutorials are coming and I made them right.
+
+162
+00:10:25,960 --> 00:10:31,500
+If you want to see all I edit my videos you'll need to learn that video is right here.
+
+163
+00:10:31,760 --> 00:10:33,220
+Click on it and watch it next.
+
+164
+00:10:33,730 --> 00:10:36,770
+Thank you so much for watching and see you in the next one.
