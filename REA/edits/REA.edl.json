@@ -25,7 +25,13 @@
   "snap_in": 54.08,
   "snap_out": 62.46,
   "pause_trim_s": 1.1,
-  "dur_after_trim": 7.3
+  "dur_after_trim": 7.3,
+  "remove": [
+   [
+    55.16,
+    57.8
+   ]
+  ]
  },
  {
   "id": "S1-03",
@@ -63,11 +69,17 @@
   "src_in": 157.78,
   "src_out": 243.78,
   "dur": 86.0,
-  "note": "One clean run: wild things > 3 reasons > 'is it really that good' > stay till the end. Pause at 3:03 trimmed",
+  "note": "One clean run: wild things > 3 reasons > 'is it really that good' > stay till the end. Pause at 3:03 trimmed. 'an old DOS game' removed (approved), leaving 'sound panning of DX Ball'",
   "snap_in": 157.68,
   "snap_out": 243.88,
   "pause_trim_s": 6.3,
-  "dur_after_trim": 79.9
+  "dur_after_trim": 79.9,
+  "remove": [
+   [
+    177.3,
+    178.78
+   ]
+  ]
  },
  {
   "id": "S1-06",
@@ -137,7 +149,13 @@
   "snap_in": 121.6,
   "snap_out": 135.02,
   "pause_trim_s": 1.1,
-  "dur_after_trim": 12.3
+  "dur_after_trim": 12.3,
+  "remove": [
+   [
+    121.7,
+    125.74
+   ]
+  ]
  },
  {
   "id": "S2-04",
@@ -207,7 +225,13 @@
   "snap_in": 221.06,
   "snap_out": 227.68,
   "pause_trim_s": 0,
-  "dur_after_trim": 6.6
+  "dur_after_trim": 6.6,
+  "remove": [
+   [
+    222.46,
+    226.02
+   ]
+  ]
  },
  {
   "id": "S2-09",
@@ -277,7 +301,17 @@
   "snap_in": 390.16,
   "snap_out": 452.4,
   "pause_trim_s": 7.2,
-  "dur_after_trim": 55.1
+  "dur_after_trim": 55.1,
+  "remove": [
+   [
+    408.62,
+    413.04
+   ],
+   [
+    416.06,
+    418.3
+   ]
+  ]
  },
  {
   "id": "S2-14",
@@ -334,20 +368,6 @@
   "snap_out": 565.62,
   "pause_trim_s": 0,
   "dur_after_trim": 18.8
- },
- {
-  "id": "S3-02",
-  "section": "S3",
-  "clip": "PXL_20261028_102753700",
-  "clip_key": "E",
-  "src_in": 593.78,
-  "src_out": 652.58,
-  "dur": 58.8,
-  "note": "Explains the 5 report points. Stumble 'basically in the prompt I mentioned' x2 trimmed. Script says do NOT read prompts word by word: candidate to shorten (needs approval)",
-  "snap_in": 593.68,
-  "snap_out": 652.68,
-  "pause_trim_s": 8.0,
-  "dur_after_trim": 51.0
  },
  {
   "id": "S3-03",
@@ -445,7 +465,13 @@
   "snap_in": 907.82,
   "snap_out": 917.6,
   "pause_trim_s": 0.2,
-  "dur_after_trim": 9.6
+  "dur_after_trim": 9.6,
+  "remove": [
+   [
+    909.92,
+    911.0
+   ]
+  ]
  },
  {
   "id": "S5-02",
@@ -459,7 +485,13 @@
   "snap_in": 917.4,
   "snap_out": 944.58,
   "pause_trim_s": 0.2,
-  "dur_after_trim": 27.0
+  "dur_after_trim": 27.0,
+  "remove": [
+   [
+    917.5,
+    920.0
+   ]
+  ]
  },
  {
   "id": "S5-03",
@@ -501,7 +533,13 @@
   "snap_in": 70.32,
   "snap_out": 104.04,
   "pause_trim_s": 0.6,
-  "dur_after_trim": 33.2
+  "dur_after_trim": 33.2,
+  "remove": [
+   [
+    87.14,
+    89.08
+   ]
+  ]
  },
  {
   "id": "S6-01",
@@ -557,7 +595,13 @@
   "snap_in": 174.8,
   "snap_out": 199.8,
   "pause_trim_s": 1.2,
-  "dur_after_trim": 23.8
+  "dur_after_trim": 23.8,
+  "remove": [
+   [
+    179.2,
+    180.56
+   ]
+  ]
  },
  {
   "id": "S6-05",
@@ -578,10 +622,10 @@
   "section": "S7",
   "clip": "PXL_20261028_110231565",
   "clip_key": "F",
-  "src_in": 248.76,
-  "src_out": 253.08,
+  "src_in": 251.3,
+  "src_out": 256.16,
   "dur": 4.32,
-  "note": "'Build any app\u2026the best part guys'",
+  "note": "'Now the best part, guys. This method is not only for the Kanban boards.' Heading read aloud ('Build any app plus subscribe like and share') and the misspoken 'almost anywhere' retakes cut",
   "snap_in": 248.66,
   "snap_out": 253.18,
   "pause_trim_s": 0,
@@ -623,7 +667,7 @@
   "src_in": 307.94,
   "src_out": 310.86,
   "dur": 2.92,
-  "note": "MISSPOKEN: 'which app you REVIEWED' (should be rebuilt). Recommend cut or pickup: needs approval",
+  "note": "KEPT AS SAID by Kalyan: 'which app you reviewed'",
   "snap_in": 307.84,
   "snap_out": 310.96,
   "pause_trim_s": 0,
@@ -641,7 +685,13 @@
   "snap_in": 362.04,
   "snap_out": 385.42,
   "pause_trim_s": 0.6,
-  "dur_after_trim": 22.8
+  "dur_after_trim": 22.8,
+  "remove": [
+   [
+    378.06,
+    379.54
+   ]
+  ]
  },
  {
   "id": "S8-01",

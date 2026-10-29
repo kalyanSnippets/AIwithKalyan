@@ -98,3 +98,13 @@ S3 to S5 still contain waiting/typing time that the screen recordings will speed
 6. **Section 5 and 6 fill-ins** (how close the look is, what broke, what impressed you) are not in the takes. Add a pickup recording or skip?
 
 Nothing has been deleted: the original clips are untouched and every cut is only a range in this list.
+
+## v2: decisions applied (Kalyan, 29 Oct)
+
+1. Windows only. No Mac steps. Footage already Windows.
+2. "an old DOS game" removed from S1-05 (now "the sound panning of DX Ball"). "which app you reviewed" kept exactly as said (S7-04).
+3. Prompts read aloud shortened: S3-02 (E 09:53 to 10:52, the 5-point recital) dropped; the prompt itself is shown on screen. The heading read aloud at F 04:08 ("Build any app plus subscribe like and share") is also cut; S7-01 is now F 04:11 to 04:16.
+4. Section 5 and 6 fill-ins skipped. No pickups.
+5. Screen recordings not provided, so the rough cut stays on the camera track. `REA.rough-cut-markers.json` lists where long silent gaps were (screen-recording slots).
+
+Built with `scripts/rough-cut.py`: 41 ranges, word-snapped, pauses collapsed to about 0.4 s, 10 word-level dup trims. Result 13.6 min, 1080p30 H.264, voice chain applied (highpass, light denoise, gentle EQ and compression, loudnorm -14 LUFS / peak -1.3 dB).
