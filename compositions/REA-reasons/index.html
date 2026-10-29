@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA three reasons</title>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg: #0B0B0D; --ink: #F6F1EC; --mute: rgba(246,241,236,.62); --coral: #E8775F; --coralHi: #FF9E88; --steel: #7F95AB; --lime: #B9E56A; --panel: rgba(255,255,255,.055); --line: rgba(255,255,255,.12); }
+html, body { margin: 0; background: var(--bg); }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--bg); font-family: "Inter", system-ui, sans-serif; color: var(--ink); }
+.fill { position: absolute; inset: 0; }
+.blob { position: absolute; border-radius: 50%; filter: blur(130px); }
+#b1 { width: 900px; height: 900px; left: -250px; top: -300px; background: rgba(232,119,95,.28); }
+#b2 { width: 850px; height: 850px; right: -250px; bottom: -380px; background: rgba(127,149,171,.20); }
+#grid { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 120px 120px; }
+#vig { background: radial-gradient(ellipse at 50% 50%, transparent 55%, rgba(0,0,0,.6) 100%); }
+.clip { position: absolute; inset: 0; }
+.ghost::before { content: attr(data-n); }
+.ghost { position: absolute; left: 30px; top: -90px; font-weight: 800; font-size: 620px; line-height: 1; letter-spacing: -20px; color: rgba(246,241,236,.055); }
+.kick { position: absolute; left: 90px; top: 90px; font-weight: 600; font-size: 30px; letter-spacing: 8px; color: var(--coral); text-transform: uppercase; }
+.h { position: absolute; left: 90px; top: 150px; font-weight: 800; font-size: 150px; line-height: 1.0; letter-spacing: -4px; }
+.h .ln { display: block; overflow: hidden; padding: 10px 0 18px; margin: -10px 0 -18px; }
+.h .ln > span { display: block; }
+.h .hot { color: var(--coral); }
+.sub { position: absolute; left: 94px; top: 500px; font-weight: 600; font-size: 54px; color: var(--mute); }
+.card { position: absolute; background: var(--panel); border: 1px solid var(--line); border-radius: 30px; backdrop-filter: blur(10px); box-shadow: 0 30px 70px rgba(0,0,0,.5); }
+.tag { position: absolute; font-weight: 800; letter-spacing: 3px; }
+svg { overflow: visible; }
+.sat { position: absolute; width: 240px; height: 180px; margin: -90px 0 0 -120px; background: var(--panel); border: 2px solid var(--line); border-radius: 28px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 34px; }
+.mono { font-family: "Inter", monospace; font-weight: 800; letter-spacing: 4px; color: var(--coral); font-size: 40px; }
+.find { position: absolute; left: 0; width: 760px; height: 116px; border-radius: 26px; background: var(--panel); border: 1px solid var(--line); display: flex; align-items: center; gap: 24px; padding: 0 30px; box-sizing: border-box; }
+.find .ck { width: 56px; height: 56px; border-radius: 50%; background: rgba(185,229,106,.16); border: 2px solid var(--lime); display: flex; align-items: center; justify-content: center; }
+.find .bars { flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.find .bars i { display: block; height: 14px; border-radius: 7px; background: rgba(255,255,255,.16); }
+.find .chip { font-weight: 800; font-size: 24px; letter-spacing: 2px; padding: 10px 18px; border-radius: 999px; background: rgba(232,119,95,.18); color: var(--coralHi); border: 1px solid rgba(232,119,95,.5); }
+#bubble { position: absolute; padding: 34px 44px; border-radius: 40px 40px 40px 8px; background: #1b1b1f; border: 2px solid var(--line); font-weight: 800; font-size: 56px; }
+#stamp { position: absolute; border: 8px solid var(--coral); color: var(--coral); border-radius: 18px; padding: 8px 34px; font-weight: 800; font-size: 96px; letter-spacing: 8px; text-transform: uppercase; background: rgba(11,11,13,.7); }
+.dot { position: absolute; width: 22px; height: 22px; margin: -11px; border-radius: 50%; background: var(--ink); opacity: 0; }
+.three { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.three .big { font-weight: 800; font-size: 250px; letter-spacing: -8px; line-height: 1; }
+.three .row { display: flex; gap: 36px; margin-top: 20px; }
+.three .pip { width: 120px; height: 120px; border-radius: 34px; background: var(--panel); border: 2px solid var(--line); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 64px; color: var(--coral); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-reasons" data-start="0" data-width="1920" data-height="1080" data-duration="17">
+  <div class="fill" data-layout-allow-overflow><div class="blob" id="b1"></div><div class="blob" id="b2"></div></div>
+  <div id="grid" class="fill"></div>
+  <div id="vig" class="fill"></div>
+
+  <!-- 0: three reasons -->
+  <section id="sc0" class="clip" data-start="0" data-duration="1.95" data-layout-allow-overlap data-layout-allow-overflow>
+    <div class="three"><div class="big" id="s0t">Three reasons</div><div class="row"><div class="pip" id="p1">1</div><div class="pip" id="p2">2</div><div class="pip" id="p3">3</div></div></div>
+  </section>
+
+  <!-- 1: free and open source -->
+  <section id="sc1" class="clip" data-start="1.9" data-duration="2.95" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion>
+    <div class="ghost" data-n="01"></div>
+    <div class="kick" id="k1">Reason one</div>
+    <div class="h"><span class="ln"><span id="h11">Free &amp;</span></span><span class="ln"><span id="h12" class="hot">open source</span></span></div>
+    <div class="sub" id="s1">for everyone</div>
+    <svg id="lock" width="520" height="560" viewBox="0 0 260 280" style="position:absolute;left:1210px;top:150px">
+      <g id="shackle"><path d="M70 120 V80 a60 60 0 0 1 120 0 V120" fill="none" stroke="#F6F1EC" stroke-width="18" stroke-linecap="round"/></g>
+      <rect x="30" y="118" width="200" height="150" rx="30" fill="#1b1b1f" stroke="#E8775F" stroke-width="8"/>
+      <circle cx="130" cy="184" r="18" fill="#E8775F"/><rect x="124" y="190" width="12" height="40" rx="6" fill="#E8775F"/>
+    </svg>
+    <div id="mit" class="tag" style="left:1560px;top:150px;font-size:64px;border:7px solid #E8775F;color:#E8775F;padding:8px 26px;border-radius:16px;background:rgba(11,11,13,.7)">MIT</div>
+    <div id="dots" class="fill"></div>
+  </section>
+
+  <!-- 2: works on many things -->
+  <section id="sc2" class="clip" data-start="4.8" data-duration="4.25" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion>
+    <div class="ghost" data-n="02"></div>
+    <div class="kick" id="k2">Reason two</div>
+    <div class="h"><span class="ln"><span id="h21">Works on</span></span><span class="ln"><span id="h22" class="hot">many things</span></span></div>
+    <svg class="fill" id="links" width="1920" height="1080" viewBox="0 0 1920 1080"></svg>
+    <div id="orbit" style="position:absolute;left:1330px;top:560px;width:0;height:0">
+      <div id="core" style="position:absolute;left:-110px;top:-110px;width:220px;height:220px;border-radius:50%;background:#E8775F;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:80px;color:#0B0B0D;box-shadow:0 0 90px rgba(232,119,95,.45)">REA</div>
+      <div class="sat" id="sat1"><svg width="86" height="70" viewBox="0 0 86 70"><rect x="4" y="6" width="78" height="58" rx="10" fill="none" stroke="#F6F1EC" stroke-width="5"/><path d="M4 22H82" stroke="#F6F1EC" stroke-width="5"/><circle cx="43" cy="44" r="12" fill="none" stroke="#E8775F" stroke-width="5"/></svg><span>Websites</span></div>
+      <div class="sat" id="sat2"><svg width="86" height="70" viewBox="0 0 86 70"><rect x="6" y="6" width="30" height="26" rx="7" fill="none" stroke="#F6F1EC" stroke-width="5"/><rect x="48" y="6" width="30" height="26" rx="7" fill="none" stroke="#F6F1EC" stroke-width="5"/><rect x="6" y="40" width="30" height="26" rx="7" fill="none" stroke="#F6F1EC" stroke-width="5"/><rect x="48" y="40" width="30" height="26" rx="7" fill="none" stroke="#E8775F" stroke-width="5"/></svg><span>Apps</span></div>
+      <div class="sat" id="sat3"><div class="mono" id="bin">01101</div><span>Old binaries</span></div>
+    </div>
+  </section>
+
+  <!-- 3: evidence -->
+  <section id="sc3" class="clip" data-start="9" data-duration="8" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion>
+    <div class="ghost" data-n="03"></div>
+    <div class="kick" id="k3">Reason three</div>
+    <div class="h"><span class="ln"><span id="h31">Evidence for</span></span><span class="ln"><span id="h32" class="hot">every finding</span></span></div>
+    <div id="stack" style="position:absolute;left:1060px;top:140px;width:780px;height:560px"></div>
+    <div id="bubble" style="left:620px;top:690px"><span id="bt">AI can make things up</span></div>
+    <svg id="cross" width="900" height="120" viewBox="0 0 900 120" style="position:absolute;left:600px;top:710px"><path id="crossp" d="M20 100 L880 20" stroke="#E8775F" stroke-width="12" stroke-linecap="round" fill="none"/></svg>
+    <div id="stamp" style="left:1010px;top:740px">Evidence</div>
+  </section>
+</div>
+<script>
+const rnd = (() => { let s = 777; return () => { s |= 0; s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })();
+const NS = "http://www.w3.org/2000/svg";
+// findings stack
+const stack = document.getElementById("stack");
+for (let i = 0; i < 4; i++) {
+  const d = document.createElement("div"); d.className = "find"; d.style.top = i * 140 + "px"; d.id = "f" + i;
+  d.innerHTML = `<div class="ck"><svg width="30" height="30" viewBox="0 0 30 30"><path d="M5 16 l7 7 l13 -15" fill="none" stroke="#B9E56A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="bars"><i style="width:${70 - i * 8}%"></i><i style="width:${46 + i * 6}%"></i></div><div class="chip">EVIDENCE</div>`;
+  stack.appendChild(d);
+}
+// community dots around the lock
+const dots = document.getElementById("dots");
+for (let i = 0; i < 28; i++) { const d = document.createElement("div"); d.className = "dot"; d.id = "d" + i; if (i % 4 === 0) d.style.background = "#E8775F"; dots.appendChild(d); }
+// link lines core -> satellites
+const links = document.getElementById("links");
+for (let i = 0; i < 3; i++) { const l = document.createElementNS(NS, "line"); l.setAttribute("id", "ln" + i); l.setAttribute("stroke", "rgba(246,241,236,.28)"); l.setAttribute("stroke-width", "4"); l.setAttribute("stroke-dasharray", "10 12"); links.appendChild(l); }
+
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 320, y: 160, duration: 17, ease: "sine.inOut" }, 0);
+tl.fromTo("#b2", { x: 0, y: 0 }, { x: -300, y: -140, duration: 17, ease: "sine.inOut" }, 0);
+tl.fromTo("#grid", { x: 0, scale: 1 }, { x: -240, scale: 1.1, duration: 17, ease: "none" }, 0);
+const mask = (sel, at, d = .6) => tl.fromTo(sel, { yPercent: 110, rotateX: -50, opacity: 0 }, { yPercent: 0, rotateX: 0, opacity: 1, duration: d, ease: "expo.out" }, at);
+const out = (sel, at) => tl.to(sel, { opacity: 0, y: -30, duration: .25, ease: "power2.in" }, at);
+
+// scene 0: "three reasons" at local 0.3
+tl.fromTo("#s0t", { scale: .6, opacity: 0, filter: "blur(24px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: .6, ease: "expo.out" }, .3);
+["#p1", "#p2", "#p3"].forEach((p, i) => tl.fromTo(p, { y: 60, opacity: 0, scale: .7 }, { y: 0, opacity: 1, scale: 1, duration: .45, ease: "back.out(2)" }, .6 + i * .18));
+tl.to("#sc0 .three", { scale: 1.2, opacity: 0, duration: .3, ease: "power3.in" }, 1.6);
+
+// scene 1 (starts 1.9): local times = t - 1.9
+const t1 = 1.9;
+tl.fromTo("#k1", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .5 }, t1 + .05);
+mask("#h11", t1 + .1); mask("#h12", t1 + .25);
+tl.fromTo("#s1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .5, ease: "power3.out" }, t1 + 2.0);
+tl.fromTo("#lock", { scale: .4, opacity: 0, rotate: -12 }, { scale: 1, opacity: 1, rotate: 0, duration: .7, ease: "back.out(1.6)" }, t1 + .3);
+tl.to("#shackle", { y: -42, rotate: -28, transformOrigin: "190px 120px", duration: .5, ease: "back.out(2)" }, t1 + .9);
+tl.fromTo("#mit", { scale: 3, opacity: 0, rotate: -20 }, { scale: 1, opacity: 1, rotate: -8, duration: .28, ease: "power4.in" }, t1 + 1.25);
+tl.fromTo("#mit", { x: 0 }, { x: 8, duration: .05, repeat: 3, yoyo: true }, t1 + 1.55);
+for (let i = 0; i < 28; i++) {
+  const a = (i / 28) * Math.PI * 2, r = 330 + (i % 3) * 70, cx = 1470, cy = 430;
+  tl.fromTo("#d" + i, { x: cx, y: cy, opacity: 0, scale: 0 }, { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r * .7, opacity: .85, scale: 1, duration: .6, ease: "power3.out" }, t1 + 1.8 + i * .008);
+}
+out("#sc1 .h, #sc1 .kick, #sc1 .sub, #sc1 #lock, #sc1 #mit, #sc1 #dots, #sc1 .ghost", t1 + 2.65);
+
+// scene 2 (starts 4.8)
+const t2 = 4.8;
+tl.fromTo("#k2", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .5 }, t2 + .05);
+mask("#h21", t2 + .1); mask("#h22", t2 + .25);
+tl.fromTo("#core", { scale: 0 }, { scale: 1, duration: .6, ease: "back.out(2)" }, t2 + .2);
+const R = 330, ang0 = [-90, 30, 150];
+const sats = ["#sat1", "#sat2", "#sat3"], hit = [1.9, 2.9, 3.4];  // websites 6.7, apps 7.7, binaries 8.2 (local to scene 2)
+const px = (a, rot) => Math.cos((a + rot) * Math.PI / 180) * R, py = (a, rot) => Math.sin((a + rot) * Math.PI / 180) * R * .78;
+const spin = { rot: 0 };
+tl.to(spin, { rot: 40, duration: 4.25, ease: "none", onUpdate: () => {
+  sats.forEach((s, i) => { gsap.set(s, { x: px(ang0[i], spin.rot), y: py(ang0[i], spin.rot) });
+    const l = document.getElementById("ln" + i); l.setAttribute("x1", 1330); l.setAttribute("y1", 560); l.setAttribute("x2", 1330 + px(ang0[i], spin.rot)); l.setAttribute("y2", 560 + py(ang0[i], spin.rot)); });
+} }, t2);
+sats.forEach((s, i) => {
+  tl.fromTo(s, { opacity: 0, scale: .3 }, { opacity: 1, scale: 1, duration: .5, ease: "back.out(1.8)" }, t2 + .5 + i * .15);
+  tl.to(s, { scale: 1.18, borderColor: "#E8775F", boxShadow: "0 0 60px rgba(232,119,95,.45)", duration: .25, ease: "power2.out" }, t2 + hit[i]);
+  tl.to(s, { scale: 1, borderColor: "rgba(255,255,255,.12)", boxShadow: "0 0 0 rgba(0,0,0,0)", duration: .4 }, t2 + hit[i] + .75);
+});
+tl.fromTo("#links", { opacity: 0 }, { opacity: 1, duration: .5 }, t2 + .7);
+tl.fromTo("#bin", { opacity: .3 }, { opacity: 1, duration: .08, repeat: 20, yoyo: true }, t2 + hit[2]);
+out("#sc2 .h, #sc2 .kick, #sc2 #orbit, #sc2 #links, #sc2 .ghost", t2 + 3.95);
+
+// scene 3 (starts 9.0)
+const t3 = 9.0;
+tl.fromTo("#k3", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: .5 }, t3 + .6);
+mask("#h31", t3 + .7); mask("#h32", t3 + 1.0);   // "evidence" 81.5 -> local 9.7 relative to scene
+for (let i = 0; i < 4; i++) tl.fromTo("#f" + i, { x: 120, opacity: 0, scale: .94 }, { x: 0, opacity: 1, scale: 1, duration: .5, ease: "back.out(1.6)" }, t3 + 1.5 + i * .35);
+tl.fromTo("#bubble", { x: -300, opacity: 0, rotate: -6 }, { x: 0, opacity: 1, rotate: 0, duration: .55, ease: "back.out(1.7)" }, t3 + 3.9);
+tl.fromTo("#bubble", { x: 0 }, { x: 10, duration: .06, repeat: 7, yoyo: true, ease: "none" }, t3 + 6.0);
+tl.fromTo("#crossp", { strokeDasharray: 900, strokeDashoffset: 900 }, { strokeDashoffset: 0, duration: .35, ease: "power3.out" }, t3 + 6.5);
+tl.to("#bubble", { opacity: .35, duration: .3 }, t3 + 6.8);
+tl.fromTo("#stamp", { scale: 3.2, opacity: 0, rotate: -14 }, { scale: 1, opacity: 1, rotate: -6, duration: .3, ease: "power4.in" }, t3 + 6.75);
+tl.fromTo("#sc3", { x: 0 }, { x: 6, duration: .04, repeat: 3, yoyo: true }, t3 + 7.05);
+tl.to("#sc3 .ghost", { x: 60, duration: 8, ease: "none" }, t3);
+tl.to("#sc3", { opacity: 0, duration: .35, ease: "power2.in" }, t3 + 7.6);
+window.__timelines["rea-reasons"] = tl;
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA title sting</title>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg: #0B0B0D; --ink: #F6F1EC; --coral: #E8775F; --coralHi: #FF9E88; --coralLo: #A8402B; --steel: #7F95AB; }
+html, body { margin: 0; background: var(--bg); }
+#root { position: relative; width: 100%; height: 100%; overflow: hidden; background: var(--bg); font-family: "Inter", system-ui, sans-serif; color: var(--ink); }
+.fill { position: absolute; inset: 0; }
+#mesh .b { position: absolute; border-radius: 50%; filter: blur(120px); }
+#b1 { width: 900px; height: 900px; left: -200px; top: -300px; background: rgba(232,119,95,.30); }
+#b2 { width: 800px; height: 800px; right: -200px; bottom: -350px; background: rgba(127,149,171,.20); }
+#b3 { width: 600px; height: 600px; left: 700px; top: 250px; background: rgba(232,119,95,.12); }
+#grid { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 120px 120px; }
+#vig { background: radial-gradient(ellipse at 50% 50%, transparent 55%, rgba(0,0,0,.65) 100%); }
+.stage { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; perspective: 1600px; }
+.words { display: flex; flex-direction: column; align-items: center; gap: 0; margin-top: -60px; }
+.word { display: block; font-weight: 800; font-size: 210px; line-height: .98; letter-spacing: -6px; white-space: nowrap; text-transform: uppercase; }
+.word .m { display: inline-block; overflow: hidden; vertical-align: top; padding: 14px 4px 22px; margin: -14px -4px -22px; }
+.word .l { display: inline-block; will-change: transform; }
+.word.hot { color: var(--coral); }
+.ul { position: absolute; height: 10px; border-radius: 5px; background: var(--coral); left: 50%; width: 0; }
+#rea { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+#reatxt { font-weight: 800; font-size: 560px; line-height: 1; letter-spacing: -20px; color: var(--ink); }
+#reatxt span { display: inline-block; }
+#reatxt .hot { color: var(--coral); }
+#bar { width: 820px; height: 10px; border-radius: 5px; background: var(--coral); margin: -30px 0 34px; }
+#sub { font-weight: 600; font-size: 56px; color: rgba(246,241,236,.7); letter-spacing: 1px; margin-top: -10px; }
+#ring { position: absolute; left: 50%; top: 50%; width: 980px; height: 980px; margin: -490px 0 0 -490px; }
+#ticks { position: absolute; left: 50%; top: 50%; width: 1240px; height: 1240px; margin: -620px 0 0 -620px; }
+.rgb { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; mix-blend-mode: screen; opacity: 0; }
+.spark { position: absolute; left: 50%; top: 50%; width: 14px; height: 14px; margin: -7px; background: var(--coral); opacity: 0; }
+#flash { background: #fff; opacity: 0; }
+#tag { position: absolute; right: 90px; top: 80px; font-weight: 600; font-size: 28px; letter-spacing: 6px; color: var(--steel); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-title" data-start="0" data-width="1920" data-height="1080" data-duration="7">
+  <div id="mesh" class="fill"><div class="b" id="b1"></div><div class="b" id="b2"></div><div class="b" id="b3"></div></div>
+  <div id="grid" class="fill"></div>
+  <div id="vig" class="fill" data-layout-allow-occlusion data-layout-allow-overflow data-layout-allow-overlap></div>
+  <div id="tag">The tool everyone is talking about</div>
+  <div class="stage" id="stage" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion><div class="words" id="words"></div></div>
+  <div id="rea" data-layout-allow-overlap data-layout-allow-overflow data-layout-allow-occlusion><svg id="ticks" viewBox="0 0 1240 1240"></svg><div id="reatxt"><span class="r">R</span><span class="e">E</span><span class="a hot">A</span></div><div id="bar"></div><div id="sub">Reverse Engineer Anything, for short</div></div>
+  <div class="rgb" id="rgbR" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow style="color:#ff6a4d"><div style="font-weight:800;font-size:620px;letter-spacing:-22px">REA</div></div>
+  <div class="rgb" id="rgbB" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow style="color:#7FB7FF"><div style="font-weight:800;font-size:620px;letter-spacing:-22px">REA</div></div>
+  <div id="sparks" class="fill" data-layout-allow-occlusion data-layout-allow-overflow data-layout-allow-overlap></div>
+  <div id="flash" class="fill" data-layout-allow-occlusion data-layout-allow-overlap></div>
+</div>
+<script>
+const rnd = (() => { let s = 20261029; return () => { s |= 0; s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })();
+const words = ["REVERSE", "ENGINEER", "ANYTHING"];
+const wrap = document.getElementById("words");
+words.forEach((w, i) => {
+  const d = document.createElement("div"); d.className = "word" + (i === 2 ? " hot" : "");
+  d.innerHTML = [...w].map((c) => `<span class="m"><span class="l">${c}</span></span>`).join("");
+  wrap.appendChild(d);
+});
+// ticks around the ring
+const NS = "http://www.w3.org/2000/svg", ticks = document.getElementById("ticks");
+for (let i = 0; i < 72; i++) {
+  const a = (i / 72) * Math.PI * 2, r1 = 600, r2 = i % 6 === 0 ? 560 : 580;
+  const l = document.createElementNS(NS, "line");
+  l.setAttribute("x1", 620 + Math.cos(a) * r1); l.setAttribute("y1", 620 + Math.sin(a) * r1);
+  l.setAttribute("x2", 620 + Math.cos(a) * r2); l.setAttribute("y2", 620 + Math.sin(a) * r2);
+  l.setAttribute("stroke", i % 6 === 0 ? "#E8775F" : "rgba(246,241,236,.35)"); l.setAttribute("stroke-width", i % 6 === 0 ? 5 : 3); ticks.appendChild(l);
+}
+// sparks
+const sp = document.getElementById("sparks"), sparks = [];
+for (let i = 0; i < 46; i++) { const s = document.createElement("div"); s.className = "spark"; if (i % 3 === 0) s.style.background = "#F6F1EC"; if (i % 5 === 0) s.style.background = "#7F95AB"; sp.appendChild(s); sparks.push(s); }
+
+const tl = gsap.timeline({ paused: true });
+// drifting mesh + grid parallax across the whole piece
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 260, y: 140, duration: 7, ease: "sine.inOut" }, 0);
+tl.fromTo("#b2", { x: 0, y: 0 }, { x: -240, y: -120, duration: 7, ease: "sine.inOut" }, 0);
+tl.fromTo("#b3", { scale: .8 }, { scale: 1.5, duration: 7, ease: "sine.inOut" }, 0);
+tl.fromTo("#grid", { x: 0, y: 0, scale: 1 }, { x: -120, y: 60, scale: 1.08, duration: 7, ease: "none" }, 0);
+tl.from("#tag", { opacity: 0, x: 40, duration: .6, ease: "power3.out" }, .2);
+tl.to("#tag", { opacity: 0, duration: .3 }, 4.6);
+// words slam in on speech (local time = A-roll time - 15.4)
+const at = [1.04, 1.74, 2.2];
+document.querySelectorAll(".word").forEach((w, i) => {
+  const L = w.querySelectorAll(".l");
+  tl.fromTo(L, { yPercent: 115, rotateX: -70, opacity: 0, filter: "blur(14px)" }, { yPercent: 0, rotateX: 0, opacity: 1, filter: "blur(0px)", duration: .55, ease: "back.out(1.5)", stagger: .035 }, at[i]);
+  tl.fromTo(w, { scale: 1.12 }, { scale: 1, duration: .5, ease: "power3.out" }, at[i]);
+});
+tl.fromTo("#words", { y: 40 }, { y: -10, duration: 3.6, ease: "sine.inOut" }, 1);
+// camera push while the name is explained
+tl.to("#stage", { scale: 1.07, duration: 3.4, ease: "power1.inOut" }, 1.6);
+// glitch + collapse into REA at 5.16 (speech: "REA")
+tl.to("#words", { x: () => (rnd() - .5) * 40, duration: .05, repeat: 5, yoyo: true, ease: "none" }, 4.75);
+tl.fromTo("#rgbR", { opacity: 0, x: 0 }, { opacity: .8, x: -26, duration: .06, repeat: 5, yoyo: true, ease: "none" }, 4.78);
+tl.fromTo("#rgbB", { opacity: 0, x: 0 }, { opacity: .8, x: 26, duration: .06, repeat: 5, yoyo: true, ease: "none" }, 4.78);
+tl.to(".word .l", { yPercent: -110, opacity: 0, filter: "blur(18px)", duration: .3, ease: "power3.in", stagger: { each: .01, from: "center" } }, 4.86);
+tl.set("#rgbR, #rgbB", { opacity: 0 }, 5.12);
+tl.fromTo("#flash", { opacity: 0 }, { opacity: .55, duration: .05, yoyo: true, repeat: 1, ease: "none" }, 5.14);
+tl.fromTo("#reatxt span", { scale: 2.4, opacity: 0, filter: "blur(30px)", rotateX: 40 }, { scale: 1, opacity: 1, filter: "blur(0px)", rotateX: 0, duration: .5, ease: "expo.out", stagger: .07 }, 5.16);
+tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: .7, ease: "expo.out" }, 5.5);
+tl.fromTo("#ticks", { rotate: -40, opacity: 0, scale: .85 }, { rotate: 0, opacity: 1, scale: 1, duration: 1.2, ease: "power3.out" }, 5.2);
+tl.to("#ticks", { rotate: 40, duration: 1.8, ease: "none" }, 5.4);
+tl.fromTo("#sub", { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: .5, ease: "power3.out" }, 5.76);
+// sparks burst
+sparks.forEach((s, i) => {
+  const a = rnd() * Math.PI * 2, d = 380 + rnd() * 560, sz = .5 + rnd() * 1.6;
+  tl.fromTo(s, { x: 0, y: 0, opacity: 1, scale: sz, rotate: 0 }, { x: Math.cos(a) * d, y: Math.sin(a) * d, opacity: 0, rotate: rnd() * 360, duration: .9 + rnd() * .7, ease: "power3.out" }, 5.18 + rnd() * .08);
+});
+// out: ring blows past the camera into the next scene
+tl.to("#reatxt, #sub", { scale: 1.5, opacity: 0, duration: .45, ease: "power3.in" }, 6.5);
+tl.to("#bar", { opacity: 0, duration: .3 }, 6.5);
+tl.to("#ticks", { scale: 1.6, opacity: 0, duration: .5, ease: "power3.in" }, 6.5);
+window.__timelines["rea-title"] = tl;
+</script>
+</body>
+</html>

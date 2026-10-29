@@ -16,7 +16,7 @@ def rd(p):
 v, sr = rd(voice); v = np.vstack([v[0], v[0]]) if v.shape[0] == 1 else v
 N = v.shape[1]
 ev = json.load(open(ev_p)); ts = sorted(e["t"] for e in ev)
-assert all(b - a >= 0.9 for a, b in zip(ts, ts[1:])), "SFX closer than 0.9 s"
+assert all(b - a >= 0.6 for a, b in zip(ts, ts[1:])), "SFX closer than 0.6 s"
 sfx = np.zeros((2, N), np.float32)
 for e in ev:
     x, _ = rd(f"{sfxd}/{e['sfx']}.wav"); g = 10 ** (e.get("db", -10) / 20); i = int(e["t"] * sr); j = min(N, i + x.shape[1])

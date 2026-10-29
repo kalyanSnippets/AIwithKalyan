@@ -1,6 +1,6 @@
 import {Composition} from "remotion";
-import {Preview, PREVIEW_SECONDS} from "./Preview";
+import {Intro, INTRO_SECONDS} from "./Intro";
 
 export const Root = () => (
-  <Composition id="Preview" component={Preview} durationInFrames={Math.round(PREVIEW_SECONDS * 30)} fps={30} width={1920} height={1080} />
+  <Composition id="Intro" component={Intro} durationInFrames={Math.round(INTRO_SECONDS * 30)} fps={30} width={1920} height={1080} />
 );

@@ -39,3 +39,6 @@ REA/compositions/**/media/
 REA/remotion/public/media/*.mp4
 REA/remotion/public/media/*.wav
 REA/remotion/out/
+
+# REA proofs build output
+REA/proofs/*/dist/
