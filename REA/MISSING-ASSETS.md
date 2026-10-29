@@ -48,3 +48,6 @@ Save every file under `REA/media/screen-recordings/` (or the folder named) and t
 ## Not used on purpose
 - No game screenshots or audio (DX-Ball), no Notion UI, no Wekan, GitHub, Claude or Chrome logos, no stock footage, no other creators' graphics.
 - Diagrams in the edit are drawn from facts in REA's README (Notion trace, DX-Ball 3,205 cases, web-session environment) and carry a small source line.
+
+## Wekan live demo board (not capturable)
+`boards.wekan.team` serves a Cloudflare bot check that the cloud sandbox cannot pass (and we do not bypass it). The explanation section therefore uses an animated Kanban explainer labelled "recreated for this video". To swap in the real thing, record `https://boards.wekan.team/b/D2SzJKZDS4Z48yeQH/wekan-r-open-source-kanban-board-with-mit-license` on your PC (10 s of scrolling and hovering a card) and drop it in `REA/media/screen-recordings/wekan-demo.mp4`.
