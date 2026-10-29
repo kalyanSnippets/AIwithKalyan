@@ -92,7 +92,7 @@ export const PiP: React.FC<{a: number; src?: string}> = ({a, src = "media/aroll_
 /* ---------- scene shell with five different entrances ---------- */
 export type Enter = "wipe" | "iris" | "zoom" | "glitch" | "push";
 export const Scene: React.FC<{a: number; b: number; enter: Enter; children: React.ReactNode; pip?: boolean; bg?: React.ReactNode; exit?: boolean}> = ({a, b, enter, children, pip = true, bg, exit = true}) => {
-  const f = useCurrentFrame(), t = a + f / FPS, k = clamp01((t - a) / 0.55), e = ease(k), dur = b - a;
+  const f = useCurrentFrame(), t = a + f / FPS, k = clamp01((t - a) / 0.42), e = ease(k), dur = b - a;
   const outK = exit ? clamp01((t - (b - 0.22)) / 0.22) : 0;
   let style: React.CSSProperties = {};
   let edge: React.ReactNode = null;
@@ -121,7 +121,7 @@ export const Scene: React.FC<{a: number; b: number; enter: Enter; children: Reac
       <AbsoluteFill style={{...style, opacity: (style.opacity as number ?? 1) * (1 - outK), fontFamily: FONT, color: P.ink, overflow: "hidden"}}>
         {bg ?? <Backdrop seed={a} />}
         {children}
-        {pip && <PiP a={a} />}
+        
       </AbsoluteFill>
       {edge && <AbsoluteFill style={{pointerEvents: "none", overflow: "hidden"}}>{edge}</AbsoluteFill>}
     </>

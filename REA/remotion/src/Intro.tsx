@@ -1,11 +1,14 @@
 import React from "react";
 import {AbsoluteFill, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from "remotion";
-import {FONT, FPS, Grain, Glass, P, PiP, S, Tag, Words, clamp01, ease, lerp, pop, popB, rand, seg, useT} from "./kit";
+import {FONT, FPS, Grain, Glass, P, S, Tag, Words, clamp01, ease, lerp, pop, popB, rand, seg, useT} from "./kit";
 import {SceneFlow, SceneQuestion, SceneStars} from "./scenes1";
 import {SceneDX, SceneHonest, SceneNotion, SceneStudy, SceneWeb} from "./scenes2";
 import captions from "../public/media/captions_intro.json";
+import tmap from "../public/media/intro_map.json";
 
-export const INTRO_SECONDS = 119.4;
+const KEEP = tmap.keep as [number, number, number][];   // [old start, old end, new start] seconds: the tightened timeline
+export const INTRO_SECONDS = tmap.new_len;
+export const oldOf = (n: number) => { for (const [a, b, nw] of KEEP) if (n >= nw && n < nw + (b - a)) return a + (n - nw); return KEEP[KEEP.length - 1][1]; };
 
 /* A-roll punch-ins (10 to 15 %) */
 const PUNCH: [number, number, number, number][] = [
@@ -14,8 +17,8 @@ const PUNCH: [number, number, number, number][] = [
 ];
 const scaleAt = (t: number) => { for (const [a, b, s0, s1] of PUNCH) if (t >= a && t < b) return s0 + (s1 - s0) * clamp01((t - a) / (b - a)); return 1; };
 const ARoll: React.FC = () => {
-  const t = useCurrentFrame() / FPS;
-  return <AbsoluteFill style={{background: "#000", overflow: "hidden"}}><OffthreadVideo src={staticFile("media/aroll_intro.mp4")} muted style={{width: 1920, height: 1080, transform: `scale(${scaleAt(t)})`, transformOrigin: "50% 42%"}} /></AbsoluteFill>;
+  const t = oldOf(useCurrentFrame() / FPS);
+  return <AbsoluteFill style={{background: "#000", overflow: "hidden"}}><OffthreadVideo src={staticFile("media/aroll_intro_tight.mp4")} muted style={{width: 1920, height: 1080, transform: `scale(${scaleAt(t)})`, transformOrigin: "50% 42%"}} /></AbsoluteFill>;
 };
 /* a very light grade so the A-roll sits in the same world as the graphics */
 const Grade: React.FC = () => <AbsoluteFill style={{background: "radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(8,8,10,0.45) 100%)", pointerEvents: "none"}} />;
@@ -24,7 +27,7 @@ const Seq: React.FC<{a: number; b: number; children: React.ReactNode}> = ({a, b,
 
 /* HyperFrames-rendered scenes dropped in as clips, face card on top */
 const HF: React.FC<{src: string; a: number; b: number}> = ({src, a, b}) => (
-  <Seq a={a} b={b}><AbsoluteFill><OffthreadVideo src={staticFile(src)} muted style={{width: 1920, height: 1080}} /><PiP a={a} /></AbsoluteFill></Seq>
+  <Seq a={a} b={b}><AbsoluteFill><OffthreadVideo src={staticFile(src)} muted style={{width: 1920, height: 1080}} /></AbsoluteFill></Seq>
 );
 
 const Overlays: React.FC = () => {
@@ -49,9 +52,9 @@ const Overlays: React.FC = () => {
         {chips.map(([c, at, hot]) => { const p = popB(t, at, 0.3) * (1 - clamp01((t - 33.1) / 0.4)); return <div key={c} style={{opacity: clamp01(p * 2), transform: `scale(${2.2 - 1.2 * p}) rotate(${(1 - p) * -14 + (hot ? -3 : 3)}deg)`}}><Tag hot={hot} style={{fontSize: 38, padding: "14px 32px", borderRadius: 16}}>{c}</Tag></div>; })}
       </div>
       {/* kinetic questions over the A-roll (top-left, away from the face) */}
-      {t >= 69.2 && t < 71.0 && <div style={{position: "absolute", left: 90, top: 90}}><Words t={t} at={69.3} words={["Why", "the", "hype?"]} size={130} hotFrom={2} /></div>}
-      {t >= 88.4 && t < 93.0 && <div style={{position: "absolute", left: 90, top: 90, opacity: 1 - clamp01((t - 92.6) / 0.4)}}><Words t={t} at={88.5} words={["Is", "it", "really", "that", "good?"]} size={120} hotFrom={3} /></div>}
-      {t >= 99.2 && t < 102.5 && <div style={{position: "absolute", left: 90, top: 90, opacity: 1 - clamp01((t - 102.1) / 0.4)}}><Words t={t} at={99.3} words={["Stay", "till", "the", "end"]} size={120} hotFrom={0} /><div style={{marginTop: 26, width: 620, height: 10, borderRadius: 5, background: "rgba(255,255,255,0.14)"}}><div style={{width: `${seg(t, 99.4, 102.3, 0, 100)}%`, height: "100%", borderRadius: 5, background: P.coral}} /></div></div>}
+      {t >= 69.2 && t < 71.0 && <div style={{position: "absolute", left: 90, top: 90}}><Words t={t} at={69.3} words={["Why", "the"]} size={116} /><Words t={t} at={69.6} words={["hype?"]} size={150} hotFrom={0} style={{marginTop: -8}} /></div>}
+      {t >= 88.4 && t < 93.0 && <div style={{position: "absolute", left: 90, top: 90, opacity: 1 - clamp01((t - 92.6) / 0.4)}}><Words t={t} at={88.5} words={["Is", "it", "really"]} size={104} /><Words t={t} at={89.3} words={["that", "good?"]} size={120} hotFrom={0} style={{marginTop: -6}} /></div>}
+      {t >= 99.2 && t < 102.5 && <div style={{position: "absolute", left: 90, top: 90, opacity: 1 - clamp01((t - 102.1) / 0.4)}}><Words t={t} at={99.3} words={["Stay", "till"]} size={116} /><Words t={t} at={99.65} words={["the", "end"]} size={116} hotFrom={0} style={{marginTop: -6}} /><div style={{marginTop: 26, width: 520, height: 10, borderRadius: 5, background: "rgba(255,255,255,0.14)"}}><div style={{width: `${seg(t, 99.4, 102.3, 0, 100)}%`, height: "100%", borderRadius: 5, background: P.coral}} /></div></div>}
       {/* channel name card */}
       <div style={{position: "absolute", left: 70, bottom: 150, opacity: name, transform: `translateY(${(1 - name) * 40}px)`}}><Glass style={{padding: "20px 34px", borderRadius: 26}}><div style={{fontSize: 56, fontWeight: 800}}>AI with <span style={{color: P.coral}}>Kalyan</span></div><div style={{fontSize: 26, color: P.mute, marginTop: 4}}>simple, practical AI you can try today</div></Glass></div>
       {/* subscribe */}
@@ -83,9 +86,8 @@ const Captions: React.FC = () => {
   );
 };
 
-export const Intro: React.FC = () => (
-  <AbsoluteFill style={{background: P.bg}}>
-    <ARoll />
+const Content: React.FC = () => (
+  <>
     <Grade />
     <Overlays />
     <Seq a={4.3} b={8.9}><SceneQuestion /></Seq>
@@ -99,6 +101,18 @@ export const Intro: React.FC = () => (
     <Seq a={93.0} b={98.6}><SceneStudy /></Seq>
     <Seq a={102.5} b={107.0}><SceneHonest /></Seq>
     <Captions />
+  </>
+);
+
+/* the graphics are authored on the original timeline; every kept range plays that timeline from its own start, so pauses are cut from picture, voice and graphics alike */
+export const Intro: React.FC = () => (
+  <AbsoluteFill style={{background: P.bg}}>
+    <ARoll />
+    {KEEP.map(([a, b, n], i) => (
+      <Sequence key={i} from={Math.round(n * FPS)} durationInFrames={Math.round((b - a) * FPS)} layout="none">
+        <Sequence from={-Math.round(a * FPS)} layout="none"><Content /></Sequence>
+      </Sequence>
+    ))}
     <Grain o={0.06} />
   </AbsoluteFill>
 );
