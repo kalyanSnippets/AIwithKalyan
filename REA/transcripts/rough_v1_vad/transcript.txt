@@ -1,0 +1,160 @@
+[00:00.33-00:06.25] Hey guys, have you ever seen a cool feature in some app and thought, I want this in my own project,
+[00:06.53-00:13.19] but you have no idea how it is built? Well, this is a tool for exactly that right now everyone in the AI
+[00:13.19-00:19.80] and developer world is talking about. It is called Reverse Engineer Anything. Yes, this is the real
+[00:19.80-00:28.83] name REA for short. So, now look at this. On GitHub, it has almost 400,000 stars. That is a crazy number
+[00:28.83-00:34.09] for a developer tool and it is free and open source.
+[00:34.35-00:35.19] So what is it?
+[00:35.67-00:35.83] Simple.
+[00:36.47-00:39.95] You see a feature you like in an app.
+[00:40.52-00:46.78] Your AI agent like Claude Code uses REA to inspect that app, explain how it works, show
+[00:46.78-00:49.66] you the evidence and then help you build your own version.
+[00:50.47-00:52.79] And people are doing some vile things with it.
+[00:53.19-00:59.94] Some traced how the Notion Desktop app handles copy and paste.
+[00:59.94-01:02.60] all the way from the screen to the main process.
+[01:03.10-01:05.20] People rebuild the sound panning of a...
+[01:05.20-01:10.27] People rebuild the sound panning of a game,
+[01:10.75-01:14.83] DX ball and checked it against the original.
+[01:15.27-01:18.94] And one guide shows how to record a web app session
+[01:18.94-01:23.14] and turn it into a practical environment for all the AI agents.
+[01:23.40-01:26.61] So why the hype? I think there are three reasons for it.
+[01:27.07-01:29.63] One, it is free and open source for everyone.
+[01:29.63-01:34.27] 2. It works on many things like websites, apps, even old binaries
+[01:34.27-01:48.50] and 3. It shows evidence for every finding with AI that matters a lot because we all
+[01:48.50-01:54.24] know AI can make things up but when you ask me is it really that good, today I will test
+[01:54.24-01:58.46] it for you. I will use it to study a real app and then
+[01:58.46-02:04.17] rebuild my own version with just few prompts and stay with me until the end of this video
+[02:04.17-02:09.65] because I will tell you honestly what worked, what did not and downsides nobody is talking about.
+[02:10.12-02:19.23] Oh and by the way I am Kalyan and this is AI with Kalyan where I share simple practical AI
+[02:19.23-02:25.35] you can try Dorey. If you like this, tap subscribe it really helps. Okay let's go.
+[02:25.63-02:32.89] Let me explain what we are going to do. In simple words why I picked Weaken. I needed a real app to
+[02:32.89-02:37.47] Weaken is an open source, can be bought a bit like Trello.
+[02:37.85-02:46.90] If you have never used one, you have columns like to do, doing and done, doing and done.
+[02:47.24-02:50.46] Inside each column you have cards and those are your tasks.
+[02:50.97-02:54.51] When the work moves forward, you drag the card to the next column.
+[02:55.22-03:01.14] It has a public demo that anyone can open and it has an MIT license which means it
+[03:01.14-03:01.98] is open source.
+[03:02.26-03:04.02] So I am not touching anything private.
+[03:04.02-03:10.05] And there is one more reason, a Kanban app has a lot of behavior inside.
+[03:10.39-03:13.66] A Kanban app has a lot of behavior inside.
+[03:14.18-03:17.80] Drag and drop, labels, due dates, checklists, saving data.
+[03:18.34-03:19.96] So it is a great test for Rhea.
+[03:20.28-03:33.45] What we are trying to achieve, I am not trying to copy the whole beacon.
+[03:33.79-03:37.79] That would take a lot of time and big team and a lot of prompts.
+[03:38.19-03:40.05] My goal is a small working version.
+[03:40.05-03:43.43] My own app which I will call RIA board.
+[03:43.91-03:49.73] It will have columns, cards, drag and drop, color labels, due dates with red overdue badge
+[03:49.73-03:50.61] and checklists.
+[03:51.17-03:53.53] It will save the data only in my browser.
+[03:53.97-03:58.03] So it will not have login, real time sync between users or a server.
+[03:58.53-04:08.42] In simple words, the expectation is this, a working copy of how the board behaves with
+[04:08.42-04:09.88] my own name and design.
+[04:09.88-04:15.58] not the full product. Okay now the setup. First what we need before we start. So
+[04:15.58-04:21.12] I'm using a Windows laptop. So Claude code needs Windows 10 or the newer
+[04:21.12-04:25.50] version. An internet connection, a Claude account because you sign in the first
+[04:25.50-04:31.43] time you because you sign in the first time you use Claude code. So the next
+[04:31.43-04:43.07] step is open the PowerShell and type this command and wait for it to finish
+[04:43.07-04:48.26] then close the terminal and open it again. Now type this to check it worked.
+[04:48.26-04:53.72] type Claude-version if you see a version number Claude code is
+[04:53.72-04:58.57] installed the first time you run it the first time you run it it opens your
+[04:58.57-05:02.79] browser so you can sign in with your Claude account just sign in and come
+[05:02.79-05:11.12] back next is to check your node version rea needs nodejs rea needs nodejs and
+[05:11.12-05:17.50] Claude code does not so this check matters to check that so rear needs
+[05:17.50-05:23.00] node version 22 or 24 or the newer version. If you get an older version or
+[05:23.00-05:28.38] an error install the latest node from nodejs.org then check again.
+[05:28.68-05:39.60] In the RIA setup type this npx ra-agents space setup type this command and it
+[05:39.60-05:47.36] may ask okay to proceed type yes one and then it asks which agent you want code
+[05:47.36-05:53.38] I choose plot code then it shows a list of changes it will make read it and say
+[05:53.38-06:00.57] Yes, and this and this is very important. It will offer to install hopper. Say no, because we are
+[06:00.57-06:07.17] only working with websites, so we do not need it. The next step is restart cloud code and check
+[06:07.17-06:15.74] ria. If the cloud code is open, close it, then type this cloud mcp list. You should see ria in the
+[06:15.74-06:21.70] list. If you see it, ria is connected. Add the chrome extension. Install the cloud in the chrome
+[06:21.70-06:26.60] extension from the Chrome Web Store. This lets Claude test the app in a real browser.
+[06:26.96-06:30.38] If you want the link, I'll put the link in the description below.
+[06:31.02-06:36.98] So the next step is make a project folder and start Claude code. Type these two lines
+[06:36.98-06:42.92] then start Claude. And that is it. Now the real fun begins. Here I'm giving the
+[06:42.92-06:56.10] We can board demo link and saying it is a web app. So use only the website analysis
+[06:56.10-07:01.78] tools do not touch desktop app tools do not build anything yet so in simple words
+[07:01.78-07:07.06] I said like study this app but do not build anything yet and my favorite trick
+[07:07.06-07:13.56] here is the last line I asked Claude to label every I asked Claude I asked Claude
+[07:13.56-07:20.00] I asked Claude to label every point as observed inferred or not sure so it does
+[07:20.00-07:25.22] not just guess while Claude is working on this here is a question for you think
+[07:25.22-07:27.52] Think about the apps on your phone right now.
+[07:27.82-07:33.84] Which app would you love to rebuild as your own version?
+[07:34.24-07:39.97] May be a to-do app, a habit tracker, a notes app.
+[07:40.43-07:41.63] Write in the comments below.
+[07:41.99-07:45.15] I will read them and the best ideas can be my next video.
+[07:45.39-07:46.85] Ok let's see what Claude found.
+[07:47.76-07:48.50] And look at this.
+[07:48.86-07:51.70] It explains how the lists and cards are structured.
+[07:51.70-07:58.08] how drag and drop works and where the data is stored.
+[07:58.56-08:01.90] And the labels observed, inferred and not sure.
+[08:02.36-08:08.32] This is what makes it trustworthy.
+[08:08.90-08:11.30] This is the part that normally takes hours.
+[08:12.15-08:14.45] So now the cloud knows how the app works.
+[08:14.89-08:15.77] It's time to build.
+[08:16.51-08:19.24] And so now the cloud knows.
+[08:19.64-08:20.14] Notice one thing.
+[08:20.48-08:23.67] I tell cloud to use only how the app behaves.
+[08:23.67-08:29.61] My own name, my own sample content, I am not copying anyone's logo, text or images.
+[08:30.15-08:35.27] That is very important. And now this part takes a few minutes, so I will speed it up.
+[08:38.16-08:42.18] And remember, stay till the end. And remember, stay till the end.
+[08:43.73-08:48.75] And remember, stay till the end. Because after this, I will tell you the honest downside.
+[08:49.48-08:55.38] Ok, here it is guys. This is my rear board running on my computer.
+[08:55.38-09:06.24] Let me show you what it built. First columns I can add a column rename it and
+[09:06.24-09:22.16] delete it. So the next cards I can add a card, edit it and delete it and the fun
+[09:22.16-09:28.51] part and the fun part is dragging drop. Drag a card to another column and with
+[09:28.51-09:33.46] the real mouse drag and then reorder inside the column and it works. Then the
+[09:33.46-09:38.98] extras color labels. A due date in the past and see the red overdue batch. A
+[09:38.98-09:45.37] Checklist with progress bar, the side panel for editing a card and if I refresh a page
+[09:45.37-09:47.11] everything is still saved.
+[09:47.51-09:58.13] Now here is I, now here is how, now here is how close it looks to the original.
+[09:59.08-10:03.76] Now what it did not build and this part is very important.
+[10:04.04-10:06.88] So my app saves data only in this browser.
+[10:07.34-10:11.92] So there is no login, no real time sync between users and no server or database.
+[10:11.92-10:20.29] The original then the original weaken as all of that and my version does not I did not ask for it in my problems
+[10:20.29-10:22.25] So Claude did not build it
+[10:29.47-10:35.63] So it is a working copy of how the board behaves not a full replacement of the real product
+[10:36.54-10:37.04] Okay
+[10:37.04-10:43.26] So now the question I promised you is we are worth the hype my honest answer is yes
+[10:43.26-10:55.73] It is worth trying I'm working version for web apps going from I like this feature
+[10:55.73-11:02.91] I understand how it works and I have a working version in two prompts is really powerful and the evidence
+[11:02.91-11:12.38] labels observed inferred and not sure that is what I really like that is what I really like the most but
+[11:12.38-11:17.44] But it is not magic, but it is not magic. Here are the downsides
+[11:17.44-11:25.72] Number one is setup is not one click if you are a complete beginner. It will take some effort to number two
+[11:25.72-11:29.34] It studies what a website shows from the outside.
+[11:29.80-11:36.86] It cannot see the private code running on the company server.
+[11:37.30-11:39.82] So you get a behaviour not the full product.
+[11:40.36-11:43.06] Number 3 is result depends on your prompt.
+[11:44.13-11:49.15] If you are vague, you get a vague app and you still have to test the output yourself.
+[11:49.58-11:50.78] Do not trust it blindly.
+[11:51.53-11:53.87] Number 4 is the tool changes very fast.
+[11:54.62-11:57.60] So some steps may look different when you try it.
+[11:58.31-12:03.75] And please remember, use this only on apps you own, open source apps or when you have
+[12:03.75-12:04.25] permission.
+[12:04.77-12:07.49] Learn from them and build your own.
+[12:07.92-12:09.82] Do not copy other people's work.
+[12:10.63-12:12.53] Do not copy other people's work.
+[12:13.05-12:18.03] So my verdict is that hype is mostly real for learning and prototyping.
+[12:18.19-12:23.45] And share, now the best part guys, this method is not only for the Canvan boards.
+[12:23.45-12:27.63] Step 1, Ask Claude to study with RIA, reverse engineering
+[12:27.63-12:32.63] Ask Claude to study with reverse engineering anything and report it with evidence
+[12:32.63-12:37.99] Step 2 is to ask Claude to build your own version, match the look, test it with the
+[12:37.99-12:46.10] real browser, a to-do app, a to-do app, a notes app, a habit tracker, a book, a booking page,
+[12:46.36-12:46.60] anything
+[12:46.60-12:50.26] Just change the website link and the feature list in the prompts
+[12:50.26-12:52.48] So here is my homework for you
+[12:52.48-12:58.26] Pick one app, copy two prompts from the description below, change the link and try it today.
+[12:58.64-13:01.48] Then tell me in the comments below which app you review.
+[13:01.70-13:05.40] If you like this video, please hit the like button, it really helps.
+[13:05.84-13:10.74] If you know a friend who is learning AI or wants to build apps, share this video with
+[13:10.74-13:10.98] them.
+[13:11.40-13:16.40] And if you have not subscribed yet, please subscribe to AI with Kalyan and press the
+[13:16.40-13:16.96] bell icon.
+[13:17.82-13:19.64] So you do not miss the next video.
+[13:19.64-13:23.24] More AI tutorials are coming and I make them for you.
+[13:23.75-13:29.51] And if you want to see how I edit my videos using Claude, that video is right here.
+[13:30.70-13:33.06] Click on it and watch it next.
+[13:33.54-13:35.00] Click on it and watch it next.
+[13:35.52-13:36.98] Thank you so much for watching.
+[13:37.40-13:38.64] I will see you in the next one.
+[13:39.07-13:39.29] Bye.

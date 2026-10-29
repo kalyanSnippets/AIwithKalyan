@@ -1,0 +1,10922 @@
+[
+ {
+  "text": "Hey",
+  "start": 0.33,
+  "end": 0.57,
+  "prob": 0.67
+ },
+ {
+  "text": "guys,",
+  "start": 0.57,
+  "end": 0.85,
+  "prob": 0.694
+ },
+ {
+  "text": "have",
+  "start": 1.23,
+  "end": 1.37,
+  "prob": 0.856
+ },
+ {
+  "text": "you",
+  "start": 1.37,
+  "end": 1.51,
+  "prob": 0.993
+ },
+ {
+  "text": "ever",
+  "start": 1.51,
+  "end": 1.67,
+  "prob": 0.951
+ },
+ {
+  "text": "seen",
+  "start": 1.67,
+  "end": 1.93,
+  "prob": 0.993
+ },
+ {
+  "text": "a",
+  "start": 1.93,
+  "end": 2.13,
+  "prob": 0.979
+ },
+ {
+  "text": "cool",
+  "start": 2.13,
+  "end": 2.35,
+  "prob": 0.973
+ },
+ {
+  "text": "feature",
+  "start": 2.35,
+  "end": 2.77,
+  "prob": 0.987
+ },
+ {
+  "text": "in",
+  "start": 2.77,
+  "end": 2.99,
+  "prob": 0.974
+ },
+ {
+  "text": "some",
+  "start": 2.99,
+  "end": 3.21,
+  "prob": 0.968
+ },
+ {
+  "text": "app",
+  "start": 3.21,
+  "end": 3.49,
+  "prob": 0.801
+ },
+ {
+  "text": "and",
+  "start": 3.49,
+  "end": 3.89,
+  "prob": 0.836
+ },
+ {
+  "text": "thought,",
+  "start": 3.89,
+  "end": 4.15,
+  "prob": 0.99
+ },
+ {
+  "text": "I",
+  "start": 4.59,
+  "end": 4.63,
+  "prob": 0.687
+ },
+ {
+  "text": "want",
+  "start": 4.63,
+  "end": 4.87,
+  "prob": 0.992
+ },
+ {
+  "text": "this",
+  "start": 4.87,
+  "end": 5.11,
+  "prob": 0.978
+ },
+ {
+  "text": "in",
+  "start": 5.11,
+  "end": 5.31,
+  "prob": 0.981
+ },
+ {
+  "text": "my",
+  "start": 5.31,
+  "end": 5.53,
+  "prob": 0.994
+ },
+ {
+  "text": "own",
+  "start": 5.53,
+  "end": 5.81,
+  "prob": 0.971
+ },
+ {
+  "text": "project,",
+  "start": 5.81,
+  "end": 6.25,
+  "prob": 0.987
+ },
+ {
+  "text": "but",
+  "start": 6.53,
+  "end": 6.77,
+  "prob": 0.978
+ },
+ {
+  "text": "you",
+  "start": 6.77,
+  "end": 6.93,
+  "prob": 0.986
+ },
+ {
+  "text": "have",
+  "start": 6.93,
+  "end": 7.07,
+  "prob": 0.989
+ },
+ {
+  "text": "no",
+  "start": 7.07,
+  "end": 7.33,
+  "prob": 0.99
+ },
+ {
+  "text": "idea",
+  "start": 7.33,
+  "end": 7.61,
+  "prob": 0.997
+ },
+ {
+  "text": "how",
+  "start": 7.61,
+  "end": 7.97,
+  "prob": 0.983
+ },
+ {
+  "text": "it",
+  "start": 7.97,
+  "end": 8.17,
+  "prob": 0.986
+ },
+ {
+  "text": "is",
+  "start": 8.17,
+  "end": 8.33,
+  "prob": 0.981
+ },
+ {
+  "text": "built?",
+  "start": 8.33,
+  "end": 8.59,
+  "prob": 0.989
+ },
+ {
+  "text": "Well,",
+  "start": 8.97,
+  "end": 9.15,
+  "prob": 0.969
+ },
+ {
+  "text": "this",
+  "start": 9.49,
+  "end": 9.71,
+  "prob": 0.987
+ },
+ {
+  "text": "is",
+  "start": 9.71,
+  "end": 9.87,
+  "prob": 0.996
+ },
+ {
+  "text": "a",
+  "start": 9.87,
+  "end": 10.01,
+  "prob": 0.886
+ },
+ {
+  "text": "tool",
+  "start": 10.01,
+  "end": 10.21,
+  "prob": 0.999
+ },
+ {
+  "text": "for",
+  "start": 10.21,
+  "end": 10.47,
+  "prob": 0.991
+ },
+ {
+  "text": "exactly",
+  "start": 10.47,
+  "end": 10.97,
+  "prob": 0.985
+ },
+ {
+  "text": "that",
+  "start": 10.97,
+  "end": 11.41,
+  "prob": 0.986
+ },
+ {
+  "text": "right",
+  "start": 11.41,
+  "end": 11.83,
+  "prob": 0.57
+ },
+ {
+  "text": "now",
+  "start": 11.83,
+  "end": 12.11,
+  "prob": 0.981
+ },
+ {
+  "text": "everyone",
+  "start": 12.11,
+  "end": 12.43,
+  "prob": 0.574
+ },
+ {
+  "text": "in",
+  "start": 12.43,
+  "end": 12.73,
+  "prob": 0.995
+ },
+ {
+  "text": "the",
+  "start": 12.73,
+  "end": 12.85,
+  "prob": 0.989
+ },
+ {
+  "text": "AI",
+  "start": 12.85,
+  "end": 13.19,
+  "prob": 0.967
+ },
+ {
+  "text": "and",
+  "start": 13.19,
+  "end": 13.47,
+  "prob": 0.979
+ },
+ {
+  "text": "developer",
+  "start": 13.47,
+  "end": 13.73,
+  "prob": 0.856
+ },
+ {
+  "text": "world",
+  "start": 13.73,
+  "end": 14.19,
+  "prob": 0.998
+ },
+ {
+  "text": "is",
+  "start": 14.19,
+  "end": 14.43,
+  "prob": 0.991
+ },
+ {
+  "text": "talking",
+  "start": 14.43,
+  "end": 14.71,
+  "prob": 0.998
+ },
+ {
+  "text": "about.",
+  "start": 14.71,
+  "end": 15.15,
+  "prob": 0.998
+ },
+ {
+  "text": "It",
+  "start": 15.6,
+  "end": 15.8,
+  "prob": 0.968
+ },
+ {
+  "text": "is",
+  "start": 15.8,
+  "end": 16.04,
+  "prob": 0.989
+ },
+ {
+  "text": "called",
+  "start": 16.04,
+  "end": 16.42,
+  "prob": 0.996
+ },
+ {
+  "text": "Reverse",
+  "start": 16.42,
+  "end": 17.12,
+  "prob": 0.272
+ },
+ {
+  "text": "Engineer",
+  "start": 17.12,
+  "end": 17.62,
+  "prob": 0.688
+ },
+ {
+  "text": "Anything.",
+  "start": 17.62,
+  "end": 18.16,
+  "prob": 0.867
+ },
+ {
+  "text": "Yes,",
+  "start": 18.6,
+  "end": 18.7,
+  "prob": 0.972
+ },
+ {
+  "text": "this",
+  "start": 19.22,
+  "end": 19.3,
+  "prob": 0.987
+ },
+ {
+  "text": "is",
+  "start": 19.3,
+  "end": 19.46,
+  "prob": 0.996
+ },
+ {
+  "text": "the",
+  "start": 19.46,
+  "end": 19.6,
+  "prob": 0.985
+ },
+ {
+  "text": "real",
+  "start": 19.6,
+  "end": 19.8,
+  "prob": 0.994
+ },
+ {
+  "text": "name,",
+  "start": 19.8,
+  "end": 20.14,
+  "prob": 0.995
+ },
+ {
+  "text": "REA",
+  "start": 20.54,
+  "end": 21.18,
+  "prob": 0.703
+ },
+ {
+  "text": "for",
+  "start": 21.18,
+  "end": 21.34,
+  "prob": 0.934
+ },
+ {
+  "text": "short.",
+  "start": 21.34,
+  "end": 21.68,
+  "prob": 0.995
+ },
+ {
+  "text": "So,",
+  "start": 22.57,
+  "end": 22.57,
+  "prob": 0.754
+ },
+ {
+  "text": "now",
+  "start": 22.89,
+  "end": 23.07,
+  "prob": 0.975
+ },
+ {
+  "text": "look",
+  "start": 23.07,
+  "end": 23.27,
+  "prob": 0.966
+ },
+ {
+  "text": "at",
+  "start": 23.27,
+  "end": 23.45,
+  "prob": 0.997
+ },
+ {
+  "text": "this.",
+  "start": 23.45,
+  "end": 23.69,
+  "prob": 0.998
+ },
+ {
+  "text": "On",
+  "start": 23.97,
+  "end": 24.15,
+  "prob": 0.954
+ },
+ {
+  "text": "GitHub,",
+  "start": 24.15,
+  "end": 24.41,
+  "prob": 0.851
+ },
+ {
+  "text": "it",
+  "start": 24.87,
+  "end": 25.03,
+  "prob": 0.985
+ },
+ {
+  "text": "has",
+  "start": 25.03,
+  "end": 25.23,
+  "prob": 0.994
+ },
+ {
+  "text": "almost",
+  "start": 25.23,
+  "end": 25.75,
+  "prob": 0.996
+ },
+ {
+  "text": "400",
+  "start": 25.75,
+  "end": 26.25,
+  "prob": 0.942
+ },
+ {
+  "text": ",000",
+  "start": 26.25,
+  "end": 26.87,
+  "prob": 0.918
+ },
+ {
+  "text": "stars.",
+  "start": 26.87,
+  "end": 27.23,
+  "prob": 0.961
+ },
+ {
+  "text": "That",
+  "start": 27.55,
+  "end": 27.77,
+  "prob": 0.977
+ },
+ {
+  "text": "is",
+  "start": 27.77,
+  "end": 27.89,
+  "prob": 0.995
+ },
+ {
+  "text": "a",
+  "start": 27.89,
+  "end": 28.03,
+  "prob": 0.972
+ },
+ {
+  "text": "crazy",
+  "start": 28.03,
+  "end": 28.23,
+  "prob": 0.996
+ },
+ {
+  "text": "number",
+  "start": 28.23,
+  "end": 28.59,
+  "prob": 0.998
+ },
+ {
+  "text": "for",
+  "start": 28.59,
+  "end": 28.93,
+  "prob": 0.282
+ },
+ {
+  "text": "a",
+  "start": 28.93,
+  "end": 29.07,
+  "prob": 0.64
+ },
+ {
+  "text": "developer",
+  "start": 29.07,
+  "end": 29.39,
+  "prob": 0.931
+ },
+ {
+  "text": "tool",
+  "start": 29.39,
+  "end": 29.89,
+  "prob": 0.961
+ },
+ {
+  "text": "and",
+  "start": 29.89,
+  "end": 30.33,
+  "prob": 0.462
+ },
+ {
+  "text": "it",
+  "start": 30.33,
+  "end": 30.49,
+  "prob": 0.939
+ },
+ {
+  "text": "is",
+  "start": 30.49,
+  "end": 31.65,
+  "prob": 0.979
+ },
+ {
+  "text": "free",
+  "start": 31.65,
+  "end": 31.93,
+  "prob": 0.788
+ },
+ {
+  "text": "and",
+  "start": 31.93,
+  "end": 32.33,
+  "prob": 0.957
+ },
+ {
+  "text": "open",
+  "start": 32.33,
+  "end": 32.67,
+  "prob": 0.96
+ },
+ {
+  "text": "source.",
+  "start": 32.67,
+  "end": 32.97,
+  "prob": 0.83
+ },
+ {
+  "text": "So",
+  "start": 33.23,
+  "end": 33.25,
+  "prob": 0.817
+ },
+ {
+  "text": "what",
+  "start": 33.25,
+  "end": 33.59,
+  "prob": 0.776
+ },
+ {
+  "text": "is",
+  "start": 33.59,
+  "end": 33.79,
+  "prob": 0.968
+ },
+ {
+  "text": "it?",
+  "start": 33.79,
+  "end": 34.09,
+  "prob": 0.968
+ },
+ {
+  "text": "Simple.",
+  "start": 34.55,
+  "end": 34.73,
+  "prob": 0.933
+ },
+ {
+  "text": "You",
+  "start": 35.37,
+  "end": 35.47,
+  "prob": 0.906
+ },
+ {
+  "text": "see",
+  "start": 35.47,
+  "end": 35.91,
+  "prob": 0.968
+ },
+ {
+  "text": "a",
+  "start": 36.15,
+  "end": 37.19,
+  "prob": 0.951
+ },
+ {
+  "text": "feature",
+  "start": 37.19,
+  "end": 37.43,
+  "prob": 0.962
+ },
+ {
+  "text": "you",
+  "start": 37.43,
+  "end": 37.89,
+  "prob": 0.835
+ },
+ {
+  "text": "like",
+  "start": 37.89,
+  "end": 38.17,
+  "prob": 0.935
+ },
+ {
+  "text": "in",
+  "start": 38.17,
+  "end": 38.39,
+  "prob": 0.986
+ },
+ {
+  "text": "an",
+  "start": 38.39,
+  "end": 38.59,
+  "prob": 0.968
+ },
+ {
+  "text": "app.",
+  "start": 38.59,
+  "end": 38.85,
+  "prob": 0.95
+ },
+ {
+  "text": "Your",
+  "start": 39.41,
+  "end": 39.53,
+  "prob": 0.945
+ },
+ {
+  "text": "AI",
+  "start": 39.53,
+  "end": 39.95,
+  "prob": 0.912
+ },
+ {
+  "text": "agent",
+  "start": 39.95,
+  "end": 40.31,
+  "prob": 0.869
+ },
+ {
+  "text": "like",
+  "start": 40.31,
+  "end": 40.63,
+  "prob": 0.859
+ },
+ {
+  "text": "Claude",
+  "start": 40.63,
+  "end": 41.05,
+  "prob": 0.458
+ },
+ {
+  "text": "Code",
+  "start": 41.05,
+  "end": 41.41,
+  "prob": 0.508
+ },
+ {
+  "text": "uses",
+  "start": 41.41,
+  "end": 41.83,
+  "prob": 0.909
+ },
+ {
+  "text": "REA",
+  "start": 41.83,
+  "end": 42.61,
+  "prob": 0.656
+ },
+ {
+  "text": "to",
+  "start": 42.61,
+  "end": 42.79,
+  "prob": 0.962
+ },
+ {
+  "text": "inspect",
+  "start": 42.79,
+  "end": 43.19,
+  "prob": 0.99
+ },
+ {
+  "text": "that",
+  "start": 43.19,
+  "end": 43.45,
+  "prob": 0.928
+ },
+ {
+  "text": "app,",
+  "start": 43.45,
+  "end": 43.79,
+  "prob": 0.983
+ },
+ {
+  "text": "explain",
+  "start": 44.13,
+  "end": 44.45,
+  "prob": 0.984
+ },
+ {
+  "text": "how",
+  "start": 44.45,
+  "end": 44.71,
+  "prob": 0.994
+ },
+ {
+  "text": "it",
+  "start": 44.71,
+  "end": 44.87,
+  "prob": 0.994
+ },
+ {
+  "text": "works,",
+  "start": 44.87,
+  "end": 45.19,
+  "prob": 0.997
+ },
+ {
+  "text": "show",
+  "start": 45.43,
+  "end": 45.69,
+  "prob": 0.987
+ },
+ {
+  "text": "you",
+  "start": 45.69,
+  "end": 45.87,
+  "prob": 0.982
+ },
+ {
+  "text": "the",
+  "start": 45.87,
+  "end": 46.01,
+  "prob": 0.991
+ },
+ {
+  "text": "evidence",
+  "start": 46.01,
+  "end": 46.35,
+  "prob": 0.992
+ },
+ {
+  "text": "and",
+  "start": 46.35,
+  "end": 46.77,
+  "prob": 0.728
+ },
+ {
+  "text": "then",
+  "start": 46.77,
+  "end": 46.97,
+  "prob": 0.976
+ },
+ {
+  "text": "help",
+  "start": 46.97,
+  "end": 47.19,
+  "prob": 0.99
+ },
+ {
+  "text": "you",
+  "start": 47.19,
+  "end": 47.43,
+  "prob": 0.996
+ },
+ {
+  "text": "build",
+  "start": 47.43,
+  "end": 47.63,
+  "prob": 0.994
+ },
+ {
+  "text": "your",
+  "start": 47.63,
+  "end": 47.87,
+  "prob": 0.995
+ },
+ {
+  "text": "own",
+  "start": 47.87,
+  "end": 48.17,
+  "prob": 0.996
+ },
+ {
+  "text": "version.",
+  "start": 48.17,
+  "end": 48.55,
+  "prob": 0.995
+ },
+ {
+  "text": "And",
+  "start": 49.03,
+  "end": 49.13,
+  "prob": 0.945
+ },
+ {
+  "text": "people",
+  "start": 49.13,
+  "end": 49.41,
+  "prob": 0.993
+ },
+ {
+  "text": "are",
+  "start": 49.41,
+  "end": 49.63,
+  "prob": 0.998
+ },
+ {
+  "text": "doing",
+  "start": 49.63,
+  "end": 49.91,
+  "prob": 0.998
+ },
+ {
+  "text": "some",
+  "start": 49.91,
+  "end": 50.19,
+  "prob": 0.993
+ },
+ {
+  "text": "wild",
+  "start": 50.19,
+  "end": 50.55,
+  "prob": 0.61
+ },
+ {
+  "text": "things",
+  "start": 50.55,
+  "end": 50.85,
+  "prob": 0.989
+ },
+ {
+  "text": "with",
+  "start": 50.85,
+  "end": 51.11,
+  "prob": 0.99
+ },
+ {
+  "text": "it.",
+  "start": 51.11,
+  "end": 51.31,
+  "prob": 0.996
+ },
+ {
+  "text": "Some",
+  "start": 51.73,
+  "end": 51.77,
+  "prob": 0.943
+ },
+ {
+  "text": "traced",
+  "start": 51.77,
+  "end": 52.05,
+  "prob": 0.945
+ },
+ {
+  "text": "how",
+  "start": 52.05,
+  "end": 52.33,
+  "prob": 0.945
+ },
+ {
+  "text": "the",
+  "start": 52.33,
+  "end": 52.51,
+  "prob": 0.974
+ },
+ {
+  "text": "Notion",
+  "start": 52.51,
+  "end": 52.91,
+  "prob": 0.915
+ },
+ {
+  "text": "desktop",
+  "start": 52.91,
+  "end": 53.17,
+  "prob": 0.571
+ },
+ {
+  "text": "app",
+  "start": 53.17,
+  "end": 53.91,
+  "prob": 0.92
+ },
+ {
+  "text": "handles",
+  "start": 53.91,
+  "end": 57.17,
+  "prob": 0.942
+ },
+ {
+  "text": "copy",
+  "start": 57.17,
+  "end": 57.53,
+  "prob": 0.833
+ },
+ {
+  "text": "and",
+  "start": 57.53,
+  "end": 57.77,
+  "prob": 0.944
+ },
+ {
+  "text": "paste.",
+  "start": 57.77,
+  "end": 58.05,
+  "prob": 0.994
+ },
+ {
+  "text": "all",
+  "start": 58.05,
+  "end": 58.67,
+  "prob": 0.111
+ },
+ {
+  "text": "the",
+  "start": 58.67,
+  "end": 58.89,
+  "prob": 0.98
+ },
+ {
+  "text": "way",
+  "start": 58.89,
+  "end": 59.05,
+  "prob": 0.98
+ },
+ {
+  "text": "from",
+  "start": 59.05,
+  "end": 59.27,
+  "prob": 0.985
+ },
+ {
+  "text": "the",
+  "start": 59.27,
+  "end": 59.43,
+  "prob": 0.935
+ },
+ {
+  "text": "screen",
+  "start": 59.43,
+  "end": 59.67,
+  "prob": 0.968
+ },
+ {
+  "text": "to",
+  "start": 59.67,
+  "end": 59.89,
+  "prob": 0.972
+ },
+ {
+  "text": "the",
+  "start": 59.89,
+  "end": 60.01,
+  "prob": 0.974
+ },
+ {
+  "text": "main",
+  "start": 60.01,
+  "end": 60.21,
+  "prob": 0.989
+ },
+ {
+  "text": "process.",
+  "start": 60.21,
+  "end": 60.73,
+  "prob": 0.959
+ },
+ {
+  "text": "People",
+  "start": 62.99,
+  "end": 63.59,
+  "prob": 0.911
+ },
+ {
+  "text": "rebuild",
+  "start": 63.59,
+  "end": 64.19,
+  "prob": 0.822
+ },
+ {
+  "text": "the",
+  "start": 64.19,
+  "end": 64.61,
+  "prob": 0.936
+ },
+ {
+  "text": "sound",
+  "start": 64.61,
+  "end": 64.85,
+  "prob": 0.906
+ },
+ {
+  "text": "panning",
+  "start": 64.85,
+  "end": 65.31,
+  "prob": 0.989
+ },
+ {
+  "text": "of",
+  "start": 65.31,
+  "end": 65.49,
+  "prob": 0.924
+ },
+ {
+  "text": "a",
+  "start": 65.49,
+  "end": 65.63,
+  "prob": 0.266
+ },
+ {
+  "text": "DX",
+  "start": 65.63,
+  "end": 65.85,
+  "prob": 0.493
+ },
+ {
+  "text": "ball",
+  "start": 65.85,
+  "end": 66.15,
+  "prob": 0.663
+ },
+ {
+  "text": "and",
+  "start": 66.15,
+  "end": 66.91,
+  "prob": 0.826
+ },
+ {
+  "text": "checked",
+  "start": 66.91,
+  "end": 67.67,
+  "prob": 0.781
+ },
+ {
+  "text": "it",
+  "start": 67.67,
+  "end": 67.97,
+  "prob": 0.951
+ },
+ {
+  "text": "against",
+  "start": 67.97,
+  "end": 68.39,
+  "prob": 0.972
+ },
+ {
+  "text": "the",
+  "start": 68.39,
+  "end": 68.59,
+  "prob": 0.975
+ },
+ {
+  "text": "original.",
+  "start": 68.59,
+  "end": 68.95,
+  "prob": 0.978
+ },
+ {
+  "text": "And",
+  "start": 69.41,
+  "end": 69.49,
+  "prob": 0.56
+ },
+ {
+  "text": "one",
+  "start": 69.49,
+  "end": 70.37,
+  "prob": 0.933
+ },
+ {
+  "text": "guide",
+  "start": 70.54,
+  "end": 70.86,
+  "prob": 0.978
+ },
+ {
+  "text": "shows",
+  "start": 70.86,
+  "end": 71.16,
+  "prob": 0.986
+ },
+ {
+  "text": "how",
+  "start": 71.16,
+  "end": 71.74,
+  "prob": 0.949
+ },
+ {
+  "text": "to",
+  "start": 71.74,
+  "end": 71.92,
+  "prob": 0.998
+ },
+ {
+  "text": "record",
+  "start": 71.92,
+  "end": 72.3,
+  "prob": 0.998
+ },
+ {
+  "text": "a",
+  "start": 72.3,
+  "end": 72.48,
+  "prob": 0.921
+ },
+ {
+  "text": "web",
+  "start": 72.48,
+  "end": 72.6,
+  "prob": 0.898
+ },
+ {
+  "text": "app",
+  "start": 72.6,
+  "end": 72.78,
+  "prob": 0.958
+ },
+ {
+  "text": "session",
+  "start": 72.78,
+  "end": 73.08,
+  "prob": 0.989
+ },
+ {
+  "text": "and",
+  "start": 73.08,
+  "end": 73.5,
+  "prob": 0.953
+ },
+ {
+  "text": "turn",
+  "start": 73.5,
+  "end": 73.74,
+  "prob": 0.99
+ },
+ {
+  "text": "it",
+  "start": 73.74,
+  "end": 73.98,
+  "prob": 0.987
+ },
+ {
+  "text": "into",
+  "start": 73.98,
+  "end": 74.3,
+  "prob": 0.979
+ },
+ {
+  "text": "a",
+  "start": 74.3,
+  "end": 74.5,
+  "prob": 0.968
+ },
+ {
+  "text": "practical",
+  "start": 74.5,
+  "end": 74.9,
+  "prob": 0.997
+ },
+ {
+  "text": "environment",
+  "start": 74.9,
+  "end": 75.4,
+  "prob": 0.993
+ },
+ {
+  "text": "for",
+  "start": 75.4,
+  "end": 75.94,
+  "prob": 0.984
+ },
+ {
+  "text": "all",
+  "start": 75.94,
+  "end": 76.36,
+  "prob": 0.988
+ },
+ {
+  "text": "the",
+  "start": 76.36,
+  "end": 76.54,
+  "prob": 0.972
+ },
+ {
+  "text": "AI",
+  "start": 76.54,
+  "end": 76.86,
+  "prob": 0.938
+ },
+ {
+  "text": "agents.",
+  "start": 76.86,
+  "end": 77.28,
+  "prob": 0.975
+ },
+ {
+  "text": "So",
+  "start": 77.68,
+  "end": 77.72,
+  "prob": 0.935
+ },
+ {
+  "text": "why",
+  "start": 77.72,
+  "end": 78.02,
+  "prob": 0.821
+ },
+ {
+  "text": "the",
+  "start": 78.02,
+  "end": 78.2,
+  "prob": 0.959
+ },
+ {
+  "text": "hype?",
+  "start": 78.2,
+  "end": 78.4,
+  "prob": 0.998
+ },
+ {
+  "text": "I",
+  "start": 78.85,
+  "end": 79.01,
+  "prob": 0.985
+ },
+ {
+  "text": "think",
+  "start": 79.01,
+  "end": 79.23,
+  "prob": 0.999
+ },
+ {
+  "text": "there",
+  "start": 79.23,
+  "end": 79.45,
+  "prob": 0.981
+ },
+ {
+  "text": "are",
+  "start": 79.45,
+  "end": 79.65,
+  "prob": 0.996
+ },
+ {
+  "text": "three",
+  "start": 79.65,
+  "end": 79.89,
+  "prob": 0.752
+ },
+ {
+  "text": "reasons",
+  "start": 79.89,
+  "end": 80.27,
+  "prob": 0.991
+ },
+ {
+  "text": "for",
+  "start": 80.27,
+  "end": 80.55,
+  "prob": 0.985
+ },
+ {
+  "text": "it.",
+  "start": 80.55,
+  "end": 80.75,
+  "prob": 0.997
+ },
+ {
+  "text": "One,",
+  "start": 81.19,
+  "end": 81.25,
+  "prob": 0.814
+ },
+ {
+  "text": "it",
+  "start": 81.55,
+  "end": 81.65,
+  "prob": 0.963
+ },
+ {
+  "text": "is",
+  "start": 81.65,
+  "end": 81.83,
+  "prob": 0.986
+ },
+ {
+  "text": "free",
+  "start": 81.83,
+  "end": 82.15,
+  "prob": 0.979
+ },
+ {
+  "text": "and",
+  "start": 82.15,
+  "end": 82.47,
+  "prob": 0.995
+ },
+ {
+  "text": "open",
+  "start": 82.47,
+  "end": 82.79,
+  "prob": 0.98
+ },
+ {
+  "text": "source",
+  "start": 82.79,
+  "end": 82.99,
+  "prob": 0.746
+ },
+ {
+  "text": "for",
+  "start": 82.99,
+  "end": 83.31,
+  "prob": 0.995
+ },
+ {
+  "text": "everyone.",
+  "start": 83.31,
+  "end": 83.77,
+  "prob": 0.995
+ },
+ {
+  "text": "2.",
+  "start": 83.77,
+  "end": 84.27,
+  "prob": 0.231
+ },
+ {
+  "text": "It",
+  "start": 84.57,
+  "end": 84.57,
+  "prob": 0.655
+ },
+ {
+  "text": "works",
+  "start": 84.57,
+  "end": 84.83,
+  "prob": 0.874
+ },
+ {
+  "text": "on",
+  "start": 84.83,
+  "end": 85.11,
+  "prob": 0.97
+ },
+ {
+  "text": "many",
+  "start": 85.11,
+  "end": 85.37,
+  "prob": 0.97
+ },
+ {
+  "text": "things",
+  "start": 85.37,
+  "end": 85.69,
+  "prob": 0.98
+ },
+ {
+  "text": "like",
+  "start": 85.69,
+  "end": 86.05,
+  "prob": 0.841
+ },
+ {
+  "text": "websites,",
+  "start": 86.05,
+  "end": 86.63,
+  "prob": 0.831
+ },
+ {
+  "text": "apps,",
+  "start": 87.03,
+  "end": 87.23,
+  "prob": 0.925
+ },
+ {
+  "text": "even",
+  "start": 87.57,
+  "end": 87.69,
+  "prob": 0.933
+ },
+ {
+  "text": "old",
+  "start": 87.69,
+  "end": 88.01,
+  "prob": 0.965
+ },
+ {
+  "text": "binaries",
+  "start": 88.01,
+  "end": 88.41,
+  "prob": 0.976
+ },
+ {
+  "text": "and",
+  "start": 88.41,
+  "end": 88.91,
+  "prob": 0.217
+ },
+ {
+  "text": "3.",
+  "start": 88.91,
+  "end": 89.19,
+  "prob": 0.964
+ },
+ {
+  "text": "It",
+  "start": 89.57,
+  "end": 89.65,
+  "prob": 0.869
+ },
+ {
+  "text": "shows",
+  "start": 89.65,
+  "end": 89.87,
+  "prob": 0.98
+ },
+ {
+  "text": "evidence",
+  "start": 89.87,
+  "end": 90.31,
+  "prob": 0.972
+ },
+ {
+  "text": "for",
+  "start": 90.31,
+  "end": 90.71,
+  "prob": 0.977
+ },
+ {
+  "text": "every",
+  "start": 90.71,
+  "end": 91.11,
+  "prob": 0.975
+ },
+ {
+  "text": "finding",
+  "start": 91.11,
+  "end": 91.51,
+  "prob": 0.528
+ },
+ {
+  "text": "with",
+  "start": 91.51,
+  "end": 92.25,
+  "prob": 0.542
+ },
+ {
+  "text": "AI",
+  "start": 92.25,
+  "end": 92.69,
+  "prob": 0.745
+ },
+ {
+  "text": "that",
+  "start": 92.69,
+  "end": 92.97,
+  "prob": 0.884
+ },
+ {
+  "text": "matters",
+  "start": 93.18,
+  "end": 95.02,
+  "prob": 0.88
+ },
+ {
+  "text": "a",
+  "start": 95.02,
+  "end": 95.24,
+  "prob": 0.932
+ },
+ {
+  "text": "lot",
+  "start": 95.24,
+  "end": 95.54,
+  "prob": 0.994
+ },
+ {
+  "text": "because",
+  "start": 95.54,
+  "end": 96.12,
+  "prob": 0.556
+ },
+ {
+  "text": "we",
+  "start": 96.52,
+  "end": 97.0,
+  "prob": 0.598
+ },
+ {
+  "text": "all",
+  "start": 97.0,
+  "end": 99.3,
+  "prob": 0.958
+ },
+ {
+  "text": "know",
+  "start": 99.3,
+  "end": 99.52,
+  "prob": 0.994
+ },
+ {
+  "text": "AI",
+  "start": 99.52,
+  "end": 99.78,
+  "prob": 0.703
+ },
+ {
+  "text": "can",
+  "start": 99.78,
+  "end": 100.1,
+  "prob": 0.97
+ },
+ {
+  "text": "make",
+  "start": 100.1,
+  "end": 100.36,
+  "prob": 0.984
+ },
+ {
+  "text": "things",
+  "start": 100.36,
+  "end": 100.66,
+  "prob": 0.977
+ },
+ {
+  "text": "up",
+  "start": 100.66,
+  "end": 101.22,
+  "prob": 0.97
+ },
+ {
+  "text": "but",
+  "start": 101.22,
+  "end": 101.56,
+  "prob": 0.46
+ },
+ {
+  "text": "when",
+  "start": 101.56,
+  "end": 101.84,
+  "prob": 0.945
+ },
+ {
+  "text": "you",
+  "start": 101.84,
+  "end": 102.02,
+  "prob": 0.988
+ },
+ {
+  "text": "ask",
+  "start": 102.02,
+  "end": 102.3,
+  "prob": 0.96
+ },
+ {
+  "text": "me",
+  "start": 102.3,
+  "end": 102.56,
+  "prob": 0.98
+ },
+ {
+  "text": "is",
+  "start": 102.56,
+  "end": 102.82,
+  "prob": 0.547
+ },
+ {
+  "text": "it",
+  "start": 102.82,
+  "end": 102.98,
+  "prob": 0.972
+ },
+ {
+  "text": "really",
+  "start": 102.98,
+  "end": 103.26,
+  "prob": 0.961
+ },
+ {
+  "text": "that",
+  "start": 103.26,
+  "end": 103.52,
+  "prob": 0.965
+ },
+ {
+  "text": "good,",
+  "start": 103.52,
+  "end": 103.82,
+  "prob": 0.996
+ },
+ {
+  "text": "today",
+  "start": 104.3,
+  "end": 104.48,
+  "prob": 0.922
+ },
+ {
+  "text": "I",
+  "start": 104.48,
+  "end": 104.7,
+  "prob": 0.893
+ },
+ {
+  "text": "will",
+  "start": 104.7,
+  "end": 104.84,
+  "prob": 0.971
+ },
+ {
+  "text": "test",
+  "start": 104.84,
+  "end": 105.04,
+  "prob": 0.99
+ },
+ {
+  "text": "it",
+  "start": 105.04,
+  "end": 105.24,
+  "prob": 0.971
+ },
+ {
+  "text": "for",
+  "start": 105.24,
+  "end": 105.44,
+  "prob": 0.985
+ },
+ {
+  "text": "you.",
+  "start": 105.44,
+  "end": 105.64,
+  "prob": 0.995
+ },
+ {
+  "text": "I",
+  "start": 106.13,
+  "end": 106.29,
+  "prob": 0.969
+ },
+ {
+  "text": "will",
+  "start": 106.29,
+  "end": 106.43,
+  "prob": 0.983
+ },
+ {
+  "text": "use",
+  "start": 106.43,
+  "end": 106.71,
+  "prob": 0.964
+ },
+ {
+  "text": "it",
+  "start": 106.71,
+  "end": 106.87,
+  "prob": 0.987
+ },
+ {
+  "text": "to",
+  "start": 106.87,
+  "end": 107.05,
+  "prob": 0.991
+ },
+ {
+  "text": "study",
+  "start": 107.05,
+  "end": 107.35,
+  "prob": 0.993
+ },
+ {
+  "text": "a",
+  "start": 107.35,
+  "end": 107.59,
+  "prob": 0.95
+ },
+ {
+  "text": "real",
+  "start": 107.59,
+  "end": 107.85,
+  "prob": 0.979
+ },
+ {
+  "text": "app",
+  "start": 107.85,
+  "end": 108.23,
+  "prob": 0.963
+ },
+ {
+  "text": "and",
+  "start": 108.23,
+  "end": 108.69,
+  "prob": 0.955
+ },
+ {
+  "text": "then",
+  "start": 108.69,
+  "end": 108.83,
+  "prob": 0.963
+ },
+ {
+  "text": "rebuild",
+  "start": 108.83,
+  "end": 109.23,
+  "prob": 0.981
+ },
+ {
+  "text": "my",
+  "start": 109.23,
+  "end": 109.51,
+  "prob": 0.994
+ },
+ {
+  "text": "own",
+  "start": 109.51,
+  "end": 109.83,
+  "prob": 0.972
+ },
+ {
+  "text": "version",
+  "start": 109.83,
+  "end": 110.23,
+  "prob": 0.987
+ },
+ {
+  "text": "with",
+  "start": 110.23,
+  "end": 110.79,
+  "prob": 0.869
+ },
+ {
+  "text": "just",
+  "start": 110.79,
+  "end": 111.01,
+  "prob": 0.986
+ },
+ {
+  "text": "few",
+  "start": 111.01,
+  "end": 111.29,
+  "prob": 0.963
+ },
+ {
+  "text": "prompts",
+  "start": 111.29,
+  "end": 111.65,
+  "prob": 0.786
+ },
+ {
+  "text": "and",
+  "start": 111.65,
+  "end": 112.23,
+  "prob": 0.829
+ },
+ {
+  "text": "stay",
+  "start": 112.23,
+  "end": 112.47,
+  "prob": 0.987
+ },
+ {
+  "text": "with",
+  "start": 112.47,
+  "end": 112.63,
+  "prob": 0.994
+ },
+ {
+  "text": "me",
+  "start": 112.63,
+  "end": 112.91,
+  "prob": 0.988
+ },
+ {
+  "text": "until",
+  "start": 112.91,
+  "end": 113.23,
+  "prob": 0.894
+ },
+ {
+  "text": "the",
+  "start": 113.23,
+  "end": 113.39,
+  "prob": 0.984
+ },
+ {
+  "text": "end",
+  "start": 113.39,
+  "end": 113.57,
+  "prob": 0.997
+ },
+ {
+  "text": "of",
+  "start": 113.57,
+  "end": 113.75,
+  "prob": 0.988
+ },
+ {
+  "text": "this",
+  "start": 113.75,
+  "end": 113.95,
+  "prob": 0.931
+ },
+ {
+  "text": "video",
+  "start": 113.95,
+  "end": 114.29,
+  "prob": 0.997
+ },
+ {
+  "text": "because",
+  "start": 114.29,
+  "end": 114.71,
+  "prob": 0.137
+ },
+ {
+  "text": "I",
+  "start": 114.71,
+  "end": 114.99,
+  "prob": 0.804
+ },
+ {
+  "text": "will",
+  "start": 114.99,
+  "end": 115.13,
+  "prob": 0.927
+ },
+ {
+  "text": "tell",
+  "start": 115.13,
+  "end": 115.29,
+  "prob": 0.984
+ },
+ {
+  "text": "you",
+  "start": 115.29,
+  "end": 115.51,
+  "prob": 0.972
+ },
+ {
+  "text": "honestly",
+  "start": 115.51,
+  "end": 115.95,
+  "prob": 0.858
+ },
+ {
+  "text": "what",
+  "start": 115.95,
+  "end": 116.25,
+  "prob": 0.886
+ },
+ {
+  "text": "worked,",
+  "start": 116.25,
+  "end": 116.71,
+  "prob": 0.96
+ },
+ {
+  "text": "what",
+  "start": 116.89,
+  "end": 116.99,
+  "prob": 0.933
+ },
+ {
+  "text": "did",
+  "start": 116.99,
+  "end": 117.21,
+  "prob": 0.917
+ },
+ {
+  "text": "not",
+  "start": 117.21,
+  "end": 117.51,
+  "prob": 0.996
+ },
+ {
+  "text": "and",
+  "start": 117.51,
+  "end": 117.85,
+  "prob": 0.556
+ },
+ {
+  "text": "downsides",
+  "start": 117.85,
+  "end": 118.45,
+  "prob": 0.903
+ },
+ {
+  "text": "nobody",
+  "start": 118.45,
+  "end": 118.81,
+  "prob": 0.912
+ },
+ {
+  "text": "is",
+  "start": 118.81,
+  "end": 119.05,
+  "prob": 0.684
+ },
+ {
+  "text": "talking",
+  "start": 119.05,
+  "end": 119.33,
+  "prob": 0.994
+ },
+ {
+  "text": "about.",
+  "start": 119.33,
+  "end": 119.77,
+  "prob": 0.996
+ },
+ {
+  "text": "Oh",
+  "start": 120.2,
+  "end": 120.46,
+  "prob": 0.602
+ },
+ {
+  "text": "and",
+  "start": 120.46,
+  "end": 120.88,
+  "prob": 0.455
+ },
+ {
+  "text": "by",
+  "start": 120.88,
+  "end": 121.06,
+  "prob": 0.939
+ },
+ {
+  "text": "the",
+  "start": 121.06,
+  "end": 121.18,
+  "prob": 0.882
+ },
+ {
+  "text": "way",
+  "start": 121.18,
+  "end": 121.36,
+  "prob": 0.997
+ },
+ {
+  "text": "I",
+  "start": 121.36,
+  "end": 121.58,
+  "prob": 0.606
+ },
+ {
+  "text": "am",
+  "start": 121.58,
+  "end": 121.8,
+  "prob": 0.552
+ },
+ {
+  "text": "Kalyan",
+  "start": 121.8,
+  "end": 122.04,
+  "prob": 0.904
+ },
+ {
+  "text": "and",
+  "start": 122.04,
+  "end": 122.5,
+  "prob": 0.741
+ },
+ {
+  "text": "this",
+  "start": 122.5,
+  "end": 122.66,
+  "prob": 0.991
+ },
+ {
+  "text": "is",
+  "start": 122.66,
+  "end": 122.92,
+  "prob": 0.977
+ },
+ {
+  "text": "the",
+  "start": 122.92,
+  "end": 123.1,
+  "prob": 0.457
+ },
+ {
+  "text": "AI",
+  "start": 123.1,
+  "end": 123.32,
+  "prob": 0.901
+ },
+ {
+  "text": "with",
+  "start": 123.32,
+  "end": 123.56,
+  "prob": 0.927
+ },
+ {
+  "text": "Kalyan",
+  "start": 123.56,
+  "end": 124.02,
+  "prob": 0.985
+ },
+ {
+  "text": "where",
+  "start": 124.02,
+  "end": 124.26,
+  "prob": 0.51
+ },
+ {
+  "text": "I",
+  "start": 124.26,
+  "end": 124.48,
+  "prob": 0.939
+ },
+ {
+  "text": "share",
+  "start": 124.48,
+  "end": 125.5,
+  "prob": 0.461
+ },
+ {
+  "text": "simple",
+  "start": 125.5,
+  "end": 127.58,
+  "prob": 0.84
+ },
+ {
+  "text": "practical",
+  "start": 127.58,
+  "end": 128.12,
+  "prob": 0.867
+ },
+ {
+  "text": "AI",
+  "start": 128.12,
+  "end": 128.62,
+  "prob": 0.959
+ },
+ {
+  "text": "you",
+  "start": 128.62,
+  "end": 129.1,
+  "prob": 0.73
+ },
+ {
+  "text": "can",
+  "start": 129.1,
+  "end": 129.28,
+  "prob": 0.992
+ },
+ {
+  "text": "try",
+  "start": 129.28,
+  "end": 129.54,
+  "prob": 0.972
+ },
+ {
+  "text": "Dorei.",
+  "start": 129.54,
+  "end": 130.02,
+  "prob": 0.23
+ },
+ {
+  "text": "If",
+  "start": 130.39,
+  "end": 130.57,
+  "prob": 0.911
+ },
+ {
+  "text": "you",
+  "start": 130.57,
+  "end": 130.71,
+  "prob": 0.994
+ },
+ {
+  "text": "like",
+  "start": 130.71,
+  "end": 130.95,
+  "prob": 0.918
+ },
+ {
+  "text": "this",
+  "start": 130.95,
+  "end": 131.29,
+  "prob": 0.987
+ },
+ {
+  "text": "tap",
+  "start": 131.29,
+  "end": 131.73,
+  "prob": 0.51
+ },
+ {
+  "text": "subscribe",
+  "start": 131.73,
+  "end": 132.23,
+  "prob": 0.907
+ },
+ {
+  "text": "it",
+  "start": 132.23,
+  "end": 132.59,
+  "prob": 0.716
+ },
+ {
+  "text": "really",
+  "start": 132.59,
+  "end": 132.85,
+  "prob": 0.996
+ },
+ {
+  "text": "helps.",
+  "start": 132.85,
+  "end": 133.29,
+  "prob": 0.991
+ },
+ {
+  "text": "Okay",
+  "start": 133.73,
+  "end": 133.73,
+  "prob": 0.629
+ },
+ {
+  "text": "let's",
+  "start": 133.91,
+  "end": 134.53,
+  "prob": 0.711
+ },
+ {
+  "text": "go.",
+  "start": 134.53,
+  "end": 134.75,
+  "prob": 0.982
+ },
+ {
+  "text": "Let",
+  "start": 135.15,
+  "end": 135.17,
+  "prob": 0.411
+ },
+ {
+  "text": "me",
+  "start": 135.17,
+  "end": 135.95,
+  "prob": 0.986
+ },
+ {
+  "text": "explain",
+  "start": 135.95,
+  "end": 136.35,
+  "prob": 0.998
+ },
+ {
+  "text": "what",
+  "start": 136.35,
+  "end": 136.71,
+  "prob": 0.971
+ },
+ {
+  "text": "we",
+  "start": 136.71,
+  "end": 136.95,
+  "prob": 0.986
+ },
+ {
+  "text": "are",
+  "start": 136.95,
+  "end": 137.05,
+  "prob": 0.965
+ },
+ {
+  "text": "going",
+  "start": 137.05,
+  "end": 137.29,
+  "prob": 0.99
+ },
+ {
+  "text": "to",
+  "start": 137.29,
+  "end": 137.51,
+  "prob": 0.998
+ },
+ {
+  "text": "do.",
+  "start": 137.51,
+  "end": 137.79,
+  "prob": 0.996
+ },
+ {
+  "text": "In",
+  "start": 138.05,
+  "end": 138.21,
+  "prob": 0.955
+ },
+ {
+  "text": "simple",
+  "start": 138.21,
+  "end": 138.53,
+  "prob": 0.985
+ },
+ {
+  "text": "words",
+  "start": 138.53,
+  "end": 138.95,
+  "prob": 0.988
+ },
+ {
+  "text": "why",
+  "start": 138.95,
+  "end": 139.47,
+  "prob": 0.834
+ },
+ {
+  "text": "I",
+  "start": 139.47,
+  "end": 139.71,
+  "prob": 0.97
+ },
+ {
+  "text": "picked",
+  "start": 139.71,
+  "end": 140.07,
+  "prob": 0.986
+ },
+ {
+  "text": "weaken.",
+  "start": 140.07,
+  "end": 140.41,
+  "prob": 0.138
+ },
+ {
+  "text": "I",
+  "start": 140.91,
+  "end": 140.97,
+  "prob": 0.966
+ },
+ {
+  "text": "needed",
+  "start": 140.97,
+  "end": 141.29,
+  "prob": 0.981
+ },
+ {
+  "text": "a",
+  "start": 141.29,
+  "end": 141.49,
+  "prob": 0.992
+ },
+ {
+  "text": "real",
+  "start": 141.49,
+  "end": 141.73,
+  "prob": 0.996
+ },
+ {
+  "text": "app",
+  "start": 141.73,
+  "end": 142.05,
+  "prob": 0.053
+ },
+ {
+  "text": "to",
+  "start": 142.05,
+  "end": 142.29,
+  "prob": 0.899
+ },
+ {
+  "text": "study.",
+  "start": 142.29,
+  "end": 142.61,
+  "prob": 0.973
+ },
+ {
+  "text": "Weaken",
+  "start": 143.05,
+  "end": 143.31,
+  "prob": 0.419
+ },
+ {
+  "text": "is",
+  "start": 143.31,
+  "end": 143.55,
+  "prob": 0.933
+ },
+ {
+  "text": "an",
+  "start": 143.55,
+  "end": 143.75,
+  "prob": 0.956
+ },
+ {
+  "text": "open",
+  "start": 143.75,
+  "end": 144.05,
+  "prob": 0.969
+ },
+ {
+  "text": "source,",
+  "start": 144.05,
+  "end": 144.43,
+  "prob": 0.746
+ },
+ {
+  "text": "can't",
+  "start": 144.81,
+  "end": 144.97,
+  "prob": 0.224
+ },
+ {
+  "text": "bend",
+  "start": 144.97,
+  "end": 145.07,
+  "prob": 0.81
+ },
+ {
+  "text": "board",
+  "start": 145.07,
+  "end": 145.41,
+  "prob": 0.684
+ },
+ {
+  "text": "a",
+  "start": 145.41,
+  "end": 145.93,
+  "prob": 0.292
+ },
+ {
+  "text": "bit",
+  "start": 145.93,
+  "end": 146.11,
+  "prob": 0.991
+ },
+ {
+  "text": "like",
+  "start": 146.11,
+  "end": 146.45,
+  "prob": 0.968
+ },
+ {
+  "text": "Trello.",
+  "start": 146.45,
+  "end": 146.85,
+  "prob": 0.981
+ },
+ {
+  "text": "If",
+  "start": 147.19,
+  "end": 147.37,
+  "prob": 0.962
+ },
+ {
+  "text": "you",
+  "start": 147.37,
+  "end": 147.53,
+  "prob": 0.995
+ },
+ {
+  "text": "have",
+  "start": 147.53,
+  "end": 147.75,
+  "prob": 0.893
+ },
+ {
+  "text": "never",
+  "start": 147.75,
+  "end": 148.05,
+  "prob": 0.991
+ },
+ {
+  "text": "used",
+  "start": 148.05,
+  "end": 148.41,
+  "prob": 0.991
+ },
+ {
+  "text": "one,",
+  "start": 148.41,
+  "end": 148.69,
+  "prob": 0.981
+ },
+ {
+  "text": "you",
+  "start": 149.11,
+  "end": 149.15,
+  "prob": 0.979
+ },
+ {
+  "text": "have",
+  "start": 149.15,
+  "end": 149.41,
+  "prob": 0.989
+ },
+ {
+  "text": "columns",
+  "start": 149.41,
+  "end": 149.87,
+  "prob": 0.934
+ },
+ {
+  "text": "like",
+  "start": 149.87,
+  "end": 150.41,
+  "prob": 0.866
+ },
+ {
+  "text": "to",
+  "start": 150.41,
+  "end": 151.35,
+  "prob": 0.261
+ },
+ {
+  "text": "do,",
+  "start": 151.35,
+  "end": 151.75,
+  "prob": 0.774
+ },
+ {
+  "text": "doing",
+  "start": 152.14,
+  "end": 152.56,
+  "prob": 0.842
+ },
+ {
+  "text": "and",
+  "start": 152.56,
+  "end": 153.02,
+  "prob": 0.666
+ },
+ {
+  "text": "done.",
+  "start": 153.02,
+  "end": 153.4,
+  "prob": 0.988
+ },
+ {
+  "text": "Inside",
+  "start": 153.9,
+  "end": 154.14,
+  "prob": 0.978
+ },
+ {
+  "text": "each",
+  "start": 154.14,
+  "end": 154.48,
+  "prob": 0.989
+ },
+ {
+  "text": "column",
+  "start": 154.48,
+  "end": 154.82,
+  "prob": 0.976
+ },
+ {
+  "text": "you",
+  "start": 154.82,
+  "end": 155.02,
+  "prob": 0.582
+ },
+ {
+  "text": "have",
+  "start": 155.02,
+  "end": 155.24,
+  "prob": 0.996
+ },
+ {
+  "text": "cards",
+  "start": 155.24,
+  "end": 155.54,
+  "prob": 0.951
+ },
+ {
+  "text": "and",
+  "start": 155.54,
+  "end": 155.94,
+  "prob": 0.668
+ },
+ {
+  "text": "those",
+  "start": 155.94,
+  "end": 156.22,
+  "prob": 0.976
+ },
+ {
+  "text": "are",
+  "start": 156.22,
+  "end": 156.52,
+  "prob": 0.997
+ },
+ {
+  "text": "your",
+  "start": 156.52,
+  "end": 156.72,
+  "prob": 0.983
+ },
+ {
+  "text": "tasks.",
+  "start": 156.72,
+  "end": 157.06,
+  "prob": 0.902
+ },
+ {
+  "text": "When",
+  "start": 157.56,
+  "end": 157.68,
+  "prob": 0.983
+ },
+ {
+  "text": "the",
+  "start": 157.68,
+  "end": 157.84,
+  "prob": 0.983
+ },
+ {
+  "text": "work",
+  "start": 157.84,
+  "end": 158.12,
+  "prob": 0.988
+ },
+ {
+  "text": "moves",
+  "start": 158.12,
+  "end": 158.48,
+  "prob": 0.97
+ },
+ {
+  "text": "forward,",
+  "start": 158.48,
+  "end": 158.96,
+  "prob": 0.99
+ },
+ {
+  "text": "you",
+  "start": 159.4,
+  "end": 159.44,
+  "prob": 0.991
+ },
+ {
+  "text": "drag",
+  "start": 159.44,
+  "end": 159.72,
+  "prob": 0.996
+ },
+ {
+  "text": "the",
+  "start": 159.72,
+  "end": 159.92,
+  "prob": 0.987
+ },
+ {
+  "text": "card",
+  "start": 159.92,
+  "end": 160.14,
+  "prob": 0.952
+ },
+ {
+  "text": "to",
+  "start": 160.14,
+  "end": 160.36,
+  "prob": 0.995
+ },
+ {
+  "text": "the",
+  "start": 160.36,
+  "end": 160.5,
+  "prob": 0.968
+ },
+ {
+  "text": "next",
+  "start": 160.5,
+  "end": 160.72,
+  "prob": 0.998
+ },
+ {
+  "text": "column.",
+  "start": 160.72,
+  "end": 161.12,
+  "prob": 0.991
+ },
+ {
+  "text": "It",
+  "start": 161.52,
+  "end": 161.64,
+  "prob": 0.947
+ },
+ {
+  "text": "has",
+  "start": 161.64,
+  "end": 161.78,
+  "prob": 0.987
+ },
+ {
+  "text": "a",
+  "start": 161.78,
+  "end": 161.92,
+  "prob": 0.982
+ },
+ {
+  "text": "public",
+  "start": 161.92,
+  "end": 162.2,
+  "prob": 0.987
+ },
+ {
+  "text": "demo",
+  "start": 162.2,
+  "end": 162.56,
+  "prob": 0.989
+ },
+ {
+  "text": "that",
+  "start": 162.56,
+  "end": 162.88,
+  "prob": 0.962
+ },
+ {
+  "text": "anyone",
+  "start": 162.88,
+  "end": 163.26,
+  "prob": 0.992
+ },
+ {
+  "text": "can",
+  "start": 163.26,
+  "end": 163.66,
+  "prob": 0.997
+ },
+ {
+  "text": "open",
+  "start": 163.66,
+  "end": 164.14,
+  "prob": 0.999
+ },
+ {
+  "text": "and",
+  "start": 164.14,
+  "end": 164.6,
+  "prob": 0.806
+ },
+ {
+  "text": "it",
+  "start": 164.6,
+  "end": 164.78,
+  "prob": 0.985
+ },
+ {
+  "text": "has",
+  "start": 164.78,
+  "end": 165.1,
+  "prob": 0.997
+ },
+ {
+  "text": "an",
+  "start": 165.1,
+  "end": 165.28,
+  "prob": 0.915
+ },
+ {
+  "text": "MIT",
+  "start": 165.28,
+  "end": 165.72,
+  "prob": 0.975
+ },
+ {
+  "text": "license",
+  "start": 165.72,
+  "end": 166.22,
+  "prob": 0.814
+ },
+ {
+  "text": "which",
+  "start": 166.22,
+  "end": 166.8,
+  "prob": 0.511
+ },
+ {
+  "text": "means",
+  "start": 166.8,
+  "end": 167.12,
+  "prob": 0.995
+ },
+ {
+  "text": "it",
+  "start": 167.12,
+  "end": 167.36,
+  "prob": 0.121
+ },
+ {
+  "text": "is",
+  "start": 167.36,
+  "end": 167.58,
+  "prob": 0.789
+ },
+ {
+  "text": "open",
+  "start": 167.58,
+  "end": 167.88,
+  "prob": 0.749
+ },
+ {
+  "text": "source.",
+  "start": 167.88,
+  "end": 168.26,
+  "prob": 0.855
+ },
+ {
+  "text": "So",
+  "start": 168.72,
+  "end": 168.74,
+  "prob": 0.756
+ },
+ {
+  "text": "I'm",
+  "start": 168.74,
+  "end": 168.96,
+  "prob": 0.554
+ },
+ {
+  "text": "not",
+  "start": 168.96,
+  "end": 169.16,
+  "prob": 0.991
+ },
+ {
+  "text": "touching",
+  "start": 169.16,
+  "end": 169.52,
+  "prob": 0.967
+ },
+ {
+  "text": "anything",
+  "start": 169.52,
+  "end": 169.88,
+  "prob": 0.994
+ },
+ {
+  "text": "private.",
+  "start": 169.88,
+  "end": 170.3,
+  "prob": 0.985
+ },
+ {
+  "text": "And",
+  "start": 171.06,
+  "end": 171.08,
+  "prob": 0.835
+ },
+ {
+  "text": "there",
+  "start": 171.08,
+  "end": 171.24,
+  "prob": 0.981
+ },
+ {
+  "text": "is",
+  "start": 171.24,
+  "end": 171.38,
+  "prob": 0.988
+ },
+ {
+  "text": "one",
+  "start": 171.38,
+  "end": 171.6,
+  "prob": 0.982
+ },
+ {
+  "text": "more",
+  "start": 171.6,
+  "end": 171.82,
+  "prob": 0.999
+ },
+ {
+  "text": "reason.",
+  "start": 171.82,
+  "end": 172.2,
+  "prob": 0.994
+ },
+ {
+  "text": "A",
+  "start": 172.74,
+  "end": 172.86,
+  "prob": 0.466
+ },
+ {
+  "text": "Kanban",
+  "start": 172.86,
+  "end": 173.22,
+  "prob": 0.854
+ },
+ {
+  "text": "app",
+  "start": 173.22,
+  "end": 173.54,
+  "prob": 0.866
+ },
+ {
+  "text": "has",
+  "start": 173.54,
+  "end": 174.02,
+  "prob": 0.916
+ },
+ {
+  "text": "a",
+  "start": 174.23,
+  "end": 174.35,
+  "prob": 0.972
+ },
+ {
+  "text": "lot",
+  "start": 174.35,
+  "end": 174.55,
+  "prob": 0.999
+ },
+ {
+  "text": "of",
+  "start": 174.55,
+  "end": 174.79,
+  "prob": 0.997
+ },
+ {
+  "text": "behavior",
+  "start": 174.79,
+  "end": 175.07,
+  "prob": 0.84
+ },
+ {
+  "text": "inside.",
+  "start": 175.07,
+  "end": 175.61,
+  "prob": 0.991
+ },
+ {
+  "text": "Drag",
+  "start": 176.17,
+  "end": 176.21,
+  "prob": 0.838
+ },
+ {
+  "text": "and",
+  "start": 176.21,
+  "end": 176.37,
+  "prob": 0.75
+ },
+ {
+  "text": "drop",
+  "start": 176.37,
+  "end": 176.63,
+  "prob": 0.98
+ },
+ {
+  "text": "labels,",
+  "start": 176.63,
+  "end": 177.41,
+  "prob": 0.521
+ },
+ {
+  "text": "due",
+  "start": 177.69,
+  "end": 177.89,
+  "prob": 0.938
+ },
+ {
+  "text": "dates,",
+  "start": 177.89,
+  "end": 178.25,
+  "prob": 0.983
+ },
+ {
+  "text": "checklists,",
+  "start": 178.47,
+  "end": 178.87,
+  "prob": 0.759
+ },
+ {
+  "text": "saving",
+  "start": 179.13,
+  "end": 179.35,
+  "prob": 0.983
+ },
+ {
+  "text": "data.",
+  "start": 179.35,
+  "end": 179.79,
+  "prob": 0.991
+ },
+ {
+  "text": "So",
+  "start": 180.29,
+  "end": 180.35,
+  "prob": 0.986
+ },
+ {
+  "text": "it",
+  "start": 180.35,
+  "end": 180.49,
+  "prob": 0.971
+ },
+ {
+  "text": "is",
+  "start": 180.49,
+  "end": 180.63,
+  "prob": 0.992
+ },
+ {
+  "text": "a",
+  "start": 180.63,
+  "end": 180.67,
+  "prob": 0.466
+ },
+ {
+  "text": "great",
+  "start": 180.67,
+  "end": 180.93,
+  "prob": 0.995
+ },
+ {
+  "text": "test",
+  "start": 180.93,
+  "end": 181.27,
+  "prob": 0.993
+ },
+ {
+  "text": "for",
+  "start": 181.27,
+  "end": 181.61,
+  "prob": 0.992
+ },
+ {
+  "text": "Rhea.",
+  "start": 181.61,
+  "end": 181.95,
+  "prob": 0.536
+ },
+ {
+  "text": "What",
+  "start": 182.23,
+  "end": 182.39,
+  "prob": 0.832
+ },
+ {
+  "text": "we",
+  "start": 182.39,
+  "end": 182.67,
+  "prob": 0.911
+ },
+ {
+  "text": "are",
+  "start": 182.67,
+  "end": 182.85,
+  "prob": 0.97
+ },
+ {
+  "text": "trying",
+  "start": 182.85,
+  "end": 183.21,
+  "prob": 0.996
+ },
+ {
+  "text": "to",
+  "start": 183.21,
+  "end": 183.43,
+  "prob": 0.994
+ },
+ {
+  "text": "achieve,",
+  "start": 183.43,
+  "end": 183.77,
+  "prob": 0.998
+ },
+ {
+  "text": "I'm",
+  "start": 184.11,
+  "end": 184.21,
+  "prob": 0.878
+ },
+ {
+  "text": "not",
+  "start": 184.21,
+  "end": 184.43,
+  "prob": 0.984
+ },
+ {
+  "text": "trying",
+  "start": 184.43,
+  "end": 184.81,
+  "prob": 0.991
+ },
+ {
+  "text": "to",
+  "start": 185.15,
+  "end": 185.87,
+  "prob": 0.554
+ },
+ {
+  "text": "copy",
+  "start": 185.87,
+  "end": 188.01,
+  "prob": 0.895
+ },
+ {
+  "text": "the",
+  "start": 188.38,
+  "end": 188.66,
+  "prob": 0.982
+ },
+ {
+  "text": "old",
+  "start": 188.66,
+  "end": 189.08,
+  "prob": 0.176
+ },
+ {
+  "text": "beacon.",
+  "start": 189.41,
+  "end": 190.11,
+  "prob": 0.257
+ },
+ {
+  "text": "That",
+  "start": 190.47,
+  "end": 190.61,
+  "prob": 0.975
+ },
+ {
+  "text": "would",
+  "start": 190.61,
+  "end": 190.77,
+  "prob": 0.942
+ },
+ {
+  "text": "take",
+  "start": 190.77,
+  "end": 190.99,
+  "prob": 0.991
+ },
+ {
+  "text": "a",
+  "start": 190.99,
+  "end": 191.81,
+  "prob": 0.829
+ },
+ {
+  "text": "lot",
+  "start": 191.81,
+  "end": 191.99,
+  "prob": 0.998
+ },
+ {
+  "text": "of",
+  "start": 191.99,
+  "end": 192.17,
+  "prob": 0.996
+ },
+ {
+  "text": "time",
+  "start": 192.17,
+  "end": 192.43,
+  "prob": 0.993
+ },
+ {
+  "text": "and",
+  "start": 192.43,
+  "end": 192.83,
+  "prob": 0.788
+ },
+ {
+  "text": "big",
+  "start": 192.83,
+  "end": 193.01,
+  "prob": 0.757
+ },
+ {
+  "text": "team",
+  "start": 193.01,
+  "end": 193.39,
+  "prob": 0.952
+ },
+ {
+  "text": "and",
+  "start": 193.39,
+  "end": 193.67,
+  "prob": 0.892
+ },
+ {
+  "text": "a",
+  "start": 193.67,
+  "end": 193.75,
+  "prob": 0.819
+ },
+ {
+  "text": "lot",
+  "start": 193.75,
+  "end": 193.87,
+  "prob": 0.999
+ },
+ {
+  "text": "of",
+  "start": 193.87,
+  "end": 194.09,
+  "prob": 0.998
+ },
+ {
+  "text": "prompts.",
+  "start": 194.09,
+  "end": 194.43,
+  "prob": 0.912
+ },
+ {
+  "text": "My",
+  "start": 194.87,
+  "end": 195.05,
+  "prob": 0.989
+ },
+ {
+  "text": "goal",
+  "start": 195.05,
+  "end": 195.23,
+  "prob": 0.998
+ },
+ {
+  "text": "is",
+  "start": 195.23,
+  "end": 195.41,
+  "prob": 0.998
+ },
+ {
+  "text": "a",
+  "start": 195.41,
+  "end": 195.55,
+  "prob": 0.985
+ },
+ {
+  "text": "small",
+  "start": 195.55,
+  "end": 195.89,
+  "prob": 0.993
+ },
+ {
+  "text": "working",
+  "start": 195.89,
+  "end": 196.33,
+  "prob": 0.658
+ },
+ {
+  "text": "version",
+  "start": 196.33,
+  "end": 196.75,
+  "prob": 0.976
+ },
+ {
+  "text": "my",
+  "start": 196.75,
+  "end": 197.37,
+  "prob": 0.188
+ },
+ {
+  "text": "own",
+  "start": 197.37,
+  "end": 197.75,
+  "prob": 0.996
+ },
+ {
+  "text": "app",
+  "start": 197.75,
+  "end": 198.17,
+  "prob": 0.987
+ },
+ {
+  "text": "which",
+  "start": 198.17,
+  "end": 198.71,
+  "prob": 0.911
+ },
+ {
+  "text": "I",
+  "start": 198.71,
+  "end": 198.87,
+  "prob": 0.609
+ },
+ {
+  "text": "will",
+  "start": 198.87,
+  "end": 199.03,
+  "prob": 0.983
+ },
+ {
+  "text": "call",
+  "start": 199.03,
+  "end": 199.41,
+  "prob": 0.984
+ },
+ {
+  "text": "RIA",
+  "start": 199.41,
+  "end": 199.79,
+  "prob": 0.304
+ },
+ {
+  "text": "board",
+  "start": 199.79,
+  "end": 200.11,
+  "prob": 0.531
+ },
+ {
+  "text": "it",
+  "start": 200.11,
+  "end": 200.67,
+  "prob": 0.552
+ },
+ {
+  "text": "will",
+  "start": 200.67,
+  "end": 200.85,
+  "prob": 0.998
+ },
+ {
+  "text": "have",
+  "start": 200.85,
+  "end": 201.11,
+  "prob": 0.999
+ },
+ {
+  "text": "columns",
+  "start": 201.11,
+  "end": 201.61,
+  "prob": 0.956
+ },
+ {
+  "text": "cards",
+  "start": 201.61,
+  "end": 202.09,
+  "prob": 0.462
+ },
+ {
+  "text": "drag",
+  "start": 202.09,
+  "end": 202.57,
+  "prob": 0.974
+ },
+ {
+  "text": "and",
+  "start": 202.57,
+  "end": 202.71,
+  "prob": 0.727
+ },
+ {
+  "text": "drop",
+  "start": 202.71,
+  "end": 203.03,
+  "prob": 0.999
+ },
+ {
+  "text": "color",
+  "start": 203.03,
+  "end": 203.49,
+  "prob": 0.93
+ },
+ {
+  "text": "labels",
+  "start": 203.49,
+  "end": 204.07,
+  "prob": 0.998
+ },
+ {
+  "text": "due",
+  "start": 204.07,
+  "end": 204.51,
+  "prob": 0.964
+ },
+ {
+  "text": "dates",
+  "start": 204.51,
+  "end": 204.83,
+  "prob": 0.997
+ },
+ {
+  "text": "with",
+  "start": 204.83,
+  "end": 205.11,
+  "prob": 0.998
+ },
+ {
+  "text": "the",
+  "start": 205.11,
+  "end": 205.23,
+  "prob": 0.45
+ },
+ {
+  "text": "red",
+  "start": 205.23,
+  "end": 205.43,
+  "prob": 0.98
+ },
+ {
+  "text": "overdue",
+  "start": 205.43,
+  "end": 205.97,
+  "prob": 0.888
+ },
+ {
+  "text": "badge",
+  "start": 205.97,
+  "end": 206.39,
+  "prob": 0.943
+ },
+ {
+  "text": "and",
+  "start": 206.39,
+  "end": 206.79,
+  "prob": 0.992
+ },
+ {
+  "text": "checklists",
+  "start": 206.79,
+  "end": 207.35,
+  "prob": 0.597
+ },
+ {
+  "text": "will",
+  "start": 207.35,
+  "end": 207.89,
+  "prob": 0.469
+ },
+ {
+  "text": "save",
+  "start": 207.89,
+  "end": 208.17,
+  "prob": 0.999
+ },
+ {
+  "text": "the",
+  "start": 208.17,
+  "end": 208.39,
+  "prob": 0.999
+ },
+ {
+  "text": "data",
+  "start": 208.39,
+  "end": 208.73,
+  "prob": 0.998
+ },
+ {
+  "text": "only",
+  "start": 208.73,
+  "end": 209.11,
+  "prob": 0.997
+ },
+ {
+  "text": "in",
+  "start": 209.11,
+  "end": 209.39,
+  "prob": 0.999
+ },
+ {
+  "text": "my",
+  "start": 209.39,
+  "end": 209.57,
+  "prob": 0.999
+ },
+ {
+  "text": "browser",
+  "start": 209.57,
+  "end": 209.97,
+  "prob": 0.998
+ },
+ {
+  "text": "so",
+  "start": 209.97,
+  "end": 210.41,
+  "prob": 0.94
+ },
+ {
+  "text": "it",
+  "start": 210.41,
+  "end": 210.55,
+  "prob": 0.999
+ },
+ {
+  "text": "will",
+  "start": 210.55,
+  "end": 210.69,
+  "prob": 1.0
+ },
+ {
+  "text": "not",
+  "start": 210.69,
+  "end": 210.95,
+  "prob": 0.999
+ },
+ {
+  "text": "have",
+  "start": 210.95,
+  "end": 211.29,
+  "prob": 0.999
+ },
+ {
+  "text": "login",
+  "start": 211.29,
+  "end": 211.75,
+  "prob": 0.841
+ },
+ {
+  "text": "real",
+  "start": 211.75,
+  "end": 212.19,
+  "prob": 0.984
+ },
+ {
+  "text": "time",
+  "start": 212.19,
+  "end": 212.43,
+  "prob": 0.553
+ },
+ {
+  "text": "sync",
+  "start": 212.43,
+  "end": 212.73,
+  "prob": 0.979
+ },
+ {
+  "text": "between",
+  "start": 212.73,
+  "end": 213.15,
+  "prob": 0.999
+ },
+ {
+  "text": "users",
+  "start": 213.15,
+  "end": 213.63,
+  "prob": 0.998
+ },
+ {
+  "text": "or",
+  "start": 213.63,
+  "end": 214.01,
+  "prob": 0.985
+ },
+ {
+  "text": "a",
+  "start": 214.01,
+  "end": 214.13,
+  "prob": 0.991
+ },
+ {
+  "text": "server",
+  "start": 214.13,
+  "end": 214.47,
+  "prob": 0.997
+ },
+ {
+  "text": "in",
+  "start": 214.47,
+  "end": 215.03,
+  "prob": 0.846
+ },
+ {
+  "text": "simple",
+  "start": 215.03,
+  "end": 215.33,
+  "prob": 0.999
+ },
+ {
+  "text": "words",
+  "start": 215.33,
+  "end": 215.73,
+  "prob": 0.996
+ },
+ {
+  "text": "the",
+  "start": 215.84,
+  "end": 216.28,
+  "prob": 0.992
+ },
+ {
+  "text": "expectation",
+  "start": 216.28,
+  "end": 216.88,
+  "prob": 0.999
+ },
+ {
+  "text": "is",
+  "start": 216.88,
+  "end": 217.34,
+  "prob": 0.996
+ },
+ {
+  "text": "this",
+  "start": 217.34,
+  "end": 217.74,
+  "prob": 0.973
+ },
+ {
+  "text": "a",
+  "start": 217.86,
+  "end": 218.28,
+  "prob": 0.954
+ },
+ {
+  "text": "working",
+  "start": 218.28,
+  "end": 218.56,
+  "prob": 0.998
+ },
+ {
+  "text": "copy",
+  "start": 218.56,
+  "end": 218.94,
+  "prob": 0.998
+ },
+ {
+  "text": "of",
+  "start": 218.94,
+  "end": 219.22,
+  "prob": 0.999
+ },
+ {
+  "text": "how",
+  "start": 219.22,
+  "end": 219.6,
+  "prob": 0.988
+ },
+ {
+  "text": "the",
+  "start": 219.6,
+  "end": 219.78,
+  "prob": 0.989
+ },
+ {
+  "text": "board",
+  "start": 219.78,
+  "end": 220.1,
+  "prob": 0.85
+ },
+ {
+  "text": "board",
+  "start": 220.37,
+  "end": 221.01,
+  "prob": 0.548
+ },
+ {
+  "text": "a",
+  "start": 221.01,
+  "end": 221.53,
+  "prob": 0.975
+ },
+ {
+  "text": "working",
+  "start": 221.8,
+  "end": 222.12,
+  "prob": 0.999
+ },
+ {
+  "text": "copy",
+  "start": 222.12,
+  "end": 222.48,
+  "prob": 0.999
+ },
+ {
+  "text": "of",
+  "start": 222.48,
+  "end": 222.76,
+  "prob": 0.999
+ },
+ {
+  "text": "how",
+  "start": 222.76,
+  "end": 223.2,
+  "prob": 0.99
+ },
+ {
+  "text": "the",
+  "start": 223.2,
+  "end": 223.4,
+  "prob": 0.999
+ },
+ {
+  "text": "board",
+  "start": 223.4,
+  "end": 223.74,
+  "prob": 0.999
+ },
+ {
+  "text": "behaves",
+  "start": 223.74,
+  "end": 224.2,
+  "prob": 0.999
+ },
+ {
+  "text": "with",
+  "start": 224.2,
+  "end": 224.8,
+  "prob": 0.145
+ },
+ {
+  "text": "my",
+  "start": 224.8,
+  "end": 225.06,
+  "prob": 0.902
+ },
+ {
+  "text": "own",
+  "start": 225.06,
+  "end": 225.32,
+  "prob": 0.96
+ },
+ {
+  "text": "name",
+  "start": 225.32,
+  "end": 225.62,
+  "prob": 0.964
+ },
+ {
+  "text": "and",
+  "start": 225.62,
+  "end": 225.94,
+  "prob": 0.924
+ },
+ {
+  "text": "design",
+  "start": 225.94,
+  "end": 226.3,
+  "prob": 0.981
+ },
+ {
+  "text": "not",
+  "start": 226.3,
+  "end": 226.84,
+  "prob": 0.271
+ },
+ {
+  "text": "the",
+  "start": 226.84,
+  "end": 227.0,
+  "prob": 0.975
+ },
+ {
+  "text": "full",
+  "start": 227.0,
+  "end": 227.18,
+  "prob": 0.985
+ },
+ {
+  "text": "product.",
+  "start": 227.18,
+  "end": 227.6,
+  "prob": 0.97
+ },
+ {
+  "text": "Okay",
+  "start": 228.41,
+  "end": 228.41,
+  "prob": 0.425
+ },
+ {
+  "text": "now",
+  "start": 228.41,
+  "end": 228.67,
+  "prob": 0.453
+ },
+ {
+  "text": "the",
+  "start": 228.67,
+  "end": 228.87,
+  "prob": 0.971
+ },
+ {
+  "text": "setup.",
+  "start": 228.87,
+  "end": 229.13,
+  "prob": 0.896
+ },
+ {
+  "text": "First",
+  "start": 229.59,
+  "end": 229.63,
+  "prob": 0.904
+ },
+ {
+  "text": "what",
+  "start": 229.63,
+  "end": 229.89,
+  "prob": 0.87
+ },
+ {
+  "text": "we",
+  "start": 229.89,
+  "end": 230.11,
+  "prob": 0.988
+ },
+ {
+  "text": "need",
+  "start": 230.11,
+  "end": 230.29,
+  "prob": 0.997
+ },
+ {
+  "text": "before",
+  "start": 230.29,
+  "end": 230.63,
+  "prob": 0.983
+ },
+ {
+  "text": "we",
+  "start": 230.63,
+  "end": 230.87,
+  "prob": 0.953
+ },
+ {
+  "text": "start.",
+  "start": 230.87,
+  "end": 231.13,
+  "prob": 0.993
+ },
+ {
+  "text": "I'm",
+  "start": 231.81,
+  "end": 232.01,
+  "prob": 0.823
+ },
+ {
+  "text": "using",
+  "start": 232.01,
+  "end": 232.31,
+  "prob": 0.999
+ },
+ {
+  "text": "a",
+  "start": 232.31,
+  "end": 232.49,
+  "prob": 0.957
+ },
+ {
+  "text": "Windows",
+  "start": 232.49,
+  "end": 232.77,
+  "prob": 0.885
+ },
+ {
+  "text": "laptop",
+  "start": 232.77,
+  "end": 233.23,
+  "prob": 0.895
+ },
+ {
+  "text": "so",
+  "start": 233.23,
+  "end": 233.81,
+  "prob": 0.478
+ },
+ {
+  "text": "Claude",
+  "start": 234.14,
+  "end": 234.42,
+  "prob": 0.242
+ },
+ {
+  "text": "code",
+  "start": 234.42,
+  "end": 234.62,
+  "prob": 0.645
+ },
+ {
+  "text": "needs",
+  "start": 234.62,
+  "end": 235.06,
+  "prob": 0.986
+ },
+ {
+  "text": "Windows",
+  "start": 235.06,
+  "end": 235.78,
+  "prob": 0.869
+ },
+ {
+  "text": "10",
+  "start": 235.78,
+  "end": 236.12,
+  "prob": 0.99
+ },
+ {
+  "text": "or",
+  "start": 236.12,
+  "end": 236.5,
+  "prob": 0.978
+ },
+ {
+  "text": "the",
+  "start": 236.5,
+  "end": 236.64,
+  "prob": 0.968
+ },
+ {
+  "text": "newer",
+  "start": 236.64,
+  "end": 236.94,
+  "prob": 0.994
+ },
+ {
+  "text": "version.",
+  "start": 236.94,
+  "end": 237.36,
+  "prob": 0.99
+ },
+ {
+  "text": "An",
+  "start": 237.74,
+  "end": 237.94,
+  "prob": 0.9
+ },
+ {
+  "text": "internet",
+  "start": 237.94,
+  "end": 238.26,
+  "prob": 0.743
+ },
+ {
+  "text": "connection,",
+  "start": 238.26,
+  "end": 238.8,
+  "prob": 0.995
+ },
+ {
+  "text": "a",
+  "start": 239.12,
+  "end": 239.16,
+  "prob": 0.961
+ },
+ {
+  "text": "Claude",
+  "start": 239.16,
+  "end": 239.42,
+  "prob": 0.94
+ },
+ {
+  "text": "account",
+  "start": 239.42,
+  "end": 239.74,
+  "prob": 0.97
+ },
+ {
+  "text": "because",
+  "start": 239.74,
+  "end": 240.16,
+  "prob": 0.703
+ },
+ {
+  "text": "you",
+  "start": 240.16,
+  "end": 240.38,
+  "prob": 0.983
+ },
+ {
+  "text": "sign",
+  "start": 240.38,
+  "end": 240.64,
+  "prob": 0.595
+ },
+ {
+  "text": "in",
+  "start": 240.64,
+  "end": 240.84,
+  "prob": 0.951
+ },
+ {
+  "text": "the",
+  "start": 240.84,
+  "end": 241.0,
+  "prob": 0.978
+ },
+ {
+  "text": "first",
+  "start": 241.0,
+  "end": 241.28,
+  "prob": 0.996
+ },
+ {
+  "text": "time",
+  "start": 241.28,
+  "end": 241.64,
+  "prob": 0.999
+ },
+ {
+  "text": "you",
+  "start": 241.64,
+  "end": 242.12,
+  "prob": 0.853
+ },
+ {
+  "text": "use",
+  "start": 242.12,
+  "end": 242.44,
+  "prob": 0.982
+ },
+ {
+  "text": "Claude",
+  "start": 242.44,
+  "end": 242.76,
+  "prob": 0.983
+ },
+ {
+  "text": "code.",
+  "start": 242.76,
+  "end": 243.08,
+  "prob": 0.896
+ },
+ {
+  "text": "Next",
+  "start": 243.81,
+  "end": 243.97,
+  "prob": 0.949
+ },
+ {
+  "text": "step",
+  "start": 243.97,
+  "end": 244.19,
+  "prob": 0.986
+ },
+ {
+  "text": "is",
+  "start": 244.19,
+  "end": 244.45,
+  "prob": 0.997
+ },
+ {
+  "text": "open",
+  "start": 244.45,
+  "end": 245.19,
+  "prob": 0.86
+ },
+ {
+  "text": "the",
+  "start": 245.19,
+  "end": 245.39,
+  "prob": 0.996
+ },
+ {
+  "text": "PowerShell",
+  "start": 245.39,
+  "end": 245.87,
+  "prob": 0.898
+ },
+ {
+  "text": "type",
+  "start": 245.87,
+  "end": 246.49,
+  "prob": 0.633
+ },
+ {
+  "text": "this",
+  "start": 246.89,
+  "end": 247.13,
+  "prob": 0.956
+ },
+ {
+  "text": "command.",
+  "start": 247.13,
+  "end": 247.53,
+  "prob": 0.992
+ },
+ {
+  "text": "Wait",
+  "start": 248.3,
+  "end": 248.32,
+  "prob": 0.725
+ },
+ {
+  "text": "for",
+  "start": 248.32,
+  "end": 248.54,
+  "prob": 0.987
+ },
+ {
+  "text": "it",
+  "start": 248.54,
+  "end": 248.68,
+  "prob": 0.99
+ },
+ {
+  "text": "to",
+  "start": 248.68,
+  "end": 248.82,
+  "prob": 0.993
+ },
+ {
+  "text": "finish",
+  "start": 248.82,
+  "end": 249.1,
+  "prob": 0.996
+ },
+ {
+  "text": "then",
+  "start": 249.1,
+  "end": 249.68,
+  "prob": 0.777
+ },
+ {
+  "text": "close",
+  "start": 249.92,
+  "end": 250.2,
+  "prob": 0.992
+ },
+ {
+  "text": "the",
+  "start": 250.2,
+  "end": 250.38,
+  "prob": 0.991
+ },
+ {
+  "text": "terminal",
+  "start": 250.38,
+  "end": 250.76,
+  "prob": 0.992
+ },
+ {
+  "text": "and",
+  "start": 250.76,
+  "end": 251.22,
+  "prob": 0.984
+ },
+ {
+  "text": "open",
+  "start": 251.22,
+  "end": 251.52,
+  "prob": 0.996
+ },
+ {
+  "text": "it",
+  "start": 251.52,
+  "end": 251.72,
+  "prob": 0.997
+ },
+ {
+  "text": "again.",
+  "start": 251.72,
+  "end": 252.0,
+  "prob": 0.124
+ },
+ {
+  "text": "Now",
+  "start": 252.51,
+  "end": 252.69,
+  "prob": 0.825
+ },
+ {
+  "text": "type",
+  "start": 252.69,
+  "end": 252.99,
+  "prob": 0.869
+ },
+ {
+  "text": "this",
+  "start": 252.99,
+  "end": 253.25,
+  "prob": 0.968
+ },
+ {
+  "text": "to",
+  "start": 253.25,
+  "end": 253.59,
+  "prob": 0.951
+ },
+ {
+  "text": "check",
+  "start": 253.59,
+  "end": 253.83,
+  "prob": 0.985
+ },
+ {
+  "text": "it",
+  "start": 253.83,
+  "end": 254.01,
+  "prob": 0.937
+ },
+ {
+  "text": "worked.",
+  "start": 254.01,
+  "end": 254.35,
+  "prob": 0.887
+ },
+ {
+  "text": "Type",
+  "start": 254.93,
+  "end": 254.93,
+  "prob": 0.742
+ },
+ {
+  "text": "clod",
+  "start": 254.93,
+  "end": 255.51,
+  "prob": 0.561
+ },
+ {
+  "text": "-version.",
+  "start": 255.51,
+  "end": 256.55,
+  "prob": 0.499
+ },
+ {
+  "text": "If",
+  "start": 256.75,
+  "end": 257.27,
+  "prob": 0.954
+ },
+ {
+  "text": "you",
+  "start": 257.51,
+  "end": 257.65,
+  "prob": 0.996
+ },
+ {
+  "text": "see",
+  "start": 257.65,
+  "end": 257.89,
+  "prob": 0.993
+ },
+ {
+  "text": "a",
+  "start": 257.89,
+  "end": 258.03,
+  "prob": 0.973
+ },
+ {
+  "text": "version",
+  "start": 258.03,
+  "end": 258.27,
+  "prob": 0.98
+ },
+ {
+  "text": "number,",
+  "start": 258.27,
+  "end": 258.71,
+  "prob": 0.983
+ },
+ {
+  "text": "clod",
+  "start": 259.15,
+  "end": 259.29,
+  "prob": 0.825
+ },
+ {
+  "text": "code",
+  "start": 259.29,
+  "end": 259.53,
+  "prob": 0.938
+ },
+ {
+  "text": "is",
+  "start": 259.53,
+  "end": 259.73,
+  "prob": 0.991
+ },
+ {
+  "text": "installed.",
+  "start": 259.73,
+  "end": 260.19,
+  "prob": 0.996
+ },
+ {
+  "text": "Thus",
+  "start": 260.55,
+  "end": 260.79,
+  "prob": 0.899
+ },
+ {
+  "text": "time",
+  "start": 260.79,
+  "end": 261.05,
+  "prob": 0.919
+ },
+ {
+  "text": "you",
+  "start": 261.05,
+  "end": 261.21,
+  "prob": 0.959
+ },
+ {
+  "text": "run",
+  "start": 261.21,
+  "end": 261.37,
+  "prob": 0.995
+ },
+ {
+  "text": "it,",
+  "start": 261.37,
+  "end": 261.63,
+  "prob": 0.985
+ },
+ {
+  "text": "it",
+  "start": 261.73,
+  "end": 261.93,
+  "prob": 0.967
+ },
+ {
+  "text": "opens",
+  "start": 261.93,
+  "end": 262.25,
+  "prob": 0.995
+ },
+ {
+  "text": "your",
+  "start": 262.25,
+  "end": 262.49,
+  "prob": 0.971
+ },
+ {
+  "text": "browser",
+  "start": 262.49,
+  "end": 262.79,
+  "prob": 0.997
+ },
+ {
+  "text": "so",
+  "start": 262.79,
+  "end": 263.33,
+  "prob": 0.501
+ },
+ {
+  "text": "you",
+  "start": 263.33,
+  "end": 263.49,
+  "prob": 0.987
+ },
+ {
+  "text": "can",
+  "start": 263.49,
+  "end": 263.67,
+  "prob": 0.995
+ },
+ {
+  "text": "sign",
+  "start": 263.67,
+  "end": 263.93,
+  "prob": 0.992
+ },
+ {
+  "text": "in",
+  "start": 263.93,
+  "end": 264.13,
+  "prob": 0.971
+ },
+ {
+  "text": "with",
+  "start": 264.13,
+  "end": 264.33,
+  "prob": 0.992
+ },
+ {
+  "text": "your",
+  "start": 264.33,
+  "end": 264.53,
+  "prob": 0.99
+ },
+ {
+  "text": "clod",
+  "start": 264.53,
+  "end": 264.83,
+  "prob": 0.954
+ },
+ {
+  "text": "account.",
+  "start": 264.83,
+  "end": 265.13,
+  "prob": 0.983
+ },
+ {
+  "text": "Just",
+  "start": 265.65,
+  "end": 265.83,
+  "prob": 0.979
+ },
+ {
+  "text": "sign",
+  "start": 265.83,
+  "end": 266.07,
+  "prob": 0.992
+ },
+ {
+  "text": "in",
+  "start": 266.07,
+  "end": 266.29,
+  "prob": 0.984
+ },
+ {
+  "text": "and",
+  "start": 266.29,
+  "end": 266.49,
+  "prob": 0.975
+ },
+ {
+  "text": "come",
+  "start": 266.49,
+  "end": 266.69,
+  "prob": 0.98
+ },
+ {
+  "text": "back.",
+  "start": 266.69,
+  "end": 266.97,
+  "prob": 0.998
+ },
+ {
+  "text": "Next",
+  "start": 267.65,
+  "end": 267.69,
+  "prob": 0.84
+ },
+ {
+  "text": "is",
+  "start": 267.69,
+  "end": 267.81,
+  "prob": 0.94
+ },
+ {
+  "text": "to",
+  "start": 267.81,
+  "end": 267.99,
+  "prob": 0.978
+ },
+ {
+  "text": "check",
+  "start": 267.99,
+  "end": 268.21,
+  "prob": 0.992
+ },
+ {
+  "text": "your",
+  "start": 268.21,
+  "end": 268.43,
+  "prob": 0.983
+ },
+ {
+  "text": "node",
+  "start": 268.43,
+  "end": 268.65,
+  "prob": 0.803
+ },
+ {
+  "text": "version.",
+  "start": 268.65,
+  "end": 269.07,
+  "prob": 0.977
+ },
+ {
+  "text": "REA",
+  "start": 269.47,
+  "end": 269.87,
+  "prob": 0.753
+ },
+ {
+  "text": "needs",
+  "start": 269.87,
+  "end": 270.11,
+  "prob": 0.976
+ },
+ {
+  "text": "nodejs",
+  "start": 270.11,
+  "end": 270.67,
+  "prob": 0.574
+ },
+ {
+  "text": "and",
+  "start": 270.67,
+  "end": 271.19,
+  "prob": 0.844
+ },
+ {
+  "text": "clod",
+  "start": 271.19,
+  "end": 271.53,
+  "prob": 0.925
+ },
+ {
+  "text": "code",
+  "start": 271.53,
+  "end": 271.77,
+  "prob": 0.971
+ },
+ {
+  "text": "does",
+  "start": 271.77,
+  "end": 272.03,
+  "prob": 0.977
+ },
+ {
+  "text": "not.",
+  "start": 272.03,
+  "end": 272.31,
+  "prob": 0.997
+ },
+ {
+  "text": "So",
+  "start": 272.59,
+  "end": 272.79,
+  "prob": 0.971
+ },
+ {
+  "text": "this",
+  "start": 272.79,
+  "end": 273.09,
+  "prob": 0.811
+ },
+ {
+  "text": "check",
+  "start": 273.09,
+  "end": 273.45,
+  "prob": 0.985
+ },
+ {
+  "text": "matters.",
+  "start": 273.45,
+  "end": 274.03,
+  "prob": 0.982
+ },
+ {
+  "text": "Node",
+  "start": 275.37,
+  "end": 275.37,
+  "prob": 0.068
+ },
+ {
+  "text": "version",
+  "start": 275.37,
+  "end": 275.79,
+  "prob": 0.515
+ },
+ {
+  "text": "22",
+  "start": 275.79,
+  "end": 276.21,
+  "prob": 0.908
+ },
+ {
+  "text": "or",
+  "start": 276.21,
+  "end": 276.77,
+  "prob": 0.93
+ },
+ {
+  "text": "24",
+  "start": 276.77,
+  "end": 277.25,
+  "prob": 0.985
+ },
+ {
+  "text": "or",
+  "start": 277.25,
+  "end": 277.59,
+  "prob": 0.378
+ },
+ {
+  "text": "the",
+  "start": 277.59,
+  "end": 277.75,
+  "prob": 0.797
+ },
+ {
+  "text": "newer",
+  "start": 277.75,
+  "end": 277.95,
+  "prob": 0.967
+ },
+ {
+  "text": "version.",
+  "start": 277.95,
+  "end": 278.41,
+  "prob": 0.997
+ },
+ {
+  "text": "If",
+  "start": 278.41,
+  "end": 278.89,
+  "prob": 0.299
+ },
+ {
+  "text": "you",
+  "start": 278.89,
+  "end": 279.03,
+  "prob": 0.973
+ },
+ {
+  "text": "get",
+  "start": 279.03,
+  "end": 279.21,
+  "prob": 0.957
+ },
+ {
+  "text": "an",
+  "start": 279.21,
+  "end": 279.37,
+  "prob": 0.952
+ },
+ {
+  "text": "older",
+  "start": 279.37,
+  "end": 279.69,
+  "prob": 0.949
+ },
+ {
+  "text": "version",
+  "start": 279.69,
+  "end": 280.09,
+  "prob": 0.994
+ },
+ {
+  "text": "or",
+  "start": 280.09,
+  "end": 280.49,
+  "prob": 0.854
+ },
+ {
+  "text": "an",
+  "start": 280.49,
+  "end": 280.65,
+  "prob": 0.923
+ },
+ {
+  "text": "error,",
+  "start": 280.65,
+  "end": 281.03,
+  "prob": 0.944
+ },
+ {
+  "text": "install",
+  "start": 281.53,
+  "end": 281.53,
+  "prob": 0.846
+ },
+ {
+  "text": "the",
+  "start": 281.53,
+  "end": 281.75,
+  "prob": 0.926
+ },
+ {
+  "text": "latest",
+  "start": 281.75,
+  "end": 282.11,
+  "prob": 0.981
+ },
+ {
+  "text": "node",
+  "start": 282.11,
+  "end": 282.45,
+  "prob": 0.766
+ },
+ {
+  "text": "from",
+  "start": 282.45,
+  "end": 282.77,
+  "prob": 0.975
+ },
+ {
+  "text": "nodejs",
+  "start": 282.77,
+  "end": 283.41,
+  "prob": 0.632
+ },
+ {
+  "text": ".org",
+  "start": 283.41,
+  "end": 284.41,
+  "prob": 0.96
+ },
+ {
+  "text": "Deck",
+  "start": 284.75,
+  "end": 285.17,
+  "prob": 0.152
+ },
+ {
+  "text": "again",
+  "start": 285.17,
+  "end": 285.55,
+  "prob": 0.864
+ },
+ {
+  "text": "In",
+  "start": 285.55,
+  "end": 285.89,
+  "prob": 0.101
+ },
+ {
+  "text": "the",
+  "start": 285.89,
+  "end": 285.99,
+  "prob": 0.939
+ },
+ {
+  "text": "RIA",
+  "start": 285.99,
+  "end": 286.23,
+  "prob": 0.462
+ },
+ {
+  "text": "setup,",
+  "start": 286.23,
+  "end": 286.65,
+  "prob": 0.862
+ },
+ {
+  "text": "type",
+  "start": 287.04,
+  "end": 287.3,
+  "prob": 0.895
+ },
+ {
+  "text": "this",
+  "start": 287.3,
+  "end": 287.56,
+  "prob": 0.253
+ },
+ {
+  "text": "command.",
+  "start": 287.56,
+  "end": 287.92,
+  "prob": 0.984
+ },
+ {
+  "text": "You",
+  "start": 288.71,
+  "end": 288.73,
+  "prob": 0.59
+ },
+ {
+  "text": "may",
+  "start": 288.73,
+  "end": 288.83,
+  "prob": 0.915
+ },
+ {
+  "text": "ask",
+  "start": 288.83,
+  "end": 289.17,
+  "prob": 0.953
+ },
+ {
+  "text": "to",
+  "start": 289.63,
+  "end": 290.03,
+  "prob": 0.904
+ },
+ {
+  "text": "proceed.",
+  "start": 290.03,
+  "end": 290.51,
+  "prob": 0.988
+ },
+ {
+  "text": "Type",
+  "start": 290.93,
+  "end": 290.99,
+  "prob": 0.614
+ },
+ {
+  "text": "yes",
+  "start": 290.99,
+  "end": 291.37,
+  "prob": 0.278
+ },
+ {
+  "text": "if",
+  "start": 291.37,
+  "end": 291.67,
+  "prob": 0.105
+ },
+ {
+  "text": "you",
+  "start": 291.67,
+  "end": 291.67,
+  "prob": 0.96
+ },
+ {
+  "text": "want.",
+  "start": 291.67,
+  "end": 291.83,
+  "prob": 0.988
+ },
+ {
+  "text": "It",
+  "start": 292.11,
+  "end": 292.19,
+  "prob": 0.39
+ },
+ {
+  "text": "asks",
+  "start": 292.19,
+  "end": 292.41,
+  "prob": 0.804
+ },
+ {
+  "text": "which",
+  "start": 292.41,
+  "end": 292.65,
+  "prob": 0.901
+ },
+ {
+  "text": "agent",
+  "start": 292.65,
+  "end": 292.99,
+  "prob": 0.957
+ },
+ {
+  "text": "you",
+  "start": 292.99,
+  "end": 293.27,
+  "prob": 0.978
+ },
+ {
+  "text": "want.",
+  "start": 293.27,
+  "end": 293.57,
+  "prob": 0.995
+ },
+ {
+  "text": "Code",
+  "start": 293.95,
+  "end": 293.97,
+  "prob": 0.701
+ },
+ {
+  "text": "To",
+  "start": 293.97,
+  "end": 294.23,
+  "prob": 0.034
+ },
+ {
+  "text": "plot",
+  "start": 294.23,
+  "end": 294.55,
+  "prob": 0.168
+ },
+ {
+  "text": "code.",
+  "start": 294.55,
+  "end": 294.91,
+  "prob": 0.937
+ },
+ {
+  "text": "Then",
+  "start": 295.51,
+  "end": 295.57,
+  "prob": 0.893
+ },
+ {
+  "text": "it",
+  "start": 295.57,
+  "end": 295.73,
+  "prob": 0.927
+ },
+ {
+  "text": "shows",
+  "start": 295.73,
+  "end": 295.97,
+  "prob": 0.953
+ },
+ {
+  "text": "a",
+  "start": 295.97,
+  "end": 296.17,
+  "prob": 0.638
+ },
+ {
+  "text": "list",
+  "start": 296.17,
+  "end": 296.29,
+  "prob": 0.995
+ },
+ {
+  "text": "of",
+  "start": 296.29,
+  "end": 296.61,
+  "prob": 0.994
+ },
+ {
+  "text": "changes",
+  "start": 296.61,
+  "end": 296.91,
+  "prob": 0.943
+ },
+ {
+  "text": "it",
+  "start": 296.91,
+  "end": 297.21,
+  "prob": 0.935
+ },
+ {
+  "text": "will",
+  "start": 297.21,
+  "end": 297.39,
+  "prob": 0.98
+ },
+ {
+  "text": "make.",
+  "start": 297.39,
+  "end": 297.71,
+  "prob": 0.995
+ },
+ {
+  "text": "And",
+  "start": 298.43,
+  "end": 298.71,
+  "prob": 0.463
+ },
+ {
+  "text": "say",
+  "start": 298.71,
+  "end": 298.93,
+  "prob": 0.859
+ },
+ {
+  "text": "yes.",
+  "start": 298.93,
+  "end": 299.21,
+  "prob": 0.807
+ },
+ {
+  "text": "And",
+  "start": 299.87,
+  "end": 299.89,
+  "prob": 0.603
+ },
+ {
+  "text": "this",
+  "start": 299.89,
+  "end": 300.05,
+  "prob": 0.977
+ },
+ {
+  "text": "is",
+  "start": 300.05,
+  "end": 300.51,
+  "prob": 0.775
+ },
+ {
+  "text": "very",
+  "start": 300.51,
+  "end": 300.75,
+  "prob": 0.967
+ },
+ {
+  "text": "important.",
+  "start": 300.75,
+  "end": 301.27,
+  "prob": 0.988
+ },
+ {
+  "text": "It",
+  "start": 301.67,
+  "end": 301.77,
+  "prob": 0.965
+ },
+ {
+  "text": "will",
+  "start": 301.77,
+  "end": 301.91,
+  "prob": 0.987
+ },
+ {
+  "text": "offer",
+  "start": 301.91,
+  "end": 302.29,
+  "prob": 0.972
+ },
+ {
+  "text": "to",
+  "start": 302.29,
+  "end": 302.69,
+  "prob": 0.966
+ },
+ {
+  "text": "install",
+  "start": 302.69,
+  "end": 303.23,
+  "prob": 0.986
+ },
+ {
+  "text": "hopper.",
+  "start": 303.23,
+  "end": 303.85,
+  "prob": 0.755
+ },
+ {
+  "text": "Say",
+  "start": 304.15,
+  "end": 304.37,
+  "prob": 0.943
+ },
+ {
+  "text": "no.",
+  "start": 304.37,
+  "end": 304.65,
+  "prob": 0.771
+ },
+ {
+  "text": "Because",
+  "start": 305.15,
+  "end": 305.35,
+  "prob": 0.925
+ },
+ {
+  "text": "we",
+  "start": 305.35,
+  "end": 305.57,
+  "prob": 0.971
+ },
+ {
+  "text": "are",
+  "start": 305.57,
+  "end": 305.67,
+  "prob": 0.967
+ },
+ {
+  "text": "only",
+  "start": 305.67,
+  "end": 306.03,
+  "prob": 0.982
+ },
+ {
+  "text": "working",
+  "start": 306.03,
+  "end": 306.49,
+  "prob": 0.993
+ },
+ {
+  "text": "with",
+  "start": 306.49,
+  "end": 306.85,
+  "prob": 0.985
+ },
+ {
+  "text": "websites,",
+  "start": 306.85,
+  "end": 307.21,
+  "prob": 0.611
+ },
+ {
+  "text": "so",
+  "start": 307.41,
+  "end": 307.57,
+  "prob": 0.902
+ },
+ {
+  "text": "we",
+  "start": 307.57,
+  "end": 307.79,
+  "prob": 0.969
+ },
+ {
+  "text": "do",
+  "start": 307.79,
+  "end": 307.93,
+  "prob": 0.955
+ },
+ {
+  "text": "not",
+  "start": 307.93,
+  "end": 308.15,
+  "prob": 0.998
+ },
+ {
+  "text": "need",
+  "start": 308.15,
+  "end": 308.45,
+  "prob": 0.999
+ },
+ {
+  "text": "it.",
+  "start": 308.45,
+  "end": 308.73,
+  "prob": 0.989
+ },
+ {
+  "text": "The",
+  "start": 309.07,
+  "end": 309.47,
+  "prob": 0.258
+ },
+ {
+  "text": "next",
+  "start": 309.47,
+  "end": 309.69,
+  "prob": 0.976
+ },
+ {
+  "text": "step",
+  "start": 309.69,
+  "end": 309.93,
+  "prob": 0.985
+ },
+ {
+  "text": "is",
+  "start": 309.93,
+  "end": 310.27,
+  "prob": 0.99
+ },
+ {
+  "text": "restart",
+  "start": 310.27,
+  "end": 311.01,
+  "prob": 0.578
+ },
+ {
+  "text": "Cloud",
+  "start": 311.01,
+  "end": 311.31,
+  "prob": 0.123
+ },
+ {
+  "text": "Code",
+  "start": 311.31,
+  "end": 311.65,
+  "prob": 0.772
+ },
+ {
+  "text": "and",
+  "start": 311.65,
+  "end": 311.99,
+  "prob": 0.899
+ },
+ {
+  "text": "check",
+  "start": 311.99,
+  "end": 312.29,
+  "prob": 0.92
+ },
+ {
+  "text": "RIA.",
+  "start": 312.29,
+  "end": 312.51,
+  "prob": 0.724
+ },
+ {
+  "text": "If",
+  "start": 313.16,
+  "end": 313.32,
+  "prob": 0.944
+ },
+ {
+  "text": "the",
+  "start": 313.32,
+  "end": 313.48,
+  "prob": 0.973
+ },
+ {
+  "text": "Cloud",
+  "start": 313.48,
+  "end": 313.74,
+  "prob": 0.459
+ },
+ {
+  "text": "Code",
+  "start": 313.74,
+  "end": 314.08,
+  "prob": 0.887
+ },
+ {
+  "text": "is",
+  "start": 314.08,
+  "end": 314.44,
+  "prob": 0.99
+ },
+ {
+  "text": "open,",
+  "start": 314.44,
+  "end": 314.9,
+  "prob": 0.918
+ },
+ {
+  "text": "close",
+  "start": 315.36,
+  "end": 315.48,
+  "prob": 0.926
+ },
+ {
+  "text": "it.",
+  "start": 315.48,
+  "end": 315.86,
+  "prob": 0.993
+ },
+ {
+  "text": "Then",
+  "start": 316.28,
+  "end": 316.42,
+  "prob": 0.967
+ },
+ {
+  "text": "type",
+  "start": 316.42,
+  "end": 316.68,
+  "prob": 0.913
+ },
+ {
+  "text": "this,",
+  "start": 316.68,
+  "end": 317.1,
+  "prob": 0.927
+ },
+ {
+  "text": "Cloud",
+  "start": 317.7,
+  "end": 317.8,
+  "prob": 0.06
+ },
+ {
+  "text": "MCP",
+  "start": 317.8,
+  "end": 318.44,
+  "prob": 0.707
+ },
+ {
+  "text": "List.",
+  "start": 318.44,
+  "end": 318.76,
+  "prob": 0.611
+ },
+ {
+  "text": "You",
+  "start": 319.32,
+  "end": 319.52,
+  "prob": 0.986
+ },
+ {
+  "text": "should",
+  "start": 319.52,
+  "end": 319.74,
+  "prob": 0.997
+ },
+ {
+  "text": "see",
+  "start": 319.74,
+  "end": 320.04,
+  "prob": 0.994
+ },
+ {
+  "text": "RIA",
+  "start": 320.04,
+  "end": 320.48,
+  "prob": 0.974
+ },
+ {
+  "text": "in",
+  "start": 320.48,
+  "end": 320.72,
+  "prob": 0.987
+ },
+ {
+  "text": "the",
+  "start": 320.72,
+  "end": 320.86,
+  "prob": 0.968
+ },
+ {
+  "text": "list.",
+  "start": 320.86,
+  "end": 321.12,
+  "prob": 0.981
+ },
+ {
+  "text": "If",
+  "start": 321.5,
+  "end": 321.68,
+  "prob": 0.989
+ },
+ {
+  "text": "you",
+  "start": 321.68,
+  "end": 321.84,
+  "prob": 0.998
+ },
+ {
+  "text": "see",
+  "start": 321.84,
+  "end": 322.1,
+  "prob": 0.996
+ },
+ {
+  "text": "it,",
+  "start": 322.1,
+  "end": 322.3,
+  "prob": 0.994
+ },
+ {
+  "text": "RIA",
+  "start": 322.7,
+  "end": 322.94,
+  "prob": 0.99
+ },
+ {
+  "text": "is",
+  "start": 322.94,
+  "end": 323.1,
+  "prob": 0.995
+ },
+ {
+  "text": "connected.",
+  "start": 323.1,
+  "end": 323.46,
+  "prob": 0.991
+ },
+ {
+  "text": "Add",
+  "start": 323.92,
+  "end": 324.14,
+  "prob": 0.759
+ },
+ {
+  "text": "the",
+  "start": 324.14,
+  "end": 324.32,
+  "prob": 0.979
+ },
+ {
+  "text": "Chrome",
+  "start": 324.32,
+  "end": 324.6,
+  "prob": 0.866
+ },
+ {
+  "text": "extension.",
+  "start": 324.6,
+  "end": 325.02,
+  "prob": 0.869
+ },
+ {
+  "text": "Install",
+  "start": 325.42,
+  "end": 325.74,
+  "prob": 0.993
+ },
+ {
+  "text": "the",
+  "start": 325.74,
+  "end": 325.96,
+  "prob": 0.994
+ },
+ {
+  "text": "Cloud",
+  "start": 325.96,
+  "end": 326.24,
+  "prob": 0.33
+ },
+ {
+  "text": "in",
+  "start": 326.24,
+  "end": 326.4,
+  "prob": 0.983
+ },
+ {
+  "text": "the",
+  "start": 326.4,
+  "end": 326.54,
+  "prob": 0.984
+ },
+ {
+  "text": "Chrome",
+  "start": 326.54,
+  "end": 326.84,
+  "prob": 0.988
+ },
+ {
+  "text": "extension",
+  "start": 326.84,
+  "end": 327.2,
+  "prob": 0.962
+ },
+ {
+  "text": "from",
+  "start": 327.2,
+  "end": 327.6,
+  "prob": 0.973
+ },
+ {
+  "text": "the",
+  "start": 327.6,
+  "end": 327.8,
+  "prob": 0.991
+ },
+ {
+  "text": "Chrome",
+  "start": 327.8,
+  "end": 328.12,
+  "prob": 0.966
+ },
+ {
+  "text": "Web",
+  "start": 328.12,
+  "end": 328.34,
+  "prob": 0.733
+ },
+ {
+  "text": "Store.",
+  "start": 328.34,
+  "end": 328.66,
+  "prob": 0.855
+ },
+ {
+  "text": "This",
+  "start": 329.1,
+  "end": 329.3,
+  "prob": 0.994
+ },
+ {
+  "text": "lets",
+  "start": 329.3,
+  "end": 329.6,
+  "prob": 0.871
+ },
+ {
+  "text": "Cloud",
+  "start": 329.6,
+  "end": 329.96,
+  "prob": 0.852
+ },
+ {
+  "text": "test",
+  "start": 329.96,
+  "end": 330.28,
+  "prob": 0.972
+ },
+ {
+  "text": "the",
+  "start": 330.28,
+  "end": 330.48,
+  "prob": 0.994
+ },
+ {
+  "text": "app",
+  "start": 330.48,
+  "end": 330.72,
+  "prob": 0.931
+ },
+ {
+  "text": "in",
+  "start": 330.72,
+  "end": 330.94,
+  "prob": 0.994
+ },
+ {
+  "text": "a",
+  "start": 330.94,
+  "end": 331.08,
+  "prob": 0.964
+ },
+ {
+  "text": "real",
+  "start": 331.08,
+  "end": 331.28,
+  "prob": 0.972
+ },
+ {
+  "text": "browser.",
+  "start": 331.28,
+  "end": 331.68,
+  "prob": 0.996
+ },
+ {
+  "text": "If",
+  "start": 332.15,
+  "end": 332.29,
+  "prob": 0.985
+ },
+ {
+  "text": "you",
+  "start": 332.29,
+  "end": 332.43,
+  "prob": 0.999
+ },
+ {
+  "text": "want",
+  "start": 332.43,
+  "end": 332.59,
+  "prob": 0.996
+ },
+ {
+  "text": "the",
+  "start": 332.59,
+  "end": 332.73,
+  "prob": 0.978
+ },
+ {
+  "text": "link,",
+  "start": 332.73,
+  "end": 332.97,
+  "prob": 0.991
+ },
+ {
+  "text": "I'll",
+  "start": 333.45,
+  "end": 333.71,
+  "prob": 0.926
+ },
+ {
+  "text": "put",
+  "start": 333.71,
+  "end": 333.99,
+  "prob": 0.995
+ },
+ {
+  "text": "the",
+  "start": 333.99,
+  "end": 334.17,
+  "prob": 0.985
+ },
+ {
+  "text": "link",
+  "start": 334.17,
+  "end": 334.39,
+  "prob": 0.998
+ },
+ {
+  "text": "in",
+  "start": 334.39,
+  "end": 334.61,
+  "prob": 0.994
+ },
+ {
+  "text": "the",
+  "start": 334.61,
+  "end": 334.71,
+  "prob": 0.996
+ },
+ {
+  "text": "description",
+  "start": 334.71,
+  "end": 335.03,
+  "prob": 0.996
+ },
+ {
+  "text": "below.",
+  "start": 335.03,
+  "end": 335.49,
+  "prob": 0.985
+ },
+ {
+  "text": "So",
+  "start": 336.21,
+  "end": 336.23,
+  "prob": 0.58
+ },
+ {
+  "text": "next",
+  "start": 336.23,
+  "end": 336.37,
+  "prob": 0.271
+ },
+ {
+  "text": "step",
+  "start": 336.37,
+  "end": 336.53,
+  "prob": 0.991
+ },
+ {
+  "text": "is",
+  "start": 336.53,
+  "end": 336.87,
+  "prob": 0.991
+ },
+ {
+  "text": "make",
+  "start": 336.87,
+  "end": 337.31,
+  "prob": 0.52
+ },
+ {
+  "text": "a",
+  "start": 337.31,
+  "end": 337.53,
+  "prob": 0.991
+ },
+ {
+  "text": "project",
+  "start": 337.53,
+  "end": 337.77,
+  "prob": 0.864
+ },
+ {
+  "text": "folder",
+  "start": 337.77,
+  "end": 338.09,
+  "prob": 0.999
+ },
+ {
+  "text": "and",
+  "start": 338.09,
+  "end": 338.53,
+  "prob": 0.967
+ },
+ {
+  "text": "start",
+  "start": 338.53,
+  "end": 338.89,
+  "prob": 0.956
+ },
+ {
+  "text": "Cloud",
+  "start": 338.89,
+  "end": 339.25,
+  "prob": 0.867
+ },
+ {
+  "text": "Code.",
+  "start": 339.25,
+  "end": 339.53,
+  "prob": 0.986
+ },
+ {
+  "text": "two",
+  "start": 339.53,
+  "end": 340.07,
+  "prob": 0.031
+ },
+ {
+  "text": "lines",
+  "start": 340.63,
+  "end": 340.97,
+  "prob": 0.919
+ },
+ {
+  "text": "then",
+  "start": 340.97,
+  "end": 341.39,
+  "prob": 0.562
+ },
+ {
+  "text": "start",
+  "start": 341.39,
+  "end": 341.79,
+  "prob": 0.914
+ },
+ {
+  "text": "Claude",
+  "start": 341.79,
+  "end": 342.09,
+  "prob": 0.396
+ },
+ {
+  "text": "and",
+  "start": 342.09,
+  "end": 342.61,
+  "prob": 0.728
+ },
+ {
+  "text": "that",
+  "start": 342.98,
+  "end": 343.16,
+  "prob": 0.977
+ },
+ {
+  "text": "is",
+  "start": 343.16,
+  "end": 343.34,
+  "prob": 0.984
+ },
+ {
+  "text": "it",
+  "start": 343.34,
+  "end": 343.6,
+  "prob": 0.99
+ },
+ {
+  "text": "now",
+  "start": 343.6,
+  "end": 344.08,
+  "prob": 0.659
+ },
+ {
+  "text": "the",
+  "start": 344.08,
+  "end": 344.24,
+  "prob": 0.981
+ },
+ {
+  "text": "real",
+  "start": 344.24,
+  "end": 344.5,
+  "prob": 0.986
+ },
+ {
+  "text": "fun",
+  "start": 344.5,
+  "end": 344.76,
+  "prob": 0.99
+ },
+ {
+  "text": "begins",
+  "start": 344.76,
+  "end": 345.26,
+  "prob": 0.982
+ },
+ {
+  "text": "here",
+  "start": 345.26,
+  "end": 345.88,
+  "prob": 0.295
+ },
+ {
+  "text": "I",
+  "start": 346.21,
+  "end": 346.73,
+  "prob": 0.238
+ },
+ {
+  "text": "am",
+  "start": 346.73,
+  "end": 348.07,
+  "prob": 0.656
+ },
+ {
+  "text": "giving",
+  "start": 348.07,
+  "end": 348.31,
+  "prob": 0.977
+ },
+ {
+  "text": "the",
+  "start": 348.31,
+  "end": 348.51,
+  "prob": 0.937
+ },
+ {
+  "text": "weekend",
+  "start": 348.51,
+  "end": 348.91,
+  "prob": 0.72
+ },
+ {
+  "text": "board",
+  "start": 348.91,
+  "end": 349.73,
+  "prob": 0.959
+ },
+ {
+  "text": "demo",
+  "start": 349.94,
+  "end": 350.84,
+  "prob": 0.911
+ },
+ {
+  "text": "link",
+  "start": 350.84,
+  "end": 351.32,
+  "prob": 0.988
+ },
+ {
+  "text": "it",
+  "start": 351.32,
+  "end": 351.84,
+  "prob": 0.669
+ },
+ {
+  "text": "is",
+  "start": 352.4,
+  "end": 352.56,
+  "prob": 0.991
+ },
+ {
+  "text": "a",
+  "start": 352.56,
+  "end": 352.66,
+  "prob": 0.945
+ },
+ {
+  "text": "web",
+  "start": 352.66,
+  "end": 352.84,
+  "prob": 0.982
+ },
+ {
+  "text": "app",
+  "start": 352.84,
+  "end": 353.14,
+  "prob": 0.972
+ },
+ {
+  "text": "so",
+  "start": 353.14,
+  "end": 353.56,
+  "prob": 0.871
+ },
+ {
+  "text": "use",
+  "start": 353.56,
+  "end": 353.86,
+  "prob": 0.96
+ },
+ {
+  "text": "only",
+  "start": 353.86,
+  "end": 354.82,
+  "prob": 0.832
+ },
+ {
+  "text": "the",
+  "start": 354.82,
+  "end": 355.12,
+  "prob": 0.923
+ },
+ {
+  "text": "website",
+  "start": 355.12,
+  "end": 355.62,
+  "prob": 0.978
+ },
+ {
+  "text": "analysis",
+  "start": 355.62,
+  "end": 356.16,
+  "prob": 0.97
+ },
+ {
+  "text": "tools",
+  "start": 356.16,
+  "end": 356.56,
+  "prob": 0.965
+ },
+ {
+  "text": "do",
+  "start": 356.56,
+  "end": 357.0,
+  "prob": 0.866
+ },
+ {
+  "text": "not",
+  "start": 357.0,
+  "end": 357.18,
+  "prob": 0.997
+ },
+ {
+  "text": "touch",
+  "start": 357.18,
+  "end": 357.52,
+  "prob": 0.98
+ },
+ {
+  "text": "desktop",
+  "start": 357.52,
+  "end": 357.92,
+  "prob": 0.961
+ },
+ {
+  "text": "app",
+  "start": 357.92,
+  "end": 358.3,
+  "prob": 0.988
+ },
+ {
+  "text": "tools",
+  "start": 358.3,
+  "end": 358.64,
+  "prob": 0.973
+ },
+ {
+  "text": "do",
+  "start": 358.64,
+  "end": 358.96,
+  "prob": 0.742
+ },
+ {
+  "text": "not",
+  "start": 358.96,
+  "end": 359.16,
+  "prob": 0.998
+ },
+ {
+  "text": "build",
+  "start": 359.16,
+  "end": 359.44,
+  "prob": 0.931
+ },
+ {
+  "text": "anything",
+  "start": 359.44,
+  "end": 359.9,
+  "prob": 0.989
+ },
+ {
+  "text": "yet",
+  "start": 359.9,
+  "end": 360.28,
+  "prob": 0.983
+ },
+ {
+  "text": "so",
+  "start": 360.55,
+  "end": 360.95,
+  "prob": 0.8
+ },
+ {
+  "text": "in",
+  "start": 360.95,
+  "end": 361.11,
+  "prob": 0.987
+ },
+ {
+  "text": "simple",
+  "start": 361.11,
+  "end": 361.45,
+  "prob": 0.99
+ },
+ {
+  "text": "words",
+  "start": 361.45,
+  "end": 361.81,
+  "prob": 0.989
+ },
+ {
+  "text": "I",
+  "start": 361.81,
+  "end": 362.11,
+  "prob": 0.928
+ },
+ {
+  "text": "said",
+  "start": 362.11,
+  "end": 362.39,
+  "prob": 0.991
+ },
+ {
+  "text": "like",
+  "start": 362.39,
+  "end": 362.69,
+  "prob": 0.968
+ },
+ {
+  "text": "study",
+  "start": 362.69,
+  "end": 363.25,
+  "prob": 0.971
+ },
+ {
+  "text": "this",
+  "start": 363.25,
+  "end": 363.51,
+  "prob": 0.994
+ },
+ {
+  "text": "app",
+  "start": 363.51,
+  "end": 363.89,
+  "prob": 0.995
+ },
+ {
+  "text": "but",
+  "start": 363.89,
+  "end": 364.33,
+  "prob": 0.985
+ },
+ {
+  "text": "do",
+  "start": 364.33,
+  "end": 364.53,
+  "prob": 0.994
+ },
+ {
+  "text": "not",
+  "start": 364.53,
+  "end": 364.75,
+  "prob": 0.998
+ },
+ {
+  "text": "build",
+  "start": 364.75,
+  "end": 365.01,
+  "prob": 0.976
+ },
+ {
+  "text": "anything",
+  "start": 365.01,
+  "end": 365.47,
+  "prob": 0.996
+ },
+ {
+  "text": "yet",
+  "start": 365.47,
+  "end": 365.79,
+  "prob": 0.946
+ },
+ {
+  "text": "and",
+  "start": 365.79,
+  "end": 366.21,
+  "prob": 0.187
+ },
+ {
+  "text": "my",
+  "start": 366.21,
+  "end": 366.39,
+  "prob": 0.925
+ },
+ {
+  "text": "favorite",
+  "start": 366.39,
+  "end": 366.75,
+  "prob": 0.851
+ },
+ {
+  "text": "trick",
+  "start": 366.75,
+  "end": 367.09,
+  "prob": 0.981
+ },
+ {
+  "text": "here",
+  "start": 367.09,
+  "end": 367.51,
+  "prob": 0.958
+ },
+ {
+  "text": "is",
+  "start": 367.51,
+  "end": 367.97,
+  "prob": 0.91
+ },
+ {
+  "text": "the",
+  "start": 367.97,
+  "end": 368.27,
+  "prob": 0.961
+ },
+ {
+  "text": "last",
+  "start": 368.27,
+  "end": 368.93,
+  "prob": 0.915
+ },
+ {
+  "text": "line.",
+  "start": 368.93,
+  "end": 369.33,
+  "prob": 0.973
+ },
+ {
+  "text": "I",
+  "start": 369.67,
+  "end": 369.67,
+  "prob": 0.774
+ },
+ {
+  "text": "asked",
+  "start": 369.67,
+  "end": 369.95,
+  "prob": 0.591
+ },
+ {
+  "text": "us",
+  "start": 369.95,
+  "end": 370.23,
+  "prob": 0.323
+ },
+ {
+  "text": "Claude",
+  "start": 370.23,
+  "end": 370.55,
+  "prob": 0.644
+ },
+ {
+  "text": "to",
+  "start": 370.55,
+  "end": 370.85,
+  "prob": 0.96
+ },
+ {
+  "text": "label",
+  "start": 370.85,
+  "end": 371.13,
+  "prob": 0.991
+ },
+ {
+  "text": "every",
+  "start": 371.13,
+  "end": 371.65,
+  "prob": 0.986
+ },
+ {
+  "text": "point",
+  "start": 371.65,
+  "end": 371.97,
+  "prob": 0.99
+ },
+ {
+  "text": "as",
+  "start": 371.97,
+  "end": 372.31,
+  "prob": 0.974
+ },
+ {
+  "text": "observed,",
+  "start": 372.31,
+  "end": 372.91,
+  "prob": 0.556
+ },
+ {
+  "text": "inferred",
+  "start": 373.37,
+  "end": 373.81,
+  "prob": 0.997
+ },
+ {
+  "text": "or",
+  "start": 373.81,
+  "end": 374.33,
+  "prob": 0.668
+ },
+ {
+  "text": "not",
+  "start": 374.33,
+  "end": 374.57,
+  "prob": 0.993
+ },
+ {
+  "text": "sure.",
+  "start": 374.57,
+  "end": 374.87,
+  "prob": 0.969
+ },
+ {
+  "text": "So",
+  "start": 375.23,
+  "end": 375.31,
+  "prob": 0.941
+ },
+ {
+  "text": "it",
+  "start": 375.31,
+  "end": 375.47,
+  "prob": 0.806
+ },
+ {
+  "text": "does",
+  "start": 375.47,
+  "end": 375.71,
+  "prob": 0.989
+ },
+ {
+  "text": "not",
+  "start": 375.71,
+  "end": 375.95,
+  "prob": 0.996
+ },
+ {
+  "text": "just",
+  "start": 375.95,
+  "end": 376.33,
+  "prob": 0.988
+ },
+ {
+  "text": "guess.",
+  "start": 376.33,
+  "end": 376.83,
+  "prob": 0.983
+ },
+ {
+  "text": "Well",
+  "start": 377.51,
+  "end": 377.59,
+  "prob": 0.308
+ },
+ {
+  "text": "he",
+  "start": 377.59,
+  "end": 377.69,
+  "prob": 0.154
+ },
+ {
+  "text": "is",
+  "start": 377.69,
+  "end": 377.79,
+  "prob": 0.61
+ },
+ {
+  "text": "working",
+  "start": 377.79,
+  "end": 378.05,
+  "prob": 0.988
+ },
+ {
+  "text": "on",
+  "start": 378.05,
+  "end": 378.35,
+  "prob": 0.995
+ },
+ {
+  "text": "this.",
+  "start": 378.35,
+  "end": 378.61,
+  "prob": 0.984
+ },
+ {
+  "text": "Here",
+  "start": 378.85,
+  "end": 379.03,
+  "prob": 0.964
+ },
+ {
+  "text": "is",
+  "start": 379.03,
+  "end": 379.19,
+  "prob": 0.827
+ },
+ {
+  "text": "a",
+  "start": 379.19,
+  "end": 379.31,
+  "prob": 0.612
+ },
+ {
+  "text": "question",
+  "start": 379.31,
+  "end": 379.53,
+  "prob": 0.995
+ },
+ {
+  "text": "for",
+  "start": 379.53,
+  "end": 379.85,
+  "prob": 0.994
+ },
+ {
+  "text": "you.",
+  "start": 379.85,
+  "end": 380.15,
+  "prob": 0.998
+ },
+ {
+  "text": "Think",
+  "start": 380.6,
+  "end": 380.62,
+  "prob": 0.817
+ },
+ {
+  "text": "about",
+  "start": 380.62,
+  "end": 380.96,
+  "prob": 0.993
+ },
+ {
+  "text": "the",
+  "start": 380.96,
+  "end": 381.18,
+  "prob": 0.991
+ },
+ {
+  "text": "apps",
+  "start": 381.18,
+  "end": 381.42,
+  "prob": 0.975
+ },
+ {
+  "text": "on",
+  "start": 381.42,
+  "end": 381.68,
+  "prob": 0.995
+ },
+ {
+  "text": "your",
+  "start": 381.68,
+  "end": 381.88,
+  "prob": 0.996
+ },
+ {
+  "text": "phone",
+  "start": 381.88,
+  "end": 382.2,
+  "prob": 0.998
+ },
+ {
+  "text": "right",
+  "start": 382.2,
+  "end": 382.48,
+  "prob": 0.974
+ },
+ {
+  "text": "now.",
+  "start": 382.48,
+  "end": 382.9,
+  "prob": 0.996
+ },
+ {
+  "text": "Which",
+  "start": 383.32,
+  "end": 383.38,
+  "prob": 0.962
+ },
+ {
+  "text": "app",
+  "start": 383.38,
+  "end": 383.72,
+  "prob": 0.984
+ },
+ {
+  "text": "would",
+  "start": 383.72,
+  "end": 383.96,
+  "prob": 0.984
+ },
+ {
+  "text": "you",
+  "start": 383.96,
+  "end": 384.14,
+  "prob": 0.992
+ },
+ {
+  "text": "love",
+  "start": 384.14,
+  "end": 384.44,
+  "prob": 0.945
+ },
+ {
+  "text": "to",
+  "start": 384.44,
+  "end": 384.72,
+  "prob": 0.993
+ },
+ {
+  "text": "rebuild",
+  "start": 384.72,
+  "end": 385.16,
+  "prob": 0.981
+ },
+ {
+  "text": "as",
+  "start": 385.4,
+  "end": 388.38,
+  "prob": 0.48
+ },
+ {
+  "text": "your",
+  "start": 388.38,
+  "end": 388.6,
+  "prob": 0.989
+ },
+ {
+  "text": "own",
+  "start": 388.6,
+  "end": 388.88,
+  "prob": 0.994
+ },
+ {
+  "text": "version?",
+  "start": 388.88,
+  "end": 389.26,
+  "prob": 0.992
+ },
+ {
+  "text": "Maybe",
+  "start": 389.68,
+  "end": 389.86,
+  "prob": 0.634
+ },
+ {
+  "text": "a",
+  "start": 389.86,
+  "end": 390.12,
+  "prob": 0.956
+ },
+ {
+  "text": "to",
+  "start": 390.12,
+  "end": 390.28,
+  "prob": 0.482
+ },
+ {
+  "text": "-do",
+  "start": 390.28,
+  "end": 390.54,
+  "prob": 0.811
+ },
+ {
+  "text": "app,",
+  "start": 390.54,
+  "end": 390.82,
+  "prob": 0.983
+ },
+ {
+  "text": "a",
+  "start": 391.16,
+  "end": 392.22,
+  "prob": 0.871
+ },
+ {
+  "text": "habit",
+  "start": 392.22,
+  "end": 392.5,
+  "prob": 0.953
+ },
+ {
+  "text": "tracker",
+  "start": 392.5,
+  "end": 393.04,
+  "prob": 0.989
+ },
+ {
+  "text": "app.",
+  "start": 393.73,
+  "end": 394.45,
+  "prob": 0.973
+ },
+ {
+  "text": "Write",
+  "start": 395.01,
+  "end": 395.09,
+  "prob": 0.981
+ },
+ {
+  "text": "in",
+  "start": 395.09,
+  "end": 395.27,
+  "prob": 0.986
+ },
+ {
+  "text": "the",
+  "start": 395.27,
+  "end": 395.43,
+  "prob": 0.997
+ },
+ {
+  "text": "comments",
+  "start": 395.43,
+  "end": 395.69,
+  "prob": 0.981
+ },
+ {
+  "text": "below.",
+  "start": 395.69,
+  "end": 396.11,
+  "prob": 0.992
+ },
+ {
+  "text": "I",
+  "start": 396.53,
+  "end": 396.57,
+  "prob": 0.991
+ },
+ {
+  "text": "I",
+  "start": 396.57,
+  "end": 396.61,
+  "prob": 0.205
+ },
+ {
+  "text": "will",
+  "start": 396.61,
+  "end": 396.73,
+  "prob": 0.91
+ },
+ {
+  "text": "read",
+  "start": 396.73,
+  "end": 396.97,
+  "prob": 0.982
+ },
+ {
+  "text": "them",
+  "start": 396.97,
+  "end": 397.23,
+  "prob": 0.964
+ },
+ {
+  "text": "and",
+  "start": 397.23,
+  "end": 397.51,
+  "prob": 0.84
+ },
+ {
+  "text": "the",
+  "start": 397.51,
+  "end": 397.67,
+  "prob": 0.916
+ },
+ {
+  "text": "best",
+  "start": 397.67,
+  "end": 397.89,
+  "prob": 0.991
+ },
+ {
+  "text": "ideas",
+  "start": 397.89,
+  "end": 398.27,
+  "prob": 0.974
+ },
+ {
+  "text": "can",
+  "start": 398.27,
+  "end": 398.63,
+  "prob": 0.958
+ },
+ {
+  "text": "be",
+  "start": 398.63,
+  "end": 398.83,
+  "prob": 0.991
+ },
+ {
+  "text": "my",
+  "start": 398.83,
+  "end": 399.01,
+  "prob": 0.885
+ },
+ {
+  "text": "next",
+  "start": 399.01,
+  "end": 399.27,
+  "prob": 0.995
+ },
+ {
+  "text": "video.",
+  "start": 399.27,
+  "end": 399.67,
+  "prob": 0.993
+ },
+ {
+  "text": "OK,",
+  "start": 399.93,
+  "end": 400.01,
+  "prob": 0.21
+ },
+ {
+  "text": "let's",
+  "start": 400.11,
+  "end": 400.33,
+  "prob": 0.972
+ },
+ {
+  "text": "see",
+  "start": 400.33,
+  "end": 400.47,
+  "prob": 0.998
+ },
+ {
+  "text": "what",
+  "start": 400.47,
+  "end": 400.73,
+  "prob": 0.989
+ },
+ {
+  "text": "Claude",
+  "start": 400.73,
+  "end": 400.95,
+  "prob": 0.826
+ },
+ {
+  "text": "found.",
+  "start": 400.95,
+  "end": 401.31,
+  "prob": 0.964
+ },
+ {
+  "text": "It",
+  "start": 402.46,
+  "end": 402.46,
+  "prob": 0.731
+ },
+ {
+  "text": "explains",
+  "start": 402.58,
+  "end": 403.36,
+  "prob": 0.937
+ },
+ {
+  "text": "how",
+  "start": 403.36,
+  "end": 403.74,
+  "prob": 0.992
+ },
+ {
+  "text": "the",
+  "start": 403.74,
+  "end": 403.94,
+  "prob": 0.99
+ },
+ {
+  "text": "lists",
+  "start": 403.94,
+  "end": 404.18,
+  "prob": 0.765
+ },
+ {
+  "text": "and",
+  "start": 404.18,
+  "end": 404.68,
+  "prob": 0.993
+ },
+ {
+  "text": "cards",
+  "start": 404.68,
+  "end": 405.02,
+  "prob": 0.98
+ },
+ {
+  "text": "are",
+  "start": 405.02,
+  "end": 405.28,
+  "prob": 0.991
+ },
+ {
+  "text": "structured,",
+  "start": 405.28,
+  "end": 405.7,
+  "prob": 0.989
+ },
+ {
+  "text": "how",
+  "start": 405.96,
+  "end": 406.2,
+  "prob": 0.988
+ },
+ {
+  "text": "Dragon",
+  "start": 406.2,
+  "end": 406.7,
+  "prob": 0.442
+ },
+ {
+  "text": "Drop",
+  "start": 406.7,
+  "end": 407.36,
+  "prob": 0.716
+ },
+ {
+  "text": "works",
+  "start": 407.36,
+  "end": 407.78,
+  "prob": 0.944
+ },
+ {
+  "text": "and",
+  "start": 407.78,
+  "end": 408.38,
+  "prob": 0.683
+ },
+ {
+  "text": "how",
+  "start": 408.38,
+  "end": 409.18,
+  "prob": 0.337
+ },
+ {
+  "text": "Dragon",
+  "start": 409.32,
+  "end": 409.72,
+  "prob": 0.959
+ },
+ {
+  "text": "Drop",
+  "start": 409.72,
+  "end": 410.0,
+  "prob": 0.981
+ },
+ {
+  "text": "works",
+  "start": 410.0,
+  "end": 410.4,
+  "prob": 0.98
+ },
+ {
+  "text": "and",
+  "start": 410.4,
+  "end": 410.9,
+  "prob": 0.772
+ },
+ {
+  "text": "where",
+  "start": 410.9,
+  "end": 411.1,
+  "prob": 0.932
+ },
+ {
+  "text": "the",
+  "start": 411.1,
+  "end": 411.28,
+  "prob": 0.974
+ },
+ {
+  "text": "data",
+  "start": 411.28,
+  "end": 411.52,
+  "prob": 0.997
+ },
+ {
+  "text": "is",
+  "start": 411.52,
+  "end": 411.7,
+  "prob": 0.974
+ },
+ {
+  "text": "stored",
+  "start": 411.7,
+  "end": 412.0,
+  "prob": 0.995
+ },
+ {
+  "text": "and",
+  "start": 412.0,
+  "end": 412.54,
+  "prob": 0.26
+ },
+ {
+  "text": "the",
+  "start": 412.54,
+  "end": 412.84,
+  "prob": 0.96
+ },
+ {
+  "text": "labels",
+  "start": 412.84,
+  "end": 413.6,
+  "prob": 0.994
+ },
+ {
+  "text": "observed",
+  "start": 413.6,
+  "end": 414.24,
+  "prob": 0.661
+ },
+ {
+  "text": "inferred",
+  "start": 414.24,
+  "end": 414.84,
+  "prob": 0.557
+ },
+ {
+  "text": "and",
+  "start": 414.84,
+  "end": 415.2,
+  "prob": 0.835
+ },
+ {
+  "text": "not",
+  "start": 415.2,
+  "end": 415.42,
+  "prob": 0.985
+ },
+ {
+  "text": "sure.",
+  "start": 415.42,
+  "end": 415.76,
+  "prob": 0.983
+ },
+ {
+  "text": "This",
+  "start": 416.3,
+  "end": 416.34,
+  "prob": 0.978
+ },
+ {
+  "text": "is",
+  "start": 416.96,
+  "end": 417.72,
+  "prob": 0.898
+ },
+ {
+  "text": "what",
+  "start": 417.72,
+  "end": 418.04,
+  "prob": 0.989
+ },
+ {
+  "text": "makes",
+  "start": 418.04,
+  "end": 418.52,
+  "prob": 0.992
+ },
+ {
+  "text": "it",
+  "start": 418.52,
+  "end": 418.82,
+  "prob": 0.93
+ },
+ {
+  "text": "this",
+  "start": 418.82,
+  "end": 419.78,
+  "prob": 0.19
+ },
+ {
+  "text": "is",
+  "start": 419.78,
+  "end": 419.96,
+  "prob": 0.985
+ },
+ {
+  "text": "what",
+  "start": 419.96,
+  "end": 420.2,
+  "prob": 0.991
+ },
+ {
+  "text": "makes",
+  "start": 420.2,
+  "end": 420.48,
+  "prob": 0.997
+ },
+ {
+  "text": "it",
+  "start": 420.48,
+  "end": 420.68,
+  "prob": 0.985
+ },
+ {
+  "text": "trustworthy.",
+  "start": 420.68,
+  "end": 421.0,
+  "prob": 0.831
+ },
+ {
+  "text": "This",
+  "start": 421.5,
+  "end": 421.72,
+  "prob": 0.991
+ },
+ {
+  "text": "is",
+  "start": 421.72,
+  "end": 421.86,
+  "prob": 0.999
+ },
+ {
+  "text": "the",
+  "start": 421.86,
+  "end": 421.98,
+  "prob": 0.924
+ },
+ {
+  "text": "part",
+  "start": 421.98,
+  "end": 422.3,
+  "prob": 0.991
+ },
+ {
+  "text": "that",
+  "start": 422.3,
+  "end": 422.56,
+  "prob": 0.998
+ },
+ {
+  "text": "normally",
+  "start": 422.56,
+  "end": 423.0,
+  "prob": 0.999
+ },
+ {
+  "text": "takes",
+  "start": 423.0,
+  "end": 423.38,
+  "prob": 0.981
+ },
+ {
+  "text": "hours.",
+  "start": 423.38,
+  "end": 423.92,
+  "prob": 0.994
+ },
+ {
+  "text": "So",
+  "start": 424.74,
+  "end": 424.82,
+  "prob": 0.966
+ },
+ {
+  "text": "Claude",
+  "start": 424.82,
+  "end": 425.24,
+  "prob": 0.253
+ },
+ {
+  "text": "knows",
+  "start": 425.24,
+  "end": 425.56,
+  "prob": 0.979
+ },
+ {
+  "text": "how",
+  "start": 425.56,
+  "end": 426.02,
+  "prob": 0.998
+ },
+ {
+  "text": "the",
+  "start": 426.02,
+  "end": 426.22,
+  "prob": 0.999
+ },
+ {
+  "text": "app",
+  "start": 426.22,
+  "end": 426.44,
+  "prob": 0.984
+ },
+ {
+  "text": "works.",
+  "start": 426.44,
+  "end": 426.86,
+  "prob": 0.994
+ },
+ {
+  "text": "it's",
+  "start": 426.86,
+  "end": 427.5,
+  "prob": 0.367
+ },
+ {
+  "text": "time",
+  "start": 427.5,
+  "end": 427.66,
+  "prob": 0.958
+ },
+ {
+  "text": "to",
+  "start": 427.66,
+  "end": 427.86,
+  "prob": 0.99
+ },
+ {
+  "text": "build",
+  "start": 427.86,
+  "end": 428.16,
+  "prob": 0.964
+ },
+ {
+  "text": "and",
+  "start": 428.28,
+  "end": 428.9,
+  "prob": 0.598
+ },
+ {
+  "text": "I",
+  "start": 429.46,
+  "end": 429.86,
+  "prob": 0.686
+ },
+ {
+  "text": "tell",
+  "start": 430.0,
+  "end": 430.72,
+  "prob": 0.8
+ },
+ {
+  "text": "Claude",
+  "start": 430.72,
+  "end": 431.0,
+  "prob": 0.454
+ },
+ {
+  "text": "to",
+  "start": 431.0,
+  "end": 431.28,
+  "prob": 0.93
+ },
+ {
+  "text": "use",
+  "start": 431.28,
+  "end": 431.54,
+  "prob": 0.983
+ },
+ {
+  "text": "only",
+  "start": 431.54,
+  "end": 431.96,
+  "prob": 0.961
+ },
+ {
+  "text": "how",
+  "start": 431.96,
+  "end": 432.26,
+  "prob": 0.98
+ },
+ {
+  "text": "the",
+  "start": 432.26,
+  "end": 432.42,
+  "prob": 0.984
+ },
+ {
+  "text": "app",
+  "start": 432.42,
+  "end": 432.66,
+  "prob": 0.974
+ },
+ {
+  "text": "behaves",
+  "start": 432.66,
+  "end": 433.08,
+  "prob": 0.994
+ },
+ {
+  "text": "my",
+  "start": 433.08,
+  "end": 433.74,
+  "prob": 0.481
+ },
+ {
+  "text": "own",
+  "start": 433.74,
+  "end": 434.0,
+  "prob": 0.986
+ },
+ {
+  "text": "name",
+  "start": 434.0,
+  "end": 434.3,
+  "prob": 0.978
+ },
+ {
+  "text": "my",
+  "start": 434.3,
+  "end": 434.72,
+  "prob": 0.437
+ },
+ {
+  "text": "own",
+  "start": 434.72,
+  "end": 435.06,
+  "prob": 0.996
+ },
+ {
+  "text": "sample",
+  "start": 435.06,
+  "end": 435.5,
+  "prob": 0.978
+ },
+ {
+  "text": "content",
+  "start": 435.5,
+  "end": 435.92,
+  "prob": 0.988
+ },
+ {
+  "text": "I'm",
+  "start": 435.92,
+  "end": 436.34,
+  "prob": 0.673
+ },
+ {
+  "text": "not",
+  "start": 436.34,
+  "end": 436.56,
+  "prob": 0.986
+ },
+ {
+  "text": "copying",
+  "start": 436.56,
+  "end": 436.98,
+  "prob": 0.994
+ },
+ {
+  "text": "anyone's",
+  "start": 436.98,
+  "end": 437.52,
+  "prob": 0.933
+ },
+ {
+  "text": "logo",
+  "start": 437.52,
+  "end": 437.72,
+  "prob": 0.979
+ },
+ {
+  "text": "text",
+  "start": 437.72,
+  "end": 438.2,
+  "prob": 0.842
+ },
+ {
+  "text": "or",
+  "start": 438.2,
+  "end": 438.54,
+  "prob": 0.992
+ },
+ {
+  "text": "images",
+  "start": 438.54,
+  "end": 438.96,
+  "prob": 0.99
+ },
+ {
+  "text": "that",
+  "start": 438.96,
+  "end": 439.58,
+  "prob": 0.858
+ },
+ {
+  "text": "is",
+  "start": 439.58,
+  "end": 439.72,
+  "prob": 0.997
+ },
+ {
+  "text": "very",
+  "start": 439.72,
+  "end": 439.98,
+  "prob": 0.996
+ },
+ {
+  "text": "important",
+  "start": 439.98,
+  "end": 440.48,
+  "prob": 0.994
+ },
+ {
+  "text": "and",
+  "start": 440.48,
+  "end": 441.0,
+  "prob": 0.916
+ },
+ {
+  "text": "part",
+  "start": 441.5,
+  "end": 441.7,
+  "prob": 0.595
+ },
+ {
+  "text": "takes",
+  "start": 441.7,
+  "end": 442.02,
+  "prob": 0.97
+ },
+ {
+  "text": "a",
+  "start": 442.02,
+  "end": 442.2,
+  "prob": 0.994
+ },
+ {
+  "text": "few",
+  "start": 442.2,
+  "end": 442.38,
+  "prob": 0.999
+ },
+ {
+  "text": "minutes",
+  "start": 442.38,
+  "end": 442.7,
+  "prob": 0.995
+ },
+ {
+  "text": "so",
+  "start": 442.7,
+  "end": 443.18,
+  "prob": 0.937
+ },
+ {
+  "text": "I'll",
+  "start": 443.18,
+  "end": 443.48,
+  "prob": 0.921
+ },
+ {
+  "text": "speed",
+  "start": 443.48,
+  "end": 443.7,
+  "prob": 0.996
+ },
+ {
+  "text": "it",
+  "start": 443.7,
+  "end": 443.88,
+  "prob": 0.991
+ },
+ {
+  "text": "up.",
+  "start": 443.88,
+  "end": 444.18,
+  "prob": 0.997
+ },
+ {
+  "text": "Stay",
+  "start": 445.4,
+  "end": 445.4,
+  "prob": 0.481
+ },
+ {
+  "text": "till",
+  "start": 445.4,
+  "end": 445.58,
+  "prob": 0.958
+ },
+ {
+  "text": "the",
+  "start": 445.58,
+  "end": 445.76,
+  "prob": 0.996
+ },
+ {
+  "text": "end",
+  "start": 445.76,
+  "end": 446.0,
+  "prob": 0.997
+ },
+ {
+  "text": "because",
+  "start": 446.0,
+  "end": 446.56,
+  "prob": 0.94
+ },
+ {
+  "text": "after",
+  "start": 446.56,
+  "end": 446.94,
+  "prob": 0.996
+ },
+ {
+  "text": "this",
+  "start": 446.94,
+  "end": 447.24,
+  "prob": 0.993
+ },
+ {
+  "text": "I",
+  "start": 447.24,
+  "end": 447.52,
+  "prob": 0.968
+ },
+ {
+  "text": "will",
+  "start": 447.52,
+  "end": 447.66,
+  "prob": 0.997
+ },
+ {
+  "text": "tell",
+  "start": 447.66,
+  "end": 447.9,
+  "prob": 0.999
+ },
+ {
+  "text": "you",
+  "start": 447.9,
+  "end": 448.1,
+  "prob": 0.998
+ },
+ {
+  "text": "the",
+  "start": 448.1,
+  "end": 448.3,
+  "prob": 0.991
+ },
+ {
+  "text": "honest",
+  "start": 448.3,
+  "end": 448.72,
+  "prob": 0.941
+ },
+ {
+  "text": "downside",
+  "start": 448.72,
+  "end": 449.32,
+  "prob": 0.979
+ },
+ {
+  "text": "okay",
+  "start": 449.65,
+  "end": 450.19,
+  "prob": 0.484
+ },
+ {
+  "text": "here",
+  "start": 450.19,
+  "end": 450.57,
+  "prob": 0.961
+ },
+ {
+  "text": "it",
+  "start": 450.57,
+  "end": 450.69,
+  "prob": 0.994
+ },
+ {
+  "text": "is",
+  "start": 450.69,
+  "end": 450.87,
+  "prob": 0.998
+ },
+ {
+  "text": "guys",
+  "start": 450.87,
+  "end": 451.15,
+  "prob": 0.967
+ },
+ {
+  "text": "the",
+  "start": 451.15,
+  "end": 451.47,
+  "prob": 0.124
+ },
+ {
+  "text": "rear",
+  "start": 452.26,
+  "end": 452.9,
+  "prob": 0.336
+ },
+ {
+  "text": "board",
+  "start": 452.9,
+  "end": 453.18,
+  "prob": 0.911
+ },
+ {
+  "text": "running",
+  "start": 453.18,
+  "end": 453.74,
+  "prob": 0.972
+ },
+ {
+  "text": "on",
+  "start": 453.74,
+  "end": 454.06,
+  "prob": 0.999
+ },
+ {
+  "text": "my",
+  "start": 454.06,
+  "end": 454.32,
+  "prob": 0.999
+ },
+ {
+  "text": "computer",
+  "start": 454.32,
+  "end": 454.74,
+  "prob": 0.998
+ },
+ {
+  "text": "let",
+  "start": 454.74,
+  "end": 455.38,
+  "prob": 0.833
+ },
+ {
+  "text": "me",
+  "start": 455.38,
+  "end": 455.56,
+  "prob": 1.0
+ },
+ {
+  "text": "show",
+  "start": 455.56,
+  "end": 455.74,
+  "prob": 0.999
+ },
+ {
+  "text": "you",
+  "start": 455.74,
+  "end": 455.98,
+  "prob": 0.999
+ },
+ {
+  "text": "what",
+  "start": 455.98,
+  "end": 456.32,
+  "prob": 0.994
+ },
+ {
+  "text": "it",
+  "start": 456.32,
+  "end": 456.52,
+  "prob": 0.889
+ },
+ {
+  "text": "built",
+  "start": 456.52,
+  "end": 456.84,
+  "prob": 0.83
+ },
+ {
+  "text": "I",
+  "start": 456.84,
+  "end": 457.28,
+  "prob": 0.779
+ },
+ {
+  "text": "can",
+  "start": 458.73,
+  "end": 458.89,
+  "prob": 0.999
+ },
+ {
+  "text": "add",
+  "start": 458.89,
+  "end": 459.13,
+  "prob": 0.302
+ },
+ {
+  "text": "a",
+  "start": 459.13,
+  "end": 459.27,
+  "prob": 0.872
+ },
+ {
+  "text": "column",
+  "start": 459.27,
+  "end": 459.57,
+  "prob": 0.902
+ },
+ {
+  "text": "and",
+  "start": 461.32,
+  "end": 461.84,
+  "prob": 0.699
+ },
+ {
+  "text": "cards,",
+  "start": 462.52,
+  "end": 463.1,
+  "prob": 0.09
+ },
+ {
+  "text": "add",
+  "start": 464.48,
+  "end": 464.48,
+  "prob": 0.576
+ },
+ {
+  "text": "a",
+  "start": 464.48,
+  "end": 464.64,
+  "prob": 0.977
+ },
+ {
+  "text": "card,",
+  "start": 464.64,
+  "end": 465.08,
+  "prob": 0.974
+ },
+ {
+  "text": "edit",
+  "start": 465.73,
+  "end": 465.95,
+  "prob": 0.931
+ },
+ {
+  "text": "it",
+  "start": 465.95,
+  "end": 466.49,
+  "prob": 0.905
+ },
+ {
+  "text": "and",
+  "start": 466.82,
+  "end": 466.96,
+  "prob": 0.689
+ },
+ {
+  "text": "delete",
+  "start": 466.96,
+  "end": 467.16,
+  "prob": 0.923
+ },
+ {
+  "text": "it.",
+  "start": 467.95,
+  "end": 468.45,
+  "prob": 0.309
+ },
+ {
+  "text": "another",
+  "start": 468.45,
+  "end": 468.45,
+  "prob": 0.063
+ },
+ {
+  "text": "column",
+  "start": 468.45,
+  "end": 469.03,
+  "prob": 0.946
+ },
+ {
+  "text": "and",
+  "start": 469.03,
+  "end": 469.45,
+  "prob": 0.525
+ },
+ {
+  "text": "with",
+  "start": 469.45,
+  "end": 469.79,
+  "prob": 0.821
+ },
+ {
+  "text": "the",
+  "start": 469.79,
+  "end": 469.95,
+  "prob": 0.611
+ },
+ {
+  "text": "real",
+  "start": 469.95,
+  "end": 470.23,
+  "prob": 0.935
+ },
+ {
+  "text": "monster",
+  "start": 470.23,
+  "end": 470.55,
+  "prob": 0.256
+ },
+ {
+  "text": "and",
+  "start": 470.55,
+  "end": 471.33,
+  "prob": 0.512
+ },
+ {
+  "text": "then",
+  "start": 471.33,
+  "end": 471.53,
+  "prob": 0.981
+ },
+ {
+  "text": "reorder",
+  "start": 471.53,
+  "end": 471.95,
+  "prob": 0.904
+ },
+ {
+  "text": "inside",
+  "start": 471.95,
+  "end": 472.39,
+  "prob": 0.853
+ },
+ {
+  "text": "the",
+  "start": 472.39,
+  "end": 472.57,
+  "prob": 0.928
+ },
+ {
+  "text": "column",
+  "start": 472.57,
+  "end": 472.87,
+  "prob": 0.987
+ },
+ {
+  "text": "and",
+  "start": 472.87,
+  "end": 473.29,
+  "prob": 0.91
+ },
+ {
+  "text": "it",
+  "start": 473.69,
+  "end": 473.85,
+  "prob": 0.989
+ },
+ {
+  "text": "works.",
+  "start": 473.85,
+  "end": 474.17,
+  "prob": 0.992
+ },
+ {
+  "text": "then",
+  "start": 474.55,
+  "end": 474.59,
+  "prob": 0.628
+ },
+ {
+  "text": "the",
+  "start": 474.59,
+  "end": 474.73,
+  "prob": 0.92
+ },
+ {
+  "text": "extras",
+  "start": 474.73,
+  "end": 475.09,
+  "prob": 0.545
+ },
+ {
+  "text": "color",
+  "start": 475.09,
+  "end": 475.61,
+  "prob": 0.325
+ },
+ {
+  "text": "labels",
+  "start": 475.61,
+  "end": 476.11,
+  "prob": 0.754
+ },
+ {
+  "text": "a",
+  "start": 476.11,
+  "end": 476.55,
+  "prob": 0.448
+ },
+ {
+  "text": "due",
+  "start": 476.55,
+  "end": 476.79,
+  "prob": 0.815
+ },
+ {
+  "text": "date",
+  "start": 476.79,
+  "end": 477.11,
+  "prob": 0.998
+ },
+ {
+  "text": "in",
+  "start": 477.11,
+  "end": 477.33,
+  "prob": 0.977
+ },
+ {
+  "text": "the",
+  "start": 477.33,
+  "end": 477.45,
+  "prob": 0.999
+ },
+ {
+  "text": "past",
+  "start": 477.45,
+  "end": 477.75,
+  "prob": 0.991
+ },
+ {
+  "text": "and",
+  "start": 477.75,
+  "end": 478.05,
+  "prob": 0.985
+ },
+ {
+  "text": "see",
+  "start": 478.05,
+  "end": 478.29,
+  "prob": 0.977
+ },
+ {
+  "text": "the",
+  "start": 478.29,
+  "end": 478.47,
+  "prob": 0.994
+ },
+ {
+  "text": "red",
+  "start": 478.47,
+  "end": 478.71,
+  "prob": 0.918
+ },
+ {
+  "text": "overdue",
+  "start": 478.71,
+  "end": 479.21,
+  "prob": 0.9
+ },
+ {
+  "text": "batch",
+  "start": 479.21,
+  "end": 479.67,
+  "prob": 0.886
+ },
+ {
+  "text": "a",
+  "start": 479.67,
+  "end": 480.27,
+  "prob": 0.582
+ },
+ {
+  "text": "checklist",
+  "start": 480.27,
+  "end": 480.61,
+  "prob": 0.97
+ },
+ {
+  "text": "with",
+  "start": 480.61,
+  "end": 480.93,
+  "prob": 0.992
+ },
+ {
+  "text": "the",
+  "start": 480.93,
+  "end": 481.07,
+  "prob": 0.764
+ },
+ {
+  "text": "progress",
+  "start": 481.07,
+  "end": 481.41,
+  "prob": 0.997
+ },
+ {
+  "text": "bar",
+  "start": 481.41,
+  "end": 481.79,
+  "prob": 0.988
+ },
+ {
+  "text": "the",
+  "start": 481.79,
+  "end": 482.31,
+  "prob": 0.429
+ },
+ {
+  "text": "side",
+  "start": 482.31,
+  "end": 482.57,
+  "prob": 0.925
+ },
+ {
+  "text": "panel",
+  "start": 482.57,
+  "end": 482.95,
+  "prob": 0.954
+ },
+ {
+  "text": "for",
+  "start": 482.95,
+  "end": 483.33,
+  "prob": 0.985
+ },
+ {
+  "text": "editing",
+  "start": 483.33,
+  "end": 483.93,
+  "prob": 0.994
+ },
+ {
+  "text": "a",
+  "start": 483.93,
+  "end": 484.21,
+  "prob": 0.961
+ },
+ {
+  "text": "card",
+  "start": 484.21,
+  "end": 484.53,
+  "prob": 0.983
+ },
+ {
+  "text": "and",
+  "start": 484.53,
+  "end": 485.19,
+  "prob": 0.93
+ },
+ {
+  "text": "if",
+  "start": 485.19,
+  "end": 485.51,
+  "prob": 0.985
+ },
+ {
+  "text": "i",
+  "start": 485.51,
+  "end": 485.79,
+  "prob": 0.173
+ },
+ {
+  "text": "refresh",
+  "start": 485.79,
+  "end": 486.17,
+  "prob": 1.0
+ },
+ {
+  "text": "a",
+  "start": 486.17,
+  "end": 486.35,
+  "prob": 0.864
+ },
+ {
+  "text": "page",
+  "start": 486.35,
+  "end": 486.69,
+  "prob": 0.994
+ },
+ {
+  "text": "everything",
+  "start": 486.69,
+  "end": 487.31,
+  "prob": 0.946
+ },
+ {
+  "text": "is",
+  "start": 487.31,
+  "end": 487.59,
+  "prob": 0.997
+ },
+ {
+  "text": "still",
+  "start": 487.59,
+  "end": 487.89,
+  "prob": 0.995
+ },
+ {
+  "text": "saved.",
+  "start": 487.89,
+  "end": 488.35,
+  "prob": 0.898
+ },
+ {
+  "text": "now",
+  "start": 488.81,
+  "end": 488.85,
+  "prob": 0.844
+ },
+ {
+  "text": "here",
+  "start": 488.85,
+  "end": 489.17,
+  "prob": 0.971
+ },
+ {
+  "text": "is",
+  "start": 489.17,
+  "end": 489.37,
+  "prob": 0.975
+ },
+ {
+  "text": "how",
+  "start": 489.37,
+  "end": 490.67,
+  "prob": 0.317
+ },
+ {
+  "text": "close",
+  "start": 491.36,
+  "end": 492.5,
+  "prob": 0.937
+ },
+ {
+  "text": "it",
+  "start": 492.5,
+  "end": 492.76,
+  "prob": 0.994
+ },
+ {
+  "text": "looks",
+  "start": 492.76,
+  "end": 492.98,
+  "prob": 0.995
+ },
+ {
+  "text": "to",
+  "start": 492.98,
+  "end": 493.22,
+  "prob": 0.996
+ },
+ {
+  "text": "the",
+  "start": 493.22,
+  "end": 493.36,
+  "prob": 0.997
+ },
+ {
+  "text": "original.",
+  "start": 493.36,
+  "end": 493.7,
+  "prob": 0.988
+ },
+ {
+  "text": "Now",
+  "start": 493.7,
+  "end": 494.36,
+  "prob": 0.261
+ },
+ {
+  "text": "what",
+  "start": 494.95,
+  "end": 495.71,
+  "prob": 0.446
+ },
+ {
+  "text": "it",
+  "start": 495.92,
+  "end": 496.14,
+  "prob": 0.81
+ },
+ {
+  "text": "did",
+  "start": 496.14,
+  "end": 496.32,
+  "prob": 0.968
+ },
+ {
+  "text": "not",
+  "start": 496.32,
+  "end": 496.62,
+  "prob": 0.982
+ },
+ {
+  "text": "build",
+  "start": 496.62,
+  "end": 496.9,
+  "prob": 0.598
+ },
+ {
+  "text": "and",
+  "start": 496.9,
+  "end": 497.52,
+  "prob": 0.603
+ },
+ {
+  "text": "this",
+  "start": 497.52,
+  "end": 497.74,
+  "prob": 0.977
+ },
+ {
+  "text": "part",
+  "start": 497.74,
+  "end": 498.0,
+  "prob": 0.988
+ },
+ {
+  "text": "is",
+  "start": 498.0,
+  "end": 498.18,
+  "prob": 0.987
+ },
+ {
+  "text": "very",
+  "start": 498.18,
+  "end": 498.44,
+  "prob": 0.98
+ },
+ {
+  "text": "important.",
+  "start": 498.44,
+  "end": 498.88,
+  "prob": 0.978
+ },
+ {
+  "text": "So",
+  "start": 499.22,
+  "end": 499.24,
+  "prob": 0.726
+ },
+ {
+  "text": "my",
+  "start": 499.24,
+  "end": 499.48,
+  "prob": 0.906
+ },
+ {
+  "text": "app",
+  "start": 499.48,
+  "end": 499.86,
+  "prob": 0.95
+ },
+ {
+  "text": "saves",
+  "start": 499.86,
+  "end": 500.26,
+  "prob": 0.825
+ },
+ {
+  "text": "data",
+  "start": 500.26,
+  "end": 500.78,
+  "prob": 0.963
+ },
+ {
+  "text": "only",
+  "start": 500.78,
+  "end": 501.22,
+  "prob": 0.971
+ },
+ {
+  "text": "in",
+  "start": 501.22,
+  "end": 501.54,
+  "prob": 0.988
+ },
+ {
+  "text": "this",
+  "start": 501.54,
+  "end": 501.72,
+  "prob": 0.981
+ },
+ {
+  "text": "browser.",
+  "start": 501.72,
+  "end": 502.04,
+  "prob": 0.987
+ },
+ {
+  "text": "So",
+  "start": 502.48,
+  "end": 502.5,
+  "prob": 0.952
+ },
+ {
+  "text": "there",
+  "start": 502.5,
+  "end": 502.72,
+  "prob": 0.973
+ },
+ {
+  "text": "is",
+  "start": 502.72,
+  "end": 502.86,
+  "prob": 0.995
+ },
+ {
+  "text": "no",
+  "start": 502.86,
+  "end": 503.08,
+  "prob": 0.992
+ },
+ {
+  "text": "login,",
+  "start": 503.08,
+  "end": 503.48,
+  "prob": 0.353
+ },
+ {
+  "text": "no",
+  "start": 503.78,
+  "end": 503.92,
+  "prob": 0.98
+ },
+ {
+  "text": "real",
+  "start": 503.92,
+  "end": 504.2,
+  "prob": 0.977
+ },
+ {
+  "text": "time",
+  "start": 504.2,
+  "end": 504.42,
+  "prob": 0.55
+ },
+ {
+  "text": "sync",
+  "start": 504.42,
+  "end": 504.7,
+  "prob": 0.905
+ },
+ {
+  "text": "between",
+  "start": 504.7,
+  "end": 505.02,
+  "prob": 0.991
+ },
+ {
+  "text": "users",
+  "start": 505.02,
+  "end": 505.4,
+  "prob": 0.984
+ },
+ {
+  "text": "and",
+  "start": 505.4,
+  "end": 505.76,
+  "prob": 0.893
+ },
+ {
+  "text": "no",
+  "start": 505.76,
+  "end": 506.0,
+  "prob": 0.991
+ },
+ {
+  "text": "server",
+  "start": 506.0,
+  "end": 506.42,
+  "prob": 0.988
+ },
+ {
+  "text": "or",
+  "start": 506.42,
+  "end": 506.68,
+  "prob": 0.973
+ },
+ {
+  "text": "database.",
+  "start": 506.68,
+  "end": 507.06,
+  "prob": 0.89
+ },
+ {
+  "text": "The",
+  "start": 507.4,
+  "end": 507.62,
+  "prob": 0.97
+ },
+ {
+  "text": "original",
+  "start": 507.62,
+  "end": 508.04,
+  "prob": 0.953
+ },
+ {
+  "text": "beacon",
+  "start": 508.04,
+  "end": 508.42,
+  "prob": 0.303
+ },
+ {
+  "text": "has",
+  "start": 508.42,
+  "end": 508.84,
+  "prob": 0.449
+ },
+ {
+  "text": "all",
+  "start": 508.84,
+  "end": 509.3,
+  "prob": 0.99
+ },
+ {
+  "text": "of",
+  "start": 509.3,
+  "end": 509.48,
+  "prob": 0.993
+ },
+ {
+  "text": "that",
+  "start": 509.48,
+  "end": 509.72,
+  "prob": 0.897
+ },
+ {
+  "text": "and",
+  "start": 509.72,
+  "end": 510.24,
+  "prob": 0.762
+ },
+ {
+  "text": "my",
+  "start": 510.24,
+  "end": 510.44,
+  "prob": 0.994
+ },
+ {
+  "text": "version",
+  "start": 510.44,
+  "end": 510.84,
+  "prob": 0.991
+ },
+ {
+  "text": "does",
+  "start": 510.84,
+  "end": 511.1,
+  "prob": 0.995
+ },
+ {
+  "text": "not.",
+  "start": 511.1,
+  "end": 511.36,
+  "prob": 0.997
+ },
+ {
+  "text": "I",
+  "start": 511.87,
+  "end": 511.89,
+  "prob": 0.989
+ },
+ {
+  "text": "did",
+  "start": 511.89,
+  "end": 512.11,
+  "prob": 0.996
+ },
+ {
+  "text": "not",
+  "start": 512.11,
+  "end": 512.37,
+  "prob": 0.999
+ },
+ {
+  "text": "ask",
+  "start": 512.37,
+  "end": 512.71,
+  "prob": 0.977
+ },
+ {
+  "text": "for",
+  "start": 512.71,
+  "end": 513.01,
+  "prob": 0.988
+ },
+ {
+  "text": "it",
+  "start": 513.01,
+  "end": 513.21,
+  "prob": 0.994
+ },
+ {
+  "text": "in",
+  "start": 513.21,
+  "end": 513.41,
+  "prob": 0.983
+ },
+ {
+  "text": "my",
+  "start": 513.41,
+  "end": 513.61,
+  "prob": 0.976
+ },
+ {
+  "text": "prompts.",
+  "start": 513.61,
+  "end": 513.99,
+  "prob": 0.648
+ },
+ {
+  "text": "So",
+  "start": 514.73,
+  "end": 514.75,
+  "prob": 0.936
+ },
+ {
+  "text": "Claude",
+  "start": 514.75,
+  "end": 515.01,
+  "prob": 0.758
+ },
+ {
+  "text": "did",
+  "start": 515.01,
+  "end": 515.23,
+  "prob": 0.98
+ },
+ {
+  "text": "not",
+  "start": 515.23,
+  "end": 515.47,
+  "prob": 0.998
+ },
+ {
+  "text": "build",
+  "start": 515.47,
+  "end": 515.73,
+  "prob": 0.908
+ },
+ {
+  "text": "it.",
+  "start": 515.73,
+  "end": 516.01,
+  "prob": 0.787
+ },
+ {
+  "text": "A",
+  "start": 517.14,
+  "end": 517.14,
+  "prob": 0.177
+ },
+ {
+  "text": "copy",
+  "start": 517.14,
+  "end": 517.4,
+  "prob": 0.563
+ },
+ {
+  "text": "of",
+  "start": 517.4,
+  "end": 518.06,
+  "prob": 0.994
+ },
+ {
+  "text": "how",
+  "start": 518.06,
+  "end": 518.38,
+  "prob": 0.964
+ },
+ {
+  "text": "the",
+  "start": 518.38,
+  "end": 518.6,
+  "prob": 0.995
+ },
+ {
+  "text": "board",
+  "start": 518.6,
+  "end": 518.86,
+  "prob": 0.979
+ },
+ {
+  "text": "behaves",
+  "start": 518.86,
+  "end": 519.32,
+  "prob": 0.992
+ },
+ {
+  "text": "not",
+  "start": 519.32,
+  "end": 519.92,
+  "prob": 0.403
+ },
+ {
+  "text": "a",
+  "start": 519.92,
+  "end": 520.1,
+  "prob": 0.955
+ },
+ {
+  "text": "full",
+  "start": 520.1,
+  "end": 520.3,
+  "prob": 0.992
+ },
+ {
+  "text": "replacement",
+  "start": 520.3,
+  "end": 520.82,
+  "prob": 0.99
+ },
+ {
+  "text": "of",
+  "start": 520.82,
+  "end": 521.24,
+  "prob": 0.983
+ },
+ {
+  "text": "the",
+  "start": 521.24,
+  "end": 521.48,
+  "prob": 0.991
+ },
+ {
+  "text": "real",
+  "start": 521.48,
+  "end": 521.76,
+  "prob": 0.973
+ },
+ {
+  "text": "product.",
+  "start": 521.76,
+  "end": 522.2,
+  "prob": 0.975
+ },
+ {
+  "text": "All",
+  "start": 523.11,
+  "end": 523.47,
+  "prob": 0.104
+ },
+ {
+  "text": "the",
+  "start": 523.47,
+  "end": 523.65,
+  "prob": 0.945
+ },
+ {
+  "text": "questions",
+  "start": 523.65,
+  "end": 523.91,
+  "prob": 0.613
+ },
+ {
+  "text": "I",
+  "start": 523.91,
+  "end": 524.11,
+  "prob": 0.754
+ },
+ {
+  "text": "promised",
+  "start": 524.11,
+  "end": 524.51,
+  "prob": 0.893
+ },
+ {
+  "text": "you",
+  "start": 524.51,
+  "end": 524.85,
+  "prob": 0.946
+ },
+ {
+  "text": "is",
+  "start": 524.85,
+  "end": 525.45,
+  "prob": 0.779
+ },
+ {
+  "text": "real",
+  "start": 525.45,
+  "end": 525.89,
+  "prob": 0.139
+ },
+ {
+  "text": "worth",
+  "start": 525.89,
+  "end": 526.35,
+  "prob": 0.744
+ },
+ {
+  "text": "the",
+  "start": 526.35,
+  "end": 526.57,
+  "prob": 0.984
+ },
+ {
+  "text": "hype.",
+  "start": 526.57,
+  "end": 526.85,
+  "prob": 0.797
+ },
+ {
+  "text": "My",
+  "start": 527.21,
+  "end": 527.33,
+  "prob": 0.899
+ },
+ {
+  "text": "honest",
+  "start": 527.33,
+  "end": 527.69,
+  "prob": 0.961
+ },
+ {
+  "text": "answer",
+  "start": 527.69,
+  "end": 528.13,
+  "prob": 0.98
+ },
+ {
+  "text": "is",
+  "start": 528.13,
+  "end": 528.71,
+  "prob": 0.972
+ },
+ {
+  "text": "yes.",
+  "start": 528.71,
+  "end": 528.99,
+  "prob": 0.683
+ },
+ {
+  "text": "It",
+  "start": 529.45,
+  "end": 529.55,
+  "prob": 0.92
+ },
+ {
+  "text": "is",
+  "start": 529.55,
+  "end": 529.73,
+  "prob": 0.974
+ },
+ {
+  "text": "worth",
+  "start": 529.73,
+  "end": 530.09,
+  "prob": 0.972
+ },
+ {
+  "text": "trying.",
+  "start": 530.09,
+  "end": 530.53,
+  "prob": 0.98
+ },
+ {
+  "text": "I",
+  "start": 530.81,
+  "end": 530.81,
+  "prob": 0.485
+ },
+ {
+  "text": "am",
+  "start": 530.81,
+  "end": 530.95,
+  "prob": 0.335
+ },
+ {
+  "text": "working",
+  "start": 530.95,
+  "end": 531.35,
+  "prob": 0.903
+ },
+ {
+  "text": "for.",
+  "start": 531.35,
+  "end": 531.65,
+  "prob": 0.715
+ },
+ {
+  "text": "Going",
+  "start": 532.34,
+  "end": 532.62,
+  "prob": 0.832
+ },
+ {
+  "text": "from",
+  "start": 532.62,
+  "end": 532.92,
+  "prob": 0.978
+ },
+ {
+  "text": "I",
+  "start": 532.92,
+  "end": 533.2,
+  "prob": 0.695
+ },
+ {
+  "text": "like",
+  "start": 533.2,
+  "end": 533.44,
+  "prob": 0.98
+ },
+ {
+  "text": "this",
+  "start": 533.44,
+  "end": 533.66,
+  "prob": 0.977
+ },
+ {
+  "text": "feature",
+  "start": 533.66,
+  "end": 534.08,
+  "prob": 0.911
+ },
+ {
+  "text": "to",
+  "start": 534.08,
+  "end": 534.38,
+  "prob": 0.752
+ },
+ {
+  "text": "I",
+  "start": 534.38,
+  "end": 534.58,
+  "prob": 0.866
+ },
+ {
+  "text": "understand",
+  "start": 534.58,
+  "end": 535.06,
+  "prob": 0.987
+ },
+ {
+  "text": "how",
+  "start": 535.06,
+  "end": 535.36,
+  "prob": 0.989
+ },
+ {
+  "text": "it",
+  "start": 535.36,
+  "end": 535.56,
+  "prob": 0.992
+ },
+ {
+  "text": "works",
+  "start": 535.56,
+  "end": 535.86,
+  "prob": 0.995
+ },
+ {
+  "text": "and",
+  "start": 535.86,
+  "end": 536.14,
+  "prob": 0.81
+ },
+ {
+  "text": "I",
+  "start": 536.14,
+  "end": 536.34,
+  "prob": 0.968
+ },
+ {
+  "text": "have",
+  "start": 536.34,
+  "end": 536.56,
+  "prob": 0.99
+ },
+ {
+  "text": "a",
+  "start": 536.56,
+  "end": 536.7,
+  "prob": 0.939
+ },
+ {
+  "text": "working",
+  "start": 536.7,
+  "end": 537.0,
+  "prob": 0.997
+ },
+ {
+  "text": "version",
+  "start": 537.0,
+  "end": 537.46,
+  "prob": 0.995
+ },
+ {
+  "text": "in",
+  "start": 537.46,
+  "end": 538.04,
+  "prob": 0.802
+ },
+ {
+  "text": "two",
+  "start": 538.04,
+  "end": 538.32,
+  "prob": 0.891
+ },
+ {
+  "text": "prompts",
+  "start": 538.32,
+  "end": 538.76,
+  "prob": 0.451
+ },
+ {
+  "text": "is",
+  "start": 538.76,
+  "end": 539.16,
+  "prob": 0.887
+ },
+ {
+  "text": "really",
+  "start": 539.16,
+  "end": 539.5,
+  "prob": 0.983
+ },
+ {
+  "text": "powerful",
+  "start": 539.5,
+  "end": 539.94,
+  "prob": 0.99
+ },
+ {
+  "text": "and",
+  "start": 539.94,
+  "end": 540.64,
+  "prob": 0.422
+ },
+ {
+  "text": "the",
+  "start": 540.64,
+  "end": 540.78,
+  "prob": 0.97
+ },
+ {
+  "text": "evidence",
+  "start": 540.78,
+  "end": 541.26,
+  "prob": 0.99
+ },
+ {
+  "text": "labels",
+  "start": 541.26,
+  "end": 542.08,
+  "prob": 0.889
+ },
+ {
+  "text": "observed",
+  "start": 542.08,
+  "end": 542.98,
+  "prob": 0.873
+ },
+ {
+  "text": "inferred",
+  "start": 542.98,
+  "end": 543.58,
+  "prob": 0.917
+ },
+ {
+  "text": "and",
+  "start": 543.58,
+  "end": 543.82,
+  "prob": 0.935
+ },
+ {
+  "text": "not",
+  "start": 543.82,
+  "end": 544.06,
+  "prob": 0.98
+ },
+ {
+  "text": "sure",
+  "start": 544.06,
+  "end": 544.36,
+  "prob": 0.994
+ },
+ {
+  "text": "that",
+  "start": 544.36,
+  "end": 544.98,
+  "prob": 0.562
+ },
+ {
+  "text": "is",
+  "start": 544.98,
+  "end": 545.16,
+  "prob": 0.985
+ },
+ {
+  "text": "what",
+  "start": 545.16,
+  "end": 545.38,
+  "prob": 0.987
+ },
+ {
+  "text": "I",
+  "start": 545.38,
+  "end": 545.52,
+  "prob": 0.973
+ },
+ {
+  "text": "really",
+  "start": 545.52,
+  "end": 545.86,
+  "prob": 0.936
+ },
+ {
+  "text": "like",
+  "start": 545.86,
+  "end": 546.18,
+  "prob": 0.948
+ },
+ {
+  "text": "the",
+  "start": 546.18,
+  "end": 546.38,
+  "prob": 0.968
+ },
+ {
+  "text": "most.",
+  "start": 546.38,
+  "end": 546.74,
+  "prob": 0.993
+ },
+ {
+  "text": "Here",
+  "start": 548.96,
+  "end": 549.04,
+  "prob": 0.964
+ },
+ {
+  "text": "are",
+  "start": 549.04,
+  "end": 549.2,
+  "prob": 0.963
+ },
+ {
+  "text": "the",
+  "start": 549.2,
+  "end": 549.38,
+  "prob": 0.993
+ },
+ {
+  "text": "downsides.",
+  "start": 549.38,
+  "end": 549.98,
+  "prob": 0.91
+ },
+ {
+  "text": "Number",
+  "start": 550.44,
+  "end": 550.5,
+  "prob": 0.838
+ },
+ {
+  "text": "one",
+  "start": 550.5,
+  "end": 550.88,
+  "prob": 0.9
+ },
+ {
+  "text": "is",
+  "start": 550.88,
+  "end": 551.34,
+  "prob": 0.905
+ },
+ {
+  "text": "setup",
+  "start": 551.34,
+  "end": 551.96,
+  "prob": 0.48
+ },
+ {
+  "text": "is",
+  "start": 551.96,
+  "end": 552.26,
+  "prob": 0.979
+ },
+ {
+  "text": "not",
+  "start": 552.26,
+  "end": 552.52,
+  "prob": 0.995
+ },
+ {
+  "text": "one",
+  "start": 552.52,
+  "end": 552.82,
+  "prob": 0.927
+ },
+ {
+  "text": "click.",
+  "start": 552.82,
+  "end": 553.06,
+  "prob": 0.9
+ },
+ {
+  "text": "If",
+  "start": 553.06,
+  "end": 553.48,
+  "prob": 0.274
+ },
+ {
+  "text": "you",
+  "start": 553.48,
+  "end": 553.62,
+  "prob": 0.931
+ },
+ {
+  "text": "are",
+  "start": 553.62,
+  "end": 553.72,
+  "prob": 0.903
+ },
+ {
+  "text": "a",
+  "start": 553.72,
+  "end": 553.84,
+  "prob": 0.914
+ },
+ {
+  "text": "company,",
+  "start": 553.84,
+  "end": 554.12,
+  "prob": 0.83
+ },
+ {
+  "text": "you",
+  "start": 554.42,
+  "end": 554.56,
+  "prob": 0.894
+ },
+ {
+  "text": "need",
+  "start": 554.56,
+  "end": 554.76,
+  "prob": 0.921
+ },
+ {
+  "text": "to",
+  "start": 554.76,
+  "end": 554.9,
+  "prob": 0.989
+ },
+ {
+  "text": "install",
+  "start": 554.9,
+  "end": 555.28,
+  "prob": 0.969
+ },
+ {
+  "text": "Node",
+  "start": 555.28,
+  "end": 555.64,
+  "prob": 0.681
+ },
+ {
+  "text": ".js",
+  "start": 555.64,
+  "end": 556.0,
+  "prob": 0.803
+ },
+ {
+  "text": "terminal,",
+  "start": 556.0,
+  "end": 556.76,
+  "prob": 0.3
+ },
+ {
+  "text": "clock",
+  "start": 557.4,
+  "end": 557.46,
+  "prob": 0.149
+ },
+ {
+  "text": "code",
+  "start": 557.46,
+  "end": 557.96,
+  "prob": 0.913
+ },
+ {
+  "text": "and",
+  "start": 557.96,
+  "end": 558.28,
+  "prob": 0.561
+ },
+ {
+  "text": "for",
+  "start": 558.28,
+  "end": 558.54,
+  "prob": 0.917
+ },
+ {
+  "text": "testing",
+  "start": 558.54,
+  "end": 559.02,
+  "prob": 0.971
+ },
+ {
+  "text": "the",
+  "start": 559.02,
+  "end": 559.54,
+  "prob": 0.634
+ },
+ {
+  "text": "Chrome",
+  "start": 559.54,
+  "end": 559.82,
+  "prob": 0.75
+ },
+ {
+  "text": "extension.",
+  "start": 559.82,
+  "end": 560.28,
+  "prob": 0.91
+ },
+ {
+  "text": "Beginner,",
+  "start": 560.62,
+  "end": 560.92,
+  "prob": 0.641
+ },
+ {
+  "text": "it",
+  "start": 561.08,
+  "end": 561.3,
+  "prob": 0.93
+ },
+ {
+  "text": "will",
+  "start": 561.3,
+  "end": 561.46,
+  "prob": 0.98
+ },
+ {
+  "text": "take",
+  "start": 561.46,
+  "end": 561.76,
+  "prob": 0.987
+ },
+ {
+  "text": "some",
+  "start": 561.76,
+  "end": 562.04,
+  "prob": 0.988
+ },
+ {
+  "text": "effort.",
+  "start": 562.04,
+  "end": 562.56,
+  "prob": 0.995
+ },
+ {
+  "text": "2.",
+  "start": 562.9,
+  "end": 562.92,
+  "prob": 0.42
+ },
+ {
+  "text": "It",
+  "start": 563.82,
+  "end": 563.9,
+  "prob": 0.84
+ },
+ {
+  "text": "studies",
+  "start": 563.9,
+  "end": 564.28,
+  "prob": 0.957
+ },
+ {
+  "text": "the",
+  "start": 564.28,
+  "end": 564.54,
+  "prob": 0.777
+ },
+ {
+  "text": "website",
+  "start": 564.54,
+  "end": 564.74,
+  "prob": 0.914
+ },
+ {
+  "text": "shows",
+  "start": 564.74,
+  "end": 565.14,
+  "prob": 0.852
+ },
+ {
+  "text": "from",
+  "start": 565.14,
+  "end": 565.48,
+  "prob": 0.981
+ },
+ {
+  "text": "the",
+  "start": 565.48,
+  "end": 565.62,
+  "prob": 0.913
+ },
+ {
+  "text": "outside.",
+  "start": 565.62,
+  "end": 565.98,
+  "prob": 0.968
+ },
+ {
+  "text": "It",
+  "start": 566.36,
+  "end": 566.5,
+  "prob": 0.927
+ },
+ {
+  "text": "cannot",
+  "start": 566.5,
+  "end": 566.76,
+  "prob": 0.884
+ },
+ {
+  "text": "see",
+  "start": 566.76,
+  "end": 567.04,
+  "prob": 0.995
+ },
+ {
+  "text": "the",
+  "start": 567.04,
+  "end": 567.22,
+  "prob": 0.969
+ },
+ {
+  "text": "private",
+  "start": 567.22,
+  "end": 567.56,
+  "prob": 0.99
+ },
+ {
+  "text": "code",
+  "start": 567.56,
+  "end": 567.92,
+  "prob": 0.987
+ },
+ {
+  "text": "running",
+  "start": 567.92,
+  "end": 568.34,
+  "prob": 0.988
+ },
+ {
+  "text": "on",
+  "start": 568.34,
+  "end": 568.6,
+  "prob": 0.985
+ },
+ {
+  "text": "the",
+  "start": 568.6,
+  "end": 568.78,
+  "prob": 0.979
+ },
+ {
+  "text": "pub",
+  "start": 568.78,
+  "end": 568.92,
+  "prob": 0.119
+ },
+ {
+  "text": "company.",
+  "start": 568.92,
+  "end": 569.4,
+  "prob": 0.927
+ },
+ {
+  "text": "It",
+  "start": 569.62,
+  "end": 569.94,
+  "prob": 0.763
+ },
+ {
+  "text": "cannot",
+  "start": 569.94,
+  "end": 570.8,
+  "prob": 0.843
+ },
+ {
+  "text": "see",
+  "start": 570.8,
+  "end": 571.1,
+  "prob": 0.964
+ },
+ {
+  "text": "the",
+  "start": 571.1,
+  "end": 571.28,
+  "prob": 0.966
+ },
+ {
+  "text": "private",
+  "start": 571.28,
+  "end": 571.54,
+  "prob": 0.996
+ },
+ {
+  "text": "code",
+  "start": 571.54,
+  "end": 571.9,
+  "prob": 0.99
+ },
+ {
+  "text": "running",
+  "start": 571.9,
+  "end": 572.32,
+  "prob": 0.982
+ },
+ {
+  "text": "on",
+  "start": 572.32,
+  "end": 572.64,
+  "prob": 0.99
+ },
+ {
+  "text": "the",
+  "start": 572.64,
+  "end": 572.8,
+  "prob": 0.989
+ },
+ {
+  "text": "company's",
+  "start": 572.8,
+  "end": 573.28,
+  "prob": 0.878
+ },
+ {
+  "text": "server.",
+  "start": 573.28,
+  "end": 573.62,
+  "prob": 0.954
+ },
+ {
+  "text": "So",
+  "start": 573.88,
+  "end": 574.06,
+  "prob": 0.925
+ },
+ {
+  "text": "you",
+  "start": 574.06,
+  "end": 574.24,
+  "prob": 0.628
+ },
+ {
+  "text": "get",
+  "start": 574.24,
+  "end": 574.46,
+  "prob": 0.781
+ },
+ {
+  "text": "a",
+  "start": 574.46,
+  "end": 574.64,
+  "prob": 0.694
+ },
+ {
+  "text": "behavior,",
+  "start": 574.64,
+  "end": 575.04,
+  "prob": 0.456
+ },
+ {
+  "text": "not",
+  "start": 575.56,
+  "end": 575.66,
+  "prob": 0.987
+ },
+ {
+  "text": "the",
+  "start": 575.66,
+  "end": 575.82,
+  "prob": 0.95
+ },
+ {
+  "text": "full",
+  "start": 575.82,
+  "end": 576.02,
+  "prob": 0.994
+ },
+ {
+  "text": "product.",
+  "start": 576.02,
+  "end": 576.4,
+  "prob": 0.982
+ },
+ {
+  "text": "3.",
+  "start": 577.0,
+  "end": 577.38,
+  "prob": 0.905
+ },
+ {
+  "text": "Result",
+  "start": 577.92,
+  "end": 578.4,
+  "prob": 0.135
+ },
+ {
+  "text": "depends",
+  "start": 578.4,
+  "end": 578.86,
+  "prob": 0.94
+ },
+ {
+  "text": "on",
+  "start": 578.86,
+  "end": 579.18,
+  "prob": 0.988
+ },
+ {
+  "text": "your",
+  "start": 579.18,
+  "end": 579.4,
+  "prob": 0.905
+ },
+ {
+  "text": "prompt.",
+  "start": 579.4,
+  "end": 579.64,
+  "prob": 0.598
+ },
+ {
+  "text": "If",
+  "start": 579.64,
+  "end": 580.3,
+  "prob": 0.203
+ },
+ {
+  "text": "you",
+  "start": 580.51,
+  "end": 581.15,
+  "prob": 0.9
+ },
+ {
+  "text": "are",
+  "start": 581.15,
+  "end": 581.29,
+  "prob": 0.855
+ },
+ {
+  "text": "vague,",
+  "start": 581.29,
+  "end": 581.53,
+  "prob": 0.618
+ },
+ {
+  "text": "you",
+  "start": 581.97,
+  "end": 582.03,
+  "prob": 0.884
+ },
+ {
+  "text": "get",
+  "start": 582.03,
+  "end": 582.21,
+  "prob": 0.863
+ },
+ {
+  "text": "a",
+  "start": 582.21,
+  "end": 582.39,
+  "prob": 0.922
+ },
+ {
+  "text": "vague",
+  "start": 582.39,
+  "end": 582.61,
+  "prob": 0.984
+ },
+ {
+  "text": "app",
+  "start": 582.61,
+  "end": 582.99,
+  "prob": 0.894
+ },
+ {
+  "text": "and",
+  "start": 582.99,
+  "end": 583.51,
+  "prob": 0.671
+ },
+ {
+  "text": "you",
+  "start": 583.51,
+  "end": 583.69,
+  "prob": 0.931
+ },
+ {
+  "text": "still",
+  "start": 583.69,
+  "end": 583.99,
+  "prob": 0.97
+ },
+ {
+  "text": "have",
+  "start": 583.99,
+  "end": 584.31,
+  "prob": 0.983
+ },
+ {
+  "text": "to",
+  "start": 584.31,
+  "end": 584.53,
+  "prob": 0.985
+ },
+ {
+  "text": "test",
+  "start": 584.53,
+  "end": 584.73,
+  "prob": 0.979
+ },
+ {
+  "text": "the",
+  "start": 584.73,
+  "end": 584.95,
+  "prob": 0.958
+ },
+ {
+  "text": "output",
+  "start": 584.95,
+  "end": 585.27,
+  "prob": 0.945
+ },
+ {
+  "text": "yourself.",
+  "start": 585.27,
+  "end": 585.91,
+  "prob": 0.909
+ },
+ {
+  "text": "Do",
+  "start": 586.28,
+  "end": 586.3,
+  "prob": 0.855
+ },
+ {
+  "text": "not",
+  "start": 586.3,
+  "end": 586.5,
+  "prob": 0.965
+ },
+ {
+  "text": "trust",
+  "start": 586.5,
+  "end": 586.86,
+  "prob": 0.799
+ },
+ {
+  "text": "it",
+  "start": 586.86,
+  "end": 587.08,
+  "prob": 0.933
+ },
+ {
+  "text": "blindly.",
+  "start": 587.08,
+  "end": 587.48,
+  "prob": 0.997
+ },
+ {
+  "text": "Number",
+  "start": 588.23,
+  "end": 588.23,
+  "prob": 0.442
+ },
+ {
+  "text": "4",
+  "start": 588.23,
+  "end": 588.61,
+  "prob": 0.486
+ },
+ {
+  "text": "is",
+  "start": 588.61,
+  "end": 588.91,
+  "prob": 0.688
+ },
+ {
+  "text": "the",
+  "start": 588.91,
+  "end": 589.09,
+  "prob": 0.534
+ },
+ {
+  "text": "tool",
+  "start": 589.09,
+  "end": 589.35,
+  "prob": 0.955
+ },
+ {
+  "text": "changes",
+  "start": 589.35,
+  "end": 589.79,
+  "prob": 0.968
+ },
+ {
+  "text": "very",
+  "start": 589.79,
+  "end": 590.13,
+  "prob": 0.982
+ },
+ {
+  "text": "fast.",
+  "start": 590.13,
+  "end": 590.51,
+  "prob": 0.88
+ },
+ {
+  "text": "So,",
+  "start": 591.63,
+  "end": 591.67,
+  "prob": 0.55
+ },
+ {
+  "text": "you",
+  "start": 591.81,
+  "end": 591.83,
+  "prob": 0.099
+ },
+ {
+  "text": "look",
+  "start": 591.83,
+  "end": 592.01,
+  "prob": 0.669
+ },
+ {
+  "text": "different",
+  "start": 592.01,
+  "end": 592.43,
+  "prob": 0.964
+ },
+ {
+  "text": "when",
+  "start": 592.43,
+  "end": 592.77,
+  "prob": 0.954
+ },
+ {
+  "text": "you",
+  "start": 592.77,
+  "end": 592.93,
+  "prob": 0.988
+ },
+ {
+  "text": "try",
+  "start": 592.93,
+  "end": 593.25,
+  "prob": 0.947
+ },
+ {
+  "text": "it.",
+  "start": 593.25,
+  "end": 593.53,
+  "prob": 0.473
+ },
+ {
+  "text": "And",
+  "start": 594.32,
+  "end": 594.32,
+  "prob": 0.708
+ },
+ {
+  "text": "please",
+  "start": 594.32,
+  "end": 594.6,
+  "prob": 0.93
+ },
+ {
+  "text": "use",
+  "start": 594.6,
+  "end": 595.2,
+  "prob": 0.633
+ },
+ {
+  "text": "this",
+  "start": 595.2,
+  "end": 595.48,
+  "prob": 0.953
+ },
+ {
+  "text": "only",
+  "start": 595.48,
+  "end": 595.92,
+  "prob": 0.945
+ },
+ {
+  "text": "on",
+  "start": 595.92,
+  "end": 596.28,
+  "prob": 0.954
+ },
+ {
+  "text": "apps",
+  "start": 596.28,
+  "end": 596.58,
+  "prob": 0.945
+ },
+ {
+  "text": "you",
+  "start": 596.58,
+  "end": 596.82,
+  "prob": 0.956
+ },
+ {
+  "text": "own.",
+  "start": 596.82,
+  "end": 597.14,
+  "prob": 0.989
+ },
+ {
+  "text": "Open",
+  "start": 597.56,
+  "end": 597.58,
+  "prob": 0.969
+ },
+ {
+  "text": "source",
+  "start": 597.58,
+  "end": 597.84,
+  "prob": 0.749
+ },
+ {
+  "text": "apps",
+  "start": 597.84,
+  "end": 598.28,
+  "prob": 0.972
+ },
+ {
+  "text": "or",
+  "start": 598.28,
+  "end": 598.72,
+  "prob": 0.849
+ },
+ {
+  "text": "when",
+  "start": 598.72,
+  "end": 598.94,
+  "prob": 0.977
+ },
+ {
+  "text": "you",
+  "start": 598.94,
+  "end": 599.14,
+  "prob": 0.991
+ },
+ {
+  "text": "have",
+  "start": 599.14,
+  "end": 599.32,
+  "prob": 0.995
+ },
+ {
+  "text": "permission.",
+  "start": 599.32,
+  "end": 599.82,
+  "prob": 0.961
+ },
+ {
+  "text": "Learn",
+  "start": 600.4,
+  "end": 600.52,
+  "prob": 0.988
+ },
+ {
+  "text": "from",
+  "start": 600.52,
+  "end": 601.64,
+  "prob": 0.915
+ },
+ {
+  "text": "them",
+  "start": 601.64,
+  "end": 601.92,
+  "prob": 0.995
+ },
+ {
+  "text": "and",
+  "start": 601.92,
+  "end": 602.26,
+  "prob": 0.978
+ },
+ {
+  "text": "build",
+  "start": 602.26,
+  "end": 602.5,
+  "prob": 0.994
+ },
+ {
+  "text": "your",
+  "start": 602.5,
+  "end": 602.74,
+  "prob": 0.987
+ },
+ {
+  "text": "own.",
+  "start": 602.74,
+  "end": 603.06,
+  "prob": 0.999
+ },
+ {
+  "text": "Do",
+  "start": 603.42,
+  "end": 603.58,
+  "prob": 0.974
+ },
+ {
+  "text": "not",
+  "start": 603.58,
+  "end": 603.82,
+  "prob": 0.997
+ },
+ {
+  "text": "copy",
+  "start": 603.82,
+  "end": 604.22,
+  "prob": 0.996
+ },
+ {
+  "text": "other",
+  "start": 604.22,
+  "end": 604.54,
+  "prob": 0.967
+ },
+ {
+  "text": "people's",
+  "start": 604.54,
+  "end": 605.2,
+  "prob": 0.954
+ },
+ {
+  "text": "work.",
+  "start": 605.2,
+  "end": 605.42,
+  "prob": 0.962
+ },
+ {
+  "text": "So,",
+  "start": 605.98,
+  "end": 606.02,
+  "prob": 0.944
+ },
+ {
+  "text": "my",
+  "start": 606.18,
+  "end": 606.28,
+  "prob": 0.984
+ },
+ {
+  "text": "verdict",
+  "start": 606.28,
+  "end": 606.72,
+  "prob": 0.994
+ },
+ {
+  "text": "is",
+  "start": 606.72,
+  "end": 607.04,
+  "prob": 0.995
+ },
+ {
+  "text": "that,",
+  "start": 607.04,
+  "end": 607.48,
+  "prob": 0.988
+ },
+ {
+  "text": "hype",
+  "start": 607.9,
+  "end": 607.96,
+  "prob": 0.905
+ },
+ {
+  "text": "is",
+  "start": 607.96,
+  "end": 608.2,
+  "prob": 0.993
+ },
+ {
+  "text": "mostly",
+  "start": 608.2,
+  "end": 608.64,
+  "prob": 0.989
+ },
+ {
+  "text": "real",
+  "start": 608.64,
+  "end": 609.0,
+  "prob": 0.987
+ },
+ {
+  "text": "for",
+  "start": 609.0,
+  "end": 609.38,
+  "prob": 0.98
+ },
+ {
+  "text": "learning",
+  "start": 609.38,
+  "end": 609.74,
+  "prob": 0.991
+ },
+ {
+  "text": "and",
+  "start": 609.74,
+  "end": 610.14,
+  "prob": 0.988
+ },
+ {
+  "text": "prototyping.",
+  "start": 610.14,
+  "end": 610.9,
+  "prob": 0.994
+ },
+ {
+  "text": "and",
+  "start": 610.9,
+  "end": 611.32,
+  "prob": 0.203
+ },
+ {
+  "text": "share",
+  "start": 611.32,
+  "end": 611.6,
+  "prob": 0.847
+ },
+ {
+  "text": "now",
+  "start": 611.6,
+  "end": 612.16,
+  "prob": 0.306
+ },
+ {
+  "text": "the",
+  "start": 612.16,
+  "end": 612.32,
+  "prob": 0.509
+ },
+ {
+  "text": "queries",
+  "start": 612.32,
+  "end": 612.66,
+  "prob": 0.217
+ },
+ {
+  "text": "this",
+  "start": 612.66,
+  "end": 613.34,
+  "prob": 0.481
+ },
+ {
+  "text": "method",
+  "start": 613.34,
+  "end": 613.68,
+  "prob": 0.932
+ },
+ {
+  "text": "is",
+  "start": 613.68,
+  "end": 613.88,
+  "prob": 0.978
+ },
+ {
+  "text": "not",
+  "start": 613.88,
+  "end": 614.08,
+  "prob": 0.98
+ },
+ {
+  "text": "only",
+  "start": 614.08,
+  "end": 614.44,
+  "prob": 0.974
+ },
+ {
+  "text": "for",
+  "start": 614.44,
+  "end": 614.68,
+  "prob": 0.974
+ },
+ {
+  "text": "the",
+  "start": 614.68,
+  "end": 614.98,
+  "prob": 0.918
+ },
+ {
+  "text": "Kanban",
+  "start": 614.98,
+  "end": 615.24,
+  "prob": 0.67
+ },
+ {
+  "text": "boards",
+  "start": 615.24,
+  "end": 615.74,
+  "prob": 0.318
+ },
+ {
+  "text": "Step",
+  "start": 615.74,
+  "end": 616.02,
+  "prob": 0.117
+ },
+ {
+  "text": "1,",
+  "start": 616.02,
+  "end": 616.34,
+  "prob": 0.785
+ },
+ {
+  "text": "ask",
+  "start": 616.6,
+  "end": 616.76,
+  "prob": 0.579
+ },
+ {
+  "text": "Claude",
+  "start": 616.76,
+  "end": 617.04,
+  "prob": 0.423
+ },
+ {
+  "text": "to",
+  "start": 617.04,
+  "end": 617.34,
+  "prob": 0.977
+ },
+ {
+  "text": "study",
+  "start": 617.34,
+  "end": 617.66,
+  "prob": 0.962
+ },
+ {
+  "text": "it",
+  "start": 617.66,
+  "end": 617.92,
+  "prob": 0.556
+ },
+ {
+  "text": "with",
+  "start": 617.92,
+  "end": 618.1,
+  "prob": 0.936
+ },
+ {
+  "text": "reverse",
+  "start": 618.1,
+  "end": 618.4,
+  "prob": 0.875
+ },
+ {
+  "text": "engineering",
+  "start": 618.4,
+  "end": 618.8,
+  "prob": 0.903
+ },
+ {
+  "text": "anything",
+  "start": 618.8,
+  "end": 619.26,
+  "prob": 0.668
+ },
+ {
+  "text": "and",
+  "start": 619.26,
+  "end": 619.84,
+  "prob": 0.905
+ },
+ {
+  "text": "report",
+  "start": 619.84,
+  "end": 620.28,
+  "prob": 0.991
+ },
+ {
+  "text": "it",
+  "start": 620.28,
+  "end": 620.48,
+  "prob": 0.981
+ },
+ {
+  "text": "with",
+  "start": 620.48,
+  "end": 620.8,
+  "prob": 0.994
+ },
+ {
+  "text": "evidence",
+  "start": 620.8,
+  "end": 621.4,
+  "prob": 0.968
+ },
+ {
+  "text": "Step",
+  "start": 621.4,
+  "end": 621.82,
+  "prob": 0.761
+ },
+ {
+  "text": "2",
+  "start": 621.82,
+  "end": 622.1,
+  "prob": 0.981
+ },
+ {
+  "text": "is",
+  "start": 622.1,
+  "end": 622.34,
+  "prob": 0.69
+ },
+ {
+  "text": "to",
+  "start": 622.34,
+  "end": 622.52,
+  "prob": 0.971
+ },
+ {
+  "text": "ask",
+  "start": 622.52,
+  "end": 622.84,
+  "prob": 0.939
+ },
+ {
+  "text": "Claude",
+  "start": 622.84,
+  "end": 623.16,
+  "prob": 0.973
+ },
+ {
+  "text": "to",
+  "start": 623.16,
+  "end": 623.42,
+  "prob": 0.991
+ },
+ {
+  "text": "build",
+  "start": 623.42,
+  "end": 623.66,
+  "prob": 0.984
+ },
+ {
+  "text": "your",
+  "start": 623.66,
+  "end": 623.92,
+  "prob": 0.972
+ },
+ {
+  "text": "own",
+  "start": 623.92,
+  "end": 624.22,
+  "prob": 0.991
+ },
+ {
+  "text": "version,",
+  "start": 624.22,
+  "end": 624.62,
+  "prob": 0.984
+ },
+ {
+  "text": "match",
+  "start": 624.7,
+  "end": 625.1,
+  "prob": 0.939
+ },
+ {
+  "text": "the",
+  "start": 625.1,
+  "end": 625.34,
+  "prob": 0.783
+ },
+ {
+  "text": "look,",
+  "start": 625.34,
+  "end": 625.66,
+  "prob": 0.974
+ },
+ {
+  "text": "test",
+  "start": 625.82,
+  "end": 626.16,
+  "prob": 0.974
+ },
+ {
+  "text": "it",
+  "start": 626.16,
+  "end": 626.46,
+  "prob": 0.971
+ },
+ {
+  "text": "with",
+  "start": 626.46,
+  "end": 626.62,
+  "prob": 0.989
+ },
+ {
+  "text": "real",
+  "start": 626.62,
+  "end": 626.98,
+  "prob": 0.243
+ },
+ {
+  "text": "browser",
+  "start": 626.98,
+  "end": 627.46,
+  "prob": 0.964
+ },
+ {
+  "text": "a",
+  "start": 627.46,
+  "end": 628.02,
+  "prob": 0.412
+ },
+ {
+  "text": "to",
+  "start": 628.45,
+  "end": 628.63,
+  "prob": 0.691
+ },
+ {
+  "text": "-do,",
+  "start": 628.63,
+  "end": 628.89,
+  "prob": 0.823
+ },
+ {
+  "text": "a",
+  "start": 628.99,
+  "end": 628.99,
+  "prob": 0.809
+ },
+ {
+  "text": "notes",
+  "start": 628.99,
+  "end": 629.25,
+  "prob": 0.536
+ },
+ {
+  "text": "app,",
+  "start": 629.25,
+  "end": 629.61,
+  "prob": 0.737
+ },
+ {
+  "text": "a",
+  "start": 629.93,
+  "end": 629.95,
+  "prob": 0.935
+ },
+ {
+  "text": "habit",
+  "start": 629.95,
+  "end": 630.29,
+  "prob": 0.977
+ },
+ {
+  "text": "tracker,",
+  "start": 630.29,
+  "end": 630.73,
+  "prob": 0.973
+ },
+ {
+  "text": "a",
+  "start": 631.01,
+  "end": 631.01,
+  "prob": 0.911
+ },
+ {
+  "text": "book,",
+  "start": 631.01,
+  "end": 631.35,
+  "prob": 0.973
+ },
+ {
+  "text": "anything",
+  "start": 631.84,
+  "end": 632.44,
+  "prob": 0.958
+ },
+ {
+  "text": "just",
+  "start": 632.44,
+  "end": 633.02,
+  "prob": 0.461
+ },
+ {
+  "text": "change",
+  "start": 633.02,
+  "end": 633.4,
+  "prob": 0.981
+ },
+ {
+  "text": "the",
+  "start": 633.4,
+  "end": 633.64,
+  "prob": 0.943
+ },
+ {
+  "text": "website",
+  "start": 633.64,
+  "end": 633.98,
+  "prob": 0.982
+ },
+ {
+  "text": "link",
+  "start": 633.98,
+  "end": 634.36,
+  "prob": 0.973
+ },
+ {
+  "text": "and",
+  "start": 634.36,
+  "end": 634.72,
+  "prob": 0.952
+ },
+ {
+  "text": "the",
+  "start": 634.72,
+  "end": 634.88,
+  "prob": 0.778
+ },
+ {
+  "text": "feature",
+  "start": 634.88,
+  "end": 635.18,
+  "prob": 0.764
+ },
+ {
+  "text": "list",
+  "start": 635.18,
+  "end": 635.52,
+  "prob": 0.69
+ },
+ {
+  "text": "in",
+  "start": 635.52,
+  "end": 635.72,
+  "prob": 0.981
+ },
+ {
+  "text": "the",
+  "start": 635.72,
+  "end": 635.96,
+  "prob": 0.967
+ },
+ {
+  "text": "prompts",
+  "start": 635.96,
+  "end": 636.14,
+  "prob": 0.799
+ },
+ {
+  "text": "so",
+  "start": 636.14,
+  "end": 636.66,
+  "prob": 0.671
+ },
+ {
+  "text": "here",
+  "start": 636.97,
+  "end": 637.23,
+  "prob": 0.952
+ },
+ {
+  "text": "is",
+  "start": 637.23,
+  "end": 637.37,
+  "prob": 0.869
+ },
+ {
+  "text": "my",
+  "start": 637.37,
+  "end": 637.55,
+  "prob": 0.976
+ },
+ {
+  "text": "homework",
+  "start": 637.55,
+  "end": 637.79,
+  "prob": 0.386
+ },
+ {
+  "text": "for",
+  "start": 637.79,
+  "end": 638.07,
+  "prob": 0.989
+ },
+ {
+  "text": "you",
+  "start": 638.07,
+  "end": 638.35,
+  "prob": 0.996
+ },
+ {
+  "text": "Pick",
+  "start": 638.35,
+  "end": 638.71,
+  "prob": 0.194
+ },
+ {
+  "text": "one",
+  "start": 638.71,
+  "end": 639.03,
+  "prob": 0.791
+ },
+ {
+  "text": "app,",
+  "start": 639.03,
+  "end": 639.39,
+  "prob": 0.895
+ },
+ {
+  "text": "copy",
+  "start": 639.77,
+  "end": 639.89,
+  "prob": 0.779
+ },
+ {
+  "text": "two",
+  "start": 639.89,
+  "end": 640.23,
+  "prob": 0.693
+ },
+ {
+  "text": "prompts",
+  "start": 640.23,
+  "end": 640.61,
+  "prob": 0.865
+ },
+ {
+  "text": "from",
+  "start": 640.61,
+  "end": 640.87,
+  "prob": 0.95
+ },
+ {
+  "text": "the",
+  "start": 640.87,
+  "end": 640.99,
+  "prob": 0.975
+ },
+ {
+  "text": "description",
+  "start": 640.99,
+  "end": 641.37,
+  "prob": 0.939
+ },
+ {
+  "text": "below,",
+  "start": 641.37,
+  "end": 641.97,
+  "prob": 0.974
+ },
+ {
+  "text": "change",
+  "start": 642.33,
+  "end": 642.53,
+  "prob": 0.898
+ },
+ {
+  "text": "the",
+  "start": 642.53,
+  "end": 642.79,
+  "prob": 0.969
+ },
+ {
+  "text": "link",
+  "start": 642.79,
+  "end": 643.01,
+  "prob": 0.982
+ },
+ {
+  "text": "and",
+  "start": 643.01,
+  "end": 643.31,
+  "prob": 0.801
+ },
+ {
+  "text": "try",
+  "start": 643.31,
+  "end": 643.59,
+  "prob": 0.977
+ },
+ {
+  "text": "it",
+  "start": 643.59,
+  "end": 643.79,
+  "prob": 0.96
+ },
+ {
+  "text": "today.",
+  "start": 643.79,
+  "end": 644.15,
+  "prob": 0.977
+ },
+ {
+  "text": "Then",
+  "start": 644.49,
+  "end": 644.63,
+  "prob": 0.887
+ },
+ {
+  "text": "tell",
+  "start": 644.63,
+  "end": 644.85,
+  "prob": 0.974
+ },
+ {
+  "text": "me",
+  "start": 644.85,
+  "end": 645.09,
+  "prob": 0.993
+ },
+ {
+  "text": "in",
+  "start": 645.09,
+  "end": 645.19,
+  "prob": 0.955
+ },
+ {
+  "text": "the",
+  "start": 645.19,
+  "end": 645.33,
+  "prob": 0.973
+ },
+ {
+  "text": "comments",
+  "start": 645.33,
+  "end": 645.59,
+  "prob": 0.562
+ },
+ {
+  "text": "below",
+  "start": 645.59,
+  "end": 646.05,
+  "prob": 0.924
+ },
+ {
+  "text": "which",
+  "start": 646.05,
+  "end": 646.55,
+  "prob": 0.621
+ },
+ {
+  "text": "app",
+  "start": 646.55,
+  "end": 646.83,
+  "prob": 0.984
+ },
+ {
+  "text": "you",
+  "start": 646.83,
+  "end": 647.05,
+  "prob": 0.986
+ },
+ {
+  "text": "review.",
+  "start": 647.05,
+  "end": 647.35,
+  "prob": 0.279
+ },
+ {
+  "text": "If",
+  "start": 647.57,
+  "end": 647.69,
+  "prob": 0.941
+ },
+ {
+  "text": "you",
+  "start": 647.69,
+  "end": 647.81,
+  "prob": 0.995
+ },
+ {
+  "text": "like",
+  "start": 647.81,
+  "end": 648.01,
+  "prob": 0.694
+ },
+ {
+  "text": "this",
+  "start": 648.01,
+  "end": 648.25,
+  "prob": 0.96
+ },
+ {
+  "text": "video,",
+  "start": 648.25,
+  "end": 648.67,
+  "prob": 0.996
+ },
+ {
+  "text": "please",
+  "start": 649.03,
+  "end": 649.19,
+  "prob": 0.981
+ },
+ {
+  "text": "hit",
+  "start": 649.19,
+  "end": 649.51,
+  "prob": 0.935
+ },
+ {
+  "text": "the",
+  "start": 649.51,
+  "end": 649.65,
+  "prob": 0.977
+ },
+ {
+  "text": "like",
+  "start": 649.65,
+  "end": 649.87,
+  "prob": 0.847
+ },
+ {
+  "text": "button,",
+  "start": 649.87,
+  "end": 650.27,
+  "prob": 0.997
+ },
+ {
+  "text": "it",
+  "start": 650.33,
+  "end": 650.61,
+  "prob": 0.953
+ },
+ {
+  "text": "really",
+  "start": 650.61,
+  "end": 650.87,
+  "prob": 0.986
+ },
+ {
+  "text": "helps.",
+  "start": 650.87,
+  "end": 651.29,
+  "prob": 0.995
+ },
+ {
+  "text": "If",
+  "start": 651.71,
+  "end": 651.81,
+  "prob": 0.973
+ },
+ {
+  "text": "you",
+  "start": 651.81,
+  "end": 651.93,
+  "prob": 0.996
+ },
+ {
+  "text": "know",
+  "start": 651.93,
+  "end": 652.11,
+  "prob": 0.976
+ },
+ {
+  "text": "a",
+  "start": 652.11,
+  "end": 652.31,
+  "prob": 0.978
+ },
+ {
+  "text": "friend",
+  "start": 652.31,
+  "end": 652.53,
+  "prob": 0.992
+ },
+ {
+  "text": "who",
+  "start": 652.53,
+  "end": 652.73,
+  "prob": 0.969
+ },
+ {
+  "text": "is",
+  "start": 652.73,
+  "end": 652.89,
+  "prob": 0.915
+ },
+ {
+  "text": "learning",
+  "start": 652.89,
+  "end": 653.25,
+  "prob": 0.989
+ },
+ {
+  "text": "AI",
+  "start": 653.25,
+  "end": 653.51,
+  "prob": 0.922
+ },
+ {
+  "text": "or",
+  "start": 653.51,
+  "end": 653.91,
+  "prob": 0.916
+ },
+ {
+  "text": "wants",
+  "start": 653.91,
+  "end": 654.25,
+  "prob": 0.966
+ },
+ {
+  "text": "to",
+  "start": 654.25,
+  "end": 654.49,
+  "prob": 0.998
+ },
+ {
+  "text": "build",
+  "start": 654.49,
+  "end": 654.71,
+  "prob": 0.994
+ },
+ {
+  "text": "apps,",
+  "start": 654.71,
+  "end": 655.13,
+  "prob": 0.832
+ },
+ {
+  "text": "share",
+  "start": 655.49,
+  "end": 655.61,
+  "prob": 0.956
+ },
+ {
+  "text": "this",
+  "start": 655.61,
+  "end": 655.87,
+  "prob": 0.986
+ },
+ {
+  "text": "video",
+  "start": 655.87,
+  "end": 656.25,
+  "prob": 0.994
+ },
+ {
+  "text": "with",
+  "start": 656.25,
+  "end": 656.61,
+  "prob": 0.995
+ },
+ {
+  "text": "them.",
+  "start": 656.61,
+  "end": 656.85,
+  "prob": 0.998
+ },
+ {
+  "text": "And",
+  "start": 657.38,
+  "end": 657.44,
+  "prob": 0.914
+ },
+ {
+  "text": "if",
+  "start": 657.44,
+  "end": 657.64,
+  "prob": 0.978
+ },
+ {
+  "text": "you",
+  "start": 657.64,
+  "end": 657.78,
+  "prob": 0.998
+ },
+ {
+  "text": "have",
+  "start": 657.78,
+  "end": 657.96,
+  "prob": 0.976
+ },
+ {
+  "text": "not",
+  "start": 657.96,
+  "end": 658.2,
+  "prob": 0.996
+ },
+ {
+  "text": "subscribed",
+  "start": 658.2,
+  "end": 658.72,
+  "prob": 0.992
+ },
+ {
+  "text": "yet,",
+  "start": 658.72,
+  "end": 659.08,
+  "prob": 0.976
+ },
+ {
+  "text": "please",
+  "start": 659.52,
+  "end": 659.62,
+  "prob": 0.974
+ },
+ {
+  "text": "subscribe",
+  "start": 659.62,
+  "end": 660.16,
+  "prob": 0.985
+ },
+ {
+  "text": "to",
+  "start": 660.16,
+  "end": 660.44,
+  "prob": 0.995
+ },
+ {
+  "text": "AI",
+  "start": 660.44,
+  "end": 660.82,
+  "prob": 0.83
+ },
+ {
+  "text": "with",
+  "start": 660.82,
+  "end": 661.08,
+  "prob": 0.537
+ },
+ {
+  "text": "Kalyan",
+  "start": 661.08,
+  "end": 661.52,
+  "prob": 0.863
+ },
+ {
+  "text": "and",
+  "start": 661.52,
+  "end": 661.82,
+  "prob": 0.902
+ },
+ {
+  "text": "press",
+  "start": 661.82,
+  "end": 662.1,
+  "prob": 0.976
+ },
+ {
+  "text": "the",
+  "start": 662.1,
+  "end": 662.26,
+  "prob": 0.994
+ },
+ {
+  "text": "bell",
+  "start": 662.26,
+  "end": 662.46,
+  "prob": 0.99
+ },
+ {
+  "text": "icon.",
+  "start": 662.46,
+  "end": 662.84,
+  "prob": 0.999
+ },
+ {
+  "text": "So",
+  "start": 663.7,
+  "end": 663.82,
+  "prob": 0.966
+ },
+ {
+  "text": "you",
+  "start": 663.82,
+  "end": 664.0,
+  "prob": 0.862
+ },
+ {
+  "text": "do",
+  "start": 664.0,
+  "end": 664.14,
+  "prob": 0.934
+ },
+ {
+  "text": "not",
+  "start": 664.14,
+  "end": 664.32,
+  "prob": 0.985
+ },
+ {
+  "text": "miss",
+  "start": 664.32,
+  "end": 664.52,
+  "prob": 0.79
+ },
+ {
+  "text": "the",
+  "start": 664.52,
+  "end": 664.56,
+  "prob": 0.661
+ },
+ {
+  "text": "next",
+  "start": 664.56,
+  "end": 664.76,
+  "prob": 0.992
+ },
+ {
+  "text": "video.",
+  "start": 664.76,
+  "end": 665.16,
+  "prob": 0.995
+ },
+ {
+  "text": "More",
+  "start": 665.64,
+  "end": 665.88,
+  "prob": 0.97
+ },
+ {
+  "text": "AI",
+  "start": 665.88,
+  "end": 666.26,
+  "prob": 0.978
+ },
+ {
+  "text": "tutorials",
+  "start": 666.26,
+  "end": 666.5,
+  "prob": 0.987
+ },
+ {
+  "text": "are",
+  "start": 666.5,
+  "end": 666.96,
+  "prob": 0.994
+ },
+ {
+  "text": "coming",
+  "start": 666.96,
+  "end": 667.22,
+  "prob": 0.997
+ },
+ {
+  "text": "and",
+  "start": 667.22,
+  "end": 667.6,
+  "prob": 0.852
+ },
+ {
+  "text": "I",
+  "start": 667.6,
+  "end": 667.76,
+  "prob": 0.984
+ },
+ {
+  "text": "make",
+  "start": 667.76,
+  "end": 668.0,
+  "prob": 0.744
+ },
+ {
+  "text": "them",
+  "start": 668.0,
+  "end": 668.26,
+  "prob": 0.995
+ },
+ {
+  "text": "for",
+  "start": 668.26,
+  "end": 668.46,
+  "prob": 0.997
+ },
+ {
+  "text": "you.",
+  "start": 668.46,
+  "end": 668.72,
+  "prob": 0.998
+ },
+ {
+  "text": "And",
+  "start": 668.99,
+  "end": 669.35,
+  "prob": 0.376
+ },
+ {
+  "text": "if",
+  "start": 669.35,
+  "end": 669.53,
+  "prob": 0.917
+ },
+ {
+  "text": "you",
+  "start": 669.53,
+  "end": 669.69,
+  "prob": 0.99
+ },
+ {
+  "text": "want",
+  "start": 669.69,
+  "end": 669.89,
+  "prob": 0.987
+ },
+ {
+  "text": "to",
+  "start": 669.89,
+  "end": 670.09,
+  "prob": 0.994
+ },
+ {
+  "text": "see",
+  "start": 670.09,
+  "end": 670.29,
+  "prob": 0.994
+ },
+ {
+  "text": "how",
+  "start": 670.29,
+  "end": 670.65,
+  "prob": 0.955
+ },
+ {
+  "text": "I",
+  "start": 670.65,
+  "end": 670.85,
+  "prob": 0.9
+ },
+ {
+  "text": "edit",
+  "start": 670.85,
+  "end": 671.13,
+  "prob": 0.997
+ },
+ {
+  "text": "my",
+  "start": 671.13,
+  "end": 671.37,
+  "prob": 0.964
+ },
+ {
+  "text": "videos",
+  "start": 671.37,
+  "end": 671.83,
+  "prob": 0.987
+ },
+ {
+  "text": "using",
+  "start": 671.83,
+  "end": 672.33,
+  "prob": 0.985
+ },
+ {
+  "text": "Claude,",
+  "start": 672.33,
+  "end": 672.67,
+  "prob": 0.445
+ },
+ {
+  "text": "that",
+  "start": 673.42,
+  "end": 673.48,
+  "prob": 0.862
+ },
+ {
+  "text": "video",
+  "start": 673.48,
+  "end": 673.84,
+  "prob": 0.997
+ },
+ {
+  "text": "is",
+  "start": 673.84,
+  "end": 674.26,
+  "prob": 0.994
+ },
+ {
+  "text": "right",
+  "start": 674.26,
+  "end": 674.6,
+  "prob": 0.991
+ },
+ {
+  "text": "here.",
+  "start": 674.6,
+  "end": 675.06,
+  "prob": 0.992
+ },
+ {
+  "text": "Click",
+  "start": 676.28,
+  "end": 676.42,
+  "prob": 0.88
+ },
+ {
+  "text": "on",
+  "start": 676.42,
+  "end": 676.66,
+  "prob": 0.976
+ },
+ {
+  "text": "it",
+  "start": 676.66,
+  "end": 676.88,
+  "prob": 0.71
+ },
+ {
+  "text": "next.",
+  "start": 676.88,
+  "end": 677.12,
+  "prob": 0.903
+ },
+ {
+  "text": "Thank",
+  "start": 677.68,
+  "end": 677.8,
+  "prob": 0.962
+ },
+ {
+  "text": "you",
+  "start": 677.8,
+  "end": 678.02,
+  "prob": 0.991
+ },
+ {
+  "text": "so",
+  "start": 678.02,
+  "end": 678.28,
+  "prob": 0.99
+ },
+ {
+  "text": "much",
+  "start": 678.28,
+  "end": 678.5,
+  "prob": 0.999
+ },
+ {
+  "text": "for",
+  "start": 678.5,
+  "end": 678.76,
+  "prob": 0.996
+ },
+ {
+  "text": "watching.",
+  "start": 678.76,
+  "end": 679.18,
+  "prob": 0.999
+ },
+ {
+  "text": "I",
+  "start": 679.56,
+  "end": 679.6,
+  "prob": 0.986
+ },
+ {
+  "text": "will",
+  "start": 679.6,
+  "end": 679.74,
+  "prob": 0.967
+ },
+ {
+  "text": "see",
+  "start": 679.74,
+  "end": 679.92,
+  "prob": 0.997
+ },
+ {
+  "text": "you",
+  "start": 679.92,
+  "end": 680.1,
+  "prob": 0.998
+ },
+ {
+  "text": "in",
+  "start": 680.1,
+  "end": 680.24,
+  "prob": 0.992
+ },
+ {
+  "text": "the",
+  "start": 680.24,
+  "end": 680.36,
+  "prob": 0.996
+ },
+ {
+  "text": "next",
+  "start": 680.36,
+  "end": 680.58,
+  "prob": 0.999
+ },
+ {
+  "text": "one.",
+  "start": 680.58,
+  "end": 680.84,
+  "prob": 0.994
+ },
+ {
+  "text": "Bye.",
+  "start": 681.37,
+  "end": 681.47,
+  "prob": 0.984
+ }
+]
