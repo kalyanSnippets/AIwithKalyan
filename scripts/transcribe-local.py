@@ -14,6 +14,7 @@ p = argparse.ArgumentParser()
 p.add_argument("audio"); p.add_argument("out")
 p.add_argument("--model", default="/tmp/work/models/small.en")
 p.add_argument("--offset", type=float, default=0.0)
+p.add_argument("--vad", action="store_true", help="Silero VAD: tighter word times around silences")
 a = p.parse_args()
 os.makedirs(a.out, exist_ok=True)
 
@@ -22,7 +23,7 @@ prompt = "Um, uh, so, like, you know, I mean, okay. REA, Reverse Engineer Anythi
 with wave.open(a.audio) as wf:  # 16 kHz mono s16 WAV; avoids the PyAV decode path
     audio = np.frombuffer(wf.readframes(wf.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
 segs, info = model.transcribe(audio, language="en", beam_size=1, word_timestamps=True,
-                              condition_on_previous_text=False, initial_prompt=prompt, vad_filter=False)
+                              condition_on_previous_text=False, initial_prompt=prompt, vad_filter=a.vad, vad_parameters=dict(min_silence_duration_ms=300, speech_pad_ms=120) if a.vad else None)
 
 def ts(t, srt=False):
     h, m, s = int(t // 3600), int(t % 3600 // 60), t % 60
