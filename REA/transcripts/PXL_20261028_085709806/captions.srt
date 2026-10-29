@@ -1,0 +1,275 @@
+1
+00:00:25,640 --> 00:00:29,980
+REA, Reverse Engineer
+
+2
+00:00:31,180 --> 00:00:36,740
+Hey guys, have you ever seen a cool feature in some app and thought, I want this in my
+
+3
+00:00:36,740 --> 00:00:39,820
+own project, but you have no idea how it is built?
+
+4
+00:00:40,300 --> 00:00:45,480
+Well, this is a tool for exactly that right now everyone in the AI and developer world
+
+5
+00:00:45,480 --> 00:00:46,460
+is talking about.
+
+6
+00:00:46,880 --> 00:00:49,540
+It is called reverse engineer anything.
+
+7
+00:00:50,180 --> 00:00:53,280
+Yes, this is the real name, R-E-A for short.
+
+8
+00:00:54,180 --> 00:01:02,360
+So, now look at this, now look at this on GitHub it has almost 400,000 stars.
+
+9
+00:01:03,460 --> 00:01:06,880
+That is a crazy number for any developer tool.
+
+10
+00:01:07,900 --> 00:01:12,180
+That is a crazy number for a developer tool and it is a free and open source.
+
+11
+00:01:12,800 --> 00:01:16,400
+And interesting part is it is free and open source.
+
+12
+00:01:16,720 --> 00:01:19,720
+And interesting part is it is free and open source.
+
+13
+00:01:20,160 --> 00:01:20,920
+So, what is it?
+
+14
+00:01:20,920 --> 00:01:24,660
+In simple terms, you see a feature you call in an app.
+
+15
+00:01:25,560 --> 00:01:28,720
+In simple terms, you see a feature you like in an app.
+
+16
+00:01:29,240 --> 00:01:36,840
+You see a feature you like in an app and your AI agent like Claude Codex uses React to
+
+17
+00:01:37,400 --> 00:01:38,260
+inspect the app.
+
+18
+00:01:38,260 --> 00:01:39,680
+You just react to it.
+
+19
+00:01:51,600 --> 00:01:54,640
+In simple terms, you see a feature you like in an app.
+
+20
+00:01:55,120 --> 00:02:00,860
+Your AI agent like Claude Code, Chadd, Claude Code, Codex.
+
+21
+00:02:03,580 --> 00:02:12,760
+your AI agent like Claude Code, Codex, any other AI tools, uses REA VR to inspect that app.
+
+22
+00:02:19,140 --> 00:02:27,520
+Your AI agent like Claude Code uses REA, uses VR to inspect that app. Explain how it works,
+
+23
+00:02:27,520 --> 00:02:33,340
+Show you the evidence and then help you build your own version.
+
+24
+00:02:37,780 --> 00:02:40,240
+And people are doing some wild things with it.
+
+25
+00:02:40,620 --> 00:02:48,960
+Some traced how the Notion desktop app handles copy and paste all the way from the screen
+
+26
+00:02:48,960 --> 00:02:49,980
+to the main process.
+
+27
+00:02:49,980 --> 00:03:03,380
+people rebuild the sound panning of an old DOS game DX Ball and checked it against the original.
+
+28
+00:03:04,740 --> 00:03:10,780
+And one guide shows how to record a web app session and turn it into a practical environment
+
+29
+00:03:10,780 --> 00:03:16,920
+for all the AI agents. So why the hype? I think there are three reasons for it. One,
+
+30
+00:03:16,920 --> 00:03:19,460
+it is free and open source for everyone.
+
+31
+00:03:20,060 --> 00:03:24,280
+Two, it works on many things like websites, apps, even old binaries.
+
+32
+00:03:24,940 --> 00:03:38,740
+And three, it shows evidence for every findings with AI that matters a lot because we all
+
+33
+00:03:38,740 --> 00:03:40,560
+know AI can make things up.
+
+34
+00:03:41,540 --> 00:03:43,820
+But when you ask me, is it really that good?
+
+35
+00:03:43,820 --> 00:03:45,940
+Today I will test it for you.
+
+36
+00:03:47,140 --> 00:03:52,940
+I will use it to study a real app and then rebuild my own version with just few prompts
+
+37
+00:03:56,220 --> 00:04:00,720
+and stay with me until the end of this video because I will tell you honestly what worked,
+
+38
+00:04:00,840 --> 00:04:03,780
+what did not and downsides nobody is talking about.
+
+39
+00:04:04,280 --> 00:04:13,800
+Oh and by the way I am Kalyan and this oh by the way I am Kalyan and this is a real
+
+40
+00:04:13,800 --> 00:04:26,600
+AI with? Oh by the way, oh by the way my name is oh oh and by the way I'm Kalyan
+
+41
+00:04:26,600 --> 00:04:31,720
+this is AI with Kalyan where I share simple practical AI you can try today
+
+42
+00:04:31,720 --> 00:04:38,920
+if you like this tap subscribe really it really helps okay let's go
+
+43
+00:05:33,520 --> 00:05:38,200
+Okay, before we start typing anything let me explain what we are going to do.
+
+44
+00:06:05,880 --> 00:06:08,180
+In simple words, I picked VKAN.
+
+45
+00:06:14,440 --> 00:06:17,780
+I need a real app to study, so I picked Vicon.
+
+46
+00:06:18,240 --> 00:06:21,340
+Vicon is an open source Kanban board.
+
+47
+00:06:27,740 --> 00:06:33,580
+Vicon is an open source Kanban board a bit like Trello.
+
+48
+00:06:33,580 --> 00:06:38,820
+If you have never used one, you have columns like to do, doing and done.
+
+49
+00:06:39,260 --> 00:06:41,820
+Inside each column you have cards and those you are...
+
+50
+00:06:44,080 --> 00:06:47,840
+Inside each column you have cards and those are your tasks.
+
+51
+00:06:48,340 --> 00:06:51,820
+When the work moves forward, you drag the cards to the next column.
+
+52
+00:06:52,360 --> 00:06:56,460
+Weekend is popular, it has a public demo that everyone can open.
+
+53
+00:06:56,780 --> 00:07:00,480
+Weekend is popular, it has a public demo that everyone can open.
+
+54
+00:07:00,480 --> 00:07:06,200
+and it has an MIT license which means it is open source.
+
+55
+00:07:06,620 --> 00:07:11,720
+So I'm not touching anything private and there is one more reason.
+
+56
+00:07:13,260 --> 00:07:16,280
+A Kanban app has a lot of behavior inside.
+
+57
+00:07:16,960 --> 00:07:21,860
+Dragon Drop, labels, due dates, checklists, saving data.
+
+58
+00:07:22,400 --> 00:07:26,460
+So it is great for RIA. So it is great test for RIA.
+
+59
+00:07:27,780 --> 00:07:32,140
+What we are trying to achieve is, I am not trying to copy the whole beacon.
+
+60
+00:07:32,740 --> 00:07:36,580
+That would take a big team and lot of tasks.
+
+61
+00:07:42,780 --> 00:07:44,400
+That would take a lot of time.
+
+62
+00:07:45,060 --> 00:07:55,280
+My goal is to create a small working version, my own app, which I will call Riaboard.
+
+63
+00:07:55,280 --> 00:08:00,820
+which I will call RIA board. I will have columns, cards, drag and drop, color labels,
+
+64
+00:08:01,180 --> 00:08:06,660
+due dates with a red over due, badge and checklist. It will save the data only in
+
+65
+00:08:06,660 --> 00:08:12,160
+my browser so it will not have login real-time sync between users or a
+
+66
+00:08:12,160 --> 00:08:17,820
+server. In simple words the expectation is this a working copy of how the board
+
+67
+00:08:17,820 --> 00:08:26,900
+behaves with my own name and design not the full product okay not the full product okay
+
+68
+00:08:26,900 --> 00:08:29,740
+Now the setup first what we need before we start.
+
+69
+00:08:31,620 --> 00:08:33,020
+up.

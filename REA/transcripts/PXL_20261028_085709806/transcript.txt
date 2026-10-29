@@ -1,0 +1,69 @@
+[00:25.64-00:29.98] REA, Reverse Engineer
+[00:31.18-00:36.74] Hey guys, have you ever seen a cool feature in some app and thought, I want this in my
+[00:36.74-00:39.82] own project, but you have no idea how it is built?
+[00:40.30-00:45.48] Well, this is a tool for exactly that right now everyone in the AI and developer world
+[00:45.48-00:46.46] is talking about.
+[00:46.88-00:49.54] It is called reverse engineer anything.
+[00:50.18-00:53.28] Yes, this is the real name, R-E-A for short.
+[00:54.18-01:02.36] So, now look at this, now look at this on GitHub it has almost 400,000 stars.
+[01:03.46-01:06.88] That is a crazy number for any developer tool.
+[01:07.90-01:12.18] That is a crazy number for a developer tool and it is a free and open source.
+[01:12.80-01:16.40] And interesting part is it is free and open source.
+[01:16.72-01:19.72] And interesting part is it is free and open source.
+[01:20.16-01:20.92] So, what is it?
+[01:20.92-01:24.66] In simple terms, you see a feature you call in an app.
+[01:25.56-01:28.72] In simple terms, you see a feature you like in an app.
+[01:29.24-01:36.84] You see a feature you like in an app and your AI agent like Claude Codex uses React to
+[01:37.40-01:38.26] inspect the app.
+[01:38.26-01:39.68] You just react to it.
+[01:51.60-01:54.64] In simple terms, you see a feature you like in an app.
+[01:55.12-02:00.86] Your AI agent like Claude Code, Chadd, Claude Code, Codex.
+[02:03.58-02:12.76] your AI agent like Claude Code, Codex, any other AI tools, uses REA VR to inspect that app.
+[02:19.14-02:27.52] Your AI agent like Claude Code uses REA, uses VR to inspect that app. Explain how it works,
+[02:27.52-02:33.34] Show you the evidence and then help you build your own version.
+[02:37.78-02:40.24] And people are doing some wild things with it.
+[02:40.62-02:48.96] Some traced how the Notion desktop app handles copy and paste all the way from the screen
+[02:48.96-02:49.98] to the main process.
+[02:49.98-03:03.38] people rebuild the sound panning of an old DOS game DX Ball and checked it against the original.
+[03:04.74-03:10.78] And one guide shows how to record a web app session and turn it into a practical environment
+[03:10.78-03:16.92] for all the AI agents. So why the hype? I think there are three reasons for it. One,
+[03:16.92-03:19.46] it is free and open source for everyone.
+[03:20.06-03:24.28] Two, it works on many things like websites, apps, even old binaries.
+[03:24.94-03:38.74] And three, it shows evidence for every findings with AI that matters a lot because we all
+[03:38.74-03:40.56] know AI can make things up.
+[03:41.54-03:43.82] But when you ask me, is it really that good?
+[03:43.82-03:45.94] Today I will test it for you.
+[03:47.14-03:52.94] I will use it to study a real app and then rebuild my own version with just few prompts
+[03:56.22-04:00.72] and stay with me until the end of this video because I will tell you honestly what worked,
+[04:00.84-04:03.78] what did not and downsides nobody is talking about.
+[04:04.28-04:13.80] Oh and by the way I am Kalyan and this oh by the way I am Kalyan and this is a real
+[04:13.80-04:26.60] AI with? Oh by the way, oh by the way my name is oh oh and by the way I'm Kalyan
+[04:26.60-04:31.72] this is AI with Kalyan where I share simple practical AI you can try today
+[04:31.72-04:38.92] if you like this tap subscribe really it really helps okay let's go
+[05:33.52-05:38.20] Okay, before we start typing anything let me explain what we are going to do.
+[06:05.88-06:08.18] In simple words, I picked VKAN.
+[06:14.44-06:17.78] I need a real app to study, so I picked Vicon.
+[06:18.24-06:21.34] Vicon is an open source Kanban board.
+[06:27.74-06:33.58] Vicon is an open source Kanban board a bit like Trello.
+[06:33.58-06:38.82] If you have never used one, you have columns like to do, doing and done.
+[06:39.26-06:41.82] Inside each column you have cards and those you are...
+[06:44.08-06:47.84] Inside each column you have cards and those are your tasks.
+[06:48.34-06:51.82] When the work moves forward, you drag the cards to the next column.
+[06:52.36-06:56.46] Weekend is popular, it has a public demo that everyone can open.
+[06:56.78-07:00.48] Weekend is popular, it has a public demo that everyone can open.
+[07:00.48-07:06.20] and it has an MIT license which means it is open source.
+[07:06.62-07:11.72] So I'm not touching anything private and there is one more reason.
+[07:13.26-07:16.28] A Kanban app has a lot of behavior inside.
+[07:16.96-07:21.86] Dragon Drop, labels, due dates, checklists, saving data.
+[07:22.40-07:26.46] So it is great for RIA. So it is great test for RIA.
+[07:27.78-07:32.14] What we are trying to achieve is, I am not trying to copy the whole beacon.
+[07:32.74-07:36.58] That would take a big team and lot of tasks.
+[07:42.78-07:44.40] That would take a lot of time.
+[07:45.06-07:55.28] My goal is to create a small working version, my own app, which I will call Riaboard.
+[07:55.28-08:00.82] which I will call RIA board. I will have columns, cards, drag and drop, color labels,
+[08:01.18-08:06.66] due dates with a red over due, badge and checklist. It will save the data only in
+[08:06.66-08:12.16] my browser so it will not have login real-time sync between users or a
+[08:12.16-08:17.82] server. In simple words the expectation is this a working copy of how the board
+[08:17.82-08:26.90] behaves with my own name and design not the full product okay not the full product okay
+[08:26.90-08:29.74] Now the setup first what we need before we start.
+[08:31.62-08:33.02] up.

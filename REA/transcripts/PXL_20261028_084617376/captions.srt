@@ -1,0 +1,303 @@
+1
+00:00:27,180 --> 00:00:29,980
+I'm not a fan of the
+
+2
+00:00:43,900 --> 00:00:47,040
+Hi friends, hi everyone.
+
+3
+00:01:06,340 --> 00:01:14,100
+Hey guys, have you ever seen a cool feature in some app and thought, I want this in my
+
+4
+00:01:14,100 --> 00:01:19,400
+own project but you have no idea how it is built well this is a tool for exactly
+
+5
+00:01:19,400 --> 00:01:23,940
+that and right now everyone in the AI and developer world is talking about
+
+6
+00:01:23,940 --> 00:01:35,240
+its name is reverse engineer anything yes that is the real name rias.rea for short
+
+7
+00:01:36,080 --> 00:01:39,740
+Yes, that is the real name, REA for short.
+
+8
+00:01:41,740 --> 00:01:46,200
+Now look at this on GitHub, it has almost 400,000 stars.
+
+9
+00:01:51,840 --> 00:01:57,960
+That is a crazy number for a developer tool and it is free and open source.
+
+10
+00:01:58,500 --> 00:02:00,700
+So what is it?
+
+11
+00:02:01,880 --> 00:02:02,680
+So what is it?
+
+12
+00:02:03,240 --> 00:02:03,360
+Simple.
+
+13
+00:02:03,360 --> 00:02:09,420
+Simple, you see a feature you like in an app, you see a feature you like in an app, your
+
+14
+00:02:09,420 --> 00:02:20,780
+AI and it is that is a crazy number for a developer
+
+15
+00:02:20,780 --> 00:02:23,280
+tool and it is free and open source.
+
+16
+00:02:23,880 --> 00:02:24,800
+So what is it?
+
+17
+00:02:25,260 --> 00:02:33,240
+Simple, you see a feature you like in an app, your AI agent like Claude code uses RIA
+
+18
+00:02:33,240 --> 00:02:38,340
+to inspect that app, explain how it works, show you the evidence and then help you build
+
+19
+00:02:38,340 --> 00:02:39,800
+your own version.
+
+20
+00:02:46,080 --> 00:02:47,500
+Why you save it?
+
+21
+00:02:48,480 --> 00:02:51,040
+And people are doing some wild things with it.
+
+22
+00:02:51,040 --> 00:02:54,040
+Someone traced how the Notion desktop has...
+
+23
+00:02:54,560 --> 00:02:57,040
+Someone traced...
+
+24
+00:03:12,040 --> 00:03:14,860
+And people are doing some wild things with it.
+
+25
+00:03:15,260 --> 00:03:20,040
+Someone traced how the Notion desktop app handles copy...
+
+26
+00:03:20,040 --> 00:03:32,380
+Someone traced how the Notion desktop app handles copy and paste all the way from the
+
+27
+00:03:32,380 --> 00:03:33,700
+screen to the main process.
+
+28
+00:03:34,240 --> 00:03:42,420
+People built the sound planning of an old DOS game DX Ball and checked it against the
+
+29
+00:03:42,560 --> 00:03:51,040
+original and one guide shows how to record a web app session and turn it how to record
+
+30
+00:03:51,040 --> 00:03:55,620
+a web app session and turn it into a practical environment for AI agents.
+
+31
+00:03:56,200 --> 00:03:59,000
+So why there is all this hype?
+
+32
+00:04:00,360 --> 00:04:08,440
+I think there are so why there is all this hype?
+
+33
+00:04:08,440 --> 00:04:14,660
+So why there is all this hype? I think there are three reasons for it.
+
+34
+00:04:15,140 --> 00:04:23,700
+So first one is 1. It is free and open source to everyone. 2. It works on many things like
+
+35
+00:04:23,700 --> 00:04:32,280
+websites, apps, even old binaries and 3. It shows evidence for every finding with AI that
+
+36
+00:04:32,340 --> 00:04:35,040
+matters a lot because we all know AI can
+
+37
+00:04:35,040 --> 00:04:38,360
+make things up but is it real that good
+
+38
+00:04:38,360 --> 00:04:41,880
+is it really that good today I will test
+
+39
+00:04:41,880 --> 00:04:45,640
+it for you live I will use it to study a
+
+40
+00:04:45,640 --> 00:04:46,280
+real app
+
+41
+00:05:02,340 --> 00:05:04,380
+I think there are three reasons for it.
+
+42
+00:05:04,840 --> 00:05:07,340
+One, it is free and open source to everyone.
+
+43
+00:05:07,980 --> 00:05:15,600
+And second thing is, it works on many things like websites, apps, even old binaries.
+
+44
+00:05:16,580 --> 00:05:19,420
+And three, it shows evidence for every finding.
+
+45
+00:05:20,340 --> 00:05:25,700
+With AI, that matters a lot because we all know, with AI that matters a lot.
+
+46
+00:05:26,140 --> 00:05:28,620
+Because we all know AI can make things up.
+
+47
+00:05:30,060 --> 00:05:33,440
+But if you ask me, is it really that good?
+
+48
+00:05:34,640 --> 00:05:34,780
+Today.
+
+49
+00:05:39,540 --> 00:05:42,500
+But if you ask me, is it really that good?
+
+50
+00:05:43,220 --> 00:05:44,720
+Today I will test it for you.
+
+51
+00:05:45,320 --> 00:05:49,380
+I will use it to study a real app and then rebuild my own version
+
+52
+00:05:49,380 --> 00:05:51,780
+with just few prompts.
+
+53
+00:05:54,040 --> 00:05:57,060
+And stay with me until the end of this video.
+
+54
+00:05:57,060 --> 00:06:03,220
+Stay with me until the end of this video because I will tell you honestly what worked, what
+
+55
+00:06:03,220 --> 00:06:09,280
+did not work and the downsides nobody is talking about.
+
+56
+00:06:09,520 --> 00:06:18,200
+Oh, and by the way, I am Kalyan and this is the AI with Kalyan where I share simple practical
+
+57
+00:06:18,200 --> 00:06:19,960
+AI you can try today.
+
+58
+00:06:21,820 --> 00:06:25,160
+You can share simple practical AI you can try today.
+
+59
+00:06:25,160 --> 00:06:28,340
+If you like this, tap subscribe, it really helps.
+
+60
+00:06:28,520 --> 00:06:30,020
+Okay, let's go.
+
+61
+00:06:45,800 --> 00:06:47,960
+I think there are three reasons for it.
+
+62
+00:06:48,520 --> 00:06:50,940
+One is it is free and one,
+
+63
+00:06:51,280 --> 00:06:53,300
+it is free and open source to everyone.
+
+64
+00:06:53,300 --> 00:06:58,060
+2. It works on many things like websites, apps, even old binaries
+
+65
+00:06:58,060 --> 00:07:01,300
+3. It shows evidence for every finding
+
+66
+00:07:01,300 --> 00:07:06,820
+With AI that matters a lot because we all know AI can make things up
+
+67
+00:07:06,820 --> 00:07:10,700
+But if you ask me, is it really that good?
+
+68
+00:07:11,260 --> 00:07:12,880
+Today I will test it for you
+
+69
+00:07:12,880 --> 00:07:19,220
+I will use it to study a real app and then rebuild my own version with just few prompts
+
+70
+00:07:19,220 --> 00:07:24,080
+and stay with me until the end of this video because I will tell you honestly
+
+71
+00:07:24,080 --> 00:07:29,660
+what worked what did not and the downsides nobody is talking about oh and
+
+72
+00:07:29,660 --> 00:07:36,600
+by the way I'm Kalyan and this is AI with Kalyan and this is way and this is
+
+73
+00:07:37,280 --> 00:07:42,540
+I'm Kalyan and this is AI with Kalyan where I share simple practical AI you
+
+74
+00:07:42,540 --> 00:07:48,760
+can try today if you like this if you like this tap subscribe and real if you
+
+75
+00:07:48,760 --> 00:07:55,840
+like this tap subscribe if you like this tap subscribe it really helps so let's
+
+76
+00:07:55,840 --> 00:07:56,340
+get started

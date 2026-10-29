@@ -1,0 +1,117 @@
+[00:48.32-00:59.44] Um, uh, um, uh, uh, uh, uh, okay.
+[01:28.02-01:29.42] .
+[01:29.44-01:34.70] anything. Let me explain what we are going to do. In simple words, why I picked
+[01:34.70-01:40.74] weaken? I needed a real app to study. Weaken is an open source, can-be-enboard, a
+[01:40.74-01:48.26] bit like Trello. If you have never used one, you have columns like to do,
+[01:50.62-01:55.92] doing and done, doing and done. Inside each column you have cards and
+[01:55.92-01:57.06] And those are your tasks.
+[01:57.56-02:01.12] When the work moves forward, you drag the card to the next column.
+[02:01.70-02:08.72] Weaken is a popular, it has a public demo, it has a public demo that anyone can open
+[02:08.72-02:12.78] and it has an MIT license, which means it is open source.
+[02:13.16-02:14.92] So I'm not touching anything private.
+[02:15.60-02:17.64] And there is one more important reason.
+[02:19.24-02:20.90] And there is one more reason.
+[02:20.90-02:28.50] a Kanban app has a lot of behavior inside.
+[02:28.84-02:32.86] drag and drop, labels, due dates, checklists, saving data.
+[02:33.36-02:34.92] So it is great test for RIA.
+[02:35.60-02:48.80] What we are trying to achieve, I am not trying to copy the whole beacon.
+[02:48.80-02:55.74] that would take a lot of time and a lot of prompts.
+[02:58.26-03:02.44] That would take a lot of time and a big team and a lot of prompts.
+[03:02.96-03:08.10] My goal is a small working version. My own app which I will call Reaboard.
+[03:08.48-03:15.86] It will have columns, cards, drag and drop, color labels, due dates with red overdue badge and checklists.
+[03:15.86-03:18.82] It will save the data only in my browser.
+[03:19.32-03:23.40] So it will not have login real time sync between users or a server.
+[03:23.82-03:33.74] In simple words, the expectation is this, a working copy of how the board behaves with
+[03:33.74-03:35.22] my own name and design.
+[03:35.72-03:37.08] Not the full working product.
+[03:38.96-03:39.88] Not the full product.
+[03:41.16-03:42.46] Okay, now the setup.
+[03:42.46-03:47.58] First we need first what we need before we start.
+[04:13.24-04:14.64] So
+[04:16.98-04:19.20] So, I am using a Windows laptop.
+[04:25.32-04:29.18] So, Claude code needs Windows 10 or the newer version.
+[04:29.62-04:37.18] An internet connection, a Claude account because you sign in the first time you use Claude
+[04:37.18-04:37.52] code.
+[04:51.54-05:06.14] So, the next step is open the PowerShell and type this command and wait for it to finish
+[05:06.14-05:12.26] then close the terminal and open it again. Now type this to check it worked.
+[05:13.22-05:18.74] Type clod-version if you see a version number, clod code is installed.
+[05:19.38-05:26.08] The first time you run it, it opens your browser so you can sign in with your clod account.
+[05:27.24-05:28.78] Just sign in and come back.
+[05:32.78-05:35.00] Next is to check your node version.
+[05:35.92-05:42.00] rea needs nodejs and clod code does not.
+[05:42.28-05:48.36] So this check matters. To check that,
+[05:48.36-06:13.00] type to check that type this command. So, rear needs
+[06:13.98-06:18.92] So, RIA needs node version 22 or 24 of the newer version.
+[06:19.36-06:24.88] If you get an older version or an error, install the latest node from nodejs.org.
+[06:26.40-06:27.40] Then check again.
+[06:30.22-06:31.08] Run the RIA setup.
+[06:31.50-06:38.28] Type this npx ra-agents space setup.
+[06:42.14-06:51.22] type this command and it may ask ok to proceed type yes and then it and then and
+[06:51.22-06:57.08] then it ask which agent you want and then it ask which agent you want I choose
+[06:57.08-07:02.62] Claude code I choose Claude code then it shows a list of changes it will make
+[07:02.62-07:04.86] Read it and say yes.
+[07:06.04-07:07.88] And this is very important.
+[07:08.28-07:10.46] It will offer to install hopper.
+[07:10.94-07:11.34] Say no.
+[07:11.90-07:15.70] Because we are only working with websites so we do not need it.
+[07:17.04-07:20.38] The next step is restart clod code and check ria.
+[07:20.88-07:23.66] If the clod code is open, close it.
+[07:24.72-07:27.30] Then type this clod-mcp-list.
+[07:28.10-07:29.90] You should see ria in the list.
+[07:29.90-07:32.30] Next, if you see it, Ria is connected.
+[07:34.00-07:35.30] Add the Chrome extension.
+[07:35.82-07:39.04] Install the cloud in the Chrome extension from the Chrome Web Store.
+[07:40.24-07:42.92] This lets cloud test the app in a real browser.
+[07:44.12-07:47.48] If you want the link, I'll put the link in the description below.
+[07:52.94-07:57.16] So the next step is make a project folder and start cloud code.
+[07:58.04-08:00.86] Type these two lines then start clod
+[08:22.80-08:24.20] .
+[08:26.40-08:29.80] And that is it. From here everything is the same.
+[08:32.66-08:35.46] And that is it. Now the real fun begins.
+[08:53.64-08:54.18] Start
+[09:06.92-09:18.34] Here I am giving the weekend board demo link and saying it is a web app.
+[09:18.34-09:25.52] So use only the website analysis tools. Do not touch desktop app tools. Do not build anything yet.
+[09:53.78-10:16.30] So, basically in the prompt I mentioned, so basically in the prompt I mentioned, use the
+[10:16.30-10:25.80] link. I said do not touch the desktop app tools, do not build anything else, report
+[10:25.80-10:31.34] short bullet points in simple English like how boards, lists and cards are
+[10:31.34-10:41.10] structured, how drag-and-drop works, how a card holds like labels, data, like what a
+[10:41.10-10:47.62] card holds like labels, dates, checklists, numbers and covers, where the data is saved
+[10:47.62-10:52.58] and how it syncs, which framework and libraries it uses.
+[11:01.68-11:06.56] So in simple words, I said like study this app but do not build anything yet.
+[11:06.94-11:10.04] And my favorite trick here is the last line.
+[11:10.04-11:20.00] I ask Claude to label every point as observed, inferred or not sure.
+[11:20.38-11:21.92] So it does not just guess.
+[11:27.74-11:31.20] While Claude is working on this, here is a question for you.
+[11:31.48-11:34.02] Think about the apps on your phone right now.
+[11:34.02-11:40.26] Which app would you love to rebuild as your own version?
+[11:40.76-11:46.62] Maybe a to-do app, a habit tracker, a notes app.
+[11:47.08-11:48.20] Write in the comments below.
+[11:48.60-11:51.74] I will read them and the best ideas can be my next video.
+[11:52.36-11:54.58] Okay, let's see what Claude found.
+[11:55.52-11:57.04] Okay, let's see what Claude found.
+[11:59.98-12:01.14] And look at this.
+[12:01.14-12:10.42] It explains how the lists and cards are structured, how drag and drop works and where the data
+[12:10.42-12:11.00] is stored.
+[12:11.62-12:15.04] And the labels observed, inferred and not sure.
+[12:15.60-12:21.66] This is what makes it trustworthy.
+[12:22.50-12:24.90] This is the part that normally takes hours.
+[12:25.72-12:32.32] So, the next step is I am giving the next prompt to build, match the look and test it.
+[12:41.02-12:48.60] So, now the cloud knows how the app works, it's time to build and so now the cloud knows
+[12:48.60-12:53.72] how the app works it is time to build and this is
+[12:57.72-13:04.56] and now and now the cloud knows how the app works it is time to build and this is prom
+[13:04.56-13:20.00] From 2, and this is from 2.
+[13:20.38-13:24.64] Notice one thing, I tell Claude to use only how the app behaves.
+[13:25.14-13:30.52] My own name, my own sample content, I am not copying anyone's logo, text or images.
+[13:30.52-13:32.20] That is very important.
+[13:38.22-13:45.90] Using only what you learned about how it behaves, build my own Kanban board.
+[13:45.90-13:55.96] board using only what you learn about how it behaves build my own Kanban board in this
+[13:55.96-13:56.40] folder.
+[14:01.56-14:16.88] . And here is the exact prompt I gave .
+[14:36.08-14:41.98] And now this part takes a few minutes so I will speed it up.
+[14:42.14-14:53.30] And remember stay till the end because after this I will tell you the honest down side.
+[15:07.92-15:09.48] Ok, here it is guys.
+[15:09.92-15:15.40] This is my, this is my rear board running on my computer.
+[15:15.88-15:17.50] Let me show you what it built.
+[15:17.50-15:27.66] first columns I can add a column first columns I can add a column rename it and
+[15:28.48-15:44.40] delete it so the next cards I can add a card edit it and delete it and the fun
+[15:44.40-15:46.06] One part is drag and drop.

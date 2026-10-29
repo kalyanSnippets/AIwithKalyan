@@ -1,0 +1,291 @@
+1
+00:00:20,880 --> 00:00:29,980
+And the fun part is dragging rock. Drag your card to another column with the real mouse drag and then reorder it to the other side.
+
+2
+00:00:30,000 --> 00:00:36,940
+inside the column and it works. Then the extras, color labels, a due date in the past and see
+
+3
+00:00:36,940 --> 00:00:42,880
+the red overdue batch, a checklist with a progress bar, the side panel for editing a
+
+4
+00:00:42,880 --> 00:00:55,600
+card and if I refresh a page everything is still saved. Now here is our, now here is
+
+5
+00:00:55,600 --> 00:01:09,860
+how close it looks to the original. Now what it did not build and this part is very important.
+
+6
+00:01:10,420 --> 00:01:16,120
+So my app saves data only in this browser. So there is no logging, no real time sync
+
+7
+00:01:16,120 --> 00:01:22,000
+between users and no server or databases. The original then, the original weaken as
+
+8
+00:01:22,000 --> 00:01:27,720
+all of that and my version does not I did not ask for it in my prompts so
+
+9
+00:01:27,720 --> 00:01:39,720
+Claude did not build it so Claude did not build it so it is a working copy of
+
+10
+00:01:39,720 --> 00:01:43,940
+how the board behaves not a full replacement of the real product
+
+11
+00:01:48,980 --> 00:01:55,220
+Okay, so now the question I promised you is VR worth the hype?
+
+12
+00:01:56,080 --> 00:01:58,280
+Is reverse engineering worth the hype?
+
+13
+00:01:59,300 --> 00:02:02,080
+Is reverse engineering anything worth the hype?
+
+14
+00:02:02,660 --> 00:02:04,540
+My honest answer is yes.
+
+15
+00:02:04,880 --> 00:02:06,020
+It is worth trying.
+
+16
+00:02:06,460 --> 00:02:12,080
+For web apps going from I like this feature to I understand how it works and I have a
+
+17
+00:02:12,080 --> 00:02:24,460
+working version for web apps going from I like this feature to I understand how it works
+
+18
+00:02:24,460 --> 00:02:30,680
+and I have a working version in two prompts is really powerful and the evidence labels
+
+19
+00:02:30,680 --> 00:02:36,860
+observed inferred and not sure that is what I really like that is what I really like the
+
+20
+00:02:36,860 --> 00:02:41,200
+most but it is not magic.
+
+21
+00:02:42,340 --> 00:02:43,460
+But it is not magic.
+
+22
+00:02:44,100 --> 00:02:45,220
+Here are the downsides.
+
+23
+00:02:45,560 --> 00:02:48,180
+Number one is setup is not one click.
+
+24
+00:02:48,660 --> 00:02:54,400
+You need to install Node.js terminal, clock code and for testing the Chrome extension.
+
+25
+00:02:54,900 --> 00:02:58,000
+If you are a complete beginner, it will take some effort.
+
+26
+00:02:59,200 --> 00:03:05,800
+So number two is to number two is it studies what a website shows from the outside.
+
+27
+00:03:05,800 --> 00:03:13,360
+It cannot see the private code running on the company server.
+
+28
+00:03:13,880 --> 00:03:16,440
+So you get a behaviour not the full product.
+
+29
+00:03:16,980 --> 00:03:19,700
+Number 3 is the result depends on your prompt.
+
+30
+00:03:26,080 --> 00:03:31,920
+If you are vague you get a vague app and you still have to test the output yourself.
+
+31
+00:03:32,340 --> 00:03:33,520
+Do not trust it blindly.
+
+32
+00:03:33,520 --> 00:03:41,540
+4. The tool changes very fast. Some steps may look different when you try it.
+
+33
+00:03:42,680 --> 00:03:48,960
+And please remember, use this only on apps you own, open source apps or when you have permission.
+
+34
+00:03:49,620 --> 00:03:57,380
+Learn from them and build your own. Do not copy other people's work.
+
+35
+00:03:57,380 --> 00:04:02,920
+So my verdict is that hype is mostly real for learning and prototyping
+
+36
+00:04:02,920 --> 00:04:08,760
+But treat it as a very smart assistant not a replacement for you build any app
+
+37
+00:04:08,760 --> 00:04:13,080
+Plus subscribe like and share now the best part guys
+
+38
+00:04:13,080 --> 00:04:18,480
+This method is not only for the can burn boards. You can also use the same
+
+39
+00:04:19,020 --> 00:04:22,700
+You can also use the same two steps for almost any
+
+40
+00:04:22,700 --> 00:04:27,700
+You can also use the same two steps for almost anywhere that you like.
+
+41
+00:04:28,040 --> 00:04:31,880
+Step 1. Ask Claude to study with RIA, reverse engineering.
+
+42
+00:04:32,640 --> 00:04:37,260
+Ask Claude to study with reverse engineering anything and report it with evidence.
+
+43
+00:04:38,040 --> 00:04:43,960
+Step 2. Ask Claude to build your own version. Match the look. Test it with the real browser.
+
+44
+00:04:44,960 --> 00:04:52,460
+a to do app, a to do app, a notes app, a habit tracker, a booking page, anything.
+
+45
+00:04:53,200 --> 00:04:56,380
+Just change the website link and the feature list in the prompts.
+
+46
+00:04:56,920 --> 00:04:58,620
+So here is my homework for you.
+
+47
+00:04:59,200 --> 00:04:59,680
+Pick one.
+
+48
+00:04:59,960 --> 00:05:01,840
+So here is my homework for you.
+
+49
+00:05:02,100 --> 00:05:07,560
+Pick one app, copy two prompts from the description below, change the link and try it today.
+
+50
+00:05:07,940 --> 00:05:10,860
+Then tell me in the comments below which app you reviewed.
+
+51
+00:05:10,860 --> 00:05:12,780
+I would love to see it.
+
+52
+00:05:12,920 --> 00:05:15,420
+If you like this video, please hit the like button.
+
+53
+00:05:15,840 --> 00:05:16,560
+It really helps.
+
+54
+00:05:17,000 --> 00:05:23,600
+If you know a friend who is learning AI or wants to build apps,
+
+55
+00:05:24,380 --> 00:05:25,600
+share this video with them.
+
+56
+00:05:26,260 --> 00:05:27,920
+And if you have not subscribed yet,
+
+57
+00:05:28,340 --> 00:05:31,660
+please subscribe to AI with Kalyan and press the bell icon.
+
+58
+00:05:33,780 --> 00:05:36,160
+And if you have not subscribed yet,
+
+59
+00:05:36,580 --> 00:05:39,740
+please subscribe to AI with Kalyan and press the bell icon.
+
+60
+00:05:46,740 --> 00:05:51,280
+If you like this video please hit the like button.
+
+61
+00:05:56,460 --> 00:06:01,940
+I would love to see it.
+
+62
+00:06:02,140 --> 00:06:04,880
+If you like this video please hit the like button.
+
+63
+00:06:05,180 --> 00:06:05,860
+It really helps.
+
+64
+00:06:05,860 --> 00:06:11,300
+If you know a friend who is learning AI or wants to build apps, share this video with
+
+65
+00:06:11,300 --> 00:06:17,180
+them and if you have not subscribed yet, please subscribe to AI with Kalyan and press the bell
+
+66
+00:06:17,180 --> 00:06:17,560
+icon.
+
+67
+00:06:18,060 --> 00:06:21,680
+So if you do not miss, so you do not miss the next video.
+
+68
+00:06:22,120 --> 00:06:25,320
+More AI tutorials are coming and I make them for you.
+
+69
+00:06:27,060 --> 00:06:32,840
+And if you want to see how I edit my videos using Claude, that video is right here.
+
+70
+00:06:39,300 --> 00:06:44,320
+Click on it and watch it next.
+
+71
+00:06:44,560 --> 00:06:46,320
+Thank you so much for watching.
+
+72
+00:06:46,740 --> 00:06:47,980
+I will see you in the next one.
+
+73
+00:06:48,360 --> 00:06:48,640
+Bye.

@@ -1,0 +1,76 @@
+[00:27.18-00:29.98] I'm not a fan of the
+[00:43.90-00:47.04] Hi friends, hi everyone.
+[01:06.34-01:14.10] Hey guys, have you ever seen a cool feature in some app and thought, I want this in my
+[01:14.10-01:19.40] own project but you have no idea how it is built well this is a tool for exactly
+[01:19.40-01:23.94] that and right now everyone in the AI and developer world is talking about
+[01:23.94-01:35.24] its name is reverse engineer anything yes that is the real name rias.rea for short
+[01:36.08-01:39.74] Yes, that is the real name, REA for short.
+[01:41.74-01:46.20] Now look at this on GitHub, it has almost 400,000 stars.
+[01:51.84-01:57.96] That is a crazy number for a developer tool and it is free and open source.
+[01:58.50-02:00.70] So what is it?
+[02:01.88-02:02.68] So what is it?
+[02:03.24-02:03.36] Simple.
+[02:03.36-02:09.42] Simple, you see a feature you like in an app, you see a feature you like in an app, your
+[02:09.42-02:20.78] AI and it is that is a crazy number for a developer
+[02:20.78-02:23.28] tool and it is free and open source.
+[02:23.88-02:24.80] So what is it?
+[02:25.26-02:33.24] Simple, you see a feature you like in an app, your AI agent like Claude code uses RIA
+[02:33.24-02:38.34] to inspect that app, explain how it works, show you the evidence and then help you build
+[02:38.34-02:39.80] your own version.
+[02:46.08-02:47.50] Why you save it?
+[02:48.48-02:51.04] And people are doing some wild things with it.
+[02:51.04-02:54.04] Someone traced how the Notion desktop has...
+[02:54.56-02:57.04] Someone traced...
+[03:12.04-03:14.86] And people are doing some wild things with it.
+[03:15.26-03:20.04] Someone traced how the Notion desktop app handles copy...
+[03:20.04-03:32.38] Someone traced how the Notion desktop app handles copy and paste all the way from the
+[03:32.38-03:33.70] screen to the main process.
+[03:34.24-03:42.42] People built the sound planning of an old DOS game DX Ball and checked it against the
+[03:42.56-03:51.04] original and one guide shows how to record a web app session and turn it how to record
+[03:51.04-03:55.62] a web app session and turn it into a practical environment for AI agents.
+[03:56.20-03:59.00] So why there is all this hype?
+[04:00.36-04:08.44] I think there are so why there is all this hype?
+[04:08.44-04:14.66] So why there is all this hype? I think there are three reasons for it.
+[04:15.14-04:23.70] So first one is 1. It is free and open source to everyone. 2. It works on many things like
+[04:23.70-04:32.28] websites, apps, even old binaries and 3. It shows evidence for every finding with AI that
+[04:32.34-04:35.04] matters a lot because we all know AI can
+[04:35.04-04:38.36] make things up but is it real that good
+[04:38.36-04:41.88] is it really that good today I will test
+[04:41.88-04:45.64] it for you live I will use it to study a
+[04:45.64-04:46.28] real app
+[05:02.34-05:04.38] I think there are three reasons for it.
+[05:04.84-05:07.34] One, it is free and open source to everyone.
+[05:07.98-05:15.60] And second thing is, it works on many things like websites, apps, even old binaries.
+[05:16.58-05:19.42] And three, it shows evidence for every finding.
+[05:20.34-05:25.70] With AI, that matters a lot because we all know, with AI that matters a lot.
+[05:26.14-05:28.62] Because we all know AI can make things up.
+[05:30.06-05:33.44] But if you ask me, is it really that good?
+[05:34.64-05:34.78] Today.
+[05:39.54-05:42.50] But if you ask me, is it really that good?
+[05:43.22-05:44.72] Today I will test it for you.
+[05:45.32-05:49.38] I will use it to study a real app and then rebuild my own version
+[05:49.38-05:51.78] with just few prompts.
+[05:54.04-05:57.06] And stay with me until the end of this video.
+[05:57.06-06:03.22] Stay with me until the end of this video because I will tell you honestly what worked, what
+[06:03.22-06:09.28] did not work and the downsides nobody is talking about.
+[06:09.52-06:18.20] Oh, and by the way, I am Kalyan and this is the AI with Kalyan where I share simple practical
+[06:18.20-06:19.96] AI you can try today.
+[06:21.82-06:25.16] You can share simple practical AI you can try today.
+[06:25.16-06:28.34] If you like this, tap subscribe, it really helps.
+[06:28.52-06:30.02] Okay, let's go.
+[06:45.80-06:47.96] I think there are three reasons for it.
+[06:48.52-06:50.94] One is it is free and one,
+[06:51.28-06:53.30] it is free and open source to everyone.
+[06:53.30-06:58.06] 2. It works on many things like websites, apps, even old binaries
+[06:58.06-07:01.30] 3. It shows evidence for every finding
+[07:01.30-07:06.82] With AI that matters a lot because we all know AI can make things up
+[07:06.82-07:10.70] But if you ask me, is it really that good?
+[07:11.26-07:12.88] Today I will test it for you
+[07:12.88-07:19.22] I will use it to study a real app and then rebuild my own version with just few prompts
+[07:19.22-07:24.08] and stay with me until the end of this video because I will tell you honestly
+[07:24.08-07:29.66] what worked what did not and the downsides nobody is talking about oh and
+[07:29.66-07:36.60] by the way I'm Kalyan and this is AI with Kalyan and this is way and this is
+[07:37.28-07:42.54] I'm Kalyan and this is AI with Kalyan where I share simple practical AI you
+[07:42.54-07:48.76] can try today if you like this if you like this tap subscribe and real if you
+[07:48.76-07:55.84] like this tap subscribe if you like this tap subscribe it really helps so let's
+[07:55.84-07:56.34] get started

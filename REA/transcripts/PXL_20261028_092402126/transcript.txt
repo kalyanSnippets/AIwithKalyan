@@ -1,0 +1,16 @@
+[00:12.54-00:19.54] So, then it will ask, so then it will ask, it asks which agent you want.
+[00:19.54-00:22.60] and I only I choose only Claude code.
+[00:46.56-00:47.96] .
+[00:50.14-00:54.56] Then it asks which agent you want.
+[00:54.98-00:57.56] I choose only cloud code.
+[00:59.44-00:59.98] Press enter.
+[01:17.52-01:22.04] Then it shows a list of changes it will make read it and say yes.
+[01:26.90-01:35.82] and this is very important. It will offer to install hopper say no. We are only working with
+[01:35.82-01:43.52] websites so we do not need it. So the next step is restart cloud code and check reaa.
+[01:45.50-01:49.78] Restart and the next step is restart cloud code and check RAA.
+[01:51.44-01:54.52] And the next step is restart cloud code and check RIA.
+[01:57.42-02:00.10] For that I will simply close this.
+[02:02.24-02:06.24] Open the Windows PowerShell again.
+[02:10.72-02:14.86] Now, this time
+[02:30.10-02:34.02] I will type clod MCP.
+[02:34.02-02:34.20] p.

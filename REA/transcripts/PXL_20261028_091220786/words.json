@@ -1,0 +1,1664 @@
+[
+ {
+  "text": "REA,",
+  "start": 27.12,
+  "end": 28.52,
+  "prob": 0.001
+ },
+ {
+  "text": "Reverse",
+  "start": 28.52,
+  "end": 28.52,
+  "prob": 0.0
+ },
+ {
+  "text": "Engineer",
+  "start": 28.52,
+  "end": 28.52,
+  "prob": 0.0
+ },
+ {
+  "text": "Anything,",
+  "start": 28.52,
+  "end": 28.52,
+  "prob": 0.0
+ },
+ {
+  "text": "Hopper,",
+  "start": 29.8,
+  "end": 29.8,
+  "prob": 0.032
+ },
+ {
+  "text": "Node",
+  "start": 29.8,
+  "end": 29.8,
+  "prob": 0.0
+ },
+ {
+  "text": ".js.",
+  "start": 29.8,
+  "end": 29.8,
+  "prob": 0.023
+ },
+ {
+  "text": "So,",
+  "start": 63.24,
+  "end": 63.64,
+  "prob": 0.678
+ },
+ {
+  "text": "if",
+  "start": 63.7,
+  "end": 63.84,
+  "prob": 0.98
+ },
+ {
+  "text": "you",
+  "start": 63.84,
+  "end": 63.98,
+  "prob": 0.988
+ },
+ {
+  "text": "are",
+  "start": 63.98,
+  "end": 64.06,
+  "prob": 0.899
+ },
+ {
+  "text": "in",
+  "start": 64.06,
+  "end": 64.22,
+  "prob": 0.522
+ },
+ {
+  "text": "windows,",
+  "start": 64.22,
+  "end": 64.64,
+  "prob": 0.612
+ },
+ {
+  "text": "just",
+  "start": 67.94,
+  "end": 67.98,
+  "prob": 0.911
+ },
+ {
+  "text": "follow",
+  "start": 67.98,
+  "end": 68.22,
+  "prob": 0.98
+ },
+ {
+  "text": "this.",
+  "start": 68.22,
+  "end": 68.54,
+  "prob": 0.763
+ },
+ {
+  "text": "open",
+  "start": 75.5,
+  "end": 76.9,
+  "prob": 0.427
+ },
+ {
+  "text": "power",
+  "start": 76.9,
+  "end": 77.16,
+  "prob": 0.409
+ },
+ {
+  "text": "shell.",
+  "start": 77.16,
+  "end": 77.8,
+  "prob": 0.98
+ },
+ {
+  "text": ".",
+  "start": 83.44,
+  "end": 84.84,
+  "prob": 0.552
+ },
+ {
+  "text": "And",
+  "start": 106.44,
+  "end": 107.24,
+  "prob": 0.112
+ },
+ {
+  "text": "type",
+  "start": 107.24,
+  "end": 107.44,
+  "prob": 0.974
+ },
+ {
+  "text": "this",
+  "start": 107.44,
+  "end": 107.7,
+  "prob": 0.993
+ },
+ {
+  "text": "command",
+  "start": 107.7,
+  "end": 108.1,
+  "prob": 0.959
+ },
+ {
+  "text": "under",
+  "start": 108.1,
+  "end": 110.0,
+  "prob": 0.236
+ },
+ {
+  "text": "setup.",
+  "start": 110.0,
+  "end": 110.34,
+  "prob": 0.931
+ },
+ {
+  "text": "wait",
+  "start": 112.9,
+  "end": 114.3,
+  "prob": 0.401
+ },
+ {
+  "text": "for",
+  "start": 114.3,
+  "end": 114.52,
+  "prob": 0.994
+ },
+ {
+  "text": "some",
+  "start": 114.52,
+  "end": 114.72,
+  "prob": 0.863
+ },
+ {
+  "text": "time.",
+  "start": 114.72,
+  "end": 115.76,
+  "prob": 0.999
+ },
+ {
+  "text": "It",
+  "start": 145.66,
+  "end": 146.6,
+  "prob": 0.297
+ },
+ {
+  "text": "says",
+  "start": 146.6,
+  "end": 146.76,
+  "prob": 0.906
+ },
+ {
+  "text": "native",
+  "start": 146.76,
+  "end": 147.16,
+  "prob": 0.904
+ },
+ {
+  "text": "installation",
+  "start": 147.16,
+  "end": 147.72,
+  "prob": 0.982
+ },
+ {
+  "text": "exists",
+  "start": 147.72,
+  "end": 148.26,
+  "prob": 0.819
+ },
+ {
+  "text": "but",
+  "start": 148.26,
+  "end": 148.82,
+  "prob": 0.573
+ },
+ {
+  "text": "this",
+  "start": 148.82,
+  "end": 152.42,
+  "prob": 0.916
+ },
+ {
+  "text": "link",
+  "start": 152.42,
+  "end": 152.76,
+  "prob": 0.993
+ },
+ {
+  "text": "is",
+  "start": 152.76,
+  "end": 153.46,
+  "prob": 0.996
+ },
+ {
+  "text": "not",
+  "start": 153.46,
+  "end": 153.74,
+  "prob": 0.999
+ },
+ {
+  "text": "in",
+  "start": 153.74,
+  "end": 153.94,
+  "prob": 0.994
+ },
+ {
+  "text": "your",
+  "start": 153.94,
+  "end": 154.1,
+  "prob": 0.993
+ },
+ {
+  "text": "path.",
+  "start": 154.1,
+  "end": 154.42,
+  "prob": 0.973
+ },
+ {
+  "text": "So,",
+  "start": 154.42,
+  "end": 155.12,
+  "prob": 0.746
+ },
+ {
+  "text": "what",
+  "start": 155.24,
+  "end": 155.34,
+  "prob": 0.996
+ },
+ {
+  "text": "you",
+  "start": 155.34,
+  "end": 155.5,
+  "prob": 0.797
+ },
+ {
+  "text": "have",
+  "start": 155.5,
+  "end": 155.62,
+  "prob": 0.999
+ },
+ {
+  "text": "to",
+  "start": 155.62,
+  "end": 155.76,
+  "prob": 0.998
+ },
+ {
+  "text": "do",
+  "start": 155.76,
+  "end": 155.94,
+  "prob": 0.998
+ },
+ {
+  "text": "is,",
+  "start": 155.94,
+  "end": 156.3,
+  "prob": 0.994
+ },
+ {
+  "text": "open",
+  "start": 156.6,
+  "end": 156.6,
+  "prob": 0.948
+ },
+ {
+  "text": "system",
+  "start": 156.6,
+  "end": 158.98,
+  "prob": 0.705
+ },
+ {
+  "text": "properties",
+  "start": 158.98,
+  "end": 160.76,
+  "prob": 0.978
+ },
+ {
+  "text": "and",
+  "start": 160.76,
+  "end": 174.78,
+  "prob": 0.643
+ },
+ {
+  "text": "go",
+  "start": 174.78,
+  "end": 175.28,
+  "prob": 0.991
+ },
+ {
+  "text": "to",
+  "start": 175.28,
+  "end": 175.48,
+  "prob": 0.997
+ },
+ {
+  "text": "environmental",
+  "start": 175.48,
+  "end": 175.9,
+  "prob": 0.966
+ },
+ {
+  "text": "variables",
+  "start": 175.9,
+  "end": 176.8,
+  "prob": 0.995
+ },
+ {
+  "text": "and",
+  "start": 176.8,
+  "end": 184.4,
+  "prob": 0.813
+ },
+ {
+  "text": "then",
+  "start": 184.4,
+  "end": 184.4,
+  "prob": 0.995
+ },
+ {
+  "text": "which",
+  "start": 186.68,
+  "end": 187.32,
+  "prob": 0.848
+ },
+ {
+  "text": "we",
+  "start": 187.32,
+  "end": 187.62,
+  "prob": 0.998
+ },
+ {
+  "text": "have",
+  "start": 187.62,
+  "end": 187.9,
+  "prob": 0.998
+ },
+ {
+  "text": "copied",
+  "start": 187.9,
+  "end": 188.26,
+  "prob": 1.0
+ },
+ {
+  "text": "from",
+  "start": 188.26,
+  "end": 188.54,
+  "prob": 0.999
+ },
+ {
+  "text": "there",
+  "start": 188.54,
+  "end": 188.8,
+  "prob": 0.994
+ },
+ {
+  "text": "and",
+  "start": 188.8,
+  "end": 190.88,
+  "prob": 0.764
+ },
+ {
+  "text": "then",
+  "start": 190.88,
+  "end": 191.04,
+  "prob": 0.995
+ },
+ {
+  "text": "press",
+  "start": 191.04,
+  "end": 191.24,
+  "prob": 0.991
+ },
+ {
+  "text": "ok",
+  "start": 191.24,
+  "end": 191.68,
+  "prob": 0.414
+ },
+ {
+  "text": "and",
+  "start": 191.68,
+  "end": 194.16,
+  "prob": 0.528
+ },
+ {
+  "text": "then",
+  "start": 194.16,
+  "end": 194.34,
+  "prob": 0.997
+ },
+ {
+  "text": "press",
+  "start": 194.34,
+  "end": 194.66,
+  "prob": 0.993
+ },
+ {
+  "text": "ok.",
+  "start": 194.66,
+  "end": 195.28,
+  "prob": 0.931
+ },
+ {
+  "text": "So,",
+  "start": 196.68,
+  "end": 197.16,
+  "prob": 0.695
+ },
+ {
+  "text": "now",
+  "start": 197.18,
+  "end": 197.4,
+  "prob": 0.996
+ },
+ {
+  "text": "we",
+  "start": 197.4,
+  "end": 197.6,
+  "prob": 0.895
+ },
+ {
+  "text": "have",
+  "start": 197.6,
+  "end": 197.82,
+  "prob": 0.998
+ },
+ {
+  "text": "added",
+  "start": 197.82,
+  "end": 198.12,
+  "prob": 0.995
+ },
+ {
+  "text": "the",
+  "start": 198.12,
+  "end": 198.32,
+  "prob": 0.978
+ },
+ {
+  "text": "new",
+  "start": 198.32,
+  "end": 198.5,
+  "prob": 0.99
+ },
+ {
+  "text": "path,",
+  "start": 198.5,
+  "end": 198.86,
+  "prob": 0.947
+ },
+ {
+  "text": "just",
+  "start": 200.4,
+  "end": 202.98,
+  "prob": 0.567
+ },
+ {
+  "text": "close",
+  "start": 202.98,
+  "end": 203.28,
+  "prob": 0.972
+ },
+ {
+  "text": "this",
+  "start": 203.28,
+  "end": 203.5,
+  "prob": 0.993
+ },
+ {
+  "text": "terminal",
+  "start": 203.5,
+  "end": 203.94,
+  "prob": 0.995
+ },
+ {
+  "text": "and",
+  "start": 203.94,
+  "end": 206.92,
+  "prob": 0.902
+ },
+ {
+  "text": "try",
+  "start": 206.92,
+  "end": 207.12,
+  "prob": 0.998
+ },
+ {
+  "text": "to",
+  "start": 207.12,
+  "end": 207.3,
+  "prob": 0.998
+ },
+ {
+  "text": "open",
+  "start": 207.3,
+  "end": 207.54,
+  "prob": 0.999
+ },
+ {
+  "text": "it",
+  "start": 207.54,
+  "end": 207.7,
+  "prob": 0.998
+ },
+ {
+  "text": "again.",
+  "start": 207.7,
+  "end": 208.14,
+  "prob": 0.998
+ },
+ {
+  "text": "Now,",
+  "start": 224.36,
+  "end": 225.76,
+  "prob": 0.571
+ },
+ {
+  "text": "check",
+  "start": 226.22,
+  "end": 226.22,
+  "prob": 0.294
+ },
+ {
+  "text": "the",
+  "start": 226.22,
+  "end": 228.5,
+  "prob": 0.978
+ },
+ {
+  "text": "version.",
+  "start": 228.5,
+  "end": 228.86,
+  "prob": 0.989
+ },
+ {
+  "text": "Now",
+  "start": 230.42,
+  "end": 231.06,
+  "prob": 0.429
+ },
+ {
+  "text": "it",
+  "start": 231.06,
+  "end": 231.22,
+  "prob": 0.723
+ },
+ {
+  "text": "says,",
+  "start": 231.22,
+  "end": 231.72,
+  "prob": 0.978
+ },
+ {
+  "text": "Claude",
+  "start": 232.16,
+  "end": 232.24,
+  "prob": 0.276
+ },
+ {
+  "text": "code",
+  "start": 232.24,
+  "end": 232.56,
+  "prob": 0.727
+ },
+ {
+  "text": "is",
+  "start": 232.56,
+  "end": 232.78,
+  "prob": 0.984
+ },
+ {
+  "text": "installed",
+  "start": 232.78,
+  "end": 233.18,
+  "prob": 0.991
+ },
+ {
+  "text": "and",
+  "start": 233.18,
+  "end": 233.52,
+  "prob": 0.823
+ },
+ {
+  "text": "it",
+  "start": 233.52,
+  "end": 233.64,
+  "prob": 0.989
+ },
+ {
+  "text": "is",
+  "start": 233.64,
+  "end": 233.78,
+  "prob": 0.981
+ },
+ {
+  "text": "saying",
+  "start": 233.78,
+  "end": 234.04,
+  "prob": 0.979
+ },
+ {
+  "text": "the",
+  "start": 234.04,
+  "end": 234.28,
+  "prob": 0.959
+ },
+ {
+  "text": "version",
+  "start": 234.28,
+  "end": 234.6,
+  "prob": 0.962
+ },
+ {
+  "text": "2",
+  "start": 234.6,
+  "end": 234.92,
+  "prob": 0.684
+ },
+ {
+  "text": ".1",
+  "start": 234.92,
+  "end": 235.54,
+  "prob": 0.984
+ },
+ {
+  "text": ".3",
+  "start": 235.54,
+  "end": 236.04,
+  "prob": 0.795
+ },
+ {
+  "text": ".2",
+  "start": 236.04,
+  "end": 237.34,
+  "prob": 0.883
+ },
+ {
+  "text": ".1",
+  "start": 237.34,
+  "end": 237.96,
+  "prob": 0.752
+ },
+ {
+  "text": ".3",
+  "start": 237.96,
+  "end": 238.68,
+  "prob": 0.858
+ },
+ {
+  "text": ".1",
+  "start": 238.68,
+  "end": 238.9,
+  "prob": 0.695
+ },
+ {
+  "text": ".2",
+  "start": 238.9,
+  "end": 239.1,
+  "prob": 0.883
+ },
+ {
+  "text": "which",
+  "start": 239.52,
+  "end": 239.84,
+  "prob": 0.544
+ },
+ {
+  "text": "is",
+  "start": 239.84,
+  "end": 240.02,
+  "prob": 0.998
+ },
+ {
+  "text": "the",
+  "start": 240.02,
+  "end": 240.18,
+  "prob": 0.887
+ },
+ {
+  "text": "Claude",
+  "start": 240.18,
+  "end": 240.42,
+  "prob": 0.926
+ },
+ {
+  "text": "version,",
+  "start": 240.42,
+  "end": 240.84,
+  "prob": 0.62
+ },
+ {
+  "text": "Claude",
+  "start": 241.14,
+  "end": 241.22,
+  "prob": 0.989
+ },
+ {
+  "text": "code",
+  "start": 241.22,
+  "end": 241.44,
+  "prob": 0.728
+ },
+ {
+  "text": "version.",
+  "start": 241.44,
+  "end": 241.92,
+  "prob": 0.997
+ },
+ {
+  "text": "So,",
+  "start": 252.96,
+  "end": 253.48,
+  "prob": 0.204
+ },
+ {
+  "text": "if",
+  "start": 256.32,
+  "end": 256.48,
+  "prob": 0.857
+ },
+ {
+  "text": "you",
+  "start": 256.48,
+  "end": 256.62,
+  "prob": 0.989
+ },
+ {
+  "text": "see",
+  "start": 256.62,
+  "end": 256.84,
+  "prob": 0.988
+ },
+ {
+  "text": "a",
+  "start": 256.84,
+  "end": 256.98,
+  "prob": 0.884
+ },
+ {
+  "text": "version",
+  "start": 256.98,
+  "end": 257.2,
+  "prob": 0.902
+ },
+ {
+  "text": "number",
+  "start": 257.2,
+  "end": 257.64,
+  "prob": 0.978
+ },
+ {
+  "text": "you",
+  "start": 257.64,
+  "end": 258.14,
+  "prob": 0.396
+ },
+ {
+  "text": "are",
+  "start": 258.14,
+  "end": 258.28,
+  "prob": 0.979
+ },
+ {
+  "text": "good.",
+  "start": 258.28,
+  "end": 258.54,
+  "prob": 0.995
+ },
+ {
+  "text": "The",
+  "start": 258.94,
+  "end": 259.14,
+  "prob": 0.939
+ },
+ {
+  "text": "first",
+  "start": 259.14,
+  "end": 259.38,
+  "prob": 0.979
+ },
+ {
+  "text": "time",
+  "start": 259.38,
+  "end": 259.66,
+  "prob": 0.997
+ },
+ {
+  "text": "you",
+  "start": 259.66,
+  "end": 259.84,
+  "prob": 0.965
+ },
+ {
+  "text": "run",
+  "start": 259.84,
+  "end": 260.12,
+  "prob": 0.993
+ },
+ {
+  "text": "clod",
+  "start": 260.12,
+  "end": 260.46,
+  "prob": 0.598
+ },
+ {
+  "text": "code",
+  "start": 260.46,
+  "end": 260.76,
+  "prob": 0.897
+ },
+ {
+  "text": "it",
+  "start": 260.76,
+  "end": 261.24,
+  "prob": 0.657
+ },
+ {
+  "text": "opens",
+  "start": 261.24,
+  "end": 261.54,
+  "prob": 0.976
+ },
+ {
+  "text": "your",
+  "start": 261.54,
+  "end": 261.8,
+  "prob": 0.919
+ },
+ {
+  "text": "browser",
+  "start": 261.8,
+  "end": 262.04,
+  "prob": 0.992
+ },
+ {
+  "text": "as",
+  "start": 262.04,
+  "end": 262.52,
+  "prob": 0.918
+ },
+ {
+  "text": "you",
+  "start": 262.52,
+  "end": 262.7,
+  "prob": 0.985
+ },
+ {
+  "text": "as",
+  "start": 262.7,
+  "end": 263.26,
+  "prob": 0.382
+ },
+ {
+  "text": "you",
+  "start": 263.26,
+  "end": 263.4,
+  "prob": 0.993
+ },
+ {
+  "text": "can",
+  "start": 263.4,
+  "end": 263.56,
+  "prob": 0.994
+ },
+ {
+  "text": "sign",
+  "start": 263.56,
+  "end": 263.8,
+  "prob": 0.986
+ },
+ {
+  "text": "in",
+  "start": 263.8,
+  "end": 264.0,
+  "prob": 0.97
+ },
+ {
+  "text": "with",
+  "start": 264.0,
+  "end": 264.18,
+  "prob": 0.986
+ },
+ {
+  "text": "your",
+  "start": 264.18,
+  "end": 264.42,
+  "prob": 0.993
+ },
+ {
+  "text": "clod",
+  "start": 264.42,
+  "end": 264.8,
+  "prob": 0.936
+ },
+ {
+  "text": "account.",
+  "start": 264.8,
+  "end": 265.18,
+  "prob": 0.993
+ },
+ {
+  "text": "If",
+  "start": 265.18,
+  "end": 265.84,
+  "prob": 0.345
+ },
+ {
+  "text": "it",
+  "start": 265.84,
+  "end": 266.02,
+  "prob": 0.894
+ },
+ {
+  "text": "complains",
+  "start": 266.02,
+  "end": 266.5,
+  "prob": 0.946
+ },
+ {
+  "text": "about",
+  "start": 266.5,
+  "end": 266.94,
+  "prob": 0.96
+ },
+ {
+  "text": "the",
+  "start": 266.94,
+  "end": 267.16,
+  "prob": 0.885
+ },
+ {
+  "text": "git",
+  "start": 267.16,
+  "end": 267.46,
+  "prob": 0.362
+ },
+ {
+  "text": "install",
+  "start": 267.46,
+  "end": 269.3,
+  "prob": 0.852
+ },
+ {
+  "text": "git",
+  "start": 269.3,
+  "end": 269.56,
+  "prob": 0.87
+ },
+ {
+  "text": "from",
+  "start": 269.56,
+  "end": 269.88,
+  "prob": 0.965
+ },
+ {
+  "text": "windows",
+  "start": 269.88,
+  "end": 270.28,
+  "prob": 0.778
+ },
+ {
+  "text": "from",
+  "start": 270.28,
+  "end": 270.64,
+  "prob": 0.877
+ },
+ {
+  "text": "git",
+  "start": 270.64,
+  "end": 271.32,
+  "prob": 0.96
+ },
+ {
+  "text": "git",
+  "start": 273.62,
+  "end": 274.38,
+  "prob": 0.018
+ },
+ {
+  "text": "-scm",
+  "start": 274.38,
+  "end": 275.14,
+  "prob": 0.822
+ },
+ {
+  "text": ".com",
+  "start": 275.14,
+  "end": 275.66,
+  "prob": 0.967
+ },
+ {
+  "text": "and",
+  "start": 275.66,
+  "end": 276.2,
+  "prob": 0.771
+ },
+ {
+  "text": "then",
+  "start": 276.2,
+  "end": 276.34,
+  "prob": 0.985
+ },
+ {
+  "text": "try",
+  "start": 276.34,
+  "end": 276.56,
+  "prob": 0.735
+ },
+ {
+  "text": "again.",
+  "start": 276.56,
+  "end": 276.94,
+  "prob": 0.99
+ },
+ {
+  "text": "So",
+  "start": 277.62,
+  "end": 277.64,
+  "prob": 0.879
+ },
+ {
+  "text": "step",
+  "start": 277.64,
+  "end": 277.94,
+  "prob": 0.894
+ },
+ {
+  "text": "3",
+  "start": 277.94,
+  "end": 278.26,
+  "prob": 0.567
+ },
+ {
+  "text": "is",
+  "start": 278.26,
+  "end": 278.76,
+  "prob": 0.985
+ },
+ {
+  "text": "check",
+  "start": 278.76,
+  "end": 279.3,
+  "prob": 0.719
+ },
+ {
+  "text": "your",
+  "start": 279.3,
+  "end": 279.58,
+  "prob": 0.991
+ },
+ {
+  "text": "node",
+  "start": 279.58,
+  "end": 279.84,
+  "prob": 0.899
+ },
+ {
+  "text": "versions",
+  "start": 279.84,
+  "end": 280.28,
+  "prob": 0.853
+ },
+ {
+  "text": "and",
+  "start": 280.28,
+  "end": 281.42,
+  "prob": 0.517
+ },
+ {
+  "text": "the",
+  "start": 281.42,
+  "end": 281.52,
+  "prob": 0.977
+ },
+ {
+  "text": "next",
+  "start": 281.52,
+  "end": 281.7,
+  "prob": 0.997
+ },
+ {
+  "text": "step",
+  "start": 281.7,
+  "end": 281.96,
+  "prob": 0.998
+ },
+ {
+  "text": "is",
+  "start": 281.96,
+  "end": 282.3,
+  "prob": 0.999
+ },
+ {
+  "text": "check",
+  "start": 282.3,
+  "end": 282.8,
+  "prob": 0.964
+ },
+ {
+  "text": "your",
+  "start": 282.8,
+  "end": 283.04,
+  "prob": 0.996
+ },
+ {
+  "text": "node",
+  "start": 283.04,
+  "end": 283.28,
+  "prob": 0.986
+ },
+ {
+  "text": "version.",
+  "start": 283.28,
+  "end": 283.74,
+  "prob": 0.965
+ },
+ {
+  "text": "One",
+  "start": 284.36,
+  "end": 284.66,
+  "prob": 0.694
+ },
+ {
+  "text": "small",
+  "start": 284.66,
+  "end": 284.96,
+  "prob": 0.998
+ },
+ {
+  "text": "change",
+  "start": 284.96,
+  "end": 285.28,
+  "prob": 0.997
+ },
+ {
+  "text": "here",
+  "start": 285.28,
+  "end": 285.66,
+  "prob": 0.995
+ },
+ {
+  "text": "on",
+  "start": 285.66,
+  "end": 286.14,
+  "prob": 0.871
+ },
+ {
+  "text": "Windows",
+  "start": 286.14,
+  "end": 286.58,
+  "prob": 0.294
+ },
+ {
+  "text": "check",
+  "start": 286.58,
+  "end": 290.36,
+  "prob": 0.274
+ },
+ {
+  "text": "your",
+  "start": 290.36,
+  "end": 290.74,
+  "prob": 0.995
+ },
+ {
+  "text": "version.",
+  "start": 290.74,
+  "end": 291.24,
+  "prob": 0.181
+ },
+ {
+  "text": "To",
+  "start": 292.8,
+  "end": 293.02,
+  "prob": 0.892
+ },
+ {
+  "text": "check",
+  "start": 293.02,
+  "end": 293.28,
+  "prob": 0.989
+ },
+ {
+  "text": "it",
+  "start": 293.28,
+  "end": 293.54,
+  "prob": 0.946
+ },
+ {
+  "text": "just",
+  "start": 293.54,
+  "end": 295.38,
+  "prob": 0.493
+ },
+ {
+  "text": "type",
+  "start": 295.38,
+  "end": 297.48,
+  "prob": 0.994
+ },
+ {
+  "text": "node",
+  "start": 297.48,
+  "end": 298.14,
+  "prob": 0.44
+ },
+ {
+  "text": "-v.",
+  "start": 298.14,
+  "end": 298.92,
+  "prob": 0.832
+ },
+ {
+  "text": "So",
+  "start": 301.04,
+  "end": 302.22,
+  "prob": 0.75
+ },
+ {
+  "text": "it",
+  "start": 302.22,
+  "end": 302.4,
+  "prob": 0.654
+ },
+ {
+  "text": "says",
+  "start": 302.4,
+  "end": 302.78,
+  "prob": 0.979
+ },
+ {
+  "text": "node",
+  "start": 302.78,
+  "end": 303.54,
+  "prob": 0.69
+ },
+ {
+  "text": "is",
+  "start": 303.54,
+  "end": 303.86,
+  "prob": 0.982
+ },
+ {
+  "text": "not",
+  "start": 303.86,
+  "end": 304.08,
+  "prob": 0.989
+ },
+ {
+  "text": "installed.",
+  "start": 304.08,
+  "end": 304.6,
+  "prob": 0.994
+ },
+ {
+  "text": "If",
+  "start": 317.4,
+  "end": 318.58,
+  "prob": 0.939
+ },
+ {
+  "text": "the",
+  "start": 318.58,
+  "end": 318.58,
+  "prob": 0.92
+ },
+ {
+  "text": "node",
+  "start": 318.58,
+  "end": 318.62,
+  "prob": 0.992
+ },
+ {
+  "text": "have",
+  "start": 318.62,
+  "end": 318.74,
+  "prob": 0.304
+ },
+ {
+  "text": "to",
+  "start": 318.74,
+  "end": 318.9,
+  "prob": 0.996
+ },
+ {
+  "text": "install",
+  "start": 318.9,
+  "end": 319.26,
+  "prob": 0.997
+ },
+ {
+  "text": "the",
+  "start": 319.26,
+  "end": 319.44,
+  "prob": 0.993
+ },
+ {
+  "text": "node.",
+  "start": 319.44,
+  "end": 319.66,
+  "prob": 0.953
+ },
+ {
+  "text": "To",
+  "start": 355.88,
+  "end": 356.8,
+  "prob": 0.726
+ },
+ {
+  "text": "install",
+  "start": 356.8,
+  "end": 357.2,
+  "prob": 0.984
+ },
+ {
+  "text": "the",
+  "start": 357.2,
+  "end": 357.4,
+  "prob": 0.982
+ },
+ {
+  "text": "node",
+  "start": 357.4,
+  "end": 357.7,
+  "prob": 0.957
+ },
+ {
+  "text": "just",
+  "start": 357.7,
+  "end": 358.32,
+  "prob": 0.558
+ },
+ {
+  "text": "type",
+  "start": 358.32,
+  "end": 358.84,
+  "prob": 0.991
+ },
+ {
+  "text": "this,",
+  "start": 358.84,
+  "end": 359.4,
+  "prob": 0.992
+ },
+ {
+  "text": "type",
+  "start": 360.12,
+  "end": 361.7,
+  "prob": 0.979
+ },
+ {
+  "text": "this",
+  "start": 361.7,
+  "end": 361.94,
+  "prob": 0.996
+ },
+ {
+  "text": "command",
+  "start": 361.94,
+  "end": 362.28,
+  "prob": 0.979
+ },
+ {
+  "text": "and",
+  "start": 362.28,
+  "end": 363.02,
+  "prob": 0.699
+ },
+ {
+  "text": "then",
+  "start": 363.02,
+  "end": 363.12,
+  "prob": 0.904
+ },
+ {
+  "text": "press",
+  "start": 363.12,
+  "end": 363.32,
+  "prob": 0.991
+ },
+ {
+  "text": "enter.",
+  "start": 363.32,
+  "end": 363.64,
+  "prob": 0.842
+ },
+ {
+  "text": "This",
+  "start": 390.32,
+  "end": 391.72,
+  "prob": 0.352
+ },
+ {
+  "text": "will",
+  "start": 391.72,
+  "end": 391.72,
+  "prob": 0.934
+ },
+ {
+  "text": "install.",
+  "start": 391.72,
+  "end": 391.72,
+  "prob": 0.968
+ },
+ {
+  "text": "Here",
+  "start": 398.08,
+  "end": 398.8,
+  "prob": 0.535
+ },
+ {
+  "text": "it",
+  "start": 398.8,
+  "end": 398.96,
+  "prob": 0.884
+ },
+ {
+  "text": "says",
+  "start": 398.96,
+  "end": 399.34,
+  "prob": 0.991
+ },
+ {
+  "text": "node",
+  "start": 399.34,
+  "end": 400.08,
+  "prob": 0.583
+ },
+ {
+  "text": "is",
+  "start": 400.08,
+  "end": 400.9,
+  "prob": 0.98
+ },
+ {
+  "text": "installed,",
+  "start": 400.9,
+  "end": 401.8,
+  "prob": 0.992
+ },
+ {
+  "text": "here",
+  "start": 402.18,
+  "end": 402.54,
+  "prob": 0.512
+ },
+ {
+  "text": "it",
+  "start": 402.54,
+  "end": 402.7,
+  "prob": 0.979
+ },
+ {
+  "text": "says",
+  "start": 402.7,
+  "end": 402.88,
+  "prob": 0.993
+ },
+ {
+  "text": "node",
+  "start": 402.88,
+  "end": 403.16,
+  "prob": 0.948
+ },
+ {
+  "text": "is",
+  "start": 403.16,
+  "end": 403.32,
+  "prob": 0.995
+ },
+ {
+  "text": "installed,",
+  "start": 403.32,
+  "end": 403.68,
+  "prob": 0.981
+ },
+ {
+  "text": "we",
+  "start": 403.88,
+  "end": 403.92,
+  "prob": 0.96
+ },
+ {
+  "text": "will",
+  "start": 403.92,
+  "end": 404.0,
+  "prob": 0.859
+ },
+ {
+  "text": "just",
+  "start": 404.0,
+  "end": 404.16,
+  "prob": 0.993
+ },
+ {
+  "text": "check",
+  "start": 404.16,
+  "end": 404.62,
+  "prob": 0.997
+ },
+ {
+  "text": "node",
+  "start": 404.62,
+  "end": 405.48,
+  "prob": 0.898
+ },
+ {
+  "text": "not",
+  "start": 405.48,
+  "end": 405.58,
+  "prob": 0.088
+ },
+ {
+  "text": "hyphen",
+  "start": 405.58,
+  "end": 406.06,
+  "prob": 0.722
+ },
+ {
+  "text": "V.",
+  "start": 406.06,
+  "end": 406.92,
+  "prob": 0.516
+ },
+ {
+  "text": "Then",
+  "start": 435.5,
+  "end": 436.9,
+  "prob": 0.124
+ },
+ {
+  "text": "PowerShell",
+  "start": 442.6,
+  "end": 444.0,
+  "prob": 0.175
+ },
+ {
+  "text": "again.",
+  "start": 444.0,
+  "end": 444.0,
+  "prob": 0.895
+ },
+ {
+  "text": "See,",
+  "start": 455.4,
+  "end": 456.0,
+  "prob": 0.253
+ },
+ {
+  "text": "now",
+  "start": 456.12,
+  "end": 456.42,
+  "prob": 0.985
+ },
+ {
+  "text": "the",
+  "start": 456.42,
+  "end": 457.3,
+  "prob": 0.855
+ },
+ {
+  "text": "node",
+  "start": 457.3,
+  "end": 457.56,
+  "prob": 0.931
+ },
+ {
+  "text": "version",
+  "start": 457.56,
+  "end": 457.86,
+  "prob": 0.971
+ },
+ {
+  "text": "is",
+  "start": 457.86,
+  "end": 458.12,
+  "prob": 0.995
+ },
+ {
+  "text": "installed.",
+  "start": 458.12,
+  "end": 458.6,
+  "prob": 0.998
+ },
+ {
+  "text": "NPM",
+  "start": 460.6,
+  "end": 462.0,
+  "prob": 0.559
+ },
+ {
+  "text": "-V.",
+  "start": 462.0,
+  "end": 463.4,
+  "prob": 0.498
+ },
+ {
+  "text": "...",
+  "start": 524.14,
+  "end": 525.54,
+  "prob": 0.006
+ },
+ {
+  "text": "...",
+  "start": 528.74,
+  "end": 530.14,
+  "prob": 0.864
+ },
+ {
+  "text": "...",
+  "start": 530.14,
+  "end": 531.72,
+  "prob": 0.915
+ },
+ {
+  "text": "...",
+  "start": 531.72,
+  "end": 533.24,
+  "prob": 0.934
+ }
+]

@@ -1,0 +1,73 @@
+[00:20.88-00:29.98] And the fun part is dragging rock. Drag your card to another column with the real mouse drag and then reorder it to the other side.
+[00:30.00-00:36.94] inside the column and it works. Then the extras, color labels, a due date in the past and see
+[00:36.94-00:42.88] the red overdue batch, a checklist with a progress bar, the side panel for editing a
+[00:42.88-00:55.60] card and if I refresh a page everything is still saved. Now here is our, now here is
+[00:55.60-01:09.86] how close it looks to the original. Now what it did not build and this part is very important.
+[01:10.42-01:16.12] So my app saves data only in this browser. So there is no logging, no real time sync
+[01:16.12-01:22.00] between users and no server or databases. The original then, the original weaken as
+[01:22.00-01:27.72] all of that and my version does not I did not ask for it in my prompts so
+[01:27.72-01:39.72] Claude did not build it so Claude did not build it so it is a working copy of
+[01:39.72-01:43.94] how the board behaves not a full replacement of the real product
+[01:48.98-01:55.22] Okay, so now the question I promised you is VR worth the hype?
+[01:56.08-01:58.28] Is reverse engineering worth the hype?
+[01:59.30-02:02.08] Is reverse engineering anything worth the hype?
+[02:02.66-02:04.54] My honest answer is yes.
+[02:04.88-02:06.02] It is worth trying.
+[02:06.46-02:12.08] For web apps going from I like this feature to I understand how it works and I have a
+[02:12.08-02:24.46] working version for web apps going from I like this feature to I understand how it works
+[02:24.46-02:30.68] and I have a working version in two prompts is really powerful and the evidence labels
+[02:30.68-02:36.86] observed inferred and not sure that is what I really like that is what I really like the
+[02:36.86-02:41.20] most but it is not magic.
+[02:42.34-02:43.46] But it is not magic.
+[02:44.10-02:45.22] Here are the downsides.
+[02:45.56-02:48.18] Number one is setup is not one click.
+[02:48.66-02:54.40] You need to install Node.js terminal, clock code and for testing the Chrome extension.
+[02:54.90-02:58.00] If you are a complete beginner, it will take some effort.
+[02:59.20-03:05.80] So number two is to number two is it studies what a website shows from the outside.
+[03:05.80-03:13.36] It cannot see the private code running on the company server.
+[03:13.88-03:16.44] So you get a behaviour not the full product.
+[03:16.98-03:19.70] Number 3 is the result depends on your prompt.
+[03:26.08-03:31.92] If you are vague you get a vague app and you still have to test the output yourself.
+[03:32.34-03:33.52] Do not trust it blindly.
+[03:33.52-03:41.54] 4. The tool changes very fast. Some steps may look different when you try it.
+[03:42.68-03:48.96] And please remember, use this only on apps you own, open source apps or when you have permission.
+[03:49.62-03:57.38] Learn from them and build your own. Do not copy other people's work.
+[03:57.38-04:02.92] So my verdict is that hype is mostly real for learning and prototyping
+[04:02.92-04:08.76] But treat it as a very smart assistant not a replacement for you build any app
+[04:08.76-04:13.08] Plus subscribe like and share now the best part guys
+[04:13.08-04:18.48] This method is not only for the can burn boards. You can also use the same
+[04:19.02-04:22.70] You can also use the same two steps for almost any
+[04:22.70-04:27.70] You can also use the same two steps for almost anywhere that you like.
+[04:28.04-04:31.88] Step 1. Ask Claude to study with RIA, reverse engineering.
+[04:32.64-04:37.26] Ask Claude to study with reverse engineering anything and report it with evidence.
+[04:38.04-04:43.96] Step 2. Ask Claude to build your own version. Match the look. Test it with the real browser.
+[04:44.96-04:52.46] a to do app, a to do app, a notes app, a habit tracker, a booking page, anything.
+[04:53.20-04:56.38] Just change the website link and the feature list in the prompts.
+[04:56.92-04:58.62] So here is my homework for you.
+[04:59.20-04:59.68] Pick one.
+[04:59.96-05:01.84] So here is my homework for you.
+[05:02.10-05:07.56] Pick one app, copy two prompts from the description below, change the link and try it today.
+[05:07.94-05:10.86] Then tell me in the comments below which app you reviewed.
+[05:10.86-05:12.78] I would love to see it.
+[05:12.92-05:15.42] If you like this video, please hit the like button.
+[05:15.84-05:16.56] It really helps.
+[05:17.00-05:23.60] If you know a friend who is learning AI or wants to build apps,
+[05:24.38-05:25.60] share this video with them.
+[05:26.26-05:27.92] And if you have not subscribed yet,
+[05:28.34-05:31.66] please subscribe to AI with Kalyan and press the bell icon.
+[05:33.78-05:36.16] And if you have not subscribed yet,
+[05:36.58-05:39.74] please subscribe to AI with Kalyan and press the bell icon.
+[05:46.74-05:51.28] If you like this video please hit the like button.
+[05:56.46-06:01.94] I would love to see it.
+[06:02.14-06:04.88] If you like this video please hit the like button.
+[06:05.18-06:05.86] It really helps.
+[06:05.86-06:11.30] If you know a friend who is learning AI or wants to build apps, share this video with
+[06:11.30-06:17.18] them and if you have not subscribed yet, please subscribe to AI with Kalyan and press the bell
+[06:17.18-06:17.56] icon.
+[06:18.06-06:21.68] So if you do not miss, so you do not miss the next video.
+[06:22.12-06:25.32] More AI tutorials are coming and I make them for you.
+[06:27.06-06:32.84] And if you want to see how I edit my videos using Claude, that video is right here.
+[06:39.30-06:44.32] Click on it and watch it next.
+[06:44.56-06:46.32] Thank you so much for watching.
+[06:46.74-06:47.98] I will see you in the next one.
+[06:48.36-06:48.64] Bye.
