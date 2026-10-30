@@ -1,6 +1,6 @@
 # REA v2: editing plan ("I gave REA one link…")
 
-**Status:** analysis done, waiting on Kalyan's answers (see "Open questions"). Nothing is cut yet.
+**Status:** plan approved in part (decisions below, 30 Oct). Two small questions still open. Nothing is cut yet.
 Script: [`REA-v2.script.md`](REA-v2.script.md). Footage: Drive folder **"Video -2"**
 (`1OUojrUDw0WQk_CU-tVKRjAexffHeyLTQ`), copied to `REA/media/` (git-ignored).
 Transcripts: `REA/transcripts/PXL_20261030_*/` (ElevenLabs Scribe, word timings).
@@ -110,7 +110,47 @@ script's 9:50.
    Transcription was done through the ElevenLabs connector (≈ 10.3K credits). Music and SFX need
    the key fixed, or the connector.
 
-## 5. Open questions (asked in chat)
+## 5. Decisions (Kalyan, 30 Oct)
+
+1. **Prompt:** cut the read-aloud. Keep "So I'm pasting this in", then the typed prompt window
+   scrolling section by section (MEASURE FIRST and TESTING highlighted).
+2. **Unscripted segment: add all useful parts** to section 10, after "Never copy their name, logo,
+   or images." and before "So my verdict". Order (`080129730`):
+   - "Don't copy someone's app and sell it or give it away under their name. That's against copyright
+     and intellectual property." `00:13.6–00:20.6` (drop "So number three", since one and two aren't in this footage)
+   - "REA's own page says, 'Use it only on software you own or you are allowed to examine.' So use it
+     to learn, use it for inspiration," `00:25.1–~00:33.3` + "And always add your own twist."
+     `00:44.8–00:46.6` (the "add your own risk" take is dropped)
+   - "That's why I used an open source Kanban app…new design." `00:47.2–00:57.4`
+   - Bonus tip: "And there is one bonus tip. You don't need REA every time…something like this?"
+     `~01:02.6–01:11.9` + "REA is better when you need to go deeper, like with desktop apps."
+     `01:14.5–~01:17.9`
+   - Opinion: "So here is my honest opinion…it's in the problem you solve." `~01:23.8–01:34.2`
+   - Loop: "So remember the loop, look at the app, understand it" `01:37.6–01:41.2` + "understand it
+     with proof, rebuild your own version. That's the whole idea. And the big shift is, AI isn't only
+     guessing now. It shows you proof." `01:43.3–01:54.6`
+   - **Dropped:** the duplicate like/share/subscribe, "comment desktop" and "watch this video next"
+     ending (`01:56–03:12`), plus the section-10 line "Use REA to learn, and to build your own
+     ideas" (now said better by the inserted lines).
+   - Visuals: copyright card (no logos), quote card of REA's own README line, "bonus tip" card with a
+     small-feature vs desktop-app split, the look → understand (with proof) → rebuild loop diagram.
+3. **"Twenty minutes": leave the audio as spoken.** The on-screen timer still shows the real 18m 17s
+   in section 7.
+4. **GitHub:** reuse the 28 Oct clip `Screen_Recording_2026-10-28_194316.mp4` (1024×552, 399K) with
+   zooms in a rounded card. Example cards are built from the script's numbers as written.
+
+**New estimated length:** about 11:00–11:30.
+
+## 5b. Still open
+
+1. Previous video for the end screen: is it the CLD_1279 "How I edit videos with Claude" video? Need
+   its title/URL for the card.
+2. Outro: use the on-camera outro (section 11) as recorded, rather than the usual voice-clone outro
+   over full-screen graphics?
+3. The 28 Oct GitHub clip isn't on this machine. Re-download it from the "REA" Drive folder (I can do
+   this myself).
+
+## 5c. Original open questions (answered above)
 
 1. Prompt section: keep him reading the prompt (over the typed prompt window) or cut to "I'm pasting
    this in" plus a short visual-only scroll?
