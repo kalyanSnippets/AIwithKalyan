@@ -2,10 +2,11 @@
 """Build a rough cut from an EDL (REA/edits/REA.edl.json) with FFmpeg.
 
   python3 scripts/rough-cut.py <edl.json> <rawDir> <transcriptsDir> <outDir> [--width 1920] [--ids S1-01,S1-02]
-                              [--pad 0.2] [--join 0.45] [--text]
+                              [--pad 0.2] [--join 0.45] [--text] [--words out.json]
 
 --pad/--join set the pause rule (gaps over --join become about 2x--pad). --text prints the kept words
-per entry and the length, without rendering. An entry's "hold": N keeps N s of footage after its last word.
+per entry and the length, without rendering. --words writes every kept word with its time in the cut
+(measured from the rendered parts, so it matches rough_cut.mp4). An entry's "hold": N keeps N s of footage after its last word.
 
 Each EDL range is snapped to words; pauses over ~0.45 s collapse to ~0.4 s; words inside "remove" windows are dropped.
 Writes <outDir>/parts/<id>.mp4, <outDir>/rough_cut.mp4, <outDir>/markers.json (long gaps = where screen recordings go).
@@ -19,12 +20,13 @@ ap.add_argument("--ids")
 ap.add_argument("--pad", type=float, default=0.2)
 ap.add_argument("--join", type=float, default=0.45)
 ap.add_argument("--text", action="store_true")
+ap.add_argument("--words")
 a = ap.parse_args()
 PAD, JOIN, LONG = a.pad, a.join, 2.0
 edl = json.load(open(a.edl))
 if a.ids: edl = [e for e in edl if e["id"] in a.ids.split(",")]
 os.makedirs(os.path.join(a.out, "parts"), exist_ok=True)
-words_cache, markers, parts = {}, [], []
+words_cache, markers, parts, spans = {}, [], [], []
 
 def pieces(e):
     w = words_cache.setdefault(e["clip"], json.load(open(f"{a.tr}/{e['clip']}/words.json")))
@@ -65,6 +67,7 @@ for e in edl:
     dst = os.path.join(a.out, "parts", e["id"] + ".mp4")
     dur = sum(t - s for s, t in ps)
     parts.append((e["id"], dst, dur))
+    spans.append((e, ps))
     if os.path.exists(dst): print("skip", e["id"], flush=True); continue
     cmd = ["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{base:.3f}", "-t", f"{end-base:.3f}", "-i", f"{a.raw}/{e['clip']}.mp4",
            "-filter_complex", v + ";" + cat, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
@@ -79,3 +82,18 @@ for i, d, du in parts: tl.append({"id": i, "start": round(t, 2), "dur": round(du
 json.dump({"parts": tl, "long_gaps": markers}, open(os.path.join(a.out, "markers.json"), "w"), indent=1)
 subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", os.path.join(a.out, "rough_cut.mp4")], check=True)
 print(f"rough cut {t:.1f}s ({t/60:.1f} min)")
+
+if a.words:
+    # map each kept word to cut time; part starts use the real (probed) part lengths
+    probe = lambda f: float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], capture_output=True, text=True).stdout)
+    out, t0 = [], 0.0
+    for (pid, dst, _), (e, ps) in zip(parts, spans):
+        w, cum = words_cache[e["clip"]], 0.0
+        for s0, t1 in ps:
+            for x in w:
+                if s0 <= x["start"] < t1 and not any(r[0] - 0.01 <= x["start"] < r[1] for r in e.get("remove", [])):
+                    out.append({"text": x["text"], "start": round(t0 + cum + x["start"] - s0, 3), "end": round(t0 + cum + min(x["end"], t1) - s0, 3), "part": pid, "section": e["section"]})
+            cum += t1 - s0
+        t0 += probe(dst)
+    json.dump(out, open(a.words, "w"), indent=0)
+    print(f"words: {len(out)} -> {a.words}")
