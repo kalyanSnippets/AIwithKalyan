@@ -1,0 +1,567 @@
+1
+00:00:00,140 --> 00:00:02,780
+Build a faithful clone of its board screen
+
+2
+00:00:02,860 --> 00:00:03,560
+in this folder.
+
+3
+00:00:04,019 --> 00:00:05,440
+Name it Rea Board.
+
+4
+00:00:06,320 --> 00:00:07,420
+Name it Rea Board.
+
+5
+00:00:07,800 --> 00:00:10,120
+Match the layout, colors, font, space.
+
+6
+00:00:12,660 --> 00:00:15,200
+Match the layout, colors, fonts, spacing,
+
+7
+00:00:15,320 --> 00:00:17,320
+and behavior as closely as you can.
+
+8
+00:00:17,880 --> 00:00:20,860
+Do not use Weekend's name, logo, or images
+
+9
+00:00:20,940 --> 00:00:23,560
+and write your own sample text and
+
+10
+00:00:23,720 --> 00:00:24,160
+artwork.
+
+11
+00:00:25,720 --> 00:00:26,980
+And I gave the stack tack.
+
+12
+00:00:34,620 --> 00:00:36,140
+And I, and I gave the stack
+
+13
+00:00:36,740 --> 00:00:39,320
+to use React nineteen plus, Vite, Library,
+
+14
+00:00:39,540 --> 00:00:42,800
+plain CSS, native HTML fry, drag and drop,
+
+15
+00:00:43,180 --> 00:00:45,280
+state in order, reduce file, everything
+
+16
+00:00:45,340 --> 00:00:46,620
+saved in local storage.
+
+17
+00:01:35,060 --> 00:01:35,860
+So if you want the,
+
+18
+00:01:36,740 --> 00:01:38,660
+so if you want the prompt, I'll give it--
+
+19
+00:01:39,800 --> 00:01:41,400
+So if you want the prompt, I'll give it in
+
+20
+00:01:41,440 --> 00:01:42,360
+the description below.
+
+21
+00:01:42,640 --> 00:01:42,700
+You--
+
+22
+00:01:43,660 --> 00:01:45,200
+If you-- So if you want the prompt, I'll
+
+23
+00:01:45,260 --> 00:01:45,420
+give--
+
+24
+00:01:46,280 --> 00:01:48,120
+So if you want the prompt, I'll give it in
+
+25
+00:01:48,160 --> 00:01:49,100
+the description below.
+
+26
+00:01:49,260 --> 00:01:50,040
+You can check it out.
+
+27
+00:02:02,580 --> 00:02:04,340
+So now why does this prompt work?
+
+28
+00:02:04,680 --> 00:02:05,660
+Four things, okay.
+
+29
+00:02:06,000 --> 00:02:07,500
+One, it measures first.
+
+30
+00:02:07,800 --> 00:02:08,919
+It don't guess it.
+
+31
+00:02:09,460 --> 00:02:11,620
+So Claude opens the real app and takes
+
+32
+00:02:11,720 --> 00:02:12,400
+real numbers.
+
+33
+00:02:12,880 --> 00:02:13,520
+Not look--
+
+34
+00:02:16,040 --> 00:02:18,720
+Not looks like blue, the exact color code.
+
+35
+00:02:19,340 --> 00:02:21,240
+Two is the stack is fixed.
+
+36
+00:02:21,720 --> 00:02:25,080
+It uses React, Vite, plain CSS, no random
+
+37
+00:02:25,140 --> 00:02:25,680
+libraries.
+
+38
+00:02:26,060 --> 00:02:28,440
+And the third one is I describe every part
+
+39
+00:02:28,480 --> 00:02:29,060
+of the screen.
+
+40
+00:02:29,520 --> 00:02:32,200
+Lists, cards, the card panels, drag and
+
+41
+00:02:32,260 --> 00:02:32,660
+drop.
+
+42
+00:02:32,980 --> 00:02:34,860
+And the fourth one is my favorite thing,
+
+43
+00:02:35,240 --> 00:02:35,860
+is testing.
+
+44
+00:02:36,220 --> 00:02:38,980
+I told Claude to tick an item only if you
+
+45
+00:02:39,060 --> 00:02:39,800
+saw it work.
+
+46
+00:02:40,280 --> 00:02:40,500
+Why?
+
+47
+00:02:41,000 --> 00:02:43,340
+Because AI loves to say, "Done right."
+
+48
+00:02:43,980 --> 00:02:45,320
+So we make it prove it.
+
+49
+00:02:45,820 --> 00:02:46,040
+Okay.
+
+50
+00:02:46,240 --> 00:02:48,360
+I press Enter, and now we wait.
+
+51
+00:03:02,940 --> 00:03:05,040
+So now Claude is working, and this part is
+
+52
+00:03:05,080 --> 00:03:05,880
+really interesting.
+
+53
+00:03:06,260 --> 00:03:08,520
+First, it checks the folder empty.
+
+54
+00:03:09,080 --> 00:03:09,340
+Then it,
+
+55
+00:03:10,080 --> 00:03:12,840
+then it uses RES browser tools to open the
+
+56
+00:03:12,920 --> 00:03:14,540
+live board and measure it.
+
+57
+00:03:15,100 --> 00:03:17,480
+It finds Chrome on my laptop and sets up a
+
+58
+00:03:17,540 --> 00:03:18,280
+small play...
+
+59
+00:03:19,140 --> 00:03:22,100
+It, it fi- it finds Chrome on my laptop
+
+60
+00:03:22,140 --> 00:03:23,160
+and sets up a play...
+
+61
+00:03:24,800 --> 00:03:26,180
+It finds Chrome on my lap...
+
+62
+00:03:27,380 --> 00:03:27,800
+Hmm.
+
+63
+00:03:30,420 --> 00:03:32,720
+It finds Chrome on my laptop and sets up a
+
+64
+00:03:32,780 --> 00:03:35,220
+small Playwright toolkit that's like a
+
+65
+00:03:35,280 --> 00:03:37,140
+robot that can control a browser.
+
+66
+00:03:37,640 --> 00:03:39,460
+That's like a robot that can control a
+
+67
+00:03:39,520 --> 00:03:39,920
+browser.
+
+68
+00:03:40,500 --> 00:03:41,920
+Then it starts writing code.
+
+69
+00:03:42,320 --> 00:03:45,240
+Look, file after file, the avatar, the
+
+70
+00:03:45,300 --> 00:03:47,880
+mini card, around one fifty-six lines.
+
+71
+00:03:48,400 --> 00:03:51,740
+The list, around two-ten lines.
+
+72
+00:03:52,020 --> 00:03:54,520
+A drag and drop hook, around fifty-- one
+
+73
+00:03:54,600 --> 00:03:55,640
+fifty-seven lines.
+
+74
+00:04:02,900 --> 00:04:04,160
+Then it builds the project.
+
+75
+00:04:07,560 --> 00:04:09,640
+And then it tests everything with a real
+
+76
+00:04:09,700 --> 00:04:11,620
+mouse in a real Chrome window.
+
+77
+00:04:19,120 --> 00:04:21,220
+The whole took-- The whole thing took
+
+78
+00:04:21,320 --> 00:04:22,600
+around eighteen minutes.
+
+79
+00:04:32,760 --> 00:04:33,460
+And it's done.
+
+80
+00:04:33,980 --> 00:04:36,320
+Claude says, "All fifty checks passed."
+
+81
+00:04:36,680 --> 00:04:39,160
+But wait, before I show you, I want you to
+
+82
+00:04:39,240 --> 00:04:40,960
+guess how close do--
+
+83
+00:04:43,480 --> 00:04:45,340
+I want you to guess, how close do you
+
+84
+00:04:45,380 --> 00:04:47,380
+think this copy is to the real app?
+
+85
+00:04:48,580 --> 00:04:50,880
+Fifty percent, eighty percent, ninety?
+
+86
+00:04:55,200 --> 00:04:57,880
+But wait, before I show you, I want you to
+
+87
+00:04:57,920 --> 00:05:00,480
+guess, how close do you think this copy is
+
+88
+00:05:00,540 --> 00:05:01,460
+to the real app?
+
+89
+00:05:02,060 --> 00:05:02,420
+Fifty,
+
+90
+00:05:03,060 --> 00:05:04,420
+eighty, ninety percent?
+
+91
+00:05:07,060 --> 00:05:08,260
+Tell me in the comments below.
+
+92
+00:05:08,620 --> 00:05:09,740
+I will read every guess.
+
+93
+00:05:10,060 --> 00:05:10,700
+Okay, ready?
+
+94
+00:05:10,800 --> 00:05:11,280
+Let's see.
+
+95
+00:05:21,580 --> 00:05:24,220
+But wait, before I show you, I want you to
+
+96
+00:05:24,280 --> 00:05:26,700
+guess, how close do you think this copy is
+
+97
+00:05:26,740 --> 00:05:27,620
+to the real app?
+
+98
+00:05:28,280 --> 00:05:30,400
+Fifty percent, eighty, ninety?
+
+99
+00:05:31,280 --> 00:05:32,680
+Just tell me in the comments below.
+
+100
+00:05:32,880 --> 00:05:34,120
+I will read every guess.
+
+101
+00:05:34,540 --> 00:05:34,800
+Okay.
+
+102
+00:05:37,040 --> 00:05:37,520
+Okay, ready?
+
+103
+00:05:38,140 --> 00:05:38,740
+Let's see it.
+
+104
+00:06:00,580 --> 00:06:02,320
+On the left, the original board.
+
+105
+00:06:02,700 --> 00:06:04,580
+On the right, our Rea board.
+
+106
+00:06:04,980 --> 00:06:05,680
+Same layout.
+
+107
+00:06:05,760 --> 00:06:06,200
+Let's see.
+
+108
+00:06:07,160 --> 00:06:08,100
+Look at the top bar,
+
+109
+00:06:08,780 --> 00:06:11,200
+blue with a blue menu and the four
+
+110
+00:06:11,280 --> 00:06:11,800
+avatars.
+
+111
+00:06:12,260 --> 00:06:13,660
+Below it, the orange strip.
+
+112
+00:06:14,080 --> 00:06:17,120
+And see this red four slash three and the
+
+113
+00:06:17,180 --> 00:06:17,740
+first list?
+
+114
+00:06:18,200 --> 00:06:19,720
+That's a work in progress limit.
+
+115
+00:06:20,140 --> 00:06:22,360
+It turns red when there are too many
+
+116
+00:06:22,400 --> 00:06:22,740
+cards.
+
+117
+00:06:23,120 --> 00:06:24,500
+Claude even copied that.
+
+118
+00:06:25,020 --> 00:06:28,080
+Now the cards, IDs like RB one, RB two,
+
+119
+00:06:28,220 --> 00:06:30,120
+colored labels, data badges,
+
+120
+00:06:31,020 --> 00:06:31,820
+date badges.
+
+121
+00:06:32,920 --> 00:06:35,720
+This one says, "Nine days ago." In red
+
+122
+00:06:35,780 --> 00:06:36,480
+checklist.
+
+123
+00:06:41,140 --> 00:06:43,700
+And these cover images drawn only with
+
+124
+00:06:43,760 --> 00:06:45,800
+CSS, no image files at all.
+
+125
+00:06:46,080 --> 00:06:46,980
+But hey l-
+
+126
+00:06:48,340 --> 00:06:50,460
+But hey, looking nice is not enough,
+
+127
+00:06:50,540 --> 00:06:50,760
+right?
+
+128
+00:06:51,240 --> 00:06:52,360
+Does it actually work?
+
+129
+00:06:52,740 --> 00:06:53,780
+Let me test it.
+
+130
+00:06:56,940 --> 00:06:57,900
+I click Add List.
+
+131
+00:06:58,480 --> 00:07:01,140
+I type Kanban Board, Add Works.
+
+132
+00:07:09,480 --> 00:07:10,400
+I click Add List.
+
+133
+00:07:10,720 --> 00:07:11,840
+I type Kanban Board,
+
+134
+00:07:13,100 --> 00:07:13,700
+Add Works.
+
+135
+00:07:14,240 --> 00:07:15,040
+Now Add Card.
+
+136
+00:07:16,120 --> 00:07:17,580
+Card creation is in progress.
+
+137
+00:07:18,100 --> 00:07:20,700
+Click on it, and the detail panel opens.
+
+138
+00:07:21,160 --> 00:07:21,520
+Label,
+
+139
+00:07:22,200 --> 00:07:24,600
+labels, members, date pickers,
+
+140
+00:07:26,600 --> 00:07:28,600
+cover colors, description, checklist.
+
+141
+00:07:29,100 --> 00:07:31,020
+I pick the platform and demo labels.
+
+142
+00:07:40,180 --> 00:07:41,160
+Now the big test is

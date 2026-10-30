@@ -1,0 +1,65 @@
+[00:00.14-00:05.44] Build a faithful clone of its board screen in this folder. Name it Rea Board.
+[00:06.32-00:10.12] Name it Rea Board. Match the layout, colors, font, space.
+[00:12.66-00:19.94] Match the layout, colors, fonts, spacing, and behavior as closely as you can. Do not use Weekend's name, logo,
+[00:20.12-00:24.16] or images and write your own sample text and artwork.
+[00:25.72-00:26.98] And I gave the stack tack.
+[00:34.62-00:36.14] And I, and I gave the stack
+[00:36.74-00:44.34] to use React nineteen plus, Vite, Library, plain CSS, native HTML fry, drag and drop, state in order, reduce
+[00:44.40-00:46.62] file, everything saved in local storage.
+[01:35.06-01:35.86] So if you want the,
+[01:36.74-01:38.66] so if you want the prompt, I'll give it--
+[01:39.80-01:42.70] So if you want the prompt, I'll give it in the description below. You--
+[01:43.66-01:45.42] If you-- So if you want the prompt, I'll give--
+[01:46.28-01:50.04] So if you want the prompt, I'll give it in the description below. You can check it out.
+[02:02.58-02:09.60] So now why does this prompt work? Four things, okay. One, it measures first. It don't guess it. So
+[02:09.68-02:13.52] Claude opens the real app and takes real numbers. Not look--
+[02:16.04-02:18.72] Not looks like blue, the exact color code.
+[02:19.34-02:26.90] Two is the stack is fixed. It uses React, Vite, plain CSS, no random libraries. And the third one
+[02:27.00-02:33.46] is I describe every part of the screen. Lists, cards, the card panels, drag and drop. And the fourth
+[02:33.54-02:39.44] one is my favorite thing, is testing. I told Claude to tick an item only if you saw it
+[02:39.50-02:43.34] work. Why? Because AI loves to say, "Done right."
+[02:43.98-02:48.36] So we make it prove it. Okay. I press Enter, and now we wait.
+[03:02.94-03:09.34] So now Claude is working, and this part is really interesting. First, it checks the folder empty. Then it,
+[03:10.08-03:16.22] then it uses RES browser tools to open the live board and measure it. It finds Chrome on my
+[03:16.28-03:18.28] laptop and sets up a small play...
+[03:19.14-03:23.16] It, it fi- it finds Chrome on my laptop and sets up a play...
+[03:24.80-03:26.18] It finds Chrome on my lap...
+[03:27.38-03:27.80] Hmm.
+[03:30.42-03:36.06] It finds Chrome on my laptop and sets up a small Playwright toolkit that's like a robot that can
+[03:36.10-03:43.14] control a browser. That's like a robot that can control a browser. Then it starts writing code. Look, file
+[03:43.22-03:52.50] after file, the avatar, the mini card, around one fifty-six lines. The list, around two-ten lines. A drag and
+[03:52.56-03:55.64] drop hook, around fifty-- one fifty-seven lines.
+[04:02.90-04:04.16] Then it builds the project.
+[04:07.56-04:11.62] And then it tests everything with a real mouse in a real Chrome window.
+[04:19.12-04:22.60] The whole took-- The whole thing took around eighteen minutes.
+[04:32.76-04:39.16] And it's done. Claude says, "All fifty checks passed." But wait, before I show you, I want you to
+[04:39.24-04:40.96] guess how close do--
+[04:43.48-04:47.38] I want you to guess, how close do you think this copy is to the real app?
+[04:48.58-04:50.88] Fifty percent, eighty percent, ninety?
+[04:55.20-05:00.48] But wait, before I show you, I want you to guess, how close do you think this copy is
+[05:00.54-05:01.46] to the real app?
+[05:02.06-05:02.42] Fifty,
+[05:03.06-05:04.42] eighty, ninety percent?
+[05:07.06-05:11.28] Tell me in the comments below. I will read every guess. Okay, ready? Let's see.
+[05:21.58-05:26.70] But wait, before I show you, I want you to guess, how close do you think this copy is
+[05:26.74-05:27.62] to the real app?
+[05:28.28-05:30.40] Fifty percent, eighty, ninety?
+[05:31.28-05:34.80] Just tell me in the comments below. I will read every guess. Okay.
+[05:37.04-05:37.52] Okay, ready?
+[05:38.14-05:38.74] Let's see it.
+[06:00.58-06:06.20] On the left, the original board. On the right, our Rea board. Same layout. Let's see.
+[06:07.16-06:08.10] Look at the top bar,
+[06:08.78-06:15.72] blue with a blue menu and the four avatars. Below it, the orange strip. And see this red four
+[06:15.78-06:22.04] slash three and the first list? That's a work in progress limit. It turns red when there are too
+[06:22.10-06:30.12] many cards. Claude even copied that. Now the cards, IDs like RB one, RB two, colored labels, data badges,
+[06:31.02-06:31.82] date badges.
+[06:32.92-06:36.48] This one says, "Nine days ago." In red checklist.
+[06:41.14-06:46.98] And these cover images drawn only with CSS, no image files at all. But hey l-
+[06:48.34-06:53.78] But hey, looking nice is not enough, right? Does it actually work? Let me test it.
+[06:56.94-07:01.14] I click Add List. I type Kanban Board, Add Works.
+[07:09.48-07:11.84] I click Add List. I type Kanban Board,
+[07:13.10-07:15.04] Add Works. Now Add Card.
+[07:16.12-07:21.52] Card creation is in progress. Click on it, and the detail panel opens. Label,
+[07:22.20-07:24.60] labels, members, date pickers,
+[07:26.60-07:31.02] cover colors, description, checklist. I pick the platform and demo labels.
+[07:40.18-07:41.16] Now the big test is

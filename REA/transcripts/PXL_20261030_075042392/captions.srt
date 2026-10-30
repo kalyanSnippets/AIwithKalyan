@@ -1,0 +1,447 @@
+1
+00:00:00,000 --> 00:01:01,740
+So
+
+2
+00:01:01,800 --> 00:01:03,600
+on the left, the original board.
+
+3
+00:01:03,960 --> 00:01:05,740
+On the right, our Rea board.
+
+4
+00:01:06,340 --> 00:01:07,880
+On the right, our Rea board.
+
+5
+00:01:08,360 --> 00:01:09,000
+Same layout.
+
+6
+00:01:09,400 --> 00:01:09,980
+Let's see.
+
+7
+00:01:10,320 --> 00:01:11,300
+Look at the top bar.
+
+8
+00:01:12,500 --> 00:01:13,120
+Same layout.
+
+9
+00:01:13,180 --> 00:01:13,660
+Let's see.
+
+10
+00:01:14,160 --> 00:01:15,140
+Look at the top block.
+
+11
+00:02:11,820 --> 00:02:13,300
+So no image files at all.
+
+12
+00:02:13,640 --> 00:02:15,320
+But hey, looking nice.
+
+13
+00:02:18,840 --> 00:02:20,660
+But hey, looking nice is not enough,
+
+14
+00:02:20,720 --> 00:02:20,960
+right?
+
+15
+00:02:21,420 --> 00:02:22,420
+Does it actually work?
+
+16
+00:02:22,800 --> 00:02:23,640
+Let me test it.
+
+17
+00:02:26,440 --> 00:02:27,740
+So I click Add List.
+
+18
+00:02:30,020 --> 00:02:31,240
+I type Kanban board,
+
+19
+00:02:32,980 --> 00:02:34,660
+Add, and it works now.
+
+20
+00:02:40,140 --> 00:02:41,020
+Now Add Card.
+
+21
+00:02:41,880 --> 00:02:43,360
+Card creation is in progress.
+
+22
+00:02:43,900 --> 00:02:46,460
+Clicking on it, and the detail pa-- and
+
+23
+00:02:46,480 --> 00:02:47,740
+the detail panel opens.
+
+24
+00:02:49,660 --> 00:02:52,160
+Labels, members, date pickers, cover.
+
+25
+00:03:03,080 --> 00:03:05,140
+But hey, looking nice is not enough,
+
+26
+00:03:05,220 --> 00:03:05,440
+right?
+
+27
+00:03:05,800 --> 00:03:06,940
+Does it actually work?
+
+28
+00:03:07,360 --> 00:03:08,280
+Let me test it.
+
+29
+00:03:10,400 --> 00:03:13,100
+I click Add List, I type Kanban board,
+
+30
+00:03:14,100 --> 00:03:15,920
+and then Add, and it works.
+
+31
+00:03:16,320 --> 00:03:17,200
+Now Add Card.
+
+32
+00:03:17,660 --> 00:03:19,120
+Card creation is in progress.
+
+33
+00:03:20,220 --> 00:03:22,620
+Click on it, and the detail panel opens.
+
+34
+00:03:23,220 --> 00:03:26,260
+And labels, members, date pickers, cover
+
+35
+00:03:26,300 --> 00:03:28,500
+colors, description, checklist.
+
+36
+00:03:29,120 --> 00:03:31,200
+I pick the platform and the demo labels,
+
+37
+00:03:31,940 --> 00:03:32,580
+choose Milo,
+
+38
+00:03:33,460 --> 00:03:34,300
+Chen as a member,
+
+39
+00:03:35,420 --> 00:03:37,440
+pick a sunset cover, close it.
+
+40
+00:03:38,360 --> 00:03:38,920
+Look at that.
+
+41
+00:03:39,100 --> 00:03:40,540
+The card has everything on it.
+
+42
+00:03:40,960 --> 00:03:42,880
+Now the big test, drag and drop.
+
+43
+00:03:43,420 --> 00:03:46,100
+I drag this card from Review to Done, and
+
+44
+00:03:46,160 --> 00:03:46,820
+then it works.
+
+45
+00:03:47,420 --> 00:03:49,880
+Another one into my new list, and it works
+
+46
+00:03:49,920 --> 00:03:50,100
+too.
+
+47
+00:03:50,880 --> 00:03:52,760
+I can even drag a whole list to a new
+
+48
+00:03:52,840 --> 00:03:53,140
+place.
+
+49
+00:03:53,780 --> 00:03:54,040
+Now
+
+50
+00:03:54,920 --> 00:03:55,700
+delete a card.
+
+51
+00:03:57,260 --> 00:03:58,160
+Now delete a card.
+
+52
+00:03:58,560 --> 00:04:00,500
+It asks, "Delete this card for good?"
+
+53
+00:04:01,300 --> 00:04:02,300
+With a Keep It button.
+
+54
+00:04:02,700 --> 00:04:03,340
+Nice touch.
+
+55
+00:04:03,840 --> 00:04:04,060
+And the--
+
+56
+00:04:04,720 --> 00:04:05,840
+and Add Sample List,
+
+57
+00:04:06,460 --> 00:04:07,680
+it only adds the list.
+
+58
+00:04:08,660 --> 00:04:09,940
+It does not delete my work.
+
+59
+00:04:10,280 --> 00:04:12,040
+Exactly what I asked in the prompt.
+
+60
+00:04:12,500 --> 00:04:14,160
+Honestly, I'm really impressed.
+
+61
+00:04:14,580 --> 00:04:16,079
+All of this from one prompt.
+
+62
+00:04:35,280 --> 00:04:37,380
+So is Rea really worth the hype?
+
+63
+00:04:38,460 --> 00:04:39,160
+So Rea
+
+64
+00:04:39,780 --> 00:04:40,840
+really worth the hype?
+
+65
+00:04:41,420 --> 00:04:42,240
+Let me be honest.
+
+66
+00:04:42,620 --> 00:04:43,520
+That's why you are here.
+
+67
+00:04:43,960 --> 00:04:45,160
+My answer is yes.
+
+68
+00:04:45,540 --> 00:04:46,540
+It's worth trying.
+
+69
+00:04:49,380 --> 00:04:50,480
+Three reasons for it.
+
+70
+00:04:50,820 --> 00:04:53,340
+One, it measures, it does not guess.
+
+71
+00:04:53,880 --> 00:04:54,960
+That's the big difference.
+
+72
+00:04:55,420 --> 00:04:56,480
+Two is it does--
+
+73
+00:04:57,360 --> 00:04:57,880
+Two is,
+
+74
+00:04:59,360 --> 00:04:59,980
+two is ju--
+
+75
+00:05:04,540 --> 00:05:05,980
+Number two is it ju--
+
+76
+00:05:06,840 --> 00:05:08,480
+Number two is it ju--
+
+77
+00:05:10,680 --> 00:05:13,300
+Number two is it doesn't just look nice.
+
+78
+00:05:13,600 --> 00:05:14,480
+It really works.
+
+79
+00:05:14,860 --> 00:05:17,100
+Drag and drop, saving, the card panel,
+
+80
+00:05:17,320 --> 00:05:17,800
+everything.
+
+81
+00:05:18,360 --> 00:05:19,260
+Three is,
+
+82
+00:05:21,240 --> 00:05:23,720
+three is Claude tested its own work.
+
+83
+00:05:24,180 --> 00:05:25,940
+Fifty checks with a real mouse.
+
+84
+00:05:26,180 --> 00:05:27,080
+But there is a but.
+
+85
+00:05:33,100 --> 00:05:35,560
+Three is Claude tested its own work.
+
+86
+00:05:35,960 --> 00:05:37,920
+Fifty checks with real mouse.
+
+87
+00:05:38,440 --> 00:05:39,980
+But there is a but.
+
+88
+00:05:40,640 --> 00:05:41,480
+Let me be fair.
+
+89
+00:05:42,040 --> 00:05:43,180
+Rea is not magic.
+
+90
+00:05:43,540 --> 00:05:46,040
+My prompt was very detailed, and I think
+
+91
+00:05:46,100 --> 00:05:47,820
+that's why the result was very good.
+
+92
+00:05:48,200 --> 00:05:50,320
+A lazy prompt gives you a lazy result.
+
+93
+00:05:50,720 --> 00:05:53,180
+Also, it took twenty minutes, and it
+
+94
+00:05:53,240 --> 00:05:55,680
+copied only one screen, the board screen,
+
+95
+00:05:56,100 --> 00:05:57,060
+not the full app.
+
+96
+00:05:58,280 --> 00:06:00,880
+And some people online are asking, "What
+
+97
+00:06:00,940 --> 00:06:03,960
+does Rea add on top of AI agent using
+
+98
+00:06:04,000 --> 00:06:06,220
+normal tools?" So the hype is running a
+
+99
+00:06:06,320 --> 00:06:07,600
+little ahead of proof.
+
+100
+00:06:08,120 --> 00:06:08,780
+One more thing.
+
+101
+00:06:09,680 --> 00:06:12,400
+One more thing, please, only clone apps
+
+102
+00:06:12,480 --> 00:06:14,580
+you're allowed to clone, like open source
+
+103
+00:06:14,700 --> 00:06:14,960
+ones.
+
+104
+00:06:15,180 --> 00:06:17,840
+Never copy their names, logos, or images.
+
+105
+00:06:18,280 --> 00:06:21,300
+Use Rea to learn and build your own ideas.
+
+106
+00:06:21,720 --> 00:06:22,720
+So my verdict.
+
+107
+00:06:23,340 --> 00:06:26,320
+So my verdict, try it, but do it in the
+
+108
+00:06:26,380 --> 00:06:26,900
+right way.
+
+109
+00:07:46,240 --> 00:07:46,680
+Samantha.
+
+110
+00:07:47,480 --> 00:07:48,060
+First month.
+
+111
+00:07:49,180 --> 00:07:50,560
+ఆమె pregnant అని తెలిసినప్పుడు.
+
+112
+00:07:51,020 --> 00:07:51,540
+ఒక్క నిమిషం

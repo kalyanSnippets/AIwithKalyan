@@ -1,0 +1,54 @@
+[00:00.00-01:05.74] So on the left, the original board. On the right, our Rea board.
+[01:06.34-01:11.30] On the right, our Rea board. Same layout. Let's see. Look at the top bar.
+[01:12.50-01:15.14] Same layout. Let's see. Look at the top block.
+[02:11.82-02:15.32] So no image files at all. But hey, looking nice.
+[02:18.84-02:23.64] But hey, looking nice is not enough, right? Does it actually work? Let me test it.
+[02:26.44-02:27.74] So I click Add List.
+[02:30.02-02:31.24] I type Kanban board,
+[02:32.98-02:34.66] Add, and it works now.
+[02:40.14-02:41.02] Now Add Card.
+[02:41.88-02:47.74] Card creation is in progress. Clicking on it, and the detail pa-- and the detail panel opens.
+[02:49.66-02:52.16] Labels, members, date pickers, cover.
+[03:03.08-03:08.28] But hey, looking nice is not enough, right? Does it actually work? Let me test it.
+[03:10.40-03:13.10] I click Add List, I type Kanban board,
+[03:14.10-03:19.12] and then Add, and it works. Now Add Card. Card creation is in progress.
+[03:20.22-03:28.50] Click on it, and the detail panel opens. And labels, members, date pickers, cover colors, description, checklist.
+[03:29.12-03:31.20] I pick the platform and the demo labels,
+[03:31.94-03:32.58] choose Milo,
+[03:33.46-03:34.30] Chen as a member,
+[03:35.42-03:37.44] pick a sunset cover, close it.
+[03:38.36-03:44.10] Look at that. The card has everything on it. Now the big test, drag and drop. I drag this
+[03:44.16-03:50.10] card from Review to Done, and then it works. Another one into my new list, and it works too.
+[03:50.88-03:53.14] I can even drag a whole list to a new place.
+[03:53.78-03:54.04] Now
+[03:54.92-03:55.70] delete a card.
+[03:57.26-04:00.50] Now delete a card. It asks, "Delete this card for good?"
+[04:01.30-04:04.06] With a Keep It button. Nice touch. And the--
+[04:04.72-04:05.84] and Add Sample List,
+[04:06.46-04:07.68] it only adds the list.
+[04:08.66-04:14.84] It does not delete my work. Exactly what I asked in the prompt. Honestly, I'm really impressed. All of
+[04:14.90-04:16.08] this from one prompt.
+[04:35.28-04:37.38] So is Rea really worth the hype?
+[04:38.46-04:39.16] So Rea
+[04:39.78-04:46.06] really worth the hype? Let me be honest. That's why you are here. My answer is yes. It's worth
+[04:46.10-04:46.54] trying.
+[04:49.38-04:56.48] Three reasons for it. One, it measures, it does not guess. That's the big difference. Two is it does--
+[04:57.36-04:57.88] Two is,
+[04:59.36-04:59.98] two is ju--
+[05:04.54-05:05.98] Number two is it ju--
+[05:06.84-05:08.48] Number two is it ju--
+[05:10.68-05:17.80] Number two is it doesn't just look nice. It really works. Drag and drop, saving, the card panel, everything.
+[05:18.36-05:19.26] Three is,
+[05:21.24-05:27.08] three is Claude tested its own work. Fifty checks with a real mouse. But there is a but.
+[05:33.10-05:39.98] Three is Claude tested its own work. Fifty checks with real mouse. But there is a but.
+[05:40.64-05:46.62] Let me be fair. Rea is not magic. My prompt was very detailed, and I think that's why the
+[05:46.66-05:53.18] result was very good. A lazy prompt gives you a lazy result. Also, it took twenty minutes, and it
+[05:53.24-05:57.06] copied only one screen, the board screen, not the full app.
+[05:58.28-06:05.14] And some people online are asking, "What does Rea add on top of AI agent using normal tools?" So
+[06:05.20-06:08.78] the hype is running a little ahead of proof. One more thing.
+[06:09.68-06:16.48] One more thing, please, only clone apps you're allowed to clone, like open source ones. Never copy their names,
+[06:16.66-06:22.72] logos, or images. Use Rea to learn and build your own ideas. So my verdict.
+[06:23.34-06:26.90] So my verdict, try it, but do it in the right way.
+[07:46.24-07:46.68] Samantha.
+[07:47.48-07:48.06] First month.
+[07:49.18-07:51.54] ఆమె pregnant అని తెలిసినప్పుడు. ఒక్క నిమిషం

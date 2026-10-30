@@ -15,4 +15,4 @@ REA/renders/                final exports (git-ignored)
 
 Run the root scripts with paths inside this folder, e.g.
 `npm run transcribe -- REA/media/raw/<file>` (move outputs into `REA/transcripts/<name>/`).
-Footage source: add the Google Drive folder ID here once known.
+Footage source: Drive "REA" (`1MLe7yMHPacIY1HnYQHwxdjoJOO2JMAkB`, 28 Oct shoot) and Drive "Video -2" (`1OUojrUDw0WQk_CU-tVKRjAexffHeyLTQ`, 30 Oct reshoot, see `edits/REA-v2.plan.md`).

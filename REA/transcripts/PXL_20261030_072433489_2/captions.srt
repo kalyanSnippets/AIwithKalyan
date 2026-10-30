@@ -1,0 +1,375 @@
+1
+00:00:41,560 --> 00:00:44,720
+This one tool has 400,000 stars on GitHub.
+
+2
+00:00:45,340 --> 00:00:46,280
+Four hundred thousand.
+
+3
+00:00:46,640 --> 00:00:47,320
+Crazy, right?
+
+4
+00:00:47,780 --> 00:00:49,960
+It's called Reverse Engineer Anything,
+
+5
+00:00:50,860 --> 00:00:51,840
+REA for short.
+
+6
+00:00:52,400 --> 00:00:54,520
+It's called REA-- It's called Reverse
+
+7
+00:00:54,640 --> 00:00:55,640
+Engineer Anything.
+
+8
+00:00:57,120 --> 00:00:59,880
+It let AI open any app, measure it, and
+
+9
+00:00:59,960 --> 00:01:00,560
+rebuild it.
+
+10
+00:01:00,860 --> 00:01:03,380
+And today, I gave it one link, and twenty
+
+11
+00:01:03,460 --> 00:01:05,060
+minutes later, it built this.
+
+12
+00:01:13,800 --> 00:01:15,680
+Can you tell which one is the real app?
+
+13
+00:01:16,500 --> 00:01:18,200
+Stay 'til the end because I'll show you
+
+14
+00:01:18,300 --> 00:01:20,360
+both side by side, and I'll tell you
+
+15
+00:01:20,400 --> 00:01:22,140
+honestly, is it worth the hype?
+
+16
+00:01:22,720 --> 00:01:23,360
+I am Kalyan.
+
+17
+00:01:23,460 --> 00:01:25,100
+Welcome to AI with Kalyan.
+
+18
+00:01:25,940 --> 00:01:26,560
+I am Kalyan.
+
+19
+00:01:26,720 --> 00:01:28,340
+Welcome to AI with Kalyan.
+
+20
+00:01:28,680 --> 00:01:29,360
+Okay, let's go.
+
+21
+00:01:41,300 --> 00:01:41,520
+Okay.
+
+22
+00:01:41,900 --> 00:01:43,860
+So first, what is REA?
+
+23
+00:01:44,420 --> 00:01:45,620
+This is a GitHub page.
+
+24
+00:01:45,920 --> 00:01:47,940
+Look at the stars, over four hundred
+
+25
+00:01:48,040 --> 00:01:50,520
+thousand, and the forks, over one hundred
+
+26
+00:01:50,580 --> 00:01:51,000
+thousand.
+
+27
+00:01:51,420 --> 00:01:54,300
+And it's free, and it has MIT license.
+
+28
+00:01:54,800 --> 00:01:55,860
+Anyone can use it.
+
+29
+00:01:56,040 --> 00:01:58,460
+It went from almost nothing to over three
+
+30
+00:01:58,500 --> 00:02:00,700
+hundred thousand stars in about two weeks.
+
+31
+00:02:03,860 --> 00:02:05,840
+And YouTube videos about it got,
+
+32
+00:02:06,740 --> 00:02:09,080
+and YouTube videos about it got millions
+
+33
+00:02:09,160 --> 00:02:09,539
+of views.
+
+34
+00:02:09,840 --> 00:02:11,920
+So why is everyone so crazy about it?
+
+35
+00:02:12,400 --> 00:02:15,120
+Basically, REA connects your AI agent,
+
+36
+00:02:15,300 --> 00:02:17,900
+like Claude Code or the Codex, to the real
+
+37
+00:02:17,940 --> 00:02:20,480
+reverse engineering tool that experts use.
+
+38
+00:02:20,900 --> 00:02:22,960
+So the AI can open an app.
+
+39
+00:02:23,980 --> 00:02:24,120
+So,
+
+40
+00:02:25,460 --> 00:02:26,740
+so the AI can open,
+
+41
+00:02:28,600 --> 00:02:31,340
+so the AI can open an app, look inside it,
+
+42
+00:02:31,520 --> 00:02:33,480
+trace how it works, and come back with the
+
+43
+00:02:33,520 --> 00:02:36,140
+proof, and everything runs locally on your
+
+44
+00:02:36,220 --> 00:02:36,960
+own computer.
+
+45
+00:02:45,300 --> 00:02:46,960
+Now, what are people actually building
+
+46
+00:02:47,000 --> 00:02:47,420
+with it?
+
+47
+00:02:48,200 --> 00:02:49,140
+Now, what are people--
+
+48
+00:02:50,200 --> 00:02:51,720
+Now, what are people actually building
+
+49
+00:02:51,760 --> 00:02:52,060
+with it?
+
+50
+00:02:52,620 --> 00:02:53,660
+One guy took a Steam,
+
+51
+00:02:54,900 --> 00:02:57,220
+one guy took a Steam game he owns and
+
+52
+00:02:57,320 --> 00:02:59,340
+turned it back into a C# code for the
+
+53
+00:02:59,420 --> 00:03:01,960
+Unity project in just thirty minutes.
+
+54
+00:03:02,460 --> 00:03:03,840
+The post got around four--
+
+55
+00:03:04,780 --> 00:03:06,680
+The post got around four hundred and sixty
+
+56
+00:03:06,760 --> 00:03:07,920
+thousand views, uh.
+
+57
+00:03:18,700 --> 00:03:19,720
+One guy took a Steam,
+
+58
+00:03:20,520 --> 00:03:22,500
+one guy took a Steam game he owns and
+
+59
+00:03:22,600 --> 00:03:24,560
+turned it back into a C# code for the
+
+60
+00:03:24,660 --> 00:03:25,500
+Unity project.
+
+61
+00:03:31,760 --> 00:03:34,020
+One guy took a Steam game he owns and
+
+62
+00:03:34,120 --> 00:03:36,180
+turned it back into a C# code for the,
+
+63
+00:03:37,780 --> 00:03:39,920
+and turned it back into a C# code for a
+
+64
+00:03:39,980 --> 00:03:42,200
+Unity project in just thirty minutes.
+
+65
+00:03:43,320 --> 00:03:45,140
+That post got around four hundred and
+
+66
+00:03:45,260 --> 00:03:46,300
+sixty thousand views.
+
+67
+00:03:46,660 --> 00:03:49,160
+Somebody pointed it at Blender, the famous
+
+68
+00:03:49,400 --> 00:03:51,460
+3D software, and it went through over
+
+69
+00:03:51,500 --> 00:03:53,420
+three hundred thousand functions in about
+
+70
+00:03:53,460 --> 00:03:54,220
+seventy minutes.
+
+71
+00:03:54,740 --> 00:03:55,500
+Another person,
+
+72
+00:03:56,120 --> 00:03:58,020
+another person rebuilt a sound function
+
+73
+00:03:58,100 --> 00:04:00,800
+from the old game DX Ball and matched all
+
+74
+00:04:00,840 --> 00:04:01,360
+the thousand,
+
+75
+00:04:04,440 --> 00:04:06,520
+and matched all three thousand two hundred
+
+76
+00:04:06,560 --> 00:04:09,340
+and five test cases, and matched all,
+
+77
+00:04:10,640 --> 00:04:12,460
+and matched all three thousand two hundred
+
+78
+00:04:12,500 --> 00:04:13,800
+and five test cases.
+
+79
+00:04:17,980 --> 00:04:20,160
+Another person rebuilt a sound function
+
+80
+00:04:20,220 --> 00:04:22,960
+from the old game DX Ball and matched all
+
+81
+00:04:23,000 --> 00:04:25,240
+three thousand two hundred and five text--
+
+82
+00:04:26,220 --> 00:04:27,720
+and matched two thousand two.
+
+83
+00:04:31,900 --> 00:04:32,960
+Another person built--
+
+84
+00:04:33,760 --> 00:04:35,200
+Another person rebuilt a f-
+
+85
+00:04:39,760 --> 00:04:41,880
+Another person rebuilt a sound function
+
+86
+00:04:41,940 --> 00:04:44,760
+from the old game DX Ball and matched all
+
+87
+00:04:44,780 --> 00:04:46,800
+three thousand two hundred and five test
+
+88
+00:04:46,880 --> 00:04:47,320
+cases.
+
+89
+00:04:49,560 --> 00:04:51,820
+And someone traced how the clipboard works
+
+90
+00:04:51,900 --> 00:04:53,020
+inside the Notion app.
+
+91
+00:04:53,560 --> 00:04:54,320
+It's wild, right?
+
+92
+00:04:54,800 --> 00:04:57,840
+So the big question is: Is it real or just
+
+93
+00:04:57,900 --> 00:04:58,280
+the hype?
+
+94
+00:04:58,820 --> 00:04:59,780
+So let's find out.

@@ -1,0 +1,61 @@
+[00:02.30-00:03.58] So what are we building today?
+[00:04.22-00:06.52] So see this app, it's a Kanban board.
+[00:07.36-00:14.60] It has list, it has list, cards, labels, due dates, checklist, drag and drops, lot of small details, right?
+[00:15.16-00:16.36] It's an open source
+[00:16.98-00:21.30] MIT license, and the demo is free to look at. My mission is simple.
+[00:24.34-00:25.58] To give the Claude code--
+[00:26.58-00:31.66] My mission is simple, to give the Claude code one link to this board and ask it to build
+[00:31.72-00:38.90] a copy. The same layout, same colors, same behavior, but one rule. Guys, we are not stealing anything. I
+[00:38.96-00:39.38] just told,
+[00:40.12-00:46.82] I just told Claude no name, no logos, no images from them. Our app has its own name. We
+[00:46.88-00:51.12] call it as Rea Board with our own sample data, so we can--
+[00:51.86-00:52.64] so can Rea,
+[00:53.76-00:55.70] so can Rea pulls this off?
+[00:56.38-00:56.96] Let's see.
+[01:01.40-01:05.50] And before we start, one simple request. If you want me to clone--
+[01:06.36-01:11.16] if you want me to do more videos like this, hit that subscribe button and like this video.
+[01:11.76-01:13.42] And it really helps this channel,
+[01:14.62-01:16.40] it really helps this channel grow.
+[01:19.20-01:20.38] Okay, then let's start.
+[01:31.22-01:34.22] I'm on Windows using PowerShell. First, go to...
+[01:39.06-01:40.78] I'm on Windows using PowerShell.
+[01:42.36-01:45.98] I'm on Windows using PowerShell. First, go to your Documents folder
+[01:46.76-01:47.76] and type this command.
+[01:49.82-01:51.78] Now make a new folder for this project.
+[01:54.34-01:56.92] To do so-- To do that, type this command
+[01:57.92-01:58.92] and go inside it.
+[02:02.02-02:04.52] Now the main step, to install Rea.
+[02:05.60-02:07.02] This just one prompt.
+[02:07.92-02:08.22] Let's
+[02:15.06-02:17.16] To install Rea, type this one r--
+[02:18.02-02:18.10] to,
+[02:19.40-02:20.62] to install Rea,
+[02:21.30-02:22.98] just type this one command.
+[02:24.30-02:26.86] To install Rea, just type this one command.
+[02:45.18-02:47.74] Then it asks, "Install the guided Rea skill?"
+[02:48.58-02:49.68] I say yes, and look,
+[02:50.92-02:56.94] Rea is ready for the local app analysis. Easy, no? So the next thing is we connect Rea to
+[02:57.02-02:57.68] Claude code.
+[02:59.38-03:01.12] So we add Claude MCP.
+[03:01.84-03:03.14] To do that, I'll give a,
+[03:04.06-03:06.50] to do that, I'll give a command. Just type that command.
+[03:26.56-03:31.54] To check Re-- uh, to check Rea is connected to the Claude code, type Claude
+[03:32.78-03:35.36] MCP list. Type Claude MCP list.
+[03:38.70-03:40.02] When you see it's connected...
+[03:48.64-03:49.42] And let's check it.
+[03:50.08-03:54.80] Claude MCP list. Boom, it's connected. Now start Claude code.
+[03:58.86-04:00.76] Claude first time, it asks for a theme.
+[04:01.38-04:05.38] I pick a dark mode. Then you sign in with your Claude account in your browser.
+[04:06.20-04:12.42] I'm using Opus five point five with auto mode on. Auto mode means Claude handles the permission by itself,
+[04:12.72-04:14.74] so I'm not clicking yes every time.
+[04:18.66-04:21.78] So I'm not clicking yes every two seconds. So nice.
+[04:31.88-04:36.92] Okay. Now the most important part, the prompt, and honestly, this is the real secret.
+[04:52.38-04:53.86] So I'm pasting this in.
+[04:56.20-05:06.10] So I'm just pasting this prompt. "Using what you learned from Rea analysis of this weekend demo board," and
+[05:06.14-05:06.66] the link.
+[05:09.24-05:10.20] I'm just saying it is--
+[05:10.96-05:17.32] I'm just saying, "Build a faithful clone of its board screen in this folder. Name it Rea Board.
+[05:18.18-05:22.10] Name it Rea Board. Match the layout, colors, fonts, space.
+[05:24.54-05:29.14] Match the layout, colors, fonts, spacing, and behavior as closely as you can.
+[05:29.76-05:36.04] Do not use Weekend's name, logo, or images, and write your own sample text and artwork."
+[05:37.58-05:38.82] And I gave this tag tag

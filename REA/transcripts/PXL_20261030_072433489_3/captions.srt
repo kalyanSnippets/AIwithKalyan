@@ -1,0 +1,407 @@
+1
+00:00:02,300 --> 00:00:03,580
+So what are we building today?
+
+2
+00:00:04,220 --> 00:00:06,520
+So see this app, it's a Kanban board.
+
+3
+00:00:07,360 --> 00:00:10,560
+It has list, it has list, cards, labels,
+
+4
+00:00:10,820 --> 00:00:13,440
+due dates, checklist, drag and drops, lot
+
+5
+00:00:13,480 --> 00:00:14,600
+of small details, right?
+
+6
+00:00:15,160 --> 00:00:16,360
+It's an open source
+
+7
+00:00:16,980 --> 00:00:19,480
+MIT license, and the demo is free to look
+
+8
+00:00:19,540 --> 00:00:19,700
+at.
+
+9
+00:00:20,200 --> 00:00:21,300
+My mission is simple.
+
+10
+00:00:24,340 --> 00:00:25,580
+To give the Claude code--
+
+11
+00:00:26,580 --> 00:00:28,680
+My mission is simple, to give the Claude
+
+12
+00:00:28,740 --> 00:00:31,460
+code one link to this board and ask it to
+
+13
+00:00:31,520 --> 00:00:32,220
+build a copy.
+
+14
+00:00:32,720 --> 00:00:34,780
+The same layout, same colors, same
+
+15
+00:00:34,840 --> 00:00:36,540
+behavior, but one rule.
+
+16
+00:00:36,880 --> 00:00:38,500
+Guys, we are not stealing anything.
+
+17
+00:00:38,840 --> 00:00:39,380
+I just told,
+
+18
+00:00:40,120 --> 00:00:43,280
+I just told Claude no name, no logos, no
+
+19
+00:00:43,360 --> 00:00:44,320
+images from them.
+
+20
+00:00:44,660 --> 00:00:46,180
+Our app has its own name.
+
+21
+00:00:46,700 --> 00:00:49,460
+We call it as Rea Board with our own
+
+22
+00:00:49,520 --> 00:00:51,120
+sample data, so we can--
+
+23
+00:00:51,860 --> 00:00:52,640
+so can Rea,
+
+24
+00:00:53,760 --> 00:00:55,700
+so can Rea pulls this off?
+
+25
+00:00:56,380 --> 00:00:56,960
+Let's see.
+
+26
+00:01:01,400 --> 00:01:03,720
+And before we start, one simple request.
+
+27
+00:01:04,080 --> 00:01:05,500
+If you want me to clone--
+
+28
+00:01:06,360 --> 00:01:08,220
+if you want me to do more videos like
+
+29
+00:01:08,280 --> 00:01:10,480
+this, hit that subscribe button and like
+
+30
+00:01:10,540 --> 00:01:11,160
+this video.
+
+31
+00:01:11,760 --> 00:01:13,420
+And it really helps this channel,
+
+32
+00:01:14,620 --> 00:01:16,400
+it really helps this channel grow.
+
+33
+00:01:19,200 --> 00:01:20,380
+Okay, then let's start.
+
+34
+00:01:31,220 --> 00:01:32,960
+I'm on Windows using PowerShell.
+
+35
+00:01:33,420 --> 00:01:34,220
+First, go to...
+
+36
+00:01:39,060 --> 00:01:40,780
+I'm on Windows using PowerShell.
+
+37
+00:01:42,360 --> 00:01:44,020
+I'm on Windows using PowerShell.
+
+38
+00:01:44,440 --> 00:01:45,980
+First, go to your Documents folder
+
+39
+00:01:46,760 --> 00:01:47,760
+and type this command.
+
+40
+00:01:49,820 --> 00:01:51,780
+Now make a new folder for this project.
+
+41
+00:01:54,340 --> 00:01:56,920
+To do so-- To do that, type this command
+
+42
+00:01:57,920 --> 00:01:58,920
+and go inside it.
+
+43
+00:02:02,020 --> 00:02:04,520
+Now the main step, to install Rea.
+
+44
+00:02:05,600 --> 00:02:07,020
+This just one prompt.
+
+45
+00:02:07,920 --> 00:02:08,220
+Let's
+
+46
+00:02:15,060 --> 00:02:17,160
+To install Rea, type this one r--
+
+47
+00:02:18,020 --> 00:02:18,100
+to,
+
+48
+00:02:19,400 --> 00:02:20,620
+to install Rea,
+
+49
+00:02:21,300 --> 00:02:22,980
+just type this one command.
+
+50
+00:02:24,300 --> 00:02:26,340
+To install Rea, just type this one
+
+51
+00:02:26,380 --> 00:02:26,860
+command.
+
+52
+00:02:45,180 --> 00:02:47,320
+Then it asks, "Install the guided Rea
+
+53
+00:02:47,400 --> 00:02:47,740
+skill?"
+
+54
+00:02:48,580 --> 00:02:49,680
+I say yes, and look,
+
+55
+00:02:50,920 --> 00:02:53,460
+Rea is ready for the local app analysis.
+
+56
+00:02:53,900 --> 00:02:54,300
+Easy, no?
+
+57
+00:02:54,840 --> 00:02:56,940
+So the next thing is we connect Rea to
+
+58
+00:02:57,020 --> 00:02:57,680
+Claude code.
+
+59
+00:02:59,380 --> 00:03:01,120
+So we add Claude MCP.
+
+60
+00:03:01,840 --> 00:03:03,140
+To do that, I'll give a,
+
+61
+00:03:04,060 --> 00:03:05,340
+to do that, I'll give a command.
+
+62
+00:03:05,460 --> 00:03:06,500
+Just type that command.
+
+63
+00:03:26,560 --> 00:03:28,980
+To check Re-- uh, to check Rea is
+
+64
+00:03:29,020 --> 00:03:31,540
+connected to the Claude code, type Claude
+
+65
+00:03:32,780 --> 00:03:33,540
+MCP list.
+
+66
+00:03:33,920 --> 00:03:35,360
+Type Claude MCP list.
+
+67
+00:03:38,700 --> 00:03:40,020
+When you see it's connected...
+
+68
+00:03:48,640 --> 00:03:49,420
+And let's check it.
+
+69
+00:03:50,080 --> 00:03:51,320
+Claude MCP list.
+
+70
+00:03:51,740 --> 00:03:52,880
+Boom, it's connected.
+
+71
+00:03:53,440 --> 00:03:54,800
+Now start Claude code.
+
+72
+00:03:58,860 --> 00:04:00,760
+Claude first time, it asks for a theme.
+
+73
+00:04:01,380 --> 00:04:02,420
+I pick a dark mode.
+
+74
+00:04:02,820 --> 00:04:04,640
+Then you sign in with your Claude account
+
+75
+00:04:04,700 --> 00:04:05,380
+in your browser.
+
+76
+00:04:06,200 --> 00:04:08,580
+I'm using Opus five point five with auto
+
+77
+00:04:08,640 --> 00:04:09,200
+mode on.
+
+78
+00:04:09,640 --> 00:04:11,320
+Auto mode means Claude handles the
+
+79
+00:04:11,360 --> 00:04:13,620
+permission by itself, so I'm not clicking
+
+80
+00:04:13,700 --> 00:04:14,740
+yes every time.
+
+81
+00:04:18,660 --> 00:04:20,880
+So I'm not clicking yes every two seconds.
+
+82
+00:04:21,300 --> 00:04:21,779
+So nice.
+
+83
+00:04:31,880 --> 00:04:32,100
+Okay.
+
+84
+00:04:32,220 --> 00:04:34,400
+Now the most important part, the prompt,
+
+85
+00:04:34,700 --> 00:04:36,920
+and honestly, this is the real secret.
+
+86
+00:04:52,380 --> 00:04:53,860
+So I'm pasting this in.
+
+87
+00:04:56,200 --> 00:04:57,760
+So I'm just pasting this prompt.
+
+88
+00:04:57,760 --> 00:05:01,960
+"Using
+
+89
+00:05:02,020 --> 00:05:04,500
+what you learned from Rea analysis of this
+
+90
+00:05:04,580 --> 00:05:06,660
+weekend demo board," and the link.
+
+91
+00:05:09,240 --> 00:05:10,200
+I'm just saying it is--
+
+92
+00:05:10,960 --> 00:05:13,300
+I'm just saying, "Build a faithful clone
+
+93
+00:05:13,380 --> 00:05:15,540
+of its board screen in this folder.
+
+94
+00:05:15,900 --> 00:05:17,320
+Name it Rea Board.
+
+95
+00:05:18,180 --> 00:05:19,320
+Name it Rea Board.
+
+96
+00:05:19,660 --> 00:05:22,100
+Match the layout, colors, fonts, space.
+
+97
+00:05:24,540 --> 00:05:27,060
+Match the layout, colors, fonts, spacing,
+
+98
+00:05:27,200 --> 00:05:29,140
+and behavior as closely as you can.
+
+99
+00:05:29,760 --> 00:05:32,120
+Do not use Weekend's name, logo, or
+
+100
+00:05:32,220 --> 00:05:35,500
+images, and write your own sample text and
+
+101
+00:05:35,600 --> 00:05:36,040
+artwork."
+
+102
+00:05:37,580 --> 00:05:38,820
+And I gave this tag tag

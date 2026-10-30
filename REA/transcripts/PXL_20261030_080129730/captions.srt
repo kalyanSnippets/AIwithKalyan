@@ -1,0 +1,403 @@
+1
+00:00:07,300 --> 00:00:08,100
+So number three,
+
+2
+00:00:11,160 --> 00:00:12,440
+don't copy someone else--
+
+3
+00:00:13,640 --> 00:00:16,100
+Don't copy someone's app and sell it or
+
+4
+00:00:16,180 --> 00:00:17,480
+give it away under their name.
+
+5
+00:00:17,920 --> 00:00:19,940
+That's against copyright and intellectual
+
+6
+00:00:20,040 --> 00:00:20,560
+property.
+
+7
+00:00:22,240 --> 00:00:22,580
+REA,
+
+8
+00:00:23,400 --> 00:00:24,420
+REA owns pa--
+
+9
+00:00:25,140 --> 00:00:27,800
+REA's own page says, "Use it only on
+
+10
+00:00:27,860 --> 00:00:30,260
+software you own or you are allowed to
+
+11
+00:00:30,320 --> 00:00:33,540
+examine." So use it to learn, use it for
+
+12
+00:00:33,660 --> 00:00:35,440
+inspiration, use it to learn.
+
+13
+00:00:36,300 --> 00:00:38,800
+So use it to learn, use it for inspiration
+
+14
+00:00:38,860 --> 00:00:41,820
+and always, and always add your own risk.
+
+15
+00:00:44,780 --> 00:00:46,600
+And always add your own twist.
+
+16
+00:00:47,240 --> 00:00:49,720
+That's why I used an open source Kanban
+
+17
+00:00:49,840 --> 00:00:52,600
+app, and I gave my app a new name and a
+
+18
+00:00:52,680 --> 00:00:53,380
+new design.
+
+19
+00:00:53,760 --> 00:00:56,620
+And one bonus tip, if you don't need REA
+
+20
+00:00:56,720 --> 00:00:57,440
+every time...
+
+21
+00:01:00,000 --> 00:01:01,720
+And there is one bonus t-- And there is
+
+22
+00:01:01,840 --> 00:01:02,560
+one bonus tip.
+
+23
+00:01:03,140 --> 00:01:05,099
+You don't need REA every time.
+
+24
+00:01:05,480 --> 00:01:07,940
+If you like only one small feature, just
+
+25
+00:01:08,040 --> 00:01:10,020
+ask Claude code, "How does this work?
+
+26
+00:01:10,400 --> 00:01:11,920
+How can I build something like this?"
+
+27
+00:01:12,540 --> 00:01:13,520
+REA is a better--
+
+28
+00:01:14,480 --> 00:01:16,720
+REA is better when you need to go deeper,
+
+29
+00:01:17,160 --> 00:01:18,420
+like with desktop apps.
+
+30
+00:01:18,800 --> 00:01:19,640
+So here's my ho--
+
+31
+00:01:21,980 --> 00:01:23,360
+Like with desktop apps.
+
+32
+00:01:23,900 --> 00:01:25,720
+So here is my honest opinion.
+
+33
+00:01:26,220 --> 00:01:28,760
+AI is a very good shortcut, but software
+
+34
+00:01:28,800 --> 00:01:30,140
+engineering is not dead.
+
+35
+00:01:30,620 --> 00:01:32,940
+The real value is not in the code, it's in
+
+36
+00:01:32,980 --> 00:01:34,220
+the problem you solve.
+
+37
+00:01:37,600 --> 00:01:40,040
+So remember the loop, look at the app,
+
+38
+00:01:40,440 --> 00:01:41,160
+understand it,
+
+39
+00:01:42,020 --> 00:01:42,620
+understand it,
+
+40
+00:01:43,340 --> 00:01:44,580
+understand it with proof,
+
+41
+00:01:45,360 --> 00:01:46,680
+rebuild your own version.
+
+42
+00:01:47,060 --> 00:01:48,160
+That's the whole idea.
+
+43
+00:01:48,440 --> 00:01:49,660
+And the big shift is,
+
+44
+00:01:50,900 --> 00:01:52,620
+AI isn't only guessing now.
+
+45
+00:01:52,960 --> 00:01:54,120
+It shows you proof.
+
+46
+00:01:54,400 --> 00:01:54,640
+If you--
+
+47
+00:01:56,340 --> 00:01:58,960
+If this video helps you, if this video
+
+48
+00:01:59,020 --> 00:02:01,360
+helps you, please do three things.
+
+49
+00:02:02,440 --> 00:02:02,860
+Please do,
+
+50
+00:02:03,540 --> 00:02:04,880
+please do three things.
+
+51
+00:02:05,400 --> 00:02:07,360
+Like the video, share it with one friend
+
+52
+00:02:07,380 --> 00:02:09,840
+who is learning AI, and subscribe to AI
+
+53
+00:02:09,880 --> 00:02:10,500
+With Kalyan.
+
+54
+00:02:10,820 --> 00:02:13,340
+For more sample AI workflows, it really
+
+55
+00:02:13,400 --> 00:02:14,560
+helps the channel grow.
+
+56
+00:02:24,080 --> 00:02:25,280
+If this video helps you,
+
+57
+00:02:25,920 --> 00:02:27,200
+please do three things.
+
+58
+00:02:27,600 --> 00:02:28,780
+Please do three things.
+
+59
+00:02:29,380 --> 00:02:31,340
+Like the video, share it with,
+
+60
+00:02:32,140 --> 00:02:32,380
+share,
+
+61
+00:02:33,200 --> 00:02:33,720
+share it with,
+
+62
+00:02:34,480 --> 00:02:36,100
+share it with one friend who is learning
+
+63
+00:02:36,200 --> 00:02:39,000
+AI, and subscribe to AI With Kalyan.
+
+64
+00:02:39,300 --> 00:02:40,200
+For more AI--
+
+65
+00:02:41,280 --> 00:02:43,920
+For more sample AI workflows, it really
+
+66
+00:02:43,980 --> 00:02:45,040
+helps the channel grow.
+
+67
+00:02:47,980 --> 00:02:50,640
+Now comment below which app feature do you
+
+68
+00:02:50,700 --> 00:02:52,320
+want AI to explain next?
+
+69
+00:02:52,700 --> 00:02:54,620
+I'll pick one comment from the next demo,
+
+70
+00:02:54,980 --> 00:02:56,980
+and if you want the desktop apps video,
+
+71
+00:02:57,400 --> 00:02:59,720
+comment "desktop." Now watch this video
+
+72
+00:02:59,820 --> 00:03:00,160
+next.
+
+73
+00:03:01,360 --> 00:03:03,600
+Now watch this video next on the screen.
+
+74
+00:03:06,420 --> 00:03:06,580
+And,
+
+75
+00:03:09,180 --> 00:03:10,960
+and now watch this video next on the
+
+76
+00:03:10,980 --> 00:03:12,320
+screen you see there.
+
+77
+00:03:56,300 --> 00:03:56,860
+Okay, guys.
+
+78
+00:03:57,260 --> 00:03:58,080
+That's it for today.
+
+79
+00:03:58,500 --> 00:04:00,840
+If you like this video, please subscribe
+
+80
+00:04:00,880 --> 00:04:01,940
+to AI With Kalyan.
+
+81
+00:04:02,380 --> 00:04:04,920
+I'm going to test more AI-- I'm going to
+
+82
+00:04:04,960 --> 00:04:07,240
+test more AI tools like this and show you
+
+83
+00:04:07,300 --> 00:04:08,200
+what really works.
+
+84
+00:04:08,520 --> 00:04:10,700
+Now comment time, which app should...
+
+85
+00:04:12,380 --> 00:04:13,120
+Now comment time.
+
+86
+00:04:13,540 --> 00:04:14,960
+Which app should I clone next?
+
+87
+00:04:15,340 --> 00:04:15,880
+Spotify?
+
+88
+00:04:16,120 --> 00:04:16,860
+A notes app?
+
+89
+00:04:17,000 --> 00:04:17,640
+Something else?
+
+90
+00:04:17,980 --> 00:04:20,200
+Tell me in the comments and don't forget
+
+91
+00:04:20,240 --> 00:04:21,160
+to share your guess.
+
+92
+00:04:21,519 --> 00:04:22,640
+How close was the copy?
+
+93
+00:04:28,820 --> 00:04:30,440
+And don't forget to share your guess.
+
+94
+00:04:30,620 --> 00:04:31,780
+How close was the copy?
+
+95
+00:04:32,320 --> 00:04:34,720
+Also, if you want to see how I edit my
+
+96
+00:04:34,780 --> 00:04:37,540
+videos using Claude, my previous video is
+
+97
+00:04:37,600 --> 00:04:38,200
+right there.
+
+98
+00:04:38,780 --> 00:04:40,780
+Click on it, I'm sure you'll like it.
+
+99
+00:04:41,200 --> 00:04:42,600
+Thank you so much for watching.
+
+100
+00:04:42,740 --> 00:04:43,700
+See you in the next one.
+
+101
+00:04:44,000 --> 00:04:44,280
+Bye.
