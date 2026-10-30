@@ -49,3 +49,27 @@ Already reachable: rea.tools.
 - Steam claim comes from the poster's own account, with no game named and no clip. Show the post and let it speak; no "verified" badges.
 - "300K in two weeks" has no single source. The headline wall shows the growth without stating the exact figure.
 - DX-Ball: rea.tools shows 3,205 behavior cases and 63 matching bytes for one sound-pan function, not the whole game.
+
+## Capture status (30 Oct, network set to Full)
+
+Captured to `media/broll/` (still + scroll clip, each logged in SOURCES.md):
+
+| File | Proves |
+|---|---|
+| `moelueker-youtube` | "went from 41 to 300K+ GitHub stars in 15 days" (Moe Lueker, 19 Oct): the "two weeks" line. Also lists the YouTube view counts |
+| `aitoolly-trending` | Live repo card: 412k stars, 103k forks, trending headline (13 Oct). Covers "forks over 100,000" without github.com |
+| `devto-248k` | "REA Hit 248K Stars" (dev.to) |
+| `hyperai-300k` | "Goes Viral, Nearly 300k GitHub Stars" (HyperAI) |
+| `devto-trending` | dev.to explainer: #1 trending 5 of 7 days |
+| `yt-search-rea` | YouTube results for "I Tested The Viral Reverse Engineering Repo" with thumbnails and counts |
+| `x-aiwarper-steam` | The Steam → Unity post (X's official embed view) |
+| `gittested-review` | Critic: "an agent with ordinary shell tools already explained the code almost perfectly, so REA added cost and no accuracy" |
+| `mindstudio-explainer` | "What the Viral REA MCP Actually Does" |
+| `rea-home`, `rea-showcase`, `rea-showcase-dxball`, `rea-showcase-notion` | REA site, DX-Ball 3,205 cases, Notion clipboard trace |
+
+Still blocked:
+
+- github.com web pages (this session only allows git through GitHub's proxy). Needed: live repo page (stars/forks), LICENSE, `yazzang-homelab/blender-agent-sdk` README (Blender 301,393 procedures / ~70 min), `pablodiazjorge/rea-lab` results. Kalyan to screen-record, or use the 28 Oct recording + aitoolly card.
+- medium.com, boards.wekan.team, scientificamerican.com: bot protection (403). Not worked around. Wekan is covered by Kalyan's recording; the Medium "140K in five days" headline is replaced by the 15-day line.
+
+`npm run broll` gained `--dismiss "<label>|<label>"` to close cookie banners and promos before capturing (dev.to: "Minimize billboard", MindStudio: "Accept all").

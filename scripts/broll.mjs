@@ -4,6 +4,7 @@
 // append the source to media/broll/SOURCES.md so every clip can be attributed.
 //
 //   npm run broll -- <url> [--name anthropic-news] [--seconds 6] [--width 1920] [--height 1080] [--still-only]
+//                         [--dismiss "Accept all|Close"]   click pop-up buttons (cookie banners, promos) before capturing
 import { appendFileSync, existsSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { die, ensureDir, ffmpeg, parseArgs, run, ROOT } from "./lib/common.mjs";
@@ -33,6 +34,11 @@ const res = await page.goto(url, { waitUntil: "load", timeout: 60_000 });
 if (!res?.ok()) die(`could not load ${url} (HTTP ${res?.status() ?? "no response"})`);
 await page.waitForLoadState("networkidle", { timeout: 10_000 }).catch(() => {}); // busy pages never idle
 await page.waitForTimeout(1500);
+// Close pop-ups that cover the page: each "|"-separated label is clicked if a visible button or link has it.
+for (const label of String(opts.dismiss ?? "").split("|").map((x) => x.trim()).filter(Boolean)) {
+  const target = page.getByRole("button", { name: label }).or(page.getByRole("link", { name: label })).or(page.getByLabel(label)).first();
+  if (await target.isVisible().catch(() => false)) { await target.click().catch(() => {}); await page.waitForTimeout(600); }
+}
 const title = await page.title();
 await page.screenshot({ path: still });
 
