@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA v2 part 1 (S1–S3)</title>
+<script src="vendor/gsap.min.js"></script>
+<script src="words.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg:#0B0B0D; --ink:#F6F1EC; --mute:rgba(246,241,236,.65); --coral:#E8775F; --coralHi:#FF9E88; --steel:#7F95AB; --ok:#5BD69A; --red:#FF5A5A; }
+html, body { margin:0; background:var(--bg); }
+#root { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg); font-family:"Inter",system-ui,sans-serif; color:var(--ink); }
+.fill { position:absolute; inset:0; }
+.ic svg { width:100%; height:100%; display:block; }
+.hot { color:var(--coral); }
+/* layers */
+#bd { z-index:0; opacity:0; }
+.bw { z-index:3; } #camwrap { z-index:4; } .chap { z-index:5; } .stk, .pin { z-index:6; } .cap { z-index:7; } .ins { z-index:9; } #flash { z-index:10; } #scan { z-index:5; }
+.blob { position:absolute; border-radius:50%; filter:blur(120px); }
+#grid { background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size:120px 120px; }
+/* camera */
+#camwrap { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; overflow:hidden; }
+#campush { position:absolute; inset:0; transform-origin:50% 36%; }
+#cam { position:absolute; inset:0; width:1920px; height:1080px; object-fit:cover; }
+#camring { position:absolute; inset:0; border:0 solid var(--coral); pointer-events:none; }
+/* captions */
+.cap { position:absolute; left:0; right:0; bottom:70px; display:flex; justify-content:center; gap:26px; visibility:hidden; }
+.w { display:inline-block; font-weight:800; font-size:84px; letter-spacing:-1px; text-transform:uppercase; color:#fff; -webkit-text-stroke:3px #000; paint-order:stroke fill; text-shadow:0 8px 0 rgba(0,0,0,.55), 0 14px 30px rgba(0,0,0,.5); opacity:0; }
+.w.on { color:var(--coral); }
+/* stickers */
+.stk { position:absolute; visibility:hidden; border-radius:36px; background:rgba(14,14,18,.76); border:2px solid rgba(255,255,255,.14); box-shadow:0 40px 90px rgba(0,0,0,.5); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:12px; padding:34px 30px; box-sizing:border-box; }
+.stk.c { background:var(--coral); color:#111; border-color:transparent; }
+.stk .ic { width:120px; height:120px; color:var(--coral); }
+.stk.c .ic { color:#111; }
+.stk .big { font-weight:800; font-size:92px; letter-spacing:-4px; line-height:1; }
+.stk .sm { font-weight:800; font-size:28px; letter-spacing:4px; color:var(--coral); line-height:1.25; }
+.stk.c .sm { color:#111; }
+.stk .src { font-weight:600; font-size:17px; color:var(--mute); letter-spacing:0; }
+.stk.c .src { color:rgba(0,0,0,.6); }
+.col { left:1440px; top:250px; width:420px; }
+.wall { left:1250px; top:110px; width:580px; }
+/* browser frames */
+.bw { position:absolute; left:160px; top:62px; width:1600px; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 50px 120px rgba(0,0,0,.65); border:1.5px solid rgba(255,255,255,.18); visibility:hidden; }
+.chrome { height:56px; background:#1C1D22; display:flex; align-items:center; gap:12px; padding:0 22px; }
+.dot { width:15px; height:15px; border-radius:50%; background:#3a3d44; }
+.url { margin-left:22px; flex:1; height:36px; border-radius:18px; background:#2A2C33; display:flex; align-items:center; gap:10px; padding:0 18px; font-weight:600; font-size:21px; color:rgba(255,255,255,.7); white-space:nowrap; overflow:hidden; }
+.url .ic { width:18px; height:18px; flex:none; color:rgba(255,255,255,.6); }
+.url b { color:#fff; }
+.cdate { padding:8px 16px; border-radius:10px; background:rgba(232,119,95,.18); color:var(--coralHi); font-weight:600; font-size:19px; white-space:nowrap; }
+.view { position:relative; width:1600px; height:900px; overflow:hidden; background:#fff; }
+.zoom { position:absolute; left:0; top:0; width:1600px; height:900px; transform-origin:0 0; }
+.zoom img, .zoom video { position:absolute; left:0; top:0; width:1600px; height:900px; object-fit:cover; display:block; }
+.hl { position:absolute; border:5px solid var(--coral); border-radius:12px; opacity:0; box-shadow:0 0 0 9999px rgba(0,0,0,0); }
+.ftag { position:absolute; z-index:6; left:160px; top:20px; padding:10px 20px; border-radius:12px; background:rgba(14,14,18,.86); border:1.5px solid rgba(255,255,255,.16); font-weight:600; font-size:22px; color:var(--mute); visibility:hidden; display:flex; gap:10px; align-items:center; }
+.ftag b { color:var(--ink); } .ftag .ic { width:22px; height:22px; color:var(--coral); }
+/* pins on the Wekan board */
+.pin { position:absolute; visibility:hidden; }
+.pin .d { position:absolute; left:-13px; top:-13px; width:26px; height:26px; border-radius:50%; background:var(--coral); box-shadow:0 0 0 8px rgba(232,119,95,.35); }
+.pin .l { position:absolute; left:22px; top:-62px; padding:10px 22px; border-radius:14px; background:#141418; color:#fff; font-weight:800; font-size:34px; white-space:nowrap; box-shadow:0 14px 30px rgba(0,0,0,.35); }
+/* chapters and hook takeover */
+.chap { position:absolute; inset:0; visibility:hidden; }
+.k1 { position:absolute; left:660px; width:1200px; font-weight:800; letter-spacing:-7px; line-height:.98; white-space:nowrap; }
+.big3 { display:block; font-weight:800; font-size:190px; line-height:.98; letter-spacing:-7px; white-space:nowrap; opacity:0; }
+.imp { position:absolute; height:8px; border-radius:4px; background:var(--coral); opacity:0; transform:scaleX(0); transform-origin:left; }
+#rea { position:absolute; left:560px; top:120px; width:1300px; height:840px; display:flex; flex-direction:column; align-items:center; justify-content:center; visibility:hidden; z-index:5; }
+#reatxt { font-weight:800; font-size:440px; line-height:1; letter-spacing:-16px; }
+#reatxt span { display:inline-block; }
+#reabar { width:700px; height:12px; border-radius:6px; background:var(--coral); margin:-10px 0 30px; }
+#reasub { font-weight:600; font-size:46px; color:var(--mute); }
+.ring { position:absolute; left:50%; top:50%; width:1500px; height:1500px; margin:-750px 0 0 -750px; border-radius:50%; border:6px solid var(--coral); opacity:0; }
+.pt { position:absolute; left:1210px; top:500px; width:16px; height:16px; background:var(--coral); opacity:0; }
+.rgb { position:absolute; left:560px; top:120px; width:1300px; height:840px; display:flex; align-items:center; justify-content:center; mix-blend-mode:screen; opacity:0; font-weight:800; font-size:440px; letter-spacing:-16px; z-index:5; }
+#scan { background:repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 2px, transparent 2px 6px); opacity:0; }
+#flash { background:#fff; opacity:0; }
+.ins { position:absolute; left:0; top:0; width:1920px; height:1080px; }
+/* mission scene */
+#term { position:absolute; left:640px; top:230px; width:1180px; height:520px; border-radius:24px; background:#101114; border:1.5px solid rgba(255,255,255,.14); box-shadow:0 40px 100px rgba(0,0,0,.6); overflow:hidden; }
+.mono { font-family:"DejaVu Sans Mono","Consolas",monospace; }
+.tile { position:absolute; width:330px; height:130px; white-space:nowrap; border-radius:26px; background:rgba(255,255,255,.07); border:2px solid rgba(255,255,255,.13); display:flex; align-items:center; gap:18px; padding:0 26px; box-sizing:border-box; font-weight:800; font-size:34px; }
+.tile .ic { width:60px; height:60px; color:var(--coral); flex:none; }
+.xrow { position:absolute; left:1240px; top:140px; display:flex; gap:28px; }
+.xi { position:relative; width:170px; height:200px; border-radius:30px; background:rgba(14,14,18,.78); border:2px solid rgba(255,255,255,.14); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; font-weight:800; font-size:26px; letter-spacing:2px; visibility:hidden; }
+.xi .ic { width:84px; height:84px; color:var(--ink); }
+.xi .xx { position:absolute; inset:-10px; color:var(--red); opacity:0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-v2-part1" data-start="0" data-width="1920" data-height="1080" data-duration="148.4">
+  <div id="bd" class="fill">
+    <div class="blob" id="b1" style="width:900px;height:900px;left:-250px;top:-350px;background:rgba(232,119,95,.28)"></div>
+    <div class="blob" id="b2" style="width:800px;height:800px;right:-250px;bottom:-380px;background:rgba(127,149,171,.2)"></div>
+    <div id="grid" class="fill"></div>
+  </div>
+
+  <!-- ===== browser frames (real proofs) ===== -->
+  <div class="bw" id="bgh" style="top:150px;height:800px"><div class="view" style="height:800px"><div class="zoom" style="height:800px">
+    <video id="ghv" class="clip" src="media/gh.mp4" muted playsinline data-start="32.74" data-duration="6.56" data-media-start="0" data-track-index="2" style="height:800px"></video>
+    <div class="hl" id="hlStar" style="left:1330px;top:360px;width:165px;height:48px"></div>
+    <div class="hl" id="hlFork" style="left:1156px;top:360px;width:170px;height:48px"></div>
+  </div></div></div>
+  <div class="ftag" id="tgh"><span class="ic">{{i:play}}</span>Kalyan's screen recording · <b>github.com/morluto/rea</b> · 28 Oct 2026</div>
+
+  <div class="bw" id="bmoe"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>moelueker.com</b>/blog/reverse-engineer-anything</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view"><div class="zoom"><img src="img/moe.png"><div class="hl" id="hlMoe" style="left:262px;top:390px;width:740px;height:74px"></div></div></div></div>
+
+  <div class="bw" id="byt"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>youtube.com</b>/results?search_query=I+Tested+The+Viral+Reverse+Engineering+Repo</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view"><div class="zoom"><img src="img/yt.png"><div class="hl" id="hlYt" style="left:800px;top:106px;width:380px;height:56px"></div></div></div></div>
+
+  <div class="bw" id="bhow"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>rea.tools</b>/#what-is-re</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view"><div class="zoom"><img src="img/reahow.png">
+      <div class="hl" id="hlH1" style="left:196px;top:428px;width:400px;height:80px"></div>
+      <div class="hl" id="hlH2" style="left:600px;top:428px;width:400px;height:80px"></div>
+      <div class="hl" id="hlH3" style="left:1006px;top:428px;width:400px;height:80px"></div></div></div></div>
+
+  <div class="bw" id="bx"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>x.com</b>/AIWarper/status/2109060856466264566</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view" style="background:#F7F9F9"><div class="zoom"><img src="img/xpost.png"><div class="hl" id="hlX" style="left:10px;top:66px;width:492px;height:206px"></div></div></div></div>
+
+  <div class="bw" id="bdx"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>rea.tools</b>/showcase/dx-ball/</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view"><div class="zoom" id="zdx"><div id="dxscroll" class="fill"><img src="img/dxtop.png" style="top:0"><img src="img/dxball.png" style="top:900px"></div>
+      <div class="hl" id="hlDx" style="left:503px;top:430px;width:386px;height:37px"></div></div></div></div>
+
+  <div class="bw" id="bno"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>rea.tools</b>/showcase/notion/</div><div class="cdate">Source · captured 30 Oct 2026</div></div>
+    <div class="view"><div class="zoom"><img src="img/notion.png"><div class="hl" id="hlNo" style="left:270px;top:262px;width:1060px;height:228px"></div></div></div></div>
+
+  <div class="bw" id="bwk" style="top:150px"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>boards.wekan.team</b>/b/D2SzJKZDS4Z48yeQH/wekan-r-open-source-kanban-board-with-mit-license</div><div class="cdate">Kalyan's recording · 30 Oct 2026</div></div>
+    <div class="view" style="height:750px"><div class="zoom" id="zwk" style="height:750px"><img src="img/wekan.png" style="height:750px">
+      <div id="ghost" style="position:absolute;left:968px;top:240px;width:300px;height:110px;border-radius:10px;border:4px dashed var(--coral);background:rgba(232,119,95,.12);opacity:0"></div>
+      <div class="ic" id="hand" style="position:absolute;left:1080px;top:300px;width:64px;height:64px;color:#111;opacity:0">{{i:mouse-pointer-click}}</div>
+      <div class="pin" id="p1" style="left:100px;top:125px"><div class="d"></div><div class="l">Lists</div></div>
+      <div class="pin" id="p2" style="left:620px;top:200px"><div class="d"></div><div class="l">Cards</div></div>
+      <div class="pin" id="p3" style="left:560px;top:358px"><div class="d"></div><div class="l">Labels</div></div>
+      <div class="pin" id="p4" style="left:90px;top:470px"><div class="d"></div><div class="l">Due dates</div></div>
+      <div class="pin" id="p5" style="left:700px;top:585px"><div class="d"></div><div class="l">Checklists</div></div>
+      <div class="pin" id="p6" style="left:1060px;top:240px"><div class="d"></div><div class="l">Drag &amp; drop</div></div>
+    </div></div></div>
+  <div class="stk c" id="sKanban" style="left:160px;top:50px;width:auto;flex-direction:row;padding:14px 30px;border-radius:999px;gap:16px"><span class="ic" style="width:44px;height:44px">{{i:layout-grid}}</span><span style="font-weight:800;font-size:44px">A Kanban board</span></div>
+
+  <div class="bw" id="brb" style="top:150px"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>localhost:5173</b></div><div class="cdate">Our own app · REA Board</div></div>
+    <div class="view" style="height:750px"><div class="zoom" style="height:750px"><img src="img/reaboard.png" style="height:750px">
+      <div class="hl" id="hlRb1" style="left:6px;top:4px;width:300px;height:46px"></div>
+      <div class="hl" id="hlRb2" style="left:8px;top:262px;width:262px;height:46px"></div></div></div></div>
+
+  <!-- ===== camera ===== -->
+  <div id="camwrap"><div id="campush">
+    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="148.4" data-media-start="0" data-track-index="1"></video>
+  </div><div id="camring"></div></div>
+
+  <!-- ===== S1 hook ===== -->
+  <div class="stk" id="s400" style="left:1250px;top:120px;width:560px;height:470px;border-radius:40px">
+    <div class="ic" id="s400star" style="width:180px;height:180px">{{i:star}}</div>
+    <div class="big" id="s400n" style="font-size:120px;letter-spacing:-5px">0</div>
+    <div class="sm" style="font-size:34px;letter-spacing:6px">STARS ON GITHUB</div></div>
+  <div class="ic" id="flame" style="position:absolute;left:1430px;top:170px;width:300px;height:300px;color:var(--coral);visibility:hidden;z-index:6;filter:drop-shadow(0 20px 40px rgba(232,119,95,.45))">{{i:flame}}</div>
+  <div class="chap" id="take"><div id="words" style="position:absolute;left:660px;top:150px;width:1200px"><span class="big3">REVERSE</span><span class="big3">ENGINEER</span><span class="big3 hot">ANYTHING</span></div>
+    <div class="imp" id="imp1" style="left:640px;top:345px;width:1100px"></div></div>
+  <div class="rgb" id="rgbR" style="color:#ff6a4d">REA</div><div class="rgb" id="rgbB" style="color:#7FB7FF">REA</div>
+  <div id="rea"><div class="ring" id="r1"></div><div class="ring" id="r2"></div><div class="ring" id="r3"></div>
+    <div id="reatxt"><span>R</span><span>E</span><span class="hot">A</span></div><div id="reabar"></div><div id="reasub">Reverse Engineer Anything · for short</div></div>
+  <div id="pts" class="fill" style="visibility:hidden;z-index:6"></div>
+
+  <div class="stk" id="sSide" style="left:1300px;top:150px;width:480px"><div class="ic">{{i:columns-2}}</div><div class="sm">BOTH, SIDE BY SIDE</div><div class="src">at the end of the video</div></div>
+  <div class="stk c" id="sHype" style="left:1300px;top:150px;width:480px"><div class="ic" id="sHypeIc">{{i:scale}}</div><div class="big" style="font-size:66px;letter-spacing:-2px">Worth the hype?</div></div>
+  <div class="stk" id="sName" style="left:1180px;top:140px;width:640px;flex-direction:row;gap:30px;padding:34px 40px;justify-content:flex-start;text-align:left">
+    <div style="width:120px;height:120px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;flex:none"><span class="ic" style="width:64px;height:64px;color:#111">{{i:play}}</span></div>
+    <div><div class="big" style="font-size:80px">Kalyan</div><div class="sm" style="margin-top:10px">AI WITH KALYAN</div></div></div>
+
+  <!-- ===== S2 ===== -->
+  <div class="chap" id="ch1"><div style="position:absolute;left:660px;top:250px;font-weight:800;font-size:60px;letter-spacing:8px;color:var(--mute)" id="ch1a">FIRST,</div>
+    <div class="k1" id="ch1b" style="top:330px;font-size:230px">WHAT IS</div><div class="k1 hot" id="ch1c" style="top:560px;font-size:300px">REA?</div></div>
+  <div class="stk" id="s399" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:star}}</div><div class="big" id="s399n">0</div><div class="sm">STARS</div></div>
+  <div class="stk c" id="s100" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:git-fork}}</div><div class="big">100K</div><div class="sm">FORKS</div></div>
+  <div id="freeStack" style="position:absolute;left:1260px;top:150px;width:600px;display:flex;flex-direction:column;gap:26px;z-index:6">
+    <div class="stk c" id="sFree" style="position:relative;flex-direction:row;padding:26px 36px;gap:22px;justify-content:flex-start"><span class="ic" style="width:70px;height:70px">{{i:gift}}</span><span class="big" style="font-size:70px">FREE</span></div>
+    <div class="stk" id="sMit" style="position:relative;flex-direction:row;padding:26px 36px;gap:22px;justify-content:flex-start"><span class="ic" style="width:70px;height:70px">{{i:scroll-text}}</span><span class="big" style="font-size:62px;white-space:nowrap">MIT license</span></div>
+    <div class="stk" id="sAny" style="position:relative;flex-direction:row;padding:26px 36px;gap:22px;justify-content:flex-start"><span class="ic" style="width:70px;height:70px">{{i:users}}</span><span class="big" style="font-size:50px;letter-spacing:-2px;white-space:nowrap">Anyone can use it</span></div></div>
+  <div class="stk" id="s15" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:star}}</div><div class="big" id="s15n" style="font-size:84px">41</div><div class="sm">STARS IN<br>15 DAYS</div></div>
+  <div class="stk c" id="s35" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:eye}}</div><div class="big">3.5M</div><div class="sm">VIEWS</div><div class="src">Low Level on YouTube</div></div>
+  <div class="ic" id="spark" style="position:absolute;left:1450px;top:170px;width:280px;height:280px;color:var(--coral);visibility:hidden;z-index:6;filter:drop-shadow(0 20px 40px rgba(232,119,95,.45))">{{i:sparkles}}</div>
+  <video class="clip ins" id="insNode" src="media/r_NodeMap.mp4" muted playsinline data-start="54.0" data-duration="8.3" data-media-start="0" data-track-index="3"></video>
+  <div class="stk c" id="sProof" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" style="font-size:72px">PROOF</div><div class="sm">EVERY FINDING<br>COMES WITH IT</div></div>
+  <div class="stk" id="sLocal" style="left:1300px;top:130px;width:500px"><div style="position:relative;width:170px;height:150px"><span class="ic" style="position:absolute;inset:0;width:170px;height:150px">{{i:laptop}}</span><span class="ic" id="lockIc" style="position:absolute;left:58px;top:28px;width:54px;height:54px;color:var(--ink)">{{i:lock-keyhole}}</span></div><div class="big" style="font-size:64px;letter-spacing:-2px">Runs locally</div><div class="sm">ON YOUR OWN COMPUTER</div></div>
+  <div id="teaser" style="position:absolute;left:1290px;top:200px;display:grid;grid-template-columns:repeat(2,240px);gap:24px;z-index:6">
+    <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:gamepad-2}}</div><div class="sm" style="font-size:22px">GAMES</div></div>
+    <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:box}}</div><div class="sm" style="font-size:22px">3D APPS</div></div>
+    <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:volume-2}}</div><div class="sm" style="font-size:22px">SOUND CODE</div></div>
+    <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:clipboard}}</div><div class="sm" style="font-size:22px">DESKTOP APPS</div></div></div>
+  <div class="stk c" id="s30" style="left:1440px;top:300px;width:420px"><div class="ic" id="s30ic">{{i:clock}}</div><div class="big">30 MIN</div><div class="sm">STEAM GAME → C#</div></div>
+  <div class="stk" id="s460" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:eye}}</div><div class="big">~460K</div><div class="sm">VIEWS</div><div class="src">count via awesome-reverse-engineer-anything</div></div>
+  <video class="clip ins" id="insBl" src="media/r_Blender.mp4" muted playsinline data-start="83.3" data-duration="7.86" data-media-start="0" data-track-index="3"></video>
+  <div class="stk c" id="s3205" style="left:1440px;top:290px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" id="s3205n">0</div><div class="sm">TEST CASES<br>MATCHED</div></div>
+  <div class="stk" id="sClip" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:clipboard}}</div><div class="big" style="font-size:52px;letter-spacing:-1px">Copy → IPC → Clipboard</div><div class="sm">TRACED</div></div>
+  <div class="ic" id="zap" style="position:absolute;left:1450px;top:170px;width:280px;height:280px;color:var(--coral);visibility:hidden;z-index:6">{{i:zap}}</div>
+  <div class="stk" id="sReal" style="left:1260px;top:130px;width:580px;flex-direction:row;gap:0;padding:0;overflow:hidden">
+    <div id="realL" style="flex:1;height:260px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:70px;background:var(--ok);color:#111">REAL</div>
+    <div id="realR" style="flex:1;height:260px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:70px;background:var(--coral);color:#111">HYPE</div></div>
+  <div class="ic" id="srch" style="position:absolute;left:1480px;top:440px;width:160px;height:160px;color:var(--ink);visibility:hidden;z-index:6;filter:drop-shadow(0 10px 30px rgba(0,0,0,.5))">{{i:search}}</div>
+
+  <!-- ===== S3 ===== -->
+  <div class="chap" id="ch2"><div class="ic" id="ch2ic" style="position:absolute;left:700px;top:180px;width:220px;height:220px;color:var(--coral)">{{i:target}}</div>
+    <div class="k1" id="ch2a" style="top:430px;font-size:190px">TODAY'S</div><div class="k1 hot" id="ch2b" style="top:620px;font-size:190px">MISSION</div></div>
+  <div id="wkStack" style="position:absolute;left:1500px;top:200px;width:360px;display:flex;flex-direction:column;gap:24px;z-index:6">
+    <div class="stk" id="sOs" style="position:relative;padding:24px;gap:8px"><span class="ic" style="width:64px;height:64px">{{i:code}}</span><span class="sm">OPEN SOURCE</span></div>
+    <div class="stk c" id="sMit2" style="position:relative;padding:24px;gap:8px"><span class="ic" style="width:64px;height:64px">{{i:scroll-text}}</span><span class="sm">MIT LICENSE</span></div>
+    <div class="stk" id="sDemo" style="position:relative;padding:24px;gap:8px"><span class="ic" style="width:64px;height:64px">{{i:eye}}</span><span class="sm">FREE DEMO</span></div></div>
+  <div class="chap" id="mis">
+    <div style="position:absolute;left:640px;top:90px;display:flex;align-items:center;gap:24px" id="misT"><span class="ic" style="width:90px;height:90px;color:var(--coral)">{{i:target}}</span><span style="font-weight:800;font-size:96px;letter-spacing:-3px">My mission</span></div>
+    <div id="term"><div style="height:56px;background:#1A1C21;display:flex;align-items:center;gap:12px;padding:0 24px;font-weight:600;font-size:24px;color:var(--mute)"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; claude · kanban-rea-demo</div>
+      <div class="mono" style="padding:40px 46px;font-size:34px;line-height:1.7">
+        <div><span class="hot">›</span> <span id="tLink" style="display:inline-block;padding:2px 14px;border-radius:10px;background:rgba(232,119,95,.18);color:var(--coralHi);opacity:0">boards.wekan.team/b/D2SzJKZDS4Z48yeQH/…</span></div>
+        <div id="tLine" style="opacity:0"><span class="hot">›</span> Build a faithful <b style="color:#fff">copy</b> of this board.</div>
+        <div id="tName" style="opacity:0;color:var(--steel)">  Name it "REA Board".</div></div></div>
+    <div class="stk c" id="linkChip" style="left:120px;top:330px;width:auto;flex-direction:row;padding:18px 30px;border-radius:999px;gap:14px;visibility:hidden"><span class="ic" style="width:48px;height:48px">{{i:link}}</span><span style="font-weight:800;font-size:44px">1 link</span></div>
+    <div class="tile" id="tl1" style="left:640px;top:800px"><span class="ic">{{i:layout-grid}}</span>Same layout</div>
+    <div class="tile" id="tl2" style="left:1000px;top:800px"><span class="ic">{{i:palette}}</span>Same colours</div>
+    <div class="tile" id="tl3" style="left:1360px;top:800px;width:400px"><span class="ic">{{i:mouse-pointer-click}}</span>Same behaviour</div></div>
+  <div class="stk c" id="sRule" style="left:1300px;top:150px;width:480px"><div class="big" style="font-size:150px">1</div><div class="sm" style="font-size:40px">RULE</div></div>
+  <div class="stk" id="sSteal" style="left:1260px;top:130px;width:560px"><div class="ic">{{i:shield-check}}</div><div class="big" style="font-size:64px;letter-spacing:-2px">Not stealing anything</div></div>
+  <div class="xrow" id="xrow">
+    <div class="xi" id="x1"><span class="ic">{{i:type}}</span>NAME<span class="ic xx">{{i:x}}</span></div>
+    <div class="xi" id="x2"><span class="ic">{{i:badge}}</span>LOGO<span class="ic xx">{{i:x}}</span></div>
+    <div class="xi" id="x3"><span class="ic">{{i:image}}</span>IMAGES<span class="ic xx">{{i:x}}</span></div></div>
+  <div class="stk c" id="sRb" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" style="font-size:66px;letter-spacing:-2px">REA Board</div><div class="sm">OUR OWN NAME</div></div>
+  <div class="stk" id="sData" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:database}}</div><div class="big" style="font-size:56px;letter-spacing:-1px">Own sample data</div></div>
+
+  <!-- inserts on top -->
+  <video class="clip ins" id="insHook" src="media/r_Hook2Cut.mp4" muted playsinline data-start="9.35" data-duration="11.7" data-media-start="0" data-track-index="3"></video>
+  <div id="scan" class="fill"></div>
+  <div id="flash" class="fill"></div>
+</div>
+<script>
+const rnd = (() => { let s = 20261030; return () => { s |= 0; s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })();
+const tl = gsap.timeline({ paused: true });
+const bo = "back.out(1.7)", p3 = "power3.out";
+const $ = (s) => document.querySelector(s);
+
+// ---------- background drift ----------
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 148.4, ease: "none" }, 0);
+tl.fromTo("#grid", { x: 0 }, { x: -600, duration: 148.4, ease: "none" }, 0);
+
+// ---------- camera: full frame ↔ PiP card ----------
+function pipIn(t, d = .5) {
+  tl.to("#bd", { opacity: 1, duration: Math.min(.3, d) }, t);
+  tl.to("#camwrap", { x: 56, y: 1080 - 56 - 1080 * .28, scale: .28, borderRadius: 120, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 16, borderRadius: 120, duration: d, ease: "expo.inOut" }, t);
+}
+function pipOut(t, d = .45) {
+  tl.to("#camwrap", { x: 0, y: 0, scale: 1, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 0, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#bd", { opacity: 0, duration: Math.min(.3, d) }, t + d * .5);
+}
+function whip(t) { // fast push + blur, then flash
+  tl.to("#campush", { scale: 1.35, filter: "blur(14px)", duration: .28, ease: "power3.in" }, t);
+  tl.fromTo("#flash", { opacity: 0 }, { opacity: .55, duration: .06, yoyo: true, repeat: 1, ease: "none", immediateRender: false }, t + .26);
+  tl.set("#campush", { scale: 1, filter: "blur(0px)" }, t + .4);
+}
+function punch(a, b, s = 1.15) {
+  tl.to("#campush", { scale: s, duration: .32, ease: p3 }, a);
+  tl.to("#campush", { scale: 1, duration: .3, ease: p3 }, b);
+}
+
+// ---------- stickers ----------
+function stk(id, a, b, from = { scale: .3, rotate: 10, opacity: 0, x: 160 }) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, from, { scale: 1, rotate: id.length % 2 ? -3 : 3, opacity: 1, x: 0, duration: .45, ease: bo, immediateRender: false }, a);
+  tl.to(id, { x: 600, rotate: 12, opacity: 0, duration: .3, ease: "power3.in" }, b - .3);
+  tl.set(id, { visibility: "hidden" }, b);
+}
+function icPop(id, a, b) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, { scale: 0, rotate: -40 }, { scale: 1, rotate: 8, duration: .4, ease: bo, immediateRender: false }, a);
+  tl.to(id, { rotate: -8, duration: .12, yoyo: true, repeat: 3, ease: "sine.inOut" }, a + .45);
+  tl.to(id, { scale: 0, duration: .2, ease: "power2.in" }, b - .2);
+  tl.set(id, { visibility: "hidden" }, b);
+}
+function count(sel, to, a, d, fmt = (v) => Math.round(v).toLocaleString("en-US")) {
+  const el = $(sel), c = { v: 0 };
+  tl.to(c, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(c.v); } }, a);
+}
+
+// ---------- browser proof frames ----------
+function showB(id, a, b, tag) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, { y: 700, rotateX: 18, scale: .9, opacity: 1 }, { y: 0, rotateX: 0, scale: 1, duration: .6, ease: "expo.out", transformPerspective: 2000, immediateRender: false }, a);
+  tl.to(id, { y: -80, scale: .94, opacity: 0, duration: .3, ease: "power2.in" }, b - .3);
+  tl.set(id, { visibility: "hidden" }, b);
+  if (tag) { tl.set(tag, { visibility: "visible" }, a + .3); tl.fromTo(tag, { y: -30, opacity: 0 }, { y: 0, opacity: 1, duration: .3, immediateRender: false }, a + .3); tl.set(tag, { visibility: "hidden" }, b - .3); }
+}
+function zoomTo(zid, t, s, px, py, d = .8, vw = 1600, vh = 900) { // center point (px,py) at scale s
+  const x = Math.min(0, Math.max(vw - vw * s, vw / 2 - px * s)), y = Math.min(0, Math.max(vh - vh * s, vh / 2 - py * s));
+  tl.to(zid, { scale: s, x, y, duration: d, ease: "power3.inOut" }, t);
+}
+function hl(id, a, b, dim = true) {
+  tl.to(id, { opacity: 1, duration: .01 }, a);
+  tl.fromTo(id, { scaleX: 0 }, { scaleX: 1, transformOrigin: "left center", duration: .35, ease: p3, immediateRender: false }, a);
+  if (dim) tl.to(id, { boxShadow: "0 0 0 9999px rgba(0,0,0,.3)", duration: .4 }, a + .15);
+  if (b) tl.to(id, { opacity: 0, boxShadow: "0 0 0 9999px rgba(0,0,0,0)", duration: .25 }, b);
+}
+function shiftL(id, t) { tl.to(id, { x: -220, scale: .8, duration: .55, ease: "power3.inOut" }, t); }
+
+// ================= S1 · hook (0 – 21.05) =================
+punch(3.42, 4.62);
+tl.set("#s400", { visibility: "visible" }, 1.36);
+tl.fromTo("#s400", { scale: .3, rotate: 14, opacity: 0, x: 200 }, { scale: 1, rotate: -4, opacity: 1, x: 0, duration: .45, ease: bo, immediateRender: false }, 1.36);
+tl.fromTo("#s400star", { rotate: -180, scale: .4 }, { rotate: 0, scale: 1, duration: .6, ease: bo, immediateRender: false }, 1.4);
+count("#s400n", 400000, 1.42, .75);
+tl.to("#s400", { scale: 1.08, duration: .12, yoyo: true, repeat: 5, ease: "sine.inOut" }, 3.46);
+tl.to("#s400", { x: 700, rotate: 12, opacity: 0, duration: .35, ease: "power3.in" }, 4.3);
+tl.set("#s400", { visibility: "hidden" }, 4.7);
+tl.set("#campush", { x: -60 }, 4.66); tl.to("#campush", { x: 0, duration: .3, ease: p3 }, 4.66);
+icPop("#flame", 5.1, 5.95);
+// takeover: footage → PiP, REVERSE / ENGINEER / ANYTHING, glitch → REA
+pipIn(6.2);
+tl.set("#take", { visibility: "visible" }, 6.25);
+tl.fromTo("#scan", { opacity: 0 }, { opacity: 1, duration: .2, immediateRender: false }, 6.3);
+[6.34, 6.84, 7.42].forEach((at, i) => {
+  tl.fromTo(document.querySelectorAll(".big3")[i], { opacity: 0, scale: 2.2, x: 300, filter: "blur(24px)" }, { opacity: 1, scale: 1, x: 0, filter: "blur(0px)", duration: .32, ease: "expo.out", immediateRender: false }, at);
+  tl.to("#bd", { x: i % 2 ? 14 : -14, duration: .04, yoyo: true, repeat: 3, ease: "none" }, at + .05);
+});
+tl.set("#imp1", { opacity: 1 }, 6.36); tl.to("#imp1", { scaleX: 1, duration: .3, ease: "expo.out" }, 6.36);
+tl.to("#imp1", { y: 186, duration: .25, ease: "expo.out" }, 6.86); tl.to("#imp1", { y: 372, duration: .25, ease: "expo.out" }, 7.44);
+tl.to("#imp1", { opacity: 0, duration: .2 }, 7.9);
+tl.to("#words", { x: () => (rnd() - .5) * 60, duration: .04, repeat: 6, yoyo: true, ease: "none" }, 7.92);
+tl.to("#rgbR", { opacity: .8, x: -30, duration: .05, repeat: 5, yoyo: true, ease: "none" }, 7.96);
+tl.to("#rgbB", { opacity: .8, x: 30, duration: .05, repeat: 5, yoyo: true, ease: "none" }, 7.96);
+tl.to(".big3", { y: -160, opacity: 0, filter: "blur(20px)", duration: .2, ease: "power3.in", stagger: .03 }, 8.0);
+tl.set("#rgbR, #rgbB", { opacity: 0 }, 8.23); tl.set("#take", { visibility: "hidden" }, 8.3);
+tl.fromTo("#flash", { opacity: 0 }, { opacity: .7, duration: .05, yoyo: true, repeat: 1, ease: "none", immediateRender: false }, 8.21);
+tl.set("#rea", { visibility: "visible" }, 8.21);
+tl.fromTo("#reatxt span", { scale: 3, opacity: 0, filter: "blur(30px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: .4, ease: "expo.out", stagger: .06, immediateRender: false }, 8.23);
+["#r1", "#r2", "#r3"].forEach((r, i) => tl.fromTo(r, { scale: .07, opacity: .9 }, { scale: 1, opacity: 0, duration: .9, ease: "power2.out", immediateRender: false }, 8.25 + i * .12));
+const pts = $("#pts"); for (let i = 0; i < 40; i++) { const d = document.createElement("div"); d.className = "pt"; if (i % 3 === 0) d.style.background = "#F6F1EC"; pts.appendChild(d);
+  const a = rnd() * Math.PI * 2, r = 300 + rnd() * 600; tl.fromTo(d, { x: 0, y: 0, opacity: 1, scale: .4 + rnd() * 1.4 }, { x: Math.cos(a) * r, y: Math.sin(a) * r, opacity: 0, rotate: rnd() * 360, duration: .9 + rnd() * .5, ease: "power3.out", immediateRender: false }, 8.25 + rnd() * .06); }
+tl.set("#pts", { visibility: "visible" }, 8.23); tl.set("#pts", { visibility: "hidden" }, 9.4);
+tl.fromTo("#reabar", { scaleX: 0 }, { scaleX: 1, duration: .5, ease: "expo.out", immediateRender: false }, 8.45);
+tl.fromTo("#reasub", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .35, ease: p3, immediateRender: false }, 8.68);
+tl.to("#scan", { opacity: 0, duration: .2 }, 9.2);
+tl.set("#rea", { visibility: "hidden" }, 9.4);
+pipOut(9.4, .05); // hidden under the Remotion insert (9.35 – 21.05)
+
+// 21 – 30.5: back on camera
+stk("#sSide", 23.2, 24.5);
+stk("#sHype", 25.6, 26.85);
+tl.to("#sHypeIc", { rotate: 14, duration: .25, yoyo: true, repeat: 3, ease: "sine.inOut" }, 25.9);
+stk("#sName", 26.9, 29.5, { x: 300, opacity: 0, scale: .9, rotate: 0 });
+punch(27.69, 29.3, 1.08);
+whip(30.1);
+
+// ================= S2 · what is REA (30.48 – 108.3) =================
+pipIn(30.4, .3);
+tl.set("#ch1", { visibility: "visible" }, 30.45);
+tl.fromTo("#ch1a", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: .3, immediateRender: false }, 30.5);
+tl.fromTo("#ch1b", { opacity: 0, scale: 1.8, filter: "blur(20px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: .35, ease: "expo.out", immediateRender: false }, 31.4);
+tl.fromTo("#ch1c", { opacity: 0, scale: 2.4, filter: "blur(30px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: .4, ease: "expo.out", immediateRender: false }, 32.0);
+tl.to("#ch1", { opacity: 0, y: -60, duration: .25 }, 32.55); tl.set("#ch1", { visibility: "hidden" }, 32.8);
+// GitHub (Kalyan's 28 Oct recording)
+showB("#bgh", 32.7, 39.35, "#tgh");
+const ZG = "#bgh .zoom";
+tl.to(ZG, { scale: 1.06, duration: 1.4, ease: "none" }, 32.8);
+zoomTo(ZG, 34.3, 2.0, 1412, 384, .8, 1600, 800);
+hl("#hlStar", 34.7, 36.85);
+shiftL("#bgh", 35.3); stk("#s399", 35.36, 37.0); count("#s399n", 399000, 35.4, .9, (v) => Math.round(v / 1000) + "K");
+zoomTo(ZG, 36.88, 2.0, 1241, 384, .55, 1600, 800);
+hl("#hlFork", 37.2, 39.0);
+stk("#s100", 37.86, 39.3);
+pipOut(39.3);
+// free · MIT · anyone
+stk("#sFree", 40.0, 43.7, { x: 300, opacity: 0, scale: .8, rotate: 0 });
+stk("#sMit", 41.3, 43.7, { x: 300, opacity: 0, scale: .8, rotate: 0 });
+stk("#sAny", 42.55, 43.7, { x: 300, opacity: 0, scale: .8, rotate: 0 });
+// 41 → 300K+ in 15 days (Moe Lueker)
+pipIn(43.6);
+showB("#bmoe", 43.75, 48.6);
+tl.to("#bmoe .zoom", { scale: 1.05, duration: 1.0, ease: "none" }, 43.9);
+zoomTo("#bmoe .zoom", 45.0, 1.6, 632, 426);
+hl("#hlMoe", 45.4);
+shiftL("#bmoe", 46.0); stk("#s15", 46.1, 48.55);
+count("#s15n", 300000, 46.25, 1.0, (v) => (v < 1000 ? Math.round(41 + v) : Math.round(v / 1000) + "K+"));
+// 3.5M views (YouTube)
+showB("#byt", 48.65, 51.65);
+zoomTo("#byt .zoom", 49.4, 1.7, 988, 134);
+hl("#hlYt", 49.75);
+shiftL("#byt", 50.4); stk("#s35", 50.66, 51.6);
+pipOut(51.6);
+icPop("#spark", 52.9, 53.95);
+// 54.0 – 62.3 Remotion: how REA connects (PiP drawn inside the insert)
+pipIn(54.05, .05);
+// open → look inside → trace → proof (rea.tools How it works)
+showB("#bhow", 62.25, 67.95);
+zoomTo("#bhow .zoom", 62.5, 1.25, 800, 470, 1.0);
+hl("#hlH1", 63.2, 64.3, false); hl("#hlH2", 64.3, 65.2, false); hl("#hlH3", 65.2, 67.9, false);
+shiftL("#bhow", 66.75); stk("#sProof", 67.0, 67.95);
+pipOut(67.85);
+stk("#sLocal", 68.9, 70.75);
+tl.fromTo("#lockIc", { y: -60, opacity: 0 }, { y: 0, opacity: 1, duration: .35, ease: "bounce.out", immediateRender: false }, 69.4);
+tl.set(".tz", { visibility: "visible" }, 71.3);
+tl.fromTo(".tz", { scale: 0, rotate: -12 }, { scale: 1, rotate: 0, duration: .4, ease: bo, stagger: .12, immediateRender: false }, 71.3);
+tl.to(".tz", { scale: 0, duration: .2, stagger: .05 }, 72.75); tl.set(".tz", { visibility: "hidden" }, 73.1);
+// Steam → C# (X post)
+pipIn(73.0);
+showB("#bx", 73.1, 83.35);
+zoomTo("#bx .zoom", 73.5, 2.4, 262, 190, .9);
+hl("#hlX", 74.0);
+shiftL("#bx", 78.9); stk("#s30", 79.1, 80.6);
+tl.to("#s30ic", { rotate: 360, duration: 1.2, ease: "power2.inOut" }, 79.3);
+stk("#s460", 80.66, 83.3);
+// 83.3 – 91.16 Remotion: Blender (PiP inside)
+// DX-Ball 3,205 (rea.tools)
+showB("#bdx", 91.1, 98.85);
+tl.to("#zdx", { scale: 1.04, duration: 2.6, ease: "none" }, 91.3);
+tl.to("#dxscroll", { y: -900, duration: .8, ease: "power3.inOut" }, 95.25);
+tl.to("#zdx", { scale: 1, duration: .5, ease: "power2.out" }, 95.25);
+hl("#hlDx", 96.1);
+zoomTo("#zdx", 96.2, 1.75, 696, 448, 1.0);
+shiftL("#bdx", 96.95); stk("#s3205", 97.1, 98.85); count("#s3205n", 3205, 97.15, .9);
+// Notion clipboard (rea.tools)
+showB("#bno", 98.85, 102.55);
+zoomTo("#bno .zoom", 99.4, 1.35, 800, 376, .9);
+hl("#hlNo", 100.1);
+shiftL("#bno", 100.6); stk("#sClip", 100.79, 102.55);
+pipOut(102.5);
+icPop("#zap", 102.7, 103.6);
+stk("#sReal", 105.15, 108.0);
+tl.to("#realL", { flexGrow: 1.6, duration: .3, ease: p3 }, 105.53);
+tl.to("#realL", { flexGrow: 1, duration: .3, ease: p3 }, 106.1);
+tl.to("#realR", { flexGrow: 1.6, duration: .3, ease: p3 }, 106.6);
+icPop("#srch", 107.35, 108.1);
+whip(108.1);
+
+// ================= S3 · mission (108.47 – 148.4) =================
+pipIn(108.4, .3);
+tl.set("#ch2", { visibility: "visible" }, 108.45);
+tl.fromTo("#ch2ic", { scale: 0, rotate: -180 }, { scale: 1, rotate: 0, duration: .5, ease: bo, immediateRender: false }, 108.5);
+tl.fromTo("#ch2a", { opacity: 0, x: 300, filter: "blur(20px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: .32, ease: "expo.out", immediateRender: false }, 108.83);
+tl.fromTo("#ch2b", { opacity: 0, x: 300, filter: "blur(20px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: .32, ease: "expo.out", immediateRender: false }, 109.13);
+tl.to("#ch2", { opacity: 0, y: -60, duration: .25 }, 109.85); tl.set("#ch2", { visibility: "hidden" }, 110.1);
+// Wekan board with pins
+showB("#bwk", 110.05, 123.3);
+stk("#sKanban", 111.55, 118.5, { y: -60, opacity: 0, scale: .8, rotate: 0, x: 0 });
+[["#p1", 112.99], ["#p2", 113.47], ["#p3", 114.03], ["#p4", 114.79], ["#p5", 115.49], ["#p6", 116.25]].forEach(([p, at]) => {
+  tl.set(p, { visibility: "visible" }, at);
+  tl.fromTo(p + " .d", { scale: 0 }, { scale: 1, duration: .3, ease: bo, immediateRender: false }, at);
+  tl.fromTo(p + " .l", { scale: 0, x: -30 }, { scale: 1, x: 0, duration: .35, ease: bo, transformOrigin: "left bottom", immediateRender: false }, at + .05);
+});
+tl.to("#ghost", { opacity: 1, duration: .1 }, 116.3); tl.to("#hand", { opacity: 1, duration: .1 }, 116.3);
+tl.to("#ghost, #hand", { x: 320, y: 40, duration: .7, ease: "power2.inOut" }, 116.45);
+tl.to("#ghost, #hand", { opacity: 0, duration: .2 }, 117.2);
+tl.to("#bwk .pin", { opacity: 0, duration: .25 }, 117.3);
+zoomTo("#zwk", 117.3, 1.7, 160, 330, .8, 1600, 750);
+zoomTo("#zwk", 118.6, 1, 800, 375, .6, 1600, 750);
+shiftL("#bwk", 118.7);
+tl.set("#wkStack .stk", { visibility: "visible" }, 119.3);
+[["#sOs", 119.37], ["#sMit2", 120.45], ["#sDemo", 122.37]].forEach(([s, at]) => tl.fromTo(s, { scale: 0, rotate: -10 }, { scale: 1, rotate: 0, duration: .4, ease: bo, immediateRender: false }, at));
+tl.to("#wkStack .stk", { x: 500, opacity: 0, duration: .3, stagger: .05 }, 123.0); tl.set("#wkStack .stk", { visibility: "hidden" }, 123.4);
+// mission: one link → Claude Code → build a copy
+tl.set("#mis", { visibility: "visible" }, 123.3);
+tl.fromTo("#misT", { opacity: 0, x: -80 }, { opacity: 1, x: 0, duration: .4, ease: p3, immediateRender: false }, 123.34);
+tl.fromTo("#term", { opacity: 0, y: 80, scale: .94 }, { opacity: 1, y: 0, scale: 1, duration: .5, ease: p3, immediateRender: false }, 125.1);
+tl.set("#linkChip", { visibility: "visible" }, 126.05);
+tl.fromTo("#linkChip", { scale: 0, rotate: -20 }, { scale: 1, rotate: 0, duration: .35, ease: bo, immediateRender: false }, 126.05);
+tl.to("#linkChip", { x: 620, y: 40, scale: .5, opacity: 0, duration: .5, ease: "power3.in" }, 126.6);
+tl.to("#tLink", { opacity: 1, duration: .25 }, 127.0);
+tl.fromTo("#tLink", { scale: 1.3 }, { scale: 1, duration: .3, ease: bo, immediateRender: false }, 127.0);
+tl.to("#tLine", { opacity: 1, duration: .3 }, 128.25); tl.to("#tName", { opacity: 1, duration: .3 }, 128.7);
+[["#tl1", 129.74], ["#tl2", 130.58], ["#tl3", 131.4]].forEach(([s, at]) => tl.fromTo(s, { scale: 0, y: 60 }, { scale: 1, y: 0, duration: .4, ease: bo, immediateRender: false }, at));
+tl.to("#mis", { opacity: 0, duration: .3 }, 131.85); tl.set("#mis", { visibility: "hidden" }, 132.2);
+pipOut(131.9);
+stk("#sRule", 132.5, 133.9);
+stk("#sSteal", 134.0, 135.4);
+tl.set(".xi", { visibility: "visible" }, 136.9);
+[["#x1", 136.98], ["#x2", 137.62], ["#x3", 138.5]].forEach(([s, at]) => {
+  tl.fromTo(s, { scale: 0, rotate: -10 }, { scale: 1, rotate: 0, duration: .35, ease: bo, immediateRender: false }, at - .1);
+  tl.fromTo(s + " .xx", { opacity: 0, scale: 2 }, { opacity: 1, scale: 1, duration: .25, ease: "power4.in", immediateRender: false }, at + .2);
+});
+tl.to(".xi", { scale: 0, duration: .2, stagger: .05 }, 139.3); tl.set(".xi", { visibility: "hidden" }, 139.7);
+// REA Board (our own app)
+pipIn(139.6);
+showB("#brb", 139.75, 145.25);
+hl("#hlRb1", 142.4, 144.2);
+shiftL("#brb", 142.3); stk("#sRb", 142.5, 144.25);
+hl("#hlRb2", 144.25);
+stk("#sData", 144.31, 145.2);
+pipOut(145.2);
+whip(148.0);
+
+// ---------- captions: auto from ElevenLabs word times, ≤ 4 words, hidden while proofs/graphics carry the words ----------
+const HIDE = [[1.36, 3.42], [6.2, 21.05], [26.9, 29.6], [30.4, 32.8], [32.7, 39.4], [43.6, 51.7], [54.0, 68.0], [73.0, 102.6], [108.4, 132.0], [139.6, 145.3]];
+const HOT = new Set(["400,000", "rea", "rea?", "real", "hype?", "honestly,", "free,", "mit", "anyone", "proof,", "locally", "crazy,", "right?", "wild,", "thousand.", "both", "side,", "rule.", "not", "stealing", "anything.", "name,", "logos,", "images", "off?", "see.", "go.", "own", "kalyan.", "steam", "blender,", "notion"]);
+const hidden = (t) => HIDE.some(([a, b]) => t >= a && t < b);
+const groups = []; let g = null;
+for (const [txt, s, e] of window.CUT_WORDS) {
+  if (hidden(s)) { g = null; continue; }
+  if (!g || g.w.length >= 4 || s - g.end > .3 || /[.?!:]$/.test(g.w[g.w.length - 1][0])) { g = { w: [], end: e }; groups.push(g); }
+  g.w.push([txt, s]); g.end = e;
+}
+const root = $("#root");
+groups.forEach((gr, i) => {
+  const d = document.createElement("div"); d.className = "cap";
+  gr.w.forEach(([txt]) => { const s = document.createElement("span"); s.className = "w" + (HOT.has(txt.toLowerCase()) ? " on" : ""); s.textContent = txt.replace(/[,.]$/, ""); d.appendChild(s); });
+  root.appendChild(d);
+  const a = gr.w[0][1], next = groups[i + 1] ? groups[i + 1].w[0][1] : gr.end + .4;
+  let b = Math.min(next, gr.end + .45); const h = HIDE.find(([x]) => x > a && x < b); if (h) b = h[0];
+  tl.set(d, { visibility: "visible" }, a);
+  d.querySelectorAll(".w").forEach((w, k) => tl.fromTo(w, { scale: .2, y: 40, opacity: 0, rotate: -6 }, { scale: 1, y: 0, opacity: 1, rotate: 0, duration: .24, ease: "back.out(2.4)", immediateRender: false }, gr.w[k][1]));
+  tl.set(d, { visibility: "hidden" }, b);
+});
+window.__timelines["rea-v2-part1"] = tl;
+</script>
+</body>
+</html>

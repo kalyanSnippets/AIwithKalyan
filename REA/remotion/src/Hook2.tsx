@@ -106,7 +106,7 @@ const Reveal: React.FC<{t: number; f: number; fps: number}> = ({t, f, fps}) => {
   </AbsoluteFill>;
 };
 
-export const Hook2: React.FC = () => {
+export const Hook2: React.FC<{src?: string; label?: boolean}> = ({src = "samples/hook2.mp4", label = true}) => {
   const f = useCurrentFrame(), {fps} = useVideoConfig(), t = f / fps;
   // camera: punch on "ONE link", drift on "twenty minutes", whip push on "THIS"
   const punch = interpolate(t, [5.0, 5.2, 5.8, 6.0], [1, 1.14, 1.14, 1], {extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic)});
@@ -114,13 +114,13 @@ export const Hook2: React.FC = () => {
   const blur = interpolate(t, [7.6, 7.9], [0, 18], {extrapolateLeft: "clamp", extrapolateRight: "clamp"});
   return <AbsoluteFill style={{background: K.bg, overflow: "hidden"}}>
     <AbsoluteFill style={{transform: `scale(${punch * whip})`, transformOrigin: "50% 36%", filter: `blur(${blur}px)`}}>
-      <OffthreadVideo src={staticFile("samples/hook2.mp4")} style={{width: 1920, height: 1080}} />
+      <OffthreadVideo src={staticFile(src)} muted style={{width: 1920, height: 1080}} />
     </AbsoluteFill>
     <Flow t={t} f={f} fps={fps} />
     <Card t={t} f={f} fps={fps} a={4.6} b={5.86} icon="link" big="1 link" small="THAT'S ALL I GAVE IT" />
     <Card t={t} f={f} fps={fps} a={5.9} b={7.3} icon="clock" big="≈ 20 min" small="LATER…" spin />
     <Captions t={t} f={f} fps={fps} />
     <Reveal t={t} f={f} fps={fps} />
-    <div style={{position: "absolute", left: 60, top: 44, fontFamily: F, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: "rgba(246,241,236,.75)", textTransform: "uppercase", textShadow: "0 2px 8px rgba(0,0,0,.6)"}}>Sample · Remotion · real hook, 0:10–0:19</div>
+    {label && <div style={{position: "absolute", left: 60, top: 44, fontFamily: F, fontWeight: 600, fontSize: 22, letterSpacing: 5, color: "rgba(246,241,236,.75)", textTransform: "uppercase", textShadow: "0 2px 8px rgba(0,0,0,.6)"}}>Sample · Remotion · real hook, 0:10–0:19</div>}
   </AbsoluteFill>;
 };
