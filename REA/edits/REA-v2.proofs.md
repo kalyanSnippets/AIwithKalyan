@@ -73,3 +73,10 @@ Still blocked:
 - medium.com, boards.wekan.team, scientificamerican.com: bot protection (403). Not worked around. Wekan is covered by Kalyan's recording; the Medium "140K in five days" headline is replaced by the 15-day line.
 
 `npm run broll` gained `--dismiss "<label>|<label>"` to close cookie banners and promos before capturing (dev.to: "Minimize billboard", MindStudio: "Accept all").
+
+## Decision (30 Oct): use what we have for GitHub
+
+- Stars: Kalyan's 28 Oct GitHub recording (399K), plus the aitoolly live card (412k stars / 103k forks) for the forks line.
+- MIT licence: rea.tools footer "Source MIT license".
+- Blender: animated icon card with a source tag "github.com/yazzang-homelab/blender-agent-sdk" and the README figures (301,393 procedures, ~70 min). No page shown.
+- Critics: GitTested review capture; rea-lab numbers as a card with its source tag.
