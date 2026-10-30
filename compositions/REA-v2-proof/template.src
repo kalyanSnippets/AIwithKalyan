@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA v2 proof sample</title>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg:#0B0B0D; --ink:#F6F1EC; --mute:rgba(246,241,236,.65); --coral:#E8775F; --steel:#7F95AB; --ok:#5BD69A; }
+html, body { margin:0; background:var(--bg); }
+#root { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg); font-family:"Inter",system-ui,sans-serif; color:var(--ink); }
+.fill { position:absolute; inset:0; }
+.ic svg { width:100%; height:100%; display:block; }
+#bd { z-index:0; opacity:0; }
+.blob { position:absolute; border-radius:50%; filter:blur(120px); }
+#grid { background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size:120px 120px; }
+#camwrap { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; overflow:hidden; z-index:4; }
+#cam { position:absolute; inset:0; width:1920px; height:1080px; object-fit:cover; }
+#camring { position:absolute; inset:0; border:0 solid var(--coral); pointer-events:none; }
+/* browser frame */
+#browser { position:absolute; left:160px; top:62px; width:1600px; height:956px; border-radius:22px; overflow:hidden; background:#fff; box-shadow:0 50px 120px rgba(0,0,0,.65); border:1.5px solid rgba(255,255,255,.18); z-index:3; visibility:hidden; }
+#chrome { position:absolute; left:0; right:0; top:0; height:56px; background:#1C1D22; display:flex; align-items:center; gap:12px; padding:0 22px; }
+.dot { width:15px; height:15px; border-radius:50%; background:#3a3d44; }
+#url { margin-left:22px; flex:1; height:36px; border-radius:18px; background:#2A2C33; display:flex; align-items:center; gap:10px; padding:0 18px; font-weight:600; font-size:21px; color:rgba(255,255,255,.85); }
+#url .ic { width:18px; height:18px; color:rgba(255,255,255,.6); }
+#url b { color:#fff; }
+#view { position:absolute; left:0; top:56px; width:1600px; height:900px; overflow:hidden; }
+#zoom { position:absolute; inset:0; transform-origin:696px 450px; }
+.pg { position:absolute; left:0; width:1600px; height:900px; }
+#pg1 { top:0; } #pg2 { top:900px; }
+#hlbox { position:absolute; left:503px; top:430px; width:386px; height:37px; border:5px solid var(--coral); border-radius:12px; box-shadow:0 0 0 9999px rgba(0,0,0,0); opacity:0; }
+#dim { background:rgba(10,10,14,.45); opacity:0; -webkit-mask:linear-gradient(#000,#000); }
+/* stickers and tags */
+#stk { position:absolute; left:1440px; top:290px; width:400px; padding:40px 20px; border-radius:36px; background:var(--coral); color:#111; z-index:6; visibility:hidden; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; box-shadow:0 30px 70px rgba(0,0,0,.5); }
+#stk .ic { width:110px; height:110px; }
+#stkN { font-weight:800; font-size:100px; letter-spacing:-4px; line-height:1; }
+#stkL { font-weight:800; font-size:30px; letter-spacing:3px; line-height:1.25; margin-top:10px; }
+#cap8 { padding:8px 16px; border-radius:10px; background:rgba(232,119,95,.18); color:#FF9E88; font-weight:600; font-size:19px; white-space:nowrap; }
+#src { position:absolute; right:180px; bottom:84px; z-index:6; padding:12px 22px; border-radius:12px; background:rgba(14,14,18,.86); border:1.5px solid rgba(255,255,255,.16); font-weight:600; font-size:22px; color:var(--mute); visibility:hidden; display:flex; align-items:center; gap:10px; }
+#src .ic { width:22px; height:22px; color:var(--coral); }
+#src b { color:var(--ink); }
+.cap { position:absolute; left:0; right:0; bottom:70px; display:flex; justify-content:center; gap:30px; visibility:hidden; z-index:7; }
+.w { display:inline-block; font-weight:800; font-size:88px; text-transform:uppercase; color:#fff; -webkit-text-stroke:3px #000; paint-order:stroke fill; text-shadow:0 8px 0 rgba(0,0,0,.55),0 14px 30px rgba(0,0,0,.5); }
+.w.on { color:var(--coral); }
+.tag { position:absolute; left:60px; top:20px; z-index:9; font-weight:600; font-size:20px; letter-spacing:5px; color:rgba(246,241,236,.75); text-transform:uppercase; text-shadow:0 2px 8px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-v2-proof" data-start="0" data-width="1920" data-height="1080" data-duration="8">
+  <div id="bd" class="fill">
+    <div class="blob" style="width:900px;height:900px;left:-250px;top:-350px;background:rgba(232,119,95,.28)"></div>
+    <div class="blob" style="width:800px;height:800px;right:-250px;bottom:-380px;background:rgba(127,149,171,.2)"></div>
+    <div id="grid" class="fill"></div>
+  </div>
+  <div id="browser">
+    <div id="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <div id="url"><span class="ic">{{i:lock}}</span><b>rea.tools</b>/showcase/dx-ball/</div><div id="cap8">Source · captured 30 Oct 2026</div></div>
+    <div id="view"><div id="zoom">
+      <div id="scroll" class="fill"><img class="pg" id="pg1" src="img/dxtop.png"><img class="pg" id="pg2" src="img/dxball.png"></div>
+      <div id="hlbox"></div>
+    </div></div>
+  </div>
+  <div id="camwrap"><video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="8" data-media-start="0" data-track-index="1"></video><div id="camring"></div></div>
+  <div id="stk"><span class="ic">{{i:circle-check-big}}</span><div><div id="stkN">3,205</div><div id="stkL">TEST CASES<br>MATCHED</div></div></div>
+    <div class="cap" id="c1"><span class="w">Another</span><span class="w">person</span><span class="w on">rebuilt</span></div>
+  <div class="cap" id="c2"><span class="w">a</span><span class="w on">sound</span><span class="w">function</span></div>
+  <div class="tag">Sample · real proof style</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const bo = "back.out(1.7)", p3 = "power3.out";
+function cap(id, times, a, b) {
+  tl.set(id, { visibility: "visible" }, a);
+  document.querySelectorAll(id + " .w").forEach((w, i) => tl.fromTo(w, { scale: .2, y: 40, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: .24, ease: "back.out(2.4)" }, times[i]));
+  tl.to(id, { opacity: 0, duration: .1 }, b - .1);
+  tl.set(id, { visibility: "hidden" }, b);
+}
+cap("#c1", [.06, .38, .92], .06, 1.26);
+cap("#c2", [1.28, 1.40, 1.68], 1.28, 2.2);
+// footage → PiP, real page slides up in a browser frame (1.25)
+tl.to("#bd", { opacity: 1, duration: .3 }, 1.2);
+tl.to("#camwrap", { x: 56, y: 1080 - 56 - 1080 * .28, scale: .28, borderRadius: 120, duration: .55, ease: "expo.inOut" }, 1.2);
+tl.to("#camring", { borderWidth: 16, borderRadius: 120, duration: .55, ease: "expo.inOut" }, 1.2);
+tl.set("#browser", { visibility: "visible" }, 1.3);
+tl.from("#browser", { y: 700, rotateX: 18, scale: .9, duration: .7, ease: "expo.out", transformPerspective: 2000 }, 1.3);
+tl.to("#zoom", { scale: 1.04, duration: 2.6, ease: "none" }, 1.4);
+tl.from("#cap8", { scale: 0, duration: .35, ease: bo }, 3.2);
+// scroll down to the evidence (4.2), then box + push-in on "3,205 behavior cases"
+tl.to("#scroll", { y: -900, duration: .8, ease: "power3.inOut" }, 4.15);
+tl.to("#zoom", { scale: 1, duration: .5, ease: "power2.out" }, 4.15);
+tl.to("#hlbox", { opacity: 1, duration: .01 }, 5.0);
+tl.from("#hlbox", { scaleX: 0, transformOrigin: "left center", duration: .35, ease: "power3.out" }, 5.0);
+tl.to("#zoom", { scale: 1.75, duration: 1.0, ease: "power3.inOut" }, 5.1);
+tl.to("#hlbox", { boxShadow: "0 0 0 9999px rgba(0,0,0,.3)", duration: .5 }, 5.2);
+tl.to("#browser", { x: -220, scale: .8, duration: .55, ease: "power3.inOut" }, 5.85);
+tl.set("#stk", { visibility: "visible" }, 6.0);
+tl.from("#stk", { scale: 0, rotate: -12, duration: .45, ease: bo }, 6.0);
+const c = { v: 0 }, n = document.getElementById("stkN");
+tl.to(c, { v: 3205, duration: .9, ease: "power3.out", onUpdate: () => { n.textContent = Math.round(c.v).toLocaleString("en-US"); } }, 6.05);
+tl.to("#stk", { rotate: -3, duration: .3, ease: bo }, 6.9);
+window.__timelines["rea-v2-proof"] = tl;
+</script>
+</body>
+</html>
