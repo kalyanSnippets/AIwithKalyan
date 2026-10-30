@@ -42,3 +42,6 @@ REA/remotion/out/
 
 # REA proofs build output
 REA/proofs/*/dist/
+
+# Remotion sample footage (re-creatable from REA/media)
+REA/remotion/public/samples/*.mp4

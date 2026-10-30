@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA v2 hook sample</title>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg:#0B0B0D; --ink:#F6F1EC; --mute:rgba(246,241,236,.65); --coral:#E8775F; --coralHi:#FF9E88; --steel:#7F95AB; }
+html, body { margin:0; background:var(--bg); }
+#root { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg); font-family:"Inter",system-ui,sans-serif; color:var(--ink); }
+.fill { position:absolute; inset:0; }
+.ic svg { width:100%; height:100%; display:block; }
+/* takeover backdrop */
+#bd { opacity:0; }
+.blob { position:absolute; border-radius:50%; filter:blur(120px); }
+#grid { background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size:120px 120px; }
+/* camera: wrapper moves, clip stays put */
+#camwrap { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; overflow:hidden; }
+#campush { position:absolute; inset:0; transform-origin:50% 36%; }
+#cam { position:absolute; inset:0; width:1920px; height:1080px; object-fit:cover; }
+#camring { position:absolute; inset:0; border:0 solid var(--coral); border-radius:0; pointer-events:none; }
+/* viral captions */
+.cap { position:absolute; left:0; right:0; bottom:70px; display:flex; justify-content:center; gap:22px; visibility:hidden; }
+.w { display:inline-block; font-weight:800; font-size:88px; letter-spacing:-1px; text-transform:uppercase; color:#fff; -webkit-text-stroke:3px #000; paint-order:stroke fill; text-shadow:0 8px 0 rgba(0,0,0,.55), 0 14px 30px rgba(0,0,0,.5); }
+.w.on { color:var(--coral); }
+.w.big { font-size:92px; } #c2 { gap:34px; }
+/* sticker card on the right wall */
+#stk { position:absolute; left:1250px; top:120px; width:560px; height:470px; border-radius:40px; background:rgba(14,14,18,.72); border:2px solid rgba(255,255,255,.14); box-shadow:0 40px 90px rgba(0,0,0,.5); backdrop-filter:blur(18px); visibility:hidden; }
+#stkStar { position:absolute; left:50%; top:46px; width:180px; height:180px; margin-left:-90px; color:var(--coral); }
+#stkStar path { stroke-dasharray:80; stroke-dashoffset:80; fill:rgba(232,119,95,0); }
+#stkNum { position:absolute; left:0; right:0; top:236px; text-align:center; font-weight:800; font-size:120px; letter-spacing:-5px; line-height:1; }
+#stkLbl { position:absolute; left:0; right:0; top:372px; text-align:center; font-weight:800; font-size:34px; letter-spacing:6px; color:var(--coral); }
+.spk { position:absolute; width:26px; height:26px; color:var(--coral); opacity:0; }
+#flame { position:absolute; left:1430px; top:170px; width:300px; height:300px; color:var(--coral); visibility:hidden; filter:drop-shadow(0 20px 40px rgba(232,119,95,.45)); }
+/* REA takeover */
+#words { position:absolute; left:660px; top:150px; width:1200px; }
+.big3 { display:block; font-weight:800; font-size:190px; line-height:.98; letter-spacing:-7px; white-space:nowrap; opacity:0; }
+.big3.hot { color:var(--coral); }
+.imp { position:absolute; height:8px; border-radius:4px; background:var(--coral); opacity:0; transform:scaleX(0); }
+#rea { position:absolute; left:560px; top:120px; width:1300px; height:840px; display:flex; flex-direction:column; align-items:center; justify-content:center; visibility:hidden; }
+#reatxt { font-weight:800; font-size:440px; line-height:1; letter-spacing:-16px; }
+#reatxt span { display:inline-block; }
+#reabar { width:700px; height:12px; border-radius:6px; background:var(--coral); margin:-10px 0 30px; }
+#reasub { font-weight:600; font-size:46px; color:var(--mute); letter-spacing:1px; }
+#badge { position:absolute; right:-10px; top:40px; display:flex; align-items:center; gap:12px; padding:16px 30px; border-radius:999px; background:var(--coral); color:#111; font-weight:800; font-size:46px; transform:rotate(8deg); }
+#badge .ic { width:46px; height:46px; }
+.ring { position:absolute; left:50%; top:50%; width:1500px; height:1500px; margin:-750px 0 0 -750px; border-radius:50%; border:6px solid var(--coral); opacity:0; }
+.pt { position:absolute; left:1210px; top:500px; width:16px; height:16px; background:var(--coral); opacity:0; }
+.rgb { position:absolute; left:560px; top:120px; width:1300px; height:840px; display:flex; align-items:center; justify-content:center; mix-blend-mode:screen; opacity:0; font-weight:800; font-size:440px; letter-spacing:-16px; }
+.scan { background:repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 2px, transparent 2px 6px); opacity:0; }
+#flash { background:#fff; opacity:0; }
+#bd { z-index:0; } #camwrap { z-index:1; } #root > *:not(#bd):not(#camwrap) { z-index:5; } #camring { z-index:2; }
+.tag { position:absolute; left:60px; top:44px; font-weight:600; font-size:22px; letter-spacing:5px; color:rgba(246,241,236,.75); text-transform:uppercase; text-shadow:0 2px 8px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-v2-hook" data-start="0" data-width="1920" data-height="1080" data-duration="10.5">
+  <div id="bd" class="fill" data-layout-allow-occlusion data-layout-allow-overlap>
+    <div class="blob" style="width:900px;height:900px;left:-250px;top:-350px;background:rgba(232,119,95,.28)"></div>
+    <div class="blob" style="width:800px;height:800px;right:-250px;bottom:-380px;background:rgba(127,149,171,.2)"></div>
+    <div id="grid" class="fill"></div>
+  </div>
+
+  <div id="camwrap" data-layout-allow-overflow data-layout-allow-overlap data-layout-allow-occlusion><div id="campush">
+    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="10.5" data-media-start="0" data-track-index="1"></video>
+  </div><div id="camring"></div></div>
+
+  <!-- 400K sticker -->
+  <div id="stk" data-layout-allow-overlap><div id="stkStar" class="ic"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /> </svg></div><div id="stkNum">0</div><div id="stkLbl">STARS ON GITHUB</div></div>
+  <div id="spks" class="fill" style="visibility:hidden" data-layout-allow-occlusion data-layout-allow-overlap data-layout-allow-overflow></div>
+  <div id="flame" class="ic"><svg class="lucide lucide-flame" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4" /> </svg></div>
+
+  <!-- captions -->
+  <div class="cap" id="c1"><span class="w">This</span><span class="w">one</span><span class="w">tool</span><span class="w">has</span></div>
+  <div class="cap" id="c2"><span class="w big">Four</span><span class="w big">hundred</span><span class="w big on">thousand</span></div>
+  <div class="cap" id="c3"><span class="w big">Crazy,</span><span class="w big on">right?</span></div>
+  <div class="cap" id="c4"><span class="w">It's</span><span class="w">called…</span></div>
+
+  <!-- takeover -->
+  <div class="scan fill" id="scan" data-layout-allow-occlusion data-layout-allow-overlap></div>
+  <div id="words" data-layout-allow-overflow data-layout-allow-overlap><span class="big3">REVERSE</span><span class="big3">ENGINEER</span><span class="big3 hot">ANYTHING</span></div>
+  <div class="imp" id="imp1" style="left:640px;top:345px;width:1100px;transform-origin:left"></div>
+  <div class="rgb" id="rgbR" style="color:#ff6a4d" data-layout-allow-overlap data-layout-allow-occlusion>REA</div>
+  <div class="rgb" id="rgbB" style="color:#7FB7FF" data-layout-allow-overlap data-layout-allow-occlusion>REA</div>
+  <div id="rea" data-layout-allow-overlap data-layout-allow-overflow>
+    <div class="ring" id="r1"></div><div class="ring" id="r2"></div><div class="ring" id="r3"></div>
+    <div id="reatxt"><span>R</span><span>E</span><span style="color:var(--coral)">A</span></div>
+    <div id="reabar"></div>
+    <div id="reasub">Reverse Engineer Anything</div>
+    <div id="badge"><span class="ic"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /> </svg></span>400K</div>
+  </div>
+  <div id="pts" class="fill" style="visibility:hidden" data-layout-allow-occlusion data-layout-allow-overlap data-layout-allow-overflow></div>
+  <div id="flash" class="fill" data-layout-allow-occlusion data-layout-allow-overlap></div>
+  <div class="tag">Sample · real hook, 0:00–0:10</div>
+</div>
+<script>
+const rnd = (() => { let s = 20261030; return () => { s |= 0; s = (s + 0x6D2B79F5) | 0; let t = Math.imul(s ^ (s >>> 15), 1 | s); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; })();
+const starSvg = document.querySelector("#stkStar").innerHTML;
+const spks = document.getElementById("spks"), sp = [];
+for (let i = 0; i < 12; i++) { const d = document.createElement("div"); d.className = "spk ic"; d.innerHTML = starSvg; d.style.left = "1505px"; d.style.top = "330px"; spks.appendChild(d); sp.push(d); }
+const pts = document.getElementById("pts"), pp = [];
+for (let i = 0; i < 40; i++) { const d = document.createElement("div"); d.className = "pt"; if (i % 3 === 0) d.style.background = "#F6F1EC"; pts.appendChild(d); pp.push(d); }
+
+const tl = gsap.timeline({ paused: true });
+const bo = "back.out(1.7)", p3 = "power3.out";
+// word pops: each caption word lands on its spoken time
+function cap(id, times, a, b) {
+  tl.set(id, { visibility: "visible" }, a);
+  document.querySelectorAll(id + " .w").forEach((w, i) => {
+    tl.fromTo(w, { scale: .2, y: 40, opacity: 0, rotate: -6 }, { scale: 1, y: 0, opacity: 1, rotate: 0, duration: .26, ease: "back.out(2.4)" }, times[i]);
+  });
+  tl.to(id, { opacity: 0, scale: .9, duration: .12, ease: "power2.in" }, b - .12);
+  tl.set(id, { visibility: "hidden" }, b);
+}
+cap("#c1", [.16, .40, .68, 1.08], .16, 1.56);
+cap("#c2", [3.94, 4.16, 4.50], 3.94, 5.14);
+cap("#c3", [5.24, 5.68], 5.24, 6.3);
+cap("#c4", [6.38, 6.64], 6.38, 6.92);
+tl.to("#c2 .w.on", { x: () => (rnd() - .5) * 14, y: () => (rnd() - .5) * 10, duration: .04, repeat: 7, yoyo: true, ease: "none" }, 4.62);
+tl.to("#c3", { rotate: -3, duration: .1, yoyo: true, repeat: 3, ease: "none" }, 5.7);
+
+// 400K sticker (1.58 "400,000" → 3.4)
+tl.set("#stk", { visibility: "visible" }, 1.5);
+tl.fromTo("#stk", { scale: .3, rotate: 14, opacity: 0, x: 200 }, { scale: 1, rotate: -4, opacity: 1, x: 0, duration: .45, ease: bo }, 1.5);
+tl.to("#stkStar path", { strokeDashoffset: 0, duration: .45, ease: "power2.inOut" }, 1.6);
+tl.to("#stkStar path", { fill: "rgba(232,119,95,1)", duration: .2 }, 2.0);
+tl.fromTo("#stkStar", { rotate: -180, scale: .4 }, { rotate: 0, scale: 1, duration: .6, ease: bo }, 1.55);
+tl.set("#spks", { visibility: "visible" }, 2.0);
+tl.set("#spks", { visibility: "hidden" }, 2.9);
+tl.set("#pts", { visibility: "visible" }, 9.46);
+const c = { v: 0 }, num = document.getElementById("stkNum");
+tl.fromTo(c, { v: 0 }, { v: 400000, duration: .75, ease: "power3.out", onUpdate: () => { num.textContent = Math.round(c.v).toLocaleString("en-US"); } }, 1.62);
+tl.from("#stkLbl", { opacity: 0, y: 20, scale: 1.3, duration: .4, ease: p3 }, 2.38);
+sp.forEach((d, i) => { const a = (i / 12) * Math.PI * 2, r = 260 + rnd() * 160;
+  tl.fromTo(d, { x: 0, y: 0, opacity: 1, scale: .5 + rnd(), rotate: 0, immediateRender: false }, { x: Math.cos(a) * r, y: Math.sin(a) * r, opacity: 0, rotate: 180, duration: .8, ease: "power3.out" }, 2.02); });
+// "Four hundred thousand": camera punch-in, sticker pulses with each word
+tl.to("#campush", { scale: 1.16, duration: .35, ease: "power3.out" }, 3.9);
+tl.to("#stk", { scale: 1.08, duration: .12, yoyo: true, repeat: 5, ease: "sine.inOut" }, 3.94);
+tl.to("#stk", { x: 700, rotate: 12, opacity: 0, duration: .35, ease: "power3.in" }, 4.9);
+tl.set("#stk", { visibility: "hidden" }, 5.3);
+// "Crazy, right?": whip back out + flame sticker
+tl.to("#campush", { scale: 1, rotate: 0, duration: .3, ease: "power3.out" }, 5.2);
+tl.set("#campush", { x: -60 }, 5.2);
+tl.to("#campush", { x: 0, duration: .3, ease: "power3.out" }, 5.2);
+tl.set("#flame", { visibility: "visible" }, 5.6);
+tl.fromTo("#flame", { scale: 0, rotate: -40 }, { scale: 1, rotate: 8, duration: .4, ease: bo }, 5.62);
+tl.to("#flame", { rotate: -8, duration: .12, yoyo: true, repeat: 3, ease: "sine.inOut" }, 6.03);
+tl.to("#flame", { scale: 0, duration: .2, ease: "power2.in" }, 6.5);
+tl.set("#flame", { visibility: "hidden" }, 6.7);
+
+// takeover: footage shrinks into the PiP card, bottom-left (6.85)
+tl.to("#bd", { opacity: 1, duration: .3 }, 6.85);
+tl.to("#camwrap", { x: 56, y: 1080 - 56 - 1080 * .3, scale: .3, duration: .5, ease: "expo.inOut" }, 6.82);
+tl.to("#camwrap", { borderRadius: 110, duration: .5, ease: "expo.inOut" }, 6.82);
+tl.to("#camring", { borderWidth: 14, borderRadius: 110, duration: .5, ease: "expo.inOut" }, 6.82);
+tl.fromTo("#scan", { opacity: 0 }, { opacity: 1, duration: .2 }, 6.9);
+const W = document.querySelectorAll(".big3"), at = [7.04, 7.54, 8.12];
+W.forEach((w, i) => {
+  tl.fromTo(w, { opacity: 0, scale: 2.2, x: 300, filter: "blur(24px)" }, { opacity: 1, scale: 1, x: 0, filter: "blur(0px)", duration: .32, ease: "expo.out" }, at[i]);
+  tl.fromTo("#bd", { x: 0 }, { x: i % 2 ? 14 : -14, duration: .04, yoyo: true, repeat: 3, ease: "none" }, at[i] + .05);
+});
+tl.fromTo("#imp1", { opacity: 1, scaleX: 0, immediateRender: false }, { scaleX: 1, duration: .3, ease: "expo.out" }, 7.06);
+tl.to("#imp1", { y: 186, duration: .25, ease: "expo.out" }, 7.56);
+tl.to("#imp1", { y: 372, duration: .25, ease: "expo.out" }, 8.14);
+tl.to("#imp1", { opacity: 0, duration: .2 }, 9.1);
+tl.to("#words", { scale: 1.06, duration: 1.2, ease: "sine.inOut" }, 8.1);
+// glitch → REA (9.46)
+tl.to("#words", { x: () => (rnd() - .5) * 60, duration: .04, repeat: 6, yoyo: true, ease: "none" }, 9.1);
+tl.fromTo("#rgbR", { opacity: 0, x: 0 }, { opacity: .8, x: -30, duration: .05, repeat: 5, yoyo: true, ease: "none" }, 9.16);
+tl.fromTo("#rgbB", { opacity: 0, x: 0 }, { opacity: .8, x: 30, duration: .05, repeat: 5, yoyo: true, ease: "none" }, 9.16);
+tl.to(".big3", { y: -160, opacity: 0, filter: "blur(20px)", duration: .22, ease: "power3.in", stagger: .03 }, 9.22);
+tl.set("#rgbR, #rgbB", { opacity: 0 }, 9.46);
+tl.fromTo("#flash", { opacity: 0 }, { opacity: .7, duration: .05, yoyo: true, repeat: 1, ease: "none" }, 9.44);
+tl.set("#rea", { visibility: "visible" }, 9.44);
+tl.fromTo("#reatxt span", { scale: 3, opacity: 0, filter: "blur(30px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: .4, ease: "expo.out", stagger: .06 }, 9.46);
+tl.fromTo("#bd", { scale: 1 }, { scale: 1.06, duration: .06, yoyo: true, repeat: 1 }, 9.5);
+["#r1", "#r2", "#r3"].forEach((r, i) => tl.fromTo(r, { scale: .07, opacity: .9, immediateRender: false }, { scale: 1, opacity: 0, duration: .9, ease: "power2.out" }, 9.48 + i * .12));
+pp.forEach((d) => { const a = rnd() * Math.PI * 2, r = 300 + rnd() * 600;
+  tl.fromTo(d, { x: 0, y: 0, opacity: 1, scale: .4 + rnd() * 1.4, rotate: 0, immediateRender: false }, { x: Math.cos(a) * r, y: Math.sin(a) * r, opacity: 0, rotate: rnd() * 360, duration: .9 + rnd() * .5, ease: "power3.out" }, 9.48 + rnd() * .06); });
+tl.fromTo("#reabar", { scaleX: 0 }, { scaleX: 1, duration: .5, ease: "expo.out" }, 9.7);
+tl.fromTo("#reasub", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .35, ease: p3 }, 9.9);
+tl.fromTo("#badge", { scale: 0, rotate: -30 }, { scale: 1, rotate: 8, duration: .4, ease: bo }, 10.0);
+tl.to("#reatxt", { scale: 1.05, duration: 1, ease: "sine.out" }, 9.6);
+tl.to("#scan", { opacity: .4, duration: .4 }, 9.6);
+window.__timelines = window.__timelines || {};
+window.__timelines["rea-v2-hook"] = tl;
+</script>
+</body>
+</html>
