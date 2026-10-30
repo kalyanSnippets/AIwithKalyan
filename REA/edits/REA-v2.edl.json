@@ -1,0 +1,484 @@
+[
+ {
+  "id": "S1-01",
+  "section": "S1",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 41.4,
+  "src_out": 51.9,
+  "note": "This one tool\u2026REA for short (1st take; 'It's called REA--' retake cut)"
+ },
+ {
+  "id": "S1-02",
+  "section": "S1",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 57.0,
+  "src_out": 65.1,
+  "note": "It let AI open any app\u2026it built THIS. Hold for 'Which one is real?' split",
+  "hold": 1.2
+ },
+ {
+  "id": "S1-03",
+  "section": "S1",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 73.7,
+  "src_out": 82.2,
+  "note": "Can you tell\u2026worth the hype?"
+ },
+ {
+  "id": "S1-04",
+  "section": "S1",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 85.9,
+  "src_out": 89.4,
+  "note": "I am Kalyan. Welcome\u2026Okay, let's go (2nd name take)"
+ },
+ {
+  "id": "S2-01",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 101.85,
+  "src_out": 120.75,
+  "note": "So first, what is REA?\u2026two weeks (drop 'Okay.')"
+ },
+ {
+  "id": "S2-02",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 126.7,
+  "src_out": 140.5,
+  "note": "and YouTube videos\u2026experts use"
+ },
+ {
+  "id": "S2-03",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 148.55,
+  "src_out": 157.0,
+  "note": "so the AI can open an app\u2026own computer (3rd take)"
+ },
+ {
+  "id": "S2-04",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 165.25,
+  "src_out": 167.45,
+  "note": "Now, what are people actually building with it?"
+ },
+ {
+  "id": "S2-05",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 211.7,
+  "src_out": 234.25,
+  "note": "Steam (spliced takes) + 460K views + Blender",
+  "remove": [
+   [
+    213.8,
+    217.7
+   ]
+  ]
+ },
+ {
+  "id": "S2-06",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 279.7,
+  "src_out": 287.35,
+  "note": "DX-Ball 3,205 test cases (clean take)"
+ },
+ {
+  "id": "S2-07",
+  "section": "S2",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 289.5,
+  "src_out": 299.8,
+  "note": "Notion clipboard\u2026let's find out"
+ },
+ {
+  "id": "S3-01",
+  "section": "S3",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 2.25,
+  "src_out": 19.75,
+  "note": "What are we building\u2026free to look at ('it has list' dup cut)",
+  "remove": [
+   [
+    7.3,
+    8.62
+   ]
+  ]
+ },
+ {
+  "id": "S3-02",
+  "section": "S3",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 26.5,
+  "src_out": 50.35,
+  "note": "My mission is simple\u2026our own sample data ('I just told,' retake cut)",
+  "remove": [
+   [
+    38.8,
+    40.08
+   ]
+  ]
+ },
+ {
+  "id": "S3-03",
+  "section": "S3",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 53.7,
+  "src_out": 57.0,
+  "note": "so can REA pull this off? Let's see."
+ },
+ {
+  "id": "S4-01",
+  "section": "S4",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 61.35,
+  "src_out": 80.4,
+  "note": "Subscribe request",
+  "remove": [
+   [
+    64.0,
+    66.3
+   ],
+   [
+    71.7,
+    74.55
+   ]
+  ]
+ },
+ {
+  "id": "S5-01",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 102.3,
+  "src_out": 107.8,
+  "note": "I'm on Windows using PowerShell\u2026type this command"
+ },
+ {
+  "id": "S5-02",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 109.75,
+  "src_out": 118.95,
+  "note": "Make a new folder\u2026go inside it",
+  "remove": [
+   [
+    114.3,
+    115.15
+   ]
+  ]
+ },
+ {
+  "id": "S5-03",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 121.95,
+  "src_out": 124.6,
+  "note": "Now the main step, to install REA"
+ },
+ {
+  "id": "S5-04",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 141.2,
+  "src_out": 143.0,
+  "note": "just type this one command"
+ },
+ {
+  "id": "S5-05",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 165.1,
+  "src_out": 177.7,
+  "note": "Then it asks 'Install the guided REA skill?'\u2026connect REA to Claude Code"
+ },
+ {
+  "id": "S5-06",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 179.3,
+  "src_out": 186.55,
+  "note": "So we add Claude MCP. To do that\u2026type that command",
+  "remove": [
+   [
+    181.8,
+    184.0
+   ]
+  ]
+ },
+ {
+  "id": "S5-07",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 228.6,
+  "src_out": 234.85,
+  "note": "And let's check it\u2026Boom, it's connected. Now start Claude Code"
+ },
+ {
+  "id": "S5-08",
+  "section": "S5",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 238.8,
+  "src_out": 261.8,
+  "note": "First time it asks for a theme\u2026every two seconds. So nice",
+  "remove": [
+   [
+    238.8,
+    239.16
+   ],
+   [
+    252.6,
+    258.6
+   ]
+  ]
+ },
+ {
+  "id": "S6-01",
+  "section": "S6",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 271.85,
+  "src_out": 276.95,
+  "note": "Okay. Now the most important part, the prompt\u2026real secret"
+ },
+ {
+  "id": "S6-02",
+  "section": "S6",
+  "clip": "PXL_20261030_072433489_3",
+  "src_in": 292.3,
+  "src_out": 293.9,
+  "note": "So I'm pasting this in. (prompt read-aloud cut, per Kalyan)",
+  "hold": 0.8
+ },
+ {
+  "id": "S6-03",
+  "section": "S6",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 106.2,
+  "src_out": 110.1,
+  "note": "Prompt is in the description"
+ },
+ {
+  "id": "S6-04",
+  "section": "S6",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 122.5,
+  "src_out": 168.4,
+  "note": "Why this prompt works: four things\u2026now we wait",
+  "remove": [
+   [
+    132.8,
+    135.98
+   ]
+  ]
+ },
+ {
+  "id": "S7-01",
+  "section": "S7",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 182.9,
+  "src_out": 235.7,
+  "note": "Claude works: folder, REA browser tools, Playwright, files + line counts",
+  "remove": [
+   [
+    189.0,
+    190.02
+   ],
+   [
+    194.9,
+    210.38
+   ],
+   [
+    217.6,
+    219.98
+   ],
+   [
+    233.7,
+    234.32
+   ]
+  ]
+ },
+ {
+  "id": "S7-02",
+  "section": "S7",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 242.8,
+  "src_out": 262.65,
+  "note": "Builds, tests with real mouse, ~18 minutes",
+  "remove": [
+   [
+    259.0,
+    260.28
+   ]
+  ]
+ },
+ {
+  "id": "S8-01",
+  "section": "S8",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 272.7,
+  "src_out": 311.3,
+  "note": "All fifty checks passed\u2026guess\u2026Let's see",
+  "remove": [
+   [
+    278.55,
+    283.45
+   ],
+   [
+    290.95,
+    307.0
+   ]
+  ]
+ },
+ {
+  "id": "S9-01",
+  "section": "S9",
+  "clip": "PXL_20261030_072433489_5",
+  "src_in": 360.5,
+  "src_out": 405.85,
+  "note": "Reveal: left original, right REA Board, top bar, WIP limit, cards, CSS covers",
+  "remove": [
+   [
+    389.25,
+    390.98
+   ],
+   [
+    395.76,
+    401.0
+   ]
+  ]
+ },
+ {
+  "id": "S9-02",
+  "section": "S9",
+  "clip": "PXL_20261030_075042392",
+  "src_in": 183.0,
+  "src_out": 256.1,
+  "note": "Live test: add list/card, panel, drag and drop, delete, sample lists, impressed",
+  "remove": [
+   [
+    233.7,
+    237.2
+   ],
+   [
+    243.8,
+    244.7
+   ]
+  ]
+ },
+ {
+  "id": "S10-01",
+  "section": "S10",
+  "clip": "PXL_20261030_075042392",
+  "src_in": 275.2,
+  "src_out": 377.9,
+  "note": "Worth the hype? 3 reasons, BUT, ethics (keeps 'twenty minutes' as spoken)",
+  "remove": [
+   [
+    277.45,
+    281.38
+   ],
+   [
+    286.6,
+    289.3
+   ],
+   [
+    295.4,
+    310.62
+   ],
+   [
+    318.3,
+    333.05
+   ],
+   [
+    368.1,
+    369.62
+   ]
+  ]
+ },
+ {
+  "id": "S10-02",
+  "section": "S10",
+  "clip": "PXL_20261030_080129730",
+  "src_in": 13.6,
+  "src_out": 20.6,
+  "note": "EXTRA: don't copy and sell under their name (copyright)"
+ },
+ {
+  "id": "S10-03",
+  "section": "S10",
+  "clip": "PXL_20261030_080129730",
+  "src_in": 25.1,
+  "src_out": 53.4,
+  "note": "EXTRA: REA's own page says\u2026your own twist\u2026why I used open source",
+  "remove": [
+   [
+    34.4,
+    44.7
+   ]
+  ]
+ },
+ {
+  "id": "S10-04",
+  "section": "S10",
+  "clip": "PXL_20261030_080129730",
+  "src_in": 61.4,
+  "src_out": 94.3,
+  "note": "EXTRA: bonus tip + honest opinion (software engineering not dead)",
+  "remove": [
+   [
+    72.5,
+    74.4
+   ],
+   [
+    78.7,
+    83.85
+   ]
+  ]
+ },
+ {
+  "id": "S10-05",
+  "section": "S10",
+  "clip": "PXL_20261030_080129730",
+  "src_in": 97.5,
+  "src_out": 114.1,
+  "note": "EXTRA: the loop\u2026AI shows you proof",
+  "remove": [
+   [
+    100.4,
+    103.3
+   ]
+  ]
+ },
+ {
+  "id": "S10-06",
+  "section": "S10",
+  "clip": "PXL_20261030_075042392",
+  "src_in": 383.3,
+  "src_out": 386.95,
+  "note": "So my verdict, try it, but do it the right way"
+ },
+ {
+  "id": "S11-01",
+  "section": "S11",
+  "clip": "PXL_20261030_080129730",
+  "src_in": 236.25,
+  "src_out": 284.3,
+  "note": "Outro, comment time, previous video (https://youtu.be/Lo-GJIU1gl8), bye",
+  "remove": [
+   [
+    242.35,
+    244.4
+   ],
+   [
+    248.5,
+    252.35
+   ],
+   [
+    259.3,
+    268.8
+   ]
+  ]
+ }
+]

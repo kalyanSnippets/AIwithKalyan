@@ -1,6 +1,6 @@
 # REA v2: editing plan ("I gave REA one link…")
 
-**Status:** plan approved in part (decisions below, 30 Oct). Two small questions still open. Nothing is cut yet.
+**Status:** all questions answered (30 Oct). Word-exact cut list: [`REA-v2.edl.json`](REA-v2.edl.json). Rough cut v1 rendered for review.
 Script: [`REA-v2.script.md`](REA-v2.script.md). Footage: Drive folder **"Video -2"**
 (`1OUojrUDw0WQk_CU-tVKRjAexffHeyLTQ`), copied to `REA/media/` (git-ignored).
 Transcripts: `REA/transcripts/PXL_20261030_*/` (ElevenLabs Scribe, word timings).
@@ -139,16 +139,26 @@ script's 9:50.
 4. **GitHub:** reuse the 28 Oct clip `Screen_Recording_2026-10-28_194316.mp4` (1024×552, 399K) with
    zooms in a rounded card. Example cards are built from the script's numbers as written.
 
-**New estimated length:** about 11:00–11:30.
+**Length:** the spoken cut is **9:28** (39 kept passages, pauses tightened to 0.3 s). The
+graphics pass adds time where screens need room to breathe (hook split, the sped-up build, the
+prompt window), so expect about 10:00–10:30 final.
 
-## 5b. Still open
+## 5b. Answered later (30 Oct)
 
-1. Previous video for the end screen: is it the CLD_1279 "How I edit videos with Claude" video? Need
-   its title/URL for the card.
-2. Outro: use the on-camera outro (section 11) as recorded, rather than the usual voice-clone outro
-   over full-screen graphics?
-3. The 28 Oct GitHub clip isn't on this machine. Re-download it from the "REA" Drive folder (I can do
-   this myself).
+1. **End screen:** previous video = https://youtu.be/Lo-GJIU1gl8 ("How I edit videos with Claude").
+   Card and YouTube end-screen element point there during section 11.
+2. **Outro: on-camera.** Section 11 is Kalyan on camera (`080129730 03:56–04:44`), with the
+   end-screen graphics beside him and held ~20 s at the end. No voice-clone outro this time.
+3. The 28 Oct GitHub clip still needs re-downloading from the "REA" Drive folder (I'll do it in the
+   graphics pass).
+
+## 5d. Rough cut notes
+
+- Built with `python3 scripts/rough-cut.py REA/edits/REA-v2.edl.json REA/media/proxies REA/transcripts
+  REA/renders/rough_v2 --pad 0.15 --join 0.35` (from 1080p proxies in `REA/media/proxies/`).
+- Holds: 1.2 s after "it built THIS" (split-screen teaser) and 0.8 s after "So I'm pasting this in".
+- Kept as spoken (graphics will carry the facts): "twenty minutes" ×2, "blue with a blue menu",
+  "Nine days ago", "It let AI", "can Rea pulls this off", "It don't guess it".
 
 ## 5c. Original open questions (answered above)
 

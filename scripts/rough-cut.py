@@ -2,6 +2,10 @@
 """Build a rough cut from an EDL (REA/edits/REA.edl.json) with FFmpeg.
 
   python3 scripts/rough-cut.py <edl.json> <rawDir> <transcriptsDir> <outDir> [--width 1920] [--ids S1-01,S1-02]
+                              [--pad 0.2] [--join 0.45] [--text]
+
+--pad/--join set the pause rule (gaps over --join become about 2x--pad). --text prints the kept words
+per entry and the length, without rendering. An entry's "hold": N keeps N s of footage after its last word.
 
 Each EDL range is snapped to words; pauses over ~0.45 s collapse to ~0.4 s; words inside "remove" windows are dropped.
 Writes <outDir>/parts/<id>.mp4, <outDir>/rough_cut.mp4, <outDir>/markers.json (long gaps = where screen recordings go).
@@ -12,8 +16,11 @@ ap = argparse.ArgumentParser()
 ap.add_argument("edl"); ap.add_argument("raw"); ap.add_argument("tr"); ap.add_argument("out")
 ap.add_argument("--width", type=int, default=1920)
 ap.add_argument("--ids")
+ap.add_argument("--pad", type=float, default=0.2)
+ap.add_argument("--join", type=float, default=0.45)
+ap.add_argument("--text", action="store_true")
 a = ap.parse_args()
-PAD, JOIN, LONG = 0.2, 0.45, 2.0
+PAD, JOIN, LONG = a.pad, a.join, 2.0
 edl = json.load(open(a.edl))
 if a.ids: edl = [e for e in edl if e["id"] in a.ids.split(",")]
 os.makedirs(os.path.join(a.out, "parts"), exist_ok=True)
@@ -36,9 +43,15 @@ def pieces(e):
             cur = [n["start"] - pad_a, n["end"]]
         else:
             cur[1] = n["end"]
-    cur[1] += PAD; cur[0] = max(0, cur[0] - PAD / 2)
+    cur[1] += PAD + e.get("hold", 0); cur[0] = max(0, cur[0] - PAD / 2)
     out.append(cur)
+    if a.text:
+        print(f"{e['id']:7} {sum(t - s for s, t in out):5.1f}s  " + " ".join(x["text"] for x in kept))
     return [(round(s, 3), round(t, 3)) for s, t in out if t - s > 0.15]
+
+if a.text:
+    tot = sum(sum(t - s for s, t in pieces(e)) for e in edl)
+    print(f"total {tot:.1f}s ({tot/60:.2f} min)"); sys.exit()
 
 for e in edl:
     ps = pieces(e)
