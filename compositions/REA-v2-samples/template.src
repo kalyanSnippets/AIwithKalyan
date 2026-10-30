@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<title>REA v2 template samples</title>
+<script src="vendor/gsap.min.js"></script>
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-400.woff2") format("woff2"); font-weight: 400; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-600.woff2") format("woff2"); font-weight: 600; font-display: block; }
+@font-face { font-family: "Inter"; src: url("fonts/Inter-800.woff2") format("woff2"); font-weight: 800; font-display: block; }
+:root { --bg:#0B0B0D; --ink:#F6F1EC; --mute:rgba(246,241,236,.62); --coral:#E8775F; --coralHi:#FF9E88; --steel:#7F95AB; --glass:rgba(255,255,255,.06); --line:rgba(255,255,255,.12); --ok:#5BD69A; }
+html, body { margin:0; background:var(--bg); }
+#root { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--bg); font-family:"Inter",system-ui,sans-serif; color:var(--ink); }
+.fill { position:absolute; inset:0; }
+.blob { position:absolute; border-radius:50%; filter:blur(120px); }
+#b1 { width:900px; height:900px; left:-250px; top:-350px; background:rgba(232,119,95,.26); }
+#b2 { width:800px; height:800px; right:-250px; bottom:-380px; background:rgba(127,149,171,.18); }
+#grid { background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size:120px 120px; }
+.scene { position:absolute; inset:0; visibility:hidden; }
+.tag { position:absolute; left:60px; top:44px; font-weight:600; font-size:24px; letter-spacing:5px; color:var(--steel); text-transform:uppercase; }
+.tag b { color:var(--coral); }
+.glass { background:var(--glass); border:1.5px solid var(--line); border-radius:28px; box-shadow:0 30px 80px rgba(0,0,0,.45); backdrop-filter:blur(18px); }
+.ic svg { width:100%; height:100%; }
+.h1 { position:absolute; left:0; right:0; text-align:center; font-weight:800; letter-spacing:-3px; }
+.hot { color:var(--coral); }
+.cap { position:absolute; left:50%; bottom:64px; transform:translateX(-50%); padding:14px 30px; border-radius:16px; background:rgba(0,0,0,.6); font-weight:800; font-size:48px; white-space:nowrap; }
+.pip { position:absolute; left:56px; bottom:56px; width:340px; height:340px; border-radius:36px; overflow:hidden; border:4px solid var(--coral); box-shadow:0 24px 60px rgba(0,0,0,.55); }
+.pip img { width:100%; height:100%; object-fit:cover; }
+.mono { font-family:"DejaVu Sans Mono","Consolas",monospace; }
+.win { position:absolute; border-radius:22px; overflow:hidden; background:#101114; border:1.5px solid var(--line); box-shadow:0 40px 100px rgba(0,0,0,.6); }
+.bar { height:58px; display:flex; align-items:center; gap:12px; padding:0 24px; background:#1A1C21; font-size:24px; color:var(--mute); font-weight:600; }
+.dot { width:16px; height:16px; border-radius:50%; background:#3a3d44; }
+.panel { position:absolute; width:860px; height:438px; border-radius:24px; overflow:hidden; border:2px solid var(--line); box-shadow:0 30px 80px rgba(0,0,0,.55); }
+.panel img { width:100%; height:100%; object-fit:cover; display:block; }
+.pill { position:absolute; padding:10px 26px; border-radius:999px; font-weight:800; font-size:30px; letter-spacing:3px; }
+.chip { display:inline-flex; align-items:center; gap:14px; padding:16px 30px; border-radius:999px; font-weight:800; font-size:40px; }
+.chip .ic { width:40px; height:40px; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-v2-samples" data-start="0" data-width="1920" data-height="1080" data-duration="33">
+  <div class="blob" id="b1"></div><div class="blob" id="b2"></div><div id="grid" class="fill"></div>
+
+  <!-- 01 HOOK SPLIT -->
+  <div class="scene" id="s1">
+    <div class="tag">Template <b>01</b> · Hook split-screen</div>
+    <div class="h1" id="s1h" style="top:96px;font-size:120px">Which one is <span class="hot">real?</span></div>
+    <div class="panel" id="s1a" style="left:80px;top:330px"><img src="img/wekan.jpg"></div>
+    <div class="panel" id="s1b" style="left:980px;top:330px"><img src="img/reaboard.jpg"></div>
+    <div class="pill" id="s1la" style="left:430px;top:800px;background:var(--ink);color:#111">A&nbsp;&nbsp;?</div>
+    <div class="pill" id="s1lb" style="left:1330px;top:800px;background:var(--coral);color:#111">B&nbsp;&nbsp;?</div>
+  </div>
+
+  <!-- 02 STAT COUNTER + PIP -->
+  <div class="scene" id="s2">
+    <div class="tag">Template <b>02</b> · Stat counter + PiP card</div>
+    <div class="ic hot" id="s2star" style="position:absolute;left:330px;top:200px;width:230px;height:230px">{{i:star}}</div>
+    <div id="s2num" style="position:absolute;left:600px;top:180px;font-weight:800;font-size:230px;letter-spacing:-10px;line-height:1">0</div>
+    <div id="s2lbl" style="position:absolute;left:612px;top:440px;font-weight:600;font-size:52px;color:var(--mute)">stars on GitHub</div>
+    <div id="s2chips" style="position:absolute;left:612px;top:580px;display:flex;gap:28px">
+      <div class="chip glass"><span class="ic">{{i:git-fork}}</span>100K+ forks</div>
+      <div class="chip glass"><span class="ic hot">{{i:sparkles}}</span>Free · MIT</div>
+    </div>
+    <div class="pip"><img src="img/face.jpg"></div>
+    <div class="cap">Crazy, <span class="hot">no?</span></div>
+  </div>
+
+  <!-- 03 USE-CASE ICON FLOW -->
+  <div class="scene" id="s3">
+    <div class="tag">Template <b>03</b> · Use-case icon flow</div>
+    <div class="glass s3n" style="position:absolute;left:160px;top:300px;width:460px;height:400px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px">
+      <div class="ic" style="width:180px;height:180px">{{i:gamepad-2}}</div><div style="font-weight:800;font-size:54px">Steam game</div></div>
+    <svg id="s3arrow" style="position:absolute;left:640px;top:440px" width="640" height="120"><path id="s3path" d="M10 60 H600" stroke="#E8775F" stroke-width="10" stroke-linecap="round" fill="none" stroke-dasharray="600" stroke-dashoffset="600"/><path id="s3head" d="M570 30 L610 60 L570 90" stroke="#E8775F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0"/></svg>
+    <div class="chip" id="s3time" style="position:absolute;left:800px;top:330px;background:var(--coral);color:#111"><span class="ic">{{i:clock}}</span>30 min</div>
+    <div class="glass s3n" style="position:absolute;left:1300px;top:300px;width:460px;height:400px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;border-color:var(--coral)">
+      <div class="ic hot" style="width:180px;height:180px">{{i:code}}</div><div style="font-weight:800;font-size:54px">C# · Unity</div></div>
+    <div class="chip glass" id="s3views" style="position:absolute;left:760px;top:820px"><span class="ic">{{i:eye}}</span>460K views</div>
+  </div>
+
+  <!-- 04 NUMBERED STEP -->
+  <div class="scene" id="s4">
+    <div class="tag">Template <b>04</b> · Numbered step transition</div>
+    <div id="s4dots" style="position:absolute;left:0;right:0;top:120px;display:flex;justify-content:center;gap:24px">
+      <div class="s4d">1</div><div class="s4d on">2</div><div class="s4d">3</div><div class="s4d">4</div><div class="s4d">5</div></div>
+    <style>.s4d{width:70px;height:70px;border-radius:50%;border:3px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:32px;color:var(--mute)}.s4d.on{background:var(--coral);border-color:var(--coral);color:#111}</style>
+    <div id="s4num" style="position:absolute;left:110px;top:300px;font-weight:800;font-size:540px;line-height:1;letter-spacing:-30px;color:transparent;-webkit-text-stroke:6px var(--coral)">02</div>
+    <div id="s4icon" class="ic" style="position:absolute;left:1080px;top:330px;width:200px;height:200px;padding:40px;border-radius:50%;background:rgba(232,119,95,.16);color:var(--coral)">{{i:package}}</div>
+    <div id="s4t" style="position:absolute;left:1080px;top:640px;font-weight:800;font-size:130px;letter-spacing:-4px">Install REA</div>
+    <div id="s4s" style="position:absolute;left:1086px;top:800px;font-weight:600;font-size:48px;color:var(--mute)">just one command</div>
+  </div>
+
+  <!-- 05 COMMAND WINDOW -->
+  <div class="scene" id="s5">
+    <div class="tag">Template <b>05</b> · Big command window</div>
+    <div class="win" id="s5w" style="left:180px;top:170px;width:1560px;height:740px">
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; Windows PowerShell</div>
+      <div class="mono" style="padding:44px 50px;font-size:46px;line-height:1.7">
+        <div><span style="color:var(--steel)">PS ...\kanban-rea-demo&gt;</span> <span id="s5cmd" class="hot" style="font-weight:700"></span><span id="s5cur" style="background:var(--ink)">&nbsp;</span></div>
+        <div class="s5o" style="color:var(--ok)">✓ Detected Claude Code</div>
+        <div class="s5o" style="color:var(--ok)">✓ Detected Codex</div>
+        <div class="s5o">? Install the guided REA skill? <b class="hot">Yes</b></div>
+        <div class="s5o" style="color:var(--ok);font-weight:700">✓ REA is ready for local app analysis</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06 PROMPT WINDOW -->
+  <div class="scene" id="s6">
+    <div class="tag">Template <b>06</b> · Typed prompt window</div>
+    <div class="win" id="s6w" style="left:160px;top:140px;width:1600px;height:820px">
+      <div class="bar"><span class="ic hot" style="width:30px;height:30px">{{i:terminal}}</span> Claude Code · prompt <span style="margin-left:auto;padding:6px 18px;border-radius:999px;background:rgba(232,119,95,.18);color:var(--coralHi)">Pasted text +46 lines</span></div>
+      <div id="s6body" style="padding:40px 56px;font-size:38px;line-height:1.55;color:var(--mute)">
+        <div class="s6l">Build a faithful clone of its board screen. Name it <b style="color:var(--ink)">"REA Board"</b>.</div>
+        <div class="s6l" style="margin-top:22px"><span class="hl" id="hl1">MEASURE FIRST, DON'T GUESS</span></div>
+        <div class="s6l">Open the live demo and measure: colours, fonts, list width, card radius, shadow…</div>
+        <div class="s6l" style="margin-top:22px;color:var(--ink);font-weight:800">BOARD SCREEN · CARD PANEL · INTERACTIONS</div>
+        <div class="s6l" style="margin-top:22px"><span class="hl" id="hl2">TESTING</span></div>
+        <div class="s6l">Use real mouse drags. <span style="color:var(--ink);font-weight:800">Tick an item only if you saw it work.</span></div>
+      </div>
+    </div>
+    <style>.hl{position:relative;isolation:isolate;display:inline-block;font-weight:800;color:var(--ink);font-size:52px;padding:4px 14px}.hl::before{content:"";position:absolute;inset:0;background:var(--coral);border-radius:10px;transform-origin:left;transform:scaleX(var(--sx,0));z-index:-1;opacity:.9}</style>
+  </div>
+
+  <!-- 07 ANIMATED TERMINAL -->
+  <div class="scene" id="s7">
+    <div class="tag">Template <b>07</b> · Animated Claude terminal</div>
+    <div class="win" id="s7w" style="left:160px;top:150px;width:1240px;height:800px">
+      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; claude · kanban-rea-demo</div>
+      <div class="mono" style="padding:36px 46px;font-size:36px;line-height:1.75">
+        <div class="s7l"><span class="tk">✓</span> Write <b>Avatar.jsx</b></div>
+        <div class="s7l"><span class="tk">✓</span> Write <b>Minicard.jsx</b> <span class="n">156 lines</span></div>
+        <div class="s7l"><span class="tk">✓</span> Write <b>List.jsx</b> <span class="n">210 lines</span></div>
+        <div class="s7l"><span class="tk">✓</span> Write <b>useDragDrop.js</b> <span class="n">157 lines</span></div>
+        <div class="s7l"><span class="tk">✓</span> Write <b>styles.css</b> <span class="n">every measured value</span></div>
+        <div class="s7l"><span class="tk">✓</span> Build · <b>43 modules</b>, no errors</div>
+        <div class="s7l" style="color:var(--coral);font-weight:700"><span class="tk" style="color:var(--coral)">●</span> All 50 checks passed</div>
+      </div>
+    </div>
+    <style>.tk{color:var(--ok);display:inline-block;width:46px}.n{color:var(--steel)}</style>
+    <div class="glass" id="s7timer" style="position:absolute;left:1430px;top:150px;width:400px;height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+      <div class="ic hot" style="width:80px;height:80px">{{i:clock}}</div>
+      <div id="s7clock" style="font-weight:800;font-size:80px;letter-spacing:-2px;white-space:nowrap">0m 00s</div>
+      <div style="font-weight:600;font-size:28px;color:var(--mute)">sped up 4×</div>
+    </div>
+  </div>
+
+  <!-- 08 COMMENT HOOK -->
+  <div class="scene" id="s8">
+    <div class="tag">Template <b>08</b> · Comment hook poll</div>
+    <div class="h1" id="s8h" style="top:150px;font-size:110px">Guess the <span class="hot">match %</span></div>
+    <div id="s8row" style="position:absolute;left:0;right:0;top:400px;display:flex;justify-content:center;gap:60px">
+      <div class="s8b glass">50%</div><div class="s8b glass">80%</div><div class="s8b glass" style="border-color:var(--coral)">90%</div></div>
+    <style>.s8b{width:380px;height:300px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:140px;border-radius:40px 40px 40px 8px}</style>
+    <div class="chip" id="s8c" style="position:absolute;left:680px;top:800px;background:var(--coral);color:#111"><span class="ic">{{i:message-circle}}</span>Comment below</div>
+  </div>
+
+  <!-- 09 REVEAL WITH CALLOUT -->
+  <div class="scene" id="s9">
+    <div class="tag">Template <b>09</b> · Side-by-side reveal + callout</div>
+    <div class="panel" id="s9a" style="left:80px;top:300px"><img src="img/wekan.jpg"></div>
+    <div class="panel" id="s9b" style="left:980px;top:300px"><img src="img/reaboard.jpg"></div>
+    <div class="pill" style="left:80px;top:210px;background:rgba(127,149,171,.25);color:var(--ink)">ORIGINAL</div>
+    <div class="pill" style="left:980px;top:210px;background:var(--coral);color:#111">REA BOARD</div>
+    <svg class="fill" width="1920" height="1080" style="pointer-events:none"><circle class="s9c" cx="112" cy="385" r="48" fill="none" stroke="#E8775F" stroke-width="7" stroke-dasharray="302" stroke-dashoffset="302" transform="rotate(-90 112 385)"/><circle class="s9c" cx="1005" cy="385" r="48" fill="none" stroke="#E8775F" stroke-width="7" stroke-dasharray="302" stroke-dashoffset="302" transform="rotate(-90 1005 385)"/></svg>
+    <div class="cap" id="s9cap" style="bottom:110px">WIP limit <span class="hot">4/3</span> turns red</div>
+  </div>
+
+  <!-- 10 VERDICT -->
+  <div class="scene" id="s10">
+    <div class="tag">Template <b>10</b> · Verdict ticks + "but"</div>
+    <div class="h1" style="top:110px;font-size:110px">Worth the <span class="hot">hype?</span></div>
+    <div style="position:absolute;left:0;right:0;top:360px;display:flex;justify-content:center;gap:40px">
+      <div class="s10t glass"><span class="ic">{{i:ruler}}</span><div>Measures</div><span class="ok">✓</span></div>
+      <div class="s10t glass"><span class="ic">{{i:mouse-pointer-2}}</span><div>Really works</div><span class="ok">✓</span></div>
+      <div class="s10t glass"><span class="ic">{{i:check-check}}</span><div>Tests itself</div><span class="ok">✓</span></div>
+      <div class="s10t" id="s10but" style="background:var(--coral);color:#111;border-radius:28px"><span class="ic">{{i:triangle-alert}}</span><div>But…</div></div>
+    </div>
+    <style>.s10t{position:relative;width:340px;height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;font-weight:800;font-size:46px}.s10t .ic{width:130px;height:130px}.s10t .ok{position:absolute;top:-26px;right:-26px;width:76px;height:76px;border-radius:50%;background:var(--ok);color:#0b0b0d;display:flex;align-items:center;justify-content:center;font-size:46px}</style>
+  </div>
+
+  <!-- 11 LIKE SUBSCRIBE BELL -->
+  <div class="scene" id="s11">
+    <div class="tag">Template <b>11</b> · Like → Subscribe → Bell</div>
+    <div class="h1" style="top:170px;font-size:96px">AI with <span class="hot">Kalyan</span></div>
+    <div style="position:absolute;left:0;right:0;top:430px;display:flex;justify-content:center;align-items:center;gap:50px">
+      <div class="glass" id="s11l" style="width:200px;height:200px;border-radius:50%;display:flex;align-items:center;justify-content:center"><span class="ic" style="width:100px;height:100px">{{i:thumbs-up}}</span></div>
+      <div id="s11s" style="padding:50px 80px;border-radius:999px;background:var(--coral);color:#111;font-weight:800;font-size:76px"><span id="s11st">SUBSCRIBE</span><span id="s11st2" style="display:none">SUBSCRIBED</span></div>
+      <div class="glass" id="s11b" style="width:200px;height:200px;border-radius:50%;display:flex;align-items:center;justify-content:center"><span class="ic" id="s11bi" style="width:100px;height:100px">{{i:bell}}</span></div>
+    </div>
+    <div class="ic" id="s11cur" style="position:absolute;left:1100px;top:800px;width:90px;height:90px;color:var(--ink)">{{i:mouse-pointer-2}}</div>
+  </div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+const D = 3;
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 33, ease: "sine.inOut" }, 0);
+tl.fromTo("#b2", { x: 0, y: 0 }, { x: -260, y: -140, duration: 33, ease: "sine.inOut" }, 0);
+tl.fromTo("#grid", { x: 0 }, { x: -240, duration: 33, ease: "none" }, 0);
+for (let i = 1; i <= 11; i++) {
+  const t0 = (i - 1) * D, s = "#s" + i;
+  tl.set(s, { visibility: "visible" }, t0);
+  tl.fromTo(s + " .tag", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: .4, ease: "power3.out" }, t0);
+  if (i < 11) { tl.to(s, { opacity: 0, scale: 1.04, duration: .22, ease: "power2.in" }, t0 + D - .22); tl.set(s, { visibility: "hidden" }, t0 + D); }
+}
+const bo = "back.out(1.6)", p3 = "power3.out";
+// 01
+tl.from("#s1h", { y: -60, opacity: 0, duration: .5, ease: bo }, .05);
+tl.from("#s1a", { x: -500, opacity: 0, rotate: -4, duration: .6, ease: p3 }, .2);
+tl.from("#s1b", { x: 500, opacity: 0, rotate: 4, duration: .6, ease: p3 }, .3);
+tl.from("#s1la, #s1lb", { scale: 0, duration: .45, ease: bo, stagger: .12 }, .8);
+tl.to("#s1la, #s1lb", { scale: 1.12, duration: .3, yoyo: true, repeat: 3, ease: "sine.inOut" }, 1.4);
+// 02
+const c2 = { v: 0 }, n2 = document.getElementById("s2num");
+tl.fromTo(c2, { v: 0 }, { v: 400000, duration: 1.4, ease: "power2.out", onUpdate: () => { n2.textContent = Math.round(c2.v).toLocaleString("en-US") + (c2.v > 399999 ? "+" : ""); } }, 3.2);
+tl.from("#s2star", { scale: 0, rotate: -120, duration: .6, ease: bo }, 3.1);
+tl.from("#s2lbl", { opacity: 0, y: 20, duration: .4, ease: p3 }, 3.6);
+tl.from("#s2chips > *", { opacity: 0, y: 40, duration: .45, ease: bo, stagger: .12 }, 4.3);
+tl.from("#s2 .pip", { x: -420, duration: .5, ease: p3 }, 3.15);
+tl.from("#s2 .cap", { opacity: 0, y: 20, duration: .3 }, 4.6);
+// 03
+tl.from(".s3n", { scale: .6, opacity: 0, duration: .5, ease: bo, stagger: .5 }, 6.1);
+tl.to("#s3path", { attr: { "stroke-dashoffset": 0 }, duration: .5, ease: "power2.inOut" }, 6.45);
+tl.to("#s3head", { opacity: 1, duration: .1 }, 6.9);
+tl.from("#s3time", { scale: 0, duration: .4, ease: bo }, 6.7);
+tl.from("#s3views", { y: 60, opacity: 0, duration: .45, ease: bo }, 7.4);
+// 04
+tl.from("#s4num", { scale: 1.6, opacity: 0, filter: "blur(20px)", duration: .6, ease: "expo.out" }, 9.05);
+tl.from(".s4d", { scale: 0, duration: .35, ease: bo, stagger: .05 }, 9.1);
+tl.fromTo(".s4d.on", { scale: 1 }, { scale: 1.35, duration: .4, ease: bo }, 9.5);
+tl.from("#s4icon", { scale: 0, rotate: -90, duration: .5, ease: bo }, 9.4);
+tl.from("#s4t", { x: 120, opacity: 0, duration: .5, ease: p3 }, 9.6);
+tl.from("#s4s", { opacity: 0, duration: .4 }, 9.95);
+// 05
+tl.from("#s5w", { y: 80, opacity: 0, scale: .94, duration: .5, ease: p3 }, 12.05);
+const cmd = "npx rea-agents", e5 = document.getElementById("s5cmd"), k5 = { n: 0 };
+tl.fromTo(k5, { n: 0 }, { n: cmd.length, duration: .8, ease: "none", onUpdate: () => { e5.textContent = cmd.slice(0, Math.round(k5.n)); } }, 12.4);
+tl.set("#s5cur", { opacity: 0 }, 13.25);
+tl.from(".s5o", { opacity: 0, x: -30, duration: .3, ease: p3, stagger: .3 }, 13.3);
+// 06
+tl.from("#s6w", { y: 80, opacity: 0, duration: .5, ease: p3 }, 15.05);
+tl.from(".s6l", { opacity: 0, y: 16, duration: .3, stagger: .12 }, 15.3);
+tl.fromTo("#hl1", { "--sx": 0 }, { "--sx": 1, duration: .4, ease: "power2.out" }, 16.1);
+tl.fromTo("#hl2", { "--sx": 0 }, { "--sx": 1, duration: .4, ease: "power2.out" }, 16.8);
+tl.fromTo("#hl1, #hl2", { scale: 1 }, { scale: 1.08, duration: .2, yoyo: true, repeat: 1, stagger: .7 }, 16.15);
+// 07
+tl.from("#s7w", { x: -100, opacity: 0, duration: .45, ease: p3 }, 18.05);
+tl.from("#s7timer", { scale: .6, opacity: 0, duration: .45, ease: bo }, 18.2);
+tl.from(".s7l", { opacity: 0, x: -24, duration: .25, ease: p3, stagger: .3 }, 18.4);
+tl.from(".s7l .tk", { scale: 0, duration: .3, ease: bo, stagger: .3 }, 18.5);
+const c7 = { s: 0 }, e7 = document.getElementById("s7clock");
+tl.fromTo(c7, { s: 0 }, { s: 1097, duration: 2.3, ease: "power1.in", onUpdate: () => { const s = Math.round(c7.s); e7.textContent = Math.floor(s / 60) + "m " + String(s % 60).padStart(2, "0") + "s"; } }, 18.3);
+// 08
+tl.from("#s8h", { y: -50, opacity: 0, duration: .45, ease: bo }, 21.05);
+tl.from(".s8b", { scale: 0, rotate: -8, duration: .5, ease: bo, stagger: .18 }, 21.3);
+tl.to(".s8b", { y: -18, duration: .35, yoyo: true, repeat: 1, ease: "sine.inOut", stagger: .15 }, 22.1);
+tl.from("#s8c", { y: 80, opacity: 0, duration: .45, ease: bo }, 22.4);
+// 09
+tl.from("#s9a, #s9b", { y: 60, opacity: 0, duration: .5, ease: p3, stagger: .12 }, 24.05);
+tl.to(".s9c", { attr: { "stroke-dashoffset": 0 }, duration: .5, ease: "power2.inOut", stagger: .25 }, 24.7);
+tl.from("#s9cap", { opacity: 0, y: 20, duration: .3 }, 25.3);
+// 10
+tl.from(".s10t", { y: 120, opacity: 0, duration: .45, ease: bo, stagger: .25 }, 27.1);
+tl.from(".s10t .ok", { scale: 0, duration: .35, ease: bo, stagger: .25 }, 27.45);
+tl.fromTo("#s10but", { rotate: 0 }, { rotate: -5, duration: .25, ease: bo }, 28.3);
+// 11
+tl.from("#s11l, #s11s, #s11b", { scale: 0, duration: .45, ease: bo, stagger: .12 }, 30.05);
+tl.from("#s11cur", { x: -700, y: 80, duration: .5, ease: "power2.inOut" }, 30.4);
+tl.to("#s11cur", { x: -420, y: -180, duration: .4, ease: "power2.inOut" }, 31.2);
+tl.to("#s11cur", { scale: .8, duration: .08, yoyo: true, repeat: 1 }, 31.6);
+tl.to("#s11s", { scale: .92, duration: .08, yoyo: true, repeat: 1 }, 31.6);
+tl.set("#s11s", { background: "#3a3d44", color: "#F6F1EC" }, 31.7);
+tl.set("#s11st", { display: "none" }, 31.7);
+tl.set("#s11st2", { display: "inline" }, 31.7);
+tl.fromTo("#s11bi", { rotate: 0 }, { rotate: 18, duration: .08, yoyo: true, repeat: 7, ease: "none", transformOrigin: "50% 10%" }, 32.0);
+tl.fromTo("#s11b", { borderColor: "rgba(255,255,255,.12)" }, { borderColor: "#E8775F", duration: .2 }, 32.0);
+window.__timelines = window.__timelines || {};
+window.__timelines["rea-v2-samples"] = tl;
+</script>
+</body>
+</html>
