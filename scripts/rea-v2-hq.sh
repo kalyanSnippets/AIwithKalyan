@@ -53,15 +53,21 @@ EOF
 fi
 
 if [ "$1" = B ]; then
-  ( cd REA/remotion
+  [ -n "$SKIP_REMOTION" ] || ( cd REA/remotion
     for c in "Hook2Cut part1" "NodeMap part1" "Blender part1" "RunTerm part2" "Loop part3"; do set -- $c
       npx remotion render src/index.ts $1 ../../compositions/REA-v2-$2/media/r_$1.mp4 --muted --crf 12 \
         --browser-executable=/opt/pw-browsers/chromium --gl=angle --concurrency=3 2>&1 | tail -1; done )
+  # HyperFrames captures each frame as a JPEG at quality 80 and has no CLI flag for it; raise it to 95 in the local
+  # install (node_modules, not committed). PNG source-frame extraction needs ~10 GB per part, so keep JPEG (q 95).
+  sed -i 's/jpegQuality: 80,/jpegQuality: 95,/; s/quality: isPng ? void 0 : options.quality ?? 80,/quality: isPng ? void 0 : options.quality ?? 95,/' \
+    node_modules/hyperframes/dist/chunk-*.js
   ( cd compositions
-    for p in 1 2 3; do rm -rf ../REA/renders/v2/.part$p.hf-* ../REA/renders/v2/work-* ../REA/renders/v2/part$p.mp4
-      npx hyperframes render REA-v2-part$p -o ../REA/renders/v2/part$p.mp4 --video-frame-format png --crf 12 2>&1 | grep -vE "hf-progress|Streaming frame" | tail -1
-      echo "rendered part$p"; done )
-  cd REA/renders/v2; rm -f REA-v2-final.mp4 REA-v2-final-review.mp4
+    for p in 1 2 3; do rm -rf ../REA/renders/v2/.part$p.hf-* ../REA/renders/v2/work-* ../REA/renders/v2/part$p.mp4 /tmp/hyperframes-extract-cache-*
+      npx hyperframes render REA-v2-part$p -o ../REA/renders/v2/part$p.mp4 --crf 12 2>&1 | grep -vE "hf-progress|Streaming frame" | tail -3
+      [ -s ../REA/renders/v2/part$p.mp4 ] || { echo "part$p render failed"; exit 1; }
+      echo "rendered part$p"; done ) || exit 1
+  rm -rf /tmp/hyperframes-extract-cache-*
+  cd REA/renders/v2
   ffmpeg -loglevel error -y -i part1.mp4 -i part2.mp4 -i part3.mp4 -i ../rough_v2_sdr/rough_cut.mp4 -filter_complex \
     "[0:v]trim=end_frame=4427,setpts=PTS-STARTPTS[a];[1:v]trim=end_frame=4752,setpts=PTS-STARTPTS[b];[2:v]trim=end_frame=7824,setpts=PTS-STARTPTS[c];[a][b][c]concat=n=3:v=1:a=0,format=yuv420p[v];[3:a]aresample=48000,apad=whole_dur=566.7667[au]" \
     -map "[v]" -map "[au]" -c:v libx264 -preset slow -crf 15 -tune film -profile:v high -c:a aac -b:a 320k -t 566.7667 -movflags +faststart REA-v2-full-nomix.mp4
