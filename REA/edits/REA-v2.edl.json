@@ -80,7 +80,18 @@
     213.8,
     217.7
    ]
-  ]
+  ],
+  "pause_after": [
+   [
+    226.3,
+    0.4
+   ],
+   [
+    234.22,
+    0.25
+   ]
+  ],
+  "hold": 0.3
  },
  {
   "id": "S2-06",
@@ -88,7 +99,8 @@
   "clip": "PXL_20261030_072433489_2",
   "src_in": 279.7,
   "src_out": 287.35,
-  "note": "DX-Ball 3,205 test cases (clean take)"
+  "note": "DX-Ball 3,205 test cases (clean take)",
+  "hold": 0.55
  },
  {
   "id": "S2-07",
@@ -96,7 +108,13 @@
   "clip": "PXL_20261030_072433489_2",
   "src_in": 289.5,
   "src_out": 299.8,
-  "note": "Notion clipboard\u2026let's find out"
+  "note": "Notion clipboard\u2026let's find out",
+  "pause_after": [
+   [
+    293.02,
+    0.4
+   ]
+  ]
  },
  {
   "id": "S3-01",
@@ -158,7 +176,13 @@
   "clip": "PXL_20261030_072433489_3",
   "src_in": 102.3,
   "src_out": 107.8,
-  "note": "I'm on Windows using PowerShell\u2026type this command"
+  "note": "I'm on Windows using PowerShell\u2026type this command ('Documents' cut: any folder works)",
+  "remove": [
+   [
+    105.15,
+    105.66
+   ]
+  ]
  },
  {
   "id": "S5-02",
@@ -253,7 +277,7 @@
   "src_in": 292.3,
   "src_out": 293.9,
   "note": "So I'm pasting this in. (prompt read-aloud cut, per Kalyan)",
-  "hold": 0.8
+  "hold": 0.15
  },
  {
   "id": "S6-03",
@@ -269,8 +293,12 @@
   "clip": "PXL_20261030_072433489_5",
   "src_in": 122.5,
   "src_out": 168.4,
-  "note": "Why this prompt works: four things\u2026now we wait",
+  "note": "Why this prompt works: four things\u2026now we wait (stumbled 'It don't guess it' cut)",
   "remove": [
+   [
+    127.75,
+    129.4
+   ],
    [
     132.8,
     135.98
@@ -282,8 +310,8 @@
   "section": "S7",
   "clip": "PXL_20261030_072433489_5",
   "src_in": 182.9,
-  "src_out": 235.7,
-  "note": "Claude works: folder, REA browser tools, Playwright, files + line counts",
+  "src_out": 223.95,
+  "note": "Claude works: folder, REA browser tools, Playwright, starts writing code (file-by-file list cut)",
   "remove": [
    [
     189.0,
@@ -296,10 +324,6 @@
    [
     217.6,
     219.98
-   ],
-   [
-    233.7,
-    234.32
    ]
   ]
  },

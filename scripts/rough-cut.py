@@ -6,7 +6,8 @@
 
 --pad/--join set the pause rule (gaps over --join become about 2x--pad). --text prints the kept words
 per entry and the length, without rendering. --words writes every kept word with its time in the cut
-(measured from the rendered parts, so it matches rough_cut.mp4). An entry's "hold": N keeps N s of footage after its last word; "speed": 1.1 plays it faster (pitch kept).
+(measured from the rendered parts, so it matches rough_cut.mp4). An entry's "hold": N keeps N s of footage after its last word; "speed": 1.1 plays it faster (pitch kept);
+"pause_after": [[src_word_end, s], ...] holds the frame for s extra seconds after that word (a beat between examples).
 
 Each EDL range is snapped to words; pauses over ~0.45 s collapse to ~0.4 s; words inside "remove" windows are dropped.
 Writes <outDir>/parts/<id>.mp4, <outDir>/rough_cut.mp4, <outDir>/markers.json (long gaps = where screen recordings go).
@@ -40,19 +41,21 @@ def pieces(e):
         if gap > JOIN or forced:
             pad_a = min(PAD, max(0.02, gap / 2 - 0.02)) if forced else PAD
             cur[1] = p["end"] + pad_a
-            out.append(cur)
+            ext = sum(x for t, x in e.get("pause_after", []) if abs(p["end"] - t) < 0.06)
+            out.append(cur + [ext] if ext else cur)
             if gap > LONG: markers.append({"id": e["id"], "clip": e["clip"], "src_gap_start": round(p["end"], 2), "src_gap_len": round(gap, 1)})
             cur = [n["start"] - pad_a, n["end"]]
         else:
             cur[1] = n["end"]
     cur[1] += PAD + e.get("hold", 0); cur[0] = max(0, cur[0] - PAD / 2)
-    out.append(cur)
+    ext = sum(x for t, x in e.get("pause_after", []) if abs(kept[-1]["end"] - t) < 0.06)
+    out.append(cur + [ext] if ext else cur)
     if a.text:
-        print(f"{e['id']:7} {sum(t - s for s, t in out):5.1f}s  " + " ".join(x["text"] for x in kept))
-    return [(round(s, 3), round(t, 3)) for s, t in out if t - s > 0.15]
+        print(f"{e['id']:7} {sum(c[1] - c[0] for c in out):5.1f}s  " + " ".join(x["text"] for x in kept))
+    return [(round(c[0], 3), round(c[1], 3), c[2] if len(c) > 2 else 0) for c in out if c[1] - c[0] > 0.15]
 
 if a.text:
-    tot = sum(sum(t - s for s, t in pieces(e)) for e in edl)
+    tot = sum(sum(t - s + x for s, t, x in pieces(e)) for e in edl)
     print(f"total {tot:.1f}s ({tot/60:.2f} min)"); sys.exit()
 
 for e in edl:
@@ -62,11 +65,11 @@ for e in edl:
     n = len(ps)
     pre = f"[0:v]scale={a.width}:-2:flags=lanczos,fps=30,format=yuv420p,split={n}" + "".join(f"[s{i}]" for i in range(n)) + ";"
     pre += f"[0:a]aresample=48000,asplit={n}" + "".join(f"[b{i}]" for i in range(n)) + ";"
-    v = pre + ";".join(f"[s{i}]trim={s0-base:.3f}:{t0-base:.3f},setpts=PTS-STARTPTS[v{i}];[b{i}]atrim={s0-base:.3f}:{t0-base:.3f},asetpts=PTS-STARTPTS[a{i}]" for i, (s0, t0) in enumerate(ps))
+    v = pre + ";".join(f"[s{i}]trim={s0-base:.3f}:{t0-base:.3f},setpts=PTS-STARTPTS" + (f",tpad=stop_mode=clone:stop_duration={x:.3f}" if x else "") + f"[v{i}];[b{i}]atrim={s0-base:.3f}:{t0-base:.3f},asetpts=PTS-STARTPTS" + (f",apad=pad_dur={x:.3f}" if x else "") + f"[a{i}]" for i, (s0, t0, x) in enumerate(ps))
     sp = e.get("speed", 1.0)
     cat = "".join(f"[v{i}][a{i}]" for i in range(len(ps))) + f"concat=n={len(ps)}:v=1:a=1" + ("[v][a]" if sp == 1.0 else f"[vc][ac];[vc]setpts=PTS/{sp},fps=30[v];[ac]atempo={sp}[a]")
     dst = os.path.join(a.out, "parts", e["id"] + ".mp4")
-    dur = sum(t - s for s, t in ps) / e.get("speed", 1.0)
+    dur = sum(t - s + x for s, t, x in ps) / e.get("speed", 1.0)
     parts.append((e["id"], dst, dur))
     spans.append((e, ps))
     if os.path.exists(dst): print("skip", e["id"], flush=True); continue
@@ -90,12 +93,12 @@ if a.words:
     out, t0 = [], 0.0
     for (pid, dst, _), (e, ps) in zip(parts, spans):
         w, cum = words_cache[e["clip"]], 0.0
-        for s0, t1 in ps:
+        for s0, t1, ext in ps:
             for x in w:
                 if s0 <= x["start"] < t1 and not any(r[0] - 0.01 <= x["start"] < r[1] for r in e.get("remove", [])):
                     sp = e.get("speed", 1.0)
                     out.append({"text": x["text"], "start": round(t0 + (cum + x["start"] - s0) / sp, 3), "end": round(t0 + (cum + min(x["end"], t1) - s0) / sp, 3), "part": pid, "section": e["section"]})
-            cum += t1 - s0
+            cum += t1 - s0 + ext
         t0 += probe(dst)
     json.dump(out, open(a.words, "w"), indent=0)
     print(f"words: {len(out)} -> {a.words}")

@@ -1,4 +1,4 @@
-// REA v2 part 2 insert: section 7 "Claude works" (cut 260.3 – 300.35). Rendered muted; the A-roll carries the voice.
+// REA v2 part 2 insert: section 7 "Claude works" (cut 259.95 – 289.1, file-by-file narration trimmed). Rendered muted; the A-roll carries the voice.
 // Animated terminal ticks each step as Kalyan says it; real run (6x) in a corner; timer to 18m 17s.
 import {AbsoluteFill, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing} from "remotion";
 import "@fontsource/inter/600.css"; import "@fontsource/inter/800.css";
@@ -9,32 +9,32 @@ const F = "'Inter',system-ui,sans-serif", M = "'DejaVu Sans Mono','Consolas',mon
 const clamp = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
 const Ic: React.FC<{n: string; s: number; c?: string}> = ({n, s, c = K.ink}) =>
   <div style={{width: s, height: s, color: c}} dangerouslySetInnerHTML={{__html: ICONS[n]}} />;
-const B = 260.3; // cut time of frame 0
+const B = 259.95; // cut time of frame 0
 const T = (cut: number) => cut - B;
 
 type Line = {at: number; done?: number; txt: React.ReactNode; n?: number; hot?: boolean};
 const LINES: Line[] = [
-  {at: T(263.71), done: T(265.35), txt: <>Check the project folder <span style={{color: K.steel}}>→ empty</span></>},
-  {at: T(266.05), done: T(268.89), txt: <>REA browser tools <span style={{color: K.steel}}>→ open the live board</span></>},
-  {at: T(269.91), done: T(270.6), txt: <>Measure fonts, colours, spacing</>},
-  {at: T(270.97), done: T(274.17), txt: <>Found Chrome <span style={{color: K.steel}}>· set up Playwright toolkit</span></>},
-  {at: T(281.31), done: T(281.6), txt: <>Write <b>Avatar.jsx</b></>},
-  {at: T(282.13), done: T(283.6), txt: <>Write <b>Minicard.jsx</b></>, n: 156},
-  {at: T(285.19), done: T(286.5), txt: <>Write <b>List.jsx</b></>, n: 210},
-  {at: T(288.71), done: T(290.9), txt: <>Write <b>useBoardDnd.js</b></>, n: 157},
-  {at: T(292.43), done: T(293.2), txt: <>vite build <span style={{color: K.steel}}>· 43 modules transformed</span></>},
-  {at: T(294.21), done: T(297.3), txt: <>Test with a real mouse <span style={{color: K.steel}}>in real Chrome</span></>},
-  {at: T(299.3), txt: <>Sautéed for 18m 17s</>, hot: true},
+  {at: T(263.39), done: T(265.03), txt: <>Check the project folder <span style={{color: K.steel}}>→ empty</span></>},
+  {at: T(265.73), done: T(268.57), txt: <>REA browser tools <span style={{color: K.steel}}>→ open the live board</span></>},
+  {at: T(269.59), done: T(270.1), txt: <>Measure fonts, colours, spacing</>},
+  {at: T(270.65), done: T(273.85), txt: <>Found Chrome <span style={{color: K.steel}}>· set up Playwright toolkit</span></>},
+  {at: T(279.62), done: T(279.8), txt: <>Write <b>Avatar.jsx</b></>},
+  {at: T(279.8), done: T(280.0), txt: <>Write <b>Minicard.jsx</b></>, n: 156},
+  {at: T(279.98), done: T(280.2), txt: <>Write <b>List.jsx</b></>, n: 210},
+  {at: T(280.16), done: T(280.4), txt: <>Write <b>useBoardDnd.js</b></>, n: 157},
+  {at: T(281.16), done: T(281.6), txt: <>vite build <span style={{color: K.steel}}>· 43 modules transformed</span></>},
+  {at: T(282.94), done: T(285.74), txt: <>Test with a real mouse <span style={{color: K.steel}}>in real Chrome</span></>},
+  {at: T(288.2), txt: <>Sautéed for 18m 17s</>, hot: true},
 ];
 
-export const RUNTERM_SECONDS = 40.05;
+export const RUNTERM_SECONDS = 29.15;
 export const RunTerm: React.FC = () => {
   const f = useCurrentFrame(), {fps} = useVideoConfig(), t = f / fps;
-  const secs = Math.round(1097 * interpolate(t, [T(260.6), T(299.5)], [0, 1], {...clamp, easing: Easing.in(Easing.quad)}));
+  const secs = Math.round(1097 * interpolate(t, [T(260.4), T(288.65)], [0, 1], {...clamp, easing: Easing.in(Easing.quad)}));
   const visible = LINES.filter((l) => t >= l.at);
   const scrollUp = Math.max(0, visible.length - 12) * 72;
-  const robot = spring({frame: f - Math.round(T(275.4) * fps), fps, config: {damping: 9}});
-  const robotOut = interpolate(t, [T(277.6), T(278.0)], [1, 0], clamp);
+  const robot = spring({frame: f - Math.round(T(275.1) * fps), fps, config: {damping: 9}});
+  const robotOut = interpolate(t, [T(277.0), T(277.4)], [1, 0], clamp);
   const win = spring({frame: f, fps, config: {damping: 16}});
   return <AbsoluteFill style={{background: K.bg, overflow: "hidden"}}>
     <div style={{position: "absolute", width: 900, height: 900, borderRadius: "50%", filter: "blur(120px)", background: "rgba(232,119,95,.26)", left: -250 + f * .6, top: -350}} />
@@ -60,7 +60,7 @@ export const RunTerm: React.FC = () => {
           const s = spring({frame: f - Math.round(l.at * fps), fps, config: {damping: 14}});
           const ok = l.done !== undefined && t >= l.done;
           const tick = l.done !== undefined ? spring({frame: f - Math.round(l.done * fps), fps, config: {damping: 9}}) : 0;
-          const n = l.n ? Math.round(l.n * interpolate(t, [l.at + .1, l.at + .9], [0, 1], clamp)) : 0;
+          const n = l.n ? Math.round(l.n * interpolate(t, [l.at, l.at + .35], [0, 1], clamp)) : 0;
           return <div key={i} style={{display: "flex", alignItems: "center", gap: 20, height: 72, fontFamily: M, fontSize: 36, color: l.hot ? K.coral : K.ink, fontWeight: l.hot ? 700 : 400, opacity: s, transform: `translateX(${(1 - s) * -40}px)`}}>
             <span style={{width: 40, display: "inline-flex", justifyContent: "center", color: l.hot ? K.coral : ok ? K.ok : K.steel, transform: `scale(${ok ? .6 + .4 * tick : 1})`}}>{l.hot ? "✻" : ok ? "✓" : "●"}</span>
             <span>{l.txt}{l.n ? <span style={{color: K.steel}}> · <b style={{color: K.coral}}>{n}</b> lines</span> : null}</span>

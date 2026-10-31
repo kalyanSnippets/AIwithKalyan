@@ -87,7 +87,7 @@ html, body { margin:0; background:var(--bg); }
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="rea-v2-part1" data-start="0" data-width="1920" data-height="1080" data-duration="145.65">
+<div id="root" data-composition-id="rea-v2-part1" data-start="0" data-width="1920" data-height="1080" data-duration="147.567">
   <div id="bd" class="fill">
     <div class="blob" id="b1" style="width:900px;height:900px;left:-250px;top:-350px;background:rgba(232,119,95,.28)"></div>
     <div class="blob" id="b2" style="width:800px;height:800px;right:-250px;bottom:-380px;background:rgba(127,149,171,.2)"></div>
@@ -150,7 +150,7 @@ html, body { margin:0; background:var(--bg); }
 
   <!-- ===== camera ===== -->
   <div id="camwrap"><div id="campush">
-    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="145.65" data-media-start="0" data-track-index="1"></video>
+    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="147.567" data-media-start="0" data-track-index="1"></video>
   </div><div id="camring"></div></div>
 
   <!-- ===== S1 hook ===== -->
@@ -194,7 +194,7 @@ html, body { margin:0; background:var(--bg); }
     <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:clipboard}}</div><div class="sm" style="font-size:22px">DESKTOP APPS</div></div></div>
   <div class="stk c" id="s30" style="left:1440px;top:300px;width:420px"><div class="ic" id="s30ic">{{i:clock}}</div><div class="big">30 MIN</div><div class="sm">STEAM GAME → C#</div></div>
   <div class="stk" id="s460" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:eye}}</div><div class="big">~460K</div><div class="sm">VIEWS</div><div class="src">count via awesome-reverse-engineer-anything</div></div>
-  <video class="clip ins" id="insBl" src="media/r_Blender.mp4" muted playsinline data-start="80.548" data-duration="7.86" data-media-start="0" data-track-index="3"></video>
+  <video class="clip ins" id="insBl" src="media/r_Blender.mp4" muted playsinline data-start="80.948" data-duration="7.8" data-media-start="0" data-track-index="3"></video>
   <div class="stk c" id="s3205" style="left:1440px;top:290px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" id="s3205n">0</div><div class="sm">TEST CASES<br>MATCHED</div></div>
   <div class="stk" id="sClip" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:clipboard}}</div><div class="big" style="font-size:52px;letter-spacing:-1px">Copy → IPC → Clipboard</div><div class="sm">TRACED</div></div>
   <div class="ic" id="zap" style="position:absolute;left:1450px;top:170px;width:280px;height:280px;color:var(--coral);visibility:hidden;z-index:6">{{i:zap}}</div>
@@ -243,8 +243,8 @@ const bo = "back.out(1.7)", p3 = "power3.out";
 const $ = (s) => document.querySelector(s);
 
 // ---------- background drift ----------
-tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 145.65, ease: "none" }, 0);
-tl.fromTo("#grid", { x: 0 }, { x: -600, duration: 145.65, ease: "none" }, 0);
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 147.567, ease: "none" }, 0);
+tl.fromTo("#grid", { x: 0 }, { x: -600, duration: 147.567, ease: "none" }, 0);
 
 // ---------- camera: full frame ↔ PiP card ----------
 function pipIn(t, d = .5) {
@@ -410,12 +410,12 @@ tl.fromTo(".tz", { scale: 0, rotate: -12 }, { scale: 1, rotate: 0, duration: .4,
 tl.to(".tz", { scale: 0, duration: .2, stagger: .05 }, 72.75); tl.set(".tz", { visibility: "hidden" }, 73.1);
 // Steam → C# (X post)
 pipIn(73.0);
-showB("#bx", 73.1, 83.35);
+showB("#bx", 73.1, 83.75);
 zoomTo("#bx .zoom", 73.5, 2.4, 262, 190, .9);
 hl("#hlX", 74.0);
 shiftL("#bx", 78.9); stk("#s30", 79.1, 80.6);
 tl.to("#s30ic", { rotate: 360, duration: 1.2, ease: "power2.inOut" }, 79.3);
-stk("#s460", 80.66, 83.3);
+stk("#s460", 80.66, 83.7);
 // 83.3 – 91.16 Remotion: Blender (PiP inside)
 // DX-Ball 3,205 (rea.tools)
 showB("#bdx", 91.1, 98.85);
@@ -503,9 +503,13 @@ pipOut(145.2);
 whip(148.0);
 
 REST.shiftChildren(OFF_REST);
+// time map from the previous cut (v3) to this one (pauses after each example, 31 Oct review): [old time, offset]
+const WARP = [[0.0, 0.0], [80.66, 0.4], [88.406, 0.965], [96.121, 1.517], [99.881, 1.917], [159.775, 1.697], [216.235, 1.045], [226.602, -0.294], [260.469, -0.321], [279.929, -0.246], [292.069, -11.273]];
+const W = (t) => { let o = 0; for (const [a, off] of WARP) { if (t >= a) o = off; else break; } return t + o; };
+REST.getChildren(false, true, true).forEach((c) => c.startTime(W(c.startTime())));
 tl = main;
 // ---------- captions: auto from ElevenLabs word times, ≤ 4 words, hidden while proofs/graphics carry the words ----------
-const shiftOld = (t) => t < 30.35 ? t / SPEED : t + OFF_REST;
+const shiftOld = (t) => t < 30.35 ? t / SPEED : W(t + OFF_REST);
 const HIDE = [[1.36, 3.42], [6.2, 21.05], [26.9, 29.6], [30.4, 32.8], [32.7, 39.4], [43.6, 51.7], [54.0, 68.0], [73.0, 102.6], [108.4, 132.0], [139.6, 145.3]].map(([a, b]) => [shiftOld(a), shiftOld(b)]);
 const HOT = new Set(["400,000", "rea", "rea?", "real", "hype?", "honestly,", "free,", "mit", "anyone", "proof,", "locally", "crazy,", "right?", "wild,", "thousand.", "both", "side,", "rule.", "not", "stealing", "anything.", "name,", "logos,", "images", "off?", "see.", "go.", "own", "kalyan.", "steam", "blender,", "notion"]);
 const hidden = (t) => HIDE.some(([a, b]) => t >= a && t < b);

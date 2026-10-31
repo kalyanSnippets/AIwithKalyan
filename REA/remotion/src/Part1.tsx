@@ -65,14 +65,14 @@ export const NodeMap: React.FC = () => {
 };
 
 // "Somebody pointed it at Blender… over three hundred thousand functions in about seventy minutes."
-export const BLENDER_SECONDS = 7.86;
+export const BLENDER_SECONDS = 7.8;
 export const Blender: React.FC = () => {
   const f = useCurrentFrame(), {fps} = useVideoConfig(), t = f / fps;
-  const card = pop(f, fps, 1.4, 13);
+  const card = pop(f, fps, .2, 13);
   const bar = interpolate(t, [4.1, 6.3], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
   const n = Math.round(301393 * interpolate(t, [4.9, 6.3], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)}));
   const clock = pop(f, fps, 6.85, 9);
-  const src = interpolate(t, [2.3, 2.6], [0, 1], clamp);
+  const src = interpolate(t, [.5, .8], [0, 1], clamp);
   return <Stage src="part1/blender.mp4">
     <div style={{position: "absolute", left: 660, top: 120, width: 1160, height: 760, borderRadius: 40, ...glass, transform: `scale(${card}) rotate(${(1 - card) * 6}deg)`, padding: 56, boxSizing: "border-box"}}>
       <div style={{display: "flex", alignItems: "center", gap: 28}}>

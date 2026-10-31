@@ -1,5 +1,5 @@
 // ===== content timeline, authored in CUT time (REA/edits/REA-v2.cut-words.json), shifted by -B =====
-const B = 145.65;
+const B = 147.567; // part 2 starts here in the cut (after the 31 Oct review fixes)
 tl = gsap.timeline(); main.add(tl, 0); const C = tl;
 function typeIn(sel, at, d = .6) { // typed command
   const el = $(sel), txt = el.dataset.t, k = { n: 0 };
@@ -32,7 +32,7 @@ tl.to("#subCur", { scale: .8, duration: .08, yoyo: true, repeat: 1 }, 150.78);
 tl.to("#subB", { scale: .92, duration: .08, yoyo: true, repeat: 1 }, 150.78);
 tl.set("#subB", { background: "#3a3d44", color: "#F6F1EC" }, 150.86); tl.set("#subT1", { display: "none" }, 150.86); tl.set("#subT2", { display: "inline" }, 150.86);
 tl.to("#bellI", { rotate: 18, duration: .08, yoyo: true, repeat: 7, ease: "none", transformOrigin: "50% 10%" }, 151.05);
-tl.to("#subCur", { x: -470, y: -10, duration: .35, ease: "power2.inOut" }, 151.5);
+tl.to("#subCur", { x: -275, y: 0, duration: .35, ease: "power2.inOut" }, 151.5);
 tl.to("#likeB", { background: "#E8775F", scale: 1.15, duration: .2, ease: bo }, 151.9); tl.to("#likeB", { scale: 1, duration: .2 }, 152.15);
 tl.to("#subCur", { opacity: 0, duration: .2 }, 152.6);
 tl.to("#growR", { opacity: 1, duration: .3 }, 153.55); tl.fromTo("#growR", { y: 20 }, { y: 0, duration: .35, ease: bo, immediateRender: false }, 153.55);
@@ -101,38 +101,7 @@ chap("#why", 220.05, 223.45);
 tl.fromTo("#why .k1", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: .4, ease: p3, stagger: .25, immediateRender: false }, 220.1);
 tl.fromTo(".wd", { scale: 0 }, { scale: 1, duration: .3, ease: bo, stagger: .12, immediateRender: false }, 222.2);
 function rsn(id, a, b) { tl.set(id, { visibility: "visible", opacity: 1 }, a); tl.fromTo(id, { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: .4, ease: bo, immediateRender: false }, a); tl.to(id, { opacity: 0, duration: .2 }, b - .2); tl.set(id, { visibility: "hidden" }, b); }
-// 1 · measure first
-rsn("#rh1", 223.5, 232.65);
-showB("#fPrompt", 223.6, 226.6);
-zoomTo("#fPrompt .zoom", 223.8, 1.7, 220, 440, .7, 1600, 830);
-hl("#hlMf", 224.15);
-showB("#fDone", 226.55, 232.65);
-zoomTo("#fDone .zoom", 227.0, 1.6, 320, 470, .8, 1600, 830);
-hl("#hlMeas", 228.8);
-shiftL("#fDone", 229.6); stk("#sBlue", 229.8, 231.3); stk("#sHex", 231.3, 232.6);
-// 2 · fixed stack
-rsn("#rh2", 232.7, 239.0);
-chap("#stack", 232.7, 239.0);
-[["#tkR", 235.1], ["#tkV", 236.0], ["#tkC", 236.6]].forEach(([s, at]) => tl.fromTo(s, { scale: 0, y: 80 }, { scale: 1, y: 0, duration: .4, ease: bo, immediateRender: false }, at));
-tl.to("#noLib", { opacity: 1, duration: .25 }, 237.6); tl.fromTo("#noLib", { x: -80 }, { x: 0, duration: .4, ease: bo, immediateRender: false }, 237.6);
-// 3 · every part of the screen
-rsn("#rh3", 239.05, 245.75);
-chap("#wire", 239.05, 245.75);
-tl.fromTo("#wf", { opacity: 0, scale: .9 }, { opacity: 1, scale: 1, duration: .4, ease: p3, immediateRender: false }, 239.1);
-tl.fromTo("#wire .wl", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .3, stagger: .1, immediateRender: false }, 242.3);
-tl.fromTo("#wire .wc", { scaleY: 0 }, { scaleY: 1, duration: .25, stagger: .05, immediateRender: false }, 242.9);
-tl.fromTo("#wPanel", { x: 340 }, { x: 0, duration: .4, ease: p3, immediateRender: false }, 243.8);
-tl.to("#wDrag", { opacity: 1, duration: .1 }, 244.7); tl.to("#wDrag", { x: 270, y: 30, rotate: 3, duration: .7, ease: "power2.inOut" }, 244.75);
-const wlb = document.querySelectorAll(".wlb"); [242.36, 242.92, 243.82, 244.72].forEach((at, i) => tl.to(wlb[i], { opacity: 1, duration: .25 }, at));
-// 4 · testing
-rsn("#rh4", 245.8, 252.75);
-tl.fromTo("#rh4h", { scale: 0 }, { scale: 1.3, duration: .3, ease: bo, yoyo: true, repeat: 1, immediateRender: false }, 247.1);
-chap("#test", 245.8, 252.75);
-tl.fromTo("#tList .ti", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: .3, stagger: .15, immediateRender: false }, 246.0);
-tl.fromTo("#tEye", { scale: 0 }, { scale: 1, duration: .35, ease: bo, immediateRender: false }, 249.3);
-tl.to("#tEye", { y: 130, duration: .3, ease: "power2.inOut" }, 250.6); tl.to("#tEye", { y: 260, duration: .3, ease: "power2.inOut" }, 251.2);
-document.querySelectorAll(".tk2").forEach((k, i) => tl.fromTo(k, { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: .3, ease: bo, immediateRender: false }, 250.28 + i * .6));
-tl.to("#tSaw", { opacity: 1, duration: .3 }, 251.76);
+// (four reasons: rebuilt with the real prompt side panel in prompt-reasons.js)
 // AI loves to say "done" → prove it
 chap("#prove", 252.75, 257.65);
 tl.fromTo("#bub", { scale: 0, rotate: -6 }, { scale: 1, rotate: 0, duration: .45, ease: bo, immediateRender: false }, 254.9);
@@ -165,8 +134,12 @@ tl.to("#pollH", { opacity: 1, duration: .3 }, 314.5);
 pipOut(315.85);
 whip(316.85);
 
+// time map from the previous cut (v3) to this one: [old time, offset] change points
+const WARP = [[0.0, 0.0], [80.66, 0.4], [88.406, 0.965], [96.121, 1.517], [99.881, 1.917], [159.775, 1.697], [216.235, 1.045], [226.602, -0.294], [260.469, -0.321], [279.929, -0.246], [292.069, -11.273]];
+const W = (t) => { let o = 0; for (const [a, off] of WARP) { if (t >= a) o = off; else break; } return t + o; };
+C.getChildren(false, true, true).forEach((c) => c.startTime(W(c.startTime())));
 C.shiftChildren(-B);
 tl = main;
 // ---------- captions (local time = cut − B), hidden while graphics carry the words ----------
-const HIDE = [[146.75, 149.9], [150.2, 155.2], [158.3, 304.05], [306.5, 315.9]].map(([a, b]) => [a - B, b - B]);
+const HIDE = [[146.75, 149.9], [150.2, 155.2], [158.3, 304.05], [306.5, 315.9]].map(([a, b]) => [W(a) - B, W(b) - B]);
 const HOT = new Set(["subscribe", "like", "grow.", "start.", "windows", "powershell.", "rea.", "secret.", "prompt,", "guess,", "wait,", "fifty", "eighty", "ninety?", "comments", "see.", "ready?"]);
