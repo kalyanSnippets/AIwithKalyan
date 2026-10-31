@@ -1,0 +1,132 @@
+  <!-- ===== S9 reveal: split ===== -->
+  <div class="chap" id="split" style="z-index:3">
+    <div class="pill2" id="lblL" style="left:50px;top:226px;background:rgba(127,149,171,.3);color:var(--ink)">ORIGINAL · Wekan</div>
+    <div class="pill2" id="lblR" style="left:970px;top:226px;background:var(--coral);color:#111">OUR COPY · REA Board</div>
+    <div class="pnl" id="pL" style="left:50px"><img src="img/wekan.png"></div>
+    <div class="pnl" id="pR" style="left:970px"><img src="img/reaboard.png"></div>
+    <svg class="fill" width="1920" height="1080" style="pointer-events:none">
+      <rect class="cr" id="cTop" x="966" y="296" width="908" height="34" rx="8"/>
+      <circle class="cr" id="cMenu" cx="1118" cy="314" r="34"/>
+      <circle class="cr" id="cAv" cx="1823" cy="314" r="46"/>
+      <rect class="cr" id="cStripL" x="46" y="296" width="908" height="24" rx="8"/>
+      <rect class="cr" id="cStripR" x="966" y="326" width="908" height="20" rx="8"/>
+      <circle class="cr" id="cWipL" cx="78" cy="395" r="30"/>
+      <circle class="cr" id="cWipR" cx="998" cy="426" r="30"/>
+    </svg>
+  </div>
+  <div class="stk" id="sWip" style="left:1180px;top:780px;width:auto;flex-direction:row;padding:20px 30px;gap:18px;border-radius:24px"><span class="big" style="font-size:60px"><span style="color:var(--red)">4</span>/3</span><span class="sm" style="text-align:left">WORK-IN-PROGRESS LIMIT<br>RED WHEN TOO MANY CARDS</span></div>
+  <div class="stk c" id="sCopied" style="left:230px;top:780px;width:auto;flex-direction:row;padding:20px 30px;gap:14px;border-radius:999px"><span class="ic" style="width:50px;height:50px">{{i:circle-check-big}}</span><span style="font-weight:800;font-size:44px">Claude even copied that</span></div>
+
+  <!-- REA Board full screen details -->
+  <div class="bw" id="fRb" style="top:150px"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>localhost:5173</b> · REA Board</div><div class="cdate">Kalyan's recording · 30 Oct 2026</div></div>
+    <div class="view" style="height:750px"><div class="zoom" style="height:750px"><img src="img/reaboard.png" style="height:750px">
+      <div class="hl" id="hlId" style="left:20px;top:270px;width:90px;height:30px"></div>
+      <div class="hl" id="hlLab" style="left:24px;top:596px;width:150px;height:30px"></div>
+      <div class="hl" id="hlDate" style="left:24px;top:476px;width:200px;height:116px"></div>
+      <div class="hl" id="hlOver" style="left:452px;top:342px;width:270px;height:28px"></div>
+      <div class="hl" id="hlCov1" style="left:10px;top:305px;width:410px;height:166px"></div>
+      <div class="hl" id="hlCov2" style="left:1290px;top:276px;width:256px;height:146px"></div></div></div></div>
+  <div class="stk c" id="sCss" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:palette}}</div><div class="big" style="font-size:56px;letter-spacing:-1px">Drawn with CSS</div><div class="sm">ZERO IMAGE FILES</div></div>
+  <div class="stk" id="sWork" style="left:1300px;top:150px;width:500px"><div class="ic">{{i:mouse-pointer-click}}</div><div class="big" style="font-size:64px;letter-spacing:-2px">Does it work?</div></div>
+
+  <!-- live test -->
+  <div class="bw" id="fLive" style="top:170px"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>localhost:5173</b> · REA Board</div><div class="cdate">Kalyan's live test · sped up</div></div>
+    <div class="view" style="height:750px"><div class="zoom" style="height:750px">
+      <video class="clip" id="live" src="media/live.mp4" muted playsinline data-start="39.65" data-duration="46.4" data-media-start="0" data-track-index="2" style="height:750px"></video>
+      <img id="liveLast" src="img/livelast.png" style="height:750px;opacity:0">
+      <div class="hl" id="hlPL" style="left:870px;top:138px;width:690px;height:38px"></div>
+      <div class="hl" id="hlPM" style="left:870px;top:236px;width:546px;height:48px"></div>
+      <div class="hl" id="hlPD" style="left:870px;top:339px;width:692px;height:82px"></div>
+      <div class="hl" id="hlPC" style="left:866px;top:473px;width:660px;height:82px"></div>
+      <div class="hl" id="hlPX" style="left:870px;top:579px;width:692px;height:146px"></div>
+      <div class="hl" id="hlDel" style="left:868px;top:698px;width:470px;height:42px"></div></div></div></div>
+  <div id="pills" style="position:absolute;left:160px;top:80px;display:flex;gap:18px;z-index:6"></div>
+  <div class="stk c" id="sSnip" style="left:660px;top:300px;width:1180px;align-items:flex-start;text-align:left;padding:40px 46px"><div class="sm" style="letter-spacing:4px">FROM MY PROMPT</div><div class="mono" style="font-size:36px;line-height:1.5;font-weight:700">Add an "Add sample lists" button that only APPENDS the sample lists. Never overwrite saved data.</div></div>
+  <div class="stk c" id="s1p" style="left:1300px;top:130px;width:500px"><div class="big" style="font-size:150px">1</div><div class="sm" style="font-size:40px">PROMPT</div><div class="src" style="font-size:22px">all of this</div></div>
+
+  <!-- ===== S10 opinion ===== -->
+  <div class="chap" id="chH"><div class="ic" id="chHi" style="position:absolute;left:700px;top:190px;width:220px;height:220px;color:var(--coral)">{{i:scale}}</div>
+    <div class="k1" id="chHa" style="top:440px;font-size:170px">Worth the</div><div class="k1 hot" id="chHb" style="top:620px;font-size:220px">HYPE?</div></div>
+  <div class="stk c" id="sYes" style="left:1300px;top:150px;width:480px"><div class="ic">{{i:circle-check-big}}</div><div class="big" style="font-size:110px">YES</div><div class="sm">WORTH TRYING</div></div>
+  <div class="chap" id="rs3"><div class="k1" style="top:80px;font-size:84px;letter-spacing:-3px">3 reasons</div>
+    <div class="vt" id="v1" style="left:660px"><span class="ic">{{i:ruler}}</span><b>Measures,<br>doesn't guess</b><span class="ok2">✓</span></div>
+    <div class="vt" id="v2" style="left:1070px"><span class="ic">{{i:mouse-pointer-click}}</span><b>Really<br>works</b><div class="mini"><span>Drag &amp; drop</span><span>Saving</span><span>Card panel</span></div><span class="ok2">✓</span></div>
+    <div class="vt" id="v3" style="left:1480px"><span class="ic">{{i:shield-check}}</span><b>Tested its<br>own work</b><div class="mini"><span>50 checks</span><span>Real mouse</span></div><span class="ok2">✓</span></div>
+    <div class="vt" id="vBut" style="left:1270px;top:560px;width:420px;height:330px;background:var(--coral);color:#111;border-color:transparent"><span class="ic" style="color:#111">{{i:triangle-alert}}</span><b style="font-size:64px">But…</b></div>
+    <div id="noMagic" style="position:absolute;left:700px;top:620px;display:flex;align-items:center;gap:22px;opacity:0"><div style="position:relative;width:130px;height:130px"><span class="ic" style="position:absolute;inset:0;color:var(--ink)">{{i:wand-sparkles}}</span><span class="ic" style="position:absolute;inset:-16px;color:var(--red)">{{i:ban}}</span></div><span style="font-weight:800;font-size:70px">Not magic</span></div></div>
+  <div class="chap" id="lazy">
+    <div class="row2" id="lz1" style="top:250px"><span class="tag2 ok">46-line detailed prompt</span><span class="ic ar">{{i:arrow-right}}</span><span class="tag2 ok">Great result</span></div>
+    <div class="row2" id="lz2" style="top:470px"><span class="tag2 bad">Lazy prompt</span><span class="ic ar">{{i:arrow-right}}</span><span class="tag2 bad">Lazy result</span></div>
+    <div class="row2" id="lz3" style="top:700px"><span class="ic" style="width:80px;height:80px;color:var(--coral)">{{i:clock}}</span><span style="font-weight:800;font-size:64px">~20 minutes</span></div>
+    <div id="oneScr" style="position:absolute;left:1240px;top:680px;display:grid;grid-template-columns:repeat(3,170px);gap:16px;opacity:0">
+      <div class="scr on">Board</div><div class="scr">Login</div><div class="scr">Settings</div><div class="scr">Search</div><div class="scr">Profile</div><div class="scr">Archive</div></div></div>
+  <div class="bw" id="fGt"><div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url"><span class="ic">{{i:lock}}</span><b>gittested.com</b>/reviews/morluto-rea/</div><div class="cdate">Source · captured 31 Oct 2026</div></div>
+    <div class="view"><div class="zoom"><img src="img/gittested.png"><div class="hl" id="hlGt" style="left:230px;top:370px;width:720px;height:160px"></div></div></div></div>
+  <div class="chap" id="race"><div class="k1" style="top:180px;font-size:90px;letter-spacing:-3px">Hype is ahead of <span class="hot">proof</span></div>
+    <div class="rb" style="top:420px"><span>HYPE</span><div class="rbar"><i id="rbH" style="background:var(--coral)"></i></div></div>
+    <div class="rb" style="top:580px"><span>PROOF</span><div class="rbar"><i id="rbP" style="background:var(--ok)"></i></div></div></div>
+  <div class="stk c" id="sOne" style="left:1300px;top:150px;width:480px"><div class="ic">{{i:triangle-alert}}</div><div class="big" style="font-size:64px;letter-spacing:-2px">One more thing</div></div>
+  <div class="chap" id="rules">
+    <div class="rl" id="ru1" style="top:140px"><span class="ic" style="color:var(--ok)">{{i:scroll-text}}</span><span>Only clone apps you're <b class="hot">allowed</b> to · like open source</span></div>
+    <div class="rl" id="ru2" style="top:320px"><span class="ic" style="color:var(--red)">{{i:ban}}</span>Never copy names, logos or images</div>
+    <div class="rl" id="ru3" style="top:500px"><span class="ic" style="color:var(--red)">{{i:ban}}</span>Don't sell it or give it away under their name</div>
+    <div id="ipStamp" style="position:absolute;left:960px;top:700px;padding:16px 40px;border:8px solid var(--red);border-radius:18px;color:var(--red);font-weight:800;font-size:64px;letter-spacing:3px;transform:rotate(-6deg);opacity:0">© COPYRIGHT &amp; IP</div></div>
+  <div class="chap" id="quote"><div id="qCard" style="position:absolute;left:660px;top:200px;width:1180px;padding:60px 64px;border-radius:36px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);box-sizing:border-box">
+    <div class="sm" style="font-weight:800;font-size:30px;letter-spacing:5px;color:var(--coral)">REA'S OWN README · DISCLAIMER</div>
+    <div style="margin-top:28px;font-weight:800;font-size:60px;line-height:1.25;letter-spacing:-1px">"REA is for lawful research, education, interoperability, software preservation, and analysis of <span id="qHl" style="background:linear-gradient(transparent 60%, rgba(232,119,95,.55) 60%);background-size:0% 100%;background-repeat:no-repeat">software you own or are authorized to examine.</span>"</div>
+    <div style="margin-top:34px;display:flex;align-items:center;gap:12px;font-weight:600;font-size:26px;color:var(--mute)"><span class="ic" style="width:26px;height:26px;color:var(--coral)">{{i:link}}</span>github.com/morluto/rea · README</div></div></div>
+  <div class="chap" id="learn">
+    <div class="tl2" id="le1" style="left:660px;top:330px"><span class="ic">{{i:graduation-cap}}</span>Learn</div>
+    <div class="tl2" id="le2" style="left:1060px;top:330px"><span class="ic">{{i:lightbulb}}</span>Inspiration</div>
+    <div class="tl2" id="le3" style="left:1460px;top:330px;width:400px;font-size:42px;background:var(--coral);color:#111"><span class="ic" style="color:#111">{{i:sparkles}}</span>Your own twist</div></div>
+  <div class="chap" id="why2">
+    <div class="pnl" id="wW" style="left:660px;top:300px;width:520px;height:244px"><img src="img/wekan.png"></div>
+    <div class="ic" id="wAr" style="position:absolute;left:1210px;top:380px;width:90px;height:90px;color:var(--coral)">{{i:arrow-right}}</div>
+    <div class="pnl" id="wR" style="left:1330px;top:300px;width:520px;height:244px"><img src="img/reaboard.png"></div>
+    <div class="pill2" id="wWl" style="left:660px;top:580px;background:rgba(127,149,171,.3);color:var(--ink)">Open source · MIT</div>
+    <div class="pill2" id="wRl" style="left:1330px;top:580px;background:var(--coral);color:#111">New name · new design</div></div>
+  <div class="chap" id="bonus"><div class="ic" id="bnI" style="position:absolute;left:700px;top:240px;width:200px;height:200px;color:var(--coral)">{{i:gift}}</div><div class="k1 hot" id="bnT" style="top:470px;font-size:190px">BONUS TIP</div></div>
+  <div class="cw" id="wAsk" style="top:330px"><div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span>&nbsp; Claude Code · no REA needed</div><div class="cb" style="font-family:'Inter';font-weight:600;font-size:46px">
+    <div><span class="hot">›</span> <span class="ty" data-t="How does this work?"></span></div>
+    <div><span class="hot">›</span> <span class="ty" data-t="How can I build something like this?"></span></div></div></div>
+  <div class="stk" id="sNot" style="left:640px;top:140px;width:auto;flex-direction:row;padding:20px 32px;gap:14px;border-radius:999px"><span class="big" style="font-size:54px">REA?</span><span class="sm">NOT EVERY TIME</span></div>
+  <div class="chap" id="depth">
+    <div class="dp" id="dp1" style="top:280px"><span class="ic">{{i:app-window}}</span>One small feature<span class="dbar"><i style="width:30%"></i></span><span class="dt">Just ask Claude</span></div>
+    <div class="dp" id="dp2" style="top:520px"><span class="ic">{{i:laptop}}</span>Desktop apps<span class="dbar"><i style="width:100%;background:var(--coral)"></i></span><span class="dt hot">Go deeper: REA</span></div></div>
+  <div class="chap" id="ai">
+    <div class="vt" id="ai1" style="left:660px;top:280px;width:560px"><span class="ic">{{i:zap}}</span><b>AI is a very good<br>shortcut</b></div>
+    <div class="vt" id="ai2" style="left:1280px;top:280px;width:560px;background:var(--coral);color:#111;border-color:transparent"><span class="ic" style="color:#111">{{i:code}}</span><b>Software engineering<br>is not dead</b></div>
+    <div id="val" style="position:absolute;left:660px;top:720px;display:flex;align-items:center;gap:30px;opacity:0"><span class="ic" id="valC" style="width:90px;height:90px;color:var(--steel)">{{i:code}}</span><span style="font-weight:800;font-size:56px">The value is in the <span class="hot">problem you solve</span></span><span class="ic" style="width:90px;height:90px;color:var(--coral)">{{i:target}}</span></div></div>
+  <video class="clip ins" id="insLoop" src="media/r_Loop.mp4" muted playsinline data-start="201.7" data-duration="12.05" data-media-start="0" data-track-index="3"></video>
+  <div class="chap" id="verdict"><div id="vdA" style="position:absolute;left:660px;top:220px;font-weight:800;font-size:56px;letter-spacing:8px;color:var(--mute)">MY VERDICT</div>
+    <div class="k1 hot" id="vdB" style="top:300px;font-size:300px;letter-spacing:-12px">Try it.</div>
+    <div class="k1" id="vdC" style="top:640px;font-size:120px;letter-spacing:-4px">But the right way.</div></div>
+
+  <!-- ===== S11 outro ===== -->
+  <div class="stk" id="subCard" style="left:1180px;top:120px;width:660px;padding:40px">
+    <div style="display:flex;align-items:center;gap:26px">
+      <div id="likeB" style="width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center"><span class="ic" style="width:64px;height:64px;color:var(--ink)">{{i:thumbs-up}}</span></div>
+      <div id="subB" style="padding:30px 44px;border-radius:999px;background:var(--coral);color:#111;font-weight:800;font-size:48px"><span id="subT1">SUBSCRIBE</span><span id="subT2" style="display:none">SUBSCRIBED</span></div>
+      <div id="bellB" style="width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center"><span class="ic" id="bellI" style="width:64px;height:64px;color:var(--ink)">{{i:bell}}</span></div></div>
+    <div class="sm" style="margin-top:22px;font-size:34px">AI WITH KALYAN</div></div>
+  <div class="stk" id="sMore" style="left:1300px;top:150px;width:520px"><div style="display:flex;gap:18px"><span class="ic" style="width:80px;height:80px">{{i:flask-conical}}</span><span class="ic" style="width:80px;height:80px">{{i:wrench}}</span><span class="ic" style="width:80px;height:80px">{{i:sparkles}}</span></div><div class="big" style="font-size:54px;letter-spacing:-1px">More AI tools, tested</div></div>
+  <div id="nextApp" style="position:absolute;left:1260px;top:120px;display:grid;grid-template-columns:repeat(3,180px);gap:20px;z-index:6">
+    <div class="stk na" style="position:relative;width:180px;height:200px"><div class="ic" style="width:80px;height:80px">{{i:music}}</div><div class="sm" style="font-size:22px">SPOTIFY?</div></div>
+    <div class="stk na" style="position:relative;width:180px;height:200px"><div class="ic" style="width:80px;height:80px">{{i:notebook-pen}}</div><div class="sm" style="font-size:22px">NOTES APP?</div></div>
+    <div class="stk na" style="position:relative;width:180px;height:200px"><div class="big" style="font-size:90px;color:var(--coral)">?</div><div class="sm" style="font-size:22px">SOMETHING ELSE</div></div>
+    <div class="stk c na2" id="naC" style="position:relative;grid-column:1 / span 3;flex-direction:row;padding:18px 26px;gap:14px;border-radius:999px"><span class="ic" style="width:46px;height:46px">{{i:message-circle}}</span><span style="font-weight:800;font-size:40px">Tell me in the comments</span></div></div>
+  <div id="guessRow" style="position:absolute;left:1300px;top:150px;display:flex;gap:18px;z-index:6">
+    <div class="stk gp" style="position:relative;width:160px;height:150px"><div class="big" style="font-size:56px">50%</div></div>
+    <div class="stk gp" style="position:relative;width:160px;height:150px"><div class="big" style="font-size:56px">80%</div></div>
+    <div class="stk c gp" style="position:relative;width:160px;height:150px"><div class="big" style="font-size:56px">90%</div></div></div>
+  <!-- end screen -->
+  <div class="chap" id="end" style="z-index:3">
+    <div id="endT" style="position:absolute;left:660px;top:90px;font-weight:800;font-size:72px;letter-spacing:-2px">Watch next <span class="hot">→</span></div>
+    <div id="endV" style="position:absolute;left:660px;top:200px;width:1180px;height:664px;border-radius:30px;overflow:hidden;border:4px solid var(--coral);box-shadow:0 40px 100px rgba(0,0,0,.6)"><img src="img/prevthumb.jpg" style="width:100%;height:100%;object-fit:cover"></div>
+    <div id="endL" style="position:absolute;left:660px;top:890px;font-weight:800;font-size:48px">How I edit my videos with <span class="hot">Claude</span></div>
+    <div id="endS" style="position:absolute;left:150px;top:200px;width:360px;height:360px;border-radius:50%;background:var(--coral);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#111"><span class="ic" style="width:120px;height:120px">{{i:play}}</span><span style="font-weight:800;font-size:40px">Subscribe</span></div>
+    <div id="endThx" style="position:absolute;left:90px;top:600px;width:520px;text-align:center"><div style="font-weight:800;font-size:64px;letter-spacing:-2px">Thanks for<br><span class="hot">watching!</span></div><div style="margin-top:14px;font-weight:600;font-size:34px;color:var(--mute)">See you in the next one</div></div></div>
+
+  <div id="scan" class="fill"></div>
+  <div id="flash" class="fill"></div>
+</div>

@@ -6,6 +6,7 @@ import {Samples, SAMPLES_SECONDS} from "./Samples";
 import {Hook2, HOOK2_SECONDS} from "./Hook2";
 import {NodeMap, NODEMAP_SECONDS, Blender, BLENDER_SECONDS} from "./Part1";
 import {RunTerm, RUNTERM_SECONDS} from "./Part2";
+import {Loop, LOOP_SECONDS} from "./Part3";
 
 export const Root = () => (
   <>
@@ -18,5 +19,6 @@ export const Root = () => (
     <Composition id="NodeMap" component={NodeMap} durationInFrames={Math.round(NODEMAP_SECONDS * 30)} fps={30} width={1920} height={1080} />
     <Composition id="Blender" component={Blender} durationInFrames={Math.round(BLENDER_SECONDS * 30)} fps={30} width={1920} height={1080} />
     <Composition id="RunTerm" component={RunTerm} durationInFrames={Math.round(RUNTERM_SECONDS * 30)} fps={30} width={1920} height={1080} />
+    <Composition id="Loop" component={Loop} durationInFrames={Math.round(LOOP_SECONDS * 30)} fps={30} width={1920} height={1080} />
   </>
 );
