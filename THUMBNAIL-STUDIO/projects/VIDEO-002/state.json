@@ -1,0 +1,41 @@
+{
+  "id": "VIDEO-002",
+  "topic": "Claude Code + REA cloned a Kanban app from one link in 20 minutes",
+  "workingTitle": "Claude Code + REA Cloned This App in 20 Minutes (Can You Spot the Real One?)",
+  "notes": "",
+  "createdAt": "2026-10-31T10:41:12.103Z",
+  "stage": "delivered",
+  "options": {
+    "A": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "B": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "C": {
+      "rendered": true,
+      "qaPass": true
+    }
+  },
+  "approved": null,
+  "history": [
+    {
+      "at": "2026-10-31T10:50:25.395Z",
+      "event": "rendered A,B,C"
+    },
+    {
+      "at": "2026-10-31T10:50:46.242Z",
+      "event": "rendered A,B,C"
+    },
+    {
+      "at": "2026-10-31T10:51:25.304Z",
+      "event": "rendered A,B,C"
+    },
+    {
+      "at": "2026-10-31T10:51:36.010Z",
+      "event": "delivered"
+    }
+  ]
+}

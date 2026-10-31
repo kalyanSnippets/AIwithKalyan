@@ -1,0 +1,20 @@
+{
+ "option": "A",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 5,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 5,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 4
+ },
+ "verdict": "The strongest idea: the two real boards really are hard to tell apart, and the headline asks exactly what the title asks.",
+ "notes": [
+  "No face \u2014 weaker channel recognition",
+  "Revision 1: ? badges changed to white on ink with a coral ring to clear the contrast warning",
+  "A small cursor icon is visible on the right board (real frame, left as is)"
+ ],
+ "revisions": 1
+}

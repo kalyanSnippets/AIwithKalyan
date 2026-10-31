@@ -1,0 +1,19 @@
+{
+ "option": "B",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 4,
+  "hierarchy": 5,
+  "isolation": 4,
+  "uniqueness": 4,
+  "synergy": 4,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Clean face + result: natural eye contact, real REA Board, short promise; all QA checks pass.",
+ "notes": [
+  "Faint purple edge near his left hand from the wall colour in the cutout",
+  "'= THIS' relies on the board reading as an app at small size (it does: top bar + cards)"
+ ],
+ "revisions": 0
+}

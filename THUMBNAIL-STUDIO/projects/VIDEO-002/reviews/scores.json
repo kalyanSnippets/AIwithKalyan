@@ -1,0 +1,118 @@
+{
+  "disclaimer": "Internal design rubric (1–5 per criterion, weighted to 100). Not a CTR prediction.",
+  "rubric": [
+    {
+      "key": "legibility",
+      "label": "Mobile legibility",
+      "weight": 20,
+      "ask": "Can the text and focal point be read at 320x180 in a feed?"
+    },
+    {
+      "key": "curiosity",
+      "label": "Curiosity & clarity",
+      "weight": 15,
+      "ask": "Is there a clear question or tension a viewer wants resolved, without confusion?"
+    },
+    {
+      "key": "hierarchy",
+      "label": "Focal hierarchy",
+      "weight": 15,
+      "ask": "Is there one immediately identifiable focal point, then text, then supporting detail?"
+    },
+    {
+      "key": "isolation",
+      "label": "Subject isolation",
+      "weight": 10,
+      "ask": "Does the subject separate cleanly from the background (edge, contrast, light)?"
+    },
+    {
+      "key": "uniqueness",
+      "label": "Visual uniqueness",
+      "weight": 10,
+      "ask": "Does it stand apart from the reference thumbnails instead of copying them?"
+    },
+    {
+      "key": "synergy",
+      "label": "Title/thumbnail synergy",
+      "weight": 10,
+      "ask": "Does the image add information the title does not repeat?"
+    },
+    {
+      "key": "authenticity",
+      "label": "Authenticity & accuracy",
+      "weight": 15,
+      "ask": "Is every claim, result and graphic true to the video? Real face, real evidence?"
+    },
+    {
+      "key": "brand",
+      "label": "Brand consistency",
+      "weight": 5,
+      "ask": "Does it feel like AI with Kalyan (coral accent, dark tech, clean type) without being a clone of the others?"
+    }
+  ],
+  "rows": [
+    {
+      "option": "A",
+      "archetype": "Curiosity/Mystery",
+      "headline": "WHICH IS REAL?",
+      "revision": 1,
+      "scores": {
+        "legibility": 5,
+        "curiosity": 5,
+        "hierarchy": 4,
+        "isolation": 4,
+        "uniqueness": 5,
+        "synergy": 5,
+        "authenticity": 5,
+        "brand": 4
+      },
+      "score": 94,
+      "qaPass": true,
+      "verdict": "The strongest idea: the two real boards really are hard to tell apart, and the headline asks exactly what the title asks.",
+      "revise": false,
+      "rank": 1
+    },
+    {
+      "option": "B",
+      "archetype": "Face + Emotion",
+      "headline": "1 LINK = THIS",
+      "revision": 0,
+      "scores": {
+        "legibility": 5,
+        "curiosity": 4,
+        "hierarchy": 5,
+        "isolation": 4,
+        "uniqueness": 4,
+        "synergy": 4,
+        "authenticity": 5,
+        "brand": 5
+      },
+      "score": 91,
+      "qaPass": true,
+      "verdict": "Clean face + result: natural eye contact, real REA Board, short promise; all QA checks pass.",
+      "revise": false,
+      "rank": 2
+    },
+    {
+      "option": "C",
+      "archetype": "Minimalist Tech",
+      "headline": "400K WORTH IT?",
+      "revision": 1,
+      "scores": {
+        "legibility": 3,
+        "curiosity": 4,
+        "hierarchy": 4,
+        "isolation": 3,
+        "uniqueness": 3,
+        "synergy": 4,
+        "authenticity": 5,
+        "brand": 4
+      },
+      "score": 75,
+      "qaPass": true,
+      "verdict": "Honest-review angle with a big hype number and a curious face; slightly busier than A and B.",
+      "revise": false,
+      "rank": 3
+    }
+  ]
+}

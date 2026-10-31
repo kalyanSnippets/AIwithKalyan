@@ -1,0 +1,200 @@
+{
+  "option": "C",
+  "revision": 1,
+  "renderedAt": "2026-10-31T10:51:25.179Z",
+  "pass": true,
+  "checks": [
+    {
+      "name": "export exists",
+      "pass": true,
+      "detail": "609387 bytes",
+      "severity": "error"
+    },
+    {
+      "name": "dimensions 1280x720",
+      "pass": true,
+      "detail": "1280x720",
+      "severity": "error"
+    },
+    {
+      "name": "format png",
+      "pass": true,
+      "detail": "png",
+      "severity": "error"
+    },
+    {
+      "name": "not blank",
+      "pass": true,
+      "detail": "pixel stdev 81.8 (blank/placeholder images are near 0)",
+      "severity": "error"
+    },
+    {
+      "name": "headline 0–4 words",
+      "pass": true,
+      "detail": "3 words: \"400K WORTH IT?\"",
+      "severity": "warn"
+    },
+    {
+      "name": "total text ≤ 8 words",
+      "pass": true,
+      "detail": "3 words across 2 text layers",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"400K\"",
+      "pass": true,
+      "detail": "200px → 50px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"400K\"",
+      "pass": false,
+      "detail": "3.45:1 vs background rgb(80,62,57) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"400K\"",
+      "pass": true,
+      "detail": "box {\"x\":178,\"y\":64,\"w\":541,\"h\":190}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"400K\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"WORTH IT?\"",
+      "pass": true,
+      "detail": "112px → 28px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"WORTH IT?\"",
+      "pass": true,
+      "detail": "10.02:1 vs background rgb(80,62,57) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"WORTH IT?\"",
+      "pass": true,
+      "detail": "box {\"x\":48,\"y\":272,\"w\":595,\"h\":106}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"WORTH IT?\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text off face \"400K\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"WORTH IT?\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "one focal point",
+      "pass": true,
+      "detail": "1 layers marked focal/face",
+      "severity": "warn"
+    }
+  ],
+  "metrics": {
+    "texts": [
+      {
+        "text": "400K",
+        "fontSize": 200,
+        "mobilePx": 50,
+        "contrast": 3.45
+      },
+      {
+        "text": "WORTH IT?",
+        "fontSize": 112,
+        "mobilePx": 28,
+        "contrast": 10.02
+      }
+    ]
+  },
+  "layout": [
+    {
+      "id": "bg",
+      "type": "fill",
+      "role": "background",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "face",
+      "type": "image",
+      "role": "face",
+      "box": {
+        "x": 194,
+        "y": -34,
+        "w": 1399,
+        "h": 809
+      }
+    },
+    {
+      "id": "star",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 44,
+        "y": 92,
+        "w": 120,
+        "h": 120
+      }
+    },
+    {
+      "id": "num",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 178,
+        "y": 64,
+        "w": 541,
+        "h": 190
+      },
+      "fontSize": 200,
+      "color": "rgb(232, 119, 95)",
+      "text": "400K"
+    },
+    {
+      "id": "q",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 48,
+        "y": 272,
+        "w": 595,
+        "h": 106
+      },
+      "fontSize": 112,
+      "color": "rgb(255, 255, 255)",
+      "text": "WORTH IT?"
+    },
+    {
+      "id": "board",
+      "type": "image",
+      "role": "evidence",
+      "box": {
+        "x": 45,
+        "y": 426,
+        "w": 484,
+        "h": 298
+      }
+    }
+  ]
+}

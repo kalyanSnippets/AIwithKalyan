@@ -1,0 +1,99 @@
+{
+ "option": "C",
+ "revision": 1,
+ "archetype": "Minimalist Tech",
+ "headline": "400K WORTH IT?",
+ "titleSynergy": "This AI Tool Has 400K Stars. I Tested It on a Real App.",
+ "story": "The hype number (400K GitHub stars) against Kalyan's honest, sceptical look, with the real result as proof underneath.",
+ "curiosity": "A tool with 400K stars \u2014 is it actually worth it? Kalyan tested it.",
+ "composition": "Big coral 400K + star top-left, WORTH IT? beneath, small tilted REA Board panel bottom-left; Kalyan right with a thoughtful expression.",
+ "evidence": "400K stars: the REA GitHub page in Kalyan's 28 Oct recording showed 399K (rounded as in the video). Board: assets/evidence/rea_crop.png. Face a50 from 4K camera original PXL_20261030_072433489~2 at 0:50, graded like the video.",
+ "background": "Ink with coral glow.",
+ "typography": "400K in Inter Display Black 200 px coral; WORTH IT? 108 px white.",
+ "colors": "Ink, coral, white.",
+ "canva": "Face and board separate; star icon as Canva element; text native.",
+ "image_prompts": [],
+ "why": [
+  "Matches the honest-review angle the channel stands for",
+  "Big single number reads at 320 px",
+  "Pairs with the highest-scoring title (97)"
+ ],
+ "risks": [
+  "'400K' is approximate (399K on 28 Oct, ~412K later) \u2014 the video says 400,000, so it's consistent",
+  "Two text blocks + panel: watch clutter"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(620px 560px at 82% 42%, rgba(232,119,95,.30), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/a50.png",
+   "x": 194,
+   "y": -34,
+   "w": 1399,
+   "h": 809,
+   "fit": "contain",
+   "faceBox": {
+    "x": 862,
+    "y": 110,
+    "w": 277,
+    "h": 300
+   },
+   "canva": "separate"
+  },
+  {
+   "id": "star",
+   "type": "icon",
+   "name": "star",
+   "x": 44,
+   "y": 92,
+   "w": 120,
+   "h": 120,
+   "color": "#E8775F",
+   "stroke": 2.6
+  },
+  {
+   "id": "num",
+   "type": "text",
+   "role": "headline",
+   "text": "400K",
+   "x": 178,
+   "y": 64,
+   "size": 200,
+   "color": "#E8775F",
+   "shadow": "0 8px 30px rgba(0,0,0,.6)"
+  },
+  {
+   "id": "q",
+   "type": "text",
+   "role": "headline",
+   "text": "WORTH IT?",
+   "x": 48,
+   "y": 272,
+   "size": 112,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 24px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "board",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/rea_crop.png",
+   "x": 52,
+   "y": 438,
+   "w": 470,
+   "h": 274,
+   "radius": 16,
+   "rotate": -3,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "canva": "separate"
+  }
+ ]
+}

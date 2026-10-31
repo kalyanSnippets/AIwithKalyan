@@ -1,0 +1,130 @@
+{
+ "option": "A",
+ "revision": 1,
+ "archetype": "Curiosity/Mystery",
+ "headline": "WHICH IS REAL?",
+ "titleSynergy": "Claude Code + REA Cloned This App in 20 Minutes (Can You Spot the Real One?)",
+ "story": "Two near-identical Kanban boards side by side: the real open-source app and the copy Claude Code + REA built from one link. The viewer is asked to pick.",
+ "curiosity": "They look the same \u2014 which one did the AI make? The answer is in the video (5:04 reveal).",
+ "composition": "Two equal tilted panels across the top two-thirds with a ? badge on each; one-line headline underneath, centred. No face, so the pair is the single focal point.",
+ "evidence": "assets/evidence/wekan_crop.png and rea_crop.png \u2014 the same stills used in the video's side-by-side reveal, from Kalyan's screen recording 114559.",
+ "background": "Ink with a soft coral glow; nothing generated.",
+ "typography": "Inter Display Black 118 px, white with REAL in coral.",
+ "colors": "Ink, coral, white; the boards bring orange/green which echo the coral.",
+ "canva": "Panels baked as separate image layers; ? badges as shapes + native text; headline native text.",
+ "image_prompts": [],
+ "why": [
+  "vidIQ penalised a reference for an unclear comparison \u2014 this makes the side-by-side the whole thumbnail",
+  "Similar-thumbnail search found no REA 'spot the real one' thumbnails",
+  "Mirrors the title's question exactly"
+ ],
+ "risks": [
+  "No face: may feel less personal on a tiny channel",
+  "At 320 px the boards read as 'two similar screens', not details \u2014 that is the point"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 620px at 60% 35%, rgba(232,119,95,.30), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "left",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/wekan_crop.png",
+   "x": 44,
+   "y": 70,
+   "w": 575,
+   "h": 335,
+   "radius": 18,
+   "rotate": -3,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "canva": "separate"
+  },
+  {
+   "id": "right",
+   "type": "image",
+   "role": "focal",
+   "src": "assets/evidence/rea_crop.png",
+   "x": 662,
+   "y": 70,
+   "w": 575,
+   "h": 335,
+   "radius": 18,
+   "rotate": 3,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "canva": "separate"
+  },
+  {
+   "id": "q1",
+   "type": "shape",
+   "x": 282,
+   "y": 360,
+   "w": 96,
+   "h": 96,
+   "radius": 48,
+   "background": "#0B0B12",
+   "shadow": "0 10px 30px rgba(0,0,0,.55)",
+   "border": "6px solid #E8775F"
+  },
+  {
+   "id": "q1t",
+   "type": "text",
+   "role": "label",
+   "text": "?",
+   "x": 282,
+   "y": 366,
+   "w": 96,
+   "size": 82,
+   "align": "center",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "q2",
+   "type": "shape",
+   "x": 902,
+   "y": 360,
+   "w": 96,
+   "h": 96,
+   "radius": 48,
+   "background": "#0B0B12",
+   "shadow": "0 10px 30px rgba(0,0,0,.55)",
+   "border": "6px solid #E8775F"
+  },
+  {
+   "id": "q2t",
+   "type": "text",
+   "role": "label",
+   "text": "?",
+   "x": 902,
+   "y": 366,
+   "w": 96,
+   "size": 82,
+   "align": "center",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "head",
+   "type": "text",
+   "role": "headline",
+   "text": "WHICH IS REAL?",
+   "x": 0,
+   "y": 500,
+   "w": 1280,
+   "size": 124,
+   "align": "center",
+   "color": "#FFFFFF",
+   "highlight": [
+    {
+     "word": "REAL",
+     "color": "#E8775F"
+    }
+   ],
+   "shadow": "0 6px 24px rgba(0,0,0,.65)"
+  }
+ ]
+}

@@ -1,0 +1,1215 @@
+1
+00:00:00,000 --> 00:00:02,873
+This one tool has 400,000 stars on GitHub.
+
+2
+00:00:03,145 --> 00:00:04,000
+Four hundred thousand.
+
+3
+00:00:04,273 --> 00:00:04,891
+Crazy, right?
+
+4
+00:00:05,164 --> 00:00:07,795
+It's called Reverse Engineer Anything, REA
+
+5
+00:00:07,886 --> 00:00:08,377
+for short.
+
+6
+00:00:08,616 --> 00:00:11,125
+It let AI open any app, measure it, and
+
+7
+00:00:11,198 --> 00:00:11,743
+rebuild it.
+
+8
+00:00:12,016 --> 00:00:14,307
+And today, I gave it one link, and twenty
+
+9
+00:00:14,380 --> 00:00:15,834
+minutes later, it built this.
+
+10
+00:00:17,072 --> 00:00:18,781
+Can you tell which one is the real app?
+
+11
+00:00:19,122 --> 00:00:20,667
+Stay 'til the end because I'll show you
+
+12
+00:00:20,758 --> 00:00:22,631
+both side by side, and I'll tell you
+
+13
+00:00:22,667 --> 00:00:24,249
+honestly, is it worth the hype?
+
+14
+00:00:24,474 --> 00:00:25,037
+I am Kalyan.
+
+15
+00:00:25,183 --> 00:00:26,655
+Welcome to AI with Kalyan.
+
+16
+00:00:26,964 --> 00:00:27,583
+Okay, let's go.
+
+17
+00:00:27,726 --> 00:00:29,686
+So first, what is REA?
+
+18
+00:00:29,986 --> 00:00:31,186
+This is a GitHub page.
+
+19
+00:00:31,486 --> 00:00:33,326
+Look at the stars, over four hundred
+
+20
+00:00:33,426 --> 00:00:35,906
+thousand, and the forks, over one hundred
+
+21
+00:00:35,966 --> 00:00:36,386
+thousand.
+
+22
+00:00:36,686 --> 00:00:39,426
+And it's free, and it has MIT license.
+
+23
+00:00:39,801 --> 00:00:40,861
+Anyone can use it.
+
+24
+00:00:41,041 --> 00:00:43,461
+It went from almost nothing to over three
+
+25
+00:00:43,501 --> 00:00:45,701
+hundred thousand stars in about two weeks.
+
+26
+00:00:45,926 --> 00:00:48,266
+and YouTube videos about it got millions
+
+27
+00:00:48,346 --> 00:00:48,725
+of views.
+
+28
+00:00:49,026 --> 00:00:51,106
+So why is everyone so crazy about it?
+
+29
+00:00:51,406 --> 00:00:54,026
+Basically, REA connects your AI agent,
+
+30
+00:00:54,206 --> 00:00:56,781
+like Claude Code or the Codex, to the real
+
+31
+00:00:56,821 --> 00:00:59,361
+reverse engineering tool that experts use.
+
+32
+00:00:59,560 --> 00:01:02,300
+so the AI can open an app, look inside it,
+
+33
+00:01:02,480 --> 00:01:04,440
+trace how it works, and come back with the
+
+34
+00:01:04,480 --> 00:01:07,075
+proof, and everything runs locally on your
+
+35
+00:01:07,155 --> 00:01:07,895
+own computer.
+
+36
+00:01:08,135 --> 00:01:09,795
+Now, what are people actually building
+
+37
+00:01:09,835 --> 00:01:10,255
+with it?
+
+38
+00:01:10,405 --> 00:01:12,685
+One guy took a Steam game he owns and
+
+39
+00:01:12,805 --> 00:01:15,085
+turned it back into a C# code for a Unity
+
+40
+00:01:15,165 --> 00:01:17,005
+project in just thirty minutes.
+
+41
+00:01:17,305 --> 00:01:19,125
+That post got around four hundred and
+
+42
+00:01:19,245 --> 00:01:20,285
+sixty thousand views.
+
+43
+00:01:21,060 --> 00:01:23,560
+Somebody pointed it at Blender, the famous
+
+44
+00:01:23,800 --> 00:01:25,860
+3D software, and it went through over
+
+45
+00:01:25,900 --> 00:01:27,820
+three hundred thousand functions in about
+
+46
+00:01:27,860 --> 00:01:28,620
+seventy minutes.
+
+47
+00:01:29,371 --> 00:01:31,491
+Another person rebuilt a sound function
+
+48
+00:01:31,551 --> 00:01:34,366
+from the old game DX-Ball and matched all
+
+49
+00:01:34,386 --> 00:01:36,406
+three thousand two hundred and five test
+
+50
+00:01:36,486 --> 00:01:36,926
+cases.
+
+51
+00:01:37,638 --> 00:01:39,898
+And someone traced how the clipboard works
+
+52
+00:01:39,978 --> 00:01:41,098
+inside the Notion app.
+
+53
+00:01:41,798 --> 00:01:42,558
+It's wild, right?
+
+54
+00:01:42,858 --> 00:01:45,698
+So the big question is: Is it real or just
+
+55
+00:01:45,758 --> 00:01:46,138
+the hype?
+
+56
+00:01:46,513 --> 00:01:47,473
+So let's find out.
+
+57
+00:01:47,638 --> 00:01:48,918
+So what are we building today?
+
+58
+00:01:49,218 --> 00:01:51,518
+So see this app, it's a Kanban board.
+
+59
+00:01:51,818 --> 00:01:54,498
+it has list, cards, labels, due dates,
+
+60
+00:01:54,658 --> 00:01:57,038
+checklist, drag and drops, lot of small
+
+61
+00:01:57,078 --> 00:01:57,738
+details, right?
+
+62
+00:01:58,038 --> 00:02:00,793
+It's an open source MIT license, and the
+
+63
+00:02:00,873 --> 00:02:02,333
+demo is free to look at.
+
+64
+00:02:02,505 --> 00:02:04,605
+My mission is simple, to give the Claude
+
+65
+00:02:04,665 --> 00:02:07,385
+Code one link to this board and ask it to
+
+66
+00:02:07,445 --> 00:02:08,145
+build a copy.
+
+67
+00:02:08,445 --> 00:02:10,505
+The same layout, same colors, same
+
+68
+00:02:10,565 --> 00:02:12,265
+behavior, but one rule.
+
+69
+00:02:12,605 --> 00:02:14,225
+Guys, we are not stealing anything.
+
+70
+00:02:14,525 --> 00:02:17,585
+I just told Claude no name, no logos, no
+
+71
+00:02:17,665 --> 00:02:18,625
+images from them.
+
+72
+00:02:18,965 --> 00:02:20,485
+Our app has its own name.
+
+73
+00:02:20,785 --> 00:02:23,420
+We call it as REA Board with our own
+
+74
+00:02:23,480 --> 00:02:26,386
+sample data, so can REA pulls this off?
+
+75
+00:02:26,761 --> 00:02:27,341
+Let's see.
+
+76
+00:02:27,512 --> 00:02:29,632
+And before we start, one simple request.
+
+77
+00:02:29,932 --> 00:02:31,792
+if you want me to do more videos like
+
+78
+00:02:31,852 --> 00:02:33,992
+this, hit that subscribe button and like
+
+79
+00:02:34,052 --> 00:02:34,672
+this video.
+
+80
+00:02:34,972 --> 00:02:36,752
+it really helps this channel grow.
+
+81
+00:02:37,127 --> 00:02:38,307
+Okay, then let's start.
+
+82
+00:02:38,512 --> 00:02:40,172
+I'm on Windows using PowerShell.
+
+83
+00:02:40,472 --> 00:02:42,687
+First, go to your folder and type this
+
+84
+00:02:42,747 --> 00:02:43,167
+command.
+
+85
+00:02:43,346 --> 00:02:45,306
+Now make a new folder for this project.
+
+86
+00:02:45,606 --> 00:02:47,901
+To do that, type this command and go
+
+87
+00:02:47,961 --> 00:02:48,601
+inside it.
+
+88
+00:02:48,779 --> 00:02:51,174
+Now the main step, to install REA.
+
+89
+00:02:51,421 --> 00:02:53,101
+just type this one command.
+
+90
+00:02:53,251 --> 00:02:55,391
+Then it asks, "Install the guided REA
+
+91
+00:02:55,471 --> 00:02:55,811
+skill?"
+
+92
+00:02:56,111 --> 00:02:58,491
+I say yes, and look, REA is ready for the
+
+93
+00:02:58,551 --> 00:03:00,051
+local app analysis.
+
+94
+00:03:00,351 --> 00:03:00,751
+Easy, no?
+
+95
+00:03:01,126 --> 00:03:03,226
+So the next thing is we connect REA to
+
+96
+00:03:03,306 --> 00:03:03,966
+Claude Code.
+
+97
+00:03:04,151 --> 00:03:05,891
+So we add Claude MCP.
+
+98
+00:03:06,266 --> 00:03:07,546
+to do that, I'll give a command.
+
+99
+00:03:07,666 --> 00:03:08,706
+Just type that command.
+
+100
+00:03:08,866 --> 00:03:09,646
+And let's check it.
+
+101
+00:03:09,946 --> 00:03:11,186
+Claude MCP list.
+
+102
+00:03:11,486 --> 00:03:12,626
+Boom, it's connected.
+
+103
+00:03:13,001 --> 00:03:14,361
+Now start Claude Code.
+
+104
+00:03:14,514 --> 00:03:16,074
+first time, it asks for a theme.
+
+105
+00:03:16,374 --> 00:03:17,414
+I pick a dark mode.
+
+106
+00:03:17,714 --> 00:03:19,534
+Then you sign in with your Claude account
+
+107
+00:03:19,594 --> 00:03:20,274
+in your browser.
+
+108
+00:03:20,574 --> 00:03:23,574
+I'm using Opus 5.5 with auto mode on.
+
+109
+00:03:23,874 --> 00:03:25,554
+Auto mode means Claude handles the
+
+110
+00:03:25,594 --> 00:03:27,873
+permission by itself, So I'm not clicking
+
+111
+00:03:27,954 --> 00:03:29,174
+yes every two seconds.
+
+112
+00:03:29,549 --> 00:03:30,028
+So nice.
+
+113
+00:03:30,214 --> 00:03:30,434
+Okay.
+
+114
+00:03:30,554 --> 00:03:32,734
+Now the most important part, the prompt,
+
+115
+00:03:33,034 --> 00:03:35,249
+and honestly, this is the real secret.
+
+116
+00:03:35,489 --> 00:03:36,969
+So I'm pasting this in.
+
+117
+00:03:37,280 --> 00:03:39,075
+So if you want the prompt, I'll give it in
+
+118
+00:03:39,115 --> 00:03:40,055
+the description below.
+
+119
+00:03:40,215 --> 00:03:40,995
+You can check it out.
+
+120
+00:03:41,148 --> 00:03:42,908
+So now why does this prompt work?
+
+121
+00:03:43,248 --> 00:03:44,228
+Four things, okay.
+
+122
+00:03:44,568 --> 00:03:46,008
+One, it measures first.
+
+123
+00:03:46,308 --> 00:03:48,468
+So Claude opens the real app and takes
+
+124
+00:03:48,568 --> 00:03:49,248
+real numbers.
+
+125
+00:03:49,548 --> 00:03:52,148
+Not looks like blue, the exact color code.
+
+126
+00:03:52,448 --> 00:03:54,348
+Two is the stack is fixed.
+
+127
+00:03:54,648 --> 00:03:57,868
+It uses React, Vite, plain CSS, no random
+
+128
+00:03:57,928 --> 00:03:58,468
+libraries.
+
+129
+00:03:58,768 --> 00:04:01,148
+And the third one is I describe every part
+
+130
+00:04:01,188 --> 00:04:01,768
+of the screen.
+
+131
+00:04:02,068 --> 00:04:04,748
+Lists, cards, the card panels, drag and
+
+132
+00:04:04,808 --> 00:04:05,208
+drop.
+
+133
+00:04:05,528 --> 00:04:07,408
+And the fourth one is my favorite thing,
+
+134
+00:04:07,708 --> 00:04:08,328
+is testing.
+
+135
+00:04:08,628 --> 00:04:11,388
+I told Claude to tick an item only if you
+
+136
+00:04:11,468 --> 00:04:12,208
+saw it work.
+
+137
+00:04:12,508 --> 00:04:12,728
+Why?
+
+138
+00:04:13,028 --> 00:04:15,368
+Because AI loves to say, "Done right."
+
+139
+00:04:15,668 --> 00:04:17,008
+So we make it prove it.
+
+140
+00:04:17,383 --> 00:04:17,603
+Okay.
+
+141
+00:04:17,803 --> 00:04:19,923
+I press Enter, and now we wait.
+
+142
+00:04:20,148 --> 00:04:22,248
+So now Claude is working, and this part is
+
+143
+00:04:22,288 --> 00:04:23,088
+really interesting.
+
+144
+00:04:23,388 --> 00:04:25,428
+First, it checks the folder empty.
+
+145
+00:04:25,728 --> 00:04:28,368
+then it uses REA's browser tools to open
+
+146
+00:04:28,408 --> 00:04:30,188
+the live board and measure it.
+
+147
+00:04:30,488 --> 00:04:32,788
+It finds Chrome on my laptop and sets up a
+
+148
+00:04:32,848 --> 00:04:35,148
+small Playwright toolkit that's like a
+
+149
+00:04:35,208 --> 00:04:37,068
+robot that can control a browser.
+
+150
+00:04:37,368 --> 00:04:38,788
+Then it starts writing code.
+
+151
+00:04:39,088 --> 00:04:41,536
+Look, file after file, Then it builds the
+
+152
+00:04:41,576 --> 00:04:42,056
+project.
+
+153
+00:04:42,356 --> 00:04:44,436
+And then it tests everything with a real
+
+154
+00:04:44,496 --> 00:04:46,416
+mouse in a real Chrome window.
+
+155
+00:04:46,791 --> 00:04:48,550
+The whole thing took around eighteen
+
+156
+00:04:48,651 --> 00:04:49,071
+minutes.
+
+157
+00:04:49,230 --> 00:04:49,930
+And it's done.
+
+158
+00:04:50,230 --> 00:04:52,570
+Claude says, "All fifty checks passed."
+
+159
+00:04:52,870 --> 00:04:55,330
+But wait, before I show you, I want you to
+
+160
+00:04:55,390 --> 00:04:57,730
+guess, how close do you think this copy is
+
+161
+00:04:57,790 --> 00:04:58,750
+to the real app?
+
+162
+00:04:59,050 --> 00:05:01,350
+Fifty percent, eighty percent, ninety?
+
+163
+00:05:01,650 --> 00:05:02,850
+Tell me in the comments below.
+
+164
+00:05:03,225 --> 00:05:04,345
+I will read every guess.
+
+165
+00:05:04,665 --> 00:05:05,305
+Okay, ready?
+
+166
+00:05:05,405 --> 00:05:05,885
+Let's see.
+
+167
+00:05:06,071 --> 00:05:07,811
+On the left, the original board.
+
+168
+00:05:08,111 --> 00:05:09,991
+On the right, our REA Board.
+
+169
+00:05:10,291 --> 00:05:10,991
+Same layout.
+
+170
+00:05:11,071 --> 00:05:11,511
+Let's see.
+
+171
+00:05:11,811 --> 00:05:14,411
+Look at the top bar, blue with a blue menu
+
+172
+00:05:14,711 --> 00:05:15,811
+and the four avatars.
+
+173
+00:05:16,111 --> 00:05:17,511
+Below it, the orange strip.
+
+174
+00:05:17,811 --> 00:05:20,331
+And see this red four slash three and the
+
+175
+00:05:20,391 --> 00:05:20,951
+first list?
+
+176
+00:05:21,251 --> 00:05:22,771
+That's a work in progress limit.
+
+177
+00:05:23,071 --> 00:05:25,291
+It turns red when there are too many
+
+178
+00:05:25,331 --> 00:05:25,671
+cards.
+
+179
+00:05:25,971 --> 00:05:27,351
+Claude even copied that.
+
+180
+00:05:27,651 --> 00:05:30,711
+Now the cards, IDs like RB-1, RB-2,
+
+181
+00:05:30,851 --> 00:05:32,731
+colored labels, date badges.
+
+182
+00:05:33,031 --> 00:05:35,151
+This one says, "Nine days ago."
+
+183
+00:05:35,471 --> 00:05:38,271
+In red And these cover images drawn only
+
+184
+00:05:38,331 --> 00:05:40,586
+with CSS, no image files at all.
+
+185
+00:05:40,871 --> 00:05:42,771
+But hey, looking nice is not enough,
+
+186
+00:05:42,851 --> 00:05:43,071
+right?
+
+187
+00:05:43,371 --> 00:05:44,511
+Does it actually work?
+
+188
+00:05:44,811 --> 00:05:45,731
+Let me test it.
+
+189
+00:05:46,031 --> 00:05:49,011
+I click Add List, I type Kanban board, and
+
+190
+00:05:49,071 --> 00:05:50,611
+then Add, and it works.
+
+191
+00:05:50,911 --> 00:05:51,791
+Now Add Card.
+
+192
+00:05:52,091 --> 00:05:53,551
+Card creation is in progress.
+
+193
+00:05:53,851 --> 00:05:56,251
+Click on it, and the detail panel opens.
+
+194
+00:05:56,551 --> 00:05:59,591
+And labels, members, date pickers, cover
+
+195
+00:05:59,631 --> 00:06:01,551
+colors, description, checklist.
+
+196
+00:06:01,851 --> 00:06:03,931
+I pick the Platform and the demo labels,
+
+197
+00:06:04,231 --> 00:06:06,551
+choose Milo, Chen as a member, pick a
+
+198
+00:06:06,611 --> 00:06:08,151
+sunset cover, close it.
+
+199
+00:06:08,451 --> 00:06:09,011
+Look at that.
+
+200
+00:06:09,191 --> 00:06:10,631
+The card has everything on it.
+
+201
+00:06:10,931 --> 00:06:12,751
+Now the big test, drag and drop.
+
+202
+00:06:13,051 --> 00:06:15,471
+I drag this card from Review to Done, and
+
+203
+00:06:15,531 --> 00:06:16,191
+then it works.
+
+204
+00:06:16,491 --> 00:06:18,851
+Another one into my new list, and it works
+
+205
+00:06:18,891 --> 00:06:19,071
+too.
+
+206
+00:06:19,371 --> 00:06:21,251
+I can even drag a whole list to a new
+
+207
+00:06:21,331 --> 00:06:21,631
+place.
+
+208
+00:06:21,931 --> 00:06:22,831
+Now delete a card.
+
+209
+00:06:23,131 --> 00:06:25,071
+It asks, "Delete this card for good?"
+
+210
+00:06:25,371 --> 00:06:26,371
+With a Keep It button.
+
+211
+00:06:26,671 --> 00:06:27,311
+Nice touch.
+
+212
+00:06:27,611 --> 00:06:29,891
+and Add Sample List, it only adds the
+
+213
+00:06:29,951 --> 00:06:30,251
+list.
+
+214
+00:06:30,551 --> 00:06:31,831
+It does not delete my work.
+
+215
+00:06:32,171 --> 00:06:33,931
+Exactly what I asked in the prompt.
+
+216
+00:06:34,231 --> 00:06:35,891
+Honestly, I'm really impressed.
+
+217
+00:06:36,266 --> 00:06:37,765
+All of this from one prompt.
+
+218
+00:06:38,004 --> 00:06:40,104
+So is REA really worth the hype?
+
+219
+00:06:40,404 --> 00:06:41,224
+Let me be honest.
+
+220
+00:06:41,524 --> 00:06:42,424
+That's why you are here.
+
+221
+00:06:42,724 --> 00:06:43,924
+My answer is yes.
+
+222
+00:06:44,224 --> 00:06:45,224
+It's worth trying.
+
+223
+00:06:45,524 --> 00:06:46,624
+Three reasons for it.
+
+224
+00:06:46,964 --> 00:06:49,404
+One, it measures, it does not guess.
+
+225
+00:06:49,704 --> 00:06:50,784
+That's the big difference.
+
+226
+00:06:51,084 --> 00:06:53,564
+Number two is it doesn't just look nice.
+
+227
+00:06:53,864 --> 00:06:54,744
+It really works.
+
+228
+00:06:55,044 --> 00:06:57,284
+Drag and drop, saving, the card panel,
+
+229
+00:06:57,504 --> 00:06:57,984
+everything.
+
+230
+00:06:58,284 --> 00:07:00,504
+Three is Claude tested its own work.
+
+231
+00:07:00,804 --> 00:07:02,764
+Fifty checks with real mouse.
+
+232
+00:07:03,064 --> 00:07:04,464
+But there is a but.
+
+233
+00:07:04,764 --> 00:07:05,604
+Let me be fair.
+
+234
+00:07:05,904 --> 00:07:07,044
+REA is not magic.
+
+235
+00:07:07,344 --> 00:07:09,844
+My prompt was very detailed, and I think
+
+236
+00:07:09,904 --> 00:07:11,624
+that's why the result was very good.
+
+237
+00:07:11,924 --> 00:07:14,044
+A lazy prompt gives you a lazy result.
+
+238
+00:07:14,344 --> 00:07:16,724
+Also, it took twenty minutes, and it
+
+239
+00:07:16,784 --> 00:07:19,084
+copied only one screen, the board screen,
+
+240
+00:07:19,384 --> 00:07:20,344
+not the full app.
+
+241
+00:07:20,644 --> 00:07:23,244
+And some people online are asking, "What
+
+242
+00:07:23,304 --> 00:07:26,324
+does REA add on top of AI agent using
+
+243
+00:07:26,364 --> 00:07:27,044
+normal tools?"
+
+244
+00:07:27,344 --> 00:07:29,544
+So the hype is running a little ahead of
+
+245
+00:07:29,604 --> 00:07:29,904
+proof.
+
+246
+00:07:30,204 --> 00:07:32,799
+One more thing, please, only clone apps
+
+247
+00:07:32,879 --> 00:07:34,979
+you're allowed to clone, like open source
+
+248
+00:07:35,099 --> 00:07:35,359
+ones.
+
+249
+00:07:35,579 --> 00:07:38,239
+Never copy their names, logos, or images.
+
+250
+00:07:38,604 --> 00:07:41,064
+Don't copy someone's app and sell it or
+
+251
+00:07:41,144 --> 00:07:42,444
+give it away under their name.
+
+252
+00:07:42,819 --> 00:07:44,839
+That's against copyright and intellectual
+
+253
+00:07:44,939 --> 00:07:45,459
+property.
+
+254
+00:07:45,619 --> 00:07:48,219
+REA's own page says, "Use it only on
+
+255
+00:07:48,279 --> 00:07:50,499
+software you own or you are allowed to
+
+256
+00:07:50,559 --> 00:07:51,059
+examine."
+
+257
+00:07:51,359 --> 00:07:53,439
+So use it to learn, use it for
+
+258
+00:07:53,559 --> 00:07:55,979
+inspiration, And always add your own
+
+259
+00:07:56,039 --> 00:07:56,339
+twist.
+
+260
+00:07:56,714 --> 00:07:59,194
+That's why I used an open source Kanban
+
+261
+00:07:59,314 --> 00:08:02,074
+app, and I gave my app a new name and a
+
+262
+00:08:02,154 --> 00:08:02,854
+new design.
+
+263
+00:08:03,086 --> 00:08:04,286
+And there is one bonus tip.
+
+264
+00:08:04,586 --> 00:08:06,545
+You don't need REA every time.
+
+265
+00:08:06,845 --> 00:08:09,305
+If you like only one small feature, just
+
+266
+00:08:09,405 --> 00:08:11,325
+ask Claude Code, "How does this work?
+
+267
+00:08:11,625 --> 00:08:13,145
+How can I build something like this?"
+
+268
+00:08:13,445 --> 00:08:15,685
+REA is better when you need to go deeper,
+
+269
+00:08:15,985 --> 00:08:17,245
+like with desktop apps.
+
+270
+00:08:17,545 --> 00:08:19,365
+So here is my honest opinion.
+
+271
+00:08:19,665 --> 00:08:22,205
+AI is a very good shortcut, but software
+
+272
+00:08:22,245 --> 00:08:23,585
+engineering is not dead.
+
+273
+00:08:23,885 --> 00:08:26,220
+The real value is not in the code, it's in
+
+274
+00:08:26,260 --> 00:08:27,500
+the problem you solve.
+
+275
+00:08:27,719 --> 00:08:29,899
+So remember the loop, look at the app,
+
+276
+00:08:30,199 --> 00:08:32,579
+understand it with proof, rebuild your own
+
+277
+00:08:32,619 --> 00:08:33,059
+version.
+
+278
+00:08:33,359 --> 00:08:34,459
+That's the whole idea.
+
+279
+00:08:34,739 --> 00:08:37,394
+And the big shift is, AI isn't only
+
+280
+00:08:37,454 --> 00:08:38,054
+guessing now.
+
+281
+00:08:38,394 --> 00:08:39,554
+It shows you proof.
+
+282
+00:08:39,724 --> 00:08:42,559
+So my verdict, try it, but do it in the
+
+283
+00:08:42,619 --> 00:08:43,139
+right way.
+
+284
+00:08:43,299 --> 00:08:43,859
+Okay, guys.
+
+285
+00:08:44,159 --> 00:08:44,979
+That's it for today.
+
+286
+00:08:45,279 --> 00:08:47,539
+If you like this video, please subscribe
+
+287
+00:08:47,579 --> 00:08:48,639
+to AI with Kalyan.
+
+288
+00:08:48,939 --> 00:08:50,979
+I'm going to test more AI tools like this
+
+289
+00:08:51,279 --> 00:08:52,699
+and show you what really works.
+
+290
+00:08:52,999 --> 00:08:53,739
+Now comment time.
+
+291
+00:08:54,039 --> 00:08:55,459
+Which app should I clone next?
+
+292
+00:08:55,759 --> 00:08:56,299
+Spotify?
+
+293
+00:08:56,539 --> 00:08:57,279
+A notes app?
+
+294
+00:08:57,419 --> 00:08:58,059
+Something else?
+
+295
+00:08:58,399 --> 00:09:00,479
+Tell me in the comments And don't forget
+
+296
+00:09:00,519 --> 00:09:01,399
+to share your guess.
+
+297
+00:09:01,579 --> 00:09:02,739
+How close was the copy?
+
+298
+00:09:03,039 --> 00:09:05,339
+Also, if you want to see how I edit my
+
+299
+00:09:05,399 --> 00:09:08,079
+videos using Claude, my previous video is
+
+300
+00:09:08,139 --> 00:09:08,739
+right there.
+
+301
+00:09:09,039 --> 00:09:11,039
+Click on it, I'm sure you'll like it.
+
+302
+00:09:11,414 --> 00:09:12,814
+Thank you so much for watching.
+
+303
+00:09:12,954 --> 00:09:13,914
+See you in the next one.
+
+304
+00:09:14,214 --> 00:09:14,494
+Bye.
