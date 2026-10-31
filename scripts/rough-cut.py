@@ -3,6 +3,7 @@
 
   python3 scripts/rough-cut.py <edl.json> <rawDir> <transcriptsDir> <outDir> [--width 1920] [--ids S1-01,S1-02]
                               [--pad 0.2] [--join 0.45] [--text] [--words out.json]
+                              [--vf <prefilter>] [--crf 20] [--preset veryfast]
 
 --pad/--join set the pause rule (gaps over --join become about 2x--pad). --text prints the kept words
 per entry and the length, without rendering. --words writes every kept word with its time in the cut
@@ -22,6 +23,8 @@ ap.add_argument("--pad", type=float, default=0.2)
 ap.add_argument("--join", type=float, default=0.45)
 ap.add_argument("--text", action="store_true")
 ap.add_argument("--words")
+ap.add_argument("--vf", default="", help="filter run on the source before scaling (e.g. an HLG→SDR tone-map)")
+ap.add_argument("--crf", default="20"); ap.add_argument("--preset", default="veryfast")
 a = ap.parse_args()
 PAD, JOIN, LONG = a.pad, a.join, 2.0
 edl = json.load(open(a.edl))
@@ -63,7 +66,7 @@ for e in edl:
     base = max(0, ps[0][0] - 1)
     end = ps[-1][1] + 0.5
     n = len(ps)
-    pre = f"[0:v]scale={a.width}:-2:flags=lanczos,fps=30,format=yuv420p,split={n}" + "".join(f"[s{i}]" for i in range(n)) + ";"
+    pre = f"[0:v]{a.vf + ',' if a.vf else ''}scale={a.width}:-2:flags=lanczos,fps=30,format=yuv420p,split={n}" + "".join(f"[s{i}]" for i in range(n)) + ";"
     pre += f"[0:a]aresample=48000,asplit={n}" + "".join(f"[b{i}]" for i in range(n)) + ";"
     v = pre + ";".join(f"[s{i}]trim={s0-base:.3f}:{t0-base:.3f},setpts=PTS-STARTPTS" + (f",tpad=stop_mode=clone:stop_duration={x:.3f}" if x else "") + f"[v{i}];[b{i}]atrim={s0-base:.3f}:{t0-base:.3f},asetpts=PTS-STARTPTS" + (f",apad=pad_dur={x:.3f}" if x else "") + f"[a{i}]" for i, (s0, t0, x) in enumerate(ps))
     sp = e.get("speed", 1.0)
@@ -74,7 +77,7 @@ for e in edl:
     spans.append((e, ps))
     if os.path.exists(dst): print("skip", e["id"], flush=True); continue
     cmd = ["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{base:.3f}", "-t", f"{end-base:.3f}", "-i", f"{a.raw}/{e['clip']}.mp4",
-           "-filter_complex", v + ";" + cat, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+           "-filter_complex", v + ";" + cat, "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", a.preset, "-crf", a.crf,
            "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", dst + ".tmp.mp4"]
     subprocess.run(cmd, check=True); os.rename(dst + ".tmp.mp4", dst)
     print(f"{e['id']} {len(ps)} pieces {dur:.1f}s", flush=True)
