@@ -1,5 +1,14 @@
 [
  {
+  "id": "S1-00",
+  "section": "S1",
+  "clip": "PXL_20261030_072433489_2",
+  "src_in": 73.7,
+  "src_out": 75.75,
+  "hold": 0.2,
+  "note": "Cold open: 'Can you tell which one is the real app?' over the A?/B? split (moved from S1-03, Kalyan review 31 Oct)"
+ },
+ {
   "id": "S1-01",
   "section": "S1",
   "clip": "PXL_20261030_072433489_2",
@@ -20,9 +29,9 @@
   "id": "S1-03",
   "section": "S1",
   "clip": "PXL_20261030_072433489_2",
-  "src_in": 73.7,
+  "src_in": 76.4,
   "src_out": 82.2,
-  "note": "Can you tell\u2026worth the hype?"
+  "note": "Stay 'til the end\u2026worth the hype? (question moved to S1-00 cold open)"
  },
  {
   "id": "S1-04",
