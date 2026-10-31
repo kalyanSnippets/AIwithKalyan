@@ -1,20 +1,12 @@
 [
  {
-  "id": "S1-00",
-  "section": "S1",
-  "clip": "PXL_20261030_072433489_2",
-  "src_in": 73.7,
-  "src_out": 75.75,
-  "hold": 0.2,
-  "note": "Cold open: 'Can you tell which one is the real app?' over the A?/B? split (moved from S1-03, Kalyan review 31 Oct)"
- },
- {
   "id": "S1-01",
   "section": "S1",
   "clip": "PXL_20261030_072433489_2",
   "src_in": 41.4,
   "src_out": 51.9,
-  "note": "This one tool\u2026REA for short (1st take; 'It's called REA--' retake cut)"
+  "note": "This one tool\u2026REA for short (1st take; 'It's called REA--' retake cut)",
+  "speed": 1.1
  },
  {
   "id": "S1-02",
@@ -23,15 +15,17 @@
   "src_in": 57.0,
   "src_out": 65.1,
   "note": "It let AI open any app\u2026it built THIS. Hold for 'Which one is real?' split",
-  "hold": 1.2
+  "hold": 1.2,
+  "speed": 1.1
  },
  {
   "id": "S1-03",
   "section": "S1",
   "clip": "PXL_20261030_072433489_2",
-  "src_in": 76.4,
+  "src_in": 73.7,
   "src_out": 82.2,
-  "note": "Stay 'til the end\u2026worth the hype? (question moved to S1-00 cold open)"
+  "note": "Can you tell\u2026worth the hype?",
+  "speed": 1.1
  },
  {
   "id": "S1-04",
@@ -39,7 +33,8 @@
   "clip": "PXL_20261030_072433489_2",
   "src_in": 85.9,
   "src_out": 89.4,
-  "note": "I am Kalyan. Welcome\u2026Okay, let's go (2nd name take)"
+  "note": "I am Kalyan. Welcome\u2026Okay, let's go (2nd name take)",
+  "speed": 1.1
  },
  {
   "id": "S2-01",

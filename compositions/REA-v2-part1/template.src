@@ -87,7 +87,7 @@ html, body { margin:0; background:var(--bg); }
 </style>
 </head>
 <body>
-<div id="root" data-composition-id="rea-v2-part1" data-start="0" data-width="1920" data-height="1080" data-duration="148.5">
+<div id="root" data-composition-id="rea-v2-part1" data-start="0" data-width="1920" data-height="1080" data-duration="145.65">
   <div id="bd" class="fill">
     <div class="blob" id="b1" style="width:900px;height:900px;left:-250px;top:-350px;background:rgba(232,119,95,.28)"></div>
     <div class="blob" id="b2" style="width:800px;height:800px;right:-250px;bottom:-380px;background:rgba(127,149,171,.2)"></div>
@@ -96,7 +96,7 @@ html, body { margin:0; background:var(--bg); }
 
   <!-- ===== browser frames (real proofs) ===== -->
   <div class="bw" id="bgh" style="top:150px;height:800px"><div class="view" style="height:800px"><div class="zoom" style="height:800px">
-    <video id="ghv" class="clip" src="media/gh.mp4" muted playsinline data-start="32.845" data-duration="6.56" data-media-start="0" data-track-index="2" style="height:800px"></video>
+    <video id="ghv" class="clip" src="media/gh.mp4" muted playsinline data-start="29.988" data-duration="6.56" data-media-start="0" data-track-index="2" style="height:800px"></video>
     <div class="hl" id="hlStar" style="left:1330px;top:360px;width:165px;height:48px"></div>
     <div class="hl" id="hlFork" style="left:1156px;top:360px;width:170px;height:48px"></div>
   </div></div></div>
@@ -150,7 +150,7 @@ html, body { margin:0; background:var(--bg); }
 
   <!-- ===== camera ===== -->
   <div id="camwrap"><div id="campush">
-    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="148.5" data-media-start="0" data-track-index="1"></video>
+    <video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="145.65" data-media-start="0" data-track-index="1"></video>
   </div><div id="camring"></div></div>
 
   <!-- ===== S1 hook ===== -->
@@ -184,7 +184,7 @@ html, body { margin:0; background:var(--bg); }
   <div class="stk" id="s15" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:star}}</div><div class="big" id="s15n" style="font-size:84px">41</div><div class="sm">STARS IN<br>15 DAYS</div></div>
   <div class="stk c" id="s35" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:eye}}</div><div class="big">3.5M</div><div class="sm">VIEWS</div><div class="src">Low Level on YouTube</div></div>
   <div class="ic" id="spark" style="position:absolute;left:1450px;top:170px;width:280px;height:280px;color:var(--coral);visibility:hidden;z-index:6;filter:drop-shadow(0 20px 40px rgba(232,119,95,.45))">{{i:sparkles}}</div>
-  <video class="clip ins" id="insNode" src="media/r_NodeMap.mp4" muted playsinline data-start="54.105" data-duration="8.3" data-media-start="0" data-track-index="3"></video>
+  <video class="clip ins" id="insNode" src="media/r_NodeMap.mp4" muted playsinline data-start="51.248" data-duration="8.3" data-media-start="0" data-track-index="3"></video>
   <div class="stk c" id="sProof" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" style="font-size:72px">PROOF</div><div class="sm">EVERY FINDING<br>COMES WITH IT</div></div>
   <div class="stk" id="sLocal" style="left:1300px;top:130px;width:500px"><div style="position:relative;width:170px;height:150px"><span class="ic" style="position:absolute;inset:0;width:170px;height:150px">{{i:laptop}}</span><span class="ic" id="lockIc" style="position:absolute;left:58px;top:28px;width:54px;height:54px;color:var(--ink)">{{i:lock-keyhole}}</span></div><div class="big" style="font-size:64px;letter-spacing:-2px">Runs locally</div><div class="sm">ON YOUR OWN COMPUTER</div></div>
   <div id="teaser" style="position:absolute;left:1290px;top:200px;display:grid;grid-template-columns:repeat(2,240px);gap:24px;z-index:6">
@@ -194,7 +194,7 @@ html, body { margin:0; background:var(--bg); }
     <div class="stk tz" style="position:relative;width:240px;height:200px"><div class="ic" style="width:90px;height:90px">{{i:clipboard}}</div><div class="sm" style="font-size:22px">DESKTOP APPS</div></div></div>
   <div class="stk c" id="s30" style="left:1440px;top:300px;width:420px"><div class="ic" id="s30ic">{{i:clock}}</div><div class="big">30 MIN</div><div class="sm">STEAM GAME → C#</div></div>
   <div class="stk" id="s460" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:eye}}</div><div class="big">~460K</div><div class="sm">VIEWS</div><div class="src">count via awesome-reverse-engineer-anything</div></div>
-  <video class="clip ins" id="insBl" src="media/r_Blender.mp4" muted playsinline data-start="83.405" data-duration="7.86" data-media-start="0" data-track-index="3"></video>
+  <video class="clip ins" id="insBl" src="media/r_Blender.mp4" muted playsinline data-start="80.548" data-duration="7.86" data-media-start="0" data-track-index="3"></video>
   <div class="stk c" id="s3205" style="left:1440px;top:290px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" id="s3205n">0</div><div class="sm">TEST CASES<br>MATCHED</div></div>
   <div class="stk" id="sClip" style="left:1440px;top:300px;width:420px"><div class="ic">{{i:clipboard}}</div><div class="big" style="font-size:52px;letter-spacing:-1px">Copy → IPC → Clipboard</div><div class="sm">TRACED</div></div>
   <div class="ic" id="zap" style="position:absolute;left:1450px;top:170px;width:280px;height:280px;color:var(--coral);visibility:hidden;z-index:6">{{i:zap}}</div>
@@ -230,15 +230,8 @@ html, body { margin:0; background:var(--bg); }
   <div class="stk c" id="sRb" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:circle-check-big}}</div><div class="big" style="font-size:66px;letter-spacing:-2px">REA Board</div><div class="sm">OUR OWN NAME</div></div>
   <div class="stk" id="sData" style="left:1440px;top:250px;width:420px"><div class="ic">{{i:database}}</div><div class="big" style="font-size:56px;letter-spacing:-1px">Own sample data</div></div>
 
-  <div class="chap" id="co">
-    <div style="position:absolute;left:0;right:0;top:70px;text-align:center;font-weight:800;font-size:120px;letter-spacing:-4px"><span id="coT1" style="display:inline-block">Which one is&nbsp;</span><span id="coT2" class="hot" style="display:inline-block">REAL?</span></div>
-    <div id="coA" style="position:absolute;left:80px;top:300px;width:860px;height:438px;border-radius:24px;overflow:hidden;border:2px solid rgba(255,255,255,.14);box-shadow:0 30px 80px rgba(0,0,0,.55)"><img src="img/wekan.png" style="width:100%;height:100%;object-fit:cover"></div>
-    <div id="coB" style="position:absolute;left:980px;top:300px;width:860px;height:438px;border-radius:24px;overflow:hidden;border:2px solid rgba(255,255,255,.14);box-shadow:0 30px 80px rgba(0,0,0,.55)"><img src="img/reaboard.png" style="width:100%;height:100%;object-fit:cover"></div>
-    <div class="coP" style="position:absolute;left:104px;top:322px;padding:12px 34px;border-radius:999px;background:var(--ink);color:#111;font-weight:800;font-size:44px">A ?</div>
-    <div class="coP" style="position:absolute;left:1004px;top:322px;padding:12px 34px;border-radius:999px;background:var(--coral);color:#111;font-weight:800;font-size:44px">B ?</div>
-  </div>
   <!-- inserts on top -->
-  <video class="clip ins" id="insHook" src="media/r_Hook2Cut.mp4" muted playsinline data-start="11.655" data-duration="9.4" data-media-start="0" data-track-index="3"></video>
+  <video class="clip ins" id="insHook" src="media/r_Hook2Cut.mp4" muted playsinline data-start="8.5" data-duration="10.636" data-playback-rate="1.1" data-media-start="0" data-track-index="3"></video>
   <div id="scan" class="fill"></div>
   <div id="flash" class="fill"></div>
 </div>
@@ -250,8 +243,8 @@ const bo = "back.out(1.7)", p3 = "power3.out";
 const $ = (s) => document.querySelector(s);
 
 // ---------- background drift ----------
-tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 148.5, ease: "none" }, 0);
-tl.fromTo("#grid", { x: 0 }, { x: -600, duration: 148.5, ease: "none" }, 0);
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 300, y: 160, duration: 145.65, ease: "none" }, 0);
+tl.fromTo("#grid", { x: 0 }, { x: -600, duration: 145.65, ease: "none" }, 0);
 
 // ---------- camera: full frame ↔ PiP card ----------
 function pipIn(t, d = .5) {
@@ -313,23 +306,9 @@ function hl(id, a, b, dim = true) {
 }
 function shiftL(id, t) { tl.to(id, { x: -220, scale: .8, duration: .55, ease: "power3.inOut" }, t); }
 
-// ================= cold open (0 – 2.3): "Can you tell which one is the real app?" =================
-const OFF_HOOK = 2.305, OFF_TAIL = 0.12, OFF_REST = 0.105; // shifts from the first cut (cold open added in front)
-pipIn(0, .01);
-tl.set("#co", { visibility: "visible" }, 0);
-tl.fromTo("#coA", { x: -900, rotate: -6 }, { x: 0, rotate: -2, duration: .5, ease: "expo.out", immediateRender: false }, .05);
-tl.fromTo("#coB", { x: 900, rotate: 6 }, { x: 0, rotate: 2, duration: .5, ease: "expo.out", immediateRender: false }, .15);
-tl.fromTo("#coT1", { opacity: 0, y: -40 }, { opacity: 1, y: 0, duration: .3, ease: p3, immediateRender: false }, .3);
-tl.fromTo("#coT2", { opacity: 0, scale: 2.4, filter: "blur(20px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: .35, ease: "expo.out", immediateRender: false }, 1.36);
-tl.fromTo(".coP", { scale: 0 }, { scale: 1, duration: .35, ease: bo, stagger: .15, immediateRender: false }, .8);
-tl.to(".coP", { scale: 1.15, duration: .15, yoyo: true, repeat: 3, ease: "sine.inOut" }, 1.5);
-tl.to("#coA, #coB", { scale: 1.04, duration: 2, ease: "none" }, .6);
-tl.fromTo("#flash", { opacity: 0 }, { opacity: .8, duration: .05, yoyo: true, repeat: 1, ease: "none", immediateRender: false }, 2.2);
-tl.set("#co", { visibility: "hidden" }, 2.25);
-pipOut(2.24, .02);
-
-// ================= S1 · hook (shifted by OFF_HOOK) =================
-tl = gsap.timeline(); main.add(tl, OFF_HOOK);
+const SPEED = 1.1, OFF_REST = -2.752; // S1 plays at 1.1x; everything after moves 2.752 s earlier
+// ================= S1 · hook (authored at 1x, played at SPEED) =================
+tl = gsap.timeline(); main.add(tl, 0); tl.timeScale(SPEED);
 punch(3.42, 4.62);
 tl.set("#s400", { visibility: "visible" }, 1.36);
 tl.fromTo("#s400", { scale: .3, rotate: 14, opacity: 0, x: 200 }, { scale: 1, rotate: -4, opacity: 1, x: 0, duration: .45, ease: bo, immediateRender: false }, 1.36);
@@ -369,8 +348,8 @@ tl.to("#scan", { opacity: 0, duration: .2 }, 9.2);
 tl.set("#rea", { visibility: "hidden" }, 9.4);
 pipOut(9.4, .05); // hidden under the Remotion insert (9.35 – 21.05)
 
-// 21 – 30.5: back on camera (shifted by OFF_TAIL)
-tl = gsap.timeline(); main.add(tl, OFF_TAIL);
+// 21 – 30.5: back on camera (also at SPEED)
+tl = gsap.timeline(); main.add(tl, 0); tl.timeScale(SPEED);
 stk("#sSide", 23.2, 24.5);
 stk("#sHype", 25.6, 26.85);
 tl.to("#sHypeIc", { rotate: 14, duration: .25, yoyo: true, repeat: 3, ease: "sine.inOut" }, 25.9);
@@ -378,8 +357,8 @@ stk("#sName", 26.9, 29.5, { x: 300, opacity: 0, scale: .9, rotate: 0 });
 punch(27.69, 29.3, 1.08);
 whip(30.1);
 
-// ================= S2 · what is REA (shifted by OFF_REST) =================
-tl = gsap.timeline(); main.add(tl, OFF_REST);
+// ================= S2 · what is REA (authored at first-cut times, shifted by OFF_REST) =================
+tl = gsap.timeline(); main.add(tl, 0); const REST = tl;
 pipIn(30.4, .3);
 tl.set("#ch1", { visibility: "visible" }, 30.45);
 tl.fromTo("#ch1a", { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: .3, immediateRender: false }, 30.5);
@@ -523,10 +502,11 @@ tl.to("#rbs", { opacity: 0, duration: .25 }, 145.0); tl.set("#rbs", { visibility
 pipOut(145.2);
 whip(148.0);
 
+REST.shiftChildren(OFF_REST);
 tl = main;
 // ---------- captions: auto from ElevenLabs word times, ≤ 4 words, hidden while proofs/graphics carry the words ----------
-const shiftOld = (t) => t < 20.7 ? t + OFF_HOOK : t < 30.35 ? t + OFF_TAIL : t + OFF_REST;
-const HIDE = [[0, 2.3]].concat([[1.36, 3.42], [6.2, 20.7], [26.9, 29.6], [30.4, 32.8], [32.7, 39.4], [43.6, 51.7], [54.0, 68.0], [73.0, 102.6], [108.4, 132.0], [139.6, 145.3]].map(([a, b]) => [shiftOld(a), shiftOld(b)]));
+const shiftOld = (t) => t < 30.35 ? t / SPEED : t + OFF_REST;
+const HIDE = [[1.36, 3.42], [6.2, 21.05], [26.9, 29.6], [30.4, 32.8], [32.7, 39.4], [43.6, 51.7], [54.0, 68.0], [73.0, 102.6], [108.4, 132.0], [139.6, 145.3]].map(([a, b]) => [shiftOld(a), shiftOld(b)]);
 const HOT = new Set(["400,000", "rea", "rea?", "real", "hype?", "honestly,", "free,", "mit", "anyone", "proof,", "locally", "crazy,", "right?", "wild,", "thousand.", "both", "side,", "rule.", "not", "stealing", "anything.", "name,", "logos,", "images", "off?", "see.", "go.", "own", "kalyan.", "steam", "blender,", "notion"]);
 const hidden = (t) => HIDE.some(([a, b]) => t >= a && t < b);
 const groups = []; let g = null;
