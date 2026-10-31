@@ -5,7 +5,11 @@
 
 ---
 
-## 1. Title (pick one)
+## 1. Title
+
+**Chosen:** Claude Code + REA Cloned This App in 20 Minutes (Can You Spot the Real One?)
+
+Other options considered:
 
 vidIQ title scores for this channel (0–100, higher = more clickable):
 
@@ -133,7 +137,7 @@ And which app should I clone next: Spotify, a notes app, or something else?
 
 ## 6. Before you publish — checklist
 
-- [ ] Set the Google Doc to **Anyone with the link → Viewer** (Share button), or the description link won't open for viewers.
+- [ ] Set the Google Doc to **Anyone with the link → Viewer** (open the doc → Share → General access → "Anyone with the link", role Viewer). The Drive connector couldn't change link sharing, so this one is manual — without it the description link won't open for viewers.
 - [ ] Upload the HD `REA-v2-final.mp4`.
 - [ ] Title, description, tags, thumbnail, captions, end screen, cards.
 - [ ] Publish, then post and pin the comment.
@@ -151,5 +155,5 @@ Rubric scores are a design check, not a click-rate prediction.
 | 2 | **B — "1 LINK = THIS"** (you + REA Board) | `exports/B.png` | 91 | Title #2 or #3 |
 | 3 | C — "400K WORTH IT?" (stars + your curious look) | `exports/C.png` | 75 | Title #1 ("This AI Tool Has 400K Stars…") |
 
-**Recommendation:** upload **A** with title #2. If YouTube's *Test & Compare* is available on your channel, test **A vs B**.
+**Thumbnail not chosen yet.** Recommendation: **A** with the chosen title. If YouTube's *Test & Compare* is available on your channel, test **A vs B**.
 All are 1280×720 PNG, bottom-right kept clear for the duration badge.
