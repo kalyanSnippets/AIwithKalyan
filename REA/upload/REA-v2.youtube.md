@@ -1,6 +1,6 @@
 # REA v2 — YouTube upload package
 
-**Video file:** `REA-v2-final.mp4` (HD re-render in progress) · **Captions:** `REA-v2.en.srt` · **Thumbnail:** section 7 (A, B, C)
+**Video file:** `REA-v2-final.mp4` (HD rebuild from the 4K originals, 1080p, 634 MB) · **Captions:** `REA-v2.en.srt` · **Thumbnail:** section 7 (A, B, C)
 **Channel:** AI with Kalyan (@aiwithkalyan2026)
 
 ---
