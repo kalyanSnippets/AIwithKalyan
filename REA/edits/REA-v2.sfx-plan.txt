@@ -1,0 +1,144 @@
+# REA v2 sound effects (sparse): <sfx[@gain dB]> <offset s> <phrase in the cut>
+# sfx: whoosh, whip, pop, click, type, riser, ding. Built with: python3 scripts/sfx-cues.py REA/edits/REA-v2.cut-words.json REA/edits/REA-v2.sfx-plan.txt REA/edits/REA-v2.sfx-cues.json
+# --- S1 hook (1.1x)
+pop     -0.05  400,000 stars
+pop     0.30   Crazy, right
+# whip    -0.25  It's called Reverse
+riser@-2 -0.62 REA for short
+# pop     0.0    open any app
+whoosh  0.15   it built this
+# pop     0.0    side by side
+pop     0.10   worth the hype
+# pop     0.0    I am Kalyan
+whip    0.0    let's go
+# --- S2 what is REA
+whoosh  0.0    This is a GitHub page
+pop     0.0    stars, over four
+pop     0.0    forks, over one
+# pop     0.0    free, and it has
+whoosh  -0.1   It went from almost
+# pop     0.0    two weeks
+# whoosh  0.0    and YouTube videos
+pop     0.0    millions of views
+whoosh  0.0    Basically, REA connects
+whoosh  0.0    so the AI can open
+pop     0.0    runs locally
+whoosh  0.0    One guy took
+pop     0.0    thirty minutes
+whoosh  0.35   Somebody pointed it
+whoosh  0.25   Another person rebuilt
+ding@-4 0.0    three thousand two hundred
+whoosh  0.25   And someone traced
+pop     0.0    wild, right
+whip    0.0    let's find out
+# --- S3 mission
+whoosh  0.0    see this app
+pop     0.0    list, cards, labels
+pop     0.0    open source MIT
+whoosh  0.0    My mission is simple
+type    0.0    one link to this
+# pop     0.0    build a copy
+pop     0.0    not stealing anything
+# pop     0.0    no name, no logos
+whoosh  0.0    Our app has its own
+type@-3 0.0    We call it as
+# --- S4 subscribe
+click   0.0    subscribe button
+click   0.0    like this video
+whip    0.0    let's start
+# --- S5 setup
+# pop     0.0    using PowerShell
+whoosh  -0.1   First, go to your
+type    0.0    type this command
+whoosh  -0.1   Now make a new folder
+type    0.0    type this command
+whoosh  -0.1   Now the main step
+type    0.0    type this one command
+ding@-4 0.0    I say yes
+ding@-6 0.0    ready for the local
+whoosh  -0.1   next thing is
+type    0.0    Just type that command
+type    0.0    Claude MCP list
+ding    0.0    Boom
+whoosh  -0.1   Now start Claude
+# pop     0.0    dark mode
+# pop     0.0    Opus
+pop     0.0    auto mode on
+# pop     0.0    Auto mode means
+# --- S6 prompt
+whoosh  0.0    the most important part
+# pop     0.0    real secret
+whoosh  0.0    I'm pasting this in
+# pop     0.0    description below
+whoosh  0.0    why does this prompt work
+pop     0.0    One, it measures
+# pop     0.0    exact color code
+pop     0.0    Two is the stack
+pop     0.0    third one is
+pop     0.0    fourth one is
+ding@-4 0.0    saw it work
+# pop     0.0    Done right
+# riser@-4 -1.2  prove it
+click   0.0    press Enter
+# --- S7 Claude works
+whoosh  0.0    Claude is working
+pop     0.0    robot that can control
+ding@-4 0.0    eighteen minutes
+# --- S8 comment hook
+ding    0.0    fifty checks passed
+# pop     0.0    I want you to guess
+pop     0.0    Fifty percent
+pop     0.0    eighty percent
+pop     0.0    ninety
+# pop     0.0    comments below
+whip    0.0    Let's see
+# --- S9 reveal + live test
+riser@-2 -0.62 On the right
+pop     0.0    top bar
+pop     0.0    four avatars
+# pop     0.0    orange strip
+pop     0.0    red four slash
+# pop     0.0    copied that
+whoosh  0.0    Now the cards
+# pop     0.0    days ago
+# pop     0.0    CSS, no image
+# pop     0.0    actually work
+click   0.0    click Add List
+ding@-4 0.0    it works. Now
+click   0.0    Click on it
+# click   0.0    close it
+ding@-4 0.0    and then it works
+ding@-6 0.0    it works too
+pop     0.0    Delete this card
+ding@-4 0.0    Exactly what I asked
+pop     0.0    one prompt
+# --- S10 opinion
+whoosh  0.0    really worth the hype
+ding@-4 0.0    is yes
+pop     0.0    One, it measures
+pop     0.0    Number two
+pop     0.0    Three is Claude
+whoosh  0.0    But there is a but
+# pop     0.0    not magic
+# pop     0.0    lazy result
+whoosh  0.0    some people online
+# pop     0.0    One more thing
+riser@-6 -0.62 copyright and intellectual
+whoosh  0.0    REA's own page
+# pop     0.0    learn, use it
+# pop     0.0    inspiration
+pop     0.0    own twist
+whoosh  0.0    That's why I used
+pop     0.0    bonus tip
+type    0.0    How does this work
+whoosh  0.0    So here is my honest
+whoosh  0.0    remember the loop
+ding@-4 0.0    shows you proof
+riser@-2 -0.62 try it, but
+# --- S11 outro
+click   0.0    please subscribe
+pop     0.0    Spotify
+# pop     0.0    notes app
+# pop     0.0    Something else
+whoosh  0.0    my previous video
+pop     0.0    Thank you so much

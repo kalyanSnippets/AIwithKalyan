@@ -1,0 +1,584 @@
+[
+ {
+  "t": 1.241,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "400,000 stars"
+ },
+ {
+  "t": 4.573,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Crazy, right"
+ },
+ {
+  "t": 6.866,
+  "sfx": "riser",
+  "gain_db": -2.0,
+  "phrase": "REA for short"
+ },
+ {
+  "t": 15.257,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "it built this"
+ },
+ {
+  "t": 23.731,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "worth the hype"
+ },
+ {
+  "t": 27.146,
+  "sfx": "whip",
+  "gain_db": 0.0,
+  "phrase": "let's go"
+ },
+ {
+  "t": 29.986,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "This is a GitHub page"
+ },
+ {
+  "t": 31.946,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "stars, over four"
+ },
+ {
+  "t": 34.426,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "forks, over one"
+ },
+ {
+  "t": 40.941,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "It went from almost"
+ },
+ {
+  "t": 47.906,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "millions of views"
+ },
+ {
+  "t": 51.406,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Basically, REA connects"
+ },
+ {
+  "t": 59.56,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "so the AI can open"
+ },
+ {
+  "t": 65.895,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "runs locally"
+ },
+ {
+  "t": 70.405,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "One guy took"
+ },
+ {
+  "t": 76.345,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "thirty minutes"
+ },
+ {
+  "t": 81.41,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Somebody pointed it"
+ },
+ {
+  "t": 89.621,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Another person rebuilt"
+ },
+ {
+  "t": 94.386,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "three thousand two hundred"
+ },
+ {
+  "t": 97.888,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "And someone traced"
+ },
+ {
+  "t": 102.018,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "wild, right"
+ },
+ {
+  "t": 106.693,
+  "sfx": "whip",
+  "gain_db": 0.0,
+  "phrase": "let's find out"
+ },
+ {
+  "t": 109.478,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "see this app"
+ },
+ {
+  "t": 112.158,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "list, cards, labels"
+ },
+ {
+  "t": 118.538,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "open source MIT"
+ },
+ {
+  "t": 122.505,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "My mission is simple"
+ },
+ {
+  "t": 125.265,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "one link to this"
+ },
+ {
+  "t": 133.205,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "not stealing anything"
+ },
+ {
+  "t": 138.965,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Our app has its own"
+ },
+ {
+  "t": 140.785,
+  "sfx": "type",
+  "gain_db": -3.0,
+  "phrase": "We call it as"
+ },
+ {
+  "t": 152.692,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "subscribe button"
+ },
+ {
+  "t": 153.812,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "like this video"
+ },
+ {
+  "t": 157.647,
+  "sfx": "whip",
+  "gain_db": 0.0,
+  "phrase": "let's start"
+ },
+ {
+  "t": 160.372,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "First, go to your"
+ },
+ {
+  "t": 162.347,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "type this command"
+ },
+ {
+  "t": 166.426,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "type this command"
+ },
+ {
+  "t": 168.679,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Now the main step"
+ },
+ {
+  "t": 171.761,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "type this one command"
+ },
+ {
+  "t": 176.111,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "I say yes"
+ },
+ {
+  "t": 177.951,
+  "sfx": "ding",
+  "gain_db": -6.0,
+  "phrase": "ready for the local"
+ },
+ {
+  "t": 181.326,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "next thing is"
+ },
+ {
+  "t": 187.666,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "Just type that command"
+ },
+ {
+  "t": 189.946,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "Claude MCP list"
+ },
+ {
+  "t": 191.486,
+  "sfx": "ding",
+  "gain_db": 0.0,
+  "phrase": "Boom"
+ },
+ {
+  "t": 192.901,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Now start Claude"
+ },
+ {
+  "t": 202.714,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "auto mode on"
+ },
+ {
+  "t": 210.734,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "the most important part"
+ },
+ {
+  "t": 215.709,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "I'm pasting this in"
+ },
+ {
+  "t": 221.568,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "why does this prompt work"
+ },
+ {
+  "t": 224.568,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "One, it measures"
+ },
+ {
+  "t": 232.448,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Two is the stack"
+ },
+ {
+  "t": 239.108,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "third one is"
+ },
+ {
+  "t": 245.768,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "fourth one is"
+ },
+ {
+  "t": 251.468,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "saw it work"
+ },
+ {
+  "t": 257.943,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "press Enter"
+ },
+ {
+  "t": 260.588,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Claude is working"
+ },
+ {
+  "t": 275.208,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "robot that can control"
+ },
+ {
+  "t": 288.231,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "eighteen minutes"
+ },
+ {
+  "t": 291.41,
+  "sfx": "ding",
+  "gain_db": 0.0,
+  "phrase": "fifty checks passed"
+ },
+ {
+  "t": 299.05,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Fifty percent"
+ },
+ {
+  "t": 300.07,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "eighty percent"
+ },
+ {
+  "t": 300.97,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "ninety"
+ },
+ {
+  "t": 305.405,
+  "sfx": "whip",
+  "gain_db": 0.0,
+  "phrase": "Let's see"
+ },
+ {
+  "t": 307.491,
+  "sfx": "riser",
+  "gain_db": -2.0,
+  "phrase": "On the right"
+ },
+ {
+  "t": 312.271,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "top bar"
+ },
+ {
+  "t": 314.971,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "four avatars"
+ },
+ {
+  "t": 318.491,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "red four slash"
+ },
+ {
+  "t": 327.651,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "Now the cards"
+ },
+ {
+  "t": 346.151,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "click Add List"
+ },
+ {
+  "t": 350.051,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "it works. Now"
+ },
+ {
+  "t": 353.851,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "Click on it"
+ },
+ {
+  "t": 375.391,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "and then it works"
+ },
+ {
+  "t": 378.431,
+  "sfx": "ding",
+  "gain_db": -6.0,
+  "phrase": "it works too"
+ },
+ {
+  "t": 383.871,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Delete this card"
+ },
+ {
+  "t": 392.171,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "Exactly what I asked"
+ },
+ {
+  "t": 397.186,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "one prompt"
+ },
+ {
+  "t": 399.084,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "really worth the hype"
+ },
+ {
+  "t": 403.404,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "is yes"
+ },
+ {
+  "t": 406.964,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "One, it measures"
+ },
+ {
+  "t": 411.084,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Number two"
+ },
+ {
+  "t": 418.284,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Three is Claude"
+ },
+ {
+  "t": 423.064,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "But there is a but"
+ },
+ {
+  "t": 440.784,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "some people online"
+ },
+ {
+  "t": 462.879,
+  "sfx": "riser",
+  "gain_db": -6.0,
+  "phrase": "copyright and intellectual"
+ },
+ {
+  "t": 465.619,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "REA's own page"
+ },
+ {
+  "t": 475.779,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "own twist"
+ },
+ {
+  "t": 476.714,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "That's why I used"
+ },
+ {
+  "t": 483.786,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "bonus tip"
+ },
+ {
+  "t": 490.445,
+  "sfx": "type",
+  "gain_db": 0.0,
+  "phrase": "How does this work"
+ },
+ {
+  "t": 497.545,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "So here is my honest"
+ },
+ {
+  "t": 507.939,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "remember the loop"
+ },
+ {
+  "t": 518.614,
+  "sfx": "ding",
+  "gain_db": -4.0,
+  "phrase": "shows you proof"
+ },
+ {
+  "t": 520.419,
+  "sfx": "riser",
+  "gain_db": -2.0,
+  "phrase": "try it, but"
+ },
+ {
+  "t": 526.739,
+  "sfx": "click",
+  "gain_db": 0.0,
+  "phrase": "please subscribe"
+ },
+ {
+  "t": 535.759,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Spotify"
+ },
+ {
+  "t": 546.719,
+  "sfx": "whoosh",
+  "gain_db": 0.0,
+  "phrase": "my previous video"
+ },
+ {
+  "t": 551.414,
+  "sfx": "pop",
+  "gain_db": 0.0,
+  "phrase": "Thank you so much"
+ }
+]
