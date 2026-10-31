@@ -26,7 +26,7 @@ cd REA/renders/v2
 # picture from the parts (trimmed to exact frame counts), audio from the master cut
 ffmpeg -loglevel error -y -i part1.mp4 -i part2.mp4 -i part3.mp4 -i ../rough_v2_sdr/rough_cut.mp4 -filter_complex \
   "[0:v]trim=end_frame=4427,setpts=PTS-STARTPTS[a];[1:v]trim=end_frame=4752,setpts=PTS-STARTPTS[b];[2:v]trim=end_frame=7824,setpts=PTS-STARTPTS[c];[a][b][c]concat=n=3:v=1:a=0,format=yuv420p[v];[3:a]aresample=48000,apad=whole_dur=566.7667[au]" \
-  -map "[v]" -map "[au]" -c:v libx264 -preset slow -crf 18 -profile:v high -c:a aac -b:a 320k -shortest -movflags +faststart REA-v2-full-nomix.mp4
+  -map "[v]" -map "[au]" -c:v libx264 -preset slow -crf 18 -profile:v high -c:a aac -b:a 320k -t 566.7667 -movflags +faststart REA-v2-full-nomix.mp4
 echo joined
 cd ../../..
 python3 scripts/mix-final.py REA/renders/v2/REA-v2-full-nomix.mp4 REA/media/music/rea-bed-long.wav REA/edits/REA-v2.sfx-cues.json \
