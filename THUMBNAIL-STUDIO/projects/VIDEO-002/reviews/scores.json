@@ -112,7 +112,70 @@
       "qaPass": true,
       "verdict": "Honest-review angle with a big hype number and a curious face; slightly busier than A and B.",
       "revise": false,
+      "rank": 5
+    },
+    {
+      "option": "D",
+      "archetype": "Curiosity/Mystery",
+      "headline": "WHICH IS REAL?",
+      "revision": 1,
+      "scores": {
+        "legibility": 3,
+        "curiosity": 5,
+        "hierarchy": 4,
+        "isolation": 4,
+        "uniqueness": 5,
+        "synergy": 5,
+        "authenticity": 5,
+        "brand": 5
+      },
+      "score": 87,
+      "qaPass": true,
+      "verdict": "Strongest pairing with the chosen title: question + two boards + a friendly real face; boards are small on phones.",
+      "revise": false,
       "rank": 3
+    },
+    {
+      "option": "E",
+      "archetype": "Face + Result",
+      "headline": "1 LINK = THIS",
+      "revision": 1,
+      "scores": {
+        "legibility": 3,
+        "curiosity": 4,
+        "hierarchy": 5,
+        "isolation": 5,
+        "uniqueness": 4,
+        "synergy": 4,
+        "authenticity": 5,
+        "brand": 5
+      },
+      "score": 85,
+      "qaPass": true,
+      "verdict": "Cleanest read: big result board + face + 3-word claim; less tied to the 'spot the real one' question.",
+      "revise": false,
+      "rank": 4
+    },
+    {
+      "option": "F",
+      "archetype": "Minimalist Tech",
+      "headline": "400K WORTH IT?",
+      "revision": 1,
+      "scores": {
+        "legibility": 3,
+        "curiosity": 4,
+        "hierarchy": 4,
+        "isolation": 4,
+        "uniqueness": 3,
+        "synergy": 3,
+        "authenticity": 4,
+        "brand": 5
+      },
+      "score": 73,
+      "qaPass": true,
+      "verdict": "Bold number hook, but weaker fit with the chosen title and '400K' rounds up the 399K seen on screen.",
+      "revise": false,
+      "rank": 6
     }
   ]
 }

@@ -1,0 +1,322 @@
+{
+  "option": "D",
+  "revision": 1,
+  "renderedAt": "2026-11-01T22:56:13.187Z",
+  "pass": true,
+  "checks": [
+    {
+      "name": "export exists",
+      "pass": true,
+      "detail": "564678 bytes",
+      "severity": "error"
+    },
+    {
+      "name": "dimensions 1280x720",
+      "pass": true,
+      "detail": "1280x720",
+      "severity": "error"
+    },
+    {
+      "name": "format png",
+      "pass": true,
+      "detail": "png",
+      "severity": "error"
+    },
+    {
+      "name": "not blank",
+      "pass": true,
+      "detail": "pixel stdev 80.6 (blank/placeholder images are near 0)",
+      "severity": "error"
+    },
+    {
+      "name": "headline 0–4 words",
+      "pass": true,
+      "detail": "3 words: \"WHICH IS REAL?\"",
+      "severity": "warn"
+    },
+    {
+      "name": "total text ≤ 8 words",
+      "pass": true,
+      "detail": "5 words across 4 text layers",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"WHICH IS\"",
+      "pass": true,
+      "detail": "104px → 26px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"WHICH IS\"",
+      "pass": true,
+      "detail": "11.50:1 vs background rgb(65,55,55) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"WHICH IS\"",
+      "pass": true,
+      "detail": "box {\"x\":40,\"y\":30,\"w\":467,\"h\":99}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"WHICH IS\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"REAL?\"",
+      "pass": true,
+      "detail": "150px → 37.5px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"REAL?\"",
+      "pass": false,
+      "detail": "3.96:1 vs background rgb(65,55,55) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"REAL?\"",
+      "pass": true,
+      "detail": "box {\"x\":40,\"y\":138,\"w\":471,\"h\":143}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"REAL?\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"?\"",
+      "pass": true,
+      "detail": "70px → 17.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"?\"",
+      "pass": true,
+      "detail": "11.50:1 vs background rgb(65,55,55) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"?\"",
+      "pass": true,
+      "detail": "box {\"x\":165,\"y\":495,\"w\":41,\"h\":67}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"?\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"?\"",
+      "pass": true,
+      "detail": "70px → 17.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"?\"",
+      "pass": true,
+      "detail": "11.50:1 vs background rgb(65,55,55) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"?\"",
+      "pass": true,
+      "detail": "box {\"x\":483,\"y\":495,\"w\":41,\"h\":67}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"?\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text off face \"WHICH IS\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"REAL?\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"?\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"?\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "one focal point",
+      "pass": true,
+      "detail": "2 layers marked focal/face",
+      "severity": "warn"
+    }
+  ],
+  "metrics": {
+    "texts": [
+      {
+        "text": "WHICH IS",
+        "fontSize": 104,
+        "mobilePx": 26,
+        "contrast": 11.5
+      },
+      {
+        "text": "REAL?",
+        "fontSize": 150,
+        "mobilePx": 37.5,
+        "contrast": 3.96
+      },
+      {
+        "text": "?",
+        "fontSize": 70,
+        "mobilePx": 17.5,
+        "contrast": 11.5
+      },
+      {
+        "text": "?",
+        "fontSize": 70,
+        "mobilePx": 17.5,
+        "contrast": 11.5
+      }
+    ]
+  },
+  "layout": [
+    {
+      "id": "bg",
+      "type": "fill",
+      "role": "background",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "face",
+      "type": "image",
+      "role": "face",
+      "box": {
+        "x": 590,
+        "y": -12,
+        "w": 660,
+        "h": 880
+      }
+    },
+    {
+      "id": "h1",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 40,
+        "y": 30,
+        "w": 467,
+        "h": 99
+      },
+      "fontSize": 104,
+      "color": "rgb(255, 255, 255)",
+      "text": "WHICH IS"
+    },
+    {
+      "id": "h2",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 40,
+        "y": 138,
+        "w": 471,
+        "h": 143
+      },
+      "fontSize": 150,
+      "color": "rgb(232, 119, 95)",
+      "text": "REAL?"
+    },
+    {
+      "id": "left",
+      "type": "image",
+      "role": "evidence",
+      "box": {
+        "x": 30,
+        "y": 342,
+        "w": 309,
+        "h": 193
+      }
+    },
+    {
+      "id": "right",
+      "type": "image",
+      "role": "focal",
+      "box": {
+        "x": 348,
+        "y": 342,
+        "w": 309,
+        "h": 193
+      }
+    },
+    {
+      "id": "q1",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 143,
+        "y": 490,
+        "w": 84,
+        "h": 84
+      }
+    },
+    {
+      "id": "q1t",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 165,
+        "y": 495,
+        "w": 41,
+        "h": 67
+      },
+      "fontSize": 70,
+      "color": "rgb(255, 255, 255)",
+      "text": "?"
+    },
+    {
+      "id": "q2",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 461,
+        "y": 490,
+        "w": 84,
+        "h": 84
+      }
+    },
+    {
+      "id": "q2t",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 483,
+        "y": 495,
+        "w": 41,
+        "h": 67
+      },
+      "fontSize": 70,
+      "color": "rgb(255, 255, 255)",
+      "text": "?"
+    }
+  ]
+}

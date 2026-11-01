@@ -6,7 +6,10 @@ _Internal design rubric (1–5 per criterion, weighted to 100). Not a CTR predic
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | A | Curiosity/Mystery | "WHICH IS REAL?" | 5 | 5 | 4 | 4 | 5 | 5 | 5 | 4 | **94** | pass |
 | 2 | B | Face + Emotion | "1 LINK = THIS" | 5 | 4 | 5 | 4 | 4 | 4 | 5 | 5 | **91** | pass |
-| 3 | C | Minimalist Tech | "400K WORTH IT?" | 3 | 4 | 4 | 3 | 3 | 4 | 5 | 4 | **75** | pass |
+| 3 | D | Curiosity/Mystery | "WHICH IS REAL?" | 3 | 5 | 4 | 4 | 5 | 5 | 5 | 5 | **87** | pass |
+| 4 | E | Face + Result | "1 LINK = THIS" | 3 | 4 | 5 | 5 | 4 | 4 | 5 | 5 | **85** | pass |
+| 5 | C | Minimalist Tech | "400K WORTH IT?" | 3 | 4 | 4 | 3 | 3 | 4 | 5 | 4 | **75** | pass |
+| 6 | F | Minimalist Tech | "400K WORTH IT?" | 3 | 4 | 4 | 4 | 3 | 3 | 4 | 5 | **73** | pass |
 
 ## Rubric
 

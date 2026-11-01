@@ -1,0 +1,113 @@
+{
+  "option": "D",
+  "title": "AI with Kalyan — VIDEO-002 — Option D (Curiosity/Mystery)",
+  "size": {
+    "width": 1280,
+    "height": 720
+  },
+  "steps": [
+    "create-design (brief: blank 1280x720 YouTube thumbnail) → design_id; or reuse canva/<OPT>.json design_id",
+    "create-upload-url + POST bytes for each upload → media ids",
+    "read-design open_transaction → page id + existing element ids; delete generated elements",
+    "edit-design insert_fill base at 0,0 1280x720; insert_fill separate layers at their place",
+    "edit-design add_text + format_text for each text layer",
+    "show the preview; commit only after the user approves; export-design png 1280x720"
+  ],
+  "uploads": [
+    {
+      "name": "D-base.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/canva/D-base.png",
+      "place": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "point.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/assets/cutouts/point.png",
+      "place": {
+        "left": 590,
+        "top": -12,
+        "width": 660,
+        "height": 880
+      },
+      "note": "upload, then insert_fill at place"
+    },
+    {
+      "name": "wekan_crop.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/assets/evidence/wekan_crop.png",
+      "place": {
+        "left": 34,
+        "top": 350,
+        "width": 300,
+        "height": 178
+      },
+      "note": "upload, then insert_fill at place"
+    },
+    {
+      "name": "rea_crop.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/assets/evidence/rea_crop.png",
+      "place": {
+        "left": 352,
+        "top": 350,
+        "width": 300,
+        "height": 178
+      },
+      "note": "upload, then insert_fill at place"
+    }
+  ],
+  "texts": [
+    {
+      "text": "WHICH IS",
+      "left": 40,
+      "top": 30,
+      "width": 480,
+      "formatting": {
+        "font_size": 104,
+        "font_weight": "bold",
+        "color": "#FFFFFF",
+        "text_align": "start"
+      },
+      "note": "stroke/shadow are not settable through the Canva MCP; add an outline effect in the Canva editor if needed"
+    },
+    {
+      "text": "REAL?",
+      "left": 40,
+      "top": 138,
+      "width": 440,
+      "formatting": {
+        "font_size": 150,
+        "font_weight": "bold",
+        "color": "#E8775F",
+        "text_align": "start"
+      },
+      "note": "stroke/shadow are not settable through the Canva MCP; add an outline effect in the Canva editor if needed"
+    },
+    {
+      "text": "?",
+      "left": 143,
+      "top": 495,
+      "width": 84,
+      "formatting": {
+        "font_size": 70,
+        "font_weight": "bold",
+        "color": "#FFFFFF",
+        "text_align": "center"
+      }
+    },
+    {
+      "text": "?",
+      "left": 461,
+      "top": 495,
+      "width": 84,
+      "formatting": {
+        "font_size": 70,
+        "font_weight": "bold",
+        "color": "#FFFFFF",
+        "text_align": "center"
+      }
+    }
+  ]
+}

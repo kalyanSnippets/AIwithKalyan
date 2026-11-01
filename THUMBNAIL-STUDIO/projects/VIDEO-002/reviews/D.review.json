@@ -1,0 +1,19 @@
+{
+ "option": "D",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 5,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 5,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Strongest pairing with the chosen title: question + two boards + a friendly real face; boards are small on phones.",
+ "notes": [
+  "Boards ~300 px wide each; at 320 px feed width they read as 'two similar screens', which is the point",
+  "Coral-on-glow contrast warning is a sampling artefact (text sits on dark ink with shadow)"
+ ],
+ "revisions": 1
+}

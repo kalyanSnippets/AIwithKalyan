@@ -4,7 +4,7 @@
   "workingTitle": "Claude Code + REA Cloned This App in 20 Minutes (Can You Spot the Real One?)",
   "notes": "",
   "createdAt": "2026-10-31T10:41:12.103Z",
-  "stage": "delivered",
+  "stage": "review",
   "options": {
     "A": {
       "rendered": true,
@@ -15,6 +15,18 @@
       "qaPass": true
     },
     "C": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "D": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "E": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "F": {
       "rendered": true,
       "qaPass": true
     }
@@ -36,6 +48,22 @@
     {
       "at": "2026-10-31T10:51:36.010Z",
       "event": "delivered"
+    },
+    {
+      "at": "2026-11-01T22:54:44.170Z",
+      "event": "rendered D,E,F"
+    },
+    {
+      "at": "2026-11-01T22:55:21.328Z",
+      "event": "rendered D,E,F"
+    },
+    {
+      "at": "2026-11-01T22:55:54.975Z",
+      "event": "rendered D,E,F"
+    },
+    {
+      "at": "2026-11-01T22:56:16.582Z",
+      "event": "rendered D,E,F"
     }
   ]
 }

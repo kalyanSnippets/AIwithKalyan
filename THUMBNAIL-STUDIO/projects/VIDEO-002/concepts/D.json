@@ -1,0 +1,156 @@
+{
+ "option": "D",
+ "revision": 1,
+ "archetype": "Curiosity/Mystery",
+ "headline": "WHICH IS REAL?",
+ "titleSynergy": "Claude Code + REA Cloned This App in 20 Minutes (Can You Spot the Real One?)",
+ "story": "Kalyan smiling and pointing next to two near-identical boards: the real open-source app and the REA clone.",
+ "curiosity": "They look the same; which one did AI build? Answered at 5:04.",
+ "composition": "Headline top-left, both boards side by side below with ? badges; Kalyan right, pointing up toward the question.",
+ "evidence": "assets/evidence/wekan_crop.png + rea_crop.png (stills from Kalyan's screen recording); face from Kalyan's own photo (photo_point).",
+ "background": "Ink with a coral glow behind Kalyan so the black T-shirt separates; nothing generated.",
+ "typography": "Inter Display Black, white + coral.",
+ "colors": "Ink, coral, white.",
+ "canva": "Photo cutout and boards as separate image layers; headline native text.",
+ "image_prompts": [],
+ "why": [
+  "Same side-by-side idea as A (top-ranked), now with a friendly real face",
+  "Matches the title's question exactly"
+ ],
+ "risks": [
+  "Boards are smaller than in A because the face takes the right side"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(400px 440px at 880px 330px, rgba(232,119,95,.50), transparent 72%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/point.png",
+   "x": 590,
+   "y": -12,
+   "w": 660,
+   "h": 880,
+   "fit": "contain",
+   "faceBox": {
+    "x": 690,
+    "y": 132,
+    "w": 342,
+    "h": 373
+   },
+   "canva": "separate",
+   "imgCss": "-webkit-mask-image:linear-gradient(to right,transparent 0,#000 110px);mask-image:linear-gradient(to right,transparent 0,#000 110px);"
+  },
+  {
+   "id": "h1",
+   "type": "text",
+   "role": "headline",
+   "text": "WHICH IS",
+   "x": 40,
+   "y": 30,
+   "size": 104,
+   "color": "#FFFFFF",
+   "shadow": "0 6px 24px rgba(0,0,0,.7)",
+   "w": 480
+  },
+  {
+   "id": "h2",
+   "type": "text",
+   "role": "headline",
+   "text": "REAL?",
+   "x": 40,
+   "y": 138,
+   "size": 150,
+   "color": "#E8775F",
+   "shadow": "0 6px 24px rgba(0,0,0,.7)",
+   "w": 440
+  },
+  {
+   "id": "left",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/wekan_crop.png",
+   "x": 34,
+   "y": 350,
+   "w": 300,
+   "h": 178,
+   "radius": 16,
+   "rotate": -3,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "fit": "cover",
+   "position": "left top",
+   "canva": "separate"
+  },
+  {
+   "id": "right",
+   "type": "image",
+   "role": "focal",
+   "src": "assets/evidence/rea_crop.png",
+   "x": 352,
+   "y": 350,
+   "w": 300,
+   "h": 178,
+   "radius": 16,
+   "rotate": 3,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 24px 60px rgba(0,0,0,.6)",
+   "fit": "cover",
+   "position": "left top",
+   "canva": "separate"
+  },
+  {
+   "id": "q1",
+   "type": "shape",
+   "x": 143,
+   "y": 490,
+   "w": 84,
+   "h": 84,
+   "radius": 42,
+   "background": "#0B0B12",
+   "shadow": "0 10px 30px rgba(0,0,0,.55)",
+   "border": "6px solid #E8775F"
+  },
+  {
+   "id": "q1t",
+   "type": "text",
+   "role": "label",
+   "text": "?",
+   "x": 143,
+   "y": 495,
+   "w": 84,
+   "size": 70,
+   "align": "center",
+   "color": "#FFFFFF"
+  },
+  {
+   "id": "q2",
+   "type": "shape",
+   "x": 461,
+   "y": 490,
+   "w": 84,
+   "h": 84,
+   "radius": 42,
+   "background": "#0B0B12",
+   "shadow": "0 10px 30px rgba(0,0,0,.55)",
+   "border": "6px solid #E8775F"
+  },
+  {
+   "id": "q2t",
+   "type": "text",
+   "role": "label",
+   "text": "?",
+   "x": 461,
+   "y": 495,
+   "w": 84,
+   "size": 70,
+   "align": "center",
+   "color": "#FFFFFF"
+  }
+ ]
+}

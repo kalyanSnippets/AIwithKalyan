@@ -1,0 +1,27 @@
+{
+  "source": "photo_point.png",
+  "out": "assets/cutouts/point.png",
+  "crop": {
+    "x": 0,
+    "y": 0,
+    "w": 1932,
+    "h": 2576
+  },
+  "size": [
+    1932,
+    2576
+  ],
+  "face": {
+    "x": 294,
+    "y": 421,
+    "w": 1001,
+    "h": 1093
+  },
+  "subject": {
+    "x": 0,
+    "y": 72,
+    "w": 1931,
+    "h": 2503
+  },
+  "coverage": 0.623
+}

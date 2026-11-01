@@ -1,0 +1,78 @@
+{
+  "option": "E",
+  "title": "AI with Kalyan — VIDEO-002 — Option E (Face + Result)",
+  "size": {
+    "width": 1280,
+    "height": 720
+  },
+  "steps": [
+    "create-design (brief: blank 1280x720 YouTube thumbnail) → design_id; or reuse canva/<OPT>.json design_id",
+    "create-upload-url + POST bytes for each upload → media ids",
+    "read-design open_transaction → page id + existing element ids; delete generated elements",
+    "edit-design insert_fill base at 0,0 1280x720; insert_fill separate layers at their place",
+    "edit-design add_text + format_text for each text layer",
+    "show the preview; commit only after the user approves; export-design png 1280x720"
+  ],
+  "uploads": [
+    {
+      "name": "E-base.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/canva/E-base.png",
+      "place": {
+        "left": 0,
+        "top": 0,
+        "width": 1280,
+        "height": 720
+      }
+    },
+    {
+      "name": "point.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/assets/cutouts/point.png",
+      "place": {
+        "left": 590,
+        "top": -12,
+        "width": 660,
+        "height": 880
+      },
+      "note": "upload, then insert_fill at place"
+    },
+    {
+      "name": "rea_wide.png",
+      "file": "/home/user/AIwithKalyan/THUMBNAIL-STUDIO/projects/VIDEO-002/assets/evidence/rea_wide.png",
+      "place": {
+        "left": 36,
+        "top": 330,
+        "width": 600,
+        "height": 330
+      },
+      "note": "upload, then insert_fill at place"
+    }
+  ],
+  "texts": [
+    {
+      "text": "1 LINK",
+      "left": 40,
+      "top": 28,
+      "width": 400,
+      "formatting": {
+        "font_size": 128,
+        "font_weight": "bold",
+        "color": "#FFFFFF",
+        "text_align": "start"
+      },
+      "note": "stroke/shadow are not settable through the Canva MCP; add an outline effect in the Canva editor if needed"
+    },
+    {
+      "text": "= THIS",
+      "left": 40,
+      "top": 150,
+      "width": 420,
+      "formatting": {
+        "font_size": 128,
+        "font_weight": "bold",
+        "color": "#E8775F",
+        "text_align": "start"
+      },
+      "note": "stroke/shadow are not settable through the Canva MCP; add an outline effect in the Canva editor if needed"
+    }
+  ]
+}
