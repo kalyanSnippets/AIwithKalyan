@@ -4,6 +4,7 @@
 # 4K HLG originals with a lanczos downscale and near-lossless encodes, keeping every frame on the same timing.
 #
 #   bash scripts/rea-v2-hq.sh A   # HQ rough cut from 4K, then graded camera clips cut from it at the same frames
+#   bash scripts/rea-v2-hq.sh S   # sync fix for the Hook2Cut/RunTerm camera clips, then B for parts 1-2
 #   bash scripts/rea-v2-hq.sh B   # Remotion inserts, HyperFrames parts (PNG frames), join, final mix, review copies
 set -e
 cd "$(dirname "$0")/.."
@@ -52,9 +53,23 @@ EOF
   df -h . | tail -1; echo STAGE_A_DONE
 fi
 
+if [ "$1" = S ]; then
+  # Sync fix (measured against the raw files): the PiP/full-frame camera in the Hook2Cut and RunTerm inserts started
+  # ~2 frames early (voice ahead of lips by ~61-67 ms). Drop their first 2 frames and clone the last one twice.
+  for c in REA/remotion/public/part1/hook2cut.mp4 REA/remotion/public/part2/s7cam.mp4; do
+    [ -e "$c.synced" ] && continue
+    n=$(ffprobe -v error -count_frames -select_streams v -show_entries stream=nb_read_frames -of csv=p=0 "$c")
+    ffmpeg -v error -y -i "$c" -vf "trim=start_frame=2,setpts=PTS-STARTPTS,tpad=stop_mode=clone:stop=2" -an \
+      -c:v libx264 -preset medium -crf 12 -movflags +faststart "$c.tmp.mp4"
+    m=$(ffprobe -v error -count_frames -select_streams v -show_entries stream=nb_read_frames -of csv=p=0 "$c.tmp.mp4")
+    [ "$m" = "$n" ] || { echo "frame count $m != $n for $c"; exit 1; }
+    mv "$c.tmp.mp4" "$c"; touch "$c.synced"; echo "shifted $c"; done
+  REMOTION_COMPS="Hook2Cut part1;RunTerm part2" PARTS="1 2" bash "$0" B; exit $?
+fi
+
 if [ "$1" = B ]; then
   [ -n "$SKIP_REMOTION" ] || ( cd REA/remotion
-    for c in "Hook2Cut part1" "NodeMap part1" "Blender part1" "RunTerm part2" "Loop part3"; do set -- $c
+    IFS=';'; for c in ${REMOTION_COMPS:-Hook2Cut part1;NodeMap part1;Blender part1;RunTerm part2;Loop part3}; do IFS=' '; set -- $c
       npx remotion render src/index.ts $1 ../../compositions/REA-v2-$2/media/r_$1.mp4 --muted --crf 12 \
         --browser-executable=/opt/pw-browsers/chromium --gl=angle --concurrency=3 2>&1 | tail -1; done )
   # HyperFrames captures each frame as a JPEG at quality 80 and has no CLI flag for it; raise it to 95 in the local
@@ -62,7 +77,7 @@ if [ "$1" = B ]; then
   sed -i 's/jpegQuality: 80,/jpegQuality: 95,/; s/quality: isPng ? void 0 : options.quality ?? 80,/quality: isPng ? void 0 : options.quality ?? 95,/' \
     node_modules/hyperframes/dist/chunk-*.js
   ( cd compositions
-    for p in 1 2 3; do rm -rf ../REA/renders/v2/.part$p.hf-* ../REA/renders/v2/work-* ../REA/renders/v2/part$p.mp4 /tmp/hyperframes-extract-cache-*
+    for p in ${PARTS:-1 2 3}; do rm -rf ../REA/renders/v2/.part$p.hf-* ../REA/renders/v2/work-* ../REA/renders/v2/part$p.mp4 /tmp/hyperframes-extract-cache-*
       npx hyperframes render REA-v2-part$p -o ../REA/renders/v2/part$p.mp4 --crf 12 2>&1 | grep -vE "hf-progress|Streaming frame" | tail -3
       [ -s ../REA/renders/v2/part$p.mp4 ] || { echo "part$p render failed"; exit 1; }
       echo "rendered part$p"; done ) || exit 1
@@ -82,5 +97,9 @@ if [ "$1" = B ]; then
   rm -f pf-0.log*
   # full-resolution sample so sharpness can be judged (the small review copy can't show it)
   ffmpeg -loglevel error -y -ss 0 -i REA-v2-final.mp4 -t 20 -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 160k -movflags +faststart REA-v2-final-HD-sample.mp4
-  ls -la REA-v2-final.mp4 REA-v2-final-review.mp4 REA-v2-final-HD-sample.mp4; echo ALL_DONE
+  # upload copy under the 400 MB chat limit (2-pass 4.9 Mbps; YouTube re-encodes anyway)
+  ffmpeg -loglevel error -y -i REA-v2-final.mp4 -c:v libx264 -preset slow -tune film -profile:v high -pix_fmt yuv420p -b:v 4900k -maxrate 10M -bufsize 14M -pass 1 -passlogfile up -an -f mp4 /dev/null
+  ffmpeg -loglevel error -y -i REA-v2-final.mp4 -c:v libx264 -preset slow -tune film -profile:v high -pix_fmt yuv420p -b:v 4900k -maxrate 10M -bufsize 14M -pass 2 -passlogfile up -c:a copy -movflags +faststart REA-v2-final-upload.mp4
+  rm -f up-0.log*
+  ls -la REA-v2-final.mp4 REA-v2-final-upload.mp4 REA-v2-final-review.mp4 REA-v2-final-HD-sample.mp4; echo ALL_DONE
 fi
