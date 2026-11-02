@@ -191,11 +191,11 @@ window.__timelines["{cid}"] = tl;
 
 # ---------- shared visual blocks ----------
 def gh_block():  # GitHub repo page (Kalyan's recording), star count
-    return f"""  <div class="v" id="gh" style="left:40px;top:190px;width:1000px;height:560px">
-    <div class="card" id="ghc" style="position:absolute;inset:0;background:#0d1117"><div id="ghz" style="position:absolute;left:0;top:0;width:1000px;height:500px;transform-origin:0 0">
-      <video class="clip" id="ghv" src="media/gh.mp4" muted playsinline data-start="0" data-duration="5" data-media-start="1" data-track-index="2" style="left:0;top:0;width:1000px;height:500px"></video></div></div>
+    return f"""  <div class="v" id="gh" style="left:40px;top:210px;width:1000px;height:495px">
+    <div class="card" id="ghc" style="position:absolute;left:0;top:0;width:1000px;height:495px;background:#fff"><div id="ghz" style="position:absolute;left:0;top:0;width:1000px;height:495px;transform-origin:0 0">
+      <img src="img/gh419.png" style="left:0;top:0;width:1000px;height:495px"></div></div>
     <div class="pill d" style="left:0;top:-80px;font-size:30px"><span class="ic">{icon('link')}</span>github.com/morluto/rea</div></div>
-  <div class="v top" id="stars" style="left:40px;top:800px;width:1000px;text-align:center">
+  <div class="v top" id="stars" style="left:40px;top:735px;width:1000px;text-align:center">
     <div style="display:flex;align-items:center;justify-content:center;gap:24px"><span class="ic" style="width:150px;height:150px;color:var(--coral)">{icon('star')}</span>
     <span id="starN" style="font-weight:800;font-size:220px;letter-spacing:-10px;color:var(--coral);line-height:1">0K</span></div>
     <div style="font-weight:800;font-size:48px;letter-spacing:6px;color:var(--mute);margin-top:6px">STARS ON GITHUB</div></div>
@@ -208,9 +208,9 @@ def gh_js(w):
     return f"""
 pipIn(0, .01);
 tl.set("#gh", {{ visibility: "visible" }}, 0); tl.set("#gh", {{ visibility: "hidden" }}, {b:.2f});
-tl.fromTo("#ghz", {{ scale: 1, x: 0, y: 0 }}, {{ scale: 2.4, x: -1640, y: -330, duration: 1.4, ease: "power3.inOut" }}, .35);
+tl.fromTo("#ghz", {{ scale: 1, x: 0, y: 0 }}, {{ scale: 2.4, x: -1400, y: -210, duration: 1.4, ease: "power3.inOut" }}, .35);
 pop("#stars", {w.at("400,000"):.2f} - .15, {b:.2f});
-count("#starN", 399, {w.at("400,000"):.2f} - .15, .9, (v) => Math.round(v) + "K");
+count("#starN", 419, {w.at("400,000"):.2f} - .15, .9, (v) => Math.round(v) + "K");
 """
 
 
@@ -516,7 +516,7 @@ def build(n, fn):
     for d in ["media", "img", "fonts", "vendor"]:
         os.makedirs(f"{out}/{d}", exist_ok=True)
     shutil.copy(f"{sd}/rough_cut.mp4", f"{out}/media/cam.mp4")
-    shutil.copy(f"{P1}/media/gh.mp4", f"{out}/media/gh.mp4")
+    shutil.copy(f"{A}/gh419.png", f"{out}/img/gh419.png")
     shutil.copy(f"{P3}/media/live.mp4", f"{out}/media/live.mp4")
     for f in ["wekan.png", "reaboard.png", "gittested.png"]:
         shutil.copy(f"{P3}/img/{f}", f"{out}/img/{f}")
