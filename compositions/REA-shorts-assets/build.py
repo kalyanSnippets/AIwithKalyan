@@ -50,7 +50,8 @@ html, body { margin:0; background:var(--bg); }
 #bd { z-index:0; opacity:0; }
 .blob { position:absolute; border-radius:50%; filter:blur(110px); }
 #grid { background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:90px 90px; }
-#camwrap { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; z-index:4; box-sizing:border-box; border:0 solid var(--coral); }
+#camwrap { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; z-index:4; transform-origin:0 0; }
+#camring { position:absolute; inset:0; border:0 solid var(--coral); pointer-events:none; }
 #campush { position:absolute; inset:0; transform-origin:52% 36%; }
 #cam { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:55% 34%; }
 .v { position:absolute; visibility:hidden; z-index:3; }
@@ -83,16 +84,18 @@ JS_HELPERS = r"""
 let tl = gsap.timeline({ paused: true });
 const bo = "back.out(1.8)", p3 = "power3.out";
 const $ = (s) => document.querySelector(s);
-const PIP = { left: 40, top: 1150, width: 310, height: 400 };
-let capMode = "full";
+// PiP card bottom-left: the whole 9:16 frame scaled to 27% (292x518) at x 40, y 1075
+const PS = .27, PX = 40, PY = 1075;
 function pipIn(t, d = .45) {
   tl.to("#bd", { opacity: 1, duration: .25 }, t);
-  tl.to("#camwrap", { left: PIP.left, top: PIP.top, width: PIP.width, height: PIP.height, borderRadius: 44, borderWidth: 8, duration: d, ease: "expo.inOut" }, t);
-  tl.to(".capbox", { left: 380, right: 120, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camwrap", { x: PX, y: PY, scale: PS, borderRadius: 150, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 30, borderRadius: 150, duration: d, ease: "expo.inOut" }, t);
+  tl.to(".capbox", { x: 175, scale: .7, duration: d, ease: "expo.inOut" }, t);
 }
 function pipOut(t, d = .42) {
-  tl.to("#camwrap", { left: 0, top: 0, width: 1080, height: 1920, borderRadius: 0, borderWidth: 0, duration: d, ease: "expo.inOut" }, t);
-  tl.to(".capbox", { left: 60, right: 130, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camwrap", { x: 0, y: 0, scale: 1, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 0, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to(".capbox", { x: 0, scale: 1, duration: d, ease: "expo.inOut" }, t);
   tl.to("#bd", { opacity: 0, duration: .25 }, t + d * .6);
 }
 function punch(a, b, s = 1.08) { tl.to("#campush", { scale: s, duration: .35, ease: p3 }, a); if (b) tl.to("#campush", { scale: 1, duration: .35, ease: p3 }, b); }
@@ -169,7 +172,7 @@ def page(cid, dur, body, js):
     <div class="blob" id="b2" style="width:760px;height:760px;right:-280px;bottom:-200px;background:rgba(127,149,171,.22)"></div>
     <div id="grid" class="fill"></div>
   </div>
-  <div id="camwrap"><div id="campush"><video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="{dur:.3f}" data-media-start="0" data-track-index="1"></video></div></div>
+  <div id="camwrap"><div id="campush"><video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="{dur:.3f}" data-media-start="0" data-track-index="1"></video></div><div id="camring"></div></div>
 {body}
   <div id="flash" class="fill"></div>
 </div>
@@ -177,8 +180,8 @@ def page(cid, dur, body, js):
 {JS_HELPERS}
 tl.fromTo("#b1", {{ x: 0, y: 0 }}, {{ x: 260, y: 300, duration: {dur:.3f}, ease: "none" }}, 0);
 tl.fromTo("#grid", {{ y: 0 }}, {{ y: -450, duration: {dur:.3f}, ease: "none" }}, 0);
-{js}
 {JS_CAPTIONS}
+{js}
 window.__timelines["{cid}"] = tl;
 </script>
 </body>
@@ -203,10 +206,11 @@ def gh_js(w):
     a = 0.0
     b = w.at("on GitHub", end=True) + 0.15
     return f"""
+pipIn(0, .01);
 tl.set("#gh", {{ visibility: "visible" }}, 0); tl.set("#gh", {{ visibility: "hidden" }}, {b:.2f});
 tl.fromTo("#ghz", {{ scale: 1, x: 0, y: 0 }}, {{ scale: 2.4, x: -1640, y: -330, duration: 1.4, ease: "power3.inOut" }}, .35);
 pop("#stars", {w.at("400,000"):.2f} - .15, {b:.2f});
-count("#starN", 400, {w.at("400,000"):.2f} - .15, .9, (v) => Math.round(v) + "K");
+count("#starN", 399, {w.at("400,000"):.2f} - .15, .9, (v) => Math.round(v) + "K");
 """
 
 
@@ -271,7 +275,7 @@ def short1(w, dur):
     js += f"""
 pipOut({t - .1:.2f});
 pop("#reaT", {w.at("Reverse Engineer"):.2f}, {v1 - .05:.2f}, 0); punch({w.at("REA for short"):.2f}, {v1:.2f});
-tl.set("#vb", {{ visibility: "visible" }}, {v1:.2f}); tl.set("#vb", {{ visibility: "hidden" }}, {e3:.2f});
+tl.set("#vb", {{ visibility: "visible" }}, {v1:.2f}); tl.set("#vb, #vb1, #vb2, #vb3", {{ visibility: "hidden" }}, {e3:.2f});
 pop("#vb1", {v1:.2f}, null, 0); pop("#vb2", {v2:.2f}, null, 0); pop("#vb3", {v3:.2f}, null, 0);
 """
     q = w.at("Can you tell")
@@ -298,9 +302,9 @@ pop("#spLL", {left:.2f}, null, -2); pop("#spLR", {w.at("On the right"):.2f}, nul
     <div class="ring" id="tbMenu" style="left:{214 * s - 10:.0f}px;top:{64 + 2:.0f}px;width:{190 * s + 20:.0f}px;height:{26 + 20:.0f}px;border-radius:18px"></div>
     <div class="ring" id="tbAv" style="left:{1700 * s - 12:.0f}px;top:{64 - 4:.0f}px;width:{210 * s + 24:.0f}px;height:60px;border-radius:30px"></div>
     <div class="box" id="tbStripR" style="left:-6px;top:{64 + 60 * s - 4:.0f}px;width:1012px;height:{40 * s + 10:.0f}px"></div>
-    <div id="tbO" style="position:absolute;left:0;top:560px;width:1000px;height:420px;visibility:hidden">
+    <div id="tbO" style="position:absolute;left:0;top:545px;width:1000px;height:370px;visibility:hidden">
       <div class="pill s" style="left:0;top:0;font-size:30px">ORIGINAL</div>
-      <div class="card" style="position:absolute;left:0;top:64px;width:1000px;height:340px"><img src="img/wekan.png" style="left:0;top:0;width:1000px;height:469px"></div>
+      <div class="card" style="position:absolute;left:0;top:64px;width:1000px;height:290px"><img src="img/wekan.png" style="left:0;top:0;width:1000px;height:469px"></div>
       <div class="box" id="tbStripL" style="left:-6px;top:58px;width:1012px;height:{60 * s + 12:.0f}px"></div></div></div>
 """
     red = w.at("And see this red")
@@ -315,8 +319,8 @@ fadeIn("#tbO", {strip:.2f}); boxIn("#tbStripR", {w.at("orange strip"):.2f}); box
     <div class="pill s" style="left:0;top:0;font-size:32px">ORIGINAL</div><div class="pill c" style="left:510px;top:0;font-size:32px">REA BOARD</div>
     <div class="card" style="position:absolute;left:0;top:80px;width:490px;height:420px"><img src="img/wekan.png" style="left:-20px;top:-200px;width:2880px;height:1350px"></div>
     <div class="card" style="position:absolute;left:510px;top:80px;width:490px;height:420px"><img src="img/reaboard.png" style="left:-20px;top:-300px;width:2880px;height:1350px"></div>
-    <div class="ring" id="wipL" style="left:30px;top:150px;width:200px;height:110px;border-radius:55px"></div>
-    <div class="ring" id="wipR" style="left:540px;top:150px;width:200px;height:110px;border-radius:55px"></div>
+    <div class="ring" id="wipL" style="left:20px;top:122px;width:150px;height:80px;border-radius:40px"></div>
+    <div class="ring" id="wipR" style="left:530px;top:122px;width:150px;height:80px;border-radius:40px"></div>
     <div class="pill d" id="wipS" style="left:150px;top:560px;font-size:48px;visibility:hidden">WORK-IN-PROGRESS LIMIT</div>
     <div class="pill c" id="wipC" style="left:300px;top:660px;font-size:56px;visibility:hidden"><span class="ic" style="width:56px;height:56px">""" + icon("check") + """</span>COPIED</div></div>
 """
@@ -359,7 +363,7 @@ pipIn({hc - .05:.2f});
 slide("#cl", {hc:.2f}, null); pop("#clG", {hc + .35:.2f}, null, 0); pop("#clC", {w.at("Tell me"):.2f}, null, -2);
 """
     cues = [(0.3, "whoosh"), (w.at("400,000") - .1, "pop"), (t, "whip"), (v1, "pop"), (v3, "pop"), (w.at("one link"), "whoosh"),
-            (bt, "whoosh"), (q, "whoosh"), (left, "pop"), (top, "whoosh"), (red, "whoosh"), (w.at("Claude even copied"), "ding"),
+            (w.at("it built this"), "whoosh"), (q, "whoosh"), (left, "pop"), (top, "whoosh"), (red, "whoosh"), (w.at("Claude even copied"), "ding"),
             (drag, "whoosh"), (w.at("then it works"), "pop"), (imp, "whip"), (hc, "whoosh"), (w.at("Tell me"), "pop")]
     return body, js, cues
 
@@ -390,9 +394,9 @@ tl.to("#campush", {{ scale: 1, duration: .3, ease: p3 }}, {one - .1:.2f});
     two = w.at("Number two")
     body += f"""  <div class="v" id="rs1" style="left:0;top:0;width:1080px;height:1150px">
     <div class="rhead"><div class="rn">1</div>MEASURES, NOT GUESSES</div>
-    <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:520px;background:#0C0C0C"><img src="img/term.png" style="left:-10px;top:-40px;width:1600px;height:500px"></div>
-    <div class="box" id="rs1b" style="left:62px;top:440px;width:640px;height:300px"></div>
-    <div class="pill d" style="left:40px;top:880px;font-size:30px">Claude's real report · exact colour codes</div></div>
+    <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:300px;background:#0C0C0C"><img src="img/term.png" style="left:-20px;top:-80px;width:2000px;height:625px"></div>
+    <div class="box" id="rs1b" style="left:50px;top:440px;width:900px;height:150px"></div>
+    <div class="pill d" style="left:40px;top:670px;font-size:30px">Claude's real report · exact colour codes</div></div>
 """
     js += f"""
 pipIn({one - .05:.2f});
@@ -405,8 +409,8 @@ slide("#rs1", {one:.2f}, {two:.2f}); boxIn("#rs1b", {w.at("it does not guess"):.
     body += f"""  <div class="v" id="rs2" style="left:0;top:0;width:1080px;height:1150px">
     <div class="rhead"><div class="rn">2</div>IT REALLY WORKS</div>
     <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:760px">
-      <video class="clip" src="media/live.mp4" muted playsinline data-start="{two:.3f}" data-duration="{cp - two:.3f}" data-media-start="23.6" data-track-index="2" style="left:-760px;top:-60px;width:1781px;height:835px"></video>
-      <video class="clip" src="media/live.mp4" muted playsinline data-start="{cp:.3f}" data-duration="{t3 - cp:.3f}" data-media-start="10.0" data-track-index="3" style="left:-1050px;top:-10px;width:2061px;height:966px"></video></div></div>
+      <video class="clip" id="lvA" src="media/live.mp4" muted playsinline data-start="{two:.3f}" data-duration="{cp - two:.3f}" data-media-start="23.6" data-track-index="2" style="left:-760px;top:-60px;width:1781px;height:835px"></video>
+      <video class="clip" id="lvB" src="media/live.mp4" muted playsinline data-start="{cp:.3f}" data-duration="{t3 - cp:.3f}" data-media-start="10.0" data-track-index="3" style="left:-1050px;top:-10px;width:2061px;height:966px"></video></div></div>
 """
     js += f"""
 slide("#rs2", {two:.2f}, {t3:.2f}); flash({cp:.2f});
@@ -415,8 +419,10 @@ slide("#rs2", {two:.2f}, {t3:.2f}); flash({cp:.2f});
     but = w.at("But there is a but")
     body += f"""  <div class="v" id="rs3" style="left:0;top:0;width:1080px;height:1150px">
     <div class="rhead"><div class="rn">3</div>TESTED ITS OWN WORK</div>
-    <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:300px;background:#0C0C0C"><img src="img/term.png" style="left:-10px;top:-6px;width:1600px;height:500px"></div>
-    <div class="box" id="rs3b" style="left:44px;top:330px;width:992px;height:110px"></div>
+    <div class="glass" style="position:absolute;left:40px;top:330px;width:1000px;height:330px;overflow:hidden;background:#0C0C0C">
+      <div style="height:54px;display:flex;align-items:center;padding:0 26px;background:#1A1C21;font-weight:600;font-size:24px;color:var(--mute)">Claude Code · final report</div>
+      <div class="mono" style="padding:26px 34px;font-size:36px;line-height:1.4;color:var(--ink)"><span style="color:var(--ok)">●</span> All <b style="color:var(--coral)">50 checks passed</b> in a visible Chrome window, and every drag used the <b style="color:var(--coral)">real mouse</b>.</div></div>
+    <div class="box" id="rs3b" style="left:34px;top:324px;width:1012px;height:342px"></div>
     <div class="v top" id="rs3c" style="left:200px;top:700px"><div class="pill c" style="font-size:64px;padding:20px 44px"><span class="ic" style="width:64px;height:64px">{icon('badge-check')}</span>50 / 50 CHECKS</div></div>
     <div class="pill d" style="left:40px;top:860px;font-size:30px">Real mouse, real Chrome window</div></div>
 """
@@ -438,9 +444,9 @@ pipOut({but - .05:.2f}); pop("#bt", {w.at("a but"):.2f}, {nm:.2f}, 0); punch({w.
     prompt = prompt.replace("&", "&amp;").replace("<", "&lt;")
     body += f"""  <div class="v" id="nm" style="left:0;top:0;width:1080px;height:1150px">
     <div class="rhead" style="font-size:66px">NOT MAGIC</div>
-    <div class="glass" style="position:absolute;left:40px;top:300px;width:1000px;height:560px;overflow:hidden">
-      <div style="height:58px;display:flex;align-items:center;padding:0 26px;background:#1A1C21;font-weight:600;font-size:26px;color:var(--mute)">My real prompt · 46 lines</div>
-      <div id="nmP" class="mono" style="padding:24px 30px;font-size:25px;line-height:1.45;white-space:pre-wrap;color:var(--ink)">{prompt}</div></div>
+    <div class="glass" id="nmG" style="position:absolute;left:40px;top:300px;width:1000px;height:560px;overflow:hidden">
+      <div style="position:relative;z-index:2;height:58px;display:flex;align-items:center;padding:0 26px;background:#1A1C21;font-weight:600;font-size:26px;color:var(--mute)">My real prompt · 46 lines</div>
+      <div style="position:absolute;left:0;top:58px;right:0;bottom:0;overflow:hidden"><div id="nmP" class="mono" style="padding:24px 30px;font-size:25px;line-height:1.45;white-space:pre-wrap;color:var(--ink)">{prompt}</div></div></div>
     <div id="nmL" style="position:absolute;left:40px;top:300px;width:1000px;height:560px;visibility:hidden">
       <div class="glass" style="position:absolute;left:0;top:0;width:1000px;height:300px;display:flex;flex-direction:column;justify-content:center;padding:0 50px;box-sizing:border-box">
         <div style="font-weight:600;font-size:30px;color:var(--mute)">Example lazy prompt</div>
@@ -451,7 +457,7 @@ pipOut({but - .05:.2f}); pop("#bt", {w.at("a but"):.2f}, {nm:.2f}, 0); punch({w.
 pipIn({nm - .05:.2f});
 slide("#nm", {nm:.2f}, {also:.2f});
 tl.fromTo("#nmP", {{ y: 0 }}, {{ y: -900, duration: {lazy - nm - .3:.2f}, ease: "none" }}, {nm + .3:.2f});
-slide("#nmL", {lazy:.2f}, null); flash({w.at("lazy result"):.2f});
+tl.to("#nmG", {{ opacity: 0, scale: .9, duration: .25 }}, {lazy:.2f}); slide("#nmL", {lazy:.2f}, null); flash({w.at("lazy result"):.2f});
 """
     # limits: 20 min, one screen
     ppl = w.at("And some people")
@@ -463,30 +469,29 @@ slide("#nmL", {lazy:.2f}, null); flash({w.at("lazy result"):.2f});
 """
     js += f"""
 slide("#lm", {also:.2f}, {ppl:.2f});
-pop("#lmT", {w.at("twenty minutes"):.2f}, null, -2); pop("#lmA", {w.at("only one screen"):.2f}, null, 0); pop("#lmB", {w.at("not the full app"):.2f}, null, 0);
+pop("#lmT", {w.at("twenty minutes", after=also):.2f}, null, -2); pop("#lmA", {w.at("only one screen"):.2f}, null, 0); pop("#lmB", {w.at("not the full app"):.2f}, null, 0);
 """
     # the doubt, with its real source; then hype vs proof
     ver = w.at("So my verdict")
     hp = w.at("So the hype")
     body += f"""  <div class="v" id="gt" style="left:40px;top:200px;width:1000px;height:900px">
     <div class="pill d" style="left:0;top:0;font-size:30px"><span class="ic">{icon('link')}</span>gittested.com/reviews/morluto-rea</div>
-    <div class="card" style="position:absolute;left:0;top:80px;width:1000px;height:640px;background:#F5F3EE"><img src="img/gittested.png" style="left:-200px;top:-560px;width:1600px;height:900px"></div>
-    <div class="box" id="gtb" style="left:30px;top:{80 + 560 * 0 + 30:.0f}px;width:780px;height:150px"></div>
-    <div class="pill d" style="left:0;top:750px;font-size:28px">Independent review · captured 31 Oct 2026</div></div>
+    <div class="card" style="position:absolute;left:0;top:80px;width:1000px;height:420px;background:#F5F3EE"><img src="img/gittested.png" style="left:-180px;top:-200px;width:1600px;height:900px"></div>
+    <div class="box" id="gtb" style="left:46px;top:326px;width:730px;height:84px"></div>
+    <div class="pill d" style="left:0;top:530px;font-size:28px">Independent review · captured 31 Oct 2026</div></div>
   <div class="v" id="hpv" style="left:40px;top:300px;width:1000px;height:700px">
-    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px"><span style="width:250px">HYPE</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpH" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--coral);transform-origin:left;transform:scaleX(0)"></i></div></div>
-    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px;margin-top:60px"><span style="width:250px">PROOF</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpP" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--steel);transform-origin:left;transform:scaleX(0)"></i></div></div></div>
+    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px"><span style="width:250px">HYPE</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpH" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--coral);transform-origin:left"></i></div></div>
+    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px;margin-top:60px"><span style="width:250px">PROOF</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpP" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--steel);transform-origin:left"></i></div></div></div>
 """
     js += f"""
 slide("#gt", {ppl:.2f}, {hp:.2f}); boxIn("#gtb", {w.at("What does Rea add"):.2f});
 slide("#hpv", {hp:.2f}, {ver:.2f});
-tl.to("#hpH", {{ scaleX: .95, duration: .6, ease: p3 }}, {w.at("the hype is running"):.2f}); tl.to("#hpP", {{ scaleX: .6, duration: .6, ease: p3 }}, {w.at("ahead of proof"):.2f});
+tl.fromTo("#hpH", {{ scaleX: 0 }}, {{ scaleX: .95, immediateRender: true, duration: .6, ease: p3 }}, {w.at("the hype is running"):.2f}); tl.fromTo("#hpP", {{ scaleX: 0 }}, {{ scaleX: .6, immediateRender: true, duration: .6, ease: p3 }}, {w.at("ahead of proof"):.2f});
 """
     # verdict + what next (full camera)
     nx = w.at("Which app")
     body += f"""  <div class="v top" id="vd" style="left:0;top:70px;width:1080px;text-align:center">
-    <div class="pill c" style="position:relative;display:inline-flex;font-size:70px;padding:18px 44px"><span class="ic" style="width:70px;height:70px">{icon('scale')}</span>TRY IT</div>
-    <div style="font-weight:800;font-size:48px;margin-top:16px;text-shadow:0 6px 20px rgba(0,0,0,.7)">…the right way</div></div>
+    <div class="pill c" style="position:relative;display:inline-flex;font-size:56px;padding:18px 40px"><span class="ic" style="width:62px;height:62px">{icon('scale')}</span>TRY IT · THE RIGHT WAY</div></div>
   <div class="v top" id="nx" style="left:0;top:80px;width:1080px;text-align:center">
     <div class="pill c" style="position:relative;display:inline-flex;font-size:60px;padding:18px 44px"><span class="ic" style="width:62px;height:62px">{icon('message-circle')}</span>WHICH APP NEXT?</div></div>
 """

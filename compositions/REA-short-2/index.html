@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>rea-short-2</title>
+<script src="vendor/gsap.min.js"></script>
+<script src="words.js"></script>
+<style>
+@font-face { font-family:"Inter"; src:url("fonts/Inter-600.woff2") format("woff2"); font-weight:600; font-display:block; }
+@font-face { font-family:"Inter"; src:url("fonts/Inter-800.woff2") format("woff2"); font-weight:800; font-display:block; }
+:root { --bg:#0B0B0D; --ink:#F6F1EC; --mute:rgba(246,241,236,.68); --coral:#E8775F; --coralHi:#FF9E88; --steel:#7F95AB; --ok:#5BD69A; --red:#FF5A5A; }
+html, body { margin:0; background:var(--bg); }
+#root { position:relative; width:1080px; height:1920px; overflow:hidden; background:var(--bg); font-family:"Inter",system-ui,sans-serif; color:var(--ink); }
+.fill { position:absolute; inset:0; }
+.ic svg { width:100%; height:100%; display:block; }
+.hot { color:var(--coral); }
+#bd { z-index:0; opacity:0; }
+.blob { position:absolute; border-radius:50%; filter:blur(110px); }
+#grid { background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:90px 90px; }
+#camwrap { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; z-index:4; transform-origin:0 0; }
+#camring { position:absolute; inset:0; border:0 solid var(--coral); pointer-events:none; }
+#campush { position:absolute; inset:0; transform-origin:52% 36%; }
+#cam { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:55% 34%; }
+.v { position:absolute; visibility:hidden; z-index:3; }
+.top { z-index:6; }
+.card { border-radius:30px; overflow:hidden; background:#fff; border:3px solid rgba(255,255,255,.2); box-shadow:0 40px 100px rgba(0,0,0,.6); }
+.card img, .card video { position:absolute; display:block; }
+.glass { border-radius:36px; background:rgba(14,14,18,.82); border:2px solid rgba(255,255,255,.15); box-shadow:0 40px 90px rgba(0,0,0,.5); }
+.pill { position:absolute; padding:14px 30px; border-radius:999px; font-weight:800; font-size:40px; white-space:nowrap; display:flex; align-items:center; gap:14px; }
+.pill .ic { width:44px; height:44px; }
+.pill.c { background:var(--coral); color:#111; }
+.pill.d { background:rgba(14,14,18,.88); border:2px solid rgba(255,255,255,.18); color:var(--ink); }
+.pill.d .ic { color:var(--coral); }
+.pill.s { background:rgba(127,149,171,.92); color:#0b0b0d; }
+.kin { position:absolute; left:40px; right:40px; text-align:center; font-weight:800; letter-spacing:-4px; line-height:.95; text-shadow:0 10px 30px rgba(0,0,0,.6); -webkit-text-stroke:3px rgba(0,0,0,.35); paint-order:stroke fill; }
+.ring { position:absolute; border:8px solid var(--coral); border-radius:50%; opacity:0; box-shadow:0 0 0 4px rgba(0,0,0,.25); }
+.box { position:absolute; border:7px solid var(--coral); border-radius:14px; opacity:0; }
+.q { position:absolute; width:120px; height:120px; border-radius:50%; background:#0B0B12; border:8px solid var(--coral); color:#fff; font-weight:800; font-size:84px; display:flex; align-items:center; justify-content:center; box-shadow:0 14px 40px rgba(0,0,0,.6); }
+.circ { position:absolute; width:250px; height:250px; border-radius:50%; background:rgba(14,14,18,.82); border:3px solid rgba(255,255,255,.18); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; font-weight:800; font-size:34px; letter-spacing:2px; }
+.circ .ic { width:100px; height:100px; color:var(--coral); }
+.rhead { position:absolute; left:40px; top:150px; display:flex; align-items:center; gap:24px; font-weight:800; font-size:62px; letter-spacing:-2px; }
+.rhead .rn { width:110px; height:110px; border-radius:50%; background:var(--coral); color:#111; display:flex; align-items:center; justify-content:center; font-size:66px; flex:none; }
+.chip { padding:22px 34px; border-radius:24px; font-weight:800; font-size:64px; text-align:center; }
+.mono { font-family:"DejaVu Sans Mono",Consolas,monospace; }
+.cap { position:absolute; left:60px; right:130px; top:1330px; display:flex; flex-wrap:wrap; justify-content:center; gap:4px 26px; visibility:hidden; z-index:8; }
+.w { display:inline-block; font-weight:800; font-size:94px; line-height:1.02; letter-spacing:-2px; text-transform:uppercase; color:#fff; -webkit-text-stroke:7px #000; paint-order:stroke fill; text-shadow:0 10px 0 rgba(0,0,0,.5), 0 16px 34px rgba(0,0,0,.5); opacity:0; }
+#flash { background:#fff; opacity:0; z-index:9; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="rea-short-2" data-start="0" data-width="1080" data-height="1920" data-duration="58.368">
+  <div id="bd" class="fill">
+    <div class="blob" id="b1" style="width:800px;height:800px;left:-260px;top:-260px;background:rgba(232,119,95,.30)"></div>
+    <div class="blob" id="b2" style="width:760px;height:760px;right:-280px;bottom:-200px;background:rgba(127,149,171,.22)"></div>
+    <div id="grid" class="fill"></div>
+  </div>
+  <div id="camwrap"><div id="campush"><video id="cam" class="clip" src="media/cam.mp4" playsinline data-has-audio="true" data-start="0" data-duration="58.368" data-media-start="0" data-track-index="1"></video></div><div id="camring"></div></div>
+  <div class="v" id="gh" style="left:40px;top:190px;width:1000px;height:560px">
+    <div class="card" id="ghc" style="position:absolute;inset:0;background:#0d1117"><div id="ghz" style="position:absolute;left:0;top:0;width:1000px;height:500px;transform-origin:0 0">
+      <video class="clip" id="ghv" src="media/gh.mp4" muted playsinline data-start="0" data-duration="5" data-media-start="1" data-track-index="2" style="left:0;top:0;width:1000px;height:500px"></video></div></div>
+    <div class="pill d" style="left:0;top:-80px;font-size:30px"><span class="ic"><svg class="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /> </svg></span>github.com/morluto/rea</div></div>
+  <div class="v top" id="stars" style="left:40px;top:800px;width:1000px;text-align:center">
+    <div style="display:flex;align-items:center;justify-content:center;gap:24px"><span class="ic" style="width:150px;height:150px;color:var(--coral)"><svg class="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" /> </svg></span>
+    <span id="starN" style="font-weight:800;font-size:220px;letter-spacing:-10px;color:var(--coral);line-height:1">0K</span></div>
+    <div style="font-weight:800;font-size:48px;letter-spacing:6px;color:var(--mute);margin-top:6px">STARS ON GITHUB</div></div>
+  <div class="v" id="lnk" style="left:40px;top:260px;width:1000px">
+    <div class="glass" style="padding:40px 44px">
+      <div style="display:flex;align-items:center;gap:22px;font-weight:800;font-size:76px"><span class="ic" style="width:90px;height:90px;color:var(--coral)"><svg class="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /> </svg></span>1 LINK</div>
+      <div class="mono" style="margin-top:20px;font-size:30px;color:var(--mute);word-break:break-all">boards.wekan.team/b/…/wekan-r-open-source-kanban-board</div>
+      <div class="pill s" style="position:relative;display:inline-flex;margin-top:26px;font-size:34px">Original: open-source Kanban app (MIT)</div></div></div>
+  <div class="v top" id="tmr" style="left:300px;top:760px"><div class="pill c" style="font-size:64px;padding:20px 44px"><span class="ic" style="width:66px;height:66px"><svg class="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="10" x2="14" y1="2" y2="2" /> <line x1="12" x2="15" y1="14" y2="11" /> <circle cx="12" cy="14" r="8" /> </svg></span>~20 MIN</div></div>
+  <div class="v" id="built" style="left:40px;top:250px;width:1000px;height:780px">
+    <div class="pill c" style="left:0;top:0;font-size:38px"><span class="ic"><svg class="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg></span>Built by Claude Code + REA</div>
+    <div class="card" style="position:absolute;left:0;top:96px;width:1000px;height:469px"><img src="img/reaboard.png" style="left:0;top:0;width:1000px;height:469px"></div>
+    <div class="pill s" style="left:0;top:600px;font-size:32px">Copy of an open-source Kanban app (MIT)</div></div>
+  <div class="v top" id="hy" style="left:0;top:80px;width:1080px" ><div class="kin" style="font-size:118px">WORTH THE <span class="hot">HYPE?</span></div></div>
+  <div class="v top" id="ys" style="left:290px;top:80px"><div class="pill c" style="font-size:110px;padding:18px 56px"><span class="ic" style="width:110px;height:110px"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>YES</div></div>
+  <div class="v top" id="r3" style="left:0;top:90px;width:1080px;display:flex;justify-content:center;gap:30px">
+    <div class="chip" id="r31" style="background:var(--coral);color:#111;font-size:90px;width:150px;padding:20px 0">1</div><div class="chip" id="r32" style="background:var(--coral);color:#111;font-size:90px;width:150px;padding:20px 0">2</div><div class="chip" id="r33" style="background:var(--coral);color:#111;font-size:90px;width:150px;padding:20px 0">3</div></div>
+  <div class="v" id="rs1" style="left:0;top:0;width:1080px;height:1150px">
+    <div class="rhead"><div class="rn">1</div>MEASURES, NOT GUESSES</div>
+    <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:300px;background:#0C0C0C"><img src="img/term.png" style="left:-20px;top:-80px;width:2000px;height:625px"></div>
+    <div class="box" id="rs1b" style="left:50px;top:440px;width:900px;height:150px"></div>
+    <div class="pill d" style="left:40px;top:670px;font-size:30px">Claude's real report · exact colour codes</div></div>
+  <div class="v" id="rs2" style="left:0;top:0;width:1080px;height:1150px">
+    <div class="rhead"><div class="rn">2</div>IT REALLY WORKS</div>
+    <div class="card" style="position:absolute;left:40px;top:330px;width:1000px;height:760px">
+      <video class="clip" id="lvA" src="media/live.mp4" muted playsinline data-start="17.638" data-duration="5.230" data-media-start="23.6" data-track-index="2" style="left:-760px;top:-60px;width:1781px;height:835px"></video>
+      <video class="clip" id="lvB" src="media/live.mp4" muted playsinline data-start="22.868" data-duration="1.540" data-media-start="10.0" data-track-index="3" style="left:-1050px;top:-10px;width:2061px;height:966px"></video></div></div>
+  <div class="v" id="rs3" style="left:0;top:0;width:1080px;height:1150px">
+    <div class="rhead"><div class="rn">3</div>TESTED ITS OWN WORK</div>
+    <div class="glass" style="position:absolute;left:40px;top:330px;width:1000px;height:330px;overflow:hidden;background:#0C0C0C">
+      <div style="height:54px;display:flex;align-items:center;padding:0 26px;background:#1A1C21;font-weight:600;font-size:24px;color:var(--mute)">Claude Code · final report</div>
+      <div class="mono" style="padding:26px 34px;font-size:36px;line-height:1.4;color:var(--ink)"><span style="color:var(--ok)">●</span> All <b style="color:var(--coral)">50 checks passed</b> in a visible Chrome window, and every drag used the <b style="color:var(--coral)">real mouse</b>.</div></div>
+    <div class="box" id="rs3b" style="left:34px;top:324px;width:1012px;height:342px"></div>
+    <div class="v top" id="rs3c" style="left:200px;top:700px"><div class="pill c" style="font-size:64px;padding:20px 44px"><span class="ic" style="width:64px;height:64px"><svg class="lucide lucide-badge-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m16 9-5.5 5.5L8 12" /> </svg></span>50 / 50 CHECKS</div></div>
+    <div class="pill d" style="left:40px;top:860px;font-size:30px">Real mouse, real Chrome window</div></div>
+  <div class="v top" id="bt" style="left:0;top:70px;width:1080px"><div class="kin hot" style="font-size:190px">BUT…</div></div>
+  <div class="v" id="nm" style="left:0;top:0;width:1080px;height:1150px">
+    <div class="rhead" style="font-size:66px">NOT MAGIC</div>
+    <div class="glass" id="nmG" style="position:absolute;left:40px;top:300px;width:1000px;height:560px;overflow:hidden">
+      <div style="position:relative;z-index:2;height:58px;display:flex;align-items:center;padding:0 26px;background:#1A1C21;font-weight:600;font-size:26px;color:var(--mute)">My real prompt · 46 lines</div>
+      <div style="position:absolute;left:0;top:58px;right:0;bottom:0;overflow:hidden"><div id="nmP" class="mono" style="padding:24px 30px;font-size:25px;line-height:1.45;white-space:pre-wrap;color:var(--ink)">Using what you learned from the REA analysis of this Wekan demo board:
+https://boards.wekan.team/b/D2SzJKZDS4Z48yeQH/wekan-r-open-source-kanban-board-with-mit-license
+
+Build a faithful clone of its board screen in this folder. Name it "REA Board". Match the layout, colours, fonts, spacing and behaviour as closely as you can. Do not use Wekan's name, logo or images, and write your own sample text and artwork.
+
+STACK
+
+React 19 + Vite, no UI library, plain CSS, native HTML5 drag and drop, state in one reducer file, everything saved in localStorage.
+
+MEASURE FIRST, DON'T GUESS
+
+Open the live demo and measure: page and header colours, font family and sizes, list width and gap, list header style, card radius, shadow and padding, label colour palette, badge colours, avatar size. Put them in one CSS variables block and use them everywhere.
+
+BOARD SCREEN
+
+- Top bar with the board title, a board menu area and member avatars.
+- Horizontal row of lists that scrolls sideways. An "Add list" control at the end.
+- Lists: title, card count, a WIP limit shown like (4/3) with the count in red when over the limit, a menu to rename, collapse and delete. Collapsed lists show as thin vertical strips.
+- Cards (minicards): auto ID (RB-1, RB-2...), title, several coloured labels, four date badges (received, start, due, end) where due turns red when overdue, a cover image drawn with CSS, member avatars (4 sample people), and a checklist badge with a percentage and progress bar.
+- "Add card" at the bottom of each list.
+
+CARD DETAIL PANEL (opens when a card is clicked)
+
+Edit title and description, labels (multiple), all four dates, members, cover colour, and checklists where items tick from the card itself.
+
+INTERACTIONS
+
+- Drag cards between lists and reorder inside a list, with a visible drop position. Handle both dragenter and dragover so real mouse drags work, and keep the layout stable while dragging.
+- Drag lists to reorder them.
+- Add, rename, delete lists and cards. Pressing Escape while typing must not lose the edit (blur the field first so it commits).
+- Refresh keeps everything.
+
+DATA
+
+Ship my own sample board with about 4 lists and 8 cards. Add an "Add sample lists" button that only APPENDS the sample lists. Never overwrite saved data, and migrate old saved data to any new format.
+
+TESTING
+
+Run the dev server, then in a real browser use real mouse drags (not only scripted events) to test every feature. Tick an item only if you saw it work. Back up localStorage before testing and restore it afterwards. Then show a side-by-side screenshot of the original and mine, list the 5 biggest remaining differences, and fix the top 2.
+
+Now, why does this prompt work? Four things, okay?
+One. "Measure first, don't guess." Claude opens the real app, and takes real numbers. Not "looks like blue". The exact colour code.
+Two. The stack is fixed. React, Vite, plain CSS. No random libraries.
+Three. I describe every part of the screen. Lists, cards, the card panel, drag and drop.
+And four... my favourite. Testing. I told Claude, "Tick an item only if you SAW it work."
+Why? Because AI loves to say "done", right? So we make it prove it.
+Okay, I press Enter. And now... we wait.</div></div></div>
+    <div id="nmL" style="position:absolute;left:40px;top:300px;width:1000px;height:560px;visibility:hidden">
+      <div class="glass" style="position:absolute;left:0;top:0;width:1000px;height:300px;display:flex;flex-direction:column;justify-content:center;padding:0 50px;box-sizing:border-box">
+        <div style="font-weight:600;font-size:30px;color:var(--mute)">Example lazy prompt</div>
+        <div class="mono" style="font-size:58px;margin-top:16px">"clone this app"</div></div>
+      <div class="pill" style="left:200px;top:340px;font-size:60px;background:rgba(255,90,90,.18);border:3px solid var(--red);color:#ffb3b3"><span class="ic" style="width:60px;height:60px;color:var(--red)"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg></span>LAZY RESULT</div></div></div>
+  <div class="v" id="lm" style="left:0;top:0;width:1080px;height:1150px">
+    <div class="rhead" style="font-size:66px">THE LIMITS</div>
+    <div id="lmT" class="pill d" style="left:40px;top:330px;font-size:70px;padding:24px 46px;visibility:hidden"><span class="ic" style="width:74px;height:74px"><svg class="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="10" x2="14" y1="2" y2="2" /> <line x1="12" x2="15" y1="14" y2="11" /> <circle cx="12" cy="14" r="8" /> </svg></span>~20 MINUTES</div>
+    <div id="lmA" class="pill" style="left:40px;top:520px;font-size:58px;padding:24px 40px;background:rgba(91,214,154,.16);border:3px solid var(--ok);visibility:hidden"><span class="ic" style="width:60px;height:60px;color:var(--ok)"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>1 screen: the board</div>
+    <div id="lmB" class="pill" style="left:40px;top:700px;font-size:58px;padding:24px 40px;background:rgba(255,90,90,.12);border:3px solid var(--red);color:#ffb3b3;visibility:hidden"><span class="ic" style="width:60px;height:60px;color:var(--red)"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg></span>not the full app</div></div>
+  <div class="v" id="gt" style="left:40px;top:200px;width:1000px;height:900px">
+    <div class="pill d" style="left:0;top:0;font-size:30px"><span class="ic"><svg class="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /> </svg></span>gittested.com/reviews/morluto-rea</div>
+    <div class="card" style="position:absolute;left:0;top:80px;width:1000px;height:420px;background:#F5F3EE"><img src="img/gittested.png" style="left:-180px;top:-200px;width:1600px;height:900px"></div>
+    <div class="box" id="gtb" style="left:46px;top:326px;width:730px;height:84px"></div>
+    <div class="pill d" style="left:0;top:530px;font-size:28px">Independent review · captured 31 Oct 2026</div></div>
+  <div class="v" id="hpv" style="left:40px;top:300px;width:1000px;height:700px">
+    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px"><span style="width:250px">HYPE</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpH" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--coral);transform-origin:left"></i></div></div>
+    <div style="display:flex;align-items:center;gap:30px;font-weight:800;font-size:64px;margin-top:60px"><span style="width:250px">PROOF</span><div style="flex:1;height:110px;border-radius:26px;background:rgba(255,255,255,.08);position:relative;overflow:hidden"><i id="hpP" style="position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--steel);transform-origin:left"></i></div></div></div>
+  <div class="v top" id="vd" style="left:0;top:70px;width:1080px;text-align:center">
+    <div class="pill c" style="position:relative;display:inline-flex;font-size:56px;padding:18px 40px"><span class="ic" style="width:62px;height:62px"><svg class="lucide lucide-scale" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 3v18" /> <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /> <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M7 21h10" /> </svg></span>TRY IT · THE RIGHT WAY</div></div>
+  <div class="v top" id="nx" style="left:0;top:80px;width:1080px;text-align:center">
+    <div class="pill c" style="position:relative;display:inline-flex;font-size:60px;padding:18px 44px"><span class="ic" style="width:62px;height:62px"><svg class="lucide lucide-message-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /> </svg></span>WHICH APP NEXT?</div></div>
+
+  <div id="flash" class="fill"></div>
+</div>
+<script>
+
+let tl = gsap.timeline({ paused: true });
+const bo = "back.out(1.8)", p3 = "power3.out";
+const $ = (s) => document.querySelector(s);
+// PiP card bottom-left: the whole 9:16 frame scaled to 27% (292x518) at x 40, y 1075
+const PS = .27, PX = 40, PY = 1075;
+function pipIn(t, d = .45) {
+  tl.to("#bd", { opacity: 1, duration: .25 }, t);
+  tl.to("#camwrap", { x: PX, y: PY, scale: PS, borderRadius: 150, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 30, borderRadius: 150, duration: d, ease: "expo.inOut" }, t);
+  tl.to(".capbox", { x: 175, scale: .7, duration: d, ease: "expo.inOut" }, t);
+}
+function pipOut(t, d = .42) {
+  tl.to("#camwrap", { x: 0, y: 0, scale: 1, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#camring", { borderWidth: 0, borderRadius: 0, duration: d, ease: "expo.inOut" }, t);
+  tl.to(".capbox", { x: 0, scale: 1, duration: d, ease: "expo.inOut" }, t);
+  tl.to("#bd", { opacity: 0, duration: .25 }, t + d * .6);
+}
+function punch(a, b, s = 1.08) { tl.to("#campush", { scale: s, duration: .35, ease: p3 }, a); if (b) tl.to("#campush", { scale: 1, duration: .35, ease: p3 }, b); }
+function flash(t) { tl.fromTo("#flash", { opacity: 0 }, { opacity: .45, duration: .05, yoyo: true, repeat: 1, ease: "none", immediateRender: false }, t); }
+// whoosh-slide in from the right, out to the left
+function slide(id, a, b) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, { x: 1100, rotate: 4, opacity: 1 }, { x: 0, rotate: 0, duration: .32, ease: "power4.out", immediateRender: false }, a);
+  if (b != null) { tl.to(id, { x: -1100, rotate: -4, duration: .26, ease: "power3.in" }, b - .26); tl.set(id, { visibility: "hidden" }, b); }
+}
+function pop(id, a, b, r = -3) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, { scale: 0, rotate: r * 4, opacity: 1 }, { scale: 1, rotate: r, duration: .38, ease: bo, immediateRender: false }, a);
+  if (b != null) { tl.to(id, { scale: 0, opacity: 0, duration: .18, ease: "power2.in" }, b - .18); tl.set(id, { visibility: "hidden" }, b); }
+}
+function fadeIn(id, a, b) {
+  tl.set(id, { visibility: "visible" }, a);
+  tl.fromTo(id, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .3, ease: p3, immediateRender: false }, a);
+  if (b != null) { tl.to(id, { opacity: 0, duration: .18 }, b - .18); tl.set(id, { visibility: "hidden" }, b); }
+}
+function ring(id, a, b) {
+  tl.to(id, { opacity: 1, duration: .01 }, a);
+  tl.fromTo(id, { scale: 1.7 }, { scale: 1, duration: .35, ease: bo, immediateRender: false }, a);
+  if (b != null) tl.to(id, { opacity: 0, duration: .2 }, b);
+}
+function boxIn(id, a, b) {
+  tl.to(id, { opacity: 1, duration: .01 }, a);
+  tl.fromTo(id, { scaleX: 0 }, { scaleX: 1, transformOrigin: "left center", duration: .35, ease: p3, immediateRender: false }, a);
+  if (b != null) tl.to(id, { opacity: 0, duration: .2 }, b);
+}
+function count(sel, to, a, d, fmt) { const el = $(sel), c = { v: 0 }; tl.to(c, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(c.v); } }, a); }
+function typeIn(sel, a, d) { const el = $(sel), txt = el.dataset.t, k = { n: 0 }; tl.to(k, { n: txt.length, duration: d, ease: "none", onUpdate: () => { el.textContent = txt.slice(0, Math.round(k.n)); } }, a); }
+
+tl.fromTo("#b1", { x: 0, y: 0 }, { x: 260, y: 300, duration: 58.368, ease: "none" }, 0);
+tl.fromTo("#grid", { y: 0 }, { y: -450, duration: 58.368, ease: "none" }, 0);
+
+const groups = []; let g = null;
+for (const [txt, s, e] of WORDS) {
+  if (!g || g.w.length >= 3 || s - g.end > .35 || /[.?!:,]$/.test(g.w[g.w.length - 1][0])) { g = { w: [], end: e }; groups.push(g); }
+  g.w.push([txt, s, e]); g.end = e;
+}
+const root = $("#root");
+groups.forEach((gr, i) => {
+  const d = document.createElement("div"); d.className = "cap capbox";
+  gr.w.forEach(([txt]) => { const s = document.createElement("span"); s.className = "w"; s.textContent = txt.replace(/[,.!?;:"“”]+$/, "").replace(/^["“]/, ""); d.appendChild(s); });
+  root.appendChild(d);
+  const a = gr.w[0][1], next = groups[i + 1] ? groups[i + 1].w[0][1] : gr.end + .5;
+  const b = Math.min(next, gr.end + .4);
+  tl.set(d, { visibility: "visible" }, a);
+  d.querySelectorAll(".w").forEach((w, k) => {
+    tl.fromTo(w, { scale: .3, y: 50, opacity: 0 }, { scale: 1, y: 0, opacity: 1, duration: .2, ease: "back.out(2.6)", immediateRender: false }, gr.w[k][1]);
+    tl.to(w, { color: "#E8775F", duration: .05 }, gr.w[k][1]);
+    tl.to(w, { color: "#FFFFFF", duration: .08 }, Math.min(gr.w[k][2], b));
+  });
+  tl.set(d, { visibility: "hidden" }, b);
+});
+
+
+pipIn(0, .01);
+tl.set("#gh", { visibility: "visible" }, 0); tl.set("#gh", { visibility: "hidden" }, 3.07);
+tl.fromTo("#ghz", { scale: 1, x: 0, y: 0 }, { scale: 2.4, x: -1640, y: -330, duration: 1.4, ease: "power3.inOut" }, .35);
+pop("#stars", 1.34 - .15, 3.07);
+count("#starN", 399, 1.34 - .15, .9, (v) => Math.round(v) + "K");
+
+pipIn(3.03);
+slide("#lnk", 3.08, 6.05);
+pop("#tmr", 5.05, 6.05, 3);
+slide("#built", 6.05, 6.88); flash(6.10);
+
+pipOut(6.79);
+pop("#hy", 8.30, 10.15, 0); punch(9.23, null);
+pop("#ys", 10.15, 12.76, -3); tl.to("#campush", { scale: 1.12, duration: .3, ease: p3 }, 10.15);
+tl.set("#r3", { visibility: "visible" }, 12.76); tl.set("#r3", { visibility: "hidden" }, 13.97);
+tl.fromTo("#r31, #r32, #r33", { scale: 0 }, { scale: 1, duration: .3, ease: bo, stagger: .12, immediateRender: false }, 12.76);
+tl.to("#campush", { scale: 1, duration: .3, ease: p3 }, 13.87);
+
+pipIn(13.92);
+slide("#rs1", 13.97, 17.64); boxIn("#rs1b", 15.23);
+
+slide("#rs2", 17.64, 24.41); flash(22.87);
+
+slide("#rs3", 24.41, 28.88); boxIn("#rs3b", 24.71); pop("#rs3c", 26.78, null, -2);
+
+pipOut(28.82); pop("#bt", 29.79, 30.32, 0); punch(29.79, 30.22, 1.14); flash(29.79);
+
+pipIn(30.27);
+slide("#nm", 30.32, 38.30);
+tl.fromTo("#nmP", { y: 0 }, { y: -900, duration: 5.45, ease: "none" }, 30.62);
+tl.to("#nmG", { opacity: 0, scale: .9, duration: .25 }, 36.08); slide("#nmL", 36.08, null); flash(37.45);
+
+slide("#lm", 38.30, 44.18);
+pop("#lmT", 39.30, null, -2); pop("#lmA", 41.08, null, 0); pop("#lmB", 43.09, null, 0);
+
+slide("#gt", 44.18, 50.69); boxIn("#gtb", 46.04);
+slide("#hpv", 50.69, 53.38);
+tl.fromTo("#hpH", { scaleX: 0 }, { scaleX: .95, immediateRender: true, duration: .6, ease: p3 }, 50.85); tl.fromTo("#hpP", { scaleX: 0 }, { scaleX: .6, immediateRender: true, duration: .6, ease: p3 }, 52.43);
+
+pipOut(53.33);
+pop("#vd", 54.57, 56.83, -2); punch(54.57, 56.83);
+pop("#nx", 56.83, null, 2);
+
+window.__timelines["rea-short-2"] = tl;
+</script>
+</body>
+</html>
