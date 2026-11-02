@@ -16,6 +16,7 @@ tooling, transcripts, HyperFrames compositions and edit notes.
 | Cutting, joining, proxies, audio mix, final encode | FFmpeg | `npm run media -- …` or `ffmpeg` directly |
 | Source-based B-roll | Browser research + capture | `npm run broll -- <url>` |
 | Screen demos | Kalyan's own screen recordings | `media/screen-recordings/` |
+| YouTube metadata / Kalyan's own uploads | yt-dlp | `yt-dlp --skip-download --print "%(title)s" <url>`; installed by `npm run setup`. Cloud IPs often get YouTube's "not a bot" check: stop there, don't pass cookies to get round it. Never download other creators' videos (see B-roll rules). |
 
 ### Transcription rule (non-negotiable)
 
