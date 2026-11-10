@@ -25,7 +25,26 @@ Clip IDs → `edits/free-claude-code.footage.md`. Wording is kept true to `edits
 | High-energy close + subscribe/comment/description CTA | 19:45 | CTA |
 
 Legend: **VO** = Kalyan (FC or voiceover) · **SCREEN** = recording · **GFX** = motion graphic · **TXT** = on-screen kinetic text
-(≤ 5 words) · **SFX** = sound effect · 🎯 = engagement hook.
+(≤ 5 words) · **SFX** = sound effect · 🎯 = engagement hook · 💬 = viewer interaction.
+
+**Delivery style: "show-and-tell, not a script"**
+- Talk *to* the viewer as if they're sitting next to you: "let me show you", "see this?", "look here", "watch what happens".
+- React honestly on screen: a small "huh", "okay, that's interesting", "wait, what?" at real surprises (the paid login, the 503,
+  the $0 receipt).
+- Point with the cursor while you talk. Zoom where you point.
+- A few times, stop and *ask* the viewer something, pause for a beat (0.8–1.5 s), then answer. These are the 💬 moments below.
+- Keep the face-cam PiP live during these, so the reaction shows.
+
+**💬 Interaction moments (7)**
+| # | Time | Moment | Type |
+|---|---|---|---|
+| 1 | 0:45 | "Quick guess: which SIM is free *and* works with no internet?" | Pause & guess |
+| 2 | 2:55 | "Wi-Fi's off. Do you think it can still write an app? Let's see." | Prediction |
+| 3 | 4:00 | "Pause here, open Task Manager on yours. What does it say?" | Do-it-with-me |
+| 4 | 8:05 | "Look at the top line. Spot anything wrong? …Yeah." | Spot the mistake |
+| 5 | 9:20 | "Before I scroll: how much do you think this cost me?" | Guess the number |
+| 6 | 16:35 | "Error. Most people would quit here. What would you do?" | Decision point |
+| 7 | 18:35 | "Which SIM fits *you*? Hold that answer, you'll comment it in a minute." | Self-selection → comment |
 
 ---
 
@@ -48,6 +67,7 @@ Legend: **VO** = Kalyan (FC or voiceover) · **SCREEN** = recording · **GFX** =
 > But this phone accepts other SIMs.
 > SIM one works with **no network at all**. SIM two is a **free cloud SIM** with a daily limit.
 > And SIM three is a **multi-SIM** that switches by itself when one runs out.
+> 💬 Quick guess: which of these is free *and* works with no internet at all? …Keep that answer. You'll see in two minutes.
 
 **GFX** A big phone labelled "Claude Code". The SIM tray slides out: "Claude · $20/mo". It is swapped in turn for three SIMs, each with
 an icon and a one-line badge: 💻 "Ollama · works offline", ☁️ "OpenRouter · free, daily cap", 🔀 "OmniRoute · auto-switch".
@@ -74,7 +94,7 @@ every proof moment.
 
 ### 4a Install (1:20–1:50)
 **VO**
-> SIM one is Ollama. It runs the AI on your own laptop. Download, install. That's it.
+> Okay, SIM one. Let me show you Ollama. It runs the AI on your own laptop. Go to ollama.com, download, install… that's it. Seriously.
 
 **SCREEN** `142752` 0:00–1:35 (4×). **TXT** "ollama.com".
 
@@ -88,8 +108,9 @@ every proof moment.
 ### 4c ⚡ The Wi-Fi-off moment (2:40–3:40) · pattern interrupt
 **VO**
 > Quick warm-up with a small model. "hi". The first run downloads it, then it's on your laptop for good.
-> Now watch. **Wi-Fi… off.**
-> No internet. And I ask it to build a notes app.
+> Now watch. **Wi-Fi… off.** See? Nothing. No internet.
+> 💬 Be honest: do you think it can still write an app? …Let's see.
+> I ask it to build a notes app.
 > It's thinking… and it writes the whole thing. Offline.
 > Wi-Fi back on just to test it in an online compiler. First try, wrong language. Switch to HTML… it runs.
 > No subscription, no limits, and your code never left this laptop.
@@ -106,6 +127,7 @@ every proof moment.
 ### 4e Pick the right model (3:50–4:45)
 **VO**
 > Which model should you run? Don't guess. Check your hardware: Ctrl, Shift, Escape → Performance.
+> 💬 Actually, pause the video and do this on yours right now. I'll wait. …Got it? Okay, here's mine.
 > Mine is a normal laptop: no graphics card, built-in graphics, 16 GB of RAM.
 > I asked ChatGPT for the best coding model for my laptop, its exact Ollama name, and the latest one.
 > It said MiMo v2.6, a 9B model.
@@ -162,7 +184,8 @@ free". **🎯 description hook (TXT)** "Copy it from the description ↓".
 **VO**
 > And this is where I almost got fooled.
 > My paste failed silently. I typed claude, and it opened. Looks fine, right?
-> Look at the top: Opus… Claude Pro. **My phone switched back to my paid SIM.**
+> 💬 Look at the top line for a second. Spot anything wrong? …Yeah.
+> Opus… Claude Pro. **My phone switched back to my paid SIM.**
 > If you see your Claude plan here, you're not on the free SIM.
 
 **SCREEN** `121640` 1:10–3:45 (2.5×; slow down on the banner) → **red stamp "PAID!"**. **SFX** alarm "bonk".
@@ -175,7 +198,8 @@ free". **🎯 description hook (TXT)** "Copy it from the description ↓".
 ### 5d ✅ Check the bill (8:50–10:00) · trust payoff
 **VO**
 > The menu still says Opus, Sonnet, Haiku. Those are just seat names.
-> So I check the bill. OpenRouter Activity: three requests… **zero dollars**.
+> So I check the bill. Let me open OpenRouter Activity.
+> 💬 Before I scroll down: how much do you think this cost me? …Three requests… **zero dollars**.
 > And Claude Code's own usage says thirteen cents? That's the phone's guess at Anthropic prices. The carrier's bill says zero.
 
 **SCREEN** `123051` 4:35–5:50 → 5:50–6:50 (count-up to **$0.00**, receipt badge ✅) → 7:00–7:12 (circle "$0.13 estimate").
@@ -216,7 +240,7 @@ free". **🎯 description hook (TXT)** "Copy it from the description ↓".
 
 ### 6c Load the SIMs (12:00–14:30)
 **VO**
-> Now load the SIMs.
+> Alright, let's load the SIMs. I'll go one by one, and I'll show you what worked and what didn't.
 > **Kiro**: sign in, approve, connected. This one has **real Claude models**. But the free allowance is small,
 > and OmniRoute itself flags Kiro's terms. Your account, your call.
 
@@ -260,7 +284,9 @@ prompts ↓".
 **VO**
 > Moment of truth. Double-click.
 > OmniRoute running… Claude Code open. "Which model are you?"
-> …Error 503. OmniRoute had paused Kiro after some errors. This is real life with free SIMs. Ask again.
+> …Error 503. Okay. Not what I wanted on camera, but this is real.
+> 💬 Most people would quit right here. What would you do? …Remember the rule: don't panic.
+> OmniRoute had paused Kiro after some errors. This is real life with free SIMs. Ask again.
 > It answers: "Claude." But a model's word isn't proof. **Check the bill.**
 > Logs: **claude-sonnet-4.5… provider Kiro… combo Claude… status 200.**
 > That's real Claude Sonnet, through a free account.
@@ -270,7 +296,7 @@ prompts ↓".
 
 ### 6g Real test: build an app (17:15–18:30) · proof with honesty
 **VO**
-> Talk is cheap, so let's build something. On my test machine: "Design me a simple personal note-taking application."
+> Talk is cheap, so let's build something. Watch this part closely. On my test machine: "Design me a simple personal note-taking application."
 > It doesn't just start typing. It asks: tech stack? features? storage? Then shows a plan.
 > Real Claude did the planning, until its free limit ran out.
 > Then the multi-SIM kicked in: free NVIDIA took over by itself, and kept building.
@@ -289,6 +315,7 @@ limit → NVIDIA ×130 · $0" → `CR-05` (2 s) → `CR-07`. **TXT** "Needed fix
 > For most people, that's plenty.
 
 **VO** (which one)
+> 💬 Now think about your own laptop and how you work. Which SIM fits you? Hold that answer, you'll tell me in a minute.
 > Want privacy, or work offline? **SIM 1, Ollama.**
 > No good hardware, and want speed today? **SIM 2, OpenRouter.**
 > Want it to keep going when one runs out? **SIM 3, OmniRoute.**
@@ -318,7 +345,7 @@ limit → NVIDIA ×130 · $0" → `CR-05` (2 s) → `CR-07`. **TXT** "Needed fix
 
 **VO** 🎯 description + comment + subscribe
 > Every prompt and the settings block are in the description. Copy, paste, done.
-> Tell me in the comments which method you're trying first.
+> Remember the SIM you picked a minute ago? Tell me in the comments which method you're trying first. I read them.
 > And if this saved you twenty dollars a month, subscribe to AI with Kalyan. I test the AI tools, so you don't have to.
 
 **Outro** (standard, voice clone over full-screen graphics): recap → Like → Subscribe → bell → description panel → pinned-comment card
