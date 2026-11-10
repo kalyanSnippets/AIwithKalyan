@@ -24,6 +24,7 @@ body { background: var(--bg); color: var(--fg); font-family: var(--read); overfl
 .time { font-variant-numeric: tabular-nums; }
 p.l { margin: 0 0 .55em; text-wrap: pretty; }
 p.l { margin: 0 0 1em; }
+.todo { background: color-mix(in srgb, var(--fc) 22%, transparent); outline: 2px dashed var(--fc); border-radius: 6px; padding: 0 .15em; }
 .ex { background: color-mix(in srgb, var(--vo) 13%, transparent); border-radius: 6px; padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .q { margin-right: .15em; }
 span.dir { font-family: var(--ui); font-size: .5em; color: var(--muted); vertical-align: middle; }
@@ -66,112 +67,74 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 </div>
 
 <script>
-// Continuous script. Each scene: [mode, title, time, [paragraphs]]
-// Markup: **key words** · {i}…{/i} = first-time "what is it" explanation · {q} = question to the viewer · {p} = pause · [..] = what to do on screen
+// Continuous script v4 (~14–15 min). Each scene: [mode, title, time, [paragraphs]]
+// Markup: **key words** · {i}…{/i} = first-time "what is it" explanation · {q} = question to the viewer · {p} = pause · [..] = what to do on screen · {todo}…{/todo} = fill in after recording
 const SCRIPT = [
- ["FC","1 · Cold open","0:00",[
-  "Claude Code costs twenty dollars a month, right? {p} Wrong. **Claude Code itself is free.** What you're actually paying twenty dollars for is the AI brain running inside it. So today I'm going to swap that brain for **free ones**, three completely different ways, and at every step I'll show you the actual bill. Spoiler: it says **zero dollars**."
+ ["FC","1 · Pain hook","0:00",[
+  "Claude Code is one of the most powerful coding tools out there. But it costs **twenty dollars a month**, and the moment you hit your limit in the middle of a task, it just **stops**. You either pay more, or you wait. {p} But here's what most people don't know: **Claude Code itself is free.** What you're paying for is the AI brain inside it. And today, I'm going to swap that brain for **free ones**."
  ]],
- ["FC","2 · A simple example: the phone","0:20",[
-  "Let me explain this with a simple example, your phone. The phone is just the hardware, and the SIM card inside it decides who you pay every month. {i}**Claude Code is like the phone.** It's a free coding assistant from Anthropic, the company behind Claude, that lives in your terminal and can read your files, write code and run commands for you.{/i} {i}**The AI model is like the SIM**: the brain that actually thinks and answers.{/i} Anthropic's own model costs twenty dollars a month.",
-  "But here's the thing: **this phone accepts other SIMs.** And that's exactly what I'm going to show you today. Here's the plan. **First**, I'll run Claude Code completely free on my own laptop, and I'll even switch the Wi-Fi off to prove it. **Then** I'll connect it to free AI models in the cloud, and show you the one trap that can quietly charge your paid plan without you noticing. **And finally**, the big one: I'll connect several free AI providers together, so when one runs out, the next one takes over automatically. I'll show you **real Claude Sonnet** answering through a free account, with the logs to prove it, and then I'll build a full app with it.",
-  "And every prompt and every setting I use, I'm giving to you **in the description**, so you can copy, paste and do it yourself. So **stay till the end**, because that last method is where it gets really interesting. {q} Oh, and quick guess before we start: which of these three do you think works with **no internet at all**? {p} Keep that answer in your head, you'll see it in about two minutes."
+ ["FC","2 · The phone example + promise + roadmap","0:15",[
+  "Let me explain with a simple example: your phone. The phone is just the hardware, and the SIM card decides who you pay. {i}**Claude Code is like the phone**: a free coding assistant from Anthropic that lives in your terminal and can read, write and run code for you.{/i} {i}**The AI model is like the SIM**: the brain that does the thinking.{/i} Anthropic's model costs twenty dollars a month. But **this phone accepts other SIMs.**",
+  "So **by the end of this video**, you'll have the **real Claude Code** running for **zero dollars**, three different ways. **First**, completely on your own laptop, and I'll even switch the Wi-Fi off. **Then**, free AI models in the cloud, plus the one trap that can quietly charge your paid plan. **And finally**, several free providers connected together, where I'll show you **real Claude Sonnet** answering through a free account, with the logs to prove it. And I've put everything into a **free setup kit**: the model list, every prompt and every setting. It's the **first link in the description**. So **stay till the end**, because the last method is the best one."
  ]],
- ["FC","3 · Why trust me","1:05",[
-  "Quick note before we start: **nobody paid for this video**, and I pay for my own Claude. I've already worked through every setup, every error and every trap, so you don't have to. And I'm not going to just tell you it's free. **I'll show you the receipt every single time.** So let's go."
+ ["FC","3 · Trust","0:55",[
+  "Quick note: **nobody paid for this video**. I've already worked through every setup and every trap, so you don't have to. And I won't just tell you it's free. **I'll show you the receipt every time.** Let's go."
  ]],
- ["VO","4a · Method 1: Ollama","1:20",[
-  "Okay, method one, and it's called Ollama. {i}**Ollama** is a free app that downloads AI models and runs them right on your own laptop, kind of like a media player, but for AI.{/i} Nothing goes to the cloud. You just go to ollama.com, hit download, run the installer, and that's literally it. Seriously, that's the whole install. [point at the download button]"
+ ["VO","4a · Method 1: Ollama","1:10",[
+  "Method one is Ollama. {i}**Ollama** is a free app that downloads AI models and runs them right on your own laptop, like a media player, but for AI.{/i} Go to ollama.com, download, install, done. Then open Settings and find **context length**. {i}That's the AI's short-term memory: how much of your project it can hold at once.{/i} Claude Code reads a lot of files, so slide it up to **64K**. [drag the slider]"
  ]],
- ["VO","4b · The switch most people miss","1:50",[
-  "Once it's open, you'll see three things. **Apps** is where you connect coding tools like Claude Code with one click. **Chat** is where you can talk to a model to test it. And **Settings** has the one switch most people miss, which is **context length**. {i}Context length is basically the AI's short-term memory: how much of your conversation and your project it can hold in its head at once.{/i} Claude Code reads a lot of your files before it changes anything, so if the memory is too small, it loses track halfway. So I slide it up to **64K**, and that's the fix. [drag the slider]"
+ ["VO","4b · Which model for your laptop","1:50",[
+  "Now, which model should you download? It depends on your **RAM**, {i}your computer's working memory, which decides how big a model you can run.{/i} Press Control, Shift, Escape, and open Performance. {q} Pause and check yours right now. {p} Mine is a normal laptop: **no graphics card, 16 GB of RAM**. Roughly: with 8 to 16 GB, stick to **small models**, around 4 to 12 billion parameters. With 32 GB, you can go medium. With 64 GB or more, you can run the big ones that feel close to the paid thing. The exact list I'd pick is in the **free setup kit**. Just find your RAM. [RAM tier graphic]",
+  "And one tip: I asked ChatGPT for the latest best coding model for my laptop, and it suggested **MiMo v2.6 9B**. It wasn't in Ollama's list, so I let **Antigravity** install it. {i}Antigravity is a free AI coding app from Google that can run commands on your computer for you.{/i} One sentence, and it was installed and tested. That's my rule for this whole video: **anything longer than one line, an AI installs it.** And if something breaks, copy the error, paste it back, and say **\"fix this\"**."
  ]],
- ["VO","4c · Wi-Fi off","2:40",[
-  "Now let's warm it up with a small model. {i}Models come in sizes like 4B or 9B, which means four or nine **billion** parameters. Bigger usually means smarter, but slower and hungrier for memory.{/i} I pick a small one, Qwen 3.5 4B, and just say hi. The first message downloads the model, so it takes a minute, but after that it lives on your laptop for good.",
-  "And now watch this. I'm turning the **Wi-Fi off**. [click the Wi-Fi tile] See? Nothing. No internet at all. {q} So be honest, do you think it can still write an app? {p} Let's find out. I ask it to make a simple notes app, and it's thinking… thinking… and it writes the whole thing. **Completely offline.** Every single word came from a model sitting on this laptop.",
-  "Then I turn the Wi-Fi back on just to test the code in a free online compiler. First try, I picked the wrong language, so I switch it to HTML, and **it runs**. Is it pretty? No. But a laptop with no internet just wrote working software, with no subscription, no usage limits, and your code never left your computer."
+ ["VO","4c · Wi-Fi off","3:00",[
+  "Now watch this. I'm turning the **Wi-Fi off**. [click the Wi-Fi tile] No internet at all. {q} Do you think it can still write an app? {p} I ask for a simple notes app, and it's thinking… and it writes the whole thing. **Completely offline.** I turned the Wi-Fi back on just to test it in an online compiler, and **it runs**. Your code never left your laptop."
  ]],
- ["FC","4d · Subscribe hook","3:40",[
-  "And honestly, if that alone just saved you twenty dollars a month, **hit subscribe**, because it only gets better from here."
+ ["VO","4d · Claude Code on Ollama","3:40",[
+  "Now let's put Claude Code on top. In Ollama, go to **Apps**, click **Claude Code**, and it copies one command: **ollama launch claude**. Open a terminal, paste it, pick your model, and look at that: [Claude Code banner with the local model] **the real Claude Code, running on my own laptop.** No subscription, no API key.",
+  "Let's give it a real job. [prompt] {todo}I asked it to build a calculator app. On my laptop it took about __ minutes{/todo}, because a small local model is doing all the heavy lifting. And that's the honest trade-off: free means **your laptop does the work**, so on a normal machine you pay with your time. {todo}But it finished, and it works.{/todo} [test the app]",
+  "So method one is your **private, offline** option. For everyday speed, let's move to the cloud."
  ]],
- ["VO","4e · Pick the right model","3:50",[
-  "Now, which model should you actually run? Don't guess, check your hardware. Press Control, Shift and Escape, and open the Performance tab. {q} Actually, pause the video and do this on your laptop right now. I'll wait. {p} Got it? Okay, here's mine. Mine is a pretty normal laptop: **no separate graphics card**, just the built-in graphics, and **16 GB of RAM**. {i}RAM is your computer's working memory, and for local AI it decides how big a model you can run.{/i}",
-  "So I asked ChatGPT for the best coding model for my laptop, with its exact Ollama name, and I asked for the **latest** one, because new models come out literally every week. And it came back with **MiMo v2.6**, a 9B model. The exact prompt I used is in the description."
+ ["FC","4e · Subscribe hook","4:50",[
+  "And if this already saved you twenty dollars a month, **hit subscribe**, because it gets better from here."
  ]],
- ["VO","4f · Problem → an AI fixes it","4:45",[
-  "And this is where I hit the first problem. The model isn't in Ollama's list. So I tried installing it in the terminal, {i}the black text window where you type commands for your computer,{/i} and it told me my Ollama was too old. I updated it, and I was still stuck. And this is exactly where most people give up and close the laptop.",
-  "So instead, I let another AI do it for me. It's called **Antigravity**. {i}Antigravity is a free AI coding app from Google that can actually work on your computer: it opens the terminal, runs commands, reads the errors and fixes them.{/i} I just gave it one sentence: install this model and set it up so it works with Ollama. It asks my permission before each command, I read and allow, and a few minutes later it's installed and tested."
+ ["VO","5a · Method 2: OpenRouter","5:00",[
+  "Method two is OpenRouter. {i}**OpenRouter** is one website that gives you dozens of AI models with a single account and key, and many of them are free.{/i} They run on its servers, so they're much faster. Sign up, go to **API Keys**, click **Create key**. {i}An API key is a password that lets Claude Code use your account.{/i} Set it to expire in seven days and set the **credit limit to zero**, so it physically can't charge you. Then in Models, filter by **free**.",
+  "To connect it, you paste a small settings block into your terminal. {i}It tells Claude Code: talk to OpenRouter instead of Anthropic, and here's my key.{/i} It's in the setup kit, and you only change one thing: your key."
  ]],
- ["FC","4f · The rule of this video","5:30",[
-  "And that's going to be the rule for this whole video. **Anything longer than one line, you don't type it yourself. An AI installs it.** And if something breaks, you just copy the error, paste it back, and say **\"fix this\"**."
+ ["VO","5b · The trap","6:00",[
+  "And this is where I almost got fooled. My paste failed silently. I typed claude, it opened, and it looked fine. {q} Look at the top line. Spot anything wrong? {p} **Claude Pro.** [point at the banner] Claude Code had quietly gone back to **my paid subscription**. If you see your Claude plan here, you're **not** on the free setup. Fresh terminal, one line at a time, and now it says **openrouter/free**."
  ]],
- ["VO","4g · Connect Claude Code to Ollama","5:45",[
-  "Now let's connect Claude Code to Ollama. In Ollama, go to Apps and click Claude Code, and that copies **one command** for you. Make a folder, open a terminal inside it, paste that command, pick your model, and you're running Claude Code on your own laptop.",
-  "But let me be honest with you. On a laptop like mine, local models are slow, and small models can struggle with all the tools Claude Code uses. So think of method one as your **private, offline backup**. For everyday speed, we need something stronger, so let's move to the cloud."
+ ["VO","5c · The bill + the catch","6:40",[
+  "The menu still says Opus and Sonnet, but those are just slot names. So let's check the bill. {q} Before I scroll, how much do you think this cost? {p} Three requests, **zero dollars**. And if Claude Code's own usage screen shows a few cents, that's only its estimate at Anthropic's prices. **The real bill is zero.**",
+  "The catch? Free models are capped, about **fifty requests a day** on a new account, and one Claude Code task can use ten or twenty. Then you hit error **429**: {i}the server saying you've used up your free quota.{/i}"
  ]],
- ["VO","5a · Method 2: OpenRouter","6:30",[
-  "Method two is called OpenRouter. {i}**OpenRouter** is one website that gives you access to dozens of AI models from different companies with a single account and a single key, and a lot of those models are completely free.{/i} The difference from Ollama is that these models run on their servers, not on your laptop, so they're much faster.",
-  "Sign up, no credit card needed, then go to **API Keys** and click **Create key**. {i}An API key is basically a password that lets an app like Claude Code use your account.{/i} Give it a name, set it to expire in seven days, and set the **credit limit to zero**. That's your seat belt: even if you click the wrong thing, it physically can't charge you. Copy the key straight away, because it's shown only once, and treat it like a password.",
-  "Then go to Models and set the price filter to **free**. You'll see the free ones marked with \"free\". And here's a tip: this list changes every month, so don't memorise the names. **Remember the filter.**"
+ ["FC","5d · Comment hook","7:40",[
+  "Quick question: which one are you leaning towards so far, Ollama or OpenRouter? **Tell me in the comments.** Because method three is where it gets really interesting."
  ]],
- ["VO","5b · Connect it to Claude Code","7:20",[
-  "To connect OpenRouter to Claude Code, you paste a small block of settings into your terminal. {i}These settings simply tell Claude Code: don't talk to Anthropic, talk to OpenRouter, and here's my key.{/i} The whole block is in the description, and you only change one thing in it: your key goes between these quotes. The last three lines point Claude Code's Opus, Sonnet and Haiku slots at free models instead."
+ ["VO","6a · Method 3: OmniRoute","7:50",[
+  "Every free provider has a limit. But what if you connected all of them, and it switched automatically when one ran out? That's **OmniRoute**. {i}A free, open-source app that sits between Claude Code and all your AI providers, and sends each request to one that's free and working.{/i} One prompt to Antigravity installs it and opens the dashboard, {i}its control panel, running on your own computer.{/i} First password is **CHANGEME**. Change it."
  ]],
- ["VO","5c · The trap","8:00",[
-  "And this is where I almost got fooled. My paste actually failed, and I didn't even notice. I typed claude, it opened, and everything looked fine. {q} Look at the top line for a second. Can you spot what's wrong? {p} Yeah. It says Opus and **Claude Pro**. [point at the banner] Claude Code had quietly gone back to **my paid Claude subscription**. So if you ever see your Claude plan on this line, you're **not** on the free setup.",
-  "So I opened a fresh terminal and entered the settings one line at a time, and now it says **openrouter/free**, API usage billing. That's the free one."
+ ["VO","6b · Connect free providers","8:40",[
+  "In the dashboard, open **Providers**, search, and click **Add**. **Kiro**, {i}Amazon's AI coding app, whose free plan includes real Claude models{/i}: you approve a code, and it's connected. The free allowance is small, and OmniRoute flags its terms, so **your account, your call**. **Antigravity**: sign in with Google. The warning is stronger here, so **use a spare account**. **NVIDIA**: free key from build.nvidia.com, paste it in. **Gemini**: free key from Google AI Studio. And switch on **\"Import only free models\"** wherever you see it."
  ]],
- ["VO","5d · Check the bill","8:50",[
-  "Now, the model menu still shows Opus, Sonnet and Haiku, but those are just the names of the slots, not what's actually answering. So I asked it which model it is, and it said it's a free model on OpenRouter. But a model's word isn't proof, so let's check the bill. I open OpenRouter's Activity page. {q} Before I scroll down, how much do you think this cost me? {p} Three requests, and **zero dollars**.",
-  "And if Claude Code's own usage screen shows you something like thirteen cents, relax. That's just Claude Code estimating at Anthropic's prices. **OpenRouter's bill says zero**, and that's the one that counts."
+ ["VO","6c · Combo + OmniRoute key + shortcuts","9:50",[
+  "Now make a **combo**, {i}a team of models with an order of who answers first and who takes over next.{/i} Combos, Create, name it **Claude**, add your steps, pick smart routing, Save. Then the **OmniRoute key**: {i}OmniRoute's own password that Claude Code uses.{/i} API Keys, Create, name it, and **copy it once**. Tip: when Antigravity asks for it, **don't paste it into the chat**. Put it in a file.",
+  "One last prompt gives me two desktop shortcuts: **Free Claude Code**, and the **OmniRoute Dashboard**. And I hide the paid models, so the menu only shows free ones."
  ]],
- ["VO","5e · The catch","10:00",[
-  "But of course there's a catch. Free models have a daily cap, about **fifty requests a day** on a new account. That sounds like a lot, until you realise one Claude Code task can use ten or twenty requests, because it reads files, writes them and checks its own work. Hit the cap and you'll see error **429**. {i}429 is just the server saying \"you've used up your free quota, come back later\".{/i}"
+ ["VO","6d · Moment of truth","11:00",[
+  "Moment of truth. **Double-click.** Claude Code opens. \"Which model are you?\" {p} Error **503**. {i}The service is temporarily unavailable.{/i} Not what I wanted on camera, but this is real. {q} Most people would quit here. What would you do? {p} Don't panic: OmniRoute had paused Kiro after a few errors. Ask again. It says \"Claude\", but a model's word isn't proof, so **check the bill**. The logs say: **claude-sonnet-4.5, provider Kiro, status 200.** [zoom the row] That's **real Claude Sonnet**, through a free account."
  ]],
- ["FC","5f · Comment hook","10:30",[
-  "So quick question before method three: which one are you leaning towards so far, Ollama or OpenRouter? Or are you waiting for the next one? **Tell me in the comments**, I actually read them."
+ ["VO","6e · Real test","11:50",[
+  "And to test the whole setup, on my test machine I asked it to design a note-taking app. It asked me questions, showed a plan, and started building. **Real Claude** did the planning until its free limit ran out, and then OmniRoute switched to **free NVIDIA by itself**. Honestly, it took a few fix rounds. But here it is, working, for **zero dollars**."
  ]],
- ["VO","6a · Method 3: OmniRoute","10:40",[
-  "Every free provider has a limit. Google, NVIDIA, OpenRouter, each one on its own is small. But what if you could connect all of them at once, and switch to the next one automatically when one runs out? That's exactly what **OmniRoute** does. {i}**OmniRoute** is a free, open-source app, which means anyone can see and check its code on GitHub. It sits between Claude Code and all your AI providers, and sends each request to one that's free and working.{/i}"
+ ["FC","7 · Your free Claude Code map","12:30",[
+  "So here's your free Claude Code map. {q} Which one fits you? {p} Privacy, or offline: **Ollama**. No strong hardware and you want speed: **OpenRouter**. And if you want it to keep going when one provider runs out: **OmniRoute**.",
+  "And four rules. One: **nothing is unlimited**. Two: **cloud providers see what you send**, so keep private code on Ollama. Three: Kiro and Antigravity **may go against their terms**, so it's your call. Four: **things will break**: copy, paste, fix this. And always **check the bill, not the label.**"
  ]],
- ["VO","6b · Install with one prompt","11:10",[
-  "And we install it the same way, with our rule: an AI does it. One prompt to Antigravity: install Claude Code if it isn't there, install OmniRoute, start it, and open the dashboard. {i}The dashboard is just OmniRoute's control panel, and it opens in your browser at localhost, which simply means it's running on your own computer.{/i} It asks for permission a lot, so read each one before you allow it. And the first time you log in, the password is **CHANGEME**. So change it right away in Settings."
- ]],
- ["VO","6c · Connect free providers","12:00",[
-  "Now let's connect the free providers. In the dashboard, open **Providers**, search for the one you want, and click **Add**. I'll go one by one.",
-  "First, **Kiro**. {i}Kiro is Amazon's AI coding app, and its free plan includes real Claude models.{/i} Search Kiro, click Add, and pick how you want to sign in. It shows you a short code and a link. Open the link, sign in, approve, and come back: it says **connected**. Now, the free allowance is small, and during sign-up it even opened a \"subscription required\" page. And OmniRoute itself flags that using Kiro this way may go against Kiro's terms. **So it's your account, and your call.**",
-  "Next, **Antigravity**, the same Google app from earlier, but this time as a provider. Click Add, sign in with Google, and when the browser lands on a page that doesn't load, copy that address and paste it back into OmniRoute. That's how it gets permission. You get Gemini, plus some Claude models within limits. The warning here is even stronger, so please **use a spare Google account**, not your main one.",
-  "Then **NVIDIA**. {i}NVIDIA, the graphics card company, also gives free access to a bunch of AI models through build.nvidia.com.{/i} Create a free account, go to **API Keys**, click **Generate API Key**, copy it, and paste it into NVIDIA in OmniRoute.",
-  "And **Gemini**. {i}Gemini is Google's AI model, and Google AI Studio gives you a free key for it.{/i} Go to Google AI Studio, click **Get API key**, create one, and paste it into the Gemini provider. One more tip: wherever you see **\"Import only free models\"**, switch it on, so only free models come in."
- ]],
- ["VO","6d · Build the combo","14:00",[
-  "Now we combine all of these into one **combo**. {i}A combo is just OmniRoute's name for a team of models that work together, with an order of who answers first and who takes over next.{/i} Go to **Combos**, click **Create**, and give it a name. I named mine **Claude**. Then add the steps one by one: pick a provider, pick the model, and click Add. My first step is Gemini, then Kiro's Claude Sonnet, then more backups behind them, and you can use the arrows to change the order. Then pick the strategy. I chose smart routing, so it picks the best option for each request and I never switch anything by hand. Click **Save**, and your combo is ready."
- ]],
- ["VO","6e · Create the OmniRoute key","14:45",[
-  "Now Claude Code needs one key to unlock that whole combo, and this is the **OmniRoute API key**. {i}It's OmniRoute's own password: Claude Code uses it to talk to OmniRoute, and OmniRoute then talks to all your providers for you.{/i} In the dashboard, open **API Keys** and click **Create API Key**. Give it a name, like claude-code, and create it. Now **copy it straight away and keep it safe**, because like most keys, you only get to see it once.",
-  "And here's a safety tip: when Antigravity asks you for this key in the next step, **don't paste it into the chat**. Ask it to open a file for you, paste the key into that file, save it, and type continue. That way the key never sits in a chat history."
- ]],
- ["VO","6f · Two buttons on the desktop","15:30",[
-  "Then one more prompt to Antigravity, and I get two shortcuts on my desktop. **\"Free Claude Code\"** checks that OmniRoute is running, starts it if it isn't, and opens Claude Code through it with my combo. **\"OmniRoute Dashboard\"** opens the control panel. And then one last fix: hide the paid models, so Claude Code's model menu only shows you free ones and you can't pick a paid one by accident. On my test machine, that's exactly what the menu shows."
- ]],
- ["VO","6g · Moment of truth","16:15",[
-  "Okay, moment of truth. **Double-click.** OmniRoute is running, Claude Code opens, and I ask: which model are you? {p} And… error **503**. {i}503 means the service is temporarily unavailable.{/i} Okay. Not what I wanted on camera, but this is real. {q} Most people would quit right here. What would you do? {p} Remember the rule: don't panic. OmniRoute had paused Kiro after a few errors. This is real life with free providers. So I ask again.",
-  "And now it answers: \"Claude\". But like I said, a model's word isn't proof. **Let's check the bill.** I open the OmniRoute logs, and look at this line: **claude-sonnet-4.5, provider Kiro, combo Claude, status 200**. [zoom the row] {i}Status 200 just means success.{/i} That's **real Claude Sonnet**, answering through a free account."
- ]],
- ["VO","6h · Real test: build an app","17:15",[
-  "But talk is cheap, so let's build something real, and watch this part closely. On my test machine, I asked: design me a simple personal note-taking application. And look, it doesn't just start typing code. It's in **plan mode**, {i}a Claude Code mode where it plans and asks you questions before it writes anything,{/i} so it asks me: what tech stack, which features, and how should notes be stored? Then it shows me a plan, and only then does it start building.",
-  "And here's the best part. **Real Claude did the planning**, until its free limit ran out, and then OmniRoute switched by itself: **free NVIDIA took over** and kept building. I didn't switch anything. Now, honest truth: the first version didn't work. It took a few fix rounds and a final clean-up. But here it is: notes, tags, Markdown, search, and it even survives a refresh. And the bill? **Zero dollars.**"
- ]],
- ["FC","7 · Which one is for you","18:30",[
-  "So let's be real for a second. Anyone selling you \"**unlimited free Claude**\" is lying to you. What you actually get is the real Claude Code app, a small taste of real Claude, and free models for everything else. And for most people, that's honestly plenty.",
-  "{q} Now think about your own laptop and how you work. Which method fits you? {p} Hold that answer, because you're going to tell me in a minute. If you care about privacy, or you want it to work offline, go with **Ollama**. If you don't have strong hardware and you want speed today, go with **OpenRouter**. And if you want Claude Code to keep going even when one provider runs out, go with **OmniRoute**."
- ]],
- ["FC","7 · The 4 rules","19:10",[
-  "And before you try any of this, four quick rules. One: **nothing is unlimited**, every free tier has a cap. Two: **cloud providers can see what you send**, so client code and passwords stay on Ollama. Three: some connections, like Kiro and Antigravity, **may go against those services' terms**, so it's your account and your call. And four: **things will break**, and that's normal: copy, paste, fix this. And whatever the menu says, **always check the bill, not the label.**"
- ]],
- ["FC","8 · High-energy close","19:45",[
-  "So everyone told you Claude Code costs twenty dollars a month. And today we ran the real Claude Code for free, three ways: one that works with no internet, one that runs in the cloud, and one that switches providers by itself when one runs out. **Same Claude Code. Zero bill.** {p}",
-  "Every prompt and the settings block are **in the description**, so you can just copy, paste and go. Now remember the method you picked a minute ago? **Drop it in the comments** and tell me which one you're trying first, I really do read them. And if this just saved you twenty dollars a month, **subscribe to AI with Kalyan**, because I test these AI tools so you don't have to. See you in the next one."
+ ["FC","8 · Close + end-screen hook","13:30",[
+  "Everyone told you Claude Code costs twenty dollars a month. Today we ran the real Claude Code three ways for free: offline, in the cloud, and with providers that switch by themselves. **Same Claude Code. Zero bill.** {p}",
+  "The free setup kit, with the model list, every prompt and every setting, is the **first link in the description**. Tell me in the comments **which method you're trying first**. And if this saved you twenty dollars a month, **subscribe to AI with Kalyan**. I test these AI tools so you don't have to. {p} And if you want to see what else Claude Code can do, **this video right here** is the one to watch next. [end screen]"
  ]],
 ];
 
@@ -180,12 +143,13 @@ function fmt(t){
   return esc(t).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")
     .replace(/\{i\}/g,'<span class="ex">').replace(/\{\/i\}/g,'</span>')
     .replace(/\{q\}/g,'<span class="q">💬</span>')
+    .replace(/\{todo\}/g,'<span class="todo">').replace(/\{\/todo\}/g,'</span>')
     .replace(/\{p\}/g,'<span class="pause">⏸ pause</span>')
     .replace(/\[(.+?)\]/g,'<span class="dir">[$1]</span>');
 }
 const root = document.getElementById("script"), jump = document.getElementById("jump");
 root.insertAdjacentHTML("beforeend",
- `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span>💬 ask the viewer</span><span><span class="ex" style="font-size:15px;padding:1px 6px">tinted</span> = first-time explanation</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
+ `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span>💬 ask the viewer</span><span><span class="todo" style="font-size:14px">dashed</span> = fill in after recording</span><span><span class="ex" style="font-size:15px;padding:1px 6px">tinted</span> = first-time explanation</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
 SCRIPT.forEach(([mode,title,time,lines],i)=>{
   const id = "s"+i;
   root.insertAdjacentHTML("beforeend",
