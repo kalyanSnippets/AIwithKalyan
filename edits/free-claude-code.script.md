@@ -91,13 +91,12 @@ Skip the calculator attempt at 7:56–8:48 (its answer was cut off).
 **SAY**
 > Which model should you actually run? Don't memorise charts. Ask an AI.
 > Check your hardware: Ctrl + Shift + Escape, Performance tab.
-> Mine has 8 GB of graphics memory and 16 GB of RAM.
-> I gave ChatGPT exactly that, and asked for the best coding model with its exact Ollama name.
-> Then one follow-up: is this still the latest? New models come out every week.
-> Its answer: MiMo v2.6 9B.
+> Mine is a normal laptop: no graphics card, just built-in AMD graphics sharing my 16 GB of RAM.
+> I asked ChatGPT for the best coding model for my laptop, its exact Ollama name, and the latest one, because new models come out every week.
+> Its answer: MiMo v2.6, a 9B model.
 
-**SHOW** `145317` @ 0:00–1:15 (Task Manager: zoom "8 GB", "16 GB") → @ 1:40–3:20 (ChatGPT).
-**GFX** The prompt as a big typed prompt window (not the copy-paste), highlighting "8 GB VRAM", "exact Ollama name", "latest".
+**SHOW** `145317` @ 0:00–1:15 (Task Manager: zoom "Dedicated GPU memory 484 MB" + "16 GB RAM"; the prompt said "8 GB VRAM", which is really shared memory, so don't zoom on that) → @ 1:40–3:20 (ChatGPT).
+**GFX** The prompt as a big typed prompt window (not the copy-paste), highlighting "exact Ollama name" and "latest".
 End card "→ mimo-v2.6:9b".
 
 ### 1.5 First problem, so an AI installs it (4:45–5:45)
@@ -122,7 +121,7 @@ End card "→ mimo-v2.6:9b".
 **SAY**
 > Now connect Claude Code. In Ollama, Apps → Claude Code. That copies the launch command.
 > Make a folder, open it in Terminal, paste.
-> Ollama runs Anthropic's real Claude Code installer, then asks which model to use.
+> Ollama's launch command sets up the real Claude Code with your local model. One command.
 
 **SHOW** `121640` @ 0:09–0:30 (Apps → "Launch command copied" toast, zoom) → @ 0:33–0:54 (new folder → Open in Terminal).
 **GFX** A clean animated terminal showing the single command `ollama launch claude`, then a model picker card ("mimo-v2.6:9b").
@@ -191,7 +190,7 @@ Label it "One command". **Do not** show a fake Claude Code session.
 ### 2.5 The catch (10:00–10:30)
 **SAY**
 > The catch: your prompts go to someone else's server.
-> And free models are capped at about 50 requests a day. One Claude Code task can use 10 or 20.
+> And free models are capped: about 50 requests a day on a new account. One Claude Code task can use 10 or 20.
 > Hit the cap and you get error 429. That wall is why method three exists.
 
 **GFX** A counter 50 → 0 in chunks (file / write / check icons), ending on a "429 · Rate limited" terminal card. Then the
@@ -229,7 +228,7 @@ Each provider gets a 6–10 s beat with a logo card and a status pill.
 
 **SAY** Kiro
 > Kiro. Sign in, approve the device… connected. It has real Claude models: Sonnet and Haiku.
-> But the free tier is tiny, around 50 credits a month, and Kiro now shows a "subscription required" page.
+> But the free allowance is small, and during sign-up Kiro even opened a "subscription required" page.
 > OmniRoute itself flags Kiro's terms. Your account, your call.
 
 **SHOW** `113521` @ 0:15–1:10 (device login → "Device authorized" → connected). **GFX** Warning card ⚠ "ToS: avoid · your account,
@@ -242,7 +241,7 @@ your call". Keep the "Subscription Required" tab visible for 1 s.
 **SHOW** `113521` @ 1:40–3:45 (Google sign-in → callback → connected; topology shows Gemini, Kiro, Antigravity). **GFX** Warning card ⚠.
 
 **SAY** NVIDIA
-> NVIDIA: a free key from build.nvidia.com, about 40 requests a minute.
+> NVIDIA: a free key from build.nvidia.com. Check their current free limits.
 > My check failed: "unable to get local issuer certificate".
 > That's my laptop's network inspecting secure traffic, which is common on work laptops. The key was fine.
 > On a home laptop it works.
@@ -260,7 +259,7 @@ coral ring). Leave out the G4F page (`113521` @ 5:40).
 ### 3.3 The combo (14:30–15:30)
 **SAY**
 > Now one combo, a pool of engines that work together. Mine is called Claude.
-> Steps: Gemini, Kiro's Claude Sonnet, then free Kimi, Qwen, DeepSeek, NVIDIA and Groq as backups.
+> First Gemini, then Kiro's Claude Sonnet, then backups behind them.
 > Strategy: smart routing, so it picks for me every time. I don't switch providers by hand any more.
 > Then API Keys: one master key that unlocks the whole combo.
 
@@ -273,7 +272,7 @@ scoring, Model Sequence; 3×) → 3:30–3:55 (Intelligent Routing dashboard) �
 > "Free Claude Code" starts OmniRoute if needed and opens Claude Code through it. "OmniRoute Dashboard" opens the dashboard.
 > One more trap: Claude Code's model menu shows paid models too.
 > So hide paid models in OmniRoute, and keep "claude" as the default.
-> Now the menu only shows free options.
+> On my test machine, the menu then only showed free options.
 
 **SHOW** `160207` @ 0:05–0:38 (prompt → "What Was Created" table → Testing & Verification) → 1:43 (desktop with both icons, pop).
 → `CR-01` @ /model menu (free-only list, ~4 s).
@@ -283,7 +282,7 @@ scoring, Model Sequence; 3×) → 3:30–3:55 (Intelligent Routing dashboard) �
 **SAY**
 > Moment of truth. Double-click Free Claude Code.
 > OmniRoute is running, Claude Code opens. I ask: which model are you?
-> First try: error 503, Kiro is busy. Normal with free setups. Ask again.
+> First try: error 503. OmniRoute had paused Kiro after some errors. Normal with free setups. Ask again.
 > It answers: Claude. But a model's word isn't proof. Check the receipt.
 > OmniRoute logs: claude-sonnet-4.5, provider Kiro, combo Claude, status 200.
 > That's real Claude Sonnet answering, through a free Kiro account.
@@ -294,12 +293,12 @@ Optional: `CR-01` (model claims to be "Claude Fable 5" while the logs say Kiro S
 
 ### 3.6 Real test: a note-taking app (17:00–18:00)
 **SAY**
-> Now a real test. "Design me a simple personal note-taking application."
+> Now a real test. On my test machine, with the same kind of setup: "Design me a simple personal note-taking application."
 > In plan mode, Claude Code doesn't start coding. It asks first: tech stack, features, storage.
 > Then it shows a plan, and only then builds.
 > Real Claude did the planning, until its free limit ran out.
-> Then OmniRoute switched to free NVIDIA and kept going. I didn't touch anything.
-> It took a few fix rounds, and that's normal. But here it is: a working notes app on my own computer.
+> Then OmniRoute switched to free NVIDIA by itself and kept going.
+> Honestly, the first version didn't work. It took fix rounds, and I cleaned it up at the end. But here it is: a working notes app.
 > Tags, search, Markdown preview, and the notes survive a refresh. Zero dollars.
 
 **SHOW** `CR-04` (questions → plan → build; speed 10–20×, hold 2 s on each question screen and the plan) → **GFX** a log strip
