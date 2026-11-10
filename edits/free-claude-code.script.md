@@ -1,485 +1,378 @@
-# Free Claude Code: 3 ways (script v1)
+# Free Claude Code: 3 ways (full video plan, v2)
 
-Reference: Outskill, "Stop Paying for Claude Code (3 Ways to actually use it for FREE!!)"
-(youtu.be/HsgsYdV1XoQ, 31:34). Same structure: car/engine framing, then Ollama → OpenRouter →
-OmniRoute, honest limits, "which one should you use", rules. Kilo Code bonus dropped.
+Matches the reference beat for beat: Outskill, "Stop Paying for Claude Code" (youtu.be/HsgsYdV1XoQ).
+Kilo Code bonus dropped. Target **~20 min**.
+- **Format:** Kalyan on camera for the intro, transitions and conclusion. During screens: full-screen recording with Kalyan in the
+  rounded PiP card, bottom-left.
+- **Call to action:** description + pinned comment.
+- **Kiro / Antigravity:** warning cards, as in the reference.
 
-Footage: Drive "Screen Recordings" (10 files, silent) → `media/screen-recordings/free-claude-code/`.
-Times below are `file @ mm:ss`. **[PICKUP]** = not in the recordings yet, record it.
+**Clip names**
+- `142752` etc. = Kalyan's recordings (`media/screen-recordings/free-claude-code/2026-11-0X_<name>.mp4`).
+- `CR-07` etc. = Claude-recorded clips (`media/screen-recordings/claude-recorded/`).
+- Full timestamp map: `edits/free-claude-code.footage.md`.
 
-Format: Kalyan to camera for the intro, transitions and conclusion. Screen recordings run full-screen
-with Kalyan in the rounded PiP card bottom-left while he explains them. Target length ~16–18 min.
+**Legend:** **SAY** = teleprompter line (face cam, or voiceover with PiP), **SHOW** = clip @ time, **GFX** = HyperFrames graphic.
+Rules from AGENTS.md apply: every sentence gets a visual, big and full-frame, no text-in-box lists, captions ≤ 5 words.
+
+| # | Section | Target |
+|---|---|---|
+| 0 | Intro: the engine swap | 0:00–1:00 |
+| 1 | Ollama: free, on your laptop | 1:00–6:30 |
+| 2 | OpenRouter: free, in the cloud | 6:30–10:30 |
+| 3 | OmniRoute: many free engines + real Claude | 10:30–18:00 |
+| 4 | Honest truth, which one to pick, 4 rules | 18:00–19:30 |
+| 5 | Conclusion + outro | 19:30–20:30 |
 
 ---
 
-## 0. Intro (camera)
+## 0 · Intro (0:00–1:00) — face cam
 
 **SAY**
 > Claude Code costs twenty dollars a month. At least, that's what everyone says.
 > But the twenty dollars isn't for Claude Code. It's for the AI model running inside it.
-> Claude Code itself, the app that reads your files, writes the code and runs the commands, is free.
-> So today, I'm going to keep Claude Code and swap the engine inside it with a free one.
-> Three different ways.
+> Claude Code itself, the app that reads your files, writes your code and runs commands, is free.
+> So today, I'll keep Claude Code and swap the engine inside it. Three times.
 
-**SHOW** full-screen graphic: a car. Body = "Claude Code", engine = "AI model". The engine pops out
-and three engines slide in one by one: laptop icon "Ollama: runs on your laptop", cloud icon
-"OpenRouter: free in the cloud", switch icon "OmniRoute: switches when one runs out".
+**GFX** Car metaphor, full screen: body = "Claude Code", engine = "AI model". The engine pops out and three engines slide in:
+laptop "Ollama · on your laptop", cloud "OpenRouter · free in the cloud", switch "OmniRoute · switches when one runs out".
 
 **SAY**
-> The first one runs completely on my laptop.
+> The first one runs completely on my laptop. Even with the Wi-Fi off.
 > The second one runs free in the cloud.
-> And the third one connects lots of free providers and switches between them when one runs out.
+> And the third one connects lots of free AI services together, and switches when one runs out.
 > So let's start with step one.
 
-**SHOW** full-screen numbered transition "1 · Ollama: free AI on your own laptop".
+**GFX** Full-screen numbered transition **1 · Ollama**.
 
 ---
 
-## 1. Ollama: free AI on your laptop
+## 1 · Ollama (1:00–6:30)
 
-### 1a. Install
+### 1.1 Install (1:00–1:30)
+**SAY**
+> The first engine is Ollama. Go to ollama.com and click download. Windows, Mac or Linux.
+> Run the installer, and that's it.
+
+**SHOW** `142752` @ 0:00–1:35, sped up 3×. Skip 2:06–2:50 (PowerShell noise).
+
+### 1.2 Three things that matter (1:30–2:30)
+**SAY**
+> Three things matter here.
+> Apps. Claude Code, Codex, OpenCode… Clicking one doesn't install anything. It copies the command to connect it.
+> Chat, where we test models.
+> And Settings. Leave Cloud off, because we want everything on our laptop.
+> The one that really matters is context length. It's how much of your project the model can keep in its head.
+> Claude Code reads your files before editing them, so set it to 64K.
+
+**SHOW** `142752` @ 3:04–3:20 (Apps grid, zoom) → @ 3:41–4:13 (Settings: Cloud toggle, then the Context length slider, coral ring).
+
+### 1.3 First test, offline (2:30–3:45)
+**SAY**
+> Open Chat and pick a small model to warm it up. Qwen 3.5 4B. Say hi.
+> The first message downloads the model, so give it a minute.
+> But "hi" proves nothing. Watch this. Wi-Fi off.
+> And I ask it to make a simple notes app.
+> It's thinking… and it writes the whole thing. No internet. Every word from a model on this laptop.
+> No usage limits, no waiting five hours for a reset, and your code never leaves your computer.
+
+**SHOW** `142752` @ 5:48 (downloading) → 6:20–7:23 "hi" (4× on the thinking) → **7:28–7:40 Wi-Fi switched off** (zoom on the
+Wi-Fi tile; "OFFLINE" stamp) → 8:52–11:05 "make a simple notes app" + code (8×).
+Skip the calculator attempt at 7:56–8:48 (its answer was cut off).
 
 **SAY**
-> The first engine is called Ollama.
-> Go to ollama.com and click download. It works on Windows, Mac and Linux.
-> I'm on Windows, so I'm downloading the installer, double-clicking it, and that's it.
+> I turn the Wi-Fi back on for one reason: to paste the code into a free online compiler.
+> First try, wrong language. Switch to HTML… and it runs.
+> Is it pretty? No. But a laptop with no internet just wrote working software.
 
-**SHOW** `2026-11-05_142752 @ 00:00–01:35` (ollama.com → Download → installer in Downloads).
-Skip the PowerShell "run is not recognised" error at 02:06–02:50, it's noise.
+**SHOW** `142752` @ 11:37–12:41 (OneCompiler: red error for 1 s, then HTML, Quick Notes appears, type "hi", Add).
 
-### 1b. The three things that matter
-
+### 1.4 Which model should you run? (3:45–4:45)
 **SAY**
-> Once it's open, there are three things you need to know.
-> First, Apps. Claude Code, Codex, OpenCode, and more.
-> Clicking one doesn't install anything. It just copies the command to connect Ollama to that tool.
-> Second, Chat. This is where we test models.
-> And third, Settings.
-> The Cloud toggle runs models on Ollama's servers. We want everything on our laptop, so leave it off.
-> And the one that actually matters is context length.
-> That's how much of your project the model can keep in its head at once.
-> Claude Code reads your files before it edits them, so if this is too low, it loses track.
-> Set it to 64K.
+> Which model should you actually run? Don't memorise charts. Ask an AI.
+> Check your hardware: Ctrl + Shift + Escape, Performance tab.
+> Mine has 8 GB of graphics memory and 16 GB of RAM.
+> I gave ChatGPT exactly that, and asked for the best coding model with its exact Ollama name.
+> Then one follow-up: is this still the latest? New models come out every week.
+> Its answer: MiMo v2.6 9B.
 
-**SHOW** `142752 @ 03:10` Apps grid → `@ 03:41–04:13` Settings. Zoom in on the Cloud toggle, then
-on the Context length slider with a coral highlight. **[PICKUP]** a 3 s clip of the slider being
-set to 64K if it isn't in the recording.
+**SHOW** `145317` @ 0:00–1:15 (Task Manager: zoom "8 GB", "16 GB") → @ 1:40–3:20 (ChatGPT).
+**GFX** The prompt as a big typed prompt window (not the copy-paste), highlighting "8 GB VRAM", "exact Ollama name", "latest".
+End card "→ mimo-v2.6:9b".
 
-### 1c. First test
-
+### 1.5 First problem, so an AI installs it (4:45–5:45)
 **SAY**
-> Now open Chat and pick a small model. I'm using Qwen 3.5 4B, just to warm it up.
-> I say hi. The first message downloads the model, so it takes a minute.
-> But "hi" doesn't prove anything. So I asked it to make a simple notes app.
-> And it starts thinking, and writes the whole thing, completely on my laptop.
+> First problem: it's not in Ollama's dropdown.
+> I tried the terminal. Error: my Ollama was too old. Updated it. Still stuck.
+> This is where a five-minute setup turns into an hour on Google.
+> So I let another AI do it. Antigravity, a free coding tool from Google that can run commands on your computer.
+> One sentence: install MiMo and set it up so it works with Ollama.
+> It asks permission a few times. Read each one, then allow.
+> A few minutes later: installed, tested, working.
 
-**SHOW** `142752 @ 05:48` downloading model → `@ 06:20–07:23` "hi" → `@ 08:58–11:05` "make a simple
-notes app", thinking, code streaming. Speed up the thinking parts 4–8×, with a small "4×" badge.
+**SHOW** `145317` @ 3:46 (dropdown, circle the missing model) → 4:36–5:01 (red "requires newer version" + update) → 5:26–7:07
+(Antigravity download + sign-in, 6×) → 8:47–10:03 + `151536` (prompt, permission cards; montage "allow ×4") → `121640` @ 0:00–0:06
+("successfully installed").
 
-**[PICKUP, optional but strong]** Wi-Fi off, browser shows "No internet", same prompt still answers.
-The reference's best moment, and only 15 s of recording.
+**SAY** (house rule, face cam)
+> That's the rule for this whole video: anything longer than one line, you don't type it. An AI installs it.
+> If something breaks, copy the error, paste it back, and say "fix this".
 
+### 1.6 Claude Code on Ollama (5:45–6:30) — no fake footage
 **SAY**
-> To check it actually works, I pasted the code into a free online compiler.
-> It failed the first time because I picked JavaScript. It's an HTML file.
-> Switched to HTML, hit Run, and there it is. A working notes app.
-> Is it pretty? No. But no subscription, no usage limits, and nothing left my laptop.
+> Now connect Claude Code. In Ollama, Apps → Claude Code. That copies the launch command.
+> Make a folder, open it in Terminal, paste.
+> Ollama runs Anthropic's real Claude Code installer, then asks which model to use.
 
-**SHOW** `142752 @ 11:37–12:41` OneCompiler: red error (keep it, 1 s), switch to HTML, Quick Notes
-app appears, type "hi", Add Note.
+**SHOW** `121640` @ 0:09–0:30 (Apps → "Launch command copied" toast, zoom) → @ 0:33–0:54 (new folder → Open in Terminal).
+**GFX** A clean animated terminal showing the single command `ollama launch claude`, then a model picker card ("mimo-v2.6:9b").
+Label it "One command". **Do not** show a fake Claude Code session.
 
-### 1d. Which model should you run?
+**SAY** (face cam, transition)
+> But here's the honest part. On an 8 GB laptop, local models are slow.
+> And small models often struggle with Claude Code's tools.
+> So let's upgrade. The next engine runs in the cloud. Faster, smarter, still free.
 
-**SAY**
-> But which model should you actually run? Don't memorise charts. Just ask an AI.
-> First, check your hardware. Press Ctrl + Shift + Escape and open the Performance tab.
-> My laptop has 8 GB of graphics memory and 16 GB of RAM.
-> So I asked ChatGPT: "I have 8 GB of VRAM and 16 GB of RAM. I want to run a local model on Ollama
-> for coding. Give me the best model for my use case and its exact Ollama name."
-> And always ask one follow-up: is this still the latest?
-> Because new models come out every week, and the first answer is often outdated.
-> It came back with MiMo v2.6 9B.
-
-**SHOW** `2026-11-05_145317 @ 00:00–01:15` Task Manager → GPU / Memory (zoom on "8 GB" and "16 GB",
-then an animated chip card "8 GB VRAM · 16 GB RAM"). `@ 01:40–03:20` ChatGPT prompt typed, answer.
-Show the prompt as a big typed prompt window (not the copy-paste), highlight "8 GB VRAM",
-"exact Ollama name", "latest". End on a card "→ mimo-v2.6:9b".
-
-### 1e. The first problem (Antigravity fixes it)
-
-**SAY**
-> And here's the first problem. It's not in Ollama's dropdown.
-> So I tried installing it in the terminal, and got an error. My Ollama was too old.
-> Updated Ollama. Tried again. Still not working.
-> This is where a simple setup turns into an hour on Google.
-> So instead, I used another AI to do it for me. It's called Antigravity, a free coding tool from Google.
-> The difference is, it doesn't just chat. It can open your terminal, run commands, read the errors
-> and fix them.
-> Download it, sign in with Google, and give it one sentence.
-> "I'm running an AI model locally. Install this model, MiMo v2.6 9B, and set up everything so it
-> works with Ollama."
-> It'll ask permission a few times because it's running commands on your machine. Read each one
-> before you click allow.
-> A few minutes later: installed, tested, and working with Ollama.
-
-**SHOW** `145317 @ 03:46` model dropdown (circle: no mimo) → `@ 04:36–05:01` PowerShell red
-"requires ollama version" error + update → `@ 05:26–07:07` Antigravity download & sign-in (fast) →
-`@ 08:47–10:03` + `2026-11-05_151536` prompt and permission cards → `2026-11-06_121640 @ 00:00–00:06`
-"Setup Summary… successfully installed". Prompt as a typed prompt window. Permission cards: one
-real, then quick-cut montage of 3 more with a counter "allow ×4".
-
-**SAY** (house rule, camera or full-screen card)
-> And that's the rule for this whole video.
-> Anything longer than one line, you don't type it. An AI installs it.
-> If something breaks, copy the error, paste it back and say: fix this.
-
-### 1f. Claude Code on Ollama
-
-**SAY**
-> Now for the part you came here for.
-> In Ollama, go to Apps and click Claude Code. That copies the launch command.
-> Make a folder anywhere. Mine is called "Claude code".
-> Right-click inside it, open in Terminal, paste, and hit enter.
-
-**SHOW** `121640 @ 00:09–00:30` Ollama Apps → click Claude Code → "Launch command copied" toast
-(zoom) → `@ 00:33–00:54` new folder "Claude code" → Open in Terminal → empty PowerShell.
-
-**[PICKUP: needed, not in the recordings]** From that empty terminal:
-1. paste the Ollama launch command, Enter; let it install Claude Code if asked (type Y);
-2. pick `mimo-v2.6:9b` when it asks for a model;
-3. Claude Code banner, showing the Ollama model;
-4. prompt: "Build me a simple calculator app", allow file creation, open the result;
-5. one follow-up: "make the buttons bigger and switch to dark mode".
-
-**SAY** (over the pickup)
-> If Claude Code isn't installed, it asks to install it. Say yes.
-> And this is the real Claude Code, Anthropic's official app, not a copy.
-> Then it asks which model to use. I'm picking MiMo.
-> And there it is. Claude Code, with a free engine running on my own laptop.
-> No subscription, no API key.
-> I asked it to build a calculator app. It asks permission to create the files. Allow it.
-> The first version is rough, but you just keep asking. Bigger buttons. Dark mode.
-> Next time, you don't repeat any of this. Open the folder in Terminal and run one line.
-
-**SAY** (camera, transition)
-> But you saw it too. It's slow, and on an 8 GB laptop it's not that smart.
-> So let's upgrade. The next engine runs in the cloud. Faster, smarter, and still free.
-
-**SHOW** numbered transition "2 · OpenRouter: free models in the cloud".
+**GFX** Numbered transition **2 · OpenRouter**.
 
 ---
 
-## 2. OpenRouter: free in the cloud
+## 2 · OpenRouter (6:30–10:30)
 
-### 2a. Get a key
+### 2.1 Key (6:30–7:15)
+**SAY**
+> OpenRouter is a middleman: one key, dozens of AI models, and many of them are free.
+> Sign up at openrouter.ai, no credit card. API Keys → Create.
+> Give it a name, set an expiry (mine is seven days) and a credit limit of zero. That's your seat belt.
+> Copy the key now. It's shown once. Treat it like a password.
+
+**SHOW** `154411` @ 1:34–2:05 (create key: 7 days, credit limit). **Blur the key.**
+
+### 2.2 Free models (7:15–7:45)
+**SAY**
+> In Models, set the price filter to free. Look for ":free".
+> This list changes every month, so don't remember names. Remember the filter.
+
+**SHOW [B-ROLL]** `npm run broll -- "https://openrouter.ai/models?max_price=0" --name openrouter-free` (scroll; ":free" highlighted).
+
+### 2.3 Plug it in, and the trap (7:45–9:00)
+**SAY**
+> To plug it into Claude Code you need a small settings block. It's in the description.
+> Only change one thing: your key goes between these quotes.
+> One line clears the old key, so there's no paid fallback.
+> And these three lines map Claude Code's Opus, Sonnet and Haiku seats to free models.
+
+**GFX** The settings block as a code card (from `121640` @ 1:03), annotated line by line: "send to OpenRouter" / "your key" /
+"no paid fallback" / "seats → free models".
 
 **SAY**
-> The second engine is OpenRouter.
-> Think of it as a middleman. One key gives you dozens of AI models, and a lot of them are free.
-> Go to openrouter.ai, sign up. No credit card.
-> Click API keys, create key, give it a name. Mine is "Claude".
-> Set an expiry. I set mine to seven days, so by the time you watch this, it's already dead.
-> And set a credit limit. It's a seat belt.
-> Copy the key and keep it safe. OpenRouter only shows it once. Treat it like a password.
+> My first paste failed, and I didn't notice. I typed claude and it opened. Looks fine?
+> Look at the top: Opus 5.5, Claude Pro. It skipped OpenRouter and used my paid account.
+> So always check this line.
 
-**SHOW** `2026-11-09_154411 @ 01:34–02:05` OpenRouter "Create a new key": name, expiration
-"7 days", credit limit dropdown, the key shown once. **Blur the key.**
+**SHOW** `121640` @ 1:12 (paste warning) → 2:34 (red parse errors, zoom) → 3:01 (banner "Opus 5.5 · Claude Pro", circled) → 3:19
+(/status "Claude Pro account"). Big red stamp **"Not free!"**
 
 **SAY**
-> Now click Models and filter by price: free. Look for the ":free" label.
-> These models cost zero per request.
-> This list keeps changing. Models come and go. So don't remember the names, remember the filter.
+> Fresh terminal, one line at a time. Now it says openrouter/free, API Usage Billing. That's the free engine.
 
-**SHOW [B-ROLL]** `npm run broll -- "https://openrouter.ai/models?max_price=0" --name openrouter-free`
-(scroll the free list), plus a highlight on ":free".
+**SHOW** `123051` @ 0:00–4:00 (8×, key blurred) → 4:18 (banner "openrouter/free", green tick).
 
-### 2b. Plug it into Claude Code (and the trap)
-
+### 2.4 Check the receipt (9:00–10:00)
 **SAY**
-> Now we plug this key into Claude Code. It's a small block of settings, and it's in the description.
-> You only change one thing: your key goes between these quotes.
-> The rest tells this terminal window to send everything to OpenRouter instead of Anthropic.
-> One line clears the old key, so there's no chance of falling back to a paid key.
-> And these three lines, Opus, Sonnet and Haiku, map Claude Code's model menu to free models.
+> /model still says Opus, Sonnet, Haiku. Did we get Claude for free? No.
+> I asked "which model are you?" It says it's a free model on OpenRouter.
+> The real proof is OpenRouter's Activity page: three requests, zero dollars.
+> And Claude Code's own usage screen says thirteen cents? That's an estimate at Anthropic's prices. The real bill is zero.
 
-**SHOW** the env block as a big code card (from `121640 @ 01:03`), animated line by line:
-`ANTHROPIC_BASE_URL` → "send it to OpenRouter", `ANTHROPIC_AUTH_TOKEN` → "your key",
-`ANTHROPIC_API_KEY = ""` → "no paid fallback", the three `DEFAULT_*_MODEL` lines → "menu seats →
-free models".
+**SHOW** `123051` @ 4:36 (/model) → 5:13–5:31 (which model + answer) → 5:50–6:45 (Activity: count-up "$0.00", "3 requests") → 7:04
+(/usage "$0.1348", circled with "Estimate ≠ bill").
 
-**SAY** (the trap, from `121640 @ 01:12–03:40`)
-> Now, the first time I pasted this, I made a mistake. PowerShell threw errors, and I didn't notice.
-> I typed claude, and it opened. Looks fine, right?
-> But look at the top. Opus 5.5. Claude Pro.
-> It skipped OpenRouter and logged in with my paid account.
-> So always check this line. If it says your Claude plan, you're not on the free engine.
-
-**SHOW** `121640 @ 01:12` PowerShell "paste multiple lines" warning → `@ 02:34` red parse errors
-(zoom, red outline) → `@ 03:01` Claude Code banner, circle "Opus 5.5 · Claude Pro" → `@ 03:19`
-/status "Login method: Claude Pro account". Big red label "Not free!".
-
+### 2.5 The catch (10:00–10:30)
 **SAY**
-> So I opened a fresh terminal and entered each line one by one.
-> Type claude. And now look: openrouter/free, API usage billing.
-> That's the free engine.
+> The catch: your prompts go to someone else's server.
+> And free models are capped at about 50 requests a day. One Claude Code task can use 10 or 20.
+> Hit the cap and you get error 429. That wall is why method three exists.
 
-**SHOW** `2026-11-06_123051 @ 00:00–04:00` lines entered (speed ramp 6–8×, key blurred) → `@ 04:18`
-banner "openrouter/free · API Usage Billing" with a green check.
-
-### 2c. Is it really Claude? Check the receipt
-
-**SAY**
-> Now type /model. Look at that. The seats still say Opus, Sonnet, Haiku.
-> So did we just get Claude for free? No. And I'll prove it.
-> I asked it, "which model are you?" It says it's a free model on OpenRouter, routed to whatever is
-> available.
-> Now open OpenRouter's Activity page. This is the real log.
-> Three requests, twenty-four thousand tokens, and the cost: zero dollars.
-> The menu shows seat names. The activity page shows who's actually sitting in the seat.
-
-**SHOW** `123051 @ 04:36` /model list → `@ 05:13–05:31` "which model are you?" + answer
-(highlight "free-tier offering served through OpenRouter") → `@ 05:50–06:45` OpenRouter Activity:
-zoom on "Requests 3", "Tokens 24.6K", "$0.00" (count-up from 0).
-
-**SAY**
-> One more thing that might scare you.
-> Claude Code's usage screen says this session cost thirteen cents.
-> Relax. That's Claude Code's own estimate using Anthropic's prices.
-> The real bill is on OpenRouter, and there it's zero.
-
-**SHOW** `123051 @ 07:04` /usage "Total cost $0.1348 (costs may be inaccurate…)" circled, side by
-side with OpenRouter "$0.00". Card: "Estimate ≠ bill".
-
-### 2d. The catch
-
-**SAY**
-> But here's the honest part.
-> Your prompts and files now go to someone else's server. So be careful what you send.
-> And the free models are capped: 20 requests a minute, and 50 a day on a new account.
-> Fifty sounds like a lot, but one task in Claude Code can use ten or twenty requests,
-> because it reads files, writes them, checks its work and fixes it.
-> One real session can use up your whole day.
-> And then you get error 429. Rate limited. Come back tomorrow.
-> That wall is exactly why method three exists.
-
-**SHOW** animated counter 50 → 0 in chunks of 10–20 with file/write/check icons per chunk, ending
-on a terminal card "429 · Rate limited". Then numbered transition "3 · OmniRoute: many free
-engines, one switch".
+**GFX** A counter 50 → 0 in chunks (file / write / check icons), ending on a "429 · Rate limited" terminal card. Then the
+numbered transition **3 · OmniRoute**.
 
 ---
 
-## 3. OmniRoute: many free engines in one place
+## 3 · OmniRoute (10:30–18:00)
 
-### 3a. What it is + install with Antigravity
+### 3.1 What it is + install (10:30–11:45)
+**SAY**
+> OmniRoute is a free, open-source app on GitHub.
+> OpenRouter has a free cap. So do Google, NVIDIA and others. Small on their own, big together.
+> OmniRoute puts them in one place, and when one runs out, the next takes over.
+> We install it the same way: Antigravity does it.
+
+**SHOW** `154801` @ 0:00 (GitHub repo; zoom "375 providers / 1,400 models").
+**GFX** Fuel gauges (provider logos) feeding one OmniRoute hub; one empties, the next lights up.
 
 **SAY**
-> The third one is OmniRoute. It's a free, open-source app on GitHub.
-> OpenRouter has a free limit. But so do lots of other services.
-> On their own, each one is small. Together, they add up.
-> OmniRoute puts them all in one place, and when one runs out, it can switch to the next.
-> One engine runs out of fuel, another one takes over.
-> And we install it the same way: Antigravity does the work.
+> One prompt: set up Claude Code so I can use it for free, install OmniRoute, start it, open the dashboard. If anything fails, fix it.
+> Lots of permission prompts. Read them.
+> The first password is CHANGEME. Change it right away.
 
-**SHOW** `2026-11-06_154801 @ 00:00` OmniRoute GitHub repo (zoom on the description "375 providers…
-1,400+ models"). Then animated graphic: several small fuel gauges (provider logos) feeding one
-"OmniRoute" hub, one gauge empties and the next lights up.
+**SHOW** `154801` @ 0:31 (prompt as a typed prompt window) → 0:42–1:03 (permission montage) → 1:13–1:34 (summary table, rows tick
+off) → 1:55 (sign-in) → 2:06 (Home). Cut the 404 at 1:45.
 
+### 3.2 Connect free engines (11:45–14:30)
 **SAY**
-> I gave it one prompt: set up Claude Code on my Windows laptop so I can use it for free.
-> Check if Claude Code is installed, install OmniRoute from GitHub, start it, and open the dashboard.
-> If any step fails, fix it and keep going.
-> Again, it asks permission a lot. Read each one.
-> And at the end, it gives me a summary: Claude Code found, OmniRoute installed, server running,
-> dashboard opened.
+> Now we plug engines in. Go to Providers.
 
-**SHOW** `154801 @ 00:31` prompt (big typed prompt window, highlight "free", "install OmniRoute",
-"if any step fails, fix it") → `@ 00:42–01:03` permission cards (montage) → `@ 01:13–01:34`
-Step-by-Step Summary table (animate the four rows ticking off).
+**SHOW** `154801` @ 2:27–3:41 (Providers, 4×).
 
+Each provider gets a 6–10 s beat with a logo card and a status pill.
+
+**SAY** Kiro
+> Kiro. Sign in, approve the device… connected. It has real Claude models: Sonnet and Haiku.
+> But the free tier is tiny, around 50 credits a month, and Kiro now shows a "subscription required" page.
+> OmniRoute itself flags Kiro's terms. Your account, your call.
+
+**SHOW** `113521` @ 0:15–1:10 (device login → "Device authorized" → connected). **GFX** Warning card ⚠ "ToS: avoid · your account,
+your call". Keep the "Subscription Required" tab visible for 1 s.
+
+**SAY** Antigravity
+> Antigravity. Sign in with Google and you get Gemini, plus some Claude models within a limit.
+> Same warning, and this one is stronger: Google may restrict the account. Use a spare Google account.
+
+**SHOW** `113521` @ 1:40–3:45 (Google sign-in → callback → connected; topology shows Gemini, Kiro, Antigravity). **GFX** Warning card ⚠.
+
+**SAY** NVIDIA
+> NVIDIA: a free key from build.nvidia.com, about 40 requests a minute.
+> My check failed: "unable to get local issuer certificate".
+> That's my laptop's network inspecting secure traffic, which is common on work laptops. The key was fine.
+> On a home laptop it works.
+
+**SHOW** `163037` (sign-up, 8×; skip the captcha) → `113521` @ 4:20–5:20 (Generate key → paste → "Invalid · fetch failed") → 7:35–7:50
+(test message: `UNABLE_TO_GET_ISSUER_CERT_LOCALLY`, zoomed). **GFX** "Expect errors" stamp. Blur keys.
+
+**SAY** Gemini + OpenRouter
+> Gemini: a free key from Google AI Studio. OpenRouter: the same free key from method two.
+> And turn on "Import only free models" wherever you see it.
+
+**SHOW** `154411` @ 0:00–1:03 (AI Studio key → Gemini connected) → `144707` @ 0:40–0:57 (the "Import only free models" toggle,
+coral ring). Leave out the G4F page (`113521` @ 5:40).
+
+### 3.3 The combo (14:30–15:30)
 **SAY**
-> Open the dashboard. The first time, the password is CHANGEME. Change it straight away in settings.
+> Now one combo, a pool of engines that work together. Mine is called Claude.
+> Steps: Gemini, Kiro's Claude Sonnet, then free Kimi, Qwen, DeepSeek, NVIDIA and Groq as backups.
+> Strategy: smart routing, so it picks for me every time. I don't switch providers by hand any more.
+> Then API Keys: one master key that unlocks the whole combo.
 
-**SHOW** `154801 @ 01:45` 404 (cut it) → `@ 01:55` OmniRoute sign-in → `@ 02:06–02:16` Home.
+**SHOW** `114247` @ 0:00–0:25 (`omniroute` starting in PowerShell) → 1:00–3:20 (Edit Combo: steps, Mode Pack "Ship Fast", Rules
+scoring, Model Sequence; 3×) → 3:30–3:55 (Intelligent Routing dashboard) → `154411` @ 11:32 (Create API Key).
 
-### 3b. Connect free providers
-
+### 3.4 Shortcuts + free models only (15:30–16:15)
 **SAY**
-> Now we connect free engines. Go to Providers.
-> I tried a few, and I'll be honest about how each one went.
+> Back to Antigravity. One prompt: put two shortcuts on my desktop.
+> "Free Claude Code" starts OmniRoute if needed and opens Claude Code through it. "OmniRoute Dashboard" opens the dashboard.
+> One more trap: Claude Code's model menu shows paid models too.
+> So hide paid models in OmniRoute, and keep "claude" as the default.
+> Now the menu only shows free options.
 
-**SHOW** `154801 @ 02:27–03:41` Providers list / onboarding wizard (fast scroll, 4×).
+**SHOW** `160207` @ 0:05–0:38 (prompt → "What Was Created" table → Testing & Verification) → 1:43 (desktop with both icons, pop).
+→ `CR-01` @ /model menu (free-only list, ~4 s).
+**GFX** The two prompts as typed prompt windows (text in the description).
 
-Then one quick card per provider. Each card has the logo, how you connect it (key or sign-in), and
-a coral status pill. Keep each 5–8 s.
-
+### 3.5 Moment of truth (16:15–17:00)
 **SAY**
-> Kiro: you sign in, and it has real Claude models. But it's only 50 credits a month, and OmniRoute
-> itself warns that Kiro's terms don't allow this. Your account, your call.
+> Moment of truth. Double-click Free Claude Code.
+> OmniRoute is running, Claude Code opens. I ask: which model are you?
+> First try: error 503, Kiro is busy. Normal with free setups. Ask again.
+> It answers: Claude. But a model's word isn't proof. Check the receipt.
+> OmniRoute logs: claude-sonnet-4.5, provider Kiro, combo Claude, status 200.
+> That's real Claude Sonnet answering, through a free Kiro account.
 
-**SHOW** `154801 @ 03:51–04:10` "Connect Kiro AI" dialog. Pill: "⚠ terms risk".
+**SHOW** `121406` @ 0:00–0:20 (desktop double-click → launcher → Claude Code) → 0:20–1:05 (question → 503; **cut the wait to 3 s**)
+→ 2:10–2:30 (second answer) → 2:40–3:00 (Home recent requests → Logs; **zoom the KIRO · claude-sonnet-4.5 · combo Claude · 200 row**).
+Optional: `CR-01` (model claims to be "Claude Fable 5" while the logs say Kiro Sonnet 4.5) as a 3 s insert for "a model's word isn't proof".
 
+### 3.6 Real test: a note-taking app (17:00–18:00)
 **SAY**
-> NVIDIA: free account at build.nvidia.com, create an API key and paste it in.
-> Mine showed "invalid" on the check, so I'll come back to that.
+> Now a real test. "Design me a simple personal note-taking application."
+> In plan mode, Claude Code doesn't start coding. It asks first: tech stack, features, storage.
+> Then it shows a plan, and only then builds.
+> Real Claude did the planning, until its free limit ran out.
+> Then OmniRoute switched to free NVIDIA and kept going. I didn't touch anything.
+> It took a few fix rounds, and that's normal. But here it is: a working notes app on my own computer.
+> Tags, search, Markdown preview, and the notes survive a refresh. Zero dollars.
 
-**SHOW** `2026-11-07_163037` sign-up (fast, 8×, skip the captcha after 1 s) → `2026-11-09_144707
-@ 00:20` "API Key Granted" (blur) → `@ 00:40–00:57` paste, "Import only free models" toggle on
-(highlight it, it matters), red "Invalid / Test failed". Pill: "✗ check failed".
-
-**SAY**
-> OpenRouter: same free key from method two.
-> Gemini: free key from Google AI Studio. This one connected straight away.
-> Cline and Grok: you just sign in.
-> And Kimi Code needs a paid plan, so I skipped it.
-
-**SHOW** `154411 @ 00:00–01:03` AI Studio key → Gemini provider (pill "✓ connected") → `@ 03:08`
-Cline authorise → `@ 04:11–05:46` Grok Build sign-in → `@ 06:49–07:52` Kimi pricing ($15/mo, pill
-"paid, skipped").
-
-**[PICKUP]** after the fix in 3e: the Providers page with the final green/red state of each.
-
-### 3c. Combo + API key
-
-**SAY**
-> Now we put them into one combo. A combo is just a pool of engines that work together.
-> Go to Combos, create one, add the models, and pick how it chooses between them.
-> Then go to API Keys and create a key. This is the master key that unlocks the whole combo.
-
-**SHOW** `154411 @ 10:29–11:01` Create Combo (models list, router strategy) → `@ 11:32` Create API Key.
-Blur keys.
-
-### 3d. Desktop shortcuts
-
-**SAY**
-> Back to Antigravity one more time.
-> I asked it to make a shortcut on my desktop called "Free Claude Code".
-> When I double-click it, it checks OmniRoute is running, opens a terminal in a work folder, and
-> starts Claude Code through OmniRoute.
-> And a second shortcut that opens the OmniRoute dashboard.
-> One important thing: never paste your key into the chat. Let it read the key from a file.
-
-**SHOW** `2026-11-09_160207 @ 00:05–00:16` shortcut prompt (typed prompt window) → `@ 00:21–00:38`
-"What Was Created" table + Testing & Verification (tick rows) → `@ 01:43` desktop with both icons
-(zoom + pop).
-
-### 3e. Moment of truth (and the error)
-
-**SAY**
-> All right, moment of truth. Double-click "Free Claude Code".
-> Terminal opens, OmniRoute is running, Claude Code loads. I say hi.
-> And… error. Retrying. Then 503: "all targets were skipped".
-> So it didn't work the first time. And honestly, that's normal with these setups.
-> Remember the rule: copy the error, paste it into Antigravity, and say fix this.
-
-**SHOW** `160207 @ 01:48–02:10` Free Claude Code launch → "hi" → red "API error · retrying" →
-"503 … all targets were skipped by pre-dispatch filter" (zoom, shake, red outline). Then
-`160207 @ 00:43–01:32` OmniRoute Logs page, mostly red rows (zoom on a few).
-
-**[PICKUP: needed]** Run the fix below, then record:
-1. the fix prompt pasted into Antigravity, and its summary;
-2. Free Claude Code → "hi" → it replies;
-3. "which model are you?";
-4. OmniRoute Logs: green row, provider Gemini;
-5. a real task, e.g. "Design me a simple personal note-taking app". Let Claude Code ask its
-   questions, answer them, show the plan, the app on localhost, create a note, close, reopen, and
-   the note is still there.
-
-**SAY** (over the pickup, edit to match what actually happens)
-> It found the problem: [one line, e.g. "the combo only had providers that weren't working"].
-> Fixed it, double-click again, say hi, and this time it answers.
-> Now don't trust what the model says about itself. Check the receipt.
-> OmniRoute logs: provider Gemini, cost zero.
-> And now a real test. I asked it to design a simple note-taking app.
-> It doesn't just start coding. It asks me questions first, makes a plan, then builds it.
-> A few minutes later, a working app on my own computer. Zero dollars.
+**SHOW** `CR-04` (questions → plan → build; speed 10–20×, hold 2 s on each question screen and the plan) → **GFX** a log strip
+"Claude Sonnet 4.6 ×31 → 429 → NVIDIA Nemotron ×130 · $0" → `CR-05` (2 s of the fix being applied) → `CR-07` (app: new note,
+tags, Markdown, filter, search, refresh → still there).
 
 ---
 
-## 4. Honest part + which one to use (camera → full-screen)
+## 4 · Honest truth + which one + rules (18:00–19:30) — face cam → full screen
 
 **SAY**
-> Now let me be straight with you.
-> You've probably seen titles saying "unlimited free Claude". That's not true.
-> There's no setup today that gives you unlimited real Claude for free.
-> What you actually get is the real Claude Code app, with free engines inside it.
-> And for most people, that's enough.
+> Let me be straight. Titles saying "unlimited free Claude" aren't true.
+> What you get is the real Claude Code app, a small taste of real Claude, and free engines for everything else.
+> For most people, that's enough.
 
-**SHOW** big closing-line card: ~~"Unlimited free Claude"~~ → "Free Claude Code + free engines".
+**GFX** Big line: ~~"Unlimited free Claude"~~ → "Real Claude Code + free engines".
 
 **SAY**
-> So which one should you use?
-> If you have a good graphics card and privacy matters, use Ollama. It even works offline.
-> If you don't have the hardware and just want speed today, use OpenRouter. Just remember the 50 a day.
-> And if you want Claude Code to keep going when one provider runs out, use OmniRoute.
+> Which one should you use?
+> Good graphics card, and privacy matters? Ollama. It even works offline.
+> No hardware, and you want speed today? OpenRouter. Remember the daily cap.
+> And if you want Claude Code to keep going when one provider runs out? OmniRoute.
 
-**SHOW** three flow cards growing in turn, each with its icon and one line:
-Ollama "Private · offline · your hardware" / OpenRouter "Fast · no hardware · 50/day" /
-OmniRoute "Many engines · auto-switch · more setup".
+**GFX** Three flow cards growing in turn (laptop / cloud / switch), each with one line.
 
 **SAY**
-> And four rules before you start.
-> One: nothing is unlimited. Every free tier has a cap.
+> Four rules.
+> One: nothing is unlimited.
 > Two: free cloud engines see what you send. Keep client code and passwords on Ollama.
-> Three: some connections, like Kiro, break the provider's terms. Your account, your call.
-> Four: expect errors. Copy the error, paste it into Antigravity, and say fix this.
-> And one final rule: whatever the menu says, check the receipt.
+> Three: some connections, like Kiro and Antigravity, are against those services' terms. Your account, your call.
+> Four: expect errors. Copy, paste, "fix this".
+> And whatever the menu says, check the receipt.
 
-**SHOW** four numbered icon tiles appearing one per sentence (∞ crossed out, eye, warning sign,
-wrench), then a "receipt" graphic stamped "$0.00".
+**GFX** Four numbered icon tiles (∞ crossed out, eye, warning, wrench), then a receipt stamped "$0.00".
 
-**SAY** (closing line, camera)
+---
+
+## 5 · Conclusion + outro (19:30–20:30)
+
+**SAY** (face cam)
 > Everyone says Claude Code costs twenty dollars a month.
-> Today, we ran the real Claude Code with free engines inside it. Three different ways.
+> Today we ran the real Claude Code with free engines inside it. Three ways.
+> One works with the Wi-Fi off, one runs in the cloud, and one switches between free engines on its own.
+
+**Outro** (ElevenLabs voice clone over full-screen graphics, standard):
+recap → Like → Subscribe → bell for "AI with Kalyan" → description panel → pinned comment card →
+"Thanks for watching / See you in the next video".
+> And that's how you run Claude Code for free. Every prompt, the settings block and all the links are in the description and
+> the pinned comment. Tell me which setup you're trying first. If this helped, like the video and subscribe to AI with Kalyan.
+> Thanks for watching, and I'll see you in the next video.
+
+**Pinned comment:** "Which setup are you trying first: Ollama, OpenRouter or OmniRoute? 👇"
 
 ---
 
-## 5. Outro (voice clone over full-screen graphics, standard)
-
-Recap → Like → Subscribe → bell for "AI with Kalyan" → description panel (prompts + env block +
-links) + pinned-comment card ("Which setup are you trying first: Ollama, OpenRouter or OmniRoute?")
-→ "Thanks for watching / See you in the next video".
-
-Suggested outro line:
-> And that's how you can use Claude Code for free. I've put every prompt, the settings block and all
-> the links in the description and the pinned comment. Tell me which setup you're trying first.
-> If this helped, like the video and subscribe to AI with Kalyan. Thanks for watching, and I'll see
-> you in the next video.
-
----
-
-## Description assets to prepare
-
-1. ChatGPT model prompt (+ "is this still the latest?" follow-up).
+## Description / pinned comment assets
+1. ChatGPT model-picking prompt (+ "is this still the latest?").
 2. Antigravity: install-the-local-model prompt.
-3. OpenRouter PowerShell block (+ cmd version). Placeholder key only.
+3. OpenRouter settings block (PowerShell + cmd), placeholder key.
 4. Antigravity: OmniRoute install prompt.
 5. Antigravity: desktop shortcuts prompt.
-6. Antigravity: OmniRoute fix prompt (below).
-7. Links: ollama.com, openrouter.ai, github.com/cheaper-inference/OmniRoute, build.nvidia.com,
-   aistudio.google.com, antigravity.google.
+6. Antigravity: hide-paid-models prompt (Kalyan's text).
+7. Links: ollama.com, openrouter.ai, github.com/cheaper-inference/OmniRoute, build.nvidia.com, aistudio.google.com,
+   antigravity.google, kiro.dev.
+8. Disclaimer: free tiers change; cloud providers may see prompts; Kiro / Antigravity connections may break their terms.
 
-## Suggested fix for the OmniRoute 503 (not tested here)
+## Pickups (face cam only)
+Intro, the "house rule", the end of section 1 transition, the section 4 lines, the conclusion. Every other line is voiceover over
+the screens, with the PiP.
 
-"All targets were skipped by pre-dispatch filter" means OmniRoute had no usable model for Claude
-Code's request. The logs were mostly red and only Gemini connected, so the combo was probably
-pointing at providers that were failing (NVIDIA check failed, Kimi paid, Kiro not finished) or at
-models that can't do what Claude Code needs (tool calling, a large enough context window).
-
-Paste into Antigravity:
-
-> My OmniRoute setup gives "503 Service temporarily unavailable: all targets were skipped by
-> pre-dispatch filter" when I say hi in Claude Code via my "Free Claude Code" shortcut.
-> 1. Read the OmniRoute logs and tell me in one line why each target was skipped.
-> 2. Test every connected provider and list which ones actually work. Only Gemini (Google AI Studio
->    key) is connected on my side; NVIDIA NIM showed "Invalid" on its key check.
-> 3. Edit my combo so it only contains working free models that support tool calling and have at
->    least a 64K context window. Put a Gemini model first.
-> 4. Make sure the model name Claude Code sends (and ANTHROPIC_MODEL / the Opus, Sonnet and Haiku
->    defaults in my launcher) points at that combo.
-> 5. Restart OmniRoute, send a test "hi" through Claude Code, and show me the log line that proves
->    it worked.
-> Don't print my API keys in the chat.
-
-If NVIDIA should be in the pool, create a fresh key at build.nvidia.com and re-check it. A key that
-fails the check is usually a copy/paste issue or the validation model; try saving with the
-validation model empty.
+## Edit notes
+- Blur every API key and email.
+- Speed: installs and sign-ups 4–8×, Claude Code thinking 8–20×.
+- Claude-recorded clips (`CR-*`) are Linux/Chrome. Use them only where Kalyan's footage has no equivalent (the /model menu, the
+  notes app).
+- Audio: music bed 0.11, ducked under speech; SFX ≥ 0.9 s apart; mix to −14 LUFS, −1 dBTP.
