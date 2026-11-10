@@ -1,0 +1,316 @@
+<title>Free Claude Code Teleprompter</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: one tall reading column, a reading-line marker at 38% height, a control bar pinned to the bottom. Deliberately dark (studio prompter). */
+:root {
+  --bg: #0d0e10; --surface: #17191c; --line: #2a2d33; --fg: #f3f1ec; --muted: #8d9199;
+  --accent: #e8775f; --fc: #ffcc4d; --vo: #7cc4ff; --pause: #b48cff;
+  --read: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --ui: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --size: 44px;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--read); overflow: hidden; }
+#scroller { position: absolute; inset: 0; overflow-y: auto; scroll-behavior: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+#script { max-width: 1100px; margin: 0 auto; padding-block: 38vh 70vh; font-size: var(--size); line-height: 1.42; }
+#script.mirror { transform: scaleX(-1); }
+.scene { margin-block: 1.4em 0.4em; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-family: var(--ui); font-size: 0.42em; letter-spacing: .04em; color: var(--muted); }
+.scene b { color: var(--fg); font-weight: 700; text-transform: uppercase; }
+.chip { border-radius: 999px; padding: 3px 12px; font-weight: 700; font-size: .9em; letter-spacing: .06em; }
+.chip.fc { background: var(--fc); color: #1a1500; }
+.chip.vo { background: var(--vo); color: #001726; }
+.time { font-variant-numeric: tabular-nums; }
+p.l { margin: 0 0 .55em; text-wrap: pretty; }
+p.l strong { color: var(--accent); font-weight: 700; }
+p.l.ask { color: #e9dcff; }
+p.l.ask::before { content: "💬 "; }
+.pause { display: inline-block; margin: 0 .25em; padding: 0 .35em; border: 2px dashed var(--pause); border-radius: 8px; color: var(--pause); font-family: var(--ui); font-size: .55em; vertical-align: middle; letter-spacing: .05em; }
+.dir { display: block; margin: -.25em 0 .6em; font-family: var(--ui); font-size: .42em; color: var(--muted); font-style: normal; }
+#marker { position: fixed; left: 0; right: 0; top: 38vh; height: 0; border-top: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); pointer-events: none; z-index: 5; }
+#marker::before { content: "▶"; position: absolute; left: max(6px, env(safe-area-inset-left, 0px)); top: -0.75em; color: var(--accent); font-size: 22px; }
+#bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: color-mix(in srgb, var(--surface) 92%, transparent); border-top: 1px solid var(--line); font-family: var(--ui); transition: opacity .3s; }
+#bar.dim { opacity: .15; }
+#bar:hover, #bar:focus-within { opacity: 1; }
+button, select { font: 600 15px var(--ui); color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; cursor: pointer; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #1b0d08; min-width: 104px; }
+.grp { display: flex; align-items: center; gap: 6px; }
+.lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.val { min-width: 2.4em; text-align: center; font-variant-numeric: tabular-nums; color: var(--fg); }
+#progress { position: fixed; left: 0; top: 0; height: 3px; background: var(--accent); width: 0; z-index: 11; }
+.legend { max-width: 1100px; margin: 0 auto 1.2em; font: 500 15px/1.6 var(--ui); color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; }
+@media (max-width: 640px) { :root { --size: 30px; } button, select { padding: 8px 10px; font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { #bar { transition: none; } }
+</style>
+
+<div id="progress"></div>
+<div id="marker" aria-hidden="true"></div>
+<div id="scroller" tabindex="-1">
+  <div id="script" aria-live="off"></div>
+</div>
+
+<div id="bar" role="toolbar" aria-label="Teleprompter controls">
+  <button id="play" class="primary" aria-pressed="false">▶ Play</button>
+  <div class="grp"><span class="lbl">Speed</span><button id="slower" aria-label="Slower">−</button><span class="val" id="speedVal">3</span><button id="faster" aria-label="Faster">+</button></div>
+  <div class="grp"><span class="lbl">Text</span><button id="smaller" aria-label="Smaller text">A−</button><button id="bigger" aria-label="Bigger text">A+</button></div>
+  <label class="grp" for="jump"><span class="lbl">Jump</span><select id="jump"></select></label>
+  <button id="mirror" aria-pressed="false">Mirror</button>
+  <button id="top">⤒ Top</button>
+</div>
+
+<script>
+// Script content: [mode, scene title, time, lines]. Lines: "**bold**", "?" prefix = viewer question, "[...]" = direction, "{p}" = pause.
+const SCRIPT = [
+ ["FC","1 · Cold open","0:00",[
+  "Claude Code costs twenty dollars a month… right?","{p}",
+  "Wrong. Claude Code itself is **free**.",
+  "What costs twenty dollars is the AI inside it.",
+  "Today I'll swap that AI for **free** ones. Three different ways.",
+  "And I'll show you the bill: **zero dollars**."]],
+ ["FC","2 · The SIM card idea","0:20",[
+  "Think of your phone. The phone is just hardware. The SIM card decides who you pay.",
+  "**Claude Code is the phone.** Free. Made by Anthropic.",
+  "**The AI model is the SIM.** Anthropic's SIM costs twenty dollars a month.",
+  "But this phone accepts other SIMs.",
+  "SIM one works with **no network at all**.",
+  "SIM two is a **free cloud SIM** with a daily limit.",
+  "And SIM three is a **multi-SIM** that switches by itself when one runs out.",
+  "?Quick guess: which of these is free *and* works with no internet at all? {p}",
+  "…Keep that answer. You'll see in two minutes."]],
+ ["FC","3 · Open loop + trust","0:55",[
+  "And stay for the third one. At the end, I check the logs,",
+  "and I'll show you **real Claude Sonnet** answering through a free account. And where it breaks.",
+  "Quick note: **nobody paid for this video.** I pay for my own Claude.",
+  "I've already worked through every setup, every error and every trap, so you don't have to.",
+  "And I won't just say it's free. **I'll show you the receipt** every single time."]],
+ ["VO","4a · SIM 1: Ollama, install","1:20",[
+  "[point at ollama.com]",
+  "Okay, SIM one. Let me show you Ollama. It runs the AI on your own laptop.",
+  "Go to ollama.com, download, install… that's it. Seriously."]],
+ ["VO","4b · The buttons that matter","1:50",[
+  "Apps connects tools like Claude Code. Chat is for testing.",
+  "Settings has the one switch most people miss: **context length**.",
+  "Think of it as the AI's short-term memory.",
+  "Claude Code reads your whole project, so give it room. **64K.**"]],
+ ["VO","4c · Wi-Fi off","2:40",[
+  "Quick warm-up with a small model. \"hi\".",
+  "The first run downloads it, then it's on your laptop for good.",
+  "Now watch. **Wi-Fi… off.** [click the Wi-Fi tile]",
+  "See? Nothing. No internet.",
+  "?Be honest: do you think it can still write an app? {p}",
+  "…Let's see. I ask it to build a notes app.",
+  "It's thinking… and it writes the whole thing. **Offline.**",
+  "Wi-Fi back on, just to test it in an online compiler.",
+  "First try, wrong language. Switch to HTML… **it runs.**",
+  "No subscription, no limits, and your code never left this laptop."]],
+ ["FC","4d · Subscribe hook","3:40",[
+  "If this already saved you twenty dollars, **hit subscribe**.",
+  "There's a lot more coming, and it gets better."]],
+ ["VO","4e · Pick the right model","3:50",[
+  "Which model should you run? Don't guess. Check your hardware:",
+  "Ctrl, Shift, Escape → Performance.",
+  "?Actually, pause the video and do this on yours right now. I'll wait. {p}",
+  "…Got it? Okay, here's mine.",
+  "Mine is a normal laptop: **no graphics card**, built-in graphics, **16 GB of RAM**.",
+  "I asked ChatGPT for the best coding model for my laptop,",
+  "its exact Ollama name, and the latest one.",
+  "It said **MiMo v2.6**, a 9B model. The prompt is in the description."]],
+ ["VO","4f · Problem → an AI fixes it","4:45",[
+  "Problem: it's not in Ollama's list.",
+  "The terminal says my Ollama is too old. I update it. Still stuck.",
+  "This is where people give up.",
+  "Instead, I let another AI do it: **Antigravity**, free from Google.",
+  "One sentence. It runs the commands, asks my permission, and installs it."]],
+ ["FC","4f · The rule of this video","5:30",[
+  "Here's the rule for this whole video:",
+  "anything longer than one line, **don't type it. An AI installs it.**",
+  "If something breaks, copy the error, paste it back, and say **\"fix this\"**."]],
+ ["VO","4g · Put SIM 1 in the phone","5:45",[
+  "Now put this SIM in the phone.",
+  "In Ollama, Apps → Claude Code copies **one command**.",
+  "Paste it in a terminal, pick your model, done.",
+  "Honest truth: on a laptop like mine, local models are slow,",
+  "and small models can struggle with Claude Code's tools.",
+  "SIM one is your private, offline backup. For daily speed, let's get a cloud SIM."]],
+ ["VO","5a · SIM 2: OpenRouter","6:30",[
+  "OpenRouter is like a SIM shop: one key, dozens of AI models, and lots of them free.",
+  "Make a key: expiry seven days, **credit limit zero**. That's your seat belt.",
+  "Even a wrong click can't charge you.",
+  "Then Models → price: **free**.",
+  "Remember the filter, not the names. The list changes every month."]],
+ ["VO","5b · Insert the SIM","7:20",[
+  "To put this SIM in Claude Code, you paste a small settings block.",
+  "It's in the description. You only change one thing: **your key**."]],
+ ["VO","5c · The trap","8:00",[
+  "And this is where I almost got fooled.",
+  "My paste failed silently. I typed claude, and it opened. Looks fine, right?",
+  "?Look at the top line for a second. Spot anything wrong? {p}",
+  "…Yeah. Opus… Claude Pro. [point at the banner]",
+  "**My phone switched back to my paid SIM.**",
+  "If you see your Claude plan here, you're not on the free SIM.",
+  "Fresh terminal, one line at a time.",
+  "Now it says **openrouter/free**. That's the free SIM."]],
+ ["VO","5d · Check the bill","8:50",[
+  "The menu still says Opus, Sonnet, Haiku. Those are just seat names.",
+  "So I check the bill. Let me open OpenRouter Activity.",
+  "?Before I scroll down: how much do you think this cost me? {p}",
+  "…Three requests… **zero dollars**.",
+  "And Claude Code's own usage says thirteen cents?",
+  "That's the phone's guess at Anthropic prices. **The carrier's bill says zero.**"]],
+ ["VO","5e · The catch","10:00",[
+  "The catch? Free SIMs have a daily cap.",
+  "About **fifty requests a day** on a new account.",
+  "One Claude Code task can use ten or twenty.",
+  "Hit the cap and it's \"429\": data exhausted, come back tomorrow."]],
+ ["FC","5f · Comment hook","10:30",[
+  "Quick question before SIM three:",
+  "**which method are you trying?** Ollama, OpenRouter, or the one coming next?",
+  "Tell me in the comments."]],
+ ["VO","6a · SIM 3: the multi-SIM","10:40",[
+  "Every free SIM has a limit. Google, NVIDIA, OpenRouter… each one is small on its own.",
+  "But what if your phone held all of them,",
+  "and switched automatically when one ran out?",
+  "That's **OmniRoute**. Free, open source."]],
+ ["VO","6b · Install with one prompt","11:10",[
+  "Same rule: an AI installs it.",
+  "One prompt to Antigravity: install Claude Code if needed, install OmniRoute,",
+  "start it, open the dashboard.",
+  "First password is **CHANGEME**. Change it."]],
+ ["VO","6c · Load the SIMs","12:00",[
+  "Alright, let's load the SIMs. I'll go one by one,",
+  "and I'll show you what worked and what didn't.",
+  "**Kiro**: sign in, approve, connected. This one has **real Claude models**.",
+  "But the free allowance is small,",
+  "and OmniRoute itself flags Kiro's terms. **Your account, your call.**",
+  "**Antigravity**: Google sign-in, connected. Gemini, plus some Claude within limits.",
+  "The warning is stronger here. **Use a spare Google account.**",
+  "**NVIDIA**: free key… and it fails. \"Unable to get local issuer certificate.\"",
+  "That's my laptop's network inspecting secure traffic, not the key.",
+  "Copy, paste, \"fix this\", or use a home network.",
+  "**Gemini**: free key from Google AI Studio.",
+  "And switch on **\"Import only free models\"** wherever you see it."]],
+ ["VO","6d · One combo","14:30",[
+  "Now combine them into one combo. I named mine **Claude**.",
+  "First Gemini, then Kiro's Claude Sonnet, then backups behind them.",
+  "Smart routing picks the best SIM for each request, so I never switch by hand.",
+  "One OmniRoute key unlocks the whole combo."]],
+ ["VO","6e · Two buttons on the desktop","15:30",[
+  "One more prompt: two desktop shortcuts.",
+  "**\"Free Claude Code\"** starts OmniRoute and opens Claude Code through it.",
+  "**\"OmniRoute Dashboard\"** opens the dashboard.",
+  "And hide the paid models, so the model menu only shows free ones.",
+  "On my test machine, that's exactly what it shows."]],
+ ["VO","6f · Moment of truth","16:15",[
+  "Moment of truth. **Double-click.**",
+  "OmniRoute running… Claude Code open. \"Which model are you?\" {p}",
+  "…Error 503. Okay. Not what I wanted on camera, but this is real.",
+  "?Most people would quit right here. What would you do? {p}",
+  "…Remember the rule: don't panic.",
+  "OmniRoute had paused Kiro after some errors. This is real life with free SIMs. Ask again.",
+  "It answers: \"Claude.\" But a model's word isn't proof. **Check the bill.**",
+  "Logs: **claude-sonnet-4.5… provider Kiro… combo Claude… status 200.** [zoom the row]",
+  "That's **real Claude Sonnet**, through a free account."]],
+ ["VO","6g · Real test: build an app","17:15",[
+  "Talk is cheap, so let's build something. Watch this part closely.",
+  "On my test machine: \"Design me a simple personal note-taking application.\"",
+  "It doesn't just start typing. It asks: tech stack? features? storage?",
+  "Then shows a plan.",
+  "Real Claude did the planning, until its free limit ran out.",
+  "Then the multi-SIM kicked in: **free NVIDIA took over by itself**, and kept building.",
+  "Honest truth: the first version didn't work.",
+  "It took fix rounds, and a final clean-up. But here it is:",
+  "notes, tags, Markdown, search, and it survives a refresh. **Zero dollars.**"]],
+ ["FC","7 · Which SIM is for you","18:30",[
+  "Let's be real. Anyone selling **\"unlimited free Claude\"** is lying.",
+  "What you get is the real Claude Code phone, a small taste of real Claude,",
+  "and free SIMs for everything else. For most people, that's plenty.",
+  "?Now think about your own laptop and how you work. Which SIM fits you? {p}",
+  "Hold that answer, you'll tell me in a minute.",
+  "Want privacy, or work offline? **SIM 1, Ollama.**",
+  "No good hardware, and want speed today? **SIM 2, OpenRouter.**",
+  "Want it to keep going when one runs out? **SIM 3, OmniRoute.**"]],
+ ["FC","7 · The 4 rules","19:10",[
+  "Four rules.",
+  "One: **nothing is unlimited.** Every free SIM has a cap.",
+  "Two: **cloud SIMs see what you send.** Client code and passwords stay on SIM 1.",
+  "Three: some SIMs, like Kiro and Antigravity, are **against those services' terms**. Your account, your call.",
+  "Four: **things will break.** Copy, paste, \"fix this\".",
+  "And always **check the bill**, not the label."]],
+ ["FC","8 · High-energy close","19:45",[
+  "So everyone said Claude Code costs twenty dollars a month.",
+  "We just ran the real Claude Code on three free SIMs:",
+  "one with no internet, one in the cloud, and one that switches by itself.",
+  "**Same phone. Zero bill.** {p}",
+  "Every prompt and the settings block are **in the description**. Copy, paste, done.",
+  "Remember the SIM you picked a minute ago?",
+  "**Tell me in the comments** which method you're trying first. I read them.",
+  "And if this saved you twenty dollars a month, **subscribe to AI with Kalyan**.",
+  "I test the AI tools, so you don't have to."]],
+];
+
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function fmt(line){
+  let h = esc(line).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")
+    .replace(/\{p\}/g,'<span class="pause">⏸ pause</span>');
+  return h;
+}
+const root = document.getElementById("script"), jump = document.getElementById("jump");
+root.insertAdjacentHTML("beforeend",
+ `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span>💬 ask the viewer</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
+SCRIPT.forEach(([mode,title,time,lines],i)=>{
+  const id = "s"+i;
+  root.insertAdjacentHTML("beforeend",
+   `<div class="scene" id="${id}"><span class="chip ${mode.toLowerCase()}">${mode==="FC"?"FACE CAM":"VOICEOVER"}</span><b>${esc(title)}</b><span class="time">${time}</span></div>`);
+  lines.forEach(l=>{
+    if (l === "{p}") { root.insertAdjacentHTML("beforeend",'<p class="l"><span class="pause">⏸ pause</span></p>'); return; }
+    if (/^\[.*\]$/.test(l)) { root.insertAdjacentHTML("beforeend",`<em class="dir">${esc(l)}</em>`); return; }
+    let ask = l.startsWith("?"); if (ask) l = l.slice(1);
+    const dir = l.match(/\s*\[(.+?)\]\s*$/); if (dir) l = l.replace(dir[0],"");
+    root.insertAdjacentHTML("beforeend",`<p class="l${ask?" ask":""}">${fmt(l)}</p>`+(dir?`<em class="dir">[${esc(dir[1])}]</em>`:""));
+  });
+  jump.insertAdjacentHTML("beforeend",`<option value="${id}">${time} · ${esc(title)}</option>`);
+});
+
+const sc = document.getElementById("scroller"), bar = document.getElementById("bar"), prog = document.getElementById("progress");
+let store = {}; try { store = JSON.parse(localStorage.getItem("tp") || "{}"); } catch(e) {}
+let speed = store.speed || 3, size = store.size || 0, playing = false, last = 0, carry = 0, wake = null;
+const save = () => { try { localStorage.setItem("tp", JSON.stringify({speed, size})); } catch(e) {} };
+function applySize(){ if (size) document.documentElement.style.setProperty("--size", size+"px"); }
+applySize();
+document.getElementById("speedVal").textContent = speed;
+function frame(t){
+  if (!playing) return;
+  const dt = last ? (t - last) / 1000 : 0; last = t;
+  carry += speed * 14 * dt;            // speed 1–10 ≈ 14–140 px/s
+  const px = Math.floor(carry); if (px) { sc.scrollTop += px; carry -= px; }
+  requestAnimationFrame(frame);
+}
+async function setPlay(p){
+  playing = p; last = 0;
+  const b = document.getElementById("play"); b.textContent = p ? "❚❚ Pause" : "▶ Play"; b.setAttribute("aria-pressed", p);
+  bar.classList.toggle("dim", p);
+  if (p) { requestAnimationFrame(frame); try { wake = await navigator.wakeLock?.request("screen"); } catch(e) {} }
+  else { try { await wake?.release(); } catch(e) {} wake = null; }
+}
+document.getElementById("play").onclick = () => setPlay(!playing);
+document.getElementById("faster").onclick = () => { speed = Math.min(10, speed+1); document.getElementById("speedVal").textContent = speed; save(); };
+document.getElementById("slower").onclick = () => { speed = Math.max(1, speed-1); document.getElementById("speedVal").textContent = speed; save(); };
+const cur = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"));
+document.getElementById("bigger").onclick = () => { size = Math.min(96, cur()+4); applySize(); save(); };
+document.getElementById("smaller").onclick = () => { size = Math.max(20, cur()-4); applySize(); save(); };
+document.getElementById("mirror").onclick = e => { const m = root.classList.toggle("mirror"); e.currentTarget.setAttribute("aria-pressed", m); };
+document.getElementById("top").onclick = () => { sc.scrollTop = 0; };
+jump.onchange = () => { const el = document.getElementById(jump.value); sc.scrollTop += el.getBoundingClientRect().top - window.innerHeight*0.38 + 10; };
+sc.addEventListener("scroll", () => { prog.style.width = (100 * sc.scrollTop / Math.max(1, sc.scrollHeight - sc.clientHeight)) + "%"; });
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { e.preventDefault(); setPlay(!playing); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); speed = Math.min(10, speed+1); document.getElementById("speedVal").textContent = speed; save(); }
+  else if (e.key === "ArrowDown") { e.preventDefault(); speed = Math.max(1, speed-1); document.getElementById("speedVal").textContent = speed; save(); }
+  else if (e.key === "ArrowLeft") { sc.scrollTop -= 120; }
+  else if (e.key === "ArrowRight") { sc.scrollTop += 120; }
+});
+document.addEventListener("visibilitychange", async () => { if (playing && document.visibilityState === "visible") { try { wake = await navigator.wakeLock?.request("screen"); } catch(e) {} } });
+</script>
