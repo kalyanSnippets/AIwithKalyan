@@ -23,6 +23,11 @@ body { background: var(--bg); color: var(--fg); font-family: var(--read); overfl
 .chip.vo { background: var(--vo); color: #001726; }
 .time { font-variant-numeric: tabular-nums; }
 p.l { margin: 0 0 .55em; text-wrap: pretty; }
+p.l { margin: 0 0 1em; }
+.ex { background: color-mix(in srgb, var(--vo) 13%, transparent); border-radius: 6px; padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.q { margin-right: .15em; }
+span.dir { font-family: var(--ui); font-size: .5em; color: var(--muted); vertical-align: middle; }
+
 p.l strong { color: var(--accent); font-weight: 700; }
 p.l.ask { color: #e9dcff; }
 p.l.ask::before { content: "💬 "; }
@@ -61,215 +66,126 @@ button.primary { background: var(--accent); border-color: var(--accent); color: 
 </div>
 
 <script>
-// Script content: [mode, scene title, time, lines]. Lines: "**bold**", "?" prefix = viewer question, "[...]" = direction, "{p}" = pause.
+// Continuous script. Each scene: [mode, title, time, [paragraphs]]
+// Markup: **key words** · {i}…{/i} = first-time "what is it" explanation · {q} = question to the viewer · {p} = pause · [..] = what to do on screen
 const SCRIPT = [
  ["FC","1 · Cold open","0:00",[
-  "Claude Code costs twenty dollars a month… right?","{p}",
-  "Wrong. Claude Code itself is **free**.",
-  "What costs twenty dollars is the AI inside it.",
-  "Today I'll swap that AI for **free** ones. Three different ways.",
-  "And I'll show you the bill: **zero dollars**."]],
- ["FC","2 · The SIM card idea","0:20",[
-  "Think of your phone. The phone is just hardware. The SIM card decides who you pay.",
-  "**Claude Code is the phone.** Free. Made by Anthropic.",
-  "**The AI model is the SIM.** Anthropic's SIM costs twenty dollars a month.",
-  "But this phone accepts other SIMs.",
-  "SIM one works with **no network at all**.",
-  "SIM two is a **free cloud SIM** with a daily limit.",
-  "And SIM three is a **multi-SIM** that switches by itself when one runs out.",
-  "?Quick guess: which of these is free *and* works with no internet at all? {p}",
-  "…Keep that answer. You'll see in two minutes."]],
- ["FC","3 · Open loop + trust","0:55",[
-  "And stay for the third one. At the end, I check the logs,",
-  "and I'll show you **real Claude Sonnet** answering through a free account. And where it breaks.",
-  "Quick note: **nobody paid for this video.** I pay for my own Claude.",
-  "I've already worked through every setup, every error and every trap, so you don't have to.",
-  "And I won't just say it's free. **I'll show you the receipt** every single time."]],
- ["VO","4a · SIM 1: Ollama, install","1:20",[
-  "[point at ollama.com]",
-  "Okay, SIM one. Let me show you Ollama. It runs the AI on your own laptop.",
-  "Go to ollama.com, download, install… that's it. Seriously."]],
- ["VO","4b · The buttons that matter","1:50",[
-  "Apps connects tools like Claude Code. Chat is for testing.",
-  "Settings has the one switch most people miss: **context length**.",
-  "Think of it as the AI's short-term memory.",
-  "Claude Code reads your whole project, so give it room. **64K.**"]],
+  "Claude Code costs twenty dollars a month, right? {p} Wrong. **Claude Code itself is free.** What you're actually paying twenty dollars for is the AI brain running inside it. So today I'm going to swap that brain for **free ones**, three completely different ways, and at every step I'll show you the actual bill. Spoiler: it says **zero dollars**."
+ ]],
+ ["FC","2 · The phone and the SIM","0:20",[
+  "Here's the easiest way to think about it. Think about your phone. The phone is just the hardware, and the SIM card decides who you pay every month. {i}**Claude Code is the phone.** It's a free coding assistant from Anthropic, the company behind Claude, that lives in your terminal and can read your files, write code and run commands for you.{/i} {i}**The AI model is the SIM**, the brain that actually thinks and answers.{/i} Anthropic's own SIM costs twenty dollars a month.",
+  "But here's the thing: this phone accepts other SIMs. SIM one works with **no network at all**. SIM two is a **free cloud SIM** with a daily limit. And SIM three is a **multi-SIM** that switches to another free SIM by itself when one runs out. {q} So, quick guess: which one of these do you think is free *and* works with no internet at all? {p} Keep that answer in your head, because in about two minutes you're going to see it happen."
+ ]],
+ ["FC","3 · Stay for SIM three + why trust me","0:55",[
+  "And definitely stay for the third one, because at the end I open the logs and show you **real Claude Sonnet** answering through a free account, and I'll also show you exactly where it breaks. Quick note before we start: **nobody paid for this video**, and I pay for my own Claude. I've already worked through every setup, every error and every trap, so you don't have to. And I'm not going to just tell you it's free. **I'll show you the receipt every single time.** So let's go."
+ ]],
+ ["VO","4a · SIM 1: Ollama","1:20",[
+  "Okay, SIM one, and it's called Ollama. {i}**Ollama** is a free app that downloads AI models and runs them right on your own laptop, kind of like a media player, but for AI.{/i} Nothing goes to the cloud. You just go to ollama.com, hit download, run the installer, and that's literally it. Seriously, that's the whole install. [point at the download button]"
+ ]],
+ ["VO","4b · The switch most people miss","1:50",[
+  "Once it's open, you'll see three things. **Apps** is where you connect coding tools like Claude Code with one click. **Chat** is where you can talk to a model to test it. And **Settings** has the one switch most people miss, which is **context length**. {i}Context length is basically the AI's short-term memory: how much of your conversation and your project it can hold in its head at once.{/i} Claude Code reads a lot of your files before it changes anything, so if the memory is too small, it loses track halfway. So I slide it up to **64K**, and that's the fix. [drag the slider]"
+ ]],
  ["VO","4c · Wi-Fi off","2:40",[
-  "Quick warm-up with a small model. \"hi\".",
-  "The first run downloads it, then it's on your laptop for good.",
-  "Now watch. **Wi-Fi… off.** [click the Wi-Fi tile]",
-  "See? Nothing. No internet.",
-  "?Be honest: do you think it can still write an app? {p}",
-  "…Let's see. I ask it to build a notes app.",
-  "It's thinking… and it writes the whole thing. **Offline.**",
-  "Wi-Fi back on, just to test it in an online compiler.",
-  "First try, wrong language. Switch to HTML… **it runs.**",
-  "No subscription, no limits, and your code never left this laptop."]],
+  "Now let's warm it up with a small model. {i}Models come in sizes like 4B or 9B, which means four or nine **billion** parameters. Bigger usually means smarter, but slower and hungrier for memory.{/i} I pick a small one, Qwen 3.5 4B, and just say hi. The first message downloads the model, so it takes a minute, but after that it lives on your laptop for good.",
+  "And now watch this. I'm turning the **Wi-Fi off**. [click the Wi-Fi tile] See? Nothing. No internet at all. {q} So be honest, do you think it can still write an app? {p} Let's find out. I ask it to make a simple notes app, and it's thinking… thinking… and it writes the whole thing. **Completely offline.** Every single word came from a model sitting on this laptop.",
+  "Then I turn the Wi-Fi back on just to test the code in a free online compiler. First try, I picked the wrong language, so I switch it to HTML, and **it runs**. Is it pretty? No. But a laptop with no internet just wrote working software, with no subscription, no usage limits, and your code never left your computer."
+ ]],
  ["FC","4d · Subscribe hook","3:40",[
-  "If this already saved you twenty dollars, **hit subscribe**.",
-  "There's a lot more coming, and it gets better."]],
+  "And honestly, if that alone just saved you twenty dollars a month, **hit subscribe**, because it only gets better from here."
+ ]],
  ["VO","4e · Pick the right model","3:50",[
-  "Which model should you run? Don't guess. Check your hardware:",
-  "Ctrl, Shift, Escape → Performance.",
-  "?Actually, pause the video and do this on yours right now. I'll wait. {p}",
-  "…Got it? Okay, here's mine.",
-  "Mine is a normal laptop: **no graphics card**, built-in graphics, **16 GB of RAM**.",
-  "I asked ChatGPT for the best coding model for my laptop,",
-  "its exact Ollama name, and the latest one.",
-  "It said **MiMo v2.6**, a 9B model. The prompt is in the description."]],
+  "Now, which model should you actually run? Don't guess, check your hardware. Press Control, Shift and Escape, and open the Performance tab. {q} Actually, pause the video and do this on your laptop right now. I'll wait. {p} Got it? Okay, here's mine. Mine is a pretty normal laptop: **no separate graphics card**, just the built-in graphics, and **16 GB of RAM**. {i}RAM is your computer's working memory, and for local AI it decides how big a model you can run.{/i}",
+  "So I asked ChatGPT for the best coding model for my laptop, with its exact Ollama name, and I asked for the **latest** one, because new models come out literally every week. And it came back with **MiMo v2.6**, a 9B model. The exact prompt I used is in the description."
+ ]],
  ["VO","4f · Problem → an AI fixes it","4:45",[
-  "Problem: it's not in Ollama's list.",
-  "The terminal says my Ollama is too old. I update it. Still stuck.",
-  "This is where people give up.",
-  "Instead, I let another AI do it: **Antigravity**, free from Google.",
-  "One sentence. It runs the commands, asks my permission, and installs it."]],
+  "And this is where I hit the first problem. The model isn't in Ollama's list. So I tried installing it in the terminal, {i}the black text window where you type commands for your computer,{/i} and it told me my Ollama was too old. I updated it, and I was still stuck. And this is exactly where most people give up and close the laptop.",
+  "So instead, I let another AI do it for me. It's called **Antigravity**. {i}Antigravity is a free AI coding app from Google that can actually work on your computer: it opens the terminal, runs commands, reads the errors and fixes them.{/i} I just gave it one sentence: install this model and set it up so it works with Ollama. It asks my permission before each command, I read and allow, and a few minutes later it's installed and tested."
+ ]],
  ["FC","4f · The rule of this video","5:30",[
-  "Here's the rule for this whole video:",
-  "anything longer than one line, **don't type it. An AI installs it.**",
-  "If something breaks, copy the error, paste it back, and say **\"fix this\"**."]],
+  "And that's going to be the rule for this whole video. **Anything longer than one line, you don't type it yourself. An AI installs it.** And if something breaks, you just copy the error, paste it back, and say **\"fix this\"**."
+ ]],
  ["VO","4g · Put SIM 1 in the phone","5:45",[
-  "Now put this SIM in the phone.",
-  "In Ollama, Apps → Claude Code copies **one command**.",
-  "Paste it in a terminal, pick your model, done.",
-  "Honest truth: on a laptop like mine, local models are slow,",
-  "and small models can struggle with Claude Code's tools.",
-  "SIM one is your private, offline backup. For daily speed, let's get a cloud SIM."]],
+  "Now let's put this SIM into the phone. In Ollama, go to Apps and click Claude Code, and that copies **one command** for you. Make a folder, open a terminal inside it, paste that command, pick your model, and you're running Claude Code on your own laptop.",
+  "But let me be honest with you. On a laptop like mine, local models are slow, and small models can struggle with all the tools Claude Code uses. So think of SIM one as your **private, offline backup**. For everyday speed, we need something stronger. So let's get a cloud SIM."
+ ]],
  ["VO","5a · SIM 2: OpenRouter","6:30",[
-  "OpenRouter is like a SIM shop: one key, dozens of AI models, and lots of them free.",
-  "Make a key: expiry seven days, **credit limit zero**. That's your seat belt.",
-  "Even a wrong click can't charge you.",
-  "Then Models → price: **free**.",
-  "Remember the filter, not the names. The list changes every month."]],
+  "SIM two is called OpenRouter. {i}**OpenRouter** is like a SIM shop for AI: one account and one key give you access to dozens of AI models from different companies, and a lot of them are completely free.{/i} The difference is that these models run on their servers, not on your laptop, so they're much faster.",
+  "Sign up, no credit card needed, and create an **API key**. {i}An API key is basically a password that lets an app like Claude Code use your account.{/i} I set it to expire in seven days, and I set the **credit limit to zero**. That's your seat belt: even if you click the wrong thing, it physically can't charge you. Copy the key, because it's shown only once, and treat it like a password.",
+  "Then go to Models and set the price filter to **free**. You'll see the free ones marked with \"free\". And here's a tip: this list changes every month, so don't memorise the names. **Remember the filter.**"
+ ]],
  ["VO","5b · Insert the SIM","7:20",[
-  "To put this SIM in Claude Code, you paste a small settings block.",
-  "It's in the description. You only change one thing: **your key**."]],
+  "To put this SIM into Claude Code, you paste a small block of settings into your terminal. {i}These settings simply tell Claude Code: don't talk to Anthropic, talk to OpenRouter, and here's my key.{/i} The whole block is in the description, and you only change one thing in it: your key goes between these quotes. The last three lines point Claude Code's Opus, Sonnet and Haiku slots at free models instead."
+ ]],
  ["VO","5c · The trap","8:00",[
-  "And this is where I almost got fooled.",
-  "My paste failed silently. I typed claude, and it opened. Looks fine, right?",
-  "?Look at the top line for a second. Spot anything wrong? {p}",
-  "…Yeah. Opus… Claude Pro. [point at the banner]",
-  "**My phone switched back to my paid SIM.**",
-  "If you see your Claude plan here, you're not on the free SIM.",
-  "Fresh terminal, one line at a time.",
-  "Now it says **openrouter/free**. That's the free SIM."]],
+  "And this is where I almost got fooled. My paste actually failed, and I didn't even notice. I typed claude, it opened, and everything looked fine. {q} Look at the top line for a second. Can you spot what's wrong? {p} Yeah. It says Opus and **Claude Pro**. [point at the banner] My phone quietly switched back to my **paid SIM**, my own Claude subscription. So if you ever see your Claude plan on this line, you're **not** on the free SIM.",
+  "So I opened a fresh terminal and entered the settings one line at a time, and now it says **openrouter/free**, API usage billing. That's the free SIM."
+ ]],
  ["VO","5d · Check the bill","8:50",[
-  "The menu still says Opus, Sonnet, Haiku. Those are just seat names.",
-  "So I check the bill. Let me open OpenRouter Activity.",
-  "?Before I scroll down: how much do you think this cost me? {p}",
-  "…Three requests… **zero dollars**.",
-  "And Claude Code's own usage says thirteen cents?",
-  "That's the phone's guess at Anthropic prices. **The carrier's bill says zero.**"]],
+  "Now, the model menu still shows Opus, Sonnet and Haiku, but those are just the names of the slots, not what's actually answering. So I asked it which model it is, and it said it's a free model on OpenRouter. But a model's word isn't proof, so let's check the bill. I open OpenRouter's Activity page. {q} Before I scroll down, how much do you think this cost me? {p} Three requests, and **zero dollars**.",
+  "And if Claude Code's own usage screen shows you something like thirteen cents, relax. That's just the phone guessing at Anthropic's prices. **The carrier's bill says zero**, and that's the one that counts."
+ ]],
  ["VO","5e · The catch","10:00",[
-  "The catch? Free SIMs have a daily cap.",
-  "About **fifty requests a day** on a new account.",
-  "One Claude Code task can use ten or twenty.",
-  "Hit the cap and it's \"429\": data exhausted, come back tomorrow."]],
+  "But of course there's a catch. Free SIMs have a daily cap, about **fifty requests a day** on a new account. That sounds like a lot, until you realise one Claude Code task can use ten or twenty requests, because it reads files, writes them and checks its own work. Hit the cap and you'll see error **429**. {i}429 is just the server saying \"you've used up your free quota, come back later\", like your data running out.{/i}"
+ ]],
  ["FC","5f · Comment hook","10:30",[
-  "Quick question before SIM three:",
-  "**which method are you trying?** Ollama, OpenRouter, or the one coming next?",
-  "Tell me in the comments."]],
+  "So quick question before SIM three: which method are you leaning towards so far, Ollama or OpenRouter? Or are you waiting for the next one? **Tell me in the comments**, I actually read them."
+ ]],
  ["VO","6a · SIM 3: the multi-SIM","10:40",[
-  "Every free SIM has a limit. Google, NVIDIA, OpenRouter… each one is small on its own.",
-  "But what if your phone held all of them,",
-  "and switched automatically when one ran out?",
-  "That's **OmniRoute**. Free, open source."]],
+  "Every free SIM has a limit. Google, NVIDIA, OpenRouter, each one on its own is small. But what if your phone could hold all of them at once, and switch to the next one automatically when one runs out? That's exactly what **OmniRoute** does. {i}**OmniRoute** is a free, open-source app, which means anyone can see and check its code on GitHub. It sits between Claude Code and all your AI providers, and routes each request to one that's free and working.{/i}"
+ ]],
  ["VO","6b · Install with one prompt","11:10",[
-  "Same rule: an AI installs it.",
-  "One prompt to Antigravity: install Claude Code if needed, install OmniRoute,",
-  "start it, open the dashboard.",
-  "First password is **CHANGEME**. Change it."]],
+  "And we install it the same way, with our rule: an AI does it. One prompt to Antigravity: install Claude Code if it isn't there, install OmniRoute, start it, and open the dashboard. {i}The dashboard is just OmniRoute's control panel in your browser.{/i} It asks for permission a lot, so read each one before you allow it. And the first time you log in, the password is **CHANGEME**. So change it."
+ ]],
  ["VO","6c · Load the SIMs","12:00",[
-  "Alright, let's load the SIMs. I'll go one by one,",
-  "and I'll show you what worked and what didn't.",
-  "**Kiro**: sign in, approve, connected. This one has **real Claude models**.",
-  "But the free allowance is small,",
-  "and OmniRoute itself flags Kiro's terms. **Your account, your call.**",
-  "**Antigravity**: Google sign-in, connected. Gemini, plus some Claude within limits.",
-  "The warning is stronger here. **Use a spare Google account.**",
-  "**NVIDIA**: free key… and it fails. \"Unable to get local issuer certificate.\"",
-  "That's my laptop's network inspecting secure traffic, not the key.",
-  "Copy, paste, \"fix this\", or use a home network.",
-  "**Gemini**: free key from Google AI Studio.",
-  "And switch on **\"Import only free models\"** wherever you see it."]],
+  "Alright, now let's load the SIMs. I'll go one by one, and I'll show you what worked and what didn't.",
+  "First, **Kiro**. {i}Kiro is Amazon's AI coding app, and its free plan includes real Claude models.{/i} Sign in, approve, and it's connected. Now, the free allowance is small, and during sign-up it even opened a \"subscription required\" page. And OmniRoute itself flags that using Kiro this way may go against Kiro's terms. **So it's your account, and your call.**",
+  "Next, **Antigravity**, the same Google app from earlier, but this time as a SIM. Sign in with Google and you get Gemini, plus some Claude models within limits. The warning here is even stronger, so please **use a spare Google account**, not your main one.",
+  "Then **NVIDIA**. {i}NVIDIA, the graphics card company, also gives free access to a bunch of AI models through build.nvidia.com.{/i} I made a free key, and it failed: \"unable to get local issuer certificate\". {i}That basically means my laptop's network was checking all the secure traffic, which work laptops often do, so the connection couldn't be trusted.{/i} So it wasn't the key. On a home network it should be fine, and if it isn't, copy, paste, fix this.",
+  "And **Gemini**. {i}Gemini is Google's AI model, and Google AI Studio gives you a free key for it.{/i} One more tip: wherever you see **\"Import only free models\"**, switch it on."
+ ]],
  ["VO","6d · One combo","14:30",[
-  "Now combine them into one combo. I named mine **Claude**.",
-  "First Gemini, then Kiro's Claude Sonnet, then backups behind them.",
-  "Smart routing picks the best SIM for each request, so I never switch by hand.",
-  "One OmniRoute key unlocks the whole combo."]],
+  "Now we combine all of these into one **combo**. {i}A combo is just OmniRoute's name for a team of models that work together, with an order of who answers first and who takes over next.{/i} I named mine **Claude**. First Gemini, then Kiro's Claude Sonnet, then more backups behind them. And I set it to smart routing, so it picks the best SIM for each request and I never switch anything by hand. Then I create **one OmniRoute key**, a single master key that unlocks the whole combo."
+ ]],
  ["VO","6e · Two buttons on the desktop","15:30",[
-  "One more prompt: two desktop shortcuts.",
-  "**\"Free Claude Code\"** starts OmniRoute and opens Claude Code through it.",
-  "**\"OmniRoute Dashboard\"** opens the dashboard.",
-  "And hide the paid models, so the model menu only shows free ones.",
-  "On my test machine, that's exactly what it shows."]],
+  "One more prompt to Antigravity, and I get two shortcuts on my desktop. **\"Free Claude Code\"** checks that OmniRoute is running, starts it if it isn't, and opens Claude Code through it. **\"OmniRoute Dashboard\"** opens the control panel. And then one last fix: hide the paid models, so Claude Code's model menu only shows you free ones and you can't pick a paid one by accident. On my test machine, that's exactly what the menu shows."
+ ]],
  ["VO","6f · Moment of truth","16:15",[
-  "Moment of truth. **Double-click.**",
-  "OmniRoute running… Claude Code open. \"Which model are you?\" {p}",
-  "…Error 503. Okay. Not what I wanted on camera, but this is real.",
-  "?Most people would quit right here. What would you do? {p}",
-  "…Remember the rule: don't panic.",
-  "OmniRoute had paused Kiro after some errors. This is real life with free SIMs. Ask again.",
-  "It answers: \"Claude.\" But a model's word isn't proof. **Check the bill.**",
-  "Logs: **claude-sonnet-4.5… provider Kiro… combo Claude… status 200.** [zoom the row]",
-  "That's **real Claude Sonnet**, through a free account."]],
+  "Okay, moment of truth. **Double-click.** OmniRoute is running, Claude Code opens, and I ask: which model are you? {p} And… error **503**. {i}503 means the service is temporarily unavailable.{/i} Okay. Not what I wanted on camera, but this is real. {q} Most people would quit right here. What would you do? {p} Remember the rule: don't panic. OmniRoute had paused Kiro after a few errors. This is real life with free SIMs. So I ask again.",
+  "And now it answers: \"Claude\". But like I said, a model's word isn't proof. **Let's check the bill.** I open the OmniRoute logs, and look at this line: **claude-sonnet-4.5, provider Kiro, combo Claude, status 200**. [zoom the row] {i}Status 200 just means success.{/i} That's **real Claude Sonnet**, answering through a free account."
+ ]],
  ["VO","6g · Real test: build an app","17:15",[
-  "Talk is cheap, so let's build something. Watch this part closely.",
-  "On my test machine: \"Design me a simple personal note-taking application.\"",
-  "It doesn't just start typing. It asks: tech stack? features? storage?",
-  "Then shows a plan.",
-  "Real Claude did the planning, until its free limit ran out.",
-  "Then the multi-SIM kicked in: **free NVIDIA took over by itself**, and kept building.",
-  "Honest truth: the first version didn't work.",
-  "It took fix rounds, and a final clean-up. But here it is:",
-  "notes, tags, Markdown, search, and it survives a refresh. **Zero dollars.**"]],
+  "But talk is cheap, so let's build something real, and watch this part closely. On my test machine, I asked: design me a simple personal note-taking application. And look, it doesn't just start typing code. It's in **plan mode**, {i}a Claude Code mode where it plans and asks you questions before it writes anything,{/i} so it asks me: what tech stack, which features, and how should notes be stored? Then it shows me a plan, and only then does it start building.",
+  "And here's the best part. **Real Claude did the planning**, until its free limit ran out, and then the multi-SIM kicked in: **free NVIDIA took over by itself** and kept building. I didn't switch anything. Now, honest truth: the first version didn't work. It took a few fix rounds and a final clean-up. But here it is: notes, tags, Markdown, search, and it even survives a refresh. And the bill? **Zero dollars.**"
+ ]],
  ["FC","7 · Which SIM is for you","18:30",[
-  "Let's be real. Anyone selling **\"unlimited free Claude\"** is lying.",
-  "What you get is the real Claude Code phone, a small taste of real Claude,",
-  "and free SIMs for everything else. For most people, that's plenty.",
-  "?Now think about your own laptop and how you work. Which SIM fits you? {p}",
-  "Hold that answer, you'll tell me in a minute.",
-  "Want privacy, or work offline? **SIM 1, Ollama.**",
-  "No good hardware, and want speed today? **SIM 2, OpenRouter.**",
-  "Want it to keep going when one runs out? **SIM 3, OmniRoute.**"]],
+  "So let's be real for a second. Anyone selling you \"**unlimited free Claude**\" is lying to you. What you actually get is the real Claude Code phone, a small taste of real Claude, and free SIMs for everything else. And for most people, that's honestly plenty.",
+  "{q} Now think about your own laptop and how you work. Which SIM fits you? {p} Hold that answer, because you're going to tell me in a minute. If you care about privacy, or you want it to work offline, that's **SIM one, Ollama**. If you don't have strong hardware and you want speed today, that's **SIM two, OpenRouter**. And if you want Claude Code to keep going even when one provider runs out, that's **SIM three, OmniRoute**."
+ ]],
  ["FC","7 · The 4 rules","19:10",[
-  "Four rules.",
-  "One: **nothing is unlimited.** Every free SIM has a cap.",
-  "Two: **cloud SIMs see what you send.** Client code and passwords stay on SIM 1.",
-  "Three: some SIMs, like Kiro and Antigravity, are **against those services' terms**. Your account, your call.",
-  "Four: **things will break.** Copy, paste, \"fix this\".",
-  "And always **check the bill**, not the label."]],
+  "And before you try any of this, four quick rules. One: **nothing is unlimited**, every free SIM has a cap. Two: **cloud SIMs can see what you send**, so client code and passwords stay on SIM one. Three: some SIMs, like Kiro and Antigravity, **may go against those services' terms**, so it's your account and your call. And four: **things will break**, and that's normal: copy, paste, fix this. And whatever the menu says, **always check the bill, not the label.**"
+ ]],
  ["FC","8 · High-energy close","19:45",[
-  "So everyone said Claude Code costs twenty dollars a month.",
-  "We just ran the real Claude Code on three free SIMs:",
-  "one with no internet, one in the cloud, and one that switches by itself.",
-  "**Same phone. Zero bill.** {p}",
-  "Every prompt and the settings block are **in the description**. Copy, paste, done.",
-  "Remember the SIM you picked a minute ago?",
-  "**Tell me in the comments** which method you're trying first. I read them.",
-  "And if this saved you twenty dollars a month, **subscribe to AI with Kalyan**.",
-  "I test the AI tools, so you don't have to."]],
+  "So everyone told you Claude Code costs twenty dollars a month. And today we ran the real Claude Code on three free SIMs: one that works with no internet, one that runs in the cloud, and one that switches by itself when one runs out. **Same phone. Zero bill.** {p}",
+  "Every prompt and the settings block are **in the description**, so you can just copy, paste and go. Now remember the SIM you picked a minute ago? **Drop it in the comments** and tell me which one you're trying first, I really do read them. And if this just saved you twenty dollars a month, **subscribe to AI with Kalyan**, because I test these AI tools so you don't have to. See you in the next one."
+ ]],
 ];
 
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-function fmt(line){
-  let h = esc(line).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")
-    .replace(/\{p\}/g,'<span class="pause">⏸ pause</span>');
-  return h;
+function fmt(t){
+  return esc(t).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")
+    .replace(/\{i\}/g,'<span class="ex">').replace(/\{\/i\}/g,'</span>')
+    .replace(/\{q\}/g,'<span class="q">💬</span>')
+    .replace(/\{p\}/g,'<span class="pause">⏸ pause</span>')
+    .replace(/\[(.+?)\]/g,'<span class="dir">[$1]</span>');
 }
 const root = document.getElementById("script"), jump = document.getElementById("jump");
 root.insertAdjacentHTML("beforeend",
- `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span>💬 ask the viewer</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
+ `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span>💬 ask the viewer</span><span><span class="ex" style="font-size:15px;padding:1px 6px">tinted</span> = first-time explanation</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
 SCRIPT.forEach(([mode,title,time,lines],i)=>{
   const id = "s"+i;
   root.insertAdjacentHTML("beforeend",
    `<div class="scene" id="${id}"><span class="chip ${mode.toLowerCase()}">${mode==="FC"?"FACE CAM":"VOICEOVER"}</span><b>${esc(title)}</b><span class="time">${time}</span></div>`);
-  lines.forEach(l=>{
-    if (l === "{p}") { root.insertAdjacentHTML("beforeend",'<p class="l"><span class="pause">⏸ pause</span></p>'); return; }
-    if (/^\[.*\]$/.test(l)) { root.insertAdjacentHTML("beforeend",`<em class="dir">${esc(l)}</em>`); return; }
-    let ask = l.startsWith("?"); if (ask) l = l.slice(1);
-    const dir = l.match(/\s*\[(.+?)\]\s*$/); if (dir) l = l.replace(dir[0],"");
-    root.insertAdjacentHTML("beforeend",`<p class="l${ask?" ask":""}">${fmt(l)}</p>`+(dir?`<em class="dir">[${esc(dir[1])}]</em>`:""));
-  });
+  lines.forEach(t=>root.insertAdjacentHTML("beforeend",`<p class="l">${fmt(t)}</p>`));
   jump.insertAdjacentHTML("beforeend",`<option value="${id}">${time} · ${esc(title)}</option>`);
 });
 
