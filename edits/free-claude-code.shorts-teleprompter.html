@@ -1,0 +1,184 @@
+<title>Free Claude Code Shorts</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: one tall reading column, a reading-line marker at 38% height, a control bar pinned to the bottom. Deliberately dark (studio prompter). */
+:root {
+  --bg: #0d0e10; --surface: #17191c; --line: #2a2d33; --fg: #f3f1ec; --muted: #8d9199;
+  --accent: #e8775f; --fc: #ffcc4d; --vo: #7cc4ff; --pause: #b48cff;
+  --read: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --ui: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --size: 44px;
+  color-scheme: dark;
+}
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--fg); font-family: var(--read); overflow: hidden; }
+#scroller { position: absolute; inset: 0; overflow-y: auto; scroll-behavior: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+#script { max-width: 1100px; margin: 0 auto; padding-block: 38vh 70vh; font-size: var(--size); line-height: 1.42; }
+#script.mirror { transform: scaleX(-1); }
+.scene { margin-block: 1.4em 0.4em; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font-family: var(--ui); font-size: 0.42em; letter-spacing: .04em; color: var(--muted); }
+.scene b { color: var(--fg); font-weight: 700; text-transform: uppercase; }
+.chip { border-radius: 999px; padding: 3px 12px; font-weight: 700; font-size: .9em; letter-spacing: .06em; }
+.chip.fc { background: var(--fc); color: #1a1500; }
+.chip.vo { background: var(--vo); color: #001726; }
+.time { font-variant-numeric: tabular-nums; }
+p.l { margin: 0 0 .55em; text-wrap: pretty; }
+p.l { margin: 0 0 1em; }
+.chip.in { font-family: var(--ui); font-size: .38em; vertical-align: middle; margin-right: .3em; }
+.chip.sh { background: var(--accent); color: #1b0d08; }
+.tech { display: inline-block; font-family: var(--ui); font-size: .36em; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 6px; padding: .1em .5em; margin-right: .4em; vertical-align: middle; }
+
+.ex { background: color-mix(in srgb, var(--vo) 13%, transparent); border-radius: 6px; padding: 0 .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.q { margin-right: .15em; }
+span.dir { font-family: var(--ui); font-size: .5em; color: var(--muted); vertical-align: middle; }
+
+p.l strong { color: var(--accent); font-weight: 700; }
+p.l.ask { color: #e9dcff; }
+p.l.ask::before { content: "💬 "; }
+.pause { display: inline-block; margin: 0 .25em; padding: 0 .35em; border: 2px dashed var(--pause); border-radius: 8px; color: var(--pause); font-family: var(--ui); font-size: .55em; vertical-align: middle; letter-spacing: .05em; }
+.dir { display: block; margin: -.25em 0 .6em; font-family: var(--ui); font-size: .42em; color: var(--muted); font-style: normal; }
+#marker { position: fixed; left: 0; right: 0; top: 38vh; height: 0; border-top: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); pointer-events: none; z-index: 5; }
+#marker::before { content: "▶"; position: absolute; left: max(6px, env(safe-area-inset-left, 0px)); top: -0.75em; color: var(--accent); font-size: 22px; }
+#bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); background: color-mix(in srgb, var(--surface) 92%, transparent); border-top: 1px solid var(--line); font-family: var(--ui); transition: opacity .3s; }
+#bar.dim { opacity: .15; }
+#bar:hover, #bar:focus-within { opacity: 1; }
+button, select { font: 600 15px var(--ui); color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 9px 14px; cursor: pointer; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #1b0d08; min-width: 104px; }
+.grp { display: flex; align-items: center; gap: 6px; }
+.lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.val { min-width: 2.4em; text-align: center; font-variant-numeric: tabular-nums; color: var(--fg); }
+#progress { position: fixed; left: 0; top: 0; height: 3px; background: var(--accent); width: 0; z-index: 11; }
+.legend { max-width: 1100px; margin: 0 auto 1.2em; font: 500 15px/1.6 var(--ui); color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; }
+@media (max-width: 640px) { :root { --size: 30px; } button, select { padding: 8px 10px; font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { #bar { transition: none; } }
+</style>
+
+<div id="progress"></div>
+<div id="marker" aria-hidden="true"></div>
+<div id="scroller" tabindex="-1">
+  <div id="script" aria-live="off"></div>
+</div>
+
+<div id="bar" role="toolbar" aria-label="Teleprompter controls">
+  <button id="play" class="primary" aria-pressed="false">▶ Play</button>
+  <div class="grp"><span class="lbl">Speed</span><button id="slower" aria-label="Slower">−</button><span class="val" id="speedVal">3</span><button id="faster" aria-label="Faster">+</button></div>
+  <div class="grp"><span class="lbl">Text</span><button id="smaller" aria-label="Smaller text">A−</button><button id="bigger" aria-label="Bigger text">A+</button></div>
+  <label class="grp" for="jump"><span class="lbl">Jump</span><select id="jump"></select></label>
+  <button id="mirror" aria-pressed="false">Mirror</button>
+  <button id="top">⤒ Top</button>
+</div>
+
+<script>
+// Shorts teleprompter. Each scene = one Short: [mode, title, time, [paragraphs]]
+// Markup: {fc} = face cam · {vo} = voiceover · {t:NAME} = viral technique tag · **stress** · {p} = tiny beat (0.3 s) · [..] = what's on screen
+const SCRIPT = [
+ ["SH","SHORT B · Wi-Fi OFF… and AI Still Built My App","~43 s · post 1st",[
+  "{t:HOOK · action in frame 1} {vo} I'm turning my **Wi-Fi off**… [Wi-Fi tile clicks off]",
+  "{fc} …and asking AI to build me an **app**. {t:CURIOSITY GAP · can it?}",
+  "{vo} No internet. **Zero.** \"Make a simple notes app.\" {p} It's thinking… thinking… {t:SUSPENSE · ticking SFX}",
+  "{t:PAYOFF} …and it writes the **whole thing**. Completely offline. [OFFLINE ✓ stamp]",
+  "{t:RE-HOOK · the why} {vo} Here's the trick: this isn't ChatGPT in the cloud. It's **Ollama**, a free app that runs AI **right on my laptop**. No subscription. No limits.",
+  "{t:PROOF} Wi-Fi back on just to test it… and **it runs**.",
+  "{t:TWIST · new open loop} And you can plug this straight into **Claude Code**, without paying for Claude.",
+  "{t:COMMENT BAIT} {fc} Would you trust AI that runs with no internet? **Yes or no**, comments.",
+  "{t:CTA → full video} That's just **one of three** free ways, and the other two are faster. Full video's linked below. {t:LOOP → line 1} So yes… I'm turning my Wi-Fi off—"
+ ]],
+ ["SH","SHORT C · Your 'Free' Claude Code Might Be Charging You","~46 s · post 2nd",[
+  "{t:HOOK · direct warning, 'you'} {vo} If you set up \"free\" Claude Code from a YouTube video, **check this line right now.** [Claude Pro banner, red circle]",
+  "{t:STORY · relatable} I followed the steps to run Claude Code on free AI models. Pasted the settings… typed claude… it opened. **Looked perfect.**",
+  "{t:REVEAL · pattern interrupt} But look at the top: **Claude Pro.** [PAID! stamp] My paste had failed **silently**, and Claude Code went straight back to **my paid subscription**.",
+  "{t:STAKES} No error. No warning. Just these red lines nobody reads. [red errors]",
+  "{t:RE-HOOK · the fix} {vo} When it's **really** free, this line says **openrouter/free**, or your free model's name. [FREE ✓]",
+  "{t:PROOF} And don't trust what the model says about itself. I checked the real bill: **zero dollars.** [$0.00]",
+  "{t:RULE · shareable line} {fc} So remember: **check the bill, not the label.**",
+  "{t:COMMENT BAIT} Did yours show your paid plan? **Be honest**, comment below.",
+  "{t:CTA → full video} I show three free ways to run Claude Code, and **every trap** like this one, in the full video. Linked below. {t:LOOP → line 1} Now go back and **check this line**—"
+ ]],
+ ["SH","SHORT A · I Used Claude Code for $0 (Here's the Receipt)","~48 s · post 3rd",[
+  "{t:HOOK · result first} {vo} Claude Code costs **twenty dollars** a month… [$0.00 bill on screen]",
+  "{fc} …I just used it for **zero**. Here's the receipt. {t:CURIOSITY GAP · how?}",
+  "{t:REFRAME · simple mental model} Here's the secret: Claude Code, the **app**, is free. You only pay for the **AI brain** inside it. So I **swapped the brain.**",
+  "{t:PROOF LADDER 1/3} {vo} First, a free model on my own laptop. I even turned the **Wi-Fi off**… and it still wrote an app.",
+  "{t:PROOF LADDER 2/3} Then, free AI models in the cloud. Three requests… **zero dollars.**",
+  "{t:RE-HOOK · 'the crazy one'} And then the crazy one. I connected **free AI providers together** with a free tool called OmniRoute…",
+  "{t:PEAK PAYOFF} …checked the logs, and **real Claude Sonnet** answered. Through a **free account.** [REAL CLAUDE ✓]",
+  "{t:TRUST · pre-empt doubt} {fc} Is it unlimited? **No.** Every free tier has a cap, and I show every catch too.",
+  "{t:COMMENT BAIT} Would you switch? Comment **SWITCH** and tell me which one you'd try.",
+  "{t:CTA → full video} Full setup, every prompt and every trap: **full video, linked below.** {t:LOOP → line 1} Because yes, Claude Code costs twenty dollars a month…"
+ ]],
+ ["SH","Viral checklist (read before recording)","",[
+  "**First second:** show the most surprising thing (Wi-Fi click, the Claude Pro banner, the $0 bill). No \"hey guys\", no name, no intro.",
+  "**Talk to one person:** say \"you\", not \"you guys\". Speak about 10% faster than the long video, and only pause on the {p} beats.",
+  "**Something changes every 2–5 seconds:** a new zoom, a stamp or a cut. Your face-cam lines are the pattern interrupts.",
+  "**Re-hook at the halfway point:** \"here's the trick\", \"but look at the top\", \"and then the crazy one\". That's where people decide to stay.",
+  "**Proof beats claims:** every big line has a screen receipt behind it.",
+  "**Comment bait:** a yes/no or one-word answer is easy to reply to, and replies push the Short.",
+  "**Loop ending:** your last words lead straight back into your first line, so the replay feels like one continuous take.",
+  "**Link:** set the long video as **Related video** in YouTube Studio. Pin a comment with the link."
+ ]],
+];
+
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+function fmt(t){
+  return esc(t).replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/\*(.+?)\*/g,"<em>$1</em>")
+    .replace(/\{i\}/g,'<span class="ex">').replace(/\{\/i\}/g,'</span>')
+    .replace(/\{q\}/g,'<span class="q">💬</span>')
+    .replace(/\{p\}/g,'<span class="pause">beat</span>')
+    .replace(/\{fc\}/g,'<span class="chip fc in">FACE CAM</span>')
+    .replace(/\{vo\}/g,'<span class="chip vo in">VO</span>')
+    .replace(/\{t:(.+?)\}/g,'<span class="tech">$1</span>')
+    .replace(/\[(.+?)\]/g,'<span class="dir">[$1]</span>');
+}
+const root = document.getElementById("script"), jump = document.getElementById("jump");
+root.insertAdjacentHTML("beforeend",
+ `<div class="legend"><span><span class="chip fc">FACE CAM</span> look at the lens</span><span><span class="chip vo">VOICEOVER</span> talk over the screen</span><span><span class="tech" style="font-size:12px">HOOK</span> = viral technique</span><span><span class="ex" style="font-size:15px;padding:1px 6px">tinted</span> = first-time explanation</span><span><span class="pause" style="font-size:13px">⏸ pause</span> hold 1 second</span><span>[ ] = what to do</span></div>`);
+SCRIPT.forEach(([mode,title,time,lines],i)=>{
+  const id = "s"+i;
+  root.insertAdjacentHTML("beforeend",
+   `<div class="scene" id="${id}"><span class="chip sh">SHORT</span><b>${esc(title)}</b><span class="time">${time}</span></div>`);
+  lines.forEach(t=>root.insertAdjacentHTML("beforeend",`<p class="l">${fmt(t)}</p>`));
+  jump.insertAdjacentHTML("beforeend",`<option value="${id}">${time} · ${esc(title)}</option>`);
+});
+
+const sc = document.getElementById("scroller"), bar = document.getElementById("bar"), prog = document.getElementById("progress");
+let store = {}; try { store = JSON.parse(localStorage.getItem("tp") || "{}"); } catch(e) {}
+let speed = store.speed || 3, size = store.size || 0, playing = false, last = 0, carry = 0, wake = null;
+const save = () => { try { localStorage.setItem("tp", JSON.stringify({speed, size})); } catch(e) {} };
+function applySize(){ if (size) document.documentElement.style.setProperty("--size", size+"px"); }
+applySize();
+document.getElementById("speedVal").textContent = speed;
+function frame(t){
+  if (!playing) return;
+  const dt = last ? (t - last) / 1000 : 0; last = t;
+  carry += speed * 14 * dt;            // speed 1–10 ≈ 14–140 px/s
+  const px = Math.floor(carry); if (px) { sc.scrollTop += px; carry -= px; }
+  requestAnimationFrame(frame);
+}
+async function setPlay(p){
+  playing = p; last = 0;
+  const b = document.getElementById("play"); b.textContent = p ? "❚❚ Pause" : "▶ Play"; b.setAttribute("aria-pressed", p);
+  bar.classList.toggle("dim", p);
+  if (p) { requestAnimationFrame(frame); try { wake = await navigator.wakeLock?.request("screen"); } catch(e) {} }
+  else { try { await wake?.release(); } catch(e) {} wake = null; }
+}
+document.getElementById("play").onclick = () => setPlay(!playing);
+document.getElementById("faster").onclick = () => { speed = Math.min(10, speed+1); document.getElementById("speedVal").textContent = speed; save(); };
+document.getElementById("slower").onclick = () => { speed = Math.max(1, speed-1); document.getElementById("speedVal").textContent = speed; save(); };
+const cur = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--size"));
+document.getElementById("bigger").onclick = () => { size = Math.min(96, cur()+4); applySize(); save(); };
+document.getElementById("smaller").onclick = () => { size = Math.max(20, cur()-4); applySize(); save(); };
+document.getElementById("mirror").onclick = e => { const m = root.classList.toggle("mirror"); e.currentTarget.setAttribute("aria-pressed", m); };
+document.getElementById("top").onclick = () => { sc.scrollTop = 0; };
+jump.onchange = () => { const el = document.getElementById(jump.value); sc.scrollTop += el.getBoundingClientRect().top - window.innerHeight*0.38 + 10; };
+sc.addEventListener("scroll", () => { prog.style.width = (100 * sc.scrollTop / Math.max(1, sc.scrollHeight - sc.clientHeight)) + "%"; });
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { e.preventDefault(); setPlay(!playing); }
+  else if (e.key === "ArrowUp") { e.preventDefault(); speed = Math.min(10, speed+1); document.getElementById("speedVal").textContent = speed; save(); }
+  else if (e.key === "ArrowDown") { e.preventDefault(); speed = Math.max(1, speed-1); document.getElementById("speedVal").textContent = speed; save(); }
+  else if (e.key === "ArrowLeft") { sc.scrollTop -= 120; }
+  else if (e.key === "ArrowRight") { sc.scrollTop += 120; }
+});
+document.addEventListener("visibilitychange", async () => { if (playing && document.visibilityState === "visible") { try { wake = await navigator.wakeLock?.request("screen"); } catch(e) {} } });
+</script>
