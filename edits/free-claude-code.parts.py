@@ -31,54 +31,99 @@ FB = '/usr/share/fonts/opentype/inter/Inter-Bold.otf'
 # ------------------------------------------------------------------ PART 1: intro + Method 1 (Ollama)
 # Explorer windows with private files are cut out (142752 0:47-1:21, 145317 6:02-6:14) or blurred (121640 0:30-0:51).
 EXPLORER_BLUR = dict(t0=22, t1=43, x=650, y=360, w=1210, h=660)  # times relative to the clip start (0:08)
-PART1 = [
+PART1 = [  # timings from ElevenLabs Scribe (transcripts/IMG_14xx/elevenlabs.json); every restart / stumble cut by hand
     ('FC', '1 Hook / 2 Phone example + roadmap / 3 Trust', [
-        ('1474', 23.2, 48.98), ('1474', 55.5, 83.05), ('1474', 95.1, 104.68), ('1474', 105.2, 110.06),
-        ('1474', 114.15, 117.42),  # "Then, free AI models in the cloud, plus"
-        ('1474', 131.05, 134.23),  # "the one trap that can quietly charge your paid plan." (3rd, clean read)
-        ('1474', 163.9, 173.20),   # "And finally, several free providers ..." (2nd read; 1st was followed by a false start)
-        ('1474', 173.52, 179.02), ('1474', 184.0, 186.72), ('1474', 189.82, 193.20), ('1474', 199.35, 215.85),
+        ('1474', 23.5, 49.24),     # hook (one continuous read)
+        ('1474', 55.62, 83.22),    # phone example
+        ('1474', 95.30, 104.86),   # "So by the end of this video ... in three different ways" (2nd read)
+        ('1474', 105.26, 110.24),  # "First, completely on your own laptop ..."
+        ('1474', 114.58, 116.92),  # "Then free AI models in the cloud,"
+        ('1474', 130.94, 134.28),  # "plus the one trap that can quietly charge your paid plan." (3rd read, after the cough)
+        ('1474', 164.34, 173.28),  # "And finally, several free providers ..." (last clean read)
+        ('1474', 173.48, 179.26),  # setup kit
+        ('1474', 184.46, 186.84),  # "It's the first link in the description below."
+        ('1474', 189.96, 193.40),  # "So stay till the end ..."
+        ('1474', 199.38, 207.58),  # trust note
+        ('1474', 210.82, 216.00),  # "And I won't just tell you it's free ... So let's start."
     ], []),
     ('VO', '4a What Ollama is / 4b Settings / 4c Offline test', [
-        ('1477', 17.85, 44.72), ('1477', 50.3, 76.30), ('1477', 80.0, 92.14),
-        ('1477', 105.6, 109.80),   # "Chat: this is where you talk to a model directly to test it." (last of 3 reads)
-        ('1477', 110.1, 127.57), ('1477', 128.5, 135.47), ('1477', 136.1, 143.16),
-        ('1477', 149.1, 154.22),   # retake of "how much ... hold in its head at once"
-        ('1477', 154.9, 158.14), ('1477', 164.7, 173.81),  # retake of "if the memory is too small"
-        ('1477', 178.3, 198.67), ('1477', 200.45, 201.75),  # "I pick a small one,"
-        ('1477', 207.2, 212.02),   # "Qwen 3.5 4B, just to warm things up and type hi." (2nd read of the name)
-        ('1477', 212.5, 226.16), ('1477', 230.85, 260.42),
-        ('1477', 274.5, 280.29),   # retake of "every single word came from a model sitting on this laptop"
-        ('1477', 285.4, 316.60), ('1477', 324.55, 330.62),  # "... no usage limits"
-        ('1477', 334.6, 336.40),   # "and your code never left your computer." (retake)
+        ('1477', 20.82, 31.26),    # "So method one, it's called Ollama. ... media player, but for AI."
+        ('1477', 34.80, 45.02),    # "The big difference from ChatGPT or Claude ... works without internet."
+        ('1477', 52.40, 54.30), ('1477', 56.74, 59.64), ('1477', 60.60, 67.68),
+        ('1477', 70.58, 74.30),    # "Then double-click the file, click through the steps, and that's it."
+        ('1477', 74.46, 76.60), ('1477', 80.14, 92.28),
+        ('1477', 105.42, 109.56),  # Chat (4th read)
+        ('1477', 113.18, 115.16),  # "In Settings, two things matter."
+        ('1477', 117.48, 118.90), ('1477', 120.04, 127.64), ('1477', 131.70, 135.58),
+        ('1477', 140.40, 143.28),  # "Context length is the AI's short-term memory,"
+        ('1477', 149.56, 154.36),  # "how much of your conversation ... in its head at once."
+        ('1477', 154.74, 158.42), ('1477', 164.88, 168.62), ('1477', 169.08, 171.52), ('1477', 173.12, 174.04),
+        ('1477', 178.20, 179.36), ('1477', 181.10, 191.96),
+        ('1477', 192.24, 194.00),  # "Bigger usually means smarter,"
+        ('1477', 196.52, 198.90),  # "but slower and hungrier for the memory."
+        ('1477', 206.22, 216.08),  # "I pick a small one, Qwen 3.5 4B ... so it takes a minute."
+        ('1477', 216.22, 216.90),  # "After that,"
+        ('1477', 222.44, 226.38),  # "it lives on your laptop for good ..."
+        ('1477', 230.82, 238.40),  # "But hi proves nothing ... No internet at all."
+        ('1477', 241.62, 242.50),  # "So be honest,"
+        ('1477', 247.16, 249.32),  # "do you think it can still write an app?"
+        ('1477', 253.04, 256.60), ('1477', 256.94, 260.62),
+        ('1477', 277.18, 280.52),  # "Every single word came from a model sitting on this laptop."
+        ('1477', 286.28, 289.32),  # "Then I turn the Wi-Fi back on for one reason,"
+        ('1477', 291.98, 294.62),  # "to test the code in a free online compiler."
+        ('1477', 302.34, 307.20), ('1477', 307.74, 313.50),
+        ('1477', 315.04, 316.70),  # "Is it pretty? ... No."
+        ('1477', 324.80, 330.80),  # "But a laptop with no internet ... no usage limits,"
+        ('1477', 334.54, 336.68),  # "and your code never left your computer."
     ], [
-        ('142752', 0, 47, 17.85, {}), ('142752', 81, 93, 68.1, {}), ('142752', 184, 210, 80.0, {}),
-        ('142752', 221, 255, 110.1, {}), ('142752', 348, 448, 178.3, {}), ('142752', 448, 462, 233.3, {}),
-        ('142752', 528, 668, 249.1, {}), ('142752', 696, 762, 285.4, {}),
+        ('142752', 0, 47, 20.82, {}), ('142752', 81, 93, 68.1, {}), ('142752', 184, 210, 80.14, {}),
+        ('142752', 221, 255, 113.18, {}), ('142752', 348, 448, 178.2, {}), ('142752', 448, 462, 233.3, {}),
+        ('142752', 528, 668, 253.04, {}), ('142752', 696, 762, 286.28, {}),
     ]),
-    ('FC', '4d Subscribe hook', [('1477', 351.2, 359.19)], []),
+    ('FC', '4d Subscribe hook', [('1477', 352.02, 359.00)], []),
     ('VO', '4e Which model for your RAM / 4f Problem -> an AI fixes it', [
-        ('1477', 364.2, 375.10), ('1477', 379.0, 388.14), ('1477', 391.8, 401.82),
-        ('1477', 405.1, 413.98),   # "... with 32 GB you can go to medium"
-        ('1477', 424.25, 429.18),  # "and with 64 GB or more you can run the big ones ..." (retake)
-        ('1477', 429.5, 435.04), ('1477', 440.1, 474.49), ('1477', 479.6, 520.73), ('1477', 525.4, 585.08),
+        ('1477', 364.12, 375.28), ('1477', 379.10, 383.80), ('1477', 384.44, 387.70),
+        ('1477', 391.94, 394.96),  # "Okay, here is mine."
+        ('1477', 395.18, 401.98), ('1477', 405.10, 411.76),
+        ('1477', 411.96, 414.20),  # "With thirty-two GB, you can go to medium,"
+        ('1477', 424.36, 435.22),  # "and with sixty-four GB ... Just find your RAM."
+        ('1477', 441.32, 443.26),  # "Here is a little trick I use too."
+        ('1477', 444.40, 447.98),  # "I asked ChatGPT, here is my laptop."
+        ('1477', 451.38, 459.12),  # "give me the best coding model for Ollama ..."
+        ('1477', 468.30, 474.70),  # "And it suggested MiMo ... The exact prompt is in the setup kit."
+        ('1477', 479.66, 484.50),
+        ('1477', 487.20, 490.86),  # "and Ollama only shows a handful of popular models there."
+        ('1477', 498.88, 505.50), ('1477', 510.30, 520.92), ('1477', 525.54, 551.92),
+        ('1477', 551.94, 554.62),  # "Install MiMo version 2.6 9B"
+        ('1477', 559.54, 562.44),  # "and set everything up so it works with Ollama."
+        ('1477', 569.16, 574.44),  # "it will ask your permission before running each command ..."
+        ('1477', 574.76, 585.32),
     ], [
-        ('145317', 15, 55, 364.2, {}), ('145317', 95, 210, 440.1, {}), ('145317', 224, 240, 479.6, {}),
-        ('145317', 255, 305, 494.9, {}), ('145317', 320, 362, 525.4, {}), ('145317', 374, 440, 543.6, {}),
-        ('145317', 525, 603, 550.1, {}), ('151536', 0, 6, 566.5, {}), ('121640', 0, 8, 577.1, {}),
-        ('121640', 14, 22, 580.7, {}),
+        ('145317', 15, 55, 364.12, {}), ('145317', 95, 210, 441.32, {}), ('145317', 224, 240, 479.66, {}),
+        ('145317', 255, 305, 498.88, {}), ('145317', 320, 362, 525.54, {}), ('145317', 374, 440, 543.6, {}),
+        ('145317', 525, 603, 551.0, {}), ('151536', 0, 6, 569.16, {}), ('121640', 0, 8, 577.22, {}),
+        ('121640', 14, 22, 580.9, {}),
     ]),
-    ('FC', '4g The rule of this video', [('1477', 594.15, 610.60)], []),
+    ('FC', '4g The rule of this video', [
+        ('1477', 594.34, 597.02),  # "And that's going to be the rule for this whole video."
+        ('1477', 599.44, 610.76),  # "anything longer than one line ... say, Fix this."
+    ], []),
     ('VO', '4h Claude Code on Ollama', [
-        ('1477', 625.8, 629.20), ('1477', 629.5, 632.36), ('1477', 638.45, 643.68), ('1477', 647.0, 666.42),
-        ('1477', 669.0, 688.92), ('1477', 691.9, 707.42), ('1477', 715.9, 725.62), ('1477', 730.0, 740.90),
-        ('1477', 746.1, 753.82),
+        ('1477', 625.86, 632.52),  # "Now the part you came here for ... click Claude Code."
+        ('1477', 638.70, 643.98),  # "See that little message? It copied the launch command ..."
+        ('1477', 647.50, 652.66),  # "Now make a folder ... Mine is called Claude Code. Open it,"
+        ('1477', 656.24, 666.66),  # "right-click in the empty space ... say Yes."
+        ('1477', 668.92, 677.74), ('1477', 680.74, 689.10), ('1477', 692.08, 696.76),
+        ('1477', 701.28, 707.56),  # "On my laptop, it took about thirty minutes ... heavy lifting,"
+        ('1477', 716.42, 725.86),  # "and that's the honest trade-off ... But it finished, and it works."
+        ('1477', 735.22, 741.12),  # "and next time, you don't repeat any of this. Just open your folder ..."
+        ('1477', 746.42, 754.00),
     ], [
-        ('121640', 8, 30, 625.8, {}), ('121640', 30, 55, 647.0, {'blur': dict(EXPLORER_BLUR, t0=0, t1=21)}),
+        ('121640', 8, 30, 625.86, {}), ('121640', 30, 55, 647.5, {'blur': dict(EXPLORER_BLUR, t0=0, t1=21)}),
         ('FACE', 'SCREEN RECORDING NEEDED: Claude Code running on Ollama', None, 661.9, {}),
     ]),
 ]
-PAUSES = {'1477': [239.42, 242.98, 315.58, 316.60]}  # "So be honest. ... Do you think", "Is it pretty? ... No."
+PAUSES = {'1477': [315.70, 316.50]}  # "Is it pretty? ... No."  # "So be honest. ... Do you think", "Is it pretty? ... No."
 PARTS = {1: PART1}
 
 # ------------------------------------------------------------------ helpers

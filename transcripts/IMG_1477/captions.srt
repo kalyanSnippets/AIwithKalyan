@@ -1,1079 +1,1119 @@
 1
-00:00:17,900 --> 00:00:18,720
-So, method
+00:00:18,280 --> 00:00:19,180
+So the method one--
 
 2
-00:00:18,720 --> 00:00:22,080
-1 is called
+00:00:20,900 --> 00:00:22,660
+so method one, it's called Ollama.
 
 3
-00:00:22,080 --> 00:00:22,640
-Ollama.
-
-4
-00:00:23,000 --> 00:00:25,420
+00:00:23,140 --> 00:00:25,460
 Ollama is a free app that downloads AI
 
-5
-00:00:25,420 --> 00:00:27,580
+4
+00:00:25,520 --> 00:00:27,600
 models and runs them right on your own
 
-6
-00:00:27,580 --> 00:00:27,960
+5
+00:00:27,640 --> 00:00:28,080
 laptop.
 
+6
+00:00:28,480 --> 00:00:31,160
+Kind of like a media player, but for AI.
+
 7
-00:00:28,420 --> 00:00:31,060
-Kind of like a media player but for AI.
+00:00:31,580 --> 00:00:33,120
+The big difference from chat,
 
 8
-00:00:31,640 --> 00:00:32,940
-The big difference from chat
+00:00:34,140 --> 00:00:36,760
+but the big difference from ChatGPT or
 
 9
-00:00:32,940 --> 00:00:36,540
-GPT
+00:00:36,860 --> 00:00:39,320
+Claude is that nothing goes to the cloud.
 
 10
-00:00:36,540 --> 00:00:38,940
-or Claude is that nothing goes to the
+00:00:39,700 --> 00:00:42,120
+The AI lives on your own machine, so it's
 
 11
-00:00:38,940 --> 00:00:39,160
-cloud.
+00:00:42,160 --> 00:00:44,340
+private, and it's even works without
 
 12
-00:00:39,620 --> 00:00:42,180
-The AI lives on your own machine so it's
-
-13
-00:00:42,180 --> 00:00:44,260
-private and it even works without
-
-14
-00:00:44,260 --> 00:00:44,720
+00:00:44,400 --> 00:00:44,920
 internet.
 
+13
+00:00:48,680 --> 00:00:49,640
+Installing it is,
+
+14
+00:00:50,540 --> 00:00:51,640
+installing it is,
+
 15
-00:00:44,720 --> 00:00:44,840
-it.
+00:00:52,480 --> 00:00:54,200
+installing it is super simple.
 
 16
-00:00:50,360 --> 00:00:53,600
-Installing it is super
+00:00:54,620 --> 00:00:56,100
+So go to Ollama dot...
 
 17
-00:00:53,600 --> 00:00:54,100
-simple.
+00:00:56,820 --> 00:00:59,540
+So go to Ollama.com and click Download.
 
 18
-00:00:54,680 --> 00:00:58,060
-So go to olama .com
+00:01:00,680 --> 00:01:02,940
+It works on Windows, Mac, and Linux.
 
 19
-00:00:58,060 --> 00:00:59,340
-and click download.
-
-20
-00:01:00,460 --> 00:01:02,700
-It works on Windows, Mac and Linux.
-
-21
-00:01:03,940 --> 00:01:06,300
+00:01:04,140 --> 00:01:06,320
 I am on Windows, so I pick Windows and
 
-22
-00:01:06,300 --> 00:01:07,340
+20
+00:01:06,400 --> 00:01:07,580
 download the installer.
 
+21
+00:01:08,220 --> 00:01:09,160
+The double-click the f--
+
+22
+00:01:09,800 --> 00:01:09,980
+Then,
+
 23
-00:01:08,200 --> 00:01:11,700
-The double click the file,
+00:01:10,660 --> 00:01:12,800
+then double-click the file, click through
 
 24
-00:01:12,240 --> 00:01:14,160
-click through the stairs and that's it.
+00:01:12,840 --> 00:01:14,200
+the steps, and that's it.
 
 25
-00:01:14,540 --> 00:01:16,300
+00:01:14,520 --> 00:01:16,500
 Seriously, that's the whole install.
 
 26
-00:01:20,040 --> 00:01:21,940
-Once it's open you will see three things
+00:01:20,220 --> 00:01:22,200
+Once it's open, you'll see three things on
 
 27
-00:01:21,940 --> 00:01:22,620
-on the left.
+00:01:22,240 --> 00:01:22,700
+the left.
 
 28
-00:01:23,320 --> 00:01:25,240
+00:01:23,200 --> 00:01:25,320
 Apps, this is where you connect coding
 
 29
-00:01:25,240 --> 00:01:27,680
-tools like Claude code, codecs and others.
+00:01:25,380 --> 00:01:27,840
+tools like Claude Code, Codex, and others.
 
 30
-00:01:28,280 --> 00:01:29,980
+00:01:28,240 --> 00:01:30,140
 Clicking one doesn't install anything.
 
 31
-00:01:30,320 --> 00:01:32,140
+00:01:30,420 --> 00:01:32,180
 It just copies the command you need.
 
 32
-00:01:32,820 --> 00:01:34,200
-Chat is this is where
+00:01:32,660 --> 00:01:34,360
+Chat is-- this is where...
 
 33
-00:01:34,200 --> 00:01:36,880
-you
+00:01:36,000 --> 00:01:38,820
+Chat, this is where you talk to the models
 
 34
-00:01:36,880 --> 00:01:40,140
-talk to the models directly to test
-
-35
-00:01:40,140 --> 00:01:40,580
-it.
-
-36
-00:01:41,960 --> 00:01:43,400
-Chat, this is This is where you talk to
-
-37
-00:01:43,400 --> 00:01:43,940
-models,
-
-38
-00:01:45,640 --> 00:01:48,040
-chat, this is where you talk to a model
-
-39
-00:01:48,040 --> 00:01:49,800
+00:01:38,880 --> 00:01:40,480
 directly to test it.
 
+35
+00:01:41,800 --> 00:01:44,080
+Chat, this is where you talk to models.
+
+36
+00:01:45,500 --> 00:01:48,140
+Chat, this is where you talk to a model
+
+37
+00:01:48,200 --> 00:01:49,460
+directly to test it.
+
+38
+00:01:50,040 --> 00:01:51,020
+And Settings.
+
+39
+00:01:53,260 --> 00:01:55,060
+In Settings, two things matter.
+
 40
-00:01:50,120 --> 00:01:50,920
-In settings,
+00:01:55,600 --> 00:01:56,480
+First, the Claude.
 
 41
-00:01:54,250 --> 00:01:55,030
-two things matter.
+00:01:57,560 --> 00:01:58,800
+First, the Claude toggle.
 
 42
-00:01:55,670 --> 00:01:58,670
-First the cloud toggle.
+00:02:00,120 --> 00:02:02,680
+Ollama can also run some models on its own
 
 43
-00:02:00,050 --> 00:02:02,630
-Olamic can also run some models on its own
+00:02:02,740 --> 00:02:04,820
+servers in the cloud, but we want
 
 44
-00:02:02,630 --> 00:02:03,630
-servers in the cloud.
+00:02:04,880 --> 00:02:07,200
+everything on our laptop, so leave that
 
 45
-00:02:04,090 --> 00:02:06,650
-But we want everything on our laptop, so
+00:02:07,280 --> 00:02:07,540
+off.
 
 46
-00:02:06,650 --> 00:02:07,570
-leave that off.
+00:02:08,840 --> 00:02:10,600
+And second, the most import--
 
 47
-00:02:08,550 --> 00:02:09,150
-2.
+00:02:11,780 --> 00:02:14,520
+And the second, the most people miss, is
 
 48
-00:02:09,790 --> 00:02:13,230
-The most important and the second the most
+00:02:14,540 --> 00:02:15,480
+the context length.
 
 49
-00:02:13,230 --> 00:02:15,470
-people miss is the context length.
+00:02:16,020 --> 00:02:17,380
+Context length is the...
 
 50
-00:02:16,130 --> 00:02:16,670
-Context length
+00:02:20,480 --> 00:02:22,760
+Context length is the AI's short-term
 
 51
-00:02:18,880 --> 00:02:22,200
-is the AI's
+00:02:22,820 --> 00:02:25,260
+memory, how much of your conversation and
 
 52
-00:02:22,200 --> 00:02:23,160
-short term memory.
+00:02:25,340 --> 00:02:27,700
+your project it can hold in its own,
 
 53
-00:02:23,520 --> 00:02:25,440
-How much of your conversation and your
+00:02:29,640 --> 00:02:31,480
+how much of your conversation and your
 
 54
-00:02:25,440 --> 00:02:27,540
-project it can hold in its own.
-
-55
-00:02:29,140 --> 00:02:31,480
-How much of your conversation and your
-
-56
-00:02:31,480 --> 00:02:34,220
+00:02:31,540 --> 00:02:34,260
 project it can hold in its head at once.
 
+55
+00:02:34,820 --> 00:02:36,820
+Claude Code reads a lot of your files
+
+56
+00:02:36,880 --> 00:02:38,320
+before it changes anything.
+
 57
-00:02:34,940 --> 00:02:37,120
-Clot code reads a lot of your files before
+00:02:38,660 --> 00:02:40,920
+So if the memory is too small, it loses
 
 58
-00:02:37,120 --> 00:02:38,140
-it changes anything.
+00:02:40,980 --> 00:02:42,480
+track of halfway through.
 
 59
-00:02:38,140 --> 00:02:40,780
-So, if the memory is too small, it loses
-
-60
-00:02:40,780 --> 00:02:42,380
-track of half way through.
-
-61
-00:02:44,770 --> 00:02:47,530
+00:02:44,960 --> 00:02:47,660
 If the memory is too small, it loses track
 
+60
+00:02:47,740 --> 00:02:48,520
+halfway through.
+
+61
+00:02:49,160 --> 00:02:51,420
+So drag this slide up to sixty-four K.
+
 62
-00:02:47,530 --> 00:02:48,650
-half way through.
-
-63
-00:02:48,930 --> 00:02:51,390
-So drag this slide up to 64K.
-
-64
-00:02:53,050 --> 00:02:53,810
+00:02:53,200 --> 00:02:53,940
 That's the fix.
 
-65
-00:02:58,330 --> 00:02:59,270
+63
+00:02:58,280 --> 00:02:59,260
 Now let's test it.
 
+64
+00:02:59,600 --> 00:03:00,080
+Open Cl--
+
+65
+00:03:01,180 --> 00:03:03,560
+Open Chat, click the model menu at the
+
 66
-00:03:01,090 --> 00:03:01,690
-Open chat,
+00:03:03,620 --> 00:03:05,560
+bottom, and pick a small model.
 
 67
-00:03:02,350 --> 00:03:04,450
-click the model menu at the bottom and
+00:03:06,260 --> 00:03:08,860
+Models comes in sizes like four B or nine
 
 68
-00:03:04,450 --> 00:03:05,470
-pick a small model.
+00:03:08,920 --> 00:03:11,180
+B, which means four or nine billion
 
 69
-00:03:06,550 --> 00:03:09,550
-Models come in sizes like 4B or 9B, which
+00:03:11,240 --> 00:03:11,860
+parameters.
 
 70
-00:03:09,550 --> 00:03:11,690
-means 4 or 9 billion parameters.
+00:03:12,320 --> 00:03:14,380
+Bigger usually means smarter, but
 
 71
-00:03:11,690 --> 00:03:14,770
-Bigger usually means smarter but slower
+00:03:14,460 --> 00:03:15,080
+slower-er,
 
 72
-00:03:14,770 --> 00:03:18,190
-and hungrier for
+00:03:16,600 --> 00:03:18,800
+but slower and hungrier for the memory.
 
 73
-00:03:18,190 --> 00:03:18,670
-the memory.
+00:03:20,680 --> 00:03:23,100
+I pick a small one, Qwen three point five
 
 74
-00:03:20,490 --> 00:03:22,490
-I pick a small one, QWEN 3
+00:03:23,640 --> 00:03:24,060
+four B.
 
 75
-00:03:22,490 --> 00:03:24,370
-.54b,
+00:03:26,300 --> 00:03:28,760
+I pick a small one, Qwen three point five
 
 76
-00:03:25,620 --> 00:03:28,160
-QWEN 3
+00:03:28,840 --> 00:03:31,780
+four B, just to warm things up, and type
 
 77
-00:03:28,160 --> 00:03:31,660
-.54b just to warm things up and type
-
-78
-00:03:31,660 --> 00:03:32,020
+00:03:31,840 --> 00:03:32,240
 hi.
 
-79
-00:03:32,560 --> 00:03:35,000
-The first message downloads the model so
+78
+00:03:32,700 --> 00:03:35,020
+The first message downloads the model, so
 
-80
-00:03:35,000 --> 00:03:35,900
+79
+00:03:35,080 --> 00:03:35,980
 it takes a minute.
 
+80
+00:03:36,300 --> 00:03:38,140
+After that, it lives on your com--
+
 81
-00:03:35,900 --> 00:03:37,720
-After that it leaves on
+00:03:39,240 --> 00:03:40,060
+it lives on your,
 
 82
-00:03:37,720 --> 00:03:41,020
-your laptop
+00:03:42,520 --> 00:03:44,780
+it lives on your laptop for good, and you
 
 83
-00:03:42,560 --> 00:03:45,700
-for good and you never download it
+00:03:44,840 --> 00:03:46,280
+never download it again.
 
 84
-00:03:45,700 --> 00:03:46,160
-again.
+00:03:50,900 --> 00:03:52,220
+But hi proves nothing.
 
 85
-00:03:50,900 --> 00:03:52,100
-But high proves nothing.
-
-86
-00:03:53,300 --> 00:03:54,040
+00:03:53,400 --> 00:03:54,080
 So watch this.
 
+86
+00:03:54,440 --> 00:03:55,960
+I'm turning the Wi-Fi off.
+
 87
-00:03:54,420 --> 00:03:56,020
-I am turning the wifi off.
+00:03:56,540 --> 00:03:56,680
+See?
 
 88
-00:03:56,420 --> 00:03:58,280
-See no internet at all.
+00:03:57,260 --> 00:03:58,300
+No internet at all.
 
 89
-00:03:58,760 --> 00:03:59,420
-So be honest.
+00:03:58,700 --> 00:04:01,020
+So be honest, do you think it can still...
 
 90
-00:04:02,980 --> 00:04:05,320
-Do you think it can still write
+00:04:01,700 --> 00:04:03,320
+So be honest, do you think s-
 
 91
-00:04:05,320 --> 00:04:08,840
-an
+00:04:04,080 --> 00:04:05,460
+do you think it still can,
 
 92
-00:04:08,840 --> 00:04:09,120
-app?
+00:04:07,240 --> 00:04:09,220
+do you think it can still write an app?
 
 93
-00:04:09,120 --> 00:04:12,000
-I type make a simple note
+00:04:10,260 --> 00:04:12,160
+I type, make a simple note.
 
 94
-00:04:12,000 --> 00:04:15,200
-app
+00:04:13,120 --> 00:04:15,980
+I type, make a simple notes app, and it's
 
 95
-00:04:15,200 --> 00:04:16,340
-and it's thinking.
+00:04:16,040 --> 00:04:16,500
+thinking.
 
 96
-00:04:17,300 --> 00:04:18,960
-Thinking and it writes the whole thing
+00:04:17,019 --> 00:04:18,959
+Thinking, and it writes the whole thing,
 
 97
-00:04:18,960 --> 00:04:20,420
+00:04:19,480 --> 00:04:20,519
 completely offline.
 
 98
-00:04:20,780 --> 00:04:22,060
-Every single word came
+00:04:20,760 --> 00:04:22,280
+Every single word come...
 
 99
-00:04:29,130 --> 00:04:32,390
-from a model
+00:04:30,180 --> 00:04:32,500
+Every single word came from a model
 
 100
-00:04:32,390 --> 00:04:33,850
+00:04:32,560 --> 00:04:34,020
 sitting on this laptop.
 
 101
-00:04:34,570 --> 00:04:36,190
-Every single word came
+00:04:34,640 --> 00:04:37,500
+Every single word came from the-- Every
 
 102
-00:04:36,190 --> 00:04:39,690
-from a model sitting on
+00:04:37,560 --> 00:04:39,700
+single word came from a model sitting on
 
 103
-00:04:39,690 --> 00:04:40,290
+00:04:39,740 --> 00:04:40,420
 this laptop.
 
 104
-00:04:45,480 --> 00:04:48,800
-Then I turn the Wi -Fi back on for one
+00:04:46,360 --> 00:04:48,800
+Then I turn the Wi-Fi back on for one
 
 105
-00:04:48,800 --> 00:04:49,180
-reason.
+00:04:48,900 --> 00:04:50,580
+reason, to test the Claude,
 
 106
-00:04:49,580 --> 00:04:50,540
-To test the code
+00:04:52,060 --> 00:04:53,880
+to test the code in a free online
 
 107
-00:04:50,540 --> 00:04:53,840
-in a free online
-
-108
-00:04:53,840 --> 00:04:54,420
+00:04:53,980 --> 00:04:54,520
 compiler.
 
-109
-00:04:57,320 --> 00:05:00,040
+108
+00:04:57,440 --> 00:05:00,060
 An online compiler is just a website where
 
+109
+00:05:00,100 --> 00:05:01,440
+you paste code and it r-
+
 110
-00:05:00,040 --> 00:05:01,200
-you paste code and it
+00:05:02,420 --> 00:05:04,980
+An online compiler is just a website where
 
 111
-00:05:01,200 --> 00:05:03,860
-runs
+00:05:05,000 --> 00:05:07,100
+you paste a code and it runs instantly.
 
 112
-00:05:03,860 --> 00:05:06,880
-instantly.
+00:05:07,820 --> 00:05:10,080
+First try, I picked the wrong language, so
 
 113
-00:05:07,760 --> 00:05:10,260
-First try I pick the wrong language so I
+00:05:10,180 --> 00:05:13,400
+I switched to HTML, hit Run, and it works.
 
 114
-00:05:10,260 --> 00:05:11,220
-switch to HTML,
-
-115
-00:05:11,880 --> 00:05:13,240
-hit run and it works.
-
-116
-00:05:14,640 --> 00:05:15,580
+00:05:15,120 --> 00:05:15,700
 Is it pretty?
 
-117
-00:05:15,580 --> 00:05:16,600
-No?
+115
+00:05:16,500 --> 00:05:16,660
+No.
 
-118
-00:05:24,600 --> 00:05:27,160
+116
+00:05:24,860 --> 00:05:27,200
 But a laptop with no internet just wrote
 
-119
-00:05:27,160 --> 00:05:29,880
+117
+00:05:27,360 --> 00:05:29,880
 working software with no subscription, no
 
+118
+00:05:30,020 --> 00:05:32,140
+usage limits, and your code never left
+
+119
+00:05:32,200 --> 00:05:32,740
+your laptop,
+
 120
-00:05:29,880 --> 00:05:32,280
-usage limits and your code never left your
+00:05:34,620 --> 00:05:36,580
+and your code never left your computer.
 
 121
-00:05:32,280 --> 00:05:32,660
-laptop.
+00:05:39,780 --> 00:05:42,420
+And honestly, if that alone just saved you
 
 122
-00:05:34,660 --> 00:05:36,400
-And your code never left your computer.
+00:05:42,480 --> 00:05:45,260
+twenty dollars a month, hit Subscribe just
 
 123
-00:05:39,810 --> 00:05:42,410
-And honestly, if that alone just saved you
+00:05:45,320 --> 00:05:45,780
+because,
 
 124
-00:05:42,410 --> 00:05:44,470
-$20 a month, it's subscribed.
-
-125
-00:05:45,010 --> 00:05:45,750
-Just because,
-
-126
-00:05:47,050 --> 00:05:49,730
+00:05:47,460 --> 00:05:49,740
 because it only gets better from here.
 
-127
-00:05:51,270 --> 00:05:54,470
+125
+00:05:52,100 --> 00:05:54,500
 And honestly, if that alone just saved you
 
+126
+00:05:54,560 --> 00:05:56,640
+twenty dollars a month, hit Subscribe,
+
+127
+00:05:56,960 --> 00:05:58,900
+because it only gets better from here.
+
 128
-00:05:54,470 --> 00:05:57,630
-$20 a month, hit subscribe because it only
+00:06:04,200 --> 00:06:06,100
+Now, which model should you actually run?
 
 129
-00:05:57,630 --> 00:05:59,190
-gets better from here.
+00:06:06,680 --> 00:06:07,180
+Don’t guess.
 
 130
-00:06:04,280 --> 00:06:06,040
-Now which model should you actually run?
-
-131
-00:06:06,680 --> 00:06:07,120
-Don't guess.
-
-132
-00:06:07,540 --> 00:06:08,680
+00:06:07,520 --> 00:06:08,760
 It depends on your RAM.
 
-133
-00:06:09,320 --> 00:06:11,680
-RAM is your computer's working memory and
+131
+00:06:09,220 --> 00:06:11,740
+RAM is your computer’s working memory, and
 
-134
-00:06:11,680 --> 00:06:14,380
+132
+00:06:11,800 --> 00:06:14,520
 for local AI, it decides how big a model
 
-135
-00:06:14,380 --> 00:06:15,100
+133
+00:06:14,560 --> 00:06:15,180
 you can run.
 
+134
+00:06:15,620 --> 00:06:17,520
+On Windows, press Control + Shift +
+
+135
+00:06:17,640 --> 00:06:18,060
+Escape.
+
 136
-00:06:15,580 --> 00:06:17,960
-On Windows, press Ctrl Shift Escape.
+00:06:19,180 --> 00:06:21,300
+Press Control + Shift + Escape to open
 
 137
-00:06:19,080 --> 00:06:21,560
-Press Ctrl Shift Escape to open Task
+00:06:21,400 --> 00:06:23,400
+Task Manager and click the Performance
 
 138
-00:06:21,560 --> 00:06:23,640
-Manager and click the Performance tab.
+00:06:23,480 --> 00:06:23,700
+tab.
 
 139
-00:06:23,640 --> 00:06:26,860
-Actually pause the video and check yours
+00:06:24,520 --> 00:06:26,960
+Actually, pause the video and check yours
 
 140
-00:06:26,860 --> 00:06:28,140
+00:06:27,040 --> 00:06:27,600
 right now.
 
 141
-00:06:31,820 --> 00:06:32,240
-Ok,
+00:06:32,020 --> 00:06:32,260
+Okay,
 
 142
-00:06:33,000 --> 00:06:34,760
+00:06:34,200 --> 00:06:34,860
 here is mine.
 
 143
-00:06:35,240 --> 00:06:37,600
-It's a pretty normal laptop, no separate
+00:06:35,260 --> 00:06:37,660
+It’s a pretty normal laptop, no separate
 
 144
-00:06:37,600 --> 00:06:40,240
-graphics card, just the building graphics
+00:06:37,760 --> 00:06:40,380
+graphics card, just the built-in graphics
 
 145
-00:06:40,240 --> 00:06:41,820
-and 16 GB of RAM.
+00:06:40,560 --> 00:06:41,880
+and sixteen GB of RAM.
 
 146
-00:06:45,160 --> 00:06:48,220
-Roughly with 8 to 16 GB of RAM, stick to
+00:06:45,180 --> 00:06:47,420
+Roughly with eight to sixteen GB of RAM,
 
 147
-00:06:48,220 --> 00:06:50,860
-small models, around 4 to 12 billion
+00:06:47,880 --> 00:06:50,340
+stick to small models, around four to
 
 148
-00:06:50,860 --> 00:06:51,460
-parameters.
+00:06:50,380 --> 00:06:51,660
+twelve billion parameters.
 
 149
-00:06:51,460 --> 00:06:54,620
-With 32 GB you can go to medium and
+00:06:52,040 --> 00:06:54,100
+With thirty-two GB, you can go to medium,
 
 150
-00:06:54,620 --> 00:06:58,000
-with 64 GB or more you can run the big
+00:06:54,500 --> 00:06:57,200
+and s- and with sixty-four GB or more, you
 
 151
-00:06:58,000 --> 00:07:01,400
-models that feel close to paid
+00:06:57,260 --> 00:06:58,600
+can run the big models
 
 152
-00:07:01,400 --> 00:07:01,900
-things.
+00:07:00,180 --> 00:07:01,920
+that feel close to paid things.
 
 153
-00:07:04,300 --> 00:07:07,240
-And with 64 GB or more you can run the big
+00:07:04,440 --> 00:07:06,680
+And with sixty-four GB or more, you can
 
 154
-00:07:07,240 --> 00:07:09,180
-ones that feel close to paid thing.
+00:07:06,760 --> 00:07:08,939
+run the big ones that feel close to paid
 
 155
-00:07:09,580 --> 00:07:12,120
-The exact list I would pick for each size
+00:07:08,980 --> 00:07:09,219
+thing.
 
 156
-00:07:12,120 --> 00:07:14,840
-is in the free setup kit just find your
+00:07:09,740 --> 00:07:12,520
+The exact list I would pick for each size
 
 157
-00:07:14,840 --> 00:07:15,040
-RAM.
+00:07:12,620 --> 00:07:13,880
+is in the free setup kit.
 
 158
-00:07:20,190 --> 00:07:23,070
-Here is a little trick I used too.
+00:07:14,200 --> 00:07:15,120
+Just find your RAM.
 
 159
-00:07:23,070 --> 00:07:26,530
-I asked chat GPT,
+00:07:20,300 --> 00:07:22,480
+Here is a lit-- here is a little trick I
 
 160
-00:07:26,830 --> 00:07:29,450
-here is my laptop, give me the best coding
+00:07:22,600 --> 00:07:23,160
+use too.
 
 161
-00:07:29,450 --> 00:07:30,010
-model
+00:07:23,940 --> 00:07:27,200
+I, I asked chat, I asked ChatGPT, "Here is
 
 162
-00:07:30,010 --> 00:07:33,030
-for
+00:07:27,260 --> 00:07:27,920
+my laptop.
 
 163
-00:07:33,030 --> 00:07:35,930
-Olama, its exact name and the latest one
+00:07:28,300 --> 00:07:30,080
+Give me the best coding model,
 
 164
-00:07:35,930 --> 00:07:38,230
-because new model comes out literally
+00:07:31,460 --> 00:07:33,640
+give me the best coding model for Ollama,
 
 165
-00:07:38,230 --> 00:07:38,990
-every week
+00:07:34,040 --> 00:07:35,960
+its exact name, and the latest one,"
 
 166
-00:07:38,990 --> 00:07:48,450
-and
+00:07:36,280 --> 00:07:38,420
+because new model comes out literally
 
 167
-00:07:48,450 --> 00:07:51,650
-it suggested at MIMO version 2 .6, a 9B
+00:07:38,500 --> 00:07:39,020
+every week.
 
 168
-00:07:51,650 --> 00:07:54,210
-model, the exact prompt is in the setup
+00:07:39,460 --> 00:07:41,720
+And it suggested MiMo version two point
 
 169
-00:07:54,210 --> 00:07:54,490
-kit.
+00:07:41,780 --> 00:07:42,720
+six N nine B,
 
 170
-00:07:59,710 --> 00:08:01,770
-And this is where I hit my first problem.
+00:07:43,940 --> 00:07:44,900
+N nine B model.
 
 171
-00:08:02,390 --> 00:08:04,410
-MIMO wasn't in Olamas drop down.
+00:07:45,260 --> 00:07:46,700
+That exact prompt...
 
 172
-00:08:05,150 --> 00:08:07,010
-Olama only shows a handful
+00:07:48,380 --> 00:07:50,480
+And it suggested MiMo version two point
 
 173
-00:08:07,010 --> 00:08:10,370
-of popular models
+00:07:50,540 --> 00:07:52,100
+six N nine B model.
 
 174
-00:08:10,370 --> 00:08:10,730
-there.
+00:07:52,460 --> 00:07:54,600
+The exact prompt is in the setup kit.
 
 175
-00:08:14,990 --> 00:08:17,170
-So I tried installing it in the
+00:07:59,740 --> 00:08:01,820
+And this is where I hit my first problem.
 
 176
-00:08:17,170 --> 00:08:20,950
-terminal.
+00:08:02,340 --> 00:08:04,400
+MiMo wasn’t in Ollama’s drop-down.
 
 177
-00:08:20,950 --> 00:08:23,670
-The black text window where you type
+00:08:05,120 --> 00:08:08,500
+Ollama only shows a hand-- and Ollama only
 
 178
-00:08:23,670 --> 00:08:25,270
-commands from your computer.
+00:08:08,540 --> 00:08:10,760
+shows a handful of popular models there.
 
 179
-00:08:26,170 --> 00:08:28,670
-And it told me my Olamo was too
+00:08:13,060 --> 00:08:14,580
+So I tried installing it in a,
 
 180
-00:08:28,670 --> 00:08:32,410
-old.
+00:08:15,500 --> 00:08:17,120
+so I tried installing it in a,
 
 181
-00:08:32,830 --> 00:08:35,630
-I updated it, tried again and I was still
+00:08:18,960 --> 00:08:21,120
+so I tried installing it in the terminal,
 
 182
-00:08:35,630 --> 00:08:35,970
-stuck.
+00:08:21,820 --> 00:08:23,740
+the black text window where you type
 
 183
-00:08:36,470 --> 00:08:38,690
-And this is exactly where a 5 minute step
+00:08:23,800 --> 00:08:25,400
+commands from your computer.
 
 184
-00:08:38,690 --> 00:08:40,730
-turned into an hour of googling.
+00:08:26,140 --> 00:08:28,680
+And it told me my Ollama was too,
 
 185
-00:08:45,480 --> 00:08:48,560
-So instead I let another AI do it for me.
+00:08:30,380 --> 00:08:32,520
+and it told me my Ollama was too old.
 
 186
-00:08:48,960 --> 00:08:49,920
-It's called anti -gravity.
+00:08:32,920 --> 00:08:35,680
+I updated it, tried again, and I was still
 
 187
-00:08:49,920 --> 00:08:53,140
-Anti -Gravity is a free AI coding app from
+00:08:35,740 --> 00:08:36,000
+stuck.
 
 188
-00:08:53,140 --> 00:08:53,500
-Google.
+00:08:36,420 --> 00:08:38,420
+And this is exactly where a five-minute
 
 189
-00:08:53,840 --> 00:08:56,160
-The difference from a normal chatbot is
+00:08:38,480 --> 00:08:40,820
+step turned into an hour of Googling.
 
 190
-00:08:56,160 --> 00:08:58,200
-that it can actually work on your
+00:08:45,620 --> 00:08:48,500
+So instead, I let another AI do it for me.
 
 191
-00:08:58,200 --> 00:08:58,580
-computer.
+00:08:48,900 --> 00:08:50,180
+It’s called Antigravity.
 
 192
-00:08:59,160 --> 00:09:01,600
-It opens the terminal, runs command, reads
+00:08:50,600 --> 00:08:53,180
+Antigravity is a free AI coding app from
 
 193
-00:09:01,600 --> 00:09:03,060
-the errors and fixes them.
+00:08:53,240 --> 00:08:53,540
+Google.
 
 194
-00:09:03,600 --> 00:09:05,620
-Download it from anti -gravity .google,
+00:08:54,000 --> 00:08:56,200
+The difference from a normal chatbot is
 
 195
-00:09:06,160 --> 00:09:08,060
-sign in with your google account and open
+00:08:56,260 --> 00:08:58,220
+that it can actually work on your
 
 196
-00:09:08,060 --> 00:09:09,560
-it and give it one sentence.
-
-197
-00:09:10,100 --> 00:09:12,360
-I am running AI model locally, install
-
-198
-00:09:12,360 --> 00:09:15,780
-memo version 2 .69b and set everything up
-
-199
-00:09:15,780 --> 00:09:17,820
-so
-
-200
-00:09:19,740 --> 00:09:22,380
-it works with Olama.
-
-201
-00:09:26,500 --> 00:09:29,800
-It will ask you a
-
-202
-00:09:29,800 --> 00:09:31,760
-permission before running each command
-
-203
-00:09:31,760 --> 00:09:33,940
-because it's running things on your
-
-204
-00:09:33,940 --> 00:09:36,460
-machine, read each step and then allow.
-
-205
-00:09:37,100 --> 00:09:39,920
-A few minutes later it says installed and
-
-206
-00:09:39,920 --> 00:09:40,320
-tested.
-
-207
-00:09:40,760 --> 00:09:43,080
-Close Olama, open it again and the new
-
-208
-00:09:43,080 --> 00:09:45,080
-model is right there in the drop down.
-
-209
-00:09:50,200 --> 00:09:53,160
-And that's going to be rule for this whole
-
-210
-00:09:53,160 --> 00:09:53,580
-video.
-
-211
-00:09:54,220 --> 00:09:56,220
-And that's going to be the rule for this
-
-212
-00:09:56,220 --> 00:09:56,860
-whole video.
-
-213
-00:09:57,400 --> 00:10:00,860
-Anything longer than one line,
-
-214
-00:10:01,320 --> 00:10:02,540
-you don't type it yourself.
-
-215
-00:10:02,920 --> 00:10:04,200
-An AI installs it.
-
-216
-00:10:04,540 --> 00:10:06,440
-And if something breaks on the way, you
-
-217
-00:10:06,440 --> 00:10:08,860
-just copy the error, paste it back to anti
-
-218
-00:10:08,860 --> 00:10:10,600
--gravity and say fix this.
-
-219
-00:10:15,580 --> 00:10:17,300
-Now the part of you come here.
-
-220
-00:10:19,660 --> 00:10:22,500
-Now the part you came here for putting
-
-221
-00:10:22,500 --> 00:10:23,600
-Claude code on top.
-
-222
-00:10:25,880 --> 00:10:28,060
-Now the part you came here for putting
-
-223
-00:10:28,060 --> 00:10:29,200
-Claude code on top.
-
-224
-00:10:29,540 --> 00:10:32,360
-In Olama, to apps and click Claude code.
-
-225
-00:10:33,220 --> 00:10:35,460
-See the little message it copied the
-
-226
-00:10:35,460 --> 00:10:38,400
-launch command for you.
-
-227
-00:10:38,400 --> 00:10:41,040
-See that little message it copied the
-
-228
-00:10:41,040 --> 00:10:43,340
-launch command for you, Olama launch
-
-229
-00:10:43,340 --> 00:10:43,680
-Claude.
-
-230
-00:10:47,060 --> 00:10:49,260
-Now make a folder anywhere on your
-
-231
-00:10:49,260 --> 00:10:49,700
+00:08:58,280 --> 00:08:58,780
 computer.
 
+197
+00:08:59,280 --> 00:09:01,700
+It opens the terminal, runs command, reads
+
+198
+00:09:01,740 --> 00:09:03,040
+the errors, and fixes them.
+
+199
+00:09:03,600 --> 00:09:06,360
+Download it from antigravity.google, sign
+
+200
+00:09:06,400 --> 00:09:08,420
+in with your Google account and open it
+
+201
+00:09:08,480 --> 00:09:10,980
+and give it one sentence: "I am running AI
+
+202
+00:09:11,040 --> 00:09:11,820
+model locally.
+
+203
+00:09:12,000 --> 00:09:14,540
+Install MiMo version two point six nine B
+
+204
+00:09:14,640 --> 00:09:16,900
+and set everything up so it works well.
+
+205
+00:09:19,620 --> 00:09:21,800
+And set everything up so it works with
+
+206
+00:09:21,860 --> 00:09:22,340
+Ollama."
+
+207
+00:09:26,640 --> 00:09:28,600
+It will ask your p-- it will ask,
+
+208
+00:09:29,220 --> 00:09:31,200
+it will ask your permission before running
+
+209
+00:09:31,280 --> 00:09:33,580
+each command because it’s running things
+
+210
+00:09:33,660 --> 00:09:34,340
+on your machine.
+
+211
+00:09:34,840 --> 00:09:36,580
+Read each step and then allow.
+
+212
+00:09:37,220 --> 00:09:39,760
+A few minutes later, it says, "Installed
+
+213
+00:09:39,800 --> 00:09:42,480
+and tested." Close Ollama, open it again,
+
+214
+00:09:42,640 --> 00:09:44,580
+and the new model is right there in the
+
+215
+00:09:44,660 --> 00:09:45,220
+drop-down.
+
+216
+00:09:50,160 --> 00:09:52,460
+And that's, and that’s going to be rule
+
+217
+00:09:52,540 --> 00:09:53,660
+for this whole video.
+
+218
+00:09:54,420 --> 00:09:56,260
+And that’s going to be the rule for this
+
+219
+00:09:56,320 --> 00:09:56,920
+whole video.
+
+220
+00:09:57,440 --> 00:09:59,880
+Anything longer than one ti-- anything
+
+221
+00:09:59,960 --> 00:10:02,100
+longer than one line, you don’t type it
+
+222
+00:10:02,160 --> 00:10:02,640
+yourself.
+
+223
+00:10:02,920 --> 00:10:04,260
+An AI installs it.
+
+224
+00:10:04,520 --> 00:10:06,460
+And if something breaks on the way, you
+
+225
+00:10:06,520 --> 00:10:08,600
+just copy the error, paste it back to
+
+226
+00:10:08,700 --> 00:10:10,660
+Antigravity and say, "Fix this."
+
+227
+00:10:15,720 --> 00:10:17,340
+Now the part of you come here.
+
+228
+00:10:19,920 --> 00:10:22,580
+Now the part you came here for, putting
+
+229
+00:10:22,640 --> 00:10:23,680
+Claude Code on top.
+
+230
+00:10:25,939 --> 00:10:28,160
+Now the part you came here for, putting
+
+231
+00:10:28,200 --> 00:10:29,300
+Claude Code on top.
+
 232
-00:10:50,280 --> 00:10:51,620
-Mine is called Claude code.
+00:10:29,600 --> 00:10:32,020
+In Ollama, go to Apps and click Claude
 
 233
-00:10:52,260 --> 00:10:54,540
-Open it, right click
+00:10:32,120 --> 00:10:32,420
+Code.
 
 234
-00:10:56,580 --> 00:10:58,900
-in the empty space and choose open in
+00:10:33,440 --> 00:10:34,520
+See the little message?
 
 235
-00:10:58,900 --> 00:10:59,300
-terminal.
+00:10:34,780 --> 00:10:37,040
+It copied the launch command for you.
 
 236
-00:11:00,000 --> 00:11:01,520
-Paste the command and hit enter.
+00:10:38,780 --> 00:10:39,880
+See that little message?
 
 237
-00:11:01,960 --> 00:11:03,640
-If the Claude Cloud code isn't installed
+00:10:40,340 --> 00:10:42,060
+It copied the launch command for you,
 
 238
-00:11:03,640 --> 00:11:06,420
-yet, it offers to install it and say yes.
+00:10:42,540 --> 00:10:43,880
+Ollama launch Claude.
 
 239
-00:11:09,040 --> 00:11:10,540
-And this is the real cloud code,
+00:10:47,580 --> 00:10:49,240
+Now make a folder anywhere on your
 
 240
-00:11:11,060 --> 00:11:13,360
-Anthropic's official app, not a copy.
+00:10:49,280 --> 00:10:49,780
+computer.
 
 241
-00:11:13,880 --> 00:11:15,640
-Then it asks which model to use.
+00:10:50,260 --> 00:10:51,740
+Mine is called Claude Code.
 
 242
-00:11:16,140 --> 00:11:17,540
-And I picked my local one.
+00:10:52,100 --> 00:10:52,600
+Open it,
 
 243
-00:11:20,720 --> 00:11:22,940
-And look at that, the real cloud code
+00:10:53,400 --> 00:10:54,680
+open it, right-click,
 
 244
-00:11:22,940 --> 00:11:25,700
-running on my laptop with a free local
+00:10:56,320 --> 00:10:58,340
+right-click in the empty space and choose
 
 245
-00:11:25,700 --> 00:11:26,840
-brain inside it.
+00:10:58,440 --> 00:10:59,420
+Open in Terminal.
 
 246
-00:11:27,060 --> 00:11:28,920
-No subscription, no API key.
+00:10:59,940 --> 00:11:01,600
+Paste the command and hit Enter.
 
 247
-00:11:31,990 --> 00:11:33,570
-Now let's give it a real job.
+00:11:02,040 --> 00:11:04,280
+If the Claude Code isn't installed yet, it
 
 248
-00:11:33,570 --> 00:11:37,050
-I type build me a simple calculator app on
+00:11:04,360 --> 00:11:06,560
+offers to install it and say Yes.
 
 249
-00:11:37,050 --> 00:11:38,230
-my laptop it took
+00:11:09,000 --> 00:11:10,540
+And this is the real Claude Code,
 
 250
-00:11:40,500 --> 00:11:43,880
-about 30 minutes
+00:11:11,000 --> 00:11:13,460
+Anthropic’s official app, not a copy.
 
 251
-00:11:43,880 --> 00:11:46,660
-because a small local model is doing all
+00:11:14,000 --> 00:11:16,440
+Then it asks which model to use, and I
 
 252
-00:11:46,660 --> 00:11:47,420
-the heavy lifting.
+00:11:16,520 --> 00:11:17,640
+picked my local one.
 
 253
-00:11:48,060 --> 00:11:49,500
-And that's the honest trade off.
+00:11:20,820 --> 00:11:21,600
+And look at that.
 
 254
-00:11:50,040 --> 00:11:52,040
-Free means your laptop does the work.
+00:11:21,920 --> 00:11:24,440
+The real Claude Code running on my laptop
 
 255
-00:11:52,480 --> 00:11:54,660
-So on normal machines you pay with the.
+00:11:24,860 --> 00:11:26,800
+with a free local brain inside it.
 
 256
-00:11:55,920 --> 00:11:57,740
-And that's the honest trade off.
+00:11:27,160 --> 00:11:29,000
+No subscription, no API key.
 
 257
-00:11:58,260 --> 00:12:00,500
-Free means your laptop does the work.
+00:11:32,160 --> 00:11:33,640
+Now let's give it a real job.
 
 258
-00:12:00,500 --> 00:12:03,120
-So, on normal machine you pay with your
+00:11:34,020 --> 00:11:36,300
+I type, "Build me a simple calculator
 
 259
-00:12:03,120 --> 00:12:05,620
-time, but it finished and it works.
+00:11:36,460 --> 00:11:38,320
+app." On my laptop, it took...
 
 260
-00:12:10,040 --> 00:12:13,500
-And next time you don't
+00:11:41,360 --> 00:11:44,160
+On my laptop, it took about thirty minutes
 
 261
-00:12:13,500 --> 00:12:14,620
-repeat any
+00:11:44,220 --> 00:11:46,700
+because a small local model is doing all
 
 262
-00:12:14,620 --> 00:12:17,340
-of this.
+00:11:46,740 --> 00:11:48,980
+the heavy lifting, and that's the honest
 
 263
-00:12:17,680 --> 00:12:19,880
-Just open your folder in the terminal and
+00:11:49,040 --> 00:11:49,540
+trade-off.
 
 264
-00:12:19,880 --> 00:12:20,900
-run that one line.
+00:11:49,940 --> 00:11:52,520
+Free means your laptop does the work, so
 
 265
-00:12:21,440 --> 00:12:23,840
-So method 1 is your private offline.
+00:11:52,740 --> 00:11:54,780
+on normal machines you pay with the...
 
 266
-00:12:26,120 --> 00:12:28,880
-So method 1 is your private offline
+00:11:56,500 --> 00:11:57,820
+And that's the honest trade-off.
 
 267
-00:12:28,880 --> 00:12:29,280
-option.
+00:11:58,160 --> 00:12:01,240
+Free means your laptop does the work, so
 
 268
-00:12:29,680 --> 00:12:31,700
-For everyday speed we need something
+00:12:01,320 --> 00:12:03,580
+on normal machine you pay with your time.
 
 269
-00:12:31,700 --> 00:12:32,180
-faster.
+00:12:03,960 --> 00:12:05,760
+But it finished, and it works.
 
 270
-00:12:32,180 --> 00:12:33,820
-So let's move to the cloud.
+00:12:09,980 --> 00:12:12,760
+And next time, you don't repeat, and next
+
+271
+00:12:12,820 --> 00:12:14,680
+time, you don't repeat, and,
+
+272
+00:12:15,300 --> 00:12:17,120
+and next time, you don't repeat any of
+
+273
+00:12:17,180 --> 00:12:17,380
+this.
+
+274
+00:12:17,860 --> 00:12:19,940
+Just open your folder in the terminal and
+
+275
+00:12:20,040 --> 00:12:21,020
+run that one line.
+
+276
+00:12:21,380 --> 00:12:24,100
+So method one is your private offline.
+
+277
+00:12:26,500 --> 00:12:28,940
+So method one is your private offline
+
+278
+00:12:29,020 --> 00:12:29,420
+option.
+
+279
+00:12:29,760 --> 00:12:31,820
+For everyday speed, we need something
+
+280
+00:12:31,900 --> 00:12:33,980
+faster, so let's move to the cloud.
