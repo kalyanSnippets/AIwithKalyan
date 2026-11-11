@@ -2235,33 +2235,17 @@
   "scene": "5c",
   "mode": "VO",
   "take": "1478",
-  "start": 204.0,
-  "end": 206.015,
-  "text": "For both PowerShell and command prompt."
- },
- {
-  "scene": "5c",
-  "mode": "VO",
-  "take": "1478",
-  "start": 206.751,
-  "end": 208.77,
-  "text": "\u2026"
- },
- {
-  "scene": "5c",
-  "mode": "VO",
-  "take": "1478",
   "start": 212.321,
-  "end": 213.68,
-  "text": "For both PowerShell and"
+  "end": 214.52,
+  "text": "For both PowerShell and Command Prompt,"
  },
  {
   "scene": "5c",
   "mode": "VO",
   "take": "1478",
   "start": 218.676,
-  "end": 221.26,
-  "text": "these settings simply tell Claude code, don't"
+  "end": 222.308,
+  "text": "these settings simply tell Claude code, don't talk to Anthropic,"
  },
  {
   "scene": "5c",
@@ -2460,8 +2444,16 @@
   "mode": "VO",
   "take": "1478",
   "start": 363.74,
-  "end": 364.2,
-  "text": "type Claude"
+  "end": 364.734,
+  "text": "type Claude and"
+ },
+ {
+  "scene": "5d",
+  "mode": "VO",
+  "take": "1478",
+  "start": 364.943,
+  "end": 366.2,
+  "text": "\u2026"
  },
  {
   "scene": "5d",
@@ -3317,7 +3309,7 @@
   "take": "1479",
   "start": 279.87,
   "end": 280.152,
-  "text": "that's why this one is special search Cairo click add and omniroute first source and omniroute first shows a"
+  "text": "that's why this one is special search Cairo click add and omniroute first source and omniroute first shows a warning"
  },
  {
   "scene": "6c",
@@ -3340,16 +3332,16 @@
   "mode": "VO",
   "take": "1479",
   "start": 286.883,
-  "end": 288.59,
+  "end": 288.91,
   "text": "\u2026"
  },
  {
   "scene": "6c",
   "mode": "VO",
   "take": "1479",
-  "start": 293.85,
+  "start": 294.53,
   "end": 294.758,
-  "text": "it then read it"
+  "text": "read it"
  },
  {
   "scene": "6c",
@@ -4092,8 +4084,8 @@
   "mode": "VO",
   "take": "1479",
   "start": 648.7,
-  "end": 649.96,
-  "text": "it's Omni routes own"
+  "end": 650.56,
+  "text": "it's Omni routes own password"
  },
  {
   "scene": "6e",
@@ -4101,23 +4093,15 @@
   "take": "1479",
   "start": 652.78,
   "end": 652.983,
-  "text": "Claude code shows this key to Omni"
+  "text": "Claude code shows this key to Omni route and"
  },
  {
   "scene": "6e",
   "mode": "VO",
   "take": "1479",
   "start": 653.154,
-  "end": 655.02,
+  "end": 655.66,
   "text": "\u2026"
- },
- {
-  "scene": "6e",
-  "mode": "VO",
-  "take": "1479",
-  "start": 659.52,
-  "end": 659.992,
-  "text": "scenes Omni route then uses all the provider keys behind the scenes so Claude code never needs to see your Google or Nvidia keys."
  },
  {
   "scene": "6e",
@@ -4125,7 +4109,7 @@
   "take": "1479",
   "start": 660.872,
   "end": 664.395,
-  "text": "\u2026"
+  "text": "Omni route then uses all the provider keys behind the scenes so Claude code never needs to see your Google or Nvidia keys."
  },
  {
   "scene": "6e",
@@ -4548,8 +4532,8 @@
   "mode": "VO",
   "take": "1479",
   "start": 901.69,
-  "end": 903.41,
-  "text": "OmniRoute dashboard go"
+  "end": 903.93,
+  "text": "OmniRoute dashboard go to logs"
  },
  {
   "scene": "6g",
@@ -4909,7 +4893,7 @@
   "take": "1479",
   "start": 1047.75,
   "end": 1048.11,
-  "text": "and here is your free clot code map which one fits you privacy or offline go with Olama no strong hardware or if you don't have strong hardware and you want speed go with open"
+  "text": "and here is your free clot code map which one fits you privacy or offline go with Olama no strong hardware or if you don't have strong hardware and you want speed go with open router"
  },
  {
   "scene": "7",
@@ -4964,7 +4948,7 @@
   "mode": "FC",
   "take": "1479",
   "start": 1063.49,
-  "end": 1064.37,
+  "end": 1064.69,
   "text": "\u2026"
  },
  {
@@ -5139,9 +5123,17 @@
   "scene": "7",
   "mode": "FC",
   "take": "1479",
-  "start": 1130.66,
+  "start": 1128.48,
+  "end": 1128.87,
+  "text": "and the fourth one is things will break copy paste fix this and always check the bill not the label"
+ },
+ {
+  "scene": "7",
+  "mode": "FC",
+  "take": "1479",
+  "start": 1130.48,
   "end": 1131.96,
-  "text": "the fourth one is things will break copy paste fix this and always check the bill not the label"
+  "text": "\u2026"
  },
  {
   "scene": "7",
@@ -5172,16 +5164,16 @@
   "mode": "FC",
   "take": "1479",
   "start": 1142.3,
-  "end": 1145.53,
-  "text": "everyone told you Claude code cost $20 a"
+  "end": 1145.71,
+  "text": "everyone told you Claude code cost $20 a month"
  },
  {
   "scene": "7",
   "mode": "FC",
   "take": "1479",
-  "start": 1147.03,
+  "start": 1147.45,
   "end": 1148.09,
-  "text": "code everyone told you Claude code"
+  "text": "everyone told you Claude code"
  },
  {
   "scene": "7",
