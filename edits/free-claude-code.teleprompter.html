@@ -73,66 +73,93 @@ const SCRIPT = [
  ["FC","1 · Pain hook","0:00",[
   "Claude Code is one of the most powerful coding tools out there. But it costs **twenty dollars a month**, and the moment you hit your limit in the middle of a task, it just **stops**. You either pay more, or you wait. {p} But here's what most people don't know: **Claude Code itself is free.** What you're paying for is the AI brain inside it. And today, I'm going to swap that brain for **free ones**."
  ]],
- ["FC","2 · The phone example + promise + roadmap","0:15",[
+ ["FC","2 · The phone example + promise + roadmap","0:34",[
   "Let me explain with a simple example: your phone. The phone is just the hardware, and the SIM card decides who you pay. {i}**Claude Code is like the phone**: a free coding assistant from Anthropic that lives in your terminal and can read, write and run code for you.{/i} {i}**The AI model is like the SIM**: the brain that does the thinking.{/i} Anthropic's model costs twenty dollars a month. But **this phone accepts other SIMs.**",
   "So **by the end of this video**, you'll have the **real Claude Code** running for **zero dollars**, three different ways. **First**, completely on your own laptop, and I'll even switch the Wi-Fi off. **Then**, free AI models in the cloud, plus the one trap that can quietly charge your paid plan. **And finally**, several free providers connected together, where I'll show you **real Claude Sonnet** answering through a free account, with the logs to prove it. And I've put everything into a **free setup kit**: the model list, every prompt and every setting. It's the **first link in the description**. So **stay till the end**, because the last method is the best one."
  ]],
- ["FC","3 · Trust","0:55",[
+ ["FC","3 · Trust","1:58",[
   "Quick note: **nobody paid for this video**. I've already worked through every setup and every trap, so you don't have to. And I won't just tell you it's free. **I'll show you the receipt every time.** Let's go."
  ]],
- ["VO","4a · Method 1: Ollama","1:10",[
+ ["VO","4a · Method 1: Ollama","2:15",[
   "Method one is Ollama. {i}**Ollama** is a free app that downloads AI models and runs them right on your own laptop, like a media player, but for AI.{/i} Go to ollama.com, download, install, done. Then open Settings and find **context length**. {i}That's the AI's short-term memory: how much of your project it can hold at once.{/i} Claude Code reads a lot of files, so slide it up to **64K**. [drag the slider]"
  ]],
- ["VO","4b · Which model for your laptop","1:50",[
+ ["VO","4b · Which model for your laptop","2:46",[
   "Now, which model should you download? It depends on your **RAM**, {i}your computer's working memory, which decides how big a model you can run.{/i} Press Control, Shift, Escape, and open Performance. {q} Pause and check yours right now. {p} Mine is a normal laptop: **no graphics card, 16 GB of RAM**. Roughly: with 8 to 16 GB, stick to **small models**, around 4 to 12 billion parameters. With 32 GB, you can go medium. With 64 GB or more, you can run the big ones that feel close to the paid thing. The exact list I'd pick is in the **free setup kit**. Just find your RAM. [RAM tier graphic]",
   "And one tip: I asked ChatGPT for the latest best coding model for my laptop, and it suggested **MiMo v2.6 9B**. It wasn't in Ollama's list, so I let **Antigravity** install it. {i}Antigravity is a free AI coding app from Google that can run commands on your computer for you.{/i} One sentence, and it was installed and tested. That's my rule for this whole video: **anything longer than one line, an AI installs it.** And if something breaks, copy the error, paste it back, and say **\"fix this\"**."
  ]],
- ["VO","4c · Wi-Fi off","3:00",[
+ ["VO","4c · Wi-Fi off","4:12",[
   "Now watch this. I'm turning the **Wi-Fi off**. [click the Wi-Fi tile] No internet at all. {q} Do you think it can still write an app? {p} I ask for a simple notes app, and it's thinking… and it writes the whole thing. **Completely offline.** I turned the Wi-Fi back on just to test it in an online compiler, and **it runs**. Your code never left your laptop."
  ]],
- ["VO","4d · Claude Code on Ollama","3:40",[
+ ["VO","4d · Claude Code on Ollama","4:40",[
   "Now let's put Claude Code on top. In Ollama, go to **Apps**, click **Claude Code**, and it copies one command: **ollama launch claude**. Open a terminal, paste it, pick your model, and look at that: [Claude Code banner with the local model] **the real Claude Code, running on my own laptop.** No subscription, no API key.",
   "Let's give it a real job. [prompt] {todo}I asked it to build a calculator app. On my laptop it took about __ minutes{/todo}, because a small local model is doing all the heavy lifting. And that's the honest trade-off: free means **your laptop does the work**, so on a normal machine you pay with your time. {todo}But it finished, and it works.{/todo} [test the app]",
   "So method one is your **private, offline** option. For everyday speed, let's move to the cloud."
  ]],
- ["FC","4e · Subscribe hook","4:50",[
+ ["FC","4e · Subscribe hook","5:36",[
   "And if this already saved you twenty dollars a month, **hit subscribe**, because it gets better from here."
  ]],
- ["VO","5a · Method 2: OpenRouter","5:00",[
+ ["VO","5a · Method 2: OpenRouter","5:45",[
   "Method two is OpenRouter. {i}**OpenRouter** is one website that gives you dozens of AI models with a single account and key, and many of them are free.{/i} They run on its servers, so they're much faster. Sign up, go to **API Keys**, click **Create key**. {i}An API key is a password that lets Claude Code use your account.{/i} Set it to expire in seven days and set the **credit limit to zero**, so it physically can't charge you. Then in Models, filter by **free**.",
   "To connect it, you paste a small settings block into your terminal. {i}It tells Claude Code: talk to OpenRouter instead of Anthropic, and here's my key.{/i} It's in the setup kit, and you only change one thing: your key."
  ]],
- ["VO","5b · The trap","6:00",[
+ ["VO","5b · The trap","6:40",[
   "And this is where I almost got fooled. My paste failed silently. I typed claude, it opened, and it looked fine. {q} Look at the top line. Spot anything wrong? {p} **Claude Pro.** [point at the banner] Claude Code had quietly gone back to **my paid subscription**. If you see your Claude plan here, you're **not** on the free setup. Fresh terminal, one line at a time, and now it says **openrouter/free**."
  ]],
- ["VO","5c · The bill + the catch","6:40",[
+ ["VO","5c · The bill + the catch","7:09",[
   "The menu still says Opus and Sonnet, but those are just slot names. So let's check the bill. {q} Before I scroll, how much do you think this cost? {p} Three requests, **zero dollars**. And if Claude Code's own usage screen shows a few cents, that's only its estimate at Anthropic's prices. **The real bill is zero.**",
   "The catch? Free models are capped, about **fifty requests a day** on a new account, and one Claude Code task can use ten or twenty. Then you hit error **429**: {i}the server saying you've used up your free quota.{/i}"
  ]],
- ["FC","5d · Comment hook","7:40",[
+ ["FC","5d · Comment hook","7:51",[
   "Quick question: which one are you leaning towards so far, Ollama or OpenRouter? **Tell me in the comments.** Because method three is where it gets really interesting."
  ]],
- ["VO","6a · Method 3: OmniRoute","7:50",[
-  "Every free provider has a limit. But what if you connected all of them, and it switched automatically when one ran out? That's **OmniRoute**. {i}A free, open-source app that sits between Claude Code and all your AI providers, and sends each request to one that's free and working.{/i} One prompt to Antigravity installs it and opens the dashboard, {i}its control panel, running on your own computer.{/i} First password is **CHANGEME**. Change it."
+ ["VO","6a · Method 3: why OmniRoute","8:03",[
+  "So here's the problem with every free option we've seen so far: **every free provider has a limit.** Google gives you some free requests, NVIDIA gives you some, OpenRouter gives you fifty a day. On its own, each one runs out fast. But if you put them **all together**, that's a lot of free AI. And what if, when one runs out, the next one simply takes over, without you doing anything?",
+  "That's exactly what **OmniRoute** does. {i}OmniRoute is a free, open-source app. Open source means the code is public on GitHub, so anyone can check what it does. You install it on your own computer, and it sits **in the middle**: Claude Code talks only to OmniRoute, and OmniRoute decides which free AI provider answers each request.{/i} So Claude Code thinks it's talking to one AI, but behind the scenes OmniRoute is juggling many. [GitHub repo, zoom on the description]"
  ]],
- ["VO","6b · Connect free providers","8:40",[
-  "In the dashboard, open **Providers**, search, and click **Add**. **Kiro**, {i}Amazon's AI coding app, whose free plan includes real Claude models{/i}: you approve a code, and it's connected. The free allowance is small, and OmniRoute flags its terms, so **your account, your call**. **Antigravity**: sign in with Google. The warning is stronger here, so **use a spare account**. **NVIDIA**: free key from build.nvidia.com, paste it in. **Gemini**: free key from Google AI Studio. And switch on **\"Import only free models\"** wherever you see it."
+ ["VO","6b · Install it with one prompt","9:08",[
+  "And we install it with our rule: **an AI does it.** I open Antigravity and give it one prompt. It's in the setup kit, and it basically says: check whether Claude Code is installed, and install it if not. Then install OmniRoute from GitHub, start it, and open the dashboard in my browser. And if any step fails, fix it and keep going.",
+  "Now, Antigravity will ask for permission **a lot** here, because it's running real commands on your computer. Don't just click allow on everything. **Read each one**, then allow. [permission prompts] When it's done, it gives me a little summary table: Claude Code found, OmniRoute installed, server running, dashboard opened.",
+  "The dashboard opens in your browser at **localhost**. {i}Localhost just means the website is running on your own computer, not on the internet.{/i} The first time, it asks for a password, and the default one is **CHANGEME**. Literally. So log in, and then go straight to Settings and change it to something real."
  ]],
- ["VO","6c · Combo + OmniRoute key + shortcuts","9:50",[
-  "Now make a **combo**, {i}a team of models with an order of who answers first and who takes over next.{/i} Combos, Create, name it **Claude**, add your steps, pick smart routing, Save. Then the **OmniRoute key**: {i}OmniRoute's own password that Claude Code uses.{/i} API Keys, Create, name it, and **copy it once**. Tip: when Antigravity asks for it, **don't paste it into the chat**. Put it in a file.",
-  "One last prompt gives me two desktop shortcuts: **Free Claude Code**, and the **OmniRoute Dashboard**. And I hide the paid models, so the menu only shows free ones."
+ ["VO","6c · Connect the free providers","10:21",[
+  "Now the fun part: connecting free AI providers. {i}A provider is just a company that runs AI models, like Google, NVIDIA or Amazon.{/i} In the dashboard, open **Providers**. You'll see a huge list. Some connect with a **sign-in**, some with an **API key**. For each one, you search for it, click it, and click **Add**. Let me do four of them.",
+  "**Number one: Kiro.** {i}Kiro is Amazon's AI coding app, and its free plan includes real Claude models, like Claude Sonnet.{/i} That's why this one is special. Search Kiro, click Add, and OmniRoute first shows a warning. Read it. Then pick how you want to sign in. It gives you a short code and a link. Open the link, sign in, check that the code matches, and approve. It says **\"device authorized\"**, and back in OmniRoute, Kiro shows **connected**. [device authorized → connected]",
+  "Now, two honest things about Kiro. The free allowance is **small**, so it won't last long. And during sign-up it even opened a \"subscription required\" page. And OmniRoute itself marks Kiro as **\"terms of service: avoid\"**, because using it this way may go against Kiro's rules. So this one is **your account, your call.**",
+  "**Number two: Antigravity**, the same Google app we've been using, but this time as a provider. Click Add, and it opens a Google sign-in. Pick your account and allow. Then your browser lands on a page that **doesn't load**, and that's normal. Copy the full address from the top of that page, paste it back into OmniRoute, and click Connect. That's how OmniRoute gets permission. [paste the callback link] Now you get Gemini models, plus some Claude models within limits. The warning here is even **stronger**: OmniRoute says Google may restrict the account. So please **use a spare Google account**, not your main one.",
+  "**Number three: NVIDIA.** {i}NVIDIA, the graphics card company, also gives free access to a bunch of AI models on build.nvidia.com.{/i} Create a free account there. Go to **API Keys**, click **Generate API Key**, give it a name, and copy it. Then back in OmniRoute, open NVIDIA, click Add, and paste the key. And here, switch on **\"Import only free models\"**, so only the free ones come in. [toggle on] Save.",
+  "**Number four: Gemini.** {i}Gemini is Google's own AI model, and Google AI Studio gives you a free key for it.{/i} Go to Google AI Studio, click **Get API key**, then **Create API key**, and copy it. In OmniRoute, open Gemini, click Add, paste it, hit **Check** to make sure it works, and Save. [AI Studio key → connected]",
+  "And that's four providers connected. Now, one by one, they're small. So let's make them work as **one team**."
  ]],
- ["VO","6d · Moment of truth","11:00",[
-  "Moment of truth. **Double-click.** Claude Code opens. \"Which model are you?\" {p} Error **503**. {i}The service is temporarily unavailable.{/i} Not what I wanted on camera, but this is real. {q} Most people would quit here. What would you do? {p} Don't panic: OmniRoute had paused Kiro after a few errors. Ask again. It says \"Claude\", but a model's word isn't proof, so **check the bill**. The logs say: **claude-sonnet-4.5, provider Kiro, status 200.** [zoom the row] That's **real Claude Sonnet**, through a free account."
+ ["VO","6d · Build the combo","13:35",[
+  "In OmniRoute, that team is called a **combo**. {i}A combo is a list of models in an order: the first one answers, and if it's busy, out of free credits or failing, the next one takes over automatically.{/i} Go to **Combos**, click **Create**, and give it a name. I called mine **Claude**, and you'll see why that name matters in a second.",
+  "Now add the steps. For each step, you pick a **provider**, then a **model**, and leave the account on automatic. Click **Add step**. I put Gemini first, then **Kiro's Claude Sonnet**, and then more free backups behind them. You can use the little **up and down arrows** to change the order: top goes first.",
+  "Then it asks for a **strategy**, {i}which is simply how OmniRoute chooses between the models in your combo.{/i} You could keep the exact order, or rotate between them. I picked **smart routing**, so it scores each option and picks the best one for every request, and I never have to switch anything by hand. Then **Save**, and the combo is ready. [combo saved]"
  ]],
- ["VO","6e · Real test","11:50",[
-  "And to test the whole setup, on my test machine I asked it to design a note-taking app. It asked me questions, showed a plan, and started building. **Real Claude** did the planning until its free limit ran out, and then OmniRoute switched to **free NVIDIA by itself**. Honestly, it took a few fix rounds. But here it is, working, for **zero dollars**."
+ ["VO","6e · Create the OmniRoute key","14:55",[
+  "Now, Claude Code needs **one key** to use this whole combo, and that's the **OmniRoute API key**. {i}It's OmniRoute's own password. Claude Code shows this key to OmniRoute, and OmniRoute then uses all your provider keys behind the scenes. So Claude Code never needs to see your Google or NVIDIA keys.{/i}",
+  "In the dashboard, open **API Keys** and click **Create API Key**. Give it a name, like claude-code, and create it. And now **copy it straight away**, because just like the other keys, you only get to see it **once**. Keep it somewhere safe. [create key]"
  ]],
- ["FC","7 · Your free Claude Code map","12:30",[
+ ["VO","6f · Two desktop shortcuts + hide paid models","15:37",[
+  "Now, I don't want to type commands every time I use this. So I gave Antigravity one more prompt. It's in the setup kit too. It says: make two shortcuts on my desktop. The first is **\"Free Claude Code\"**: when I double-click it, it checks that OmniRoute is running, starts it if it isn't, opens a terminal in a work folder, and launches Claude Code through OmniRoute using my combo. Remember, I named the combo **Claude**, so the command simply says: run Claude, with the model Claude. The second shortcut is **\"OmniRoute Dashboard\"**, which opens the control panel.",
+  "And one **important safety tip** here. Antigravity will ask for your OmniRoute key while it sets this up. **Don't paste the key into the chat.** Ask it to open a file, paste the key into that file, save it, and type continue. That way your key never sits in a chat history. [desktop icons appear]",
+  "And then one last fix. When Claude Code connects to OmniRoute, its **model menu** can show every model from your providers, **including paid ones**. Pick a paid one by accident, and you get errors, or worse, a bill. So I gave Antigravity one more prompt: turn on **hide paid models** in OmniRoute, and keep my Claude combo as the default. On my test machine, that's exactly what happened: the menu only showed free options. [free-only model menu, test machine]"
+ ]],
+ ["VO","6g · Moment of truth","17:17",[
+  "Okay. Everything's connected. **Moment of truth.** I double-click **Free Claude Code**. [double-click] It checks OmniRoute, it's running, and Claude Code opens. So I ask the obvious question: which model are you? {p}",
+  "And… error **503**. {i}503 means \"service temporarily unavailable\".{/i} Okay. Not what I wanted on camera, but this is real life. {q} Most people would quit right here. What would you do? {p} Here's what happened: Kiro had a few errors, so OmniRoute **paused it for a moment** to protect the combo. That's actually OmniRoute doing its job. So: don't panic, ask again.",
+  "And this time it answers: \"I'm Claude\". But remember, a model's word isn't proof. So let's **check the bill**. I open the OmniRoute dashboard, go to **Logs**, {i}which is a list of every request: which model answered, which provider, and whether it worked.{/i} And look at this line. Model: **claude-sonnet-4.5**. Provider: **Kiro**. Combo: **Claude**. Status: **200**. {i}And 200 just means success.{/i} [zoom the log row]",
+  "So that's **real Claude Sonnet**, answering inside Claude Code, through a **free account**. That's the receipt."
+ ]],
+ ["VO","6h · Real test: build an app","18:32",[
+  "But a \"hi\" proves nothing, so let's build something real. On my test machine, with the same kind of setup, I asked: **design me a simple personal note-taking application**. And it doesn't just start writing code. It's in **plan mode**, {i}a Claude Code mode where it plans and asks you questions before it writes anything.{/i} So it asks me: which tech stack? which features? and how should the notes be stored? Then it shows me a plan, and only then starts building.",
+  "And here's the coolest part, straight from the logs. **Real Claude** did the planning, until its free limit ran out. Then OmniRoute **switched by itself** to free NVIDIA, and it kept building. I didn't touch anything. That's the whole point of a combo.",
+  "Now, honestly, the first version didn't work. It took a few fix rounds and a final clean-up. But here it is: notes, tags, Markdown, search, and it even survives a refresh. And the bill for all of that? **Zero dollars.** [working app]"
+ ]],
+ ["FC","7 · Your free Claude Code map","19:46",[
   "So here's your free Claude Code map. {q} Which one fits you? {p} Privacy, or offline: **Ollama**. No strong hardware and you want speed: **OpenRouter**. And if you want it to keep going when one provider runs out: **OmniRoute**.",
   "And four rules. One: **nothing is unlimited**. Two: **cloud providers see what you send**, so keep private code on Ollama. Three: Kiro and Antigravity **may go against their terms**, so it's your call. Four: **things will break**: copy, paste, fix this. And always **check the bill, not the label.**"
  ]],
- ["FC","8 · Close + end-screen hook","13:30",[
+ ["FC","8 · Close + end-screen hook","20:24",[
   "Everyone told you Claude Code costs twenty dollars a month. Today we ran the real Claude Code three ways for free: offline, in the cloud, and with providers that switch by themselves. **Same Claude Code. Zero bill.** {p}",
   "The free setup kit, with the model list, every prompt and every setting, is the **first link in the description**. Tell me in the comments **which method you're trying first**. And if this saved you twenty dollars a month, **subscribe to AI with Kalyan**. I test these AI tools so you don't have to. {p} And if you want to see what else Claude Code can do, **this video right here** is the one to watch next. [end screen]"
  ]],
