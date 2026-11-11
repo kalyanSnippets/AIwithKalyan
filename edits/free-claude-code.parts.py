@@ -88,7 +88,7 @@ PART1 = [  # timings from ElevenLabs Scribe (transcripts/IMG_14xx/elevenlabs.jso
         ('1477', 411.96, 414.20),  # "With thirty-two GB, you can go to medium,"
         ('1477', 424.36, 435.22),  # "and with sixty-four GB ... Just find your RAM."
         ('1477', 441.32, 443.26),  # "Here is a little trick I use too."
-        ('1477', 444.40, 447.98),  # "I asked ChatGPT, here is my laptop."
+        ('1477', 445.50, 447.98),  # "I asked ChatGPT, here is my laptop." (after "I, I asked chat,")
         ('1477', 451.38, 459.12),  # "give me the best coding model for Ollama ..."
         ('1477', 468.30, 474.70),  # "And it suggested MiMo ... The exact prompt is in the setup kit."
         ('1477', 479.66, 484.50),
@@ -100,7 +100,7 @@ PART1 = [  # timings from ElevenLabs Scribe (transcripts/IMG_14xx/elevenlabs.jso
         ('1477', 574.76, 585.32),
     ], [
         ('145317', 15, 55, 364.12, {}), ('145317', 95, 210, 441.32, {}), ('145317', 224, 240, 479.66, {}),
-        ('145317', 255, 305, 498.88, {}), ('145317', 320, 362, 525.54, {}), ('145317', 374, 440, 543.6, {}),
+        ('145317', 255, 270, 498.88, {}), ('145317', 278, 305, 510.30, {}), ('145317', 320, 362, 525.54, {}), ('145317', 374, 440, 543.6, {}),
         ('145317', 525, 603, 551.0, {}), ('151536', 0, 6, 569.16, {}), ('121640', 0, 8, 577.22, {}),
         ('121640', 14, 22, 580.9, {}),
     ]),
@@ -119,7 +119,7 @@ PART1 = [  # timings from ElevenLabs Scribe (transcripts/IMG_14xx/elevenlabs.jso
         ('1477', 735.22, 741.12),  # "and next time, you don't repeat any of this. Just open your folder ..."
         ('1477', 746.42, 754.00),
     ], [
-        ('121640', 8, 30, 625.86, {}), ('121640', 30, 55, 647.5, {'blur': dict(EXPLORER_BLUR, t0=0, t1=21)}),
+        ('121640', 8, 30, 625.86, {}), ('121640', 30, 55, 647.5, {'blur': dict(EXPLORER_BLUR, t0=1.6, t1=21)}),
         ('FACE', 'SCREEN RECORDING NEEDED: Claude Code running on Ollama', None, 661.9, {}),
     ]),
 ]
