@@ -1,0 +1,1055 @@
+{
+ "engine": "faster-whisper small.en (local, one-off)",
+ "segments": [
+  {
+   "start": 15.38,
+   "end": 18.18,
+   "text": "So here is the problem with every free model."
+  },
+  {
+   "start": 18.88,
+   "end": 22.4,
+   "text": "So here is the problem with every free option we have seen so far."
+  },
+  {
+   "start": 22.86,
+   "end": 24.62,
+   "text": "Every free provider has a limit."
+  },
+  {
+   "start": 28.64,
+   "end": 35.52,
+   "text": "Google gives you some free requests, NVIDIA gives you some, OpenRouter gives you 50 a day"
+  },
+  {
+   "start": 35.52,
+   "end": 36.74,
+   "text": "on its own."
+  },
+  {
+   "start": 38.22,
+   "end": 40.78,
+   "text": "On its own, each one runs out fast."
+  },
+  {
+   "start": 41.28,
+   "end": 45.0,
+   "text": "But if you put them all together, that's a lot of free AI, right?"
+  },
+  {
+   "start": 45.0,
+   "end": 52.92,
+   "text": "and what if when one runs out the next one simply takes over"
+  },
+  {
+   "start": 52.92,
+   "end": 60.0,
+   "text": "without you doing anything. That's exactly what OmniRoute does."
+  },
+  {
+   "start": 60.58,
+   "end": 72.94,
+   "text": "OmniRoute is a free open source app. Here open source means the code is"
+  },
+  {
+   "start": 72.94,
+   "end": 78.02,
+   "text": "public on GitHub. So anyone can check what it does. You install it on your own"
+  },
+  {
+   "start": 78.02,
+   "end": 85.13,
+   "text": "computer and sits in the middle you install it on your own computer and it"
+  },
+  {
+   "start": 85.13,
+   "end": 93.91,
+   "text": "sits in the middle. Clot code talks only to open route. Clot code talks only to"
+  },
+  {
+   "start": 93.91,
+   "end": 98.39,
+   "text": "OmniRoute and OmniRoute decides which AI provider answers each request."
+  },
+  {
+   "start": 100.07,
+   "end": 105.77,
+   "text": "And OmniRoute decides which AI provider answers each request."
+  },
+  {
+   "start": 105.77,
+   "end": 112.13,
+   "text": "So, Claude Cote thinks it's talking to one AI, but behind the scenes, OmniRoute is juggling"
+  },
+  {
+   "start": 112.13,
+   "end": 112.53,
+   "text": "many."
+  },
+  {
+   "start": 116.06,
+   "end": 122.44,
+   "text": "And we install it with our, and we install it with our rule, and AI does it."
+  },
+  {
+   "start": 122.84,
+   "end": 127.2,
+   "text": "I open it, I open anti-gravity and give it one prompt."
+  },
+  {
+   "start": 127.8,
+   "end": 140.27,
+   "text": "It's in the setup kit and we install it with one rule, and AI does it."
+  },
+  {
+   "start": 140.27,
+   "end": 146.93,
+   "text": "I open anti-gravity and give it one prompt, it's in the setup kit and it basically says"
+  },
+  {
+   "start": 147.45,
+   "end": 151.17,
+   "text": "check whether the plot code is installed and install it if not."
+  },
+  {
+   "start": 151.99,
+   "end": 157.69,
+   "text": "Then install omni route from github, start it and open the dashboard in my browser."
+  },
+  {
+   "start": 158.27,
+   "end": 161.39,
+   "text": "And if any step fails, fix it and keep going."
+  },
+  {
+   "start": 165.75,
+   "end": 171.05,
+   "text": "Now anti-gravity will ask for permission a lot here because it's running a real command"
+  },
+  {
+   "start": 171.05,
+   "end": 172.01,
+   "text": "on your computer."
+  },
+  {
+   "start": 172.01,
+   "end": 179.57,
+   "text": "don't just click allow on everything read each one and then allow when it's"
+  },
+  {
+   "start": 179.57,
+   "end": 185.73,
+   "text": "done it gives me a little summary table Claude code found Claude code found"
+  },
+  {
+   "start": 185.73,
+   "end": 190.13,
+   "text": "omni-route installed server running dashboard open the dashboard"
+  },
+  {
+   "start": 190.13,
+   "end": 197.55,
+   "text": "the dashboard opens in your browser at localhost the dashboard opens in your"
+  },
+  {
+   "start": 197.55,
+   "end": 202.77,
+   "text": "browser at localhost localhost just means the website is running on your own"
+  },
+  {
+   "start": 202.77,
+   "end": 208.01,
+   "text": "computer not on the internet. The first time it asked for a password and the"
+  },
+  {
+   "start": 208.01,
+   "end": 220.43,
+   "text": "default one is change me literally so login and then the first time it asked"
+  },
+  {
+   "start": 220.43,
+   "end": 226.03,
+   "text": "for a password and the default one is change me literally. So login and then"
+  },
+  {
+   "start": 226.03,
+   "end": 233.84,
+   "text": "go straight to settings and change it to something real. Now the fun part here is"
+  },
+  {
+   "start": 233.84,
+   "end": 240.46,
+   "text": "connecting free AI providers. A provider is just a company that reals a provider"
+  },
+  {
+   "start": 240.46,
+   "end": 245.28,
+   "text": "Here is just a company that runs AI models like Google, Nvidia or Amazon."
+  },
+  {
+   "start": 245.86,
+   "end": 250.2,
+   "text": "In the dashboard, open providers, you will see a huge list."
+  },
+  {
+   "start": 250.72,
+   "end": 253.54,
+   "text": "Some connect with sign-ins, some with an API key."
+  },
+  {
+   "start": 253.76,
+   "end": 257.02,
+   "text": "For each one, you search for it."
+  },
+  {
+   "start": 259.65,
+   "end": 262.99,
+   "text": "For each one, you search for it, click it and click add."
+  },
+  {
+   "start": 263.53,
+   "end": 264.79,
+   "text": "Let me do four of them."
+  },
+  {
+   "start": 269.61,
+   "end": 271.03,
+   "text": "So number one is Cairo."
+  },
+  {
+   "start": 271.03,
+   "end": 276.55,
+   "text": "Cairo is Amazon's AI coding app and its free plan includes real cloud models like"
+  },
+  {
+   "start": 276.55,
+   "end": 282.31,
+   "text": "Clods own earth that's that's why this one that's why this one is special"
+  },
+  {
+   "start": 282.31,
+   "end": 288.39,
+   "text": "search Cairo click add and omniroute first source and omniroute first shows"
+  },
+  {
+   "start": 288.39,
+   "end": 296.03,
+   "text": "a warning read it then pick how you want to sign it read it then read it then"
+  },
+  {
+   "start": 296.03,
+   "end": 297.57,
+   "text": "Then pick how you want to sign in."
+  },
+  {
+   "start": 297.69,
+   "end": 301.03,
+   "text": "It gives you a short code and link."
+  },
+  {
+   "start": 304.55,
+   "end": 310.13,
+   "text": "Open the link, sign in, check that the code matches and approve."
+  },
+  {
+   "start": 310.37,
+   "end": 316.29,
+   "text": "It says device authorized and back in omni route, kairo shows connected."
+  },
+  {
+   "start": 321.77,
+   "end": 323.57,
+   "text": "And two honest things about kairo."
+  },
+  {
+   "start": 323.93,
+   "end": 327.21,
+   "text": "The free allowance is small, so it won't last long."
+  },
+  {
+   "start": 327.21,
+   "end": 336.79,
+   "text": "During sign up, it even opened a subscription required page and OmniRoute itself marks Cairo"
+  },
+  {
+   "start": 336.79,
+   "end": 340.51,
+   "text": "as terms of service avoid."
+  },
+  {
+   "start": 341.57,
+   "end": 347.57,
+   "text": "Because using it this way may go against Cairo's rules."
+  },
+  {
+   "start": 348.79,
+   "end": 354.27,
+   "text": "So this one is your account and it's your call."
+  },
+  {
+   "start": 354.81,
+   "end": 355.91,
+   "text": "So this one is your ear."
+  },
+  {
+   "start": 355.91,
+   "end": 359.11,
+   "text": "So, this one is your account and your call."
+  },
+  {
+   "start": 361.98,
+   "end": 364.66,
+   "text": "So number 2 is anti-gravity."
+  },
+  {
+   "start": 365.18,
+   "end": 369.04,
+   "text": "The same Google app we have been using but this time as a provider."
+  },
+  {
+   "start": 369.64,
+   "end": 373.76,
+   "text": "Click add, it opens a Google sign-in, pick your account and allow."
+  },
+  {
+   "start": 374.66,
+   "end": 380.12,
+   "text": "Then your browser lands on a page that doesn't load and that's normal."
+  },
+  {
+   "start": 380.76,
+   "end": 384.96,
+   "text": "Copy the full address from the top of that page and paste it back into the omni route"
+  },
+  {
+   "start": 384.96,
+   "end": 386.0,
+   "text": "and click connect."
+  },
+  {
+   "start": 386.0,
+   "end": 388.2,
+   "text": "That's how OmniRoute gets permission."
+  },
+  {
+   "start": 392.46,
+   "end": 396.26,
+   "text": "Now you get Gemini model plus some Claude models within limits."
+  },
+  {
+   "start": 396.86,
+   "end": 398.6,
+   "text": "The warning here is even stronger."
+  },
+  {
+   "start": 399.12,
+   "end": 401.78,
+   "text": "OmniRoute says Google may restrict the account."
+  },
+  {
+   "start": 402.3,
+   "end": 405.98,
+   "text": "So please use a spare account, not your main one."
+  },
+  {
+   "start": 412.32,
+   "end": 413.72,
+   "text": "So number 3 is NVIDIA."
+  },
+  {
+   "start": 414.2,
+   "end": 424.58,
+   "text": "NVIDIA, the graphics card company also gives free access to bunch of AI models on build.nvidia.com."
+  },
+  {
+   "start": 424.58,
+   "end": 429.4,
+   "text": "Create a free account, go to API keys and click generate API key."
+  },
+  {
+   "start": 430.02,
+   "end": 431.94,
+   "text": "Give it a name and copy it."
+  },
+  {
+   "start": 432.1,
+   "end": 438.02,
+   "text": "Then back in omni route, open nvidia, click add and paste the key."
+  },
+  {
+   "start": 438.56,
+   "end": 441.22,
+   "text": "And here switch on import only free models."
+  },
+  {
+   "start": 441.74,
+   "end": 443.44,
+   "text": "So only the free ones comes in."
+  },
+  {
+   "start": 445.64,
+   "end": 446.4,
+   "text": "And then save."
+  },
+  {
+   "start": 447.64,
+   "end": 448.78,
+   "text": "Number 4 is Gemini."
+  },
+  {
+   "start": 448.78,
+   "end": 461.34,
+   "text": "Gemini is Google's own AI model and Google AI Studio gives you a free key for it."
+  },
+  {
+   "start": 461.66,
+   "end": 469.26,
+   "text": "Go to Google AI Studio, click Get API Key and create API key and copy it."
+  },
+  {
+   "start": 470.86,
+   "end": 477.06,
+   "text": "In Omni-Rote, open Gemini, click Add and paste it."
+  },
+  {
+   "start": 477.06,
+   "end": 479.68,
+   "text": "It checks to make sure it works and then save."
+  },
+  {
+   "start": 483.58,
+   "end": 485.26,
+   "text": "And that's 4 providers connected."
+  },
+  {
+   "start": 485.8,
+   "end": 491.03,
+   "text": "Now one by one and that's 4 providers connected."
+  },
+  {
+   "start": 491.51,
+   "end": 493.35,
+   "text": "Now one by one they are small."
+  },
+  {
+   "start": 493.87,
+   "end": 496.11,
+   "text": "So let's make them work as one team."
+  },
+  {
+   "start": 503.56,
+   "end": 505.28,
+   "text": "Now one by one they are small."
+  },
+  {
+   "start": 505.74,
+   "end": 507.7,
+   "text": "So let's make them work as one team."
+  },
+  {
+   "start": 509.08,
+   "end": 511.7,
+   "text": "In Omnirode the team is called combo."
+  },
+  {
+   "start": 513.52,
+   "end": 516.26,
+   "text": "A combo is a list of models in an order."
+  },
+  {
+   "start": 516.26,
+   "end": 522.04,
+   "text": "The first one answers and if it is busy out of free credits or for failing."
+  },
+  {
+   "start": 523.22,
+   "end": 525.46,
+   "text": "A combo is a list of models in an order."
+  },
+  {
+   "start": 525.76,
+   "end": 534.68,
+   "text": "The first one answer, and if it's busy out of free credits or failing."
+  },
+  {
+   "start": 537.87,
+   "end": 540.39,
+   "text": "A combo is a list of models in an order."
+  },
+  {
+   "start": 540.85,
+   "end": 546.77,
+   "text": "The first one answers and if it's busy out of free credits or failing, the next one takes"
+  },
+  {
+   "start": 546.77,
+   "end": 547.63,
+   "text": "over automatically."
+  },
+  {
+   "start": 547.63,
+   "end": 551.67,
+   "text": "Go to combos, click create and give it a name."
+  },
+  {
+   "start": 552.19,
+   "end": 554.13,
+   "text": "I called it mine as a Claude."
+  },
+  {
+   "start": 555.39,
+   "end": 564.64,
+   "text": "I called mine Claude and you will see why that name matters in a second."
+  },
+  {
+   "start": 565.26,
+   "end": 571.16,
+   "text": "Now at the steps, for each step you pick a provider, then a model and then leave the"
+  },
+  {
+   "start": 571.16,
+   "end": 572.28,
+   "text": "account on automatic."
+  },
+  {
+   "start": 572.28,
+   "end": 582.86,
+   "text": "Click Add Step, I put Gemini first, then Cairo, then Kairos, I put Gemini first, then Kairos"
+  },
+  {
+   "start": 582.86,
+   "end": 586.52,
+   "text": "slots on it and then more free backups behind them."
+  },
+  {
+   "start": 587.02,
+   "end": 595.48,
+   "text": "You can use the little up and down arrows to change the order."
+  },
+  {
+   "start": 596.14,
+   "end": 596.92,
+   "text": "Top goes first."
+  },
+  {
+   "start": 602.39,
+   "end": 608.27,
+   "text": "Then it asks for the strategy, which is simply how OmniRaud chooses between the models in"
+  },
+  {
+   "start": 608.27,
+   "end": 608.81,
+   "text": "your combo."
+  },
+  {
+   "start": 608.81,
+   "end": 612.71,
+   "text": "You could keep the exact order or rotate between them."
+  },
+  {
+   "start": 612.97,
+   "end": 617.25,
+   "text": "I picked Smart Routing so it scores each option and picks the best one."
+  },
+  {
+   "start": 617.79,
+   "end": 627.63,
+   "text": "For every request I never have to switch anything by hand."
+  },
+  {
+   "start": 628.01,
+   "end": 628.61,
+   "text": "Then save."
+  },
+  {
+   "start": 629.51,
+   "end": 631.63,
+   "text": "And the combo is ready."
+  },
+  {
+   "start": 635.88,
+   "end": 637.54,
+   "text": "Now, Claude Code needs one key."
+  },
+  {
+   "start": 637.54,
+   "end": 643.9,
+   "text": "to use this now Claude code needs one key to use this whole combo and that's"
+  },
+  {
+   "start": 643.9,
+   "end": 649.96,
+   "text": "the Omni route API key Omni route own password it's it's Omni routes own"
+  },
+  {
+   "start": 649.96,
+   "end": 655.26,
+   "text": "password Claude code shows this key Claude code shows this key to Omni route"
+  },
+  {
+   "start": 655.26,
+   "end": 659.92,
+   "text": "and Omni route then uses all your provider keys behind the scenes"
+  },
+  {
+   "start": 659.92,
+   "end": 665.42,
+   "text": "Omni route then uses all the provider keys behind the scenes so Claude code"
+  },
+  {
+   "start": 665.42,
+   "end": 675.24,
+   "text": "never needs to see your Google or Nvidia keys. In the dashboard open API keys and click create API"
+  },
+  {
+   "start": 675.24,
+   "end": 684.1,
+   "text": "key. Give it a name like Claude code and then create it. And now copy it straight away. And now"
+  },
+  {
+   "start": 684.1,
+   "end": 693.61,
+   "text": "copy it straight away because just like the other keys you only get to see it once. Keep it somewhere"
+  },
+  {
+   "start": 693.61,
+   "end": 697.03,
+   "text": "Now I don't want to type commands every time."
+  },
+  {
+   "start": 698.19,
+   "end": 701.55,
+   "text": "Now I don't want to type commands every time I use this."
+  },
+  {
+   "start": 701.99,
+   "end": 704.13,
+   "text": "So I gave anti-gravity one more prompt."
+  },
+  {
+   "start": 704.73,
+   "end": 705.67,
+   "text": "It's the same kit."
+  },
+  {
+   "start": 706.21,
+   "end": 707.57,
+   "text": "It's in the setup kit too."
+  },
+  {
+   "start": 708.29,
+   "end": 711.19,
+   "text": "It says make two shortcuts on my desktop."
+  },
+  {
+   "start": 711.85,
+   "end": 713.79,
+   "text": "The first is free clock code."
+  },
+  {
+   "start": 714.29,
+   "end": 722.22,
+   "text": "When I double click it, it checks that, when I double click it, it checks that omni route"
+  },
+  {
+   "start": 722.22,
+   "end": 722.74,
+   "text": "is running."
+  },
+  {
+   "start": 723.38,
+   "end": 724.7,
+   "text": "Start it if it is not."
+  },
+  {
+   "start": 724.7,
+   "end": 730.7,
+   "text": "opens a terminal in a work folder and launches cloud code through omni-route"
+  },
+  {
+   "start": 730.7,
+   "end": 736.58,
+   "text": "using mycombo. Remember I named the combo Claude so the command simply says"
+  },
+  {
+   "start": 736.58,
+   "end": 742.4,
+   "text": "run Claude with the model Claude. The second shortcut is omni-route dashboard"
+  },
+  {
+   "start": 742.4,
+   "end": 748.7,
+   "text": "which opens the control panel and one important safety tip here is"
+  },
+  {
+   "start": 748.7,
+   "end": 753.5,
+   "text": "Anti-gravity will ask for your omni-route key while it sets this up."
+  },
+  {
+   "start": 758.36,
+   "end": 765.26,
+   "text": "Don't paste the key into the chat. Ask it to open a file, paste the key into the file, save it and type continue."
+  },
+  {
+   "start": 765.78,
+   "end": 768.72,
+   "text": "That way your key never sits in a chat history."
+  },
+  {
+   "start": 772.33,
+   "end": 779.27,
+   "text": "And then one last fix, when plot code connects to omni-route, its model menu can show every model from your providers,"
+  },
+  {
+   "start": 779.27,
+   "end": 786.85,
+   "text": "including paid ones. Pick a paid one by accident and you get errors or worse a bill."
+  },
+  {
+   "start": 787.79,
+   "end": 798.19,
+   "text": "So I gave anti-gravity one more prompt, turn on high paid models in omniroute and keep"
+  },
+  {
+   "start": 798.19,
+   "end": 808.13,
+   "text": "my clod combo as the default. On my test machine that's exactly what happened. The menu only"
+  },
+  {
+   "start": 808.13,
+   "end": 817.69,
+   "text": "showed free options. Okay, everything's connected. Movement of truth. Movement"
+  },
+  {
+   "start": 817.69,
+   "end": 824.45,
+   "text": "movement of truth. Then I double click free cloud code. It checks it checks"
+  },
+  {
+   "start": 824.45,
+   "end": 829.95,
+   "text": "omnirode. It's running and cloud code opens. So I asked obvious question which"
+  },
+  {
+   "start": 829.95,
+   "end": 840.93,
+   "text": "model are you and the error 503. 503 means service temporary. 503 means"
+  },
+  {
+   "start": 840.93,
+   "end": 879.1,
+   "text": "service temporarily unavailable. So obvious question is which model are you?"
+  },
+  {
+   "start": 880.62,
+   "end": 886.62,
+   "text": "And it answers I am Claude but remember a model's word isn't approved so let's"
+  },
+  {
+   "start": 886.62,
+   "end": 901.03,
+   "text": "check the bill. I open the OmniRoute dashboard go to logs. I open the"
+  },
+  {
+   "start": 901.79,
+   "end": 905.89,
+   "text": "OmniRoute dashboard go to logs which is the list of every"
+  },
+  {
+   "start": 905.89,
+   "end": 914.25,
+   "text": "which is the list of every request, which model answered, which provider and whether"
+  },
+  {
+   "start": 914.25,
+   "end": 915.69,
+   "text": "it worked or not."
+  },
+  {
+   "start": 916.25,
+   "end": 925.83,
+   "text": "And look at this line, model Claude Sonat 4.5, provider Cairo, combo Claude, status 200,"
+  },
+  {
+   "start": 926.21,
+   "end": 927.97,
+   "text": "and 200 just means success."
+  },
+  {
+   "start": 932.33,
+   "end": 937.09,
+   "text": "So that's real Claude Sonat answering inside Claude code through a free account."
+  },
+  {
+   "start": 937.09,
+   "end": 938.39,
+   "text": "That's the receipt."
+  },
+  {
+   "start": 941.94,
+   "end": 943.08,
+   "text": "But a high proves nothing."
+  },
+  {
+   "start": 943.36,
+   "end": 944.64,
+   "text": "So let's build something real."
+  },
+  {
+   "start": 945.18,
+   "end": 954.52,
+   "text": "On my machine with the same kind of setup I asked, design me a simple personal note"
+  },
+  {
+   "start": 954.52,
+   "end": 974.07,
+   "text": "taking application and it doesn't just start writing code."
+  },
+  {
+   "start": 974.07,
+   "end": 985.14,
+   "text": "It's in plan mode, a clod code mode, it's in plan mode, a clod code mode where it plans"
+  },
+  {
+   "start": 985.14,
+   "end": 987.7,
+   "text": "and asks you questions before it writes anything."
+  },
+  {
+   "start": 988.18,
+   "end": 993.08,
+   "text": "So it asked me which text stack, which features and how should the nodes be stored."
+  },
+  {
+   "start": 993.44,
+   "end": 996.64,
+   "text": "Then it showed me a plan and only then it starts building."
+  },
+  {
+   "start": 1000.1,
+   "end": 1001.44,
+   "text": "And here is the coolest part."
+  },
+  {
+   "start": 1001.74,
+   "end": 1006.78,
+   "text": "Straight from the logs, real clod did the planning until its free limit ran out."
+  },
+  {
+   "start": 1006.78,
+   "end": 1011.4,
+   "text": "The Omni Road switched by itself to free NVIDIA and it kept building."
+  },
+  {
+   "start": 1011.86,
+   "end": 1014.74,
+   "text": "I didn't touch anything, that's the whole point of a combo."
+  },
+  {
+   "start": 1017.37,
+   "end": 1019.99,
+   "text": "Now honestly the first version didn't work."
+  },
+  {
+   "start": 1020.35,
+   "end": 1025.17,
+   "text": "It took a few fixed rounds and a final cleanup but here it is."
+  },
+  {
+   "start": 1025.55,
+   "end": 1031.45,
+   "text": "Nodes, tags, markdown, search and it even, and it even survives a refresh."
+  },
+  {
+   "start": 1032.29,
+   "end": 1035.37,
+   "text": "And it even, and it even survives a refresh."
+  },
+  {
+   "start": 1035.37,
+   "end": 1047.11,
+   "text": "and the bill and the bill for all of that is zero dollars and here is your"
+  },
+  {
+   "start": 1047.11,
+   "end": 1054.39,
+   "text": "free clot and here is your free clot code map which one fits you privacy or"
+  },
+  {
+   "start": 1054.39,
+   "end": 1061.31,
+   "text": "offline go with Olama no strong hardware or if you don't have strong"
+  },
+  {
+   "start": 1061.31,
+   "end": 1068.45,
+   "text": "hardware and you want speed go with open router and if you want it and if you"
+  },
+  {
+   "start": 1068.45,
+   "end": 1074.37,
+   "text": "want it to keep going when one provider runs out the best option is Omni route and the"
+  },
+  {
+   "start": 1074.37,
+   "end": 1086.49,
+   "text": "four rules one and keep this four rules in mind and keep and keep the and keep these"
+  },
+  {
+   "start": 1086.49,
+   "end": 1095.19,
+   "text": "four rules in mind the first thing is nothing is unlimited the second one is cloud providers"
+  },
+  {
+   "start": 1095.19,
+   "end": 1098.65,
+   "text": "providers see what you send. So keep private code in."
+  },
+  {
+   "start": 1100.13,
+   "end": 1107.16,
+   "text": "And the four rules, one is nothing and the four rules, one,"
+  },
+  {
+   "start": 1107.74,
+   "end": 1112.52,
+   "text": "nothing is unlimited and the two cloud providers see what you send."
+  },
+  {
+   "start": 1112.84,
+   "end": 1114.88,
+   "text": "So keep private code on Olama."
+  },
+  {
+   "start": 1115.46,
+   "end": 1119.68,
+   "text": "And the third thing is Cairo and anti-gravity may go again is their terms."
+  },
+  {
+   "start": 1120.2,
+   "end": 1120.86,
+   "text": "So it's call."
+  },
+  {
+   "start": 1121.82,
+   "end": 1122.64,
+   "text": "So it's your call."
+  },
+  {
+   "start": 1122.64,
+   "end": 1131.88,
+   "text": "and the fourth one is things will break copy paste fix and the fourth one is"
+  },
+  {
+   "start": 1131.88,
+   "end": 1138.56,
+   "text": "things will break copy paste fix this and always check the bill not the label"
+  },
+  {
+   "start": 1141.63,
+   "end": 1147.45,
+   "text": "everyone told you Claude code cost $20 a month everyone told you Claude code"
+  },
+  {
+   "start": 1147.45,
+   "end": 1153.81,
+   "text": "everyone told you Claude code cost $20 a month today we ran the real Claude code"
+  },
+  {
+   "start": 1153.81,
+   "end": 1155.11,
+   "text": "3 ways for free."
+  },
+  {
+   "start": 1155.45,
+   "end": 1159.89,
+   "text": "Offline, in the cloud and with the providers that switch by themselves."
+  },
+  {
+   "start": 1160.53,
+   "end": 1162.17,
+   "text": "Same cloud code, 0 will."
+  },
+  {
+   "start": 1162.77,
+   "end": 1168.33,
+   "text": "The free setup kit with the model list, every prompt and every setting is in the first link"
+  },
+  {
+   "start": 1168.33,
+   "end": 1169.03,
+   "text": "in the description."
+  },
+  {
+   "start": 1169.85,
+   "end": 1178.93,
+   "text": "Tell me in the comments, tell me in the comments which one you are, tell me in the comments"
+  },
+  {
+   "start": 1178.93,
+   "end": 1180.41,
+   "text": "which one you are trying first."
+  },
+  {
+   "start": 1180.41,
+   "end": 1189.13,
+   "text": "And if this saved you $20 a month, subscribe to AI with Kalyan."
+  },
+  {
+   "start": 1189.59,
+   "end": 1192.19,
+   "text": "I test these AI tools so you don't have to."
+  },
+  {
+   "start": 1192.59,
+   "end": 1195.99,
+   "text": "And if you want to see what else Claude code can do,"
+  },
+  {
+   "start": 1196.19,
+   "end": 1198.85,
+   "text": "and if you want to see what else Claude code can do,"
+  },
+  {
+   "start": 1200.15,
+   "end": 1202.65,
+   "text": "this video right here is one."
+  },
+  {
+   "start": 1204.07,
+   "end": 1204.95,
+   "text": "And if you want to see,"
+  },
+  {
+   "start": 1204.95,
+   "end": 1217.26,
+   "text": "And if you want to see what else Claude code can do, this video right here is one to watch"
+  },
+  {
+   "start": 1228.38,
+   "end": 1228.94,
+   "text": "next."
+  },
+  {
+   "start": 1316.29,
+   "end": 1321.85,
+   "text": "So, if you want the next free AI trick before everyone else, subscribe to AI with Kalyan."
+  },
+  {
+   "start": 1322.03,
+   "end": 1324.63,
+   "text": "I test it first, so you don't waste your time."
+  },
+  {
+   "start": 1324.63,
+   "end": 1331.19,
+   "text": "Every week on AI with Kalyan, one AI tool tested honestly and receipts included."
+  },
+  {
+   "start": 1331.75,
+   "end": 1333.87,
+   "text": "Subscribe and I'll see you in the next one."
+  }
+ ]
+}

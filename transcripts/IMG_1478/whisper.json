@@ -1,0 +1,535 @@
+{
+ "engine": "faster-whisper small.en (local, one-off)",
+ "segments": [
+  {
+   "start": 17.65,
+   "end": 24.97,
+   "text": "So, method 2 is called OpenRouter. OpenRouter is one website that gives you access to dozens"
+  },
+  {
+   "start": 24.97,
+   "end": 30.51,
+   "text": "of AI models from different companies with one single account and single key and lot of"
+  },
+  {
+   "start": 30.51,
+   "end": 36.35,
+   "text": "those models are completely free. The big difference from Ollama, these models run on their servers,"
+  },
+  {
+   "start": 36.79,
+   "end": 45.63,
+   "text": "not on your laptop. So, they are much faster, even on a basic laptop."
+  },
+  {
+   "start": 49.47,
+   "end": 52.93,
+   "text": "Go to OpenRouter.ai and sign up."
+  },
+  {
+   "start": 53.13,
+   "end": 54.95,
+   "text": "It's free, no credit card needed."
+  },
+  {
+   "start": 56.27,
+   "end": 58.77,
+   "text": "Then click API keys and create key."
+  },
+  {
+   "start": 59.19,
+   "end": 64.79,
+   "text": "API key is basically a password that lets an app like Claude code use your open router"
+  },
+  {
+   "start": 64.79,
+   "end": 65.21,
+   "text": "account."
+  },
+  {
+   "start": 65.71,
+   "end": 67.77,
+   "text": "Give it a name, minus just the Claude."
+  },
+  {
+   "start": 68.81,
+   "end": 70.01,
+   "text": "Now two seed bells."
+  },
+  {
+   "start": 70.71,
+   "end": 72.13,
+   "text": "First set an expiry."
+  },
+  {
+   "start": 72.55,
+   "end": 77.59,
+   "text": "I set 7 days, so even if the key leaks, it dies on its own."
+  },
+  {
+   "start": 77.59,
+   "end": 90.2,
+   "text": "2. Set a free credit limit. 2. Set a free credit limit."
+  },
+  {
+   "start": 90.54,
+   "end": 95.74,
+   "text": "And I set it to 0. That means even if you click the wrong model, it physically can't"
+  },
+  {
+   "start": 95.74,
+   "end": 102.82,
+   "text": "charge you. Then create it and copy the key straight away. Because OpenRouter shows it"
+  },
+  {
+   "start": 102.82,
+   "end": 108.36,
+   "text": "only once and treat it like a password. Anyone who has it can use your account."
+  },
+  {
+   "start": 113.99,
+   "end": 116.09,
+   "text": "Now which models are free?"
+  },
+  {
+   "start": 116.71,
+   "end": 122.31,
+   "text": "Click models at the top and in the price filter on the left, slide it all the way to free."
+  },
+  {
+   "start": 122.79,
+   "end": 128.13,
+   "text": "Now you will only see models with free in their name."
+  },
+  {
+   "start": 128.93,
+   "end": 134.13,
+   "text": "Now you will only see models with free in their name and every request to those costs"
+  },
+  {
+   "start": 134.13,
+   "end": 134.55,
+   "text": "zero."
+  },
+  {
+   "start": 136.7,
+   "end": 143.6,
+   "text": "Now you will only see models with free in their name and every request to these costs"
+  },
+  {
+   "start": 143.6,
+   "end": 144.14,
+   "text": "zero."
+  },
+  {
+   "start": 144.14,
+   "end": 155.06,
+   "text": "And here is an important tip. This list changes all the time. Models come and go."
+  },
+  {
+   "start": 155.22,
+   "end": 163.56,
+   "text": "Companies end their free offers. So don't memorize the names you see today."
+  },
+  {
+   "start": 163.98,
+   "end": 169.66,
+   "text": "Remember the filter. As long as you know how to find the free list, you will always have a free model."
+  },
+  {
+   "start": 173.8,
+   "end": 179.1,
+   "text": "Now let's connect Open Router to Claude code. For that, you paste a small block of settings."
+  },
+  {
+   "start": 180.32,
+   "end": 182.92,
+   "text": "Now let's connect OpenRouter to Claude code."
+  },
+  {
+   "start": 183.4,
+   "end": 192.04,
+   "text": "For that, you paste a small block of settings into your terminal and the whole block is in the setup kit."
+  },
+  {
+   "start": 192.48,
+   "end": 198.41,
+   "text": "For both, the whole block is in the setup kit."
+  },
+  {
+   "start": 203.61,
+   "end": 208.61,
+   "text": "For both PowerShell and command prompt."
+  },
+  {
+   "start": 211.62,
+   "end": 218.0,
+   "text": "For both PowerShell and Command Prompt, these settings simply tell Claude code, don't talk,"
+  },
+  {
+   "start": 218.7,
+   "end": 224.3,
+   "text": "these settings simply tell Claude code, don't talk to Anthropic, talk to Open Router instead,"
+  },
+  {
+   "start": 224.84,
+   "end": 227.58,
+   "text": "talk to Open Router instead, and here is my key."
+  },
+  {
+   "start": 233.97,
+   "end": 235.75,
+   "text": "Let me show you what each line does."
+  },
+  {
+   "start": 236.15,
+   "end": 241.17,
+   "text": "The first line sends all of the Claude codes request to Open Router, the second line in"
+  },
+  {
+   "start": 241.17,
+   "end": 243.73,
+   "text": "your key, and that's the only thing you change."
+  },
+  {
+   "start": 243.73,
+   "end": 249.11,
+   "text": "Paste your key between these codes. The third line clears out the old anthropic"
+  },
+  {
+   "start": 249.11,
+   "end": 256.05,
+   "text": "key. So there is no chance of falling back to a paid key. And the last few lines"
+  },
+  {
+   "start": 256.05,
+   "end": 264.43,
+   "text": "point plot codes to model slots Opus, Sonet and Haiku at open router slash"
+  },
+  {
+   "start": 264.43,
+   "end": 277.18,
+   "text": "free. And the last few lines point plot codes mode and the last few lines point"
+  },
+  {
+   "start": 277.18,
+   "end": 284.7,
+   "text": "Claude codes model slots Opus, Sonat and Haiku at openrouter slash free."
+  },
+  {
+   "start": 286.04,
+   "end": 291.6,
+   "text": "Openrouter slash free is openrouter free router it picks a free model for you"
+  },
+  {
+   "start": 291.6,
+   "end": 307.97,
+   "text": "automatically. Then open your folder right click open the terminal paste the"
+  },
+  {
+   "start": 307.97,
+   "end": 314.75,
+   "text": "block hit enter and type Claude. One thing to know here is these settings"
+  },
+  {
+   "start": 314.75,
+   "end": 317.03,
+   "text": "settings only apply to that terminal window."
+  },
+  {
+   "start": 320.01,
+   "end": 324.03,
+   "text": "One thing to know here is these settings only apply to that terminal window."
+  },
+  {
+   "start": 324.51,
+   "end": 326.29,
+   "text": "So next time you paste them again."
+  },
+  {
+   "start": 327.13,
+   "end": 330.45,
+   "text": "So or you let anti gravity make you a shortcut."
+  },
+  {
+   "start": 347.75,
+   "end": 348.79,
+   "text": "So here is the check."
+  },
+  {
+   "start": 349.33,
+   "end": 350.23,
+   "text": "If you see your clock."
+  },
+  {
+   "start": 352.34,
+   "end": 353.68,
+   "text": "So here is the check."
+  },
+  {
+   "start": 354.06,
+   "end": 358.52,
+   "text": "If you see your clock plan on this top line, you're not on a free setup."
+  },
+  {
+   "start": 359.18,
+   "end": 360.54,
+   "text": "I opened a fresh terminal."
+  },
+  {
+   "start": 360.54,
+   "end": 363.74,
+   "text": "enter the settings one line at a time type"
+  },
+  {
+   "start": 363.74,
+   "end": 368.0,
+   "text": "type Claude and now it says open router"
+  },
+  {
+   "start": 368.5,
+   "end": 371.62,
+   "text": "now it says open router slash free"
+  },
+  {
+   "start": 372.44,
+   "end": 376.22,
+   "text": "API usage billing that's the free one"
+  },
+  {
+   "start": 381.11,
+   "end": 385.15,
+   "text": "now let's check it's really free type slash model"
+  },
+  {
+   "start": 385.15,
+   "end": 388.93,
+   "text": "you will see Opus, Sonet and Haiku"
+  },
+  {
+   "start": 388.93,
+   "end": 392.65,
+   "text": "but those are just the names of the slots"
+  },
+  {
+   "start": 392.65,
+   "end": 394.89,
+   "text": "Not what's actually answering."
+  },
+  {
+   "start": 395.41,
+   "end": 401.13,
+   "text": "So I asked it, which model are you?"
+  },
+  {
+   "start": 401.51,
+   "end": 404.35,
+   "text": "And it said it's a free model running through open router."
+  },
+  {
+   "start": 406.03,
+   "end": 408.21,
+   "text": "But a model's word isn't a proof."
+  },
+  {
+   "start": 411.15,
+   "end": 413.11,
+   "text": "But a model's word isn't a proof."
+  },
+  {
+   "start": 413.71,
+   "end": 415.03,
+   "text": "So let's check the bill."
+  },
+  {
+   "start": 415.53,
+   "end": 418.63,
+   "text": "Go to open router and open the activity page."
+  },
+  {
+   "start": 418.99,
+   "end": 421.49,
+   "text": "Go to open router and open the activity page."
+  },
+  {
+   "start": 421.49,
+   "end": 424.71,
+   "text": "This is the real log of every request we have sent."
+  },
+  {
+   "start": 425.23,
+   "end": 427.17,
+   "text": "Which model answered and what it cost?"
+  },
+  {
+   "start": 428.05,
+   "end": 430.61,
+   "text": "Before I scroll down, how much do you think the cost?"
+  },
+  {
+   "start": 438.48,
+   "end": 447.07,
+   "text": "So before I scroll down, how much do you think this cost me?"
+  },
+  {
+   "start": 448.07,
+   "end": 451.69,
+   "text": "3D requests, about 24,000 tokens and $0."
+  },
+  {
+   "start": 454.92,
+   "end": 459.04,
+   "text": "And one more thing that might scare you."
+  },
+  {
+   "start": 459.04,
+   "end": 473.96,
+   "text": "If you type slash usage in clod code, it might say something like 30 and one more thing that"
+  },
+  {
+   "start": 473.96,
+   "end": 475.1,
+   "text": "might scare you."
+  },
+  {
+   "start": 475.22,
+   "end": 482.64,
+   "text": "If you type slash usage in clod code, it might say something like 13 cents."
+  },
+  {
+   "start": 483.2,
+   "end": 483.46,
+   "text": "Relax."
+  },
+  {
+   "start": 484.14,
+   "end": 488.2,
+   "text": "That's just the clod code estimating the cost at anthropic prices."
+  },
+  {
+   "start": 488.2,
+   "end": 494.36,
+   "text": "The real bill is on open router and it says 0."
+  },
+  {
+   "start": 498.38,
+   "end": 499.78,
+   "text": "But of course there is a catch."
+  },
+  {
+   "start": 502.68,
+   "end": 504.02,
+   "text": "But of course there is a catch."
+  },
+  {
+   "start": 504.78,
+   "end": 505.72,
+   "text": "Two actually."
+  },
+  {
+   "start": 506.38,
+   "end": 507.58,
+   "text": "First limits."
+  },
+  {
+   "start": 508.5,
+   "end": 512.7,
+   "text": "Free models are capped about 50 requests a day on a new account."
+  },
+  {
+   "start": 513.28,
+   "end": 521.06,
+   "text": "And free models are capped about 50 requests a day on a new account."
+  },
+  {
+   "start": 521.06,
+   "end": 531.92,
+   "text": "and 50 sounds like plenty until you realize one clot code task can use 10 or 20 requests."
+  },
+  {
+   "start": 534.73,
+   "end": 541.27,
+   "text": "50 sounds like plenty until you realize one clot code task can use 10 or 20 requests because"
+  },
+  {
+   "start": 541.27,
+   "end": 545.83,
+   "text": "it reads files, writes them, checks its own work and fixes what it broke."
+  },
+  {
+   "start": 546.31,
+   "end": 548.87,
+   "text": "Hit the cap and you will see error 429."
+  },
+  {
+   "start": 548.87,
+   "end": 560.42,
+   "text": "429 is just the server saying you have used your free quota come back later."
+  },
+  {
+   "start": 564.21,
+   "end": 565.81,
+   "text": "And the second is the privacy."
+  },
+  {
+   "start": 566.53,
+   "end": 571.01,
+   "text": "Unlike Olama, your prompts and your code now go to someone else's service."
+  },
+  {
+   "start": 571.83,
+   "end": 578.31,
+   "text": "So don't send client code or passwords through free cloud models."
+  },
+  {
+   "start": 579.81,
+   "end": 580.47,
+   "text": "Keep them in."
+  },
+  {
+   "start": 580.81,
+   "end": 583.77,
+   "text": "Keep those on Olama."
+  },
+  {
+   "start": 587.93,
+   "end": 590.79,
+   "text": "So, quick question before method 3."
+  },
+  {
+   "start": 591.65,
+   "end": 593.65,
+   "text": "So quick question before method 3."
+  },
+  {
+   "start": 594.03,
+   "end": 596.23,
+   "text": "Which one are you leaning towards so far?"
+  },
+  {
+   "start": 596.75,
+   "end": 598.17,
+   "text": "Olama or the open router?"
+  },
+  {
+   "start": 600.17,
+   "end": 602.81,
+   "text": "Or are you waiting for the next one?"
+  },
+  {
+   "start": 603.29,
+   "end": 604.13,
+   "text": "Tell me in the comments."
+  },
+  {
+   "start": 604.51,
+   "end": 605.69,
+   "text": "I actually read them."
+  },
+  {
+   "start": 606.19,
+   "end": 610.59,
+   "text": "Because method 3 is where it gets really interesting."
+  }
+ ]
+}

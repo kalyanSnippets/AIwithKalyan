@@ -1,0 +1,210 @@
+[15.4] So here is the problem with every free model.
+[18.9] So here is the problem with every free option we have seen so far.
+[22.9] Every free provider has a limit.
+[28.6] Google gives you some free requests, NVIDIA gives you some, OpenRouter gives you 50 a day
+[35.5] on its own.
+[38.2] On its own, each one runs out fast.
+[41.3] But if you put them all together, that's a lot of free AI, right?
+[45.0] and what if when one runs out the next one simply takes over
+[52.9] without you doing anything. That's exactly what OmniRoute does.
+[60.6] OmniRoute is a free open source app. Here open source means the code is
+[72.9] public on GitHub. So anyone can check what it does. You install it on your own
+[78.0] computer and sits in the middle you install it on your own computer and it
+[85.1] sits in the middle. Clot code talks only to open route. Clot code talks only to
+[93.9] OmniRoute and OmniRoute decides which AI provider answers each request.
+[100.1] And OmniRoute decides which AI provider answers each request.
+[105.8] So, Claude Cote thinks it's talking to one AI, but behind the scenes, OmniRoute is juggling
+[112.1] many.
+[116.1] And we install it with our, and we install it with our rule, and AI does it.
+[122.8] I open it, I open anti-gravity and give it one prompt.
+[127.8] It's in the setup kit and we install it with one rule, and AI does it.
+[140.3] I open anti-gravity and give it one prompt, it's in the setup kit and it basically says
+[147.4] check whether the plot code is installed and install it if not.
+[152.0] Then install omni route from github, start it and open the dashboard in my browser.
+[158.3] And if any step fails, fix it and keep going.
+[165.8] Now anti-gravity will ask for permission a lot here because it's running a real command
+[171.1] on your computer.
+[172.0] don't just click allow on everything read each one and then allow when it's
+[179.6] done it gives me a little summary table Claude code found Claude code found
+[185.7] omni-route installed server running dashboard open the dashboard
+[190.1] the dashboard opens in your browser at localhost the dashboard opens in your
+[197.6] browser at localhost localhost just means the website is running on your own
+[202.8] computer not on the internet. The first time it asked for a password and the
+[208.0] default one is change me literally so login and then the first time it asked
+[220.4] for a password and the default one is change me literally. So login and then
+[226.0] go straight to settings and change it to something real. Now the fun part here is
+[233.8] connecting free AI providers. A provider is just a company that reals a provider
+[240.5] Here is just a company that runs AI models like Google, Nvidia or Amazon.
+[245.9] In the dashboard, open providers, you will see a huge list.
+[250.7] Some connect with sign-ins, some with an API key.
+[253.8] For each one, you search for it.
+[259.6] For each one, you search for it, click it and click add.
+[263.5] Let me do four of them.
+[269.6] So number one is Cairo.
+[271.0] Cairo is Amazon's AI coding app and its free plan includes real cloud models like
+[276.6] Clods own earth that's that's why this one that's why this one is special
+[282.3] search Cairo click add and omniroute first source and omniroute first shows
+[288.4] a warning read it then pick how you want to sign it read it then read it then
+[296.0] Then pick how you want to sign in.
+[297.7] It gives you a short code and link.
+[304.6] Open the link, sign in, check that the code matches and approve.
+[310.4] It says device authorized and back in omni route, kairo shows connected.
+[321.8] And two honest things about kairo.
+[323.9] The free allowance is small, so it won't last long.
+[327.2] During sign up, it even opened a subscription required page and OmniRoute itself marks Cairo
+[336.8] as terms of service avoid.
+[341.6] Because using it this way may go against Cairo's rules.
+[348.8] So this one is your account and it's your call.
+[354.8] So this one is your ear.
+[355.9] So, this one is your account and your call.
+[362.0] So number 2 is anti-gravity.
+[365.2] The same Google app we have been using but this time as a provider.
+[369.6] Click add, it opens a Google sign-in, pick your account and allow.
+[374.7] Then your browser lands on a page that doesn't load and that's normal.
+[380.8] Copy the full address from the top of that page and paste it back into the omni route
+[385.0] and click connect.
+[386.0] That's how OmniRoute gets permission.
+[392.5] Now you get Gemini model plus some Claude models within limits.
+[396.9] The warning here is even stronger.
+[399.1] OmniRoute says Google may restrict the account.
+[402.3] So please use a spare account, not your main one.
+[412.3] So number 3 is NVIDIA.
+[414.2] NVIDIA, the graphics card company also gives free access to bunch of AI models on build.nvidia.com.
+[424.6] Create a free account, go to API keys and click generate API key.
+[430.0] Give it a name and copy it.
+[432.1] Then back in omni route, open nvidia, click add and paste the key.
+[438.6] And here switch on import only free models.
+[441.7] So only the free ones comes in.
+[445.6] And then save.
+[447.6] Number 4 is Gemini.
+[448.8] Gemini is Google's own AI model and Google AI Studio gives you a free key for it.
+[461.7] Go to Google AI Studio, click Get API Key and create API key and copy it.
+[470.9] In Omni-Rote, open Gemini, click Add and paste it.
+[477.1] It checks to make sure it works and then save.
+[483.6] And that's 4 providers connected.
+[485.8] Now one by one and that's 4 providers connected.
+[491.5] Now one by one they are small.
+[493.9] So let's make them work as one team.
+[503.6] Now one by one they are small.
+[505.7] So let's make them work as one team.
+[509.1] In Omnirode the team is called combo.
+[513.5] A combo is a list of models in an order.
+[516.3] The first one answers and if it is busy out of free credits or for failing.
+[523.2] A combo is a list of models in an order.
+[525.8] The first one answer, and if it's busy out of free credits or failing.
+[537.9] A combo is a list of models in an order.
+[540.9] The first one answers and if it's busy out of free credits or failing, the next one takes
+[546.8] over automatically.
+[547.6] Go to combos, click create and give it a name.
+[552.2] I called it mine as a Claude.
+[555.4] I called mine Claude and you will see why that name matters in a second.
+[565.3] Now at the steps, for each step you pick a provider, then a model and then leave the
+[571.2] account on automatic.
+[572.3] Click Add Step, I put Gemini first, then Cairo, then Kairos, I put Gemini first, then Kairos
+[582.9] slots on it and then more free backups behind them.
+[587.0] You can use the little up and down arrows to change the order.
+[596.1] Top goes first.
+[602.4] Then it asks for the strategy, which is simply how OmniRaud chooses between the models in
+[608.3] your combo.
+[608.8] You could keep the exact order or rotate between them.
+[613.0] I picked Smart Routing so it scores each option and picks the best one.
+[617.8] For every request I never have to switch anything by hand.
+[628.0] Then save.
+[629.5] And the combo is ready.
+[635.9] Now, Claude Code needs one key.
+[637.5] to use this now Claude code needs one key to use this whole combo and that's
+[643.9] the Omni route API key Omni route own password it's it's Omni routes own
+[650.0] password Claude code shows this key Claude code shows this key to Omni route
+[655.3] and Omni route then uses all your provider keys behind the scenes
+[659.9] Omni route then uses all the provider keys behind the scenes so Claude code
+[665.4] never needs to see your Google or Nvidia keys. In the dashboard open API keys and click create API
+[675.2] key. Give it a name like Claude code and then create it. And now copy it straight away. And now
+[684.1] copy it straight away because just like the other keys you only get to see it once. Keep it somewhere
+[693.6] Now I don't want to type commands every time.
+[698.2] Now I don't want to type commands every time I use this.
+[702.0] So I gave anti-gravity one more prompt.
+[704.7] It's the same kit.
+[706.2] It's in the setup kit too.
+[708.3] It says make two shortcuts on my desktop.
+[711.9] The first is free clock code.
+[714.3] When I double click it, it checks that, when I double click it, it checks that omni route
+[722.2] is running.
+[723.4] Start it if it is not.
+[724.7] opens a terminal in a work folder and launches cloud code through omni-route
+[730.7] using mycombo. Remember I named the combo Claude so the command simply says
+[736.6] run Claude with the model Claude. The second shortcut is omni-route dashboard
+[742.4] which opens the control panel and one important safety tip here is
+[748.7] Anti-gravity will ask for your omni-route key while it sets this up.
+[758.4] Don't paste the key into the chat. Ask it to open a file, paste the key into the file, save it and type continue.
+[765.8] That way your key never sits in a chat history.
+[772.3] And then one last fix, when plot code connects to omni-route, its model menu can show every model from your providers,
+[779.3] including paid ones. Pick a paid one by accident and you get errors or worse a bill.
+[787.8] So I gave anti-gravity one more prompt, turn on high paid models in omniroute and keep
+[798.2] my clod combo as the default. On my test machine that's exactly what happened. The menu only
+[808.1] showed free options. Okay, everything's connected. Movement of truth. Movement
+[817.7] movement of truth. Then I double click free cloud code. It checks it checks
+[824.5] omnirode. It's running and cloud code opens. So I asked obvious question which
+[830.0] model are you and the error 503. 503 means service temporary. 503 means
+[840.9] service temporarily unavailable. So obvious question is which model are you?
+[880.6] And it answers I am Claude but remember a model's word isn't approved so let's
+[886.6] check the bill. I open the OmniRoute dashboard go to logs. I open the
+[901.8] OmniRoute dashboard go to logs which is the list of every
+[905.9] which is the list of every request, which model answered, which provider and whether
+[914.2] it worked or not.
+[916.2] And look at this line, model Claude Sonat 4.5, provider Cairo, combo Claude, status 200,
+[926.2] and 200 just means success.
+[932.3] So that's real Claude Sonat answering inside Claude code through a free account.
+[937.1] That's the receipt.
+[941.9] But a high proves nothing.
+[943.4] So let's build something real.
+[945.2] On my machine with the same kind of setup I asked, design me a simple personal note
+[954.5] taking application and it doesn't just start writing code.
+[974.1] It's in plan mode, a clod code mode, it's in plan mode, a clod code mode where it plans
+[985.1] and asks you questions before it writes anything.
+[988.2] So it asked me which text stack, which features and how should the nodes be stored.
+[993.4] Then it showed me a plan and only then it starts building.
+[1000.1] And here is the coolest part.
+[1001.7] Straight from the logs, real clod did the planning until its free limit ran out.
+[1006.8] The Omni Road switched by itself to free NVIDIA and it kept building.
+[1011.9] I didn't touch anything, that's the whole point of a combo.
+[1017.4] Now honestly the first version didn't work.
+[1020.4] It took a few fixed rounds and a final cleanup but here it is.
+[1025.5] Nodes, tags, markdown, search and it even, and it even survives a refresh.
+[1032.3] And it even, and it even survives a refresh.
+[1035.4] and the bill and the bill for all of that is zero dollars and here is your
+[1047.1] free clot and here is your free clot code map which one fits you privacy or
+[1054.4] offline go with Olama no strong hardware or if you don't have strong
+[1061.3] hardware and you want speed go with open router and if you want it and if you
+[1068.5] want it to keep going when one provider runs out the best option is Omni route and the
+[1074.4] four rules one and keep this four rules in mind and keep and keep the and keep these
+[1086.5] four rules in mind the first thing is nothing is unlimited the second one is cloud providers
+[1095.2] providers see what you send. So keep private code in.
+[1100.1] And the four rules, one is nothing and the four rules, one,
+[1107.7] nothing is unlimited and the two cloud providers see what you send.
+[1112.8] So keep private code on Olama.
+[1115.5] And the third thing is Cairo and anti-gravity may go again is their terms.
+[1120.2] So it's call.
+[1121.8] So it's your call.
+[1122.6] and the fourth one is things will break copy paste fix and the fourth one is
+[1131.9] things will break copy paste fix this and always check the bill not the label
+[1141.6] everyone told you Claude code cost $20 a month everyone told you Claude code
+[1147.5] everyone told you Claude code cost $20 a month today we ran the real Claude code
+[1153.8] 3 ways for free.
+[1155.5] Offline, in the cloud and with the providers that switch by themselves.
+[1160.5] Same cloud code, 0 will.
+[1162.8] The free setup kit with the model list, every prompt and every setting is in the first link
+[1168.3] in the description.
+[1169.8] Tell me in the comments, tell me in the comments which one you are, tell me in the comments
+[1178.9] which one you are trying first.
+[1180.4] And if this saved you $20 a month, subscribe to AI with Kalyan.
+[1189.6] I test these AI tools so you don't have to.
+[1192.6] And if you want to see what else Claude code can do,
+[1196.2] and if you want to see what else Claude code can do,
+[1200.2] this video right here is one.
+[1204.1] And if you want to see,
+[1205.0] And if you want to see what else Claude code can do, this video right here is one to watch
+[1228.4] next.
+[1316.3] So, if you want the next free AI trick before everyone else, subscribe to AI with Kalyan.
+[1322.0] I test it first, so you don't waste your time.
+[1324.6] Every week on AI with Kalyan, one AI tool tested honestly and receipts included.
+[1331.8] Subscribe and I'll see you in the next one.

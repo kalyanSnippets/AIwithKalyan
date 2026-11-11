@@ -1,0 +1,819 @@
+1
+00:00:17,650 --> 00:00:20,010
+So, method 2 is called OpenRouter.
+
+2
+00:00:20,610 --> 00:00:24,110
+OpenRouter is one website that gives you
+
+3
+00:00:24,110 --> 00:00:26,190
+access to dozens of AI models from
+
+4
+00:00:26,190 --> 00:00:28,330
+different companies with one single
+
+5
+00:00:28,330 --> 00:00:30,710
+account and single key and lot of those
+
+6
+00:00:30,710 --> 00:00:32,070
+models are completely free.
+
+7
+00:00:32,570 --> 00:00:34,070
+The big difference from Ollama,
+
+8
+00:00:34,670 --> 00:00:37,150
+these models run on their servers, not on
+
+9
+00:00:37,150 --> 00:00:37,770
+your laptop.
+
+10
+00:00:38,190 --> 00:00:38,470
+So, they
+
+11
+00:00:38,470 --> 00:00:43,310
+are
+
+12
+00:00:43,310 --> 00:00:45,630
+much faster, even on a basic laptop.
+
+13
+00:00:49,470 --> 00:00:52,930
+Go to OpenRouter .ai and sign up.
+
+14
+00:00:53,130 --> 00:00:54,950
+It's free, no credit card needed.
+
+15
+00:00:56,270 --> 00:00:58,770
+Then click API keys and create key.
+
+16
+00:00:59,190 --> 00:01:01,970
+API key is basically a password that lets
+
+17
+00:01:01,970 --> 00:01:04,530
+an app like Claude code use your open
+
+18
+00:01:04,530 --> 00:01:05,210
+router account.
+
+19
+00:01:05,710 --> 00:01:07,770
+Give it a name, minus just the Claude.
+
+20
+00:01:08,810 --> 00:01:10,010
+Now two seed bells.
+
+21
+00:01:10,710 --> 00:01:12,130
+First set an expiry.
+
+22
+00:01:12,550 --> 00:01:15,850
+I set 7 days, so even if the key leaks,
+
+23
+00:01:16,090 --> 00:01:17,590
+it dies on its own.
+
+24
+00:01:17,590 --> 00:01:18,610
+2.
+
+25
+00:01:23,000 --> 00:01:24,620
+Set a free credit limit.
+
+26
+00:01:24,940 --> 00:01:25,520
+2.
+
+27
+00:01:29,200 --> 00:01:30,200
+Set a free credit limit.
+
+28
+00:01:30,540 --> 00:01:31,920
+And I set it to 0.
+
+29
+00:01:32,400 --> 00:01:34,160
+That means even if you click the wrong
+
+30
+00:01:34,160 --> 00:01:36,540
+model, it physically can't charge you.
+
+31
+00:01:36,680 --> 00:01:40,060
+Then create it and copy the key
+
+32
+00:01:40,060 --> 00:01:40,700
+straight away.
+
+33
+00:01:41,240 --> 00:01:44,260
+Because OpenRouter shows it only once and
+
+34
+00:01:44,260 --> 00:01:45,400
+treat it like a password.
+
+35
+00:01:45,920 --> 00:01:48,360
+Anyone who has it can use your account.
+
+36
+00:01:53,990 --> 00:01:56,090
+Now which models are free?
+
+37
+00:01:56,710 --> 00:01:59,010
+Click models at the top and in the price
+
+38
+00:01:59,010 --> 00:02:01,890
+filter on the left, slide it all the way
+
+39
+00:02:01,890 --> 00:02:02,310
+to free.
+
+40
+00:02:02,790 --> 00:02:05,710
+Now you will only see
+
+41
+00:02:05,710 --> 00:02:08,130
+models with free in their name.
+
+42
+00:02:08,930 --> 00:02:11,770
+Now you will only see models with free in
+
+43
+00:02:11,770 --> 00:02:13,810
+their name and every request to those
+
+44
+00:02:13,810 --> 00:02:14,550
+costs zero.
+
+45
+00:02:16,700 --> 00:02:20,040
+Now you will only see models
+
+46
+00:02:20,040 --> 00:02:22,660
+with free in their name and every request
+
+47
+00:02:22,660 --> 00:02:24,140
+to these costs zero.
+
+48
+00:02:24,140 --> 00:02:25,140
+And
+
+49
+00:02:29,140 --> 00:02:30,440
+here is an important tip.
+
+50
+00:02:31,360 --> 00:02:33,140
+This list changes all the time.
+
+51
+00:02:34,020 --> 00:02:35,060
+Models come and go.
+
+52
+00:02:35,220 --> 00:02:36,760
+Companies end their free
+
+53
+00:02:36,760 --> 00:02:40,860
+offers.
+
+54
+00:02:41,420 --> 00:02:43,560
+So don't memorize the names you see today.
+
+55
+00:02:43,980 --> 00:02:44,840
+Remember the filter.
+
+56
+00:02:45,220 --> 00:02:47,360
+As long as you know how to find the free
+
+57
+00:02:47,360 --> 00:02:49,660
+list, you will always have a free model.
+
+58
+00:02:53,800 --> 00:02:55,780
+Now let's connect Open Router to Claude
+
+59
+00:02:55,780 --> 00:02:56,080
+code.
+
+60
+00:02:56,500 --> 00:02:58,800
+For that, you paste a small block of
+
+61
+00:02:58,800 --> 00:02:59,100
+settings.
+
+62
+00:03:00,320 --> 00:03:02,600
+Now let's connect OpenRouter to Claude
+
+63
+00:03:02,600 --> 00:03:02,920
+code.
+
+64
+00:03:03,400 --> 00:03:05,500
+For that, you paste a small block of
+
+65
+00:03:05,500 --> 00:03:08,820
+settings into
+
+66
+00:03:08,820 --> 00:03:11,360
+your terminal and the whole block is in
+
+67
+00:03:11,360 --> 00:03:12,040
+the setup kit.
+
+68
+00:03:12,480 --> 00:03:13,100
+For both,
+
+69
+00:03:15,730 --> 00:03:18,410
+the whole block is in the setup kit.
+
+70
+00:03:23,610 --> 00:03:25,670
+For both PowerShell and command
+
+71
+00:03:25,670 --> 00:03:28,610
+prompt.
+
+72
+00:03:31,620 --> 00:03:34,360
+For both PowerShell and Command Prompt,
+
+73
+00:03:35,040 --> 00:03:36,860
+these settings simply tell Claude code,
+
+74
+00:03:37,260 --> 00:03:38,000
+don't talk,
+
+75
+00:03:38,700 --> 00:03:40,700
+these settings simply tell Claude code,
+
+76
+00:03:40,960 --> 00:03:43,520
+don't talk to Anthropic, talk to Open
+
+77
+00:03:43,520 --> 00:03:45,700
+Router instead, talk to Open Router
+
+78
+00:03:45,700 --> 00:03:47,580
+instead, and here is my key.
+
+79
+00:03:53,970 --> 00:03:55,750
+Let me show you what each line does.
+
+80
+00:03:56,150 --> 00:03:58,150
+The first line sends all of the Claude
+
+81
+00:03:58,150 --> 00:04:00,590
+codes request to Open Router, the second
+
+82
+00:04:00,590 --> 00:04:02,770
+line in your key, and that's the only
+
+83
+00:04:02,770 --> 00:04:03,730
+thing you change.
+
+84
+00:04:03,730 --> 00:04:05,990
+Paste your key between these codes.
+
+85
+00:04:06,350 --> 00:04:08,450
+The third line clears out the old
+
+86
+00:04:08,450 --> 00:04:09,370
+anthropic key.
+
+87
+00:04:09,890 --> 00:04:13,330
+So there is no chance of falling
+
+88
+00:04:13,330 --> 00:04:14,510
+back to a paid key.
+
+89
+00:04:15,010 --> 00:04:17,690
+And the last few lines point plot codes to
+
+90
+00:04:17,690 --> 00:04:20,710
+model slots Opus, Sonet and Haiku
+
+91
+00:04:20,710 --> 00:04:23,790
+at open router
+
+92
+00:04:23,790 --> 00:04:24,790
+slash free.
+
+93
+00:04:31,860 --> 00:04:34,200
+And the last few lines point plot codes
+
+94
+00:04:34,200 --> 00:04:37,500
+mode and the last few lines point Claude
+
+95
+00:04:37,500 --> 00:04:40,340
+codes model slots Opus, Sonat
+
+96
+00:04:40,340 --> 00:04:43,840
+and Haiku at openrouter
+
+97
+00:04:43,840 --> 00:04:44,700
+slash free.
+
+98
+00:04:46,040 --> 00:04:48,860
+Openrouter slash free is openrouter free
+
+99
+00:04:48,860 --> 00:04:51,600
+router it picks a free model for you
+
+100
+00:04:51,600 --> 00:04:52,060
+automatically.
+
+101
+00:05:03,590 --> 00:05:06,710
+Then open your folder right click open the
+
+102
+00:05:06,710 --> 00:05:09,430
+terminal paste the block hit enter and
+
+103
+00:05:09,430 --> 00:05:10,070
+type Claude.
+
+104
+00:05:12,170 --> 00:05:14,750
+One thing to know here is these settings
+
+105
+00:05:14,750 --> 00:05:16,550
+settings only apply to that terminal
+
+106
+00:05:16,550 --> 00:05:17,030
+window.
+
+107
+00:05:20,010 --> 00:05:22,070
+One thing to know here is these settings
+
+108
+00:05:22,070 --> 00:05:24,030
+only apply to that terminal window.
+
+109
+00:05:24,510 --> 00:05:26,290
+So next time you paste them again.
+
+110
+00:05:27,130 --> 00:05:30,130
+So or you let anti gravity make you a
+
+111
+00:05:30,130 --> 00:05:30,450
+shortcut.
+
+112
+00:05:47,750 --> 00:05:48,790
+So here is the check.
+
+113
+00:05:49,330 --> 00:05:50,230
+If you see your clock.
+
+114
+00:05:52,340 --> 00:05:53,680
+So here is the check.
+
+115
+00:05:54,060 --> 00:05:56,520
+If you see your clock plan on this top
+
+116
+00:05:56,520 --> 00:05:58,520
+line, you're not on a free setup.
+
+117
+00:05:59,180 --> 00:06:00,540
+I opened a fresh terminal.
+
+118
+00:06:00,540 --> 00:06:03,740
+enter the settings one line at a time type
+
+119
+00:06:03,740 --> 00:06:06,920
+type Claude and now it says
+
+120
+00:06:06,920 --> 00:06:10,120
+open router now it says
+
+121
+00:06:10,120 --> 00:06:11,620
+open router slash free
+
+122
+00:06:12,440 --> 00:06:15,940
+API usage billing that's the free
+
+123
+00:06:15,940 --> 00:06:16,220
+one
+
+124
+00:06:21,110 --> 00:06:24,390
+now let's check it's really free type
+
+125
+00:06:24,390 --> 00:06:27,670
+slash model you will see Opus,
+
+126
+00:06:28,130 --> 00:06:31,590
+Sonet and Haiku but those are just
+
+127
+00:06:31,590 --> 00:06:34,390
+the names of the slots Not what's actually
+
+128
+00:06:34,390 --> 00:06:34,890
+answering.
+
+129
+00:06:35,410 --> 00:06:37,110
+So I
+
+130
+00:06:37,110 --> 00:06:40,590
+asked it, which model
+
+131
+00:06:40,590 --> 00:06:41,130
+are you?
+
+132
+00:06:41,510 --> 00:06:43,370
+And it said it's a free model running
+
+133
+00:06:43,370 --> 00:06:44,350
+through open router.
+
+134
+00:06:46,030 --> 00:06:48,210
+But a model's word isn't a proof.
+
+135
+00:06:51,150 --> 00:06:53,110
+But a model's word isn't a proof.
+
+136
+00:06:53,710 --> 00:06:55,030
+So let's check the bill.
+
+137
+00:06:55,530 --> 00:06:58,130
+Go to open router and open the activity
+
+138
+00:06:58,130 --> 00:06:58,630
+page.
+
+139
+00:06:58,990 --> 00:07:01,050
+Go to open router and open the activity
+
+140
+00:07:01,050 --> 00:07:01,490
+page.
+
+141
+00:07:01,490 --> 00:07:04,210
+This is the real log of every request we
+
+142
+00:07:04,210 --> 00:07:04,710
+have sent.
+
+143
+00:07:05,230 --> 00:07:07,170
+Which model answered and what it cost?
+
+144
+00:07:08,050 --> 00:07:09,790
+Before I scroll down, how much do you
+
+145
+00:07:09,790 --> 00:07:10,610
+think the cost?
+
+146
+00:07:18,480 --> 00:07:19,080
+So
+
+147
+00:07:23,530 --> 00:07:25,650
+before I scroll down, how much do you
+
+148
+00:07:25,650 --> 00:07:27,070
+think this cost me?
+
+149
+00:07:28,070 --> 00:07:31,190
+3D requests, about 24 ,000 tokens and
+
+150
+00:07:31,190 --> 00:07:31,690
+$0.
+
+151
+00:07:34,920 --> 00:07:36,960
+And one more thing that might scare
+
+152
+00:07:36,960 --> 00:07:39,040
+you.
+
+153
+00:07:39,040 --> 00:07:41,400
+If you type slash usage
+
+154
+00:07:41,400 --> 00:07:45,040
+in
+
+155
+00:07:45,040 --> 00:07:47,900
+clod code, it might say something like 30
+
+156
+00:07:47,900 --> 00:07:48,960
+and
+
+157
+00:07:53,120 --> 00:07:55,100
+one more thing that might scare you.
+
+158
+00:07:55,220 --> 00:07:57,480
+If you type slash
+
+159
+00:07:57,480 --> 00:08:00,940
+usage in clod code, it might
+
+160
+00:08:00,940 --> 00:08:02,640
+say something like 13 cents.
+
+161
+00:08:03,200 --> 00:08:03,460
+Relax.
+
+162
+00:08:04,140 --> 00:08:06,300
+That's just the clod code estimating the
+
+163
+00:08:06,300 --> 00:08:08,200
+cost at anthropic prices.
+
+164
+00:08:08,200 --> 00:08:09,540
+The real bill
+
+165
+00:08:09,540 --> 00:08:12,720
+is on open
+
+166
+00:08:12,720 --> 00:08:14,360
+router and it says 0.
+
+167
+00:08:18,380 --> 00:08:19,780
+But of course there is a catch.
+
+168
+00:08:22,680 --> 00:08:24,020
+But of course there is a catch.
+
+169
+00:08:24,780 --> 00:08:25,720
+Two actually.
+
+170
+00:08:26,380 --> 00:08:27,580
+First limits.
+
+171
+00:08:28,500 --> 00:08:31,180
+Free models are capped about 50 requests a
+
+172
+00:08:31,180 --> 00:08:32,700
+day on a new account.
+
+173
+00:08:33,280 --> 00:08:35,300
+And free
+
+174
+00:08:37,540 --> 00:08:40,140
+models are capped about 50 requests a day
+
+175
+00:08:40,140 --> 00:08:41,060
+on a new account.
+
+176
+00:08:41,060 --> 00:08:44,460
+and 50 sounds like plenty until you
+
+177
+00:08:44,460 --> 00:08:45,640
+realize one clot
+
+178
+00:08:45,640 --> 00:08:49,460
+code
+
+179
+00:08:49,460 --> 00:08:51,920
+task can use 10 or 20 requests.
+
+180
+00:08:54,730 --> 00:08:57,530
+50 sounds like plenty until you realize
+
+181
+00:08:57,530 --> 00:09:00,350
+one clot code task can use 10 or 20
+
+182
+00:09:00,350 --> 00:09:02,650
+requests because it reads files, writes
+
+183
+00:09:02,650 --> 00:09:05,310
+them, checks its own work and fixes what
+
+184
+00:09:05,310 --> 00:09:05,830
+it broke.
+
+185
+00:09:06,310 --> 00:09:08,870
+Hit the cap and you will see error 429.
+
+186
+00:09:08,870 --> 00:09:11,030
+429 is just
+
+187
+00:09:11,030 --> 00:09:13,810
+the server saying you
+
+188
+00:09:13,810 --> 00:09:16,090
+have
+
+189
+00:09:18,140 --> 00:09:20,420
+used your free quota come back later.
+
+190
+00:09:24,210 --> 00:09:25,810
+And the second is the privacy.
+
+191
+00:09:26,530 --> 00:09:28,850
+Unlike Olama, your prompts and your code
+
+192
+00:09:28,850 --> 00:09:31,010
+now go to someone else's service.
+
+193
+00:09:31,830 --> 00:09:34,870
+So don't send client code or passwords
+
+194
+00:09:34,870 --> 00:09:38,310
+through free cloud models.
+
+195
+00:09:39,810 --> 00:09:40,470
+Keep them in.
+
+196
+00:09:40,810 --> 00:09:43,770
+Keep those on Olama.
+
+197
+00:09:47,930 --> 00:09:50,790
+So, quick question before method 3.
+
+198
+00:09:51,650 --> 00:09:53,650
+So quick question before method 3.
+
+199
+00:09:54,030 --> 00:09:56,230
+Which one are you leaning towards so far?
+
+200
+00:09:56,750 --> 00:09:58,170
+Olama or the open router?
+
+201
+00:10:00,170 --> 00:10:02,810
+Or are you waiting for the next one?
+
+202
+00:10:03,290 --> 00:10:04,130
+Tell me in the comments.
+
+203
+00:10:04,510 --> 00:10:05,690
+I actually read them.
+
+204
+00:10:06,190 --> 00:10:09,570
+Because method 3 is where it
+
+205
+00:10:09,570 --> 00:10:10,590
+gets really interesting.

@@ -1,0 +1,610 @@
+{
+ "engine": "faster-whisper small.en (local, one-off)",
+ "segments": [
+  {
+   "start": 17.9,
+   "end": 22.64,
+   "text": "So, method 1 is called Ollama."
+  },
+  {
+   "start": 23.0,
+   "end": 27.96,
+   "text": "Ollama is a free app that downloads AI models and runs them right on your own laptop."
+  },
+  {
+   "start": 28.42,
+   "end": 31.06,
+   "text": "Kind of like a media player but for AI."
+  },
+  {
+   "start": 31.64,
+   "end": 39.16,
+   "text": "The big difference from chat GPT or Claude is that nothing goes to the cloud."
+  },
+  {
+   "start": 39.62,
+   "end": 44.72,
+   "text": "The AI lives on your own machine so it's private and it even works without internet."
+  },
+  {
+   "start": 44.72,
+   "end": 61.68,
+   "text": "it. Installing it is super simple. So go to olama.com and click download. It works on"
+  },
+  {
+   "start": 61.68,
+   "end": 67.34,
+   "text": "Windows, Mac and Linux. I am on Windows, so I pick Windows and download the installer."
+  },
+  {
+   "start": 68.2,
+   "end": 75.54,
+   "text": "The double click the file, click through the stairs and that's it. Seriously, that's the"
+  },
+  {
+   "start": 75.54,
+   "end": 83.9,
+   "text": "whole install. Once it's open you will see three things on the left. Apps, this"
+  },
+  {
+   "start": 83.9,
+   "end": 88.58,
+   "text": "is where you connect coding tools like Claude code, codecs and others. Clicking"
+  },
+  {
+   "start": 88.58,
+   "end": 93.72,
+   "text": "one doesn't install anything. It just copies the command you need. Chat is this"
+  },
+  {
+   "start": 93.72,
+   "end": 102.54,
+   "text": "is where you talk to the models directly to test it. Chat, this is"
+  },
+  {
+   "start": 102.54,
+   "end": 109.1,
+   "text": "This is where you talk to models, chat, this is where you talk to a model directly to test"
+  },
+  {
+   "start": 109.1,
+   "end": 109.8,
+   "text": "it."
+  },
+  {
+   "start": 110.12,
+   "end": 115.03,
+   "text": "In settings, two things matter."
+  },
+  {
+   "start": 115.67,
+   "end": 118.67,
+   "text": "First the cloud toggle."
+  },
+  {
+   "start": 120.05,
+   "end": 123.63,
+   "text": "Olamic can also run some models on its own servers in the cloud."
+  },
+  {
+   "start": 124.09,
+   "end": 127.57,
+   "text": "But we want everything on our laptop, so leave that off."
+  },
+  {
+   "start": 128.55,
+   "end": 136.33,
+   "text": "2. The most important and the second the most people miss is the context length. Context"
+  },
+  {
+   "start": 136.33,
+   "end": 145.9,
+   "text": "length is the AI's short term memory. How much of your conversation and your project"
+  },
+  {
+   "start": 145.9,
+   "end": 152.8,
+   "text": "it can hold in its own. How much of your conversation and your project it can hold"
+  },
+  {
+   "start": 152.8,
+   "end": 158.14,
+   "text": "in its head at once. Clot code reads a lot of your files before it changes anything."
+  },
+  {
+   "start": 158.14,
+   "end": 162.38,
+   "text": "So, if the memory is too small, it loses track of half way through."
+  },
+  {
+   "start": 164.77,
+   "end": 168.65,
+   "text": "If the memory is too small, it loses track half way through."
+  },
+  {
+   "start": 168.93,
+   "end": 171.39,
+   "text": "So drag this slide up to 64K."
+  },
+  {
+   "start": 173.05,
+   "end": 173.81,
+   "text": "That's the fix."
+  },
+  {
+   "start": 178.33,
+   "end": 179.27,
+   "text": "Now let's test it."
+  },
+  {
+   "start": 181.09,
+   "end": 185.47,
+   "text": "Open chat, click the model menu at the bottom and pick a small model."
+  },
+  {
+   "start": 186.55,
+   "end": 191.69,
+   "text": "Models come in sizes like 4B or 9B, which means 4 or 9 billion parameters."
+  },
+  {
+   "start": 191.69,
+   "end": 198.67,
+   "text": "Bigger usually means smarter but slower and hungrier for the memory."
+  },
+  {
+   "start": 200.49,
+   "end": 212.02,
+   "text": "I pick a small one, QWEN 3.54b, QWEN 3.54b just to warm things up and type hi."
+  },
+  {
+   "start": 212.56,
+   "end": 215.9,
+   "text": "The first message downloads the model so it takes a minute."
+  },
+  {
+   "start": 215.9,
+   "end": 226.16,
+   "text": "After that it leaves on your laptop for good and you never download it again."
+  },
+  {
+   "start": 230.9,
+   "end": 232.1,
+   "text": "But high proves nothing."
+  },
+  {
+   "start": 233.3,
+   "end": 234.04,
+   "text": "So watch this."
+  },
+  {
+   "start": 234.42,
+   "end": 236.02,
+   "text": "I am turning the wifi off."
+  },
+  {
+   "start": 236.42,
+   "end": 238.28,
+   "text": "See no internet at all."
+  },
+  {
+   "start": 238.76,
+   "end": 239.42,
+   "text": "So be honest."
+  },
+  {
+   "start": 242.98,
+   "end": 249.12,
+   "text": "Do you think it can still write an app?"
+  },
+  {
+   "start": 249.12,
+   "end": 256.34,
+   "text": "I type make a simple note app and it's thinking."
+  },
+  {
+   "start": 257.3,
+   "end": 260.42,
+   "text": "Thinking and it writes the whole thing completely offline."
+  },
+  {
+   "start": 260.78,
+   "end": 273.85,
+   "text": "Every single word came from a model sitting on this laptop."
+  },
+  {
+   "start": 274.57,
+   "end": 280.29,
+   "text": "Every single word came from a model sitting on this laptop."
+  },
+  {
+   "start": 285.48,
+   "end": 294.42,
+   "text": "Then I turn the Wi-Fi back on for one reason. To test the code in a free online compiler."
+  },
+  {
+   "start": 297.32,
+   "end": 307.98,
+   "text": "An online compiler is just a website where you paste code and it runs instantly. First"
+  },
+  {
+   "start": 307.98,
+   "end": 315.58,
+   "text": "try I pick the wrong language so I switch to HTML, hit run and it works. Is it pretty?"
+  },
+  {
+   "start": 315.58,
+   "end": 329.88,
+   "text": "No? But a laptop with no internet just wrote working software with no subscription, no"
+  },
+  {
+   "start": 329.88,
+   "end": 332.66,
+   "text": "usage limits and your code never left your laptop."
+  },
+  {
+   "start": 334.66,
+   "end": 336.4,
+   "text": "And your code never left your computer."
+  },
+  {
+   "start": 339.81,
+   "end": 344.47,
+   "text": "And honestly, if that alone just saved you $20 a month, it's subscribed."
+  },
+  {
+   "start": 345.01,
+   "end": 349.73,
+   "text": "Just because, because it only gets better from here."
+  },
+  {
+   "start": 351.27,
+   "end": 357.63,
+   "text": "And honestly, if that alone just saved you $20 a month, hit subscribe because it only"
+  },
+  {
+   "start": 357.63,
+   "end": 359.19,
+   "text": "gets better from here."
+  },
+  {
+   "start": 364.28,
+   "end": 366.04,
+   "text": "Now which model should you actually run?"
+  },
+  {
+   "start": 366.68,
+   "end": 367.12,
+   "text": "Don't guess."
+  },
+  {
+   "start": 367.54,
+   "end": 368.68,
+   "text": "It depends on your RAM."
+  },
+  {
+   "start": 369.32,
+   "end": 374.66,
+   "text": "RAM is your computer's working memory and for local AI, it decides how big a model you"
+  },
+  {
+   "start": 374.66,
+   "end": 375.1,
+   "text": "can run."
+  },
+  {
+   "start": 375.58,
+   "end": 377.96,
+   "text": "On Windows, press Ctrl Shift Escape."
+  },
+  {
+   "start": 379.08,
+   "end": 383.64,
+   "text": "Press Ctrl Shift Escape to open Task Manager and click the Performance tab."
+  },
+  {
+   "start": 383.64,
+   "end": 388.14,
+   "text": "Actually pause the video and check yours right now."
+  },
+  {
+   "start": 391.82,
+   "end": 401.82,
+   "text": "Ok, here is mine. It's a pretty normal laptop, no separate graphics card, just the building graphics and 16 GB of RAM."
+  },
+  {
+   "start": 405.16,
+   "end": 411.46,
+   "text": "Roughly with 8 to 16 GB of RAM, stick to small models, around 4 to 12 billion parameters."
+  },
+  {
+   "start": 411.46,
+   "end": 420.28,
+   "text": "With 32 GB you can go to medium and with 64 GB or more you can run the big models that"
+  },
+  {
+   "start": 420.28,
+   "end": 421.9,
+   "text": "feel close to paid things."
+  },
+  {
+   "start": 424.3,
+   "end": 429.18,
+   "text": "And with 64 GB or more you can run the big ones that feel close to paid thing."
+  },
+  {
+   "start": 429.58,
+   "end": 435.04,
+   "text": "The exact list I would pick for each size is in the free setup kit just find your RAM."
+  },
+  {
+   "start": 440.19,
+   "end": 443.07,
+   "text": "Here is a little trick I used too."
+  },
+  {
+   "start": 443.07,
+   "end": 454.55,
+   "text": "I asked chat GPT, here is my laptop, give me the best coding model for Olama, its exact"
+  },
+  {
+   "start": 454.55,
+   "end": 469.01,
+   "text": "name and the latest one because new model comes out literally every week and it suggested"
+  },
+  {
+   "start": 469.01,
+   "end": 474.49,
+   "text": "at MIMO version 2.6, a 9B model, the exact prompt is in the setup kit."
+  },
+  {
+   "start": 479.71,
+   "end": 481.77,
+   "text": "And this is where I hit my first problem."
+  },
+  {
+   "start": 482.39,
+   "end": 484.41,
+   "text": "MIMO wasn't in Olamas drop down."
+  },
+  {
+   "start": 485.15,
+   "end": 490.73,
+   "text": "Olama only shows a handful of popular models there."
+  },
+  {
+   "start": 494.99,
+   "end": 500.95,
+   "text": "So I tried installing it in the terminal."
+  },
+  {
+   "start": 500.95,
+   "end": 505.27,
+   "text": "The black text window where you type commands from your computer."
+  },
+  {
+   "start": 506.17,
+   "end": 512.41,
+   "text": "And it told me my Olamo was too old."
+  },
+  {
+   "start": 512.83,
+   "end": 515.97,
+   "text": "I updated it, tried again and I was still stuck."
+  },
+  {
+   "start": 516.47,
+   "end": 520.73,
+   "text": "And this is exactly where a 5 minute step turned into an hour of googling."
+  },
+  {
+   "start": 525.48,
+   "end": 528.56,
+   "text": "So instead I let another AI do it for me."
+  },
+  {
+   "start": 528.96,
+   "end": 529.92,
+   "text": "It's called anti-gravity."
+  },
+  {
+   "start": 529.92,
+   "end": 533.5,
+   "text": "Anti-Gravity is a free AI coding app from Google."
+  },
+  {
+   "start": 533.84,
+   "end": 538.58,
+   "text": "The difference from a normal chatbot is that it can actually work on your computer."
+  },
+  {
+   "start": 539.16,
+   "end": 543.06,
+   "text": "It opens the terminal, runs command, reads the errors and fixes them."
+  },
+  {
+   "start": 543.6,
+   "end": 548.58,
+   "text": "Download it from anti-gravity.google, sign in with your google account and open it and"
+  },
+  {
+   "start": 548.58,
+   "end": 549.56,
+   "text": "give it one sentence."
+  },
+  {
+   "start": 550.1,
+   "end": 561.14,
+   "text": "I am running AI model locally, install memo version 2.69b and set everything up so it"
+  },
+  {
+   "start": 561.14,
+   "end": 573.14,
+   "text": "works with Olama. It will ask you a permission before running each command because it's running"
+  },
+  {
+   "start": 573.14,
+   "end": 579.64,
+   "text": "things on your machine, read each step and then allow. A few minutes later it says installed"
+  },
+  {
+   "start": 579.64,
+   "end": 585.08,
+   "text": "and tested. Close Olama, open it again and the new model is right there in the drop down."
+  },
+  {
+   "start": 590.2,
+   "end": 596.48,
+   "text": "And that's going to be rule for this whole video. And that's going to be the rule for this whole"
+  },
+  {
+   "start": 596.48,
+   "end": 604.2,
+   "text": "video. Anything longer than one line, you don't type it yourself. An AI installs it."
+  },
+  {
+   "start": 604.54,
+   "end": 609.1,
+   "text": "And if something breaks on the way, you just copy the error, paste it back to anti-gravity"
+  },
+  {
+   "start": 609.1,
+   "end": 622.5,
+   "text": "and say fix this. Now the part of you come here. Now the part you came here for putting"
+  },
+  {
+   "start": 622.5,
+   "end": 630.48,
+   "text": "Claude code on top. Now the part you came here for putting Claude code on top. In Olama,"
+  },
+  {
+   "start": 630.48,
+   "end": 638.4,
+   "text": "to apps and click Claude code. See the little message it copied the launch command for you."
+  },
+  {
+   "start": 638.4,
+   "end": 647.7,
+   "text": "See that little message it copied the launch command for you, Olama launch Claude. Now"
+  },
+  {
+   "start": 647.7,
+   "end": 654.54,
+   "text": "make a folder anywhere on your computer. Mine is called Claude code. Open it, right click"
+  },
+  {
+   "start": 656.58,
+   "end": 662.54,
+   "text": "in the empty space and choose open in terminal. Paste the command and hit enter. If the Claude"
+  },
+  {
+   "start": 662.54,
+   "end": 666.42,
+   "text": "Cloud code isn't installed yet, it offers to install it and say yes."
+  },
+  {
+   "start": 669.04,
+   "end": 673.36,
+   "text": "And this is the real cloud code, Anthropic's official app, not a copy."
+  },
+  {
+   "start": 673.88,
+   "end": 675.64,
+   "text": "Then it asks which model to use."
+  },
+  {
+   "start": 676.14,
+   "end": 677.54,
+   "text": "And I picked my local one."
+  },
+  {
+   "start": 680.72,
+   "end": 686.5,
+   "text": "And look at that, the real cloud code running on my laptop with a free local brain inside"
+  },
+  {
+   "start": 686.5,
+   "end": 686.84,
+   "text": "it."
+  },
+  {
+   "start": 687.06,
+   "end": 688.92,
+   "text": "No subscription, no API key."
+  },
+  {
+   "start": 691.99,
+   "end": 693.57,
+   "text": "Now let's give it a real job."
+  },
+  {
+   "start": 693.57,
+   "end": 704.42,
+   "text": "I type build me a simple calculator app on my laptop it took about 30 minutes because"
+  },
+  {
+   "start": 704.42,
+   "end": 707.42,
+   "text": "a small local model is doing all the heavy lifting."
+  },
+  {
+   "start": 708.06,
+   "end": 709.5,
+   "text": "And that's the honest trade off."
+  },
+  {
+   "start": 710.04,
+   "end": 712.04,
+   "text": "Free means your laptop does the work."
+  },
+  {
+   "start": 712.48,
+   "end": 714.66,
+   "text": "So on normal machines you pay with the."
+  },
+  {
+   "start": 715.92,
+   "end": 717.74,
+   "text": "And that's the honest trade off."
+  },
+  {
+   "start": 718.26,
+   "end": 720.5,
+   "text": "Free means your laptop does the work."
+  },
+  {
+   "start": 720.5,
+   "end": 725.62,
+   "text": "So, on normal machine you pay with your time, but it finished and it works."
+  },
+  {
+   "start": 730.04,
+   "end": 737.34,
+   "text": "And next time you don't repeat any of this."
+  },
+  {
+   "start": 737.68,
+   "end": 740.9,
+   "text": "Just open your folder in the terminal and run that one line."
+  },
+  {
+   "start": 741.44,
+   "end": 743.84,
+   "text": "So method 1 is your private offline."
+  },
+  {
+   "start": 746.12,
+   "end": 749.28,
+   "text": "So method 1 is your private offline option."
+  },
+  {
+   "start": 749.68,
+   "end": 752.18,
+   "text": "For everyday speed we need something faster."
+  },
+  {
+   "start": 752.18,
+   "end": 753.82,
+   "text": "So let's move to the cloud."
+  }
+ ]
+}

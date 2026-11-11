@@ -1,0 +1,106 @@
+[17.6] So, method 2 is called OpenRouter. OpenRouter is one website that gives you access to dozens
+[25.0] of AI models from different companies with one single account and single key and lot of
+[30.5] those models are completely free. The big difference from Ollama, these models run on their servers,
+[36.8] not on your laptop. So, they are much faster, even on a basic laptop.
+[49.5] Go to OpenRouter.ai and sign up.
+[53.1] It's free, no credit card needed.
+[56.3] Then click API keys and create key.
+[59.2] API key is basically a password that lets an app like Claude code use your open router
+[64.8] account.
+[65.7] Give it a name, minus just the Claude.
+[68.8] Now two seed bells.
+[70.7] First set an expiry.
+[72.5] I set 7 days, so even if the key leaks, it dies on its own.
+[77.6] 2. Set a free credit limit. 2. Set a free credit limit.
+[90.5] And I set it to 0. That means even if you click the wrong model, it physically can't
+[95.7] charge you. Then create it and copy the key straight away. Because OpenRouter shows it
+[102.8] only once and treat it like a password. Anyone who has it can use your account.
+[114.0] Now which models are free?
+[116.7] Click models at the top and in the price filter on the left, slide it all the way to free.
+[122.8] Now you will only see models with free in their name.
+[128.9] Now you will only see models with free in their name and every request to those costs
+[134.1] zero.
+[136.7] Now you will only see models with free in their name and every request to these costs
+[143.6] zero.
+[144.1] And here is an important tip. This list changes all the time. Models come and go.
+[155.2] Companies end their free offers. So don't memorize the names you see today.
+[164.0] Remember the filter. As long as you know how to find the free list, you will always have a free model.
+[173.8] Now let's connect Open Router to Claude code. For that, you paste a small block of settings.
+[180.3] Now let's connect OpenRouter to Claude code.
+[183.4] For that, you paste a small block of settings into your terminal and the whole block is in the setup kit.
+[192.5] For both, the whole block is in the setup kit.
+[203.6] For both PowerShell and command prompt.
+[211.6] For both PowerShell and Command Prompt, these settings simply tell Claude code, don't talk,
+[218.7] these settings simply tell Claude code, don't talk to Anthropic, talk to Open Router instead,
+[224.8] talk to Open Router instead, and here is my key.
+[234.0] Let me show you what each line does.
+[236.2] The first line sends all of the Claude codes request to Open Router, the second line in
+[241.2] your key, and that's the only thing you change.
+[243.7] Paste your key between these codes. The third line clears out the old anthropic
+[249.1] key. So there is no chance of falling back to a paid key. And the last few lines
+[256.1] point plot codes to model slots Opus, Sonet and Haiku at open router slash
+[264.4] free. And the last few lines point plot codes mode and the last few lines point
+[277.2] Claude codes model slots Opus, Sonat and Haiku at openrouter slash free.
+[286.0] Openrouter slash free is openrouter free router it picks a free model for you
+[291.6] automatically. Then open your folder right click open the terminal paste the
+[308.0] block hit enter and type Claude. One thing to know here is these settings
+[314.8] settings only apply to that terminal window.
+[320.0] One thing to know here is these settings only apply to that terminal window.
+[324.5] So next time you paste them again.
+[327.1] So or you let anti gravity make you a shortcut.
+[347.8] So here is the check.
+[349.3] If you see your clock.
+[352.3] So here is the check.
+[354.1] If you see your clock plan on this top line, you're not on a free setup.
+[359.2] I opened a fresh terminal.
+[360.5] enter the settings one line at a time type
+[363.7] type Claude and now it says open router
+[368.5] now it says open router slash free
+[372.4] API usage billing that's the free one
+[381.1] now let's check it's really free type slash model
+[385.1] you will see Opus, Sonet and Haiku
+[388.9] but those are just the names of the slots
+[392.6] Not what's actually answering.
+[395.4] So I asked it, which model are you?
+[401.5] And it said it's a free model running through open router.
+[406.0] But a model's word isn't a proof.
+[411.1] But a model's word isn't a proof.
+[413.7] So let's check the bill.
+[415.5] Go to open router and open the activity page.
+[419.0] Go to open router and open the activity page.
+[421.5] This is the real log of every request we have sent.
+[425.2] Which model answered and what it cost?
+[428.1] Before I scroll down, how much do you think the cost?
+[438.5] So before I scroll down, how much do you think this cost me?
+[448.1] 3D requests, about 24,000 tokens and $0.
+[454.9] And one more thing that might scare you.
+[459.0] If you type slash usage in clod code, it might say something like 30 and one more thing that
+[474.0] might scare you.
+[475.2] If you type slash usage in clod code, it might say something like 13 cents.
+[483.2] Relax.
+[484.1] That's just the clod code estimating the cost at anthropic prices.
+[488.2] The real bill is on open router and it says 0.
+[498.4] But of course there is a catch.
+[502.7] But of course there is a catch.
+[504.8] Two actually.
+[506.4] First limits.
+[508.5] Free models are capped about 50 requests a day on a new account.
+[513.3] And free models are capped about 50 requests a day on a new account.
+[521.1] and 50 sounds like plenty until you realize one clot code task can use 10 or 20 requests.
+[534.7] 50 sounds like plenty until you realize one clot code task can use 10 or 20 requests because
+[541.3] it reads files, writes them, checks its own work and fixes what it broke.
+[546.3] Hit the cap and you will see error 429.
+[548.9] 429 is just the server saying you have used your free quota come back later.
+[564.2] And the second is the privacy.
+[566.5] Unlike Olama, your prompts and your code now go to someone else's service.
+[571.8] So don't send client code or passwords through free cloud models.
+[579.8] Keep them in.
+[580.8] Keep those on Olama.
+[587.9] So, quick question before method 3.
+[591.6] So quick question before method 3.
+[594.0] Which one are you leaning towards so far?
+[596.8] Olama or the open router?
+[600.2] Or are you waiting for the next one?
+[603.3] Tell me in the comments.
+[604.5] I actually read them.
+[606.2] Because method 3 is where it gets really interesting.

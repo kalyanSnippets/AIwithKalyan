@@ -1,0 +1,515 @@
+{
+ "engine": "faster-whisper small.en (local, one-off)",
+ "segments": [
+  {
+   "start": 23.34,
+   "end": 29.08,
+   "text": "Claude Code is one of the most powerful coding tools out there, but it costs $20 a month."
+  },
+  {
+   "start": 29.62,
+   "end": 33.3,
+   "text": "And the moment you hit your limit in the middle of a task, it just stops."
+  },
+  {
+   "start": 33.98,
+   "end": 36.02,
+   "text": "You either pay more or you wait."
+  },
+  {
+   "start": 36.62,
+   "end": 39.04,
+   "text": "But here is what most people don't know about."
+  },
+  {
+   "start": 39.6,
+   "end": 41.08,
+   "text": "Claude Code itself is free."
+  },
+  {
+   "start": 41.68,
+   "end": 44.1,
+   "text": "What you are paying for is the brain inside it."
+  },
+  {
+   "start": 45.48,
+   "end": 48.98,
+   "text": "And today, I am going to swap that brain for free ones."
+  },
+  {
+   "start": 55.63,
+   "end": 57.39,
+   "text": "Let me explain with a simple example."
+  },
+  {
+   "start": 57.39,
+   "end": 58.83,
+   "text": "Let's take a phone."
+  },
+  {
+   "start": 59.51,
+   "end": 63.25,
+   "text": "The phone is just the hardware and the SIM card decides who you pay."
+  },
+  {
+   "start": 64.17,
+   "end": 65.61,
+   "text": "Clot code is like the phone."
+  },
+  {
+   "start": 66.27,
+   "end": 71.45,
+   "text": "A free coding assistant from anthropic that lives in your terminal and can read, write"
+  },
+  {
+   "start": 71.45,
+   "end": 72.81,
+   "text": "and run code for you."
+  },
+  {
+   "start": 73.21,
+   "end": 77.09,
+   "text": "The AI model is like the SIM, the brain that does the thinking."
+  },
+  {
+   "start": 77.87,
+   "end": 83.05,
+   "text": "Anthropics model costs $20 a month but this phone accepts other SIMs as well."
+  },
+  {
+   "start": 88.3,
+   "end": 93.88,
+   "text": "So, by the end of this video, you will have the real cloud running for $0."
+  },
+  {
+   "start": 95.18,
+   "end": 103.74,
+   "text": "So by the end of this video, you will have the real cloud code running for $0 in three"
+  },
+  {
+   "start": 103.74,
+   "end": 104.68,
+   "text": "different ways."
+  },
+  {
+   "start": 105.28,
+   "end": 110.06,
+   "text": "First, completely on your own laptop and I will even switch the Wi-Fi off."
+  },
+  {
+   "start": 110.86,
+   "end": 113.56,
+   "text": "Then free AI models in the cloud."
+  },
+  {
+   "start": 114.2,
+   "end": 133.73,
+   "text": "Then, free AI models in the cloud, plus the one trap that can quietly charge your paid"
+  },
+  {
+   "start": 133.73,
+   "end": 134.23,
+   "text": "plan."
+  },
+  {
+   "start": 134.37,
+   "end": 142.83,
+   "text": "And finally, several free providers connected together, where I will show you the real cloud"
+  },
+  {
+   "start": 142.83,
+   "end": 146.89,
+   "text": "Sonat answering through a free account with the logs to prove it."
+  },
+  {
+   "start": 147.21,
+   "end": 166.86,
+   "text": "And I have put everything into this video and finally several free providers connected"
+  },
+  {
+   "start": 166.86,
+   "end": 172.12,
+   "text": "together where I will show you real Cloud Sonat answering through a free account with"
+  },
+  {
+   "start": 172.12,
+   "end": 173.2,
+   "text": "the logs to prove it."
+  },
+  {
+   "start": 173.52,
+   "end": 178.66,
+   "text": "And I have put everything into a free setup kit, the model list, every prompt and every"
+  },
+  {
+   "start": 178.66,
+   "end": 179.02,
+   "text": "setting."
+  },
+  {
+   "start": 179.52,
+   "end": 181.38,
+   "text": "It's the first link in the description data."
+  },
+  {
+   "start": 181.82,
+   "end": 183.98,
+   "text": "It's the first link in the description below."
+  },
+  {
+   "start": 183.98,
+   "end": 186.72,
+   "text": "It's the first link in the description below."
+  },
+  {
+   "start": 189.82,
+   "end": 193.2,
+   "text": "So stay till the end because the last method is the best one."
+  },
+  {
+   "start": 199.35,
+   "end": 200.67,
+   "text": "There is a quick note though."
+  },
+  {
+   "start": 201.51,
+   "end": 202.75,
+   "text": "Nobody paid for this video."
+  },
+  {
+   "start": 203.19,
+   "end": 207.45,
+   "text": "I have already worked through every setup and every trap so you don't have to."
+  },
+  {
+   "start": 208.79,
+   "end": 212.49,
+   "text": "And I won't just tell you it's free."
+  },
+  {
+   "start": 212.93,
+   "end": 214.67,
+   "text": "I'll show you the receipt every time."
+  },
+  {
+   "start": 215.17,
+   "end": 215.85,
+   "text": "So let's start."
+  },
+  {
+   "start": 220.48,
+   "end": 222.04,
+   "text": "Method 1 is Olama."
+  },
+  {
+   "start": 222.04,
+   "end": 232.94,
+   "text": "Olama is a free app that downloads AI models and runs them right on your own laptop, like"
+  },
+  {
+   "start": 232.94,
+   "end": 234.82,
+   "text": "a media player but for AI."
+  },
+  {
+   "start": 235.26,
+   "end": 239.16,
+   "text": "Go to olama.com, download, install and done."
+  },
+  {
+   "start": 239.94,
+   "end": 242.44,
+   "text": "Then open settings and find context length."
+  },
+  {
+   "start": 242.9,
+   "end": 249.92,
+   "text": "That's the AI's short-term memory, how much of your project it can hold it once."
+  },
+  {
+   "start": 249.92,
+   "end": 254.44,
+   "text": "Clot code reads a lot of files, so slide it up to 64K."
+  },
+  {
+   "start": 261.4,
+   "end": 262.72,
+   "text": "Now which model should you download?"
+  },
+  {
+   "start": 263.94,
+   "end": 265.28,
+   "text": "Now which model should you download?"
+  },
+  {
+   "start": 265.7,
+   "end": 266.82,
+   "text": "It depends on your RAM."
+  },
+  {
+   "start": 267.4,
+   "end": 273.9,
+   "text": "Your computer's working memory which decides how big a model you can run."
+  },
+  {
+   "start": 274.52,
+   "end": 276.9,
+   "text": "Press Ctrl Shift Esc and open Performance."
+  },
+  {
+   "start": 277.72,
+   "end": 280.12,
+   "text": "Pause and check yours right now."
+  },
+  {
+   "start": 280.12,
+   "end": 288.72,
+   "text": "Mine is a normal laptop, no graphic card, 16 GB of RAM, roughly with 8 to 16 GB, stick"
+  },
+  {
+   "start": 288.72,
+   "end": 289.28,
+   "text": "to small."
+  },
+  {
+   "start": 291.56,
+   "end": 298.47,
+   "text": "So, I'll stick to small models, around 4 to 12 billion parameters."
+  },
+  {
+   "start": 299.05,
+   "end": 304.65,
+   "text": "With 32 GB you can go medium, with 64 GB or more you can run the big ones that feels"
+  },
+  {
+   "start": 304.65,
+   "end": 305.91,
+   "text": "close to the paid things."
+  },
+  {
+   "start": 305.91,
+   "end": 313.65,
+   "text": "With 64 GB or more you can run the big ones that feels close to the paid thing."
+  },
+  {
+   "start": 316.08,
+   "end": 319.36,
+   "text": "The exact list I would pick is it in the description below."
+  },
+  {
+   "start": 324.33,
+   "end": 327.53,
+   "text": "The exact list I would pick is in the free setup kit."
+  },
+  {
+   "start": 328.93,
+   "end": 334.71,
+   "text": "The exact list I would pick is in the free setup kit."
+  },
+  {
+   "start": 335.11,
+   "end": 335.95,
+   "text": "Just find your RAM."
+  },
+  {
+   "start": 342.69,
+   "end": 349.83,
+   "text": "And one tip I asked charge GPT and one tip is that I asked charge GPT for the latest"
+  },
+  {
+   "start": 349.83,
+   "end": 355.07,
+   "text": "best coding model for my laptop and it suggested MIMO version 2.69b."
+  },
+  {
+   "start": 355.53,
+   "end": 361.33,
+   "text": "It wasn't in Olamis Litch so I let anti-gravity install it."
+  },
+  {
+   "start": 361.71,
+   "end": 366.25,
+   "text": "Anti-gravity is a free AI coding app from Google that can run commands on your computer"
+  },
+  {
+   "start": 366.25,
+   "end": 366.75,
+   "text": "for you."
+  },
+  {
+   "start": 367.23,
+   "end": 369.71,
+   "text": "One sentence and it was installed and tested."
+  },
+  {
+   "start": 369.71,
+   "end": 372.01,
+   "text": "That's my rule for this whole video."
+  },
+  {
+   "start": 372.43,
+   "end": 380.28,
+   "text": "Anything longer than one line and that's my rule for this whole video."
+  },
+  {
+   "start": 380.74,
+   "end": 383.86,
+   "text": "Anything longer than one line and AI installs it."
+  },
+  {
+   "start": 384.24,
+   "end": 388.32,
+   "text": "And if something breaks, copy the error, paste it back and say fix this."
+  },
+  {
+   "start": 396.04,
+   "end": 396.72,
+   "text": "Now watch this."
+  },
+  {
+   "start": 397.28,
+   "end": 399.24,
+   "text": "I'm turning the Wi-Fi off."
+  },
+  {
+   "start": 399.62,
+   "end": 400.62,
+   "text": "No internet at all."
+  },
+  {
+   "start": 400.98,
+   "end": 402.82,
+   "text": "Do you think it can still write an app?"
+  },
+  {
+   "start": 403.9,
+   "end": 406.88,
+   "text": "I asked for a simple notes app and it's thinking."
+  },
+  {
+   "start": 406.88,
+   "end": 413.46,
+   "text": "and it writes the whole thing completely offline. I turn the Wi-Fi back on just to test it."
+  },
+  {
+   "start": 414.76,
+   "end": 422.3,
+   "text": "I turn the Wi-Fi back on just to test it on an online compiler. I turn the Wi-Fi back on"
+  },
+  {
+   "start": 422.3,
+   "end": 430.96,
+   "text": "just to test it in an online. I turn the Wi-Fi back on just to test it in an online compiler"
+  },
+  {
+   "start": 430.96,
+   "end": 441.56,
+   "text": "and it runs. Your code never left your laptop. Now let's put cloud code on top. In Olama,"
+  },
+  {
+   "start": 441.56,
+   "end": 449.42,
+   "text": "Go to apps, click cloud code, click cloud code,"
+  },
+  {
+   "start": 449.82,
+   "end": 451.14,
+   "text": "and it copies one command,"
+  },
+  {
+   "start": 451.72,
+   "end": 452.82,
+   "text": "Olama launch cloud."
+  },
+  {
+   "start": 453.48,
+   "end": 455.4,
+   "text": "Open a terminal, paste it,"
+  },
+  {
+   "start": 455.78,
+   "end": 460.22,
+   "text": "open a terminal, paste it, pick your model,"
+  },
+  {
+   "start": 460.64,
+   "end": 463.06,
+   "text": "and look at that, the real cloud code"
+  },
+  {
+   "start": 463.06,
+   "end": 464.66,
+   "text": "running on my own laptop."
+  },
+  {
+   "start": 465.16,
+   "end": 468.04,
+   "text": "No subscription, no API key."
+  },
+  {
+   "start": 472.93,
+   "end": 474.49,
+   "text": "Now let's give it a real job."
+  },
+  {
+   "start": 474.49,
+   "end": 478.01,
+   "text": "I asked it to build a calculator app on my laptop."
+  },
+  {
+   "start": 478.29,
+   "end": 491.17,
+   "text": "It took about, I asked it to build a calculator app on my laptop and because a small, because"
+  },
+  {
+   "start": 491.17,
+   "end": 496.23,
+   "text": "a small local model is doing all the heavy lifting and that's the honest trade-off."
+  },
+  {
+   "start": 497.01,
+   "end": 498.95,
+   "text": "Free means your laptop does the work."
+  },
+  {
+   "start": 499.43,
+   "end": 514.46,
+   "text": "So on a normal machine you pay with your time and it is finished and you can see it"
+  },
+  {
+   "start": 514.46,
+   "end": 514.82,
+   "text": "works."
+  },
+  {
+   "start": 514.82,
+   "end": 525.54,
+   "text": "So, method 1 is your private offline option."
+  },
+  {
+   "start": 526.1,
+   "end": 528.4,
+   "text": "For everyday speed, let's move to the cloud."
+  },
+  {
+   "start": 530.02,
+   "end": 532.66,
+   "text": "So method 1 is your private offline option."
+  },
+  {
+   "start": 533.2,
+   "end": 535.52,
+   "text": "For everyday speed, let's move to the cloud."
+  },
+  {
+   "start": 542.21,
+   "end": 551.27,
+   "text": "And if this already saved you $20 a month, it's subscribed because it gets better from"
+  },
+  {
+   "start": 551.27,
+   "end": 551.57,
+   "text": "here."
+  }
+ ]
+}

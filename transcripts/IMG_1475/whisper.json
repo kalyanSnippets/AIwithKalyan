@@ -1,0 +1,420 @@
+{
+ "engine": "faster-whisper small.en (local, one-off)",
+ "segments": [
+  {
+   "start": 15.66,
+   "end": 22.56,
+   "text": "And if this already saved you $20 a month, hit subscribe because it gets better from here."
+  },
+  {
+   "start": 27.47,
+   "end": 29.25,
+   "text": "So method two is OpenRouter."
+  },
+  {
+   "start": 29.91,
+   "end": 38.16,
+   "text": "OpenRouter is one, method two is OpenRouter."
+  },
+  {
+   "start": 38.52,
+   "end": 43.72,
+   "text": "OpenRouter is one website that gives you dozens of AI models with a single account and key"
+  },
+  {
+   "start": 43.72,
+   "end": 45.3,
+   "text": "and many of them are free."
+  },
+  {
+   "start": 45.3,
+   "end": 54.24,
+   "text": "They run on its servers so they are much faster."
+  },
+  {
+   "start": 54.94,
+   "end": 60.52,
+   "text": "For sign up go to API keys, click create."
+  },
+  {
+   "start": 61.4,
+   "end": 81.03,
+   "text": "For sign up go to API keys, click create key and API key is a password that lets clot"
+  },
+  {
+   "start": 81.03,
+   "end": 86.89,
+   "text": "code use your account. An API key is a password that lets cloud code use your"
+  },
+  {
+   "start": 86.89,
+   "end": 94.07,
+   "text": "account. So set it to expire in a seven day and set the credit limit to zero. Set"
+  },
+  {
+   "start": 94.07,
+   "end": 99.01,
+   "text": "it to expire in seven days and set the credit limit to zero. So it physically"
+  },
+  {
+   "start": 99.01,
+   "end": 121.18,
+   "text": "can't change you. Set the expiry and set the credit limit to zero. So it"
+  },
+  {
+   "start": 121.18,
+   "end": 136.58,
+   "text": "physically can't charge you. Then in models filter by free. To connect it you"
+  },
+  {
+   "start": 136.58,
+   "end": 141.24,
+   "text": "paste a small setting block into your terminal. It tells Claude code talk to"
+  },
+  {
+   "start": 141.24,
+   "end": 147.62,
+   "text": "open router instead of anthropic and here is my key. It's in the setup key"
+  },
+  {
+   "start": 148.8,
+   "end": 155.44,
+   "text": "it's in the setup kit and you only charge one thing and it's in the setup"
+  },
+  {
+   "start": 155.44,
+   "end": 158.9,
+   "text": "kit and you only change one thing, it's your key."
+  },
+  {
+   "start": 185.21,
+   "end": 188.87,
+   "text": "If you see your Claude plan here, you are not on the free setup."
+  },
+  {
+   "start": 193.0,
+   "end": 199.26,
+   "text": "Open a fresh terminal, one line at a time and go and now it says open router for free."
+  },
+  {
+   "start": 204.45,
+   "end": 208.41,
+   "text": "And this is where I almost got fooled."
+  },
+  {
+   "start": 209.35,
+   "end": 210.65,
+   "text": "My paste failed silently."
+  },
+  {
+   "start": 211.15,
+   "end": 213.77,
+   "text": "I typed Claude, it opened and it looked fine."
+  },
+  {
+   "start": 214.37,
+   "end": 215.33,
+   "text": "Look at the top line."
+  },
+  {
+   "start": 215.73,
+   "end": 216.59,
+   "text": "Spot anything wrong?"
+  },
+  {
+   "start": 216.59,
+   "end": 225.08,
+   "text": "Now, Claude Pro, Claude Code had quietly gone back to my paid subscription."
+  },
+  {
+   "start": 225.7,
+   "end": 229.1,
+   "text": "If you see your Claude plan here, you're not on a free setup."
+  },
+  {
+   "start": 229.82,
+   "end": 238.59,
+   "text": "Go to fresh terminal again, one line at a time and now it says open router and now it"
+  },
+  {
+   "start": 238.59,
+   "end": 240.71,
+   "text": "says open router slash free."
+  },
+  {
+   "start": 249.32,
+   "end": 251.62,
+   "text": "The menu still says Opus and so on."
+  },
+  {
+   "start": 253.06,
+   "end": 267.6,
+   "text": "The menu still says Opus and Sonnet but those are just slot names."
+  },
+  {
+   "start": 268.24,
+   "end": 269.24,
+   "text": "So let's check the bill."
+  },
+  {
+   "start": 269.68,
+   "end": 272.26,
+   "text": "Before I scroll, how much do you think this costs?"
+  },
+  {
+   "start": 274.56,
+   "end": 276.44,
+   "text": "3 requires 0 dollars."
+  },
+  {
+   "start": 277.24,
+   "end": 282.4,
+   "text": "And if the slot code's own usage screen shows a few cents, that's only its estimate at"
+  },
+  {
+   "start": 282.4,
+   "end": 283.42,
+   "text": "anthrophic's prices."
+  },
+  {
+   "start": 284.02,
+   "end": 285.36,
+   "text": "The real bill is 0."
+  },
+  {
+   "start": 285.36,
+   "end": 292.38,
+   "text": "and the catch here is free models are capped about 50 requests a day on a new"
+  },
+  {
+   "start": 292.38,
+   "end": 302.34,
+   "text": "account and one clock code tasks can use 10 or 20 or 30 and the catch here is free"
+  },
+  {
+   "start": 302.34,
+   "end": 307.72,
+   "text": "models are capped about 50 requests a day on a new account and one clock code"
+  },
+  {
+   "start": 307.72,
+   "end": 319.83,
+   "text": "task can use 10 or 20 then you hit error then you hit error and then you"
+  },
+  {
+   "start": 319.83,
+   "end": 334.11,
+   "text": "hit error 429 the server says you have used up your free quota. Now let's ask a"
+  },
+  {
+   "start": 334.11,
+   "end": 337.33,
+   "text": "quick question which one are you leaning towards so far"
+  },
+  {
+   "start": 337.33,
+   "end": 342.11,
+   "text": "Olama or the open router tell me in the comments below"
+  },
+  {
+   "start": 342.11,
+   "end": 355.57,
+   "text": "because because method 3 is where it gets really interesting. Which one are you"
+  },
+  {
+   "start": 355.57,
+   "end": 360.97,
+   "text": "leaning towards so far? Which one are you leaning towards so far? Olama or the"
+  },
+  {
+   "start": 360.97,
+   "end": 366.51,
+   "text": "OpenRouter. Tell me in the comments below because method 3 is where it gets really interesting."
+  },
+  {
+   "start": 372.26,
+   "end": 377.8,
+   "text": "Every free provider has a limit. But what if you connect all of them and it switches"
+  },
+  {
+   "start": 377.8,
+   "end": 385.58,
+   "text": "automatically when one ran out? That's only wrote for you. A free open source app that"
+  },
+  {
+   "start": 385.58,
+   "end": 393.0,
+   "text": "sits between cloud code and all of the AI providers and a free open source app that"
+  },
+  {
+   "start": 393.0,
+   "end": 398.0,
+   "text": "sits between cloud code and all of your AI providers and sends each request to"
+  },
+  {
+   "start": 398.0,
+   "end": 403.22,
+   "text": "one that's free and working. One prompt to anti-gravity installs it and open the"
+  },
+  {
+   "start": 403.22,
+   "end": 413.95,
+   "text": "dashboard. Its control panel running on your own"
+  },
+  {
+   "start": 413.95,
+   "end": 424.44,
+   "text": "computer first password is change me. First password is always change me so"
+  },
+  {
+   "start": 424.44,
+   "end": 429.34,
+   "text": "So type it and change it in the settings later on."
+  },
+  {
+   "start": 433.45,
+   "end": 436.53,
+   "text": "In the dashboard, open providers."
+  },
+  {
+   "start": 437.21,
+   "end": 438.91,
+   "text": "Search and click at Cairo."
+  },
+  {
+   "start": 440.63,
+   "end": 442.21,
+   "text": "In the dashboard, open providers."
+  },
+  {
+   "start": 443.41,
+   "end": 445.03,
+   "text": "Search and click at Cairo."
+  },
+  {
+   "start": 447.58,
+   "end": 453.9,
+   "text": "Amazon's AI coding app whose free plan includes real cloud models."
+  },
+  {
+   "start": 454.24,
+   "end": 456.42,
+   "text": "You approve a code and it's connected."
+  },
+  {
+   "start": 457.8,
+   "end": 462.04,
+   "text": "The free allowance is small and the omnirode flags its terms."
+  },
+  {
+   "start": 462.38,
+   "end": 464.06,
+   "text": "So your account, your call."
+  },
+  {
+   "start": 464.6,
+   "end": 466.4,
+   "text": "Antigravity sign in with Google."
+  },
+  {
+   "start": 468.26,
+   "end": 469.98,
+   "text": "And the next one is Antigravity."
+  },
+  {
+   "start": 470.78,
+   "end": 471.54,
+   "text": "Sign in with Google."
+  },
+  {
+   "start": 471.84,
+   "end": 473.28,
+   "text": "The warning is stronger here."
+  },
+  {
+   "start": 473.66,
+   "end": 474.88,
+   "text": "So use the spare account."
+  },
+  {
+   "start": 479.56,
+   "end": 481.14,
+   "text": "The next one is Antigravity."
+  },
+  {
+   "start": 481.84,
+   "end": 482.74,
+   "text": "Sign in with Google."
+  },
+  {
+   "start": 484.08,
+   "end": 485.76,
+   "text": "Sign in with the Google account."
+  },
+  {
+   "start": 486.4,
+   "end": 488.38,
+   "text": "The warning here is stronger here."
+  },
+  {
+   "start": 489.42,
+   "end": 493.6,
+   "text": "The warning is stronger here, so use a spare account."
+  },
+  {
+   "start": 497.49,
+   "end": 507.49,
+   "text": "Next we will connect nvidia, a free key, you can get a free key from build.nvidia.com."
+  },
+  {
+   "start": 507.81,
+   "end": 511.89,
+   "text": "Next we will connect nvidia."
+  },
+  {
+   "start": 519.13,
+   "end": 530.8,
+   "text": "Get a API key from build.nvidia.com, paste it in, paste it in and boom it's connected."
+  },
+  {
+   "start": 530.8,
+   "end": 561.82,
+   "text": "Next one we connect is Gemini. Gemini offers free key. You can get the API key from Google AI Studio and switch on import only free models whenever you see it."
+  },
+  {
+   "start": 568.34,
+   "end": 581.47,
+   "text": "Now make a combo. A team of models with an order. Now make a combo. A team of models with an order of who answers first and who takes over next."
+  },
+  {
+   "start": 581.47,
+   "end": 598.13,
+   "text": "combos for creating combos go to combos create name it I have named it as Claude"
+  },
+  {
+   "start": 598.13,
+   "end": 612.03,
+   "text": "add your steps pick smart routing and then save add your steps pick smart"
+  },
+  {
+   "start": 612.03,
+   "end": 622.36,
+   "text": "routing and then save then the omri then the omni route key omni rounds omni"
+  },
+  {
+   "start": 622.36,
+   "end": 630.08,
+   "text": "out its own password that clock code uses. API keys, create, name it and copy it once."
+  },
+  {
+   "start": 632.58,
+   "end": 639.0,
+   "text": "The tip here is when anti-gravity aspirate, don't paste it into the chat. Put it in a"
+  },
+  {
+   "start": 639.0,
+   "end": 639.22,
+   "text": "file."
+  }
+ ]
+}

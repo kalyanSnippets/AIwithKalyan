@@ -1,0 +1,9788 @@
+[
+ {
+  "id": "w0",
+  "text": "So,",
+  "start": 17.9,
+  "end": 18.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1",
+  "text": "method",
+  "start": 18.52,
+  "end": 18.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w2",
+  "text": "1",
+  "start": 18.72,
+  "end": 21.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w3",
+  "text": "is",
+  "start": 21.56,
+  "end": 21.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w4",
+  "text": "called",
+  "start": 21.86,
+  "end": 22.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w5",
+  "text": "Ollama.",
+  "start": 22.08,
+  "end": 22.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w6",
+  "text": "Ollama",
+  "start": 23.0,
+  "end": 23.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w7",
+  "text": "is",
+  "start": 23.46,
+  "end": 23.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w8",
+  "text": "a",
+  "start": 23.66,
+  "end": 23.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w9",
+  "text": "free",
+  "start": 23.82,
+  "end": 24.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w10",
+  "text": "app",
+  "start": 24.04,
+  "end": 24.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w11",
+  "text": "that",
+  "start": 24.32,
+  "end": 24.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w12",
+  "text": "downloads",
+  "start": 24.6,
+  "end": 25.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w13",
+  "text": "AI",
+  "start": 25.02,
+  "end": 25.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w14",
+  "text": "models",
+  "start": 25.42,
+  "end": 25.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w15",
+  "text": "and",
+  "start": 25.72,
+  "end": 26.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w16",
+  "text": "runs",
+  "start": 26.1,
+  "end": 26.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w17",
+  "text": "them",
+  "start": 26.36,
+  "end": 26.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w18",
+  "text": "right",
+  "start": 26.64,
+  "end": 26.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w19",
+  "text": "on",
+  "start": 26.9,
+  "end": 27.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w20",
+  "text": "your",
+  "start": 27.16,
+  "end": 27.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w21",
+  "text": "own",
+  "start": 27.32,
+  "end": 27.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w22",
+  "text": "laptop.",
+  "start": 27.58,
+  "end": 27.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w23",
+  "text": "Kind",
+  "start": 28.42,
+  "end": 28.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w24",
+  "text": "of",
+  "start": 28.6,
+  "end": 28.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w25",
+  "text": "like",
+  "start": 28.84,
+  "end": 29.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w26",
+  "text": "a",
+  "start": 29.04,
+  "end": 29.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w27",
+  "text": "media",
+  "start": 29.18,
+  "end": 29.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w28",
+  "text": "player",
+  "start": 29.5,
+  "end": 29.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w29",
+  "text": "but",
+  "start": 29.94,
+  "end": 30.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w30",
+  "text": "for",
+  "start": 30.42,
+  "end": 30.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w31",
+  "text": "AI.",
+  "start": 30.7,
+  "end": 31.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w32",
+  "text": "The",
+  "start": 31.64,
+  "end": 31.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w33",
+  "text": "big",
+  "start": 31.66,
+  "end": 31.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w34",
+  "text": "difference",
+  "start": 31.9,
+  "end": 32.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w35",
+  "text": "from",
+  "start": 32.32,
+  "end": 32.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w36",
+  "text": "chat",
+  "start": 32.66,
+  "end": 32.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w37",
+  "text": "GPT",
+  "start": 32.94,
+  "end": 36.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w38",
+  "text": "or",
+  "start": 36.54,
+  "end": 36.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w39",
+  "text": "Claude",
+  "start": 36.78,
+  "end": 37.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w40",
+  "text": "is",
+  "start": 37.12,
+  "end": 37.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w41",
+  "text": "that",
+  "start": 37.6,
+  "end": 37.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w42",
+  "text": "nothing",
+  "start": 37.82,
+  "end": 38.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w43",
+  "text": "goes",
+  "start": 38.12,
+  "end": 38.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w44",
+  "text": "to",
+  "start": 38.54,
+  "end": 38.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w45",
+  "text": "the",
+  "start": 38.78,
+  "end": 38.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w46",
+  "text": "cloud.",
+  "start": 38.94,
+  "end": 39.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w47",
+  "text": "The",
+  "start": 39.62,
+  "end": 39.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w48",
+  "text": "AI",
+  "start": 39.8,
+  "end": 40.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w49",
+  "text": "lives",
+  "start": 40.12,
+  "end": 40.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w50",
+  "text": "on",
+  "start": 40.38,
+  "end": 40.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w51",
+  "text": "your",
+  "start": 40.64,
+  "end": 40.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w52",
+  "text": "own",
+  "start": 40.8,
+  "end": 41.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w53",
+  "text": "machine",
+  "start": 41.06,
+  "end": 41.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w54",
+  "text": "so",
+  "start": 41.4,
+  "end": 41.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w55",
+  "text": "it's",
+  "start": 41.84,
+  "end": 42.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w56",
+  "text": "private",
+  "start": 42.18,
+  "end": 42.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w57",
+  "text": "and",
+  "start": 42.44,
+  "end": 42.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w58",
+  "text": "it",
+  "start": 42.84,
+  "end": 43.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w59",
+  "text": "even",
+  "start": 43.02,
+  "end": 43.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w60",
+  "text": "works",
+  "start": 43.46,
+  "end": 43.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w61",
+  "text": "without",
+  "start": 43.8,
+  "end": 44.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w62",
+  "text": "internet.",
+  "start": 44.26,
+  "end": 44.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w63",
+  "text": "it.",
+  "start": 44.72,
+  "end": 44.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w64",
+  "text": "Installing",
+  "start": 50.36,
+  "end": 50.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w65",
+  "text": "it",
+  "start": 50.94,
+  "end": 51.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w66",
+  "text": "is",
+  "start": 51.2,
+  "end": 51.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w67",
+  "text": "super",
+  "start": 51.6,
+  "end": 53.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w68",
+  "text": "simple.",
+  "start": 53.6,
+  "end": 54.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w69",
+  "text": "So",
+  "start": 54.68,
+  "end": 54.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w70",
+  "text": "go",
+  "start": 54.7,
+  "end": 54.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w71",
+  "text": "to",
+  "start": 54.94,
+  "end": 55.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w72",
+  "text": "olama",
+  "start": 55.2,
+  "end": 55.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w73",
+  "text": ".com",
+  "start": 55.68,
+  "end": 58.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w74",
+  "text": "and",
+  "start": 58.06,
+  "end": 58.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w75",
+  "text": "click",
+  "start": 58.72,
+  "end": 58.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w76",
+  "text": "download.",
+  "start": 58.94,
+  "end": 59.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w77",
+  "text": "It",
+  "start": 60.46,
+  "end": 60.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w78",
+  "text": "works",
+  "start": 60.76,
+  "end": 61.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w79",
+  "text": "on",
+  "start": 61.04,
+  "end": 61.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w80",
+  "text": "Windows,",
+  "start": 61.68,
+  "end": 61.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w81",
+  "text": "Mac",
+  "start": 61.98,
+  "end": 62.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w82",
+  "text": "and",
+  "start": 62.08,
+  "end": 62.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w83",
+  "text": "Linux.",
+  "start": 62.38,
+  "end": 62.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w84",
+  "text": "I",
+  "start": 63.94,
+  "end": 64.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w85",
+  "text": "am",
+  "start": 64.18,
+  "end": 64.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w86",
+  "text": "on",
+  "start": 64.28,
+  "end": 64.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w87",
+  "text": "Windows,",
+  "start": 64.44,
+  "end": 64.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w88",
+  "text": "so",
+  "start": 65.18,
+  "end": 65.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w89",
+  "text": "I",
+  "start": 65.28,
+  "end": 65.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w90",
+  "text": "pick",
+  "start": 65.38,
+  "end": 65.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w91",
+  "text": "Windows",
+  "start": 65.64,
+  "end": 65.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w92",
+  "text": "and",
+  "start": 65.94,
+  "end": 66.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w93",
+  "text": "download",
+  "start": 66.3,
+  "end": 66.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w94",
+  "text": "the",
+  "start": 66.72,
+  "end": 66.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w95",
+  "text": "installer.",
+  "start": 66.96,
+  "end": 67.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w96",
+  "text": "The",
+  "start": 68.2,
+  "end": 68.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w97",
+  "text": "double",
+  "start": 68.3,
+  "end": 68.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w98",
+  "text": "click",
+  "start": 68.58,
+  "end": 68.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w99",
+  "text": "the",
+  "start": 68.88,
+  "end": 69.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w100",
+  "text": "file,",
+  "start": 69.06,
+  "end": 71.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w101",
+  "text": "click",
+  "start": 72.24,
+  "end": 72.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w102",
+  "text": "through",
+  "start": 72.48,
+  "end": 72.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w103",
+  "text": "the",
+  "start": 72.76,
+  "end": 72.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w104",
+  "text": "stairs",
+  "start": 72.94,
+  "end": 73.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w105",
+  "text": "and",
+  "start": 73.16,
+  "end": 73.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w106",
+  "text": "that's",
+  "start": 73.64,
+  "end": 73.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w107",
+  "text": "it.",
+  "start": 73.98,
+  "end": 74.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w108",
+  "text": "Seriously,",
+  "start": 74.54,
+  "end": 74.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w109",
+  "text": "that's",
+  "start": 75.16,
+  "end": 75.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w110",
+  "text": "the",
+  "start": 75.42,
+  "end": 75.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w111",
+  "text": "whole",
+  "start": 75.54,
+  "end": 75.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w112",
+  "text": "install.",
+  "start": 75.78,
+  "end": 76.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w113",
+  "text": "Once",
+  "start": 80.04,
+  "end": 80.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w114",
+  "text": "it's",
+  "start": 80.34,
+  "end": 80.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w115",
+  "text": "open",
+  "start": 80.6,
+  "end": 80.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w116",
+  "text": "you",
+  "start": 80.9,
+  "end": 81.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w117",
+  "text": "will",
+  "start": 81.12,
+  "end": 81.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w118",
+  "text": "see",
+  "start": 81.24,
+  "end": 81.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w119",
+  "text": "three",
+  "start": 81.4,
+  "end": 81.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w120",
+  "text": "things",
+  "start": 81.66,
+  "end": 81.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w121",
+  "text": "on",
+  "start": 81.94,
+  "end": 82.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w122",
+  "text": "the",
+  "start": 82.18,
+  "end": 82.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w123",
+  "text": "left.",
+  "start": 82.34,
+  "end": 82.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w124",
+  "text": "Apps,",
+  "start": 83.32,
+  "end": 83.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w125",
+  "text": "this",
+  "start": 83.8,
+  "end": 83.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w126",
+  "text": "is",
+  "start": 83.9,
+  "end": 84.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w127",
+  "text": "where",
+  "start": 84.06,
+  "end": 84.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w128",
+  "text": "you",
+  "start": 84.3,
+  "end": 84.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w129",
+  "text": "connect",
+  "start": 84.5,
+  "end": 84.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w130",
+  "text": "coding",
+  "start": 84.84,
+  "end": 85.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w131",
+  "text": "tools",
+  "start": 85.24,
+  "end": 85.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w132",
+  "text": "like",
+  "start": 85.58,
+  "end": 85.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w133",
+  "text": "Claude",
+  "start": 85.82,
+  "end": 86.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w134",
+  "text": "code,",
+  "start": 86.18,
+  "end": 86.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w135",
+  "text": "codecs",
+  "start": 87.02,
+  "end": 87.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w136",
+  "text": "and",
+  "start": 87.24,
+  "end": 87.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w137",
+  "text": "others.",
+  "start": 87.34,
+  "end": 87.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w138",
+  "text": "Clicking",
+  "start": 88.28,
+  "end": 88.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w139",
+  "text": "one",
+  "start": 88.58,
+  "end": 88.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w140",
+  "text": "doesn't",
+  "start": 88.78,
+  "end": 89.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w141",
+  "text": "install",
+  "start": 89.18,
+  "end": 89.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w142",
+  "text": "anything.",
+  "start": 89.56,
+  "end": 89.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w143",
+  "text": "It",
+  "start": 90.32,
+  "end": 90.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w144",
+  "text": "just",
+  "start": 90.46,
+  "end": 90.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w145",
+  "text": "copies",
+  "start": 90.7,
+  "end": 91.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w146",
+  "text": "the",
+  "start": 91.1,
+  "end": 91.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w147",
+  "text": "command",
+  "start": 91.32,
+  "end": 91.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w148",
+  "text": "you",
+  "start": 91.6,
+  "end": 91.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w149",
+  "text": "need.",
+  "start": 91.82,
+  "end": 92.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w150",
+  "text": "Chat",
+  "start": 92.82,
+  "end": 92.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w151",
+  "text": "is",
+  "start": 92.94,
+  "end": 93.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w152",
+  "text": "this",
+  "start": 93.44,
+  "end": 93.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w153",
+  "text": "is",
+  "start": 93.72,
+  "end": 93.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w154",
+  "text": "where",
+  "start": 93.92,
+  "end": 94.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w155",
+  "text": "you",
+  "start": 94.2,
+  "end": 96.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w156",
+  "text": "talk",
+  "start": 96.88,
+  "end": 97.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w157",
+  "text": "to",
+  "start": 97.9,
+  "end": 98.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w158",
+  "text": "the",
+  "start": 98.1,
+  "end": 98.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w159",
+  "text": "models",
+  "start": 98.24,
+  "end": 98.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w160",
+  "text": "directly",
+  "start": 98.62,
+  "end": 99.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w161",
+  "text": "to",
+  "start": 99.12,
+  "end": 99.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w162",
+  "text": "test",
+  "start": 99.86,
+  "end": 100.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w163",
+  "text": "it.",
+  "start": 100.14,
+  "end": 100.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w164",
+  "text": "Chat,",
+  "start": 101.96,
+  "end": 102.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w165",
+  "text": "this",
+  "start": 102.28,
+  "end": 102.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w166",
+  "text": "is",
+  "start": 102.38,
+  "end": 102.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w167",
+  "text": "This",
+  "start": 102.54,
+  "end": 102.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w168",
+  "text": "is",
+  "start": 102.54,
+  "end": 102.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w169",
+  "text": "where",
+  "start": 102.64,
+  "end": 102.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w170",
+  "text": "you",
+  "start": 102.78,
+  "end": 102.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w171",
+  "text": "talk",
+  "start": 102.96,
+  "end": 103.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w172",
+  "text": "to",
+  "start": 103.16,
+  "end": 103.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w173",
+  "text": "models,",
+  "start": 103.4,
+  "end": 103.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w174",
+  "text": "chat,",
+  "start": 105.64,
+  "end": 105.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w175",
+  "text": "this",
+  "start": 106.18,
+  "end": 106.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w176",
+  "text": "is",
+  "start": 106.2,
+  "end": 106.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w177",
+  "text": "where",
+  "start": 106.38,
+  "end": 106.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w178",
+  "text": "you",
+  "start": 106.8,
+  "end": 107.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w179",
+  "text": "talk",
+  "start": 107.14,
+  "end": 107.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w180",
+  "text": "to",
+  "start": 107.4,
+  "end": 107.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w181",
+  "text": "a",
+  "start": 107.64,
+  "end": 107.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w182",
+  "text": "model",
+  "start": 107.78,
+  "end": 108.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w183",
+  "text": "directly",
+  "start": 108.04,
+  "end": 108.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w184",
+  "text": "to",
+  "start": 108.42,
+  "end": 108.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w185",
+  "text": "test",
+  "start": 108.86,
+  "end": 109.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w186",
+  "text": "it.",
+  "start": 109.1,
+  "end": 109.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w187",
+  "text": "In",
+  "start": 110.12,
+  "end": 110.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w188",
+  "text": "settings,",
+  "start": 110.46,
+  "end": 110.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w189",
+  "text": "two",
+  "start": 114.25,
+  "end": 114.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w190",
+  "text": "things",
+  "start": 114.35,
+  "end": 114.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w191",
+  "text": "matter.",
+  "start": 114.61,
+  "end": 115.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w192",
+  "text": "First",
+  "start": 115.67,
+  "end": 115.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w193",
+  "text": "the",
+  "start": 115.75,
+  "end": 115.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w194",
+  "text": "cloud",
+  "start": 115.99,
+  "end": 116.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w195",
+  "text": "toggle.",
+  "start": 116.35,
+  "end": 118.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w196",
+  "text": "Olamic",
+  "start": 120.05,
+  "end": 120.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w197",
+  "text": "can",
+  "start": 120.57,
+  "end": 120.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w198",
+  "text": "also",
+  "start": 120.77,
+  "end": 121.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w199",
+  "text": "run",
+  "start": 121.07,
+  "end": 121.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w200",
+  "text": "some",
+  "start": 121.35,
+  "end": 121.59,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w201",
+  "text": "models",
+  "start": 121.59,
+  "end": 121.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w202",
+  "text": "on",
+  "start": 121.91,
+  "end": 122.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w203",
+  "text": "its",
+  "start": 122.21,
+  "end": 122.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w204",
+  "text": "own",
+  "start": 122.39,
+  "end": 122.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w205",
+  "text": "servers",
+  "start": 122.63,
+  "end": 122.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w206",
+  "text": "in",
+  "start": 122.99,
+  "end": 123.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w207",
+  "text": "the",
+  "start": 123.27,
+  "end": 123.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w208",
+  "text": "cloud.",
+  "start": 123.39,
+  "end": 123.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w209",
+  "text": "But",
+  "start": 124.09,
+  "end": 124.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w210",
+  "text": "we",
+  "start": 124.35,
+  "end": 124.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w211",
+  "text": "want",
+  "start": 124.53,
+  "end": 124.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w212",
+  "text": "everything",
+  "start": 124.77,
+  "end": 125.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w213",
+  "text": "on",
+  "start": 125.19,
+  "end": 125.51,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w214",
+  "text": "our",
+  "start": 125.51,
+  "end": 125.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w215",
+  "text": "laptop,",
+  "start": 125.75,
+  "end": 126.13,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w216",
+  "text": "so",
+  "start": 126.55,
+  "end": 126.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w217",
+  "text": "leave",
+  "start": 126.65,
+  "end": 126.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w218",
+  "text": "that",
+  "start": 126.91,
+  "end": 127.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w219",
+  "text": "off.",
+  "start": 127.15,
+  "end": 127.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w220",
+  "text": "2.",
+  "start": 128.55,
+  "end": 129.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w221",
+  "text": "The",
+  "start": 129.79,
+  "end": 129.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w222",
+  "text": "most",
+  "start": 129.79,
+  "end": 129.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w223",
+  "text": "important",
+  "start": 129.99,
+  "end": 130.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w224",
+  "text": "and",
+  "start": 130.41,
+  "end": 131.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w225",
+  "text": "the",
+  "start": 131.85,
+  "end": 131.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w226",
+  "text": "second",
+  "start": 131.97,
+  "end": 132.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w227",
+  "text": "the",
+  "start": 132.37,
+  "end": 132.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w228",
+  "text": "most",
+  "start": 132.99,
+  "end": 133.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w229",
+  "text": "people",
+  "start": 133.23,
+  "end": 133.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w230",
+  "text": "miss",
+  "start": 133.61,
+  "end": 133.95,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w231",
+  "text": "is",
+  "start": 133.95,
+  "end": 134.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w232",
+  "text": "the",
+  "start": 134.53,
+  "end": 134.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w233",
+  "text": "context",
+  "start": 134.73,
+  "end": 135.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w234",
+  "text": "length.",
+  "start": 135.03,
+  "end": 135.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w235",
+  "text": "Context",
+  "start": 136.13,
+  "end": 136.33,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w236",
+  "text": "length",
+  "start": 136.33,
+  "end": 136.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w237",
+  "text": "is",
+  "start": 138.88,
+  "end": 141.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w238",
+  "text": "the",
+  "start": 141.56,
+  "end": 141.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w239",
+  "text": "AI's",
+  "start": 141.74,
+  "end": 142.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w240",
+  "text": "short",
+  "start": 142.2,
+  "end": 142.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w241",
+  "text": "term",
+  "start": 142.46,
+  "end": 142.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w242",
+  "text": "memory.",
+  "start": 142.74,
+  "end": 143.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w243",
+  "text": "How",
+  "start": 143.52,
+  "end": 143.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w244",
+  "text": "much",
+  "start": 143.76,
+  "end": 143.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w245",
+  "text": "of",
+  "start": 143.94,
+  "end": 144.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w246",
+  "text": "your",
+  "start": 144.1,
+  "end": 144.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w247",
+  "text": "conversation",
+  "start": 144.3,
+  "end": 144.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w248",
+  "text": "and",
+  "start": 144.7,
+  "end": 145.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w249",
+  "text": "your",
+  "start": 145.22,
+  "end": 145.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w250",
+  "text": "project",
+  "start": 145.44,
+  "end": 145.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w251",
+  "text": "it",
+  "start": 145.9,
+  "end": 146.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w252",
+  "text": "can",
+  "start": 146.22,
+  "end": 146.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w253",
+  "text": "hold",
+  "start": 146.4,
+  "end": 146.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w254",
+  "text": "in",
+  "start": 146.76,
+  "end": 147.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w255",
+  "text": "its",
+  "start": 147.04,
+  "end": 147.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w256",
+  "text": "own.",
+  "start": 147.22,
+  "end": 147.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w257",
+  "text": "How",
+  "start": 149.14,
+  "end": 149.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w258",
+  "text": "much",
+  "start": 149.74,
+  "end": 149.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w259",
+  "text": "of",
+  "start": 149.94,
+  "end": 150.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w260",
+  "text": "your",
+  "start": 150.12,
+  "end": 150.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w261",
+  "text": "conversation",
+  "start": 150.32,
+  "end": 150.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w262",
+  "text": "and",
+  "start": 150.76,
+  "end": 151.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w263",
+  "text": "your",
+  "start": 151.28,
+  "end": 151.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w264",
+  "text": "project",
+  "start": 151.48,
+  "end": 151.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w265",
+  "text": "it",
+  "start": 151.9,
+  "end": 152.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w266",
+  "text": "can",
+  "start": 152.36,
+  "end": 152.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w267",
+  "text": "hold",
+  "start": 152.54,
+  "end": 152.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w268",
+  "text": "in",
+  "start": 152.8,
+  "end": 153.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w269",
+  "text": "its",
+  "start": 153.06,
+  "end": 153.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w270",
+  "text": "head",
+  "start": 153.26,
+  "end": 153.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w271",
+  "text": "at",
+  "start": 153.52,
+  "end": 153.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w272",
+  "text": "once.",
+  "start": 153.78,
+  "end": 154.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w273",
+  "text": "Clot",
+  "start": 154.94,
+  "end": 155.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w274",
+  "text": "code",
+  "start": 155.02,
+  "end": 155.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w275",
+  "text": "reads",
+  "start": 155.28,
+  "end": 155.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w276",
+  "text": "a",
+  "start": 155.64,
+  "end": 155.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w277",
+  "text": "lot",
+  "start": 155.8,
+  "end": 155.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w278",
+  "text": "of",
+  "start": 155.98,
+  "end": 156.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w279",
+  "text": "your",
+  "start": 156.2,
+  "end": 156.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w280",
+  "text": "files",
+  "start": 156.38,
+  "end": 156.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w281",
+  "text": "before",
+  "start": 156.68,
+  "end": 157.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w282",
+  "text": "it",
+  "start": 157.12,
+  "end": 157.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w283",
+  "text": "changes",
+  "start": 157.32,
+  "end": 157.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w284",
+  "text": "anything.",
+  "start": 157.62,
+  "end": 158.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w285",
+  "text": "So,",
+  "start": 158.14,
+  "end": 158.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w286",
+  "text": "if",
+  "start": 158.86,
+  "end": 158.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w287",
+  "text": "the",
+  "start": 158.98,
+  "end": 159.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w288",
+  "text": "memory",
+  "start": 159.14,
+  "end": 159.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w289",
+  "text": "is",
+  "start": 159.38,
+  "end": 159.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w290",
+  "text": "too",
+  "start": 159.66,
+  "end": 159.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w291",
+  "text": "small,",
+  "start": 159.84,
+  "end": 160.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w292",
+  "text": "it",
+  "start": 160.46,
+  "end": 160.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w293",
+  "text": "loses",
+  "start": 160.52,
+  "end": 160.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w294",
+  "text": "track",
+  "start": 160.78,
+  "end": 161.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w295",
+  "text": "of",
+  "start": 161.18,
+  "end": 161.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w296",
+  "text": "half",
+  "start": 161.46,
+  "end": 161.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w297",
+  "text": "way",
+  "start": 161.78,
+  "end": 162.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w298",
+  "text": "through.",
+  "start": 162.04,
+  "end": 162.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w299",
+  "text": "If",
+  "start": 164.77,
+  "end": 165.01,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w300",
+  "text": "the",
+  "start": 165.01,
+  "end": 165.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w301",
+  "text": "memory",
+  "start": 165.19,
+  "end": 165.43,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w302",
+  "text": "is",
+  "start": 165.43,
+  "end": 165.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w303",
+  "text": "too",
+  "start": 165.73,
+  "end": 165.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w304",
+  "text": "small,",
+  "start": 165.91,
+  "end": 166.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w305",
+  "text": "it",
+  "start": 166.65,
+  "end": 166.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w306",
+  "text": "loses",
+  "start": 166.77,
+  "end": 167.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w307",
+  "text": "track",
+  "start": 167.03,
+  "end": 167.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w308",
+  "text": "half",
+  "start": 167.53,
+  "end": 167.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w309",
+  "text": "way",
+  "start": 167.91,
+  "end": 168.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w310",
+  "text": "through.",
+  "start": 168.19,
+  "end": 168.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w311",
+  "text": "So",
+  "start": 168.93,
+  "end": 169.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w312",
+  "text": "drag",
+  "start": 169.25,
+  "end": 169.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w313",
+  "text": "this",
+  "start": 169.55,
+  "end": 169.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w314",
+  "text": "slide",
+  "start": 169.79,
+  "end": 170.09,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w315",
+  "text": "up",
+  "start": 170.09,
+  "end": 170.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w316",
+  "text": "to",
+  "start": 170.39,
+  "end": 170.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w317",
+  "text": "64K.",
+  "start": 170.55,
+  "end": 171.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w318",
+  "text": "That's",
+  "start": 173.05,
+  "end": 173.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w319",
+  "text": "the",
+  "start": 173.45,
+  "end": 173.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w320",
+  "text": "fix.",
+  "start": 173.53,
+  "end": 173.81,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w321",
+  "text": "Now",
+  "start": 178.33,
+  "end": 178.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w322",
+  "text": "let's",
+  "start": 178.39,
+  "end": 178.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w323",
+  "text": "test",
+  "start": 178.75,
+  "end": 178.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w324",
+  "text": "it.",
+  "start": 178.93,
+  "end": 179.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w325",
+  "text": "Open",
+  "start": 181.09,
+  "end": 181.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w326",
+  "text": "chat,",
+  "start": 181.37,
+  "end": 181.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w327",
+  "text": "click",
+  "start": 182.35,
+  "end": 182.49,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w328",
+  "text": "the",
+  "start": 182.49,
+  "end": 182.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w329",
+  "text": "model",
+  "start": 182.73,
+  "end": 182.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w330",
+  "text": "menu",
+  "start": 182.97,
+  "end": 183.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w331",
+  "text": "at",
+  "start": 183.25,
+  "end": 183.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w332",
+  "text": "the",
+  "start": 183.45,
+  "end": 183.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w333",
+  "text": "bottom",
+  "start": 183.61,
+  "end": 183.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w334",
+  "text": "and",
+  "start": 183.89,
+  "end": 184.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w335",
+  "text": "pick",
+  "start": 184.45,
+  "end": 184.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w336",
+  "text": "a",
+  "start": 184.67,
+  "end": 184.81,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w337",
+  "text": "small",
+  "start": 184.81,
+  "end": 185.09,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w338",
+  "text": "model.",
+  "start": 185.09,
+  "end": 185.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w339",
+  "text": "Models",
+  "start": 186.55,
+  "end": 186.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w340",
+  "text": "come",
+  "start": 186.55,
+  "end": 186.81,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w341",
+  "text": "in",
+  "start": 186.81,
+  "end": 187.13,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w342",
+  "text": "sizes",
+  "start": 187.13,
+  "end": 187.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w343",
+  "text": "like",
+  "start": 187.37,
+  "end": 187.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w344",
+  "text": "4B",
+  "start": 187.77,
+  "end": 188.33,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w345",
+  "text": "or",
+  "start": 188.33,
+  "end": 188.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w346",
+  "text": "9B,",
+  "start": 188.55,
+  "end": 189.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w347",
+  "text": "which",
+  "start": 189.33,
+  "end": 189.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w348",
+  "text": "means",
+  "start": 189.55,
+  "end": 189.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w349",
+  "text": "4",
+  "start": 189.79,
+  "end": 190.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w350",
+  "text": "or",
+  "start": 190.17,
+  "end": 190.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w351",
+  "text": "9",
+  "start": 190.45,
+  "end": 190.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w352",
+  "text": "billion",
+  "start": 190.79,
+  "end": 190.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w353",
+  "text": "parameters.",
+  "start": 190.99,
+  "end": 191.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w354",
+  "text": "Bigger",
+  "start": 191.69,
+  "end": 192.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w355",
+  "text": "usually",
+  "start": 192.61,
+  "end": 193.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w356",
+  "text": "means",
+  "start": 193.03,
+  "end": 193.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w357",
+  "text": "smarter",
+  "start": 193.39,
+  "end": 193.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w358",
+  "text": "but",
+  "start": 193.85,
+  "end": 194.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w359",
+  "text": "slower",
+  "start": 194.35,
+  "end": 194.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w360",
+  "text": "and",
+  "start": 194.77,
+  "end": 197.43,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w361",
+  "text": "hungrier",
+  "start": 197.43,
+  "end": 197.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w362",
+  "text": "for",
+  "start": 197.99,
+  "end": 198.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w363",
+  "text": "the",
+  "start": 198.19,
+  "end": 198.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w364",
+  "text": "memory.",
+  "start": 198.37,
+  "end": 198.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w365",
+  "text": "I",
+  "start": 200.49,
+  "end": 200.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w366",
+  "text": "pick",
+  "start": 200.69,
+  "end": 200.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w367",
+  "text": "a",
+  "start": 200.89,
+  "end": 201.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w368",
+  "text": "small",
+  "start": 201.07,
+  "end": 201.31,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w369",
+  "text": "one,",
+  "start": 201.31,
+  "end": 201.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w370",
+  "text": "QWEN",
+  "start": 202.09,
+  "end": 202.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w371",
+  "text": "3",
+  "start": 202.25,
+  "end": 202.49,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w372",
+  "text": ".54b,",
+  "start": 202.49,
+  "end": 204.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w373",
+  "text": "QWEN",
+  "start": 205.62,
+  "end": 207.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w374",
+  "text": "3",
+  "start": 207.9,
+  "end": 208.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w375",
+  "text": ".54b",
+  "start": 208.16,
+  "end": 209.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w376",
+  "text": "just",
+  "start": 209.36,
+  "end": 209.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w377",
+  "text": "to",
+  "start": 209.82,
+  "end": 210.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w378",
+  "text": "warm",
+  "start": 210.04,
+  "end": 210.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w379",
+  "text": "things",
+  "start": 210.26,
+  "end": 210.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w380",
+  "text": "up",
+  "start": 210.54,
+  "end": 211.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w381",
+  "text": "and",
+  "start": 211.0,
+  "end": 211.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w382",
+  "text": "type",
+  "start": 211.42,
+  "end": 211.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w383",
+  "text": "hi.",
+  "start": 211.66,
+  "end": 212.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w384",
+  "text": "The",
+  "start": 212.56,
+  "end": 212.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w385",
+  "text": "first",
+  "start": 212.78,
+  "end": 213.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w386",
+  "text": "message",
+  "start": 213.02,
+  "end": 213.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w387",
+  "text": "downloads",
+  "start": 213.46,
+  "end": 213.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w388",
+  "text": "the",
+  "start": 213.94,
+  "end": 214.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w389",
+  "text": "model",
+  "start": 214.22,
+  "end": 214.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w390",
+  "text": "so",
+  "start": 214.52,
+  "end": 215.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w391",
+  "text": "it",
+  "start": 215.0,
+  "end": 215.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w392",
+  "text": "takes",
+  "start": 215.18,
+  "end": 215.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w393",
+  "text": "a",
+  "start": 215.4,
+  "end": 215.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w394",
+  "text": "minute.",
+  "start": 215.6,
+  "end": 215.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w395",
+  "text": "After",
+  "start": 215.9,
+  "end": 216.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w396",
+  "text": "that",
+  "start": 216.42,
+  "end": 216.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w397",
+  "text": "it",
+  "start": 216.8,
+  "end": 217.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w398",
+  "text": "leaves",
+  "start": 217.14,
+  "end": 217.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w399",
+  "text": "on",
+  "start": 217.46,
+  "end": 217.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w400",
+  "text": "your",
+  "start": 217.72,
+  "end": 219.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w401",
+  "text": "laptop",
+  "start": 219.98,
+  "end": 221.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w402",
+  "text": "for",
+  "start": 222.56,
+  "end": 223.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w403",
+  "text": "good",
+  "start": 223.86,
+  "end": 224.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w404",
+  "text": "and",
+  "start": 224.1,
+  "end": 224.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w405",
+  "text": "you",
+  "start": 224.6,
+  "end": 224.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w406",
+  "text": "never",
+  "start": 224.76,
+  "end": 225.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w407",
+  "text": "download",
+  "start": 225.04,
+  "end": 225.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w408",
+  "text": "it",
+  "start": 225.46,
+  "end": 225.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w409",
+  "text": "again.",
+  "start": 225.7,
+  "end": 226.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w410",
+  "text": "But",
+  "start": 230.9,
+  "end": 231.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w411",
+  "text": "high",
+  "start": 231.04,
+  "end": 231.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w412",
+  "text": "proves",
+  "start": 231.34,
+  "end": 231.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w413",
+  "text": "nothing.",
+  "start": 231.68,
+  "end": 232.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w414",
+  "text": "So",
+  "start": 233.3,
+  "end": 233.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w415",
+  "text": "watch",
+  "start": 233.48,
+  "end": 233.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w416",
+  "text": "this.",
+  "start": 233.72,
+  "end": 234.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w417",
+  "text": "I",
+  "start": 234.42,
+  "end": 234.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w418",
+  "text": "am",
+  "start": 234.46,
+  "end": 234.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w419",
+  "text": "turning",
+  "start": 234.58,
+  "end": 234.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w420",
+  "text": "the",
+  "start": 234.88,
+  "end": 235.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w421",
+  "text": "wifi",
+  "start": 235.14,
+  "end": 235.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w422",
+  "text": "off.",
+  "start": 235.38,
+  "end": 236.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w423",
+  "text": "See",
+  "start": 236.42,
+  "end": 236.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w424",
+  "text": "no",
+  "start": 236.68,
+  "end": 237.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w425",
+  "text": "internet",
+  "start": 237.36,
+  "end": 237.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w426",
+  "text": "at",
+  "start": 237.68,
+  "end": 237.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w427",
+  "text": "all.",
+  "start": 237.96,
+  "end": 238.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w428",
+  "text": "So",
+  "start": 238.76,
+  "end": 238.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w429",
+  "text": "be",
+  "start": 238.78,
+  "end": 239.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w430",
+  "text": "honest.",
+  "start": 239.02,
+  "end": 239.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w431",
+  "text": "Do",
+  "start": 242.98,
+  "end": 243.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w432",
+  "text": "you",
+  "start": 243.62,
+  "end": 244.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w433",
+  "text": "think",
+  "start": 244.26,
+  "end": 244.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w434",
+  "text": "it",
+  "start": 244.46,
+  "end": 244.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w435",
+  "text": "can",
+  "start": 244.62,
+  "end": 245.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w436",
+  "text": "still",
+  "start": 245.08,
+  "end": 245.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w437",
+  "text": "write",
+  "start": 245.08,
+  "end": 245.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w438",
+  "text": "an",
+  "start": 245.32,
+  "end": 248.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w439",
+  "text": "app?",
+  "start": 248.84,
+  "end": 249.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w440",
+  "text": "I",
+  "start": 249.12,
+  "end": 250.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w441",
+  "text": "type",
+  "start": 250.26,
+  "end": 250.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w442",
+  "text": "make",
+  "start": 250.6,
+  "end": 251.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w443",
+  "text": "a",
+  "start": 251.1,
+  "end": 251.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w444",
+  "text": "simple",
+  "start": 251.26,
+  "end": 251.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w445",
+  "text": "note",
+  "start": 251.64,
+  "end": 252.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w446",
+  "text": "app",
+  "start": 252.0,
+  "end": 255.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w447",
+  "text": "and",
+  "start": 255.2,
+  "end": 255.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w448",
+  "text": "it's",
+  "start": 255.72,
+  "end": 255.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w449",
+  "text": "thinking.",
+  "start": 255.98,
+  "end": 256.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w450",
+  "text": "Thinking",
+  "start": 257.3,
+  "end": 257.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w451",
+  "text": "and",
+  "start": 257.3,
+  "end": 257.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w452",
+  "text": "it",
+  "start": 257.84,
+  "end": 257.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w453",
+  "text": "writes",
+  "start": 257.98,
+  "end": 258.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w454",
+  "text": "the",
+  "start": 258.22,
+  "end": 258.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w455",
+  "text": "whole",
+  "start": 258.42,
+  "end": 258.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w456",
+  "text": "thing",
+  "start": 258.62,
+  "end": 258.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w457",
+  "text": "completely",
+  "start": 258.96,
+  "end": 259.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w458",
+  "text": "offline.",
+  "start": 259.84,
+  "end": 260.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w459",
+  "text": "Every",
+  "start": 260.78,
+  "end": 260.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w460",
+  "text": "single",
+  "start": 260.98,
+  "end": 261.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w461",
+  "text": "word",
+  "start": 261.28,
+  "end": 261.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w462",
+  "text": "came",
+  "start": 261.7,
+  "end": 262.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w463",
+  "text": "from",
+  "start": 269.13,
+  "end": 271.87,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w464",
+  "text": "a",
+  "start": 271.87,
+  "end": 272.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w465",
+  "text": "model",
+  "start": 272.07,
+  "end": 272.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w466",
+  "text": "sitting",
+  "start": 272.39,
+  "end": 272.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w467",
+  "text": "on",
+  "start": 272.71,
+  "end": 273.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w468",
+  "text": "this",
+  "start": 273.05,
+  "end": 273.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w469",
+  "text": "laptop.",
+  "start": 273.37,
+  "end": 273.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w470",
+  "text": "Every",
+  "start": 274.57,
+  "end": 274.81,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w471",
+  "text": "single",
+  "start": 274.81,
+  "end": 275.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w472",
+  "text": "word",
+  "start": 275.07,
+  "end": 275.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w473",
+  "text": "came",
+  "start": 275.57,
+  "end": 276.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w474",
+  "text": "from",
+  "start": 276.19,
+  "end": 278.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w475",
+  "text": "a",
+  "start": 278.71,
+  "end": 278.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w476",
+  "text": "model",
+  "start": 278.85,
+  "end": 279.09,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w477",
+  "text": "sitting",
+  "start": 279.09,
+  "end": 279.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w478",
+  "text": "on",
+  "start": 279.39,
+  "end": 279.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w479",
+  "text": "this",
+  "start": 279.69,
+  "end": 279.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w480",
+  "text": "laptop.",
+  "start": 279.85,
+  "end": 280.29,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w481",
+  "text": "Then",
+  "start": 285.48,
+  "end": 286.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w482",
+  "text": "I",
+  "start": 286.46,
+  "end": 286.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w483",
+  "text": "turn",
+  "start": 286.64,
+  "end": 286.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w484",
+  "text": "the",
+  "start": 286.82,
+  "end": 287.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w485",
+  "text": "Wi",
+  "start": 287.02,
+  "end": 287.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w486",
+  "text": "-Fi",
+  "start": 287.14,
+  "end": 287.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w487",
+  "text": "back",
+  "start": 287.34,
+  "end": 287.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w488",
+  "text": "on",
+  "start": 287.66,
+  "end": 288.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w489",
+  "text": "for",
+  "start": 288.12,
+  "end": 288.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w490",
+  "text": "one",
+  "start": 288.54,
+  "end": 288.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w491",
+  "text": "reason.",
+  "start": 288.8,
+  "end": 289.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w492",
+  "text": "To",
+  "start": 289.58,
+  "end": 289.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w493",
+  "text": "test",
+  "start": 289.68,
+  "end": 289.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w494",
+  "text": "the",
+  "start": 289.96,
+  "end": 290.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w495",
+  "text": "code",
+  "start": 290.16,
+  "end": 290.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w496",
+  "text": "in",
+  "start": 290.54,
+  "end": 293.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w497",
+  "text": "a",
+  "start": 293.1,
+  "end": 293.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w498",
+  "text": "free",
+  "start": 293.24,
+  "end": 293.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w499",
+  "text": "online",
+  "start": 293.48,
+  "end": 293.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w500",
+  "text": "compiler.",
+  "start": 293.84,
+  "end": 294.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w501",
+  "text": "An",
+  "start": 297.32,
+  "end": 297.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w502",
+  "text": "online",
+  "start": 297.58,
+  "end": 297.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w503",
+  "text": "compiler",
+  "start": 297.96,
+  "end": 298.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w504",
+  "text": "is",
+  "start": 298.44,
+  "end": 298.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w505",
+  "text": "just",
+  "start": 298.84,
+  "end": 299.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w506",
+  "text": "a",
+  "start": 299.08,
+  "end": 299.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w507",
+  "text": "website",
+  "start": 299.3,
+  "end": 299.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w508",
+  "text": "where",
+  "start": 299.66,
+  "end": 300.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w509",
+  "text": "you",
+  "start": 300.04,
+  "end": 300.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w510",
+  "text": "paste",
+  "start": 300.2,
+  "end": 300.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w511",
+  "text": "code",
+  "start": 300.42,
+  "end": 300.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w512",
+  "text": "and",
+  "start": 300.8,
+  "end": 301.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w513",
+  "text": "it",
+  "start": 301.04,
+  "end": 301.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w514",
+  "text": "runs",
+  "start": 301.2,
+  "end": 303.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w515",
+  "text": "instantly.",
+  "start": 303.86,
+  "end": 306.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w516",
+  "text": "First",
+  "start": 307.76,
+  "end": 307.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w517",
+  "text": "try",
+  "start": 307.98,
+  "end": 308.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w518",
+  "text": "I",
+  "start": 308.36,
+  "end": 308.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w519",
+  "text": "pick",
+  "start": 308.64,
+  "end": 308.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w520",
+  "text": "the",
+  "start": 308.88,
+  "end": 309.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w521",
+  "text": "wrong",
+  "start": 309.1,
+  "end": 309.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w522",
+  "text": "language",
+  "start": 309.32,
+  "end": 309.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w523",
+  "text": "so",
+  "start": 309.76,
+  "end": 310.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w524",
+  "text": "I",
+  "start": 310.08,
+  "end": 310.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w525",
+  "text": "switch",
+  "start": 310.26,
+  "end": 310.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w526",
+  "text": "to",
+  "start": 310.42,
+  "end": 310.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w527",
+  "text": "HTML,",
+  "start": 310.7,
+  "end": 311.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w528",
+  "text": "hit",
+  "start": 311.88,
+  "end": 312.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w529",
+  "text": "run",
+  "start": 312.04,
+  "end": 312.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w530",
+  "text": "and",
+  "start": 312.3,
+  "end": 312.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w531",
+  "text": "it",
+  "start": 312.78,
+  "end": 312.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w532",
+  "text": "works.",
+  "start": 312.94,
+  "end": 313.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w533",
+  "text": "Is",
+  "start": 314.64,
+  "end": 315.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w534",
+  "text": "it",
+  "start": 315.2,
+  "end": 315.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w535",
+  "text": "pretty?",
+  "start": 315.32,
+  "end": 315.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w536",
+  "text": "No?",
+  "start": 315.58,
+  "end": 316.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w537",
+  "text": "But",
+  "start": 324.6,
+  "end": 324.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w538",
+  "text": "a",
+  "start": 324.96,
+  "end": 325.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w539",
+  "text": "laptop",
+  "start": 325.12,
+  "end": 325.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w540",
+  "text": "with",
+  "start": 325.42,
+  "end": 325.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w541",
+  "text": "no",
+  "start": 325.72,
+  "end": 326.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w542",
+  "text": "internet",
+  "start": 326.0,
+  "end": 326.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w543",
+  "text": "just",
+  "start": 326.36,
+  "end": 326.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w544",
+  "text": "wrote",
+  "start": 326.74,
+  "end": 327.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w545",
+  "text": "working",
+  "start": 327.16,
+  "end": 327.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w546",
+  "text": "software",
+  "start": 327.7,
+  "end": 328.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w547",
+  "text": "with",
+  "start": 328.18,
+  "end": 328.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w548",
+  "text": "no",
+  "start": 328.64,
+  "end": 328.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w549",
+  "text": "subscription,",
+  "start": 328.9,
+  "end": 329.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w550",
+  "text": "no",
+  "start": 329.8,
+  "end": 329.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w551",
+  "text": "usage",
+  "start": 329.88,
+  "end": 330.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w552",
+  "text": "limits",
+  "start": 330.28,
+  "end": 330.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w553",
+  "text": "and",
+  "start": 330.62,
+  "end": 330.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w554",
+  "text": "your",
+  "start": 330.94,
+  "end": 331.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w555",
+  "text": "code",
+  "start": 331.12,
+  "end": 331.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w556",
+  "text": "never",
+  "start": 331.38,
+  "end": 331.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w557",
+  "text": "left",
+  "start": 331.74,
+  "end": 332.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w558",
+  "text": "your",
+  "start": 332.06,
+  "end": 332.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w559",
+  "text": "laptop.",
+  "start": 332.28,
+  "end": 332.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w560",
+  "text": "And",
+  "start": 334.66,
+  "end": 334.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w561",
+  "text": "your",
+  "start": 334.72,
+  "end": 334.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w562",
+  "text": "code",
+  "start": 334.86,
+  "end": 335.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w563",
+  "text": "never",
+  "start": 335.16,
+  "end": 335.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w564",
+  "text": "left",
+  "start": 335.4,
+  "end": 335.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w565",
+  "text": "your",
+  "start": 335.76,
+  "end": 335.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w566",
+  "text": "computer.",
+  "start": 335.98,
+  "end": 336.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w567",
+  "text": "And",
+  "start": 339.81,
+  "end": 339.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w568",
+  "text": "honestly,",
+  "start": 339.89,
+  "end": 340.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w569",
+  "text": "if",
+  "start": 340.69,
+  "end": 341.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w570",
+  "text": "that",
+  "start": 341.03,
+  "end": 341.29,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w571",
+  "text": "alone",
+  "start": 341.29,
+  "end": 341.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w572",
+  "text": "just",
+  "start": 341.65,
+  "end": 341.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w573",
+  "text": "saved",
+  "start": 341.91,
+  "end": 342.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w574",
+  "text": "you",
+  "start": 342.23,
+  "end": 342.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w575",
+  "text": "$20",
+  "start": 342.41,
+  "end": 342.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w576",
+  "text": "a",
+  "start": 342.93,
+  "end": 343.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w577",
+  "text": "month,",
+  "start": 343.25,
+  "end": 343.51,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w578",
+  "text": "it's",
+  "start": 343.83,
+  "end": 344.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w579",
+  "text": "subscribed.",
+  "start": 344.03,
+  "end": 344.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w580",
+  "text": "Just",
+  "start": 345.01,
+  "end": 345.11,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w581",
+  "text": "because,",
+  "start": 345.11,
+  "end": 345.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w582",
+  "text": "because",
+  "start": 347.05,
+  "end": 347.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w583",
+  "text": "it",
+  "start": 347.69,
+  "end": 348.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w584",
+  "text": "only",
+  "start": 348.15,
+  "end": 348.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w585",
+  "text": "gets",
+  "start": 348.39,
+  "end": 348.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w586",
+  "text": "better",
+  "start": 348.71,
+  "end": 349.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w587",
+  "text": "from",
+  "start": 349.05,
+  "end": 349.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w588",
+  "text": "here.",
+  "start": 349.39,
+  "end": 349.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w589",
+  "text": "And",
+  "start": 351.27,
+  "end": 352.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w590",
+  "text": "honestly,",
+  "start": 352.17,
+  "end": 352.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w591",
+  "text": "if",
+  "start": 352.95,
+  "end": 353.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w592",
+  "text": "that",
+  "start": 353.17,
+  "end": 353.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w593",
+  "text": "alone",
+  "start": 353.39,
+  "end": 353.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w594",
+  "text": "just",
+  "start": 353.71,
+  "end": 353.95,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w595",
+  "text": "saved",
+  "start": 353.95,
+  "end": 354.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w596",
+  "text": "you",
+  "start": 354.27,
+  "end": 354.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w597",
+  "text": "$20",
+  "start": 354.47,
+  "end": 354.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w598",
+  "text": "a",
+  "start": 354.85,
+  "end": 355.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w599",
+  "text": "month,",
+  "start": 355.23,
+  "end": 355.49,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w600",
+  "text": "hit",
+  "start": 355.83,
+  "end": 356.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w601",
+  "text": "subscribe",
+  "start": 356.03,
+  "end": 356.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w602",
+  "text": "because",
+  "start": 356.53,
+  "end": 357.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w603",
+  "text": "it",
+  "start": 357.19,
+  "end": 357.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w604",
+  "text": "only",
+  "start": 357.39,
+  "end": 357.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w605",
+  "text": "gets",
+  "start": 357.63,
+  "end": 357.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w606",
+  "text": "better",
+  "start": 357.93,
+  "end": 358.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w607",
+  "text": "from",
+  "start": 358.27,
+  "end": 358.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w608",
+  "text": "here.",
+  "start": 358.55,
+  "end": 359.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w609",
+  "text": "Now",
+  "start": 364.28,
+  "end": 364.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w610",
+  "text": "which",
+  "start": 364.28,
+  "end": 364.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w611",
+  "text": "model",
+  "start": 364.5,
+  "end": 364.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w612",
+  "text": "should",
+  "start": 364.9,
+  "end": 365.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w613",
+  "text": "you",
+  "start": 365.18,
+  "end": 365.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w614",
+  "text": "actually",
+  "start": 365.38,
+  "end": 365.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w615",
+  "text": "run?",
+  "start": 365.72,
+  "end": 366.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w616",
+  "text": "Don't",
+  "start": 366.68,
+  "end": 366.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w617",
+  "text": "guess.",
+  "start": 366.9,
+  "end": 367.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w618",
+  "text": "It",
+  "start": 367.54,
+  "end": 367.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w619",
+  "text": "depends",
+  "start": 367.6,
+  "end": 367.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w620",
+  "text": "on",
+  "start": 367.94,
+  "end": 368.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w621",
+  "text": "your",
+  "start": 368.22,
+  "end": 368.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w622",
+  "text": "RAM.",
+  "start": 368.44,
+  "end": 368.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w623",
+  "text": "RAM",
+  "start": 369.32,
+  "end": 369.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w624",
+  "text": "is",
+  "start": 369.4,
+  "end": 369.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w625",
+  "text": "your",
+  "start": 369.62,
+  "end": 369.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w626",
+  "text": "computer's",
+  "start": 369.84,
+  "end": 370.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w627",
+  "text": "working",
+  "start": 370.4,
+  "end": 370.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w628",
+  "text": "memory",
+  "start": 370.7,
+  "end": 371.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w629",
+  "text": "and",
+  "start": 371.16,
+  "end": 371.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w630",
+  "text": "for",
+  "start": 371.68,
+  "end": 371.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w631",
+  "text": "local",
+  "start": 371.94,
+  "end": 372.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w632",
+  "text": "AI,",
+  "start": 372.36,
+  "end": 372.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w633",
+  "text": "it",
+  "start": 372.68,
+  "end": 373.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w634",
+  "text": "decides",
+  "start": 373.06,
+  "end": 373.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w635",
+  "text": "how",
+  "start": 373.4,
+  "end": 373.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w636",
+  "text": "big",
+  "start": 373.76,
+  "end": 374.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w637",
+  "text": "a",
+  "start": 374.0,
+  "end": 374.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w638",
+  "text": "model",
+  "start": 374.2,
+  "end": 374.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w639",
+  "text": "you",
+  "start": 374.38,
+  "end": 374.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w640",
+  "text": "can",
+  "start": 374.66,
+  "end": 374.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w641",
+  "text": "run.",
+  "start": 374.82,
+  "end": 375.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w642",
+  "text": "On",
+  "start": 375.58,
+  "end": 375.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w643",
+  "text": "Windows,",
+  "start": 375.74,
+  "end": 376.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w644",
+  "text": "press",
+  "start": 376.54,
+  "end": 376.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w645",
+  "text": "Ctrl",
+  "start": 376.72,
+  "end": 377.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w646",
+  "text": "Shift",
+  "start": 377.08,
+  "end": 377.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w647",
+  "text": "Escape.",
+  "start": 377.36,
+  "end": 377.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w648",
+  "text": "Press",
+  "start": 379.08,
+  "end": 379.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w649",
+  "text": "Ctrl",
+  "start": 379.34,
+  "end": 379.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w650",
+  "text": "Shift",
+  "start": 379.72,
+  "end": 380.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w651",
+  "text": "Escape",
+  "start": 380.0,
+  "end": 380.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w652",
+  "text": "to",
+  "start": 380.46,
+  "end": 380.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w653",
+  "text": "open",
+  "start": 380.96,
+  "end": 381.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w654",
+  "text": "Task",
+  "start": 381.3,
+  "end": 381.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w655",
+  "text": "Manager",
+  "start": 381.56,
+  "end": 381.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w656",
+  "text": "and",
+  "start": 381.92,
+  "end": 382.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w657",
+  "text": "click",
+  "start": 382.38,
+  "end": 382.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w658",
+  "text": "the",
+  "start": 382.58,
+  "end": 382.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w659",
+  "text": "Performance",
+  "start": 382.84,
+  "end": 383.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w660",
+  "text": "tab.",
+  "start": 383.22,
+  "end": 383.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w661",
+  "text": "Actually",
+  "start": 383.64,
+  "end": 384.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w662",
+  "text": "pause",
+  "start": 384.82,
+  "end": 385.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w663",
+  "text": "the",
+  "start": 385.5,
+  "end": 385.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w664",
+  "text": "video",
+  "start": 385.7,
+  "end": 385.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w665",
+  "text": "and",
+  "start": 385.98,
+  "end": 386.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w666",
+  "text": "check",
+  "start": 386.3,
+  "end": 386.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w667",
+  "text": "yours",
+  "start": 386.52,
+  "end": 386.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w668",
+  "text": "right",
+  "start": 386.86,
+  "end": 387.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w669",
+  "text": "now.",
+  "start": 387.16,
+  "end": 388.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w670",
+  "text": "Ok,",
+  "start": 391.82,
+  "end": 392.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w671",
+  "text": "here",
+  "start": 393.0,
+  "end": 394.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w672",
+  "text": "is",
+  "start": 394.32,
+  "end": 394.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w673",
+  "text": "mine.",
+  "start": 394.48,
+  "end": 394.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w674",
+  "text": "It's",
+  "start": 395.24,
+  "end": 395.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w675",
+  "text": "a",
+  "start": 395.4,
+  "end": 395.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w676",
+  "text": "pretty",
+  "start": 395.48,
+  "end": 395.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w677",
+  "text": "normal",
+  "start": 395.78,
+  "end": 396.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w678",
+  "text": "laptop,",
+  "start": 396.18,
+  "end": 396.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w679",
+  "text": "no",
+  "start": 397.06,
+  "end": 397.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w680",
+  "text": "separate",
+  "start": 397.2,
+  "end": 397.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w681",
+  "text": "graphics",
+  "start": 397.6,
+  "end": 398.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w682",
+  "text": "card,",
+  "start": 398.04,
+  "end": 398.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w683",
+  "text": "just",
+  "start": 399.02,
+  "end": 399.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w684",
+  "text": "the",
+  "start": 399.24,
+  "end": 399.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w685",
+  "text": "building",
+  "start": 399.46,
+  "end": 399.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w686",
+  "text": "graphics",
+  "start": 399.78,
+  "end": 400.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w687",
+  "text": "and",
+  "start": 400.24,
+  "end": 400.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w688",
+  "text": "16",
+  "start": 400.64,
+  "end": 401.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w689",
+  "text": "GB",
+  "start": 401.04,
+  "end": 401.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w690",
+  "text": "of",
+  "start": 401.26,
+  "end": 401.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w691",
+  "text": "RAM.",
+  "start": 401.58,
+  "end": 401.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w692",
+  "text": "Roughly",
+  "start": 405.16,
+  "end": 405.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w693",
+  "text": "with",
+  "start": 405.54,
+  "end": 405.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w694",
+  "text": "8",
+  "start": 405.72,
+  "end": 406.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w695",
+  "text": "to",
+  "start": 406.0,
+  "end": 406.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w696",
+  "text": "16",
+  "start": 406.16,
+  "end": 406.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w697",
+  "text": "GB",
+  "start": 406.58,
+  "end": 406.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w698",
+  "text": "of",
+  "start": 406.78,
+  "end": 407.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w699",
+  "text": "RAM,",
+  "start": 407.04,
+  "end": 407.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w700",
+  "text": "stick",
+  "start": 407.74,
+  "end": 408.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w701",
+  "text": "to",
+  "start": 408.02,
+  "end": 408.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w702",
+  "text": "small",
+  "start": 408.22,
+  "end": 408.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w703",
+  "text": "models,",
+  "start": 408.54,
+  "end": 409.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w704",
+  "text": "around",
+  "start": 409.6,
+  "end": 409.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w705",
+  "text": "4",
+  "start": 409.78,
+  "end": 410.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w706",
+  "text": "to",
+  "start": 410.06,
+  "end": 410.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w707",
+  "text": "12",
+  "start": 410.28,
+  "end": 410.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w708",
+  "text": "billion",
+  "start": 410.62,
+  "end": 410.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w709",
+  "text": "parameters.",
+  "start": 410.86,
+  "end": 411.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w710",
+  "text": "With",
+  "start": 411.46,
+  "end": 412.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w711",
+  "text": "32",
+  "start": 412.12,
+  "end": 412.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w712",
+  "text": "GB",
+  "start": 412.58,
+  "end": 412.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w713",
+  "text": "you",
+  "start": 412.82,
+  "end": 413.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w714",
+  "text": "can",
+  "start": 413.12,
+  "end": 413.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w715",
+  "text": "go",
+  "start": 413.32,
+  "end": 413.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w716",
+  "text": "to",
+  "start": 413.5,
+  "end": 413.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w717",
+  "text": "medium",
+  "start": 413.7,
+  "end": 413.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w718",
+  "text": "and",
+  "start": 413.98,
+  "end": 414.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w719",
+  "text": "with",
+  "start": 414.62,
+  "end": 415.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w720",
+  "text": "64",
+  "start": 415.4,
+  "end": 415.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w721",
+  "text": "GB",
+  "start": 415.94,
+  "end": 416.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w722",
+  "text": "or",
+  "start": 416.28,
+  "end": 416.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w723",
+  "text": "more",
+  "start": 416.48,
+  "end": 416.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w724",
+  "text": "you",
+  "start": 416.78,
+  "end": 417.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w725",
+  "text": "can",
+  "start": 417.18,
+  "end": 417.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w726",
+  "text": "run",
+  "start": 417.4,
+  "end": 417.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w727",
+  "text": "the",
+  "start": 417.6,
+  "end": 417.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w728",
+  "text": "big",
+  "start": 417.8,
+  "end": 418.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w729",
+  "text": "models",
+  "start": 418.0,
+  "end": 418.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w730",
+  "text": "that",
+  "start": 418.54,
+  "end": 420.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w731",
+  "text": "feel",
+  "start": 420.28,
+  "end": 420.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w732",
+  "text": "close",
+  "start": 420.62,
+  "end": 420.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w733",
+  "text": "to",
+  "start": 420.94,
+  "end": 421.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w734",
+  "text": "paid",
+  "start": 421.18,
+  "end": 421.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w735",
+  "text": "things.",
+  "start": 421.4,
+  "end": 421.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w736",
+  "text": "And",
+  "start": 424.3,
+  "end": 424.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w737",
+  "text": "with",
+  "start": 424.52,
+  "end": 424.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w738",
+  "text": "64",
+  "start": 424.68,
+  "end": 425.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w739",
+  "text": "GB",
+  "start": 425.2,
+  "end": 425.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w740",
+  "text": "or",
+  "start": 425.5,
+  "end": 425.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w741",
+  "text": "more",
+  "start": 425.72,
+  "end": 426.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w742",
+  "text": "you",
+  "start": 426.02,
+  "end": 426.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w743",
+  "text": "can",
+  "start": 426.48,
+  "end": 426.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w744",
+  "text": "run",
+  "start": 426.66,
+  "end": 426.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w745",
+  "text": "the",
+  "start": 426.88,
+  "end": 427.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w746",
+  "text": "big",
+  "start": 427.06,
+  "end": 427.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w747",
+  "text": "ones",
+  "start": 427.24,
+  "end": 427.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w748",
+  "text": "that",
+  "start": 427.56,
+  "end": 427.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w749",
+  "text": "feel",
+  "start": 427.84,
+  "end": 428.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w750",
+  "text": "close",
+  "start": 428.12,
+  "end": 428.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w751",
+  "text": "to",
+  "start": 428.42,
+  "end": 428.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w752",
+  "text": "paid",
+  "start": 428.64,
+  "end": 428.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w753",
+  "text": "thing.",
+  "start": 428.86,
+  "end": 429.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w754",
+  "text": "The",
+  "start": 429.58,
+  "end": 429.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w755",
+  "text": "exact",
+  "start": 429.82,
+  "end": 430.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w756",
+  "text": "list",
+  "start": 430.28,
+  "end": 430.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w757",
+  "text": "I",
+  "start": 430.56,
+  "end": 430.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w758",
+  "text": "would",
+  "start": 430.94,
+  "end": 431.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w759",
+  "text": "pick",
+  "start": 431.06,
+  "end": 431.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w760",
+  "text": "for",
+  "start": 431.28,
+  "end": 431.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w761",
+  "text": "each",
+  "start": 431.58,
+  "end": 431.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w762",
+  "text": "size",
+  "start": 431.82,
+  "end": 432.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w763",
+  "text": "is",
+  "start": 432.12,
+  "end": 432.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w764",
+  "text": "in",
+  "start": 432.68,
+  "end": 432.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w765",
+  "text": "the",
+  "start": 432.84,
+  "end": 432.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w766",
+  "text": "free",
+  "start": 432.96,
+  "end": 433.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w767",
+  "text": "setup",
+  "start": 433.16,
+  "end": 433.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w768",
+  "text": "kit",
+  "start": 433.46,
+  "end": 433.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w769",
+  "text": "just",
+  "start": 433.84,
+  "end": 434.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w770",
+  "text": "find",
+  "start": 434.32,
+  "end": 434.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w771",
+  "text": "your",
+  "start": 434.62,
+  "end": 434.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w772",
+  "text": "RAM.",
+  "start": 434.84,
+  "end": 435.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w773",
+  "text": "Here",
+  "start": 440.19,
+  "end": 440.43,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w774",
+  "text": "is",
+  "start": 440.43,
+  "end": 440.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w775",
+  "text": "a",
+  "start": 440.57,
+  "end": 440.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w776",
+  "text": "little",
+  "start": 440.69,
+  "end": 441.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w777",
+  "text": "trick",
+  "start": 441.89,
+  "end": 442.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w778",
+  "text": "I",
+  "start": 442.23,
+  "end": 442.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w779",
+  "text": "used",
+  "start": 442.45,
+  "end": 442.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w780",
+  "text": "too.",
+  "start": 442.69,
+  "end": 443.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w781",
+  "text": "I",
+  "start": 443.07,
+  "end": 443.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w782",
+  "text": "asked",
+  "start": 443.99,
+  "end": 445.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w783",
+  "text": "chat",
+  "start": 445.79,
+  "end": 446.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w784",
+  "text": "GPT,",
+  "start": 446.05,
+  "end": 446.53,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w785",
+  "text": "here",
+  "start": 446.83,
+  "end": 446.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w786",
+  "text": "is",
+  "start": 446.99,
+  "end": 447.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w787",
+  "text": "my",
+  "start": 447.15,
+  "end": 447.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w788",
+  "text": "laptop,",
+  "start": 447.37,
+  "end": 447.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w789",
+  "text": "give",
+  "start": 448.29,
+  "end": 448.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w790",
+  "text": "me",
+  "start": 448.39,
+  "end": 448.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w791",
+  "text": "the",
+  "start": 448.61,
+  "end": 448.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w792",
+  "text": "best",
+  "start": 448.75,
+  "end": 448.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w793",
+  "text": "coding",
+  "start": 448.99,
+  "end": 449.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w794",
+  "text": "model",
+  "start": 449.45,
+  "end": 450.01,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w795",
+  "text": "for",
+  "start": 450.01,
+  "end": 453.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w796",
+  "text": "Olama,",
+  "start": 453.03,
+  "end": 453.81,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w797",
+  "text": "its",
+  "start": 453.93,
+  "end": 454.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w798",
+  "text": "exact",
+  "start": 454.17,
+  "end": 454.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w799",
+  "text": "name",
+  "start": 454.55,
+  "end": 454.87,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w800",
+  "text": "and",
+  "start": 454.87,
+  "end": 455.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w801",
+  "text": "the",
+  "start": 455.17,
+  "end": 455.31,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w802",
+  "text": "latest",
+  "start": 455.31,
+  "end": 455.59,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w803",
+  "text": "one",
+  "start": 455.59,
+  "end": 455.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w804",
+  "text": "because",
+  "start": 455.93,
+  "end": 456.49,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w805",
+  "text": "new",
+  "start": 456.49,
+  "end": 456.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w806",
+  "text": "model",
+  "start": 456.79,
+  "end": 457.13,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w807",
+  "text": "comes",
+  "start": 457.13,
+  "end": 457.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w808",
+  "text": "out",
+  "start": 457.47,
+  "end": 457.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w809",
+  "text": "literally",
+  "start": 457.79,
+  "end": 458.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w810",
+  "text": "every",
+  "start": 458.23,
+  "end": 458.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w811",
+  "text": "week",
+  "start": 458.67,
+  "end": 458.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w812",
+  "text": "and",
+  "start": 458.99,
+  "end": 468.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w813",
+  "text": "it",
+  "start": 468.45,
+  "end": 468.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w814",
+  "text": "suggested",
+  "start": 468.61,
+  "end": 469.01,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w815",
+  "text": "at",
+  "start": 469.01,
+  "end": 469.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w816",
+  "text": "MIMO",
+  "start": 469.19,
+  "end": 469.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w817",
+  "text": "version",
+  "start": 469.63,
+  "end": 469.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w818",
+  "text": "2",
+  "start": 469.91,
+  "end": 470.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w819",
+  "text": ".6,",
+  "start": 470.21,
+  "end": 470.83,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w820",
+  "text": "a",
+  "start": 471.17,
+  "end": 471.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w821",
+  "text": "9B",
+  "start": 471.21,
+  "end": 471.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w822",
+  "text": "model,",
+  "start": 471.65,
+  "end": 471.95,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w823",
+  "text": "the",
+  "start": 472.37,
+  "end": 472.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w824",
+  "text": "exact",
+  "start": 472.55,
+  "end": 472.95,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w825",
+  "text": "prompt",
+  "start": 472.95,
+  "end": 473.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w826",
+  "text": "is",
+  "start": 473.35,
+  "end": 473.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w827",
+  "text": "in",
+  "start": 473.71,
+  "end": 473.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w828",
+  "text": "the",
+  "start": 473.89,
+  "end": 473.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w829",
+  "text": "setup",
+  "start": 473.99,
+  "end": 474.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w830",
+  "text": "kit.",
+  "start": 474.21,
+  "end": 474.49,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w831",
+  "text": "And",
+  "start": 479.71,
+  "end": 479.87,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w832",
+  "text": "this",
+  "start": 479.87,
+  "end": 480.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w833",
+  "text": "is",
+  "start": 480.05,
+  "end": 480.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w834",
+  "text": "where",
+  "start": 480.21,
+  "end": 480.43,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w835",
+  "text": "I",
+  "start": 480.43,
+  "end": 480.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w836",
+  "text": "hit",
+  "start": 480.65,
+  "end": 480.83,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w837",
+  "text": "my",
+  "start": 480.83,
+  "end": 481.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w838",
+  "text": "first",
+  "start": 481.05,
+  "end": 481.29,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w839",
+  "text": "problem.",
+  "start": 481.29,
+  "end": 481.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w840",
+  "text": "MIMO",
+  "start": 482.39,
+  "end": 482.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w841",
+  "text": "wasn't",
+  "start": 482.63,
+  "end": 483.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w842",
+  "text": "in",
+  "start": 483.03,
+  "end": 483.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w843",
+  "text": "Olamas",
+  "start": 483.25,
+  "end": 483.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w844",
+  "text": "drop",
+  "start": 483.79,
+  "end": 484.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w845",
+  "text": "down.",
+  "start": 484.05,
+  "end": 484.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w846",
+  "text": "Olama",
+  "start": 485.15,
+  "end": 485.59,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w847",
+  "text": "only",
+  "start": 485.59,
+  "end": 485.87,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w848",
+  "text": "shows",
+  "start": 485.87,
+  "end": 486.21,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w849",
+  "text": "a",
+  "start": 486.21,
+  "end": 486.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w850",
+  "text": "handful",
+  "start": 486.47,
+  "end": 487.01,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w851",
+  "text": "of",
+  "start": 487.01,
+  "end": 489.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w852",
+  "text": "popular",
+  "start": 489.39,
+  "end": 489.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w853",
+  "text": "models",
+  "start": 489.97,
+  "end": 490.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w854",
+  "text": "there.",
+  "start": 490.37,
+  "end": 490.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w855",
+  "text": "So",
+  "start": 494.99,
+  "end": 495.59,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w856",
+  "text": "I",
+  "start": 495.59,
+  "end": 495.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w857",
+  "text": "tried",
+  "start": 495.73,
+  "end": 496.01,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w858",
+  "text": "installing",
+  "start": 496.01,
+  "end": 496.47,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w859",
+  "text": "it",
+  "start": 496.47,
+  "end": 496.77,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w860",
+  "text": "in",
+  "start": 496.77,
+  "end": 496.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w861",
+  "text": "the",
+  "start": 496.93,
+  "end": 497.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w862",
+  "text": "terminal.",
+  "start": 497.17,
+  "end": 500.95,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w863",
+  "text": "The",
+  "start": 500.95,
+  "end": 501.87,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w864",
+  "text": "black",
+  "start": 501.87,
+  "end": 502.17,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w865",
+  "text": "text",
+  "start": 502.17,
+  "end": 502.51,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w866",
+  "text": "window",
+  "start": 502.51,
+  "end": 502.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w867",
+  "text": "where",
+  "start": 502.97,
+  "end": 503.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w868",
+  "text": "you",
+  "start": 503.27,
+  "end": 503.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w869",
+  "text": "type",
+  "start": 503.41,
+  "end": 503.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w870",
+  "text": "commands",
+  "start": 503.67,
+  "end": 504.11,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w871",
+  "text": "from",
+  "start": 504.11,
+  "end": 504.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w872",
+  "text": "your",
+  "start": 504.61,
+  "end": 504.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w873",
+  "text": "computer.",
+  "start": 504.85,
+  "end": 505.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w874",
+  "text": "And",
+  "start": 506.17,
+  "end": 506.25,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w875",
+  "text": "it",
+  "start": 506.25,
+  "end": 506.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w876",
+  "text": "told",
+  "start": 506.39,
+  "end": 506.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w877",
+  "text": "me",
+  "start": 506.67,
+  "end": 507.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w878",
+  "text": "my",
+  "start": 507.15,
+  "end": 507.65,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w879",
+  "text": "Olamo",
+  "start": 507.65,
+  "end": 508.19,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w880",
+  "text": "was",
+  "start": 508.19,
+  "end": 508.37,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w881",
+  "text": "too",
+  "start": 508.37,
+  "end": 508.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w882",
+  "text": "old.",
+  "start": 508.67,
+  "end": 512.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w883",
+  "text": "I",
+  "start": 512.83,
+  "end": 512.99,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w884",
+  "text": "updated",
+  "start": 512.99,
+  "end": 513.41,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w885",
+  "text": "it,",
+  "start": 513.41,
+  "end": 513.79,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w886",
+  "text": "tried",
+  "start": 514.11,
+  "end": 514.29,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w887",
+  "text": "again",
+  "start": 514.29,
+  "end": 514.67,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w888",
+  "text": "and",
+  "start": 514.67,
+  "end": 515.15,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w889",
+  "text": "I",
+  "start": 515.15,
+  "end": 515.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w890",
+  "text": "was",
+  "start": 515.27,
+  "end": 515.39,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w891",
+  "text": "still",
+  "start": 515.39,
+  "end": 515.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w892",
+  "text": "stuck.",
+  "start": 515.63,
+  "end": 515.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w893",
+  "text": "And",
+  "start": 516.47,
+  "end": 516.55,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w894",
+  "text": "this",
+  "start": 516.55,
+  "end": 516.75,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w895",
+  "text": "is",
+  "start": 516.75,
+  "end": 516.93,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w896",
+  "text": "exactly",
+  "start": 516.93,
+  "end": 517.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w897",
+  "text": "where",
+  "start": 517.35,
+  "end": 517.71,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w898",
+  "text": "a",
+  "start": 517.71,
+  "end": 517.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w899",
+  "text": "5",
+  "start": 517.85,
+  "end": 518.09,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w900",
+  "text": "minute",
+  "start": 518.09,
+  "end": 518.29,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w901",
+  "text": "step",
+  "start": 518.29,
+  "end": 518.69,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w902",
+  "text": "turned",
+  "start": 518.69,
+  "end": 519.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w903",
+  "text": "into",
+  "start": 519.23,
+  "end": 519.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w904",
+  "text": "an",
+  "start": 519.57,
+  "end": 519.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w905",
+  "text": "hour",
+  "start": 519.73,
+  "end": 520.07,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w906",
+  "text": "of",
+  "start": 520.07,
+  "end": 520.35,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w907",
+  "text": "googling.",
+  "start": 520.35,
+  "end": 520.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w908",
+  "text": "So",
+  "start": 525.48,
+  "end": 525.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w909",
+  "text": "instead",
+  "start": 525.7,
+  "end": 526.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w910",
+  "text": "I",
+  "start": 526.06,
+  "end": 526.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w911",
+  "text": "let",
+  "start": 526.66,
+  "end": 526.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w912",
+  "text": "another",
+  "start": 526.9,
+  "end": 527.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w913",
+  "text": "AI",
+  "start": 527.36,
+  "end": 527.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w914",
+  "text": "do",
+  "start": 527.68,
+  "end": 527.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w915",
+  "text": "it",
+  "start": 527.92,
+  "end": 528.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w916",
+  "text": "for",
+  "start": 528.1,
+  "end": 528.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w917",
+  "text": "me.",
+  "start": 528.3,
+  "end": 528.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w918",
+  "text": "It's",
+  "start": 528.96,
+  "end": 529.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w919",
+  "text": "called",
+  "start": 529.1,
+  "end": 529.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w920",
+  "text": "anti",
+  "start": 529.3,
+  "end": 529.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w921",
+  "text": "-gravity.",
+  "start": 529.64,
+  "end": 529.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w922",
+  "text": "Anti",
+  "start": 529.92,
+  "end": 530.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w923",
+  "text": "-Gravity",
+  "start": 530.76,
+  "end": 531.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w924",
+  "text": "is",
+  "start": 531.14,
+  "end": 531.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w925",
+  "text": "a",
+  "start": 531.36,
+  "end": 531.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w926",
+  "text": "free",
+  "start": 531.54,
+  "end": 531.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w927",
+  "text": "AI",
+  "start": 531.78,
+  "end": 532.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w928",
+  "text": "coding",
+  "start": 532.14,
+  "end": 532.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w929",
+  "text": "app",
+  "start": 532.46,
+  "end": 532.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w930",
+  "text": "from",
+  "start": 532.84,
+  "end": 533.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w931",
+  "text": "Google.",
+  "start": 533.14,
+  "end": 533.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w932",
+  "text": "The",
+  "start": 533.84,
+  "end": 534.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w933",
+  "text": "difference",
+  "start": 534.1,
+  "end": 534.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w934",
+  "text": "from",
+  "start": 534.42,
+  "end": 534.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w935",
+  "text": "a",
+  "start": 534.76,
+  "end": 534.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w936",
+  "text": "normal",
+  "start": 534.94,
+  "end": 535.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w937",
+  "text": "chatbot",
+  "start": 535.28,
+  "end": 535.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w938",
+  "text": "is",
+  "start": 535.78,
+  "end": 536.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w939",
+  "text": "that",
+  "start": 536.16,
+  "end": 536.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w940",
+  "text": "it",
+  "start": 536.42,
+  "end": 536.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w941",
+  "text": "can",
+  "start": 536.62,
+  "end": 536.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w942",
+  "text": "actually",
+  "start": 536.84,
+  "end": 537.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w943",
+  "text": "work",
+  "start": 537.34,
+  "end": 537.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w944",
+  "text": "on",
+  "start": 537.74,
+  "end": 538.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w945",
+  "text": "your",
+  "start": 538.0,
+  "end": 538.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w946",
+  "text": "computer.",
+  "start": 538.2,
+  "end": 538.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w947",
+  "text": "It",
+  "start": 539.16,
+  "end": 539.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w948",
+  "text": "opens",
+  "start": 539.34,
+  "end": 539.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w949",
+  "text": "the",
+  "start": 539.7,
+  "end": 539.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w950",
+  "text": "terminal,",
+  "start": 539.92,
+  "end": 540.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w951",
+  "text": "runs",
+  "start": 540.52,
+  "end": 540.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w952",
+  "text": "command,",
+  "start": 540.68,
+  "end": 541.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w953",
+  "text": "reads",
+  "start": 541.4,
+  "end": 541.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w954",
+  "text": "the",
+  "start": 541.6,
+  "end": 541.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w955",
+  "text": "errors",
+  "start": 541.86,
+  "end": 542.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w956",
+  "text": "and",
+  "start": 542.14,
+  "end": 542.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w957",
+  "text": "fixes",
+  "start": 542.4,
+  "end": 542.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w958",
+  "text": "them.",
+  "start": 542.72,
+  "end": 543.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w959",
+  "text": "Download",
+  "start": 543.6,
+  "end": 543.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w960",
+  "text": "it",
+  "start": 543.84,
+  "end": 544.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w961",
+  "text": "from",
+  "start": 544.08,
+  "end": 544.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w962",
+  "text": "anti",
+  "start": 544.34,
+  "end": 544.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w963",
+  "text": "-gravity",
+  "start": 544.68,
+  "end": 544.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w964",
+  "text": ".google,",
+  "start": 544.98,
+  "end": 545.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w965",
+  "text": "sign",
+  "start": 546.16,
+  "end": 546.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w966",
+  "text": "in",
+  "start": 546.3,
+  "end": 546.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w967",
+  "text": "with",
+  "start": 546.5,
+  "end": 546.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w968",
+  "text": "your",
+  "start": 546.68,
+  "end": 546.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w969",
+  "text": "google",
+  "start": 546.86,
+  "end": 547.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w970",
+  "text": "account",
+  "start": 547.1,
+  "end": 547.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w971",
+  "text": "and",
+  "start": 547.46,
+  "end": 547.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w972",
+  "text": "open",
+  "start": 547.76,
+  "end": 548.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w973",
+  "text": "it",
+  "start": 548.06,
+  "end": 548.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w974",
+  "text": "and",
+  "start": 548.36,
+  "end": 548.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w975",
+  "text": "give",
+  "start": 548.58,
+  "end": 548.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w976",
+  "text": "it",
+  "start": 548.76,
+  "end": 548.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w977",
+  "text": "one",
+  "start": 548.94,
+  "end": 549.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w978",
+  "text": "sentence.",
+  "start": 549.16,
+  "end": 549.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w979",
+  "text": "I",
+  "start": 550.1,
+  "end": 550.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w980",
+  "text": "am",
+  "start": 550.2,
+  "end": 550.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w981",
+  "text": "running",
+  "start": 550.32,
+  "end": 550.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w982",
+  "text": "AI",
+  "start": 550.56,
+  "end": 550.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w983",
+  "text": "model",
+  "start": 550.94,
+  "end": 551.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w984",
+  "text": "locally,",
+  "start": 551.24,
+  "end": 551.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w985",
+  "text": "install",
+  "start": 552.02,
+  "end": 552.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w986",
+  "text": "memo",
+  "start": 552.36,
+  "end": 552.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w987",
+  "text": "version",
+  "start": 552.76,
+  "end": 553.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w988",
+  "text": "2",
+  "start": 553.1,
+  "end": 553.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w989",
+  "text": ".69b",
+  "start": 553.42,
+  "end": 554.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w990",
+  "text": "and",
+  "start": 554.44,
+  "end": 554.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w991",
+  "text": "set",
+  "start": 554.76,
+  "end": 555.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w992",
+  "text": "everything",
+  "start": 555.02,
+  "end": 555.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w993",
+  "text": "up",
+  "start": 555.52,
+  "end": 555.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w994",
+  "text": "so",
+  "start": 555.78,
+  "end": 557.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w995",
+  "text": "it",
+  "start": 559.74,
+  "end": 561.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w996",
+  "text": "works",
+  "start": 561.14,
+  "end": 561.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w997",
+  "text": "with",
+  "start": 561.38,
+  "end": 561.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w998",
+  "text": "Olama.",
+  "start": 561.74,
+  "end": 562.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w999",
+  "text": "It",
+  "start": 566.5,
+  "end": 566.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1000",
+  "text": "will",
+  "start": 566.72,
+  "end": 566.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1001",
+  "text": "ask",
+  "start": 566.88,
+  "end": 567.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1002",
+  "text": "you",
+  "start": 567.2,
+  "end": 569.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1003",
+  "text": "a",
+  "start": 569.74,
+  "end": 569.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1004",
+  "text": "permission",
+  "start": 569.8,
+  "end": 570.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1005",
+  "text": "before",
+  "start": 570.08,
+  "end": 570.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1006",
+  "text": "running",
+  "start": 570.6,
+  "end": 571.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1007",
+  "text": "each",
+  "start": 571.1,
+  "end": 571.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1008",
+  "text": "command",
+  "start": 571.44,
+  "end": 571.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1009",
+  "text": "because",
+  "start": 571.76,
+  "end": 572.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1010",
+  "text": "it's",
+  "start": 572.56,
+  "end": 572.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1011",
+  "text": "running",
+  "start": 572.88,
+  "end": 573.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1012",
+  "text": "things",
+  "start": 573.14,
+  "end": 573.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1013",
+  "text": "on",
+  "start": 573.48,
+  "end": 573.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1014",
+  "text": "your",
+  "start": 573.74,
+  "end": 573.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1015",
+  "text": "machine,",
+  "start": 573.94,
+  "end": 574.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1016",
+  "text": "read",
+  "start": 574.82,
+  "end": 574.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1017",
+  "text": "each",
+  "start": 574.98,
+  "end": 575.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1018",
+  "text": "step",
+  "start": 575.3,
+  "end": 575.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1019",
+  "text": "and",
+  "start": 575.66,
+  "end": 575.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1020",
+  "text": "then",
+  "start": 575.96,
+  "end": 576.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1021",
+  "text": "allow.",
+  "start": 576.16,
+  "end": 576.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1022",
+  "text": "A",
+  "start": 577.1,
+  "end": 577.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1023",
+  "text": "few",
+  "start": 577.28,
+  "end": 577.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1024",
+  "text": "minutes",
+  "start": 577.5,
+  "end": 577.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1025",
+  "text": "later",
+  "start": 577.76,
+  "end": 578.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1026",
+  "text": "it",
+  "start": 578.16,
+  "end": 578.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1027",
+  "text": "says",
+  "start": 578.5,
+  "end": 578.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1028",
+  "text": "installed",
+  "start": 578.8,
+  "end": 579.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1029",
+  "text": "and",
+  "start": 579.64,
+  "end": 579.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1030",
+  "text": "tested.",
+  "start": 579.92,
+  "end": 580.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1031",
+  "text": "Close",
+  "start": 580.76,
+  "end": 581.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1032",
+  "text": "Olama,",
+  "start": 581.02,
+  "end": 581.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1033",
+  "text": "open",
+  "start": 581.74,
+  "end": 581.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1034",
+  "text": "it",
+  "start": 581.94,
+  "end": 582.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1035",
+  "text": "again",
+  "start": 582.12,
+  "end": 582.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1036",
+  "text": "and",
+  "start": 582.44,
+  "end": 582.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1037",
+  "text": "the",
+  "start": 582.74,
+  "end": 582.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1038",
+  "text": "new",
+  "start": 582.86,
+  "end": 583.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1039",
+  "text": "model",
+  "start": 583.08,
+  "end": 583.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1040",
+  "text": "is",
+  "start": 583.36,
+  "end": 583.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1041",
+  "text": "right",
+  "start": 583.68,
+  "end": 583.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1042",
+  "text": "there",
+  "start": 583.98,
+  "end": 584.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1043",
+  "text": "in",
+  "start": 584.28,
+  "end": 584.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1044",
+  "text": "the",
+  "start": 584.48,
+  "end": 584.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1045",
+  "text": "drop",
+  "start": 584.6,
+  "end": 584.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1046",
+  "text": "down.",
+  "start": 584.82,
+  "end": 585.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1047",
+  "text": "And",
+  "start": 590.2,
+  "end": 590.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1048",
+  "text": "that's",
+  "start": 590.28,
+  "end": 591.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1049",
+  "text": "going",
+  "start": 591.42,
+  "end": 591.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1050",
+  "text": "to",
+  "start": 591.58,
+  "end": 591.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1051",
+  "text": "be",
+  "start": 591.84,
+  "end": 592.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1052",
+  "text": "rule",
+  "start": 592.04,
+  "end": 592.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1053",
+  "text": "for",
+  "start": 592.24,
+  "end": 592.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1054",
+  "text": "this",
+  "start": 592.64,
+  "end": 592.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1055",
+  "text": "whole",
+  "start": 592.84,
+  "end": 593.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1056",
+  "text": "video.",
+  "start": 593.16,
+  "end": 593.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1057",
+  "text": "And",
+  "start": 594.22,
+  "end": 594.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1058",
+  "text": "that's",
+  "start": 594.5,
+  "end": 594.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1059",
+  "text": "going",
+  "start": 594.82,
+  "end": 594.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1060",
+  "text": "to",
+  "start": 594.96,
+  "end": 595.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1061",
+  "text": "be",
+  "start": 595.2,
+  "end": 595.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1062",
+  "text": "the",
+  "start": 595.38,
+  "end": 595.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1063",
+  "text": "rule",
+  "start": 595.54,
+  "end": 595.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1064",
+  "text": "for",
+  "start": 595.76,
+  "end": 596.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1065",
+  "text": "this",
+  "start": 596.02,
+  "end": 596.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1066",
+  "text": "whole",
+  "start": 596.22,
+  "end": 596.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1067",
+  "text": "video.",
+  "start": 596.48,
+  "end": 596.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1068",
+  "text": "Anything",
+  "start": 597.4,
+  "end": 597.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1069",
+  "text": "longer",
+  "start": 597.6,
+  "end": 598.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1070",
+  "text": "than",
+  "start": 598.08,
+  "end": 600.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1071",
+  "text": "one",
+  "start": 600.42,
+  "end": 600.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1072",
+  "text": "line,",
+  "start": 600.64,
+  "end": 600.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1073",
+  "text": "you",
+  "start": 601.32,
+  "end": 601.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1074",
+  "text": "don't",
+  "start": 601.34,
+  "end": 601.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1075",
+  "text": "type",
+  "start": 601.68,
+  "end": 601.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1076",
+  "text": "it",
+  "start": 601.86,
+  "end": 602.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1077",
+  "text": "yourself.",
+  "start": 602.06,
+  "end": 602.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1078",
+  "text": "An",
+  "start": 602.92,
+  "end": 603.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1079",
+  "text": "AI",
+  "start": 603.06,
+  "end": 603.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1080",
+  "text": "installs",
+  "start": 603.4,
+  "end": 603.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1081",
+  "text": "it.",
+  "start": 603.9,
+  "end": 604.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1082",
+  "text": "And",
+  "start": 604.54,
+  "end": 604.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1083",
+  "text": "if",
+  "start": 604.6,
+  "end": 604.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1084",
+  "text": "something",
+  "start": 604.76,
+  "end": 605.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1085",
+  "text": "breaks",
+  "start": 605.06,
+  "end": 605.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1086",
+  "text": "on",
+  "start": 605.36,
+  "end": 605.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1087",
+  "text": "the",
+  "start": 605.64,
+  "end": 605.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1088",
+  "text": "way,",
+  "start": 605.8,
+  "end": 606.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1089",
+  "text": "you",
+  "start": 606.34,
+  "end": 606.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1090",
+  "text": "just",
+  "start": 606.44,
+  "end": 606.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1091",
+  "text": "copy",
+  "start": 606.66,
+  "end": 606.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1092",
+  "text": "the",
+  "start": 606.94,
+  "end": 607.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1093",
+  "text": "error,",
+  "start": 607.14,
+  "end": 607.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1094",
+  "text": "paste",
+  "start": 607.7,
+  "end": 607.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1095",
+  "text": "it",
+  "start": 607.9,
+  "end": 608.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1096",
+  "text": "back",
+  "start": 608.1,
+  "end": 608.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1097",
+  "text": "to",
+  "start": 608.3,
+  "end": 608.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1098",
+  "text": "anti",
+  "start": 608.56,
+  "end": 608.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1099",
+  "text": "-gravity",
+  "start": 608.86,
+  "end": 609.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1100",
+  "text": "and",
+  "start": 609.1,
+  "end": 609.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1101",
+  "text": "say",
+  "start": 609.56,
+  "end": 609.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1102",
+  "text": "fix",
+  "start": 609.86,
+  "end": 610.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1103",
+  "text": "this.",
+  "start": 610.18,
+  "end": 610.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1104",
+  "text": "Now",
+  "start": 615.58,
+  "end": 615.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1105",
+  "text": "the",
+  "start": 615.8,
+  "end": 615.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1106",
+  "text": "part",
+  "start": 615.96,
+  "end": 616.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1107",
+  "text": "of",
+  "start": 616.2,
+  "end": 616.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1108",
+  "text": "you",
+  "start": 616.46,
+  "end": 616.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1109",
+  "text": "come",
+  "start": 616.66,
+  "end": 616.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1110",
+  "text": "here.",
+  "start": 616.94,
+  "end": 617.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1111",
+  "text": "Now",
+  "start": 619.66,
+  "end": 620.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1112",
+  "text": "the",
+  "start": 620.1,
+  "end": 620.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1113",
+  "text": "part",
+  "start": 620.34,
+  "end": 620.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1114",
+  "text": "you",
+  "start": 620.58,
+  "end": 620.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1115",
+  "text": "came",
+  "start": 620.8,
+  "end": 621.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1116",
+  "text": "here",
+  "start": 621.02,
+  "end": 621.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1117",
+  "text": "for",
+  "start": 621.32,
+  "end": 621.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1118",
+  "text": "putting",
+  "start": 621.64,
+  "end": 622.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1119",
+  "text": "Claude",
+  "start": 622.5,
+  "end": 622.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1120",
+  "text": "code",
+  "start": 622.84,
+  "end": 623.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1121",
+  "text": "on",
+  "start": 623.1,
+  "end": 623.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1122",
+  "text": "top.",
+  "start": 623.3,
+  "end": 623.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1123",
+  "text": "Now",
+  "start": 625.88,
+  "end": 626.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1124",
+  "text": "the",
+  "start": 626.04,
+  "end": 626.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1125",
+  "text": "part",
+  "start": 626.18,
+  "end": 626.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1126",
+  "text": "you",
+  "start": 626.42,
+  "end": 626.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1127",
+  "text": "came",
+  "start": 626.62,
+  "end": 626.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1128",
+  "text": "here",
+  "start": 626.82,
+  "end": 627.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1129",
+  "text": "for",
+  "start": 627.08,
+  "end": 627.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1130",
+  "text": "putting",
+  "start": 627.48,
+  "end": 628.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1131",
+  "text": "Claude",
+  "start": 628.06,
+  "end": 628.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1132",
+  "text": "code",
+  "start": 628.44,
+  "end": 628.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1133",
+  "text": "on",
+  "start": 628.72,
+  "end": 628.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1134",
+  "text": "top.",
+  "start": 628.94,
+  "end": 629.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1135",
+  "text": "In",
+  "start": 629.54,
+  "end": 629.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1136",
+  "text": "Olama,",
+  "start": 629.7,
+  "end": 630.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1137",
+  "text": "to",
+  "start": 630.48,
+  "end": 630.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1138",
+  "text": "apps",
+  "start": 630.7,
+  "end": 631.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1139",
+  "text": "and",
+  "start": 631.08,
+  "end": 631.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1140",
+  "text": "click",
+  "start": 631.42,
+  "end": 631.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1141",
+  "text": "Claude",
+  "start": 631.64,
+  "end": 631.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1142",
+  "text": "code.",
+  "start": 631.96,
+  "end": 632.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1143",
+  "text": "See",
+  "start": 633.22,
+  "end": 633.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1144",
+  "text": "the",
+  "start": 633.56,
+  "end": 633.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1145",
+  "text": "little",
+  "start": 633.72,
+  "end": 634.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1146",
+  "text": "message",
+  "start": 634.02,
+  "end": 634.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1147",
+  "text": "it",
+  "start": 634.46,
+  "end": 634.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1148",
+  "text": "copied",
+  "start": 634.86,
+  "end": 635.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1149",
+  "text": "the",
+  "start": 635.2,
+  "end": 635.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1150",
+  "text": "launch",
+  "start": 635.46,
+  "end": 635.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1151",
+  "text": "command",
+  "start": 635.78,
+  "end": 636.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1152",
+  "text": "for",
+  "start": 636.2,
+  "end": 636.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1153",
+  "text": "you.",
+  "start": 636.74,
+  "end": 638.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1154",
+  "text": "See",
+  "start": 638.4,
+  "end": 638.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1155",
+  "text": "that",
+  "start": 638.88,
+  "end": 639.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1156",
+  "text": "little",
+  "start": 639.08,
+  "end": 639.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1157",
+  "text": "message",
+  "start": 639.38,
+  "end": 639.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1158",
+  "text": "it",
+  "start": 639.82,
+  "end": 640.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1159",
+  "text": "copied",
+  "start": 640.38,
+  "end": 640.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1160",
+  "text": "the",
+  "start": 640.78,
+  "end": 641.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1161",
+  "text": "launch",
+  "start": 641.04,
+  "end": 641.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1162",
+  "text": "command",
+  "start": 641.32,
+  "end": 641.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1163",
+  "text": "for",
+  "start": 641.62,
+  "end": 641.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1164",
+  "text": "you,",
+  "start": 641.86,
+  "end": 642.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1165",
+  "text": "Olama",
+  "start": 642.54,
+  "end": 643.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1166",
+  "text": "launch",
+  "start": 643.04,
+  "end": 643.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1167",
+  "text": "Claude.",
+  "start": 643.34,
+  "end": 643.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1168",
+  "text": "Now",
+  "start": 647.06,
+  "end": 647.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1169",
+  "text": "make",
+  "start": 647.7,
+  "end": 647.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1170",
+  "text": "a",
+  "start": 647.9,
+  "end": 648.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1171",
+  "text": "folder",
+  "start": 648.06,
+  "end": 648.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1172",
+  "text": "anywhere",
+  "start": 648.32,
+  "end": 648.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1173",
+  "text": "on",
+  "start": 648.68,
+  "end": 649.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1174",
+  "text": "your",
+  "start": 649.1,
+  "end": 649.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1175",
+  "text": "computer.",
+  "start": 649.26,
+  "end": 649.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1176",
+  "text": "Mine",
+  "start": 650.28,
+  "end": 650.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1177",
+  "text": "is",
+  "start": 650.42,
+  "end": 650.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1178",
+  "text": "called",
+  "start": 650.72,
+  "end": 651.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1179",
+  "text": "Claude",
+  "start": 651.02,
+  "end": 651.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1180",
+  "text": "code.",
+  "start": 651.28,
+  "end": 651.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1181",
+  "text": "Open",
+  "start": 652.26,
+  "end": 652.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1182",
+  "text": "it,",
+  "start": 652.3,
+  "end": 653.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1183",
+  "text": "right",
+  "start": 654.06,
+  "end": 654.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1184",
+  "text": "click",
+  "start": 654.26,
+  "end": 654.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1185",
+  "text": "in",
+  "start": 656.58,
+  "end": 656.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1186",
+  "text": "the",
+  "start": 656.9,
+  "end": 657.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1187",
+  "text": "empty",
+  "start": 657.04,
+  "end": 657.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1188",
+  "text": "space",
+  "start": 657.28,
+  "end": 657.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1189",
+  "text": "and",
+  "start": 657.6,
+  "end": 657.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1190",
+  "text": "choose",
+  "start": 657.94,
+  "end": 658.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1191",
+  "text": "open",
+  "start": 658.18,
+  "end": 658.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1192",
+  "text": "in",
+  "start": 658.66,
+  "end": 658.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1193",
+  "text": "terminal.",
+  "start": 658.9,
+  "end": 659.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1194",
+  "text": "Paste",
+  "start": 660.0,
+  "end": 660.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1195",
+  "text": "the",
+  "start": 660.1,
+  "end": 660.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1196",
+  "text": "command",
+  "start": 660.3,
+  "end": 660.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1197",
+  "text": "and",
+  "start": 660.62,
+  "end": 660.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1198",
+  "text": "hit",
+  "start": 660.9,
+  "end": 661.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1199",
+  "text": "enter.",
+  "start": 661.14,
+  "end": 661.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1200",
+  "text": "If",
+  "start": 661.96,
+  "end": 662.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1201",
+  "text": "the",
+  "start": 662.1,
+  "end": 662.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1202",
+  "text": "Claude",
+  "start": 662.28,
+  "end": 662.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1203",
+  "text": "Cloud",
+  "start": 662.54,
+  "end": 662.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1204",
+  "text": "code",
+  "start": 662.54,
+  "end": 662.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1205",
+  "text": "isn't",
+  "start": 662.84,
+  "end": 663.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1206",
+  "text": "installed",
+  "start": 663.24,
+  "end": 663.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1207",
+  "text": "yet,",
+  "start": 663.64,
+  "end": 663.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1208",
+  "text": "it",
+  "start": 664.12,
+  "end": 664.22,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1209",
+  "text": "offers",
+  "start": 664.22,
+  "end": 664.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1210",
+  "text": "to",
+  "start": 664.52,
+  "end": 664.78,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1211",
+  "text": "install",
+  "start": 664.78,
+  "end": 665.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1212",
+  "text": "it",
+  "start": 665.2,
+  "end": 665.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1213",
+  "text": "and",
+  "start": 665.5,
+  "end": 665.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1214",
+  "text": "say",
+  "start": 665.76,
+  "end": 666.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1215",
+  "text": "yes.",
+  "start": 666.0,
+  "end": 666.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1216",
+  "text": "And",
+  "start": 669.04,
+  "end": 669.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1217",
+  "text": "this",
+  "start": 669.1,
+  "end": 669.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1218",
+  "text": "is",
+  "start": 669.28,
+  "end": 669.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1219",
+  "text": "the",
+  "start": 669.44,
+  "end": 669.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1220",
+  "text": "real",
+  "start": 669.62,
+  "end": 669.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1221",
+  "text": "cloud",
+  "start": 669.88,
+  "end": 670.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1222",
+  "text": "code,",
+  "start": 670.14,
+  "end": 670.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1223",
+  "text": "Anthropic's",
+  "start": 671.06,
+  "end": 671.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1224",
+  "text": "official",
+  "start": 671.64,
+  "end": 671.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1225",
+  "text": "app,",
+  "start": 671.92,
+  "end": 672.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1226",
+  "text": "not",
+  "start": 672.82,
+  "end": 672.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1227",
+  "text": "a",
+  "start": 672.9,
+  "end": 673.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1228",
+  "text": "copy.",
+  "start": 673.06,
+  "end": 673.36,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1229",
+  "text": "Then",
+  "start": 673.88,
+  "end": 674.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1230",
+  "text": "it",
+  "start": 674.08,
+  "end": 674.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1231",
+  "text": "asks",
+  "start": 674.24,
+  "end": 674.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1232",
+  "text": "which",
+  "start": 674.48,
+  "end": 674.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1233",
+  "text": "model",
+  "start": 674.72,
+  "end": 675.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1234",
+  "text": "to",
+  "start": 675.04,
+  "end": 675.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1235",
+  "text": "use.",
+  "start": 675.34,
+  "end": 675.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1236",
+  "text": "And",
+  "start": 676.14,
+  "end": 676.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1237",
+  "text": "I",
+  "start": 676.28,
+  "end": 676.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1238",
+  "text": "picked",
+  "start": 676.42,
+  "end": 676.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1239",
+  "text": "my",
+  "start": 676.62,
+  "end": 676.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1240",
+  "text": "local",
+  "start": 676.88,
+  "end": 677.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1241",
+  "text": "one.",
+  "start": 677.24,
+  "end": 677.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1242",
+  "text": "And",
+  "start": 680.72,
+  "end": 680.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1243",
+  "text": "look",
+  "start": 680.92,
+  "end": 681.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1244",
+  "text": "at",
+  "start": 681.08,
+  "end": 681.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1245",
+  "text": "that,",
+  "start": 681.28,
+  "end": 681.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1246",
+  "text": "the",
+  "start": 681.8,
+  "end": 682.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1247",
+  "text": "real",
+  "start": 682.02,
+  "end": 682.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1248",
+  "text": "cloud",
+  "start": 682.34,
+  "end": 682.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1249",
+  "text": "code",
+  "start": 682.64,
+  "end": 682.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1250",
+  "text": "running",
+  "start": 682.94,
+  "end": 683.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1251",
+  "text": "on",
+  "start": 683.28,
+  "end": 683.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1252",
+  "text": "my",
+  "start": 683.58,
+  "end": 683.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1253",
+  "text": "laptop",
+  "start": 683.82,
+  "end": 684.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1254",
+  "text": "with",
+  "start": 684.3,
+  "end": 684.96,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1255",
+  "text": "a",
+  "start": 684.96,
+  "end": 685.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1256",
+  "text": "free",
+  "start": 685.1,
+  "end": 685.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1257",
+  "text": "local",
+  "start": 685.3,
+  "end": 685.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1258",
+  "text": "brain",
+  "start": 685.7,
+  "end": 686.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1259",
+  "text": "inside",
+  "start": 686.06,
+  "end": 686.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1260",
+  "text": "it.",
+  "start": 686.5,
+  "end": 686.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1261",
+  "text": "No",
+  "start": 687.06,
+  "end": 687.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1262",
+  "text": "subscription,",
+  "start": 687.28,
+  "end": 687.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1263",
+  "text": "no",
+  "start": 688.16,
+  "end": 688.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1264",
+  "text": "API",
+  "start": 688.28,
+  "end": 688.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1265",
+  "text": "key.",
+  "start": 688.62,
+  "end": 688.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1266",
+  "text": "Now",
+  "start": 691.99,
+  "end": 692.27,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1267",
+  "text": "let's",
+  "start": 692.27,
+  "end": 692.59,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1268",
+  "text": "give",
+  "start": 692.59,
+  "end": 692.73,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1269",
+  "text": "it",
+  "start": 692.73,
+  "end": 692.85,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1270",
+  "text": "a",
+  "start": 692.85,
+  "end": 692.97,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1271",
+  "text": "real",
+  "start": 692.97,
+  "end": 693.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1272",
+  "text": "job.",
+  "start": 693.23,
+  "end": 693.57,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1273",
+  "text": "I",
+  "start": 693.57,
+  "end": 694.03,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1274",
+  "text": "type",
+  "start": 694.03,
+  "end": 694.45,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1275",
+  "text": "build",
+  "start": 694.45,
+  "end": 694.91,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1276",
+  "text": "me",
+  "start": 694.91,
+  "end": 695.13,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1277",
+  "text": "a",
+  "start": 695.13,
+  "end": 695.31,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1278",
+  "text": "simple",
+  "start": 695.31,
+  "end": 695.61,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1279",
+  "text": "calculator",
+  "start": 695.61,
+  "end": 696.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1280",
+  "text": "app",
+  "start": 696.23,
+  "end": 696.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1281",
+  "text": "on",
+  "start": 696.63,
+  "end": 697.05,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1282",
+  "text": "my",
+  "start": 697.05,
+  "end": 697.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1283",
+  "text": "laptop",
+  "start": 697.23,
+  "end": 697.63,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1284",
+  "text": "it",
+  "start": 697.63,
+  "end": 697.89,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1285",
+  "text": "took",
+  "start": 697.89,
+  "end": 698.23,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1286",
+  "text": "about",
+  "start": 700.5,
+  "end": 702.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1287",
+  "text": "30",
+  "start": 702.86,
+  "end": 703.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1288",
+  "text": "minutes",
+  "start": 703.44,
+  "end": 703.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1289",
+  "text": "because",
+  "start": 703.88,
+  "end": 704.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1290",
+  "text": "a",
+  "start": 704.42,
+  "end": 704.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1291",
+  "text": "small",
+  "start": 704.6,
+  "end": 704.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1292",
+  "text": "local",
+  "start": 704.88,
+  "end": 705.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1293",
+  "text": "model",
+  "start": 705.3,
+  "end": 705.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1294",
+  "text": "is",
+  "start": 705.68,
+  "end": 706.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1295",
+  "text": "doing",
+  "start": 706.08,
+  "end": 706.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1296",
+  "text": "all",
+  "start": 706.32,
+  "end": 706.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1297",
+  "text": "the",
+  "start": 706.66,
+  "end": 706.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1298",
+  "text": "heavy",
+  "start": 706.82,
+  "end": 706.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1299",
+  "text": "lifting.",
+  "start": 706.98,
+  "end": 707.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1300",
+  "text": "And",
+  "start": 708.06,
+  "end": 708.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1301",
+  "text": "that's",
+  "start": 708.1,
+  "end": 708.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1302",
+  "text": "the",
+  "start": 708.54,
+  "end": 708.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1303",
+  "text": "honest",
+  "start": 708.7,
+  "end": 708.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1304",
+  "text": "trade",
+  "start": 708.94,
+  "end": 709.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1305",
+  "text": "off.",
+  "start": 709.2,
+  "end": 709.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1306",
+  "text": "Free",
+  "start": 710.04,
+  "end": 710.1,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1307",
+  "text": "means",
+  "start": 710.1,
+  "end": 710.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1308",
+  "text": "your",
+  "start": 710.44,
+  "end": 710.8,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1309",
+  "text": "laptop",
+  "start": 710.8,
+  "end": 711.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1310",
+  "text": "does",
+  "start": 711.14,
+  "end": 711.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1311",
+  "text": "the",
+  "start": 711.5,
+  "end": 711.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1312",
+  "text": "work.",
+  "start": 711.74,
+  "end": 712.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1313",
+  "text": "So",
+  "start": 712.48,
+  "end": 712.52,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1314",
+  "text": "on",
+  "start": 712.52,
+  "end": 712.86,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1315",
+  "text": "normal",
+  "start": 712.86,
+  "end": 713.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1316",
+  "text": "machines",
+  "start": 713.28,
+  "end": 713.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1317",
+  "text": "you",
+  "start": 713.62,
+  "end": 713.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1318",
+  "text": "pay",
+  "start": 713.92,
+  "end": 714.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1319",
+  "text": "with",
+  "start": 714.2,
+  "end": 714.4,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1320",
+  "text": "the.",
+  "start": 714.4,
+  "end": 714.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1321",
+  "text": "And",
+  "start": 715.92,
+  "end": 716.6,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1322",
+  "text": "that's",
+  "start": 716.6,
+  "end": 716.92,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1323",
+  "text": "the",
+  "start": 716.92,
+  "end": 717.0,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1324",
+  "text": "honest",
+  "start": 717.0,
+  "end": 717.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1325",
+  "text": "trade",
+  "start": 717.24,
+  "end": 717.54,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1326",
+  "text": "off.",
+  "start": 717.54,
+  "end": 717.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1327",
+  "text": "Free",
+  "start": 718.26,
+  "end": 718.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1328",
+  "text": "means",
+  "start": 718.34,
+  "end": 718.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1329",
+  "text": "your",
+  "start": 718.74,
+  "end": 719.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1330",
+  "text": "laptop",
+  "start": 719.34,
+  "end": 719.64,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1331",
+  "text": "does",
+  "start": 719.64,
+  "end": 720.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1332",
+  "text": "the",
+  "start": 720.04,
+  "end": 720.24,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1333",
+  "text": "work.",
+  "start": 720.24,
+  "end": 720.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1334",
+  "text": "So,",
+  "start": 720.5,
+  "end": 721.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1335",
+  "text": "on",
+  "start": 721.28,
+  "end": 721.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1336",
+  "text": "normal",
+  "start": 721.42,
+  "end": 721.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1337",
+  "text": "machine",
+  "start": 721.84,
+  "end": 722.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1338",
+  "text": "you",
+  "start": 722.2,
+  "end": 722.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1339",
+  "text": "pay",
+  "start": 722.48,
+  "end": 722.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1340",
+  "text": "with",
+  "start": 722.72,
+  "end": 722.94,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1341",
+  "text": "your",
+  "start": 722.94,
+  "end": 723.12,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1342",
+  "text": "time,",
+  "start": 723.12,
+  "end": 723.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1343",
+  "text": "but",
+  "start": 723.74,
+  "end": 724.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1344",
+  "text": "it",
+  "start": 724.06,
+  "end": 724.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1345",
+  "text": "finished",
+  "start": 724.26,
+  "end": 724.56,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1346",
+  "text": "and",
+  "start": 724.56,
+  "end": 725.02,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1347",
+  "text": "it",
+  "start": 725.02,
+  "end": 725.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1348",
+  "text": "works.",
+  "start": 725.18,
+  "end": 725.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1349",
+  "text": "And",
+  "start": 730.04,
+  "end": 730.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1350",
+  "text": "next",
+  "start": 730.08,
+  "end": 730.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1351",
+  "text": "time",
+  "start": 730.34,
+  "end": 730.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1352",
+  "text": "you",
+  "start": 730.62,
+  "end": 731.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1353",
+  "text": "don't",
+  "start": 731.08,
+  "end": 733.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1354",
+  "text": "repeat",
+  "start": 733.5,
+  "end": 733.74,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1355",
+  "text": "any",
+  "start": 733.74,
+  "end": 734.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1356",
+  "text": "of",
+  "start": 734.62,
+  "end": 737.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1357",
+  "text": "this.",
+  "start": 737.08,
+  "end": 737.34,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1358",
+  "text": "Just",
+  "start": 737.68,
+  "end": 737.98,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1359",
+  "text": "open",
+  "start": 737.98,
+  "end": 738.3,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1360",
+  "text": "your",
+  "start": 738.3,
+  "end": 738.48,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1361",
+  "text": "folder",
+  "start": 738.48,
+  "end": 738.72,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1362",
+  "text": "in",
+  "start": 738.72,
+  "end": 739.06,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1363",
+  "text": "the",
+  "start": 739.06,
+  "end": 739.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1364",
+  "text": "terminal",
+  "start": 739.18,
+  "end": 739.44,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1365",
+  "text": "and",
+  "start": 739.44,
+  "end": 739.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1366",
+  "text": "run",
+  "start": 739.88,
+  "end": 740.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1367",
+  "text": "that",
+  "start": 740.14,
+  "end": 740.38,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1368",
+  "text": "one",
+  "start": 740.38,
+  "end": 740.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1369",
+  "text": "line.",
+  "start": 740.62,
+  "end": 740.9,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1370",
+  "text": "So",
+  "start": 741.44,
+  "end": 741.5,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1371",
+  "text": "method",
+  "start": 741.5,
+  "end": 741.76,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1372",
+  "text": "1",
+  "start": 741.76,
+  "end": 742.14,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1373",
+  "text": "is",
+  "start": 742.14,
+  "end": 742.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1374",
+  "text": "your",
+  "start": 742.42,
+  "end": 742.66,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1375",
+  "text": "private",
+  "start": 742.66,
+  "end": 743.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1376",
+  "text": "offline.",
+  "start": 743.08,
+  "end": 743.84,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1377",
+  "text": "So",
+  "start": 746.12,
+  "end": 746.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1378",
+  "text": "method",
+  "start": 746.58,
+  "end": 746.82,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1379",
+  "text": "1",
+  "start": 746.82,
+  "end": 747.2,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1380",
+  "text": "is",
+  "start": 747.2,
+  "end": 747.42,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1381",
+  "text": "your",
+  "start": 747.42,
+  "end": 747.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1382",
+  "text": "private",
+  "start": 747.62,
+  "end": 748.08,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1383",
+  "text": "offline",
+  "start": 748.08,
+  "end": 748.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1384",
+  "text": "option.",
+  "start": 748.88,
+  "end": 749.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1385",
+  "text": "For",
+  "start": 749.68,
+  "end": 749.88,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1386",
+  "text": "everyday",
+  "start": 749.88,
+  "end": 750.28,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1387",
+  "text": "speed",
+  "start": 750.28,
+  "end": 750.68,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1388",
+  "text": "we",
+  "start": 750.68,
+  "end": 751.16,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1389",
+  "text": "need",
+  "start": 751.16,
+  "end": 751.32,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1390",
+  "text": "something",
+  "start": 751.32,
+  "end": 751.7,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1391",
+  "text": "faster.",
+  "start": 751.7,
+  "end": 752.18,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1392",
+  "text": "So",
+  "start": 752.18,
+  "end": 752.62,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1393",
+  "text": "let's",
+  "start": 752.62,
+  "end": 753.04,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1394",
+  "text": "move",
+  "start": 753.04,
+  "end": 753.26,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1395",
+  "text": "to",
+  "start": 753.26,
+  "end": 753.46,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1396",
+  "text": "the",
+  "start": 753.46,
+  "end": 753.58,
+  "speaker": "speaker_0"
+ },
+ {
+  "id": "w1397",
+  "text": "cloud.",
+  "start": 753.58,
+  "end": 753.82,
+  "speaker": "speaker_0"
+ }
+]

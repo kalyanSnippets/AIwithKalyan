@@ -1,0 +1,727 @@
+1
+00:00:23,340 --> 00:00:25,420
+Claude Code is one of the most powerful
+
+2
+00:00:25,420 --> 00:00:28,820
+coding tools out there, but it costs $20 a
+
+3
+00:00:28,820 --> 00:00:29,080
+month.
+
+4
+00:00:29,620 --> 00:00:31,300
+And the moment you hit your limit in the
+
+5
+00:00:31,300 --> 00:00:33,300
+middle of a task, it just stops.
+
+6
+00:00:33,980 --> 00:00:36,020
+You either pay more or you wait.
+
+7
+00:00:36,620 --> 00:00:38,640
+But here is what most people don't know
+
+8
+00:00:38,640 --> 00:00:39,040
+about.
+
+9
+00:00:39,600 --> 00:00:41,080
+Claude Code itself is free.
+
+10
+00:00:41,680 --> 00:00:43,300
+What you are paying for is the brain
+
+11
+00:00:43,300 --> 00:00:44,100
+inside it.
+
+12
+00:00:45,480 --> 00:00:48,000
+And today, I am going to swap that brain
+
+13
+00:00:48,000 --> 00:00:48,980
+for free ones.
+
+14
+00:00:55,630 --> 00:00:57,390
+Let me explain with a simple example.
+
+15
+00:00:57,390 --> 00:00:58,830
+Let's take a phone.
+
+16
+00:00:59,510 --> 00:01:01,790
+The phone is just the hardware and the SIM
+
+17
+00:01:01,790 --> 00:01:03,250
+card decides who you pay.
+
+18
+00:01:04,170 --> 00:01:05,610
+Clot code is like the phone.
+
+19
+00:01:06,270 --> 00:01:08,630
+A free coding assistant from anthropic
+
+20
+00:01:08,630 --> 00:01:11,110
+that lives in your terminal and can read,
+
+21
+00:01:11,370 --> 00:01:12,810
+write and run code for you.
+
+22
+00:01:13,210 --> 00:01:15,890
+The AI model is like the SIM, the brain
+
+23
+00:01:15,890 --> 00:01:17,090
+that does the thinking.
+
+24
+00:01:17,870 --> 00:01:20,770
+Anthropics model costs $20 a month but
+
+25
+00:01:20,770 --> 00:01:23,050
+this phone accepts other SIMs as well.
+
+26
+00:01:28,300 --> 00:01:31,200
+So, by the end of this video, you will
+
+27
+00:01:31,200 --> 00:01:33,880
+have the real cloud running for $0.
+
+28
+00:01:35,180 --> 00:01:37,620
+So by the end of this video, you will have
+
+29
+00:01:37,620 --> 00:01:40,080
+the real cloud code running for $0
+
+30
+00:01:40,080 --> 00:01:41,380
+in
+
+31
+00:01:43,420 --> 00:01:44,680
+three different ways.
+
+32
+00:01:45,280 --> 00:01:48,440
+First, completely on your own laptop and I
+
+33
+00:01:48,440 --> 00:01:50,060
+will even switch the Wi -Fi off.
+
+34
+00:01:50,860 --> 00:01:53,560
+Then free AI models in the cloud.
+
+35
+00:01:54,200 --> 00:01:57,400
+Then, free AI models in the cloud, plus
+
+36
+00:01:57,400 --> 00:01:58,160
+the one trap
+
+37
+00:01:58,160 --> 00:02:07,860
+that
+
+38
+00:02:12,310 --> 00:02:14,230
+can quietly charge your paid plan.
+
+39
+00:02:14,370 --> 00:02:15,090
+And finally,
+
+40
+00:02:15,890 --> 00:02:19,210
+several free providers
+
+41
+00:02:19,210 --> 00:02:21,710
+connected together, where I will show you
+
+42
+00:02:21,710 --> 00:02:24,170
+the real cloud Sonat answering through a
+
+43
+00:02:24,170 --> 00:02:26,890
+free account with the logs to prove it.
+
+44
+00:02:27,210 --> 00:02:29,150
+And I have put everything into this video
+
+45
+00:02:29,150 --> 00:02:30,150
+and
+
+46
+00:02:44,520 --> 00:02:46,860
+finally several free providers connected
+
+47
+00:02:46,860 --> 00:02:49,740
+together where I will show you real Cloud
+
+48
+00:02:49,740 --> 00:02:51,720
+Sonat answering through a free account
+
+49
+00:02:51,720 --> 00:02:53,200
+with the logs to prove it.
+
+50
+00:02:53,520 --> 00:02:55,320
+And I have put everything into a free
+
+51
+00:02:55,320 --> 00:02:58,060
+setup kit, the model list, every prompt
+
+52
+00:02:58,060 --> 00:02:59,020
+and every setting.
+
+53
+00:02:59,520 --> 00:03:00,980
+It's the first link in the description
+
+54
+00:03:00,980 --> 00:03:01,380
+data.
+
+55
+00:03:01,820 --> 00:03:03,460
+It's the first link in the description
+
+56
+00:03:03,460 --> 00:03:03,980
+below.
+
+57
+00:03:03,980 --> 00:03:06,200
+It's the first link in the description
+
+58
+00:03:06,200 --> 00:03:06,720
+below.
+
+59
+00:03:09,820 --> 00:03:11,840
+So stay till the end because the last
+
+60
+00:03:11,840 --> 00:03:13,200
+method is the best one.
+
+61
+00:03:19,350 --> 00:03:20,670
+There is a quick note though.
+
+62
+00:03:21,510 --> 00:03:22,750
+Nobody paid for this video.
+
+63
+00:03:23,190 --> 00:03:25,070
+I have already worked through every setup
+
+64
+00:03:25,070 --> 00:03:27,450
+and every trap so you don't have to.
+
+65
+00:03:28,790 --> 00:03:32,250
+And I won't just tell you it's
+
+66
+00:03:32,250 --> 00:03:32,490
+free.
+
+67
+00:03:32,930 --> 00:03:34,670
+I'll show you the receipt every time.
+
+68
+00:03:35,170 --> 00:03:35,850
+So let's start.
+
+69
+00:03:40,480 --> 00:03:42,040
+Method 1 is Olama.
+
+70
+00:03:42,040 --> 00:03:44,600
+Olama is a free app that downloads AI
+
+71
+00:03:44,600 --> 00:03:44,980
+models
+
+72
+00:03:44,980 --> 00:03:50,380
+and
+
+73
+00:03:50,380 --> 00:03:53,120
+runs them right on your own laptop, like a
+
+74
+00:03:53,120 --> 00:03:54,820
+media player but for AI.
+
+75
+00:03:55,260 --> 00:03:56,740
+Go to olama .com,
+
+76
+00:03:57,380 --> 00:03:59,160
+download, install and done.
+
+77
+00:03:59,940 --> 00:04:02,000
+Then open settings and find context
+
+78
+00:04:02,000 --> 00:04:02,440
+length.
+
+79
+00:04:02,900 --> 00:04:05,480
+That's the AI's short -term memory, how
+
+80
+00:04:05,480 --> 00:04:08,880
+much of your project it
+
+81
+00:04:08,880 --> 00:04:09,920
+can hold it once.
+
+82
+00:04:09,920 --> 00:04:13,180
+Clot code reads a lot of files, so slide
+
+83
+00:04:13,180 --> 00:04:14,440
+it up to 64K.
+
+84
+00:04:21,400 --> 00:04:22,720
+Now which model should you download?
+
+85
+00:04:23,940 --> 00:04:25,280
+Now which model should you download?
+
+86
+00:04:25,700 --> 00:04:26,820
+It depends on your RAM.
+
+87
+00:04:27,400 --> 00:04:29,240
+Your computer's working memory which
+
+88
+00:04:29,240 --> 00:04:30,560
+decides how big a model
+
+89
+00:04:30,560 --> 00:04:33,900
+you can run.
+
+90
+00:04:34,520 --> 00:04:36,900
+Press Ctrl Shift Esc and open Performance.
+
+91
+00:04:37,720 --> 00:04:40,120
+Pause and check yours right now.
+
+92
+00:04:40,120 --> 00:04:43,580
+Mine is a normal laptop, no graphic
+
+93
+00:04:43,580 --> 00:04:46,820
+card, 16 GB of RAM, roughly with
+
+94
+00:04:46,820 --> 00:04:49,280
+8 to 16 GB, stick to small.
+
+95
+00:04:51,560 --> 00:04:52,160
+So,
+
+96
+00:04:54,110 --> 00:04:55,890
+I'll stick to small models,
+
+97
+00:04:56,690 --> 00:04:58,470
+around 4 to 12 billion parameters.
+
+98
+00:04:59,050 --> 00:05:02,230
+With 32 GB you can go medium, with 64 GB
+
+99
+00:05:02,230 --> 00:05:04,390
+or more you can run the big ones that
+
+100
+00:05:04,390 --> 00:05:05,910
+feels close to the paid things.
+
+101
+00:05:05,910 --> 00:05:06,890
+With
+
+102
+00:05:08,750 --> 00:05:11,370
+64 GB or more you can run the big ones
+
+103
+00:05:11,370 --> 00:05:13,650
+that feels close to the paid thing.
+
+104
+00:05:16,080 --> 00:05:18,560
+The exact list I would pick is it in the
+
+105
+00:05:18,560 --> 00:05:19,360
+description below.
+
+106
+00:05:24,330 --> 00:05:26,930
+The exact list I would pick is in the free
+
+107
+00:05:26,930 --> 00:05:27,530
+setup kit.
+
+108
+00:05:28,930 --> 00:05:31,870
+The exact list I would pick is
+
+109
+00:05:31,870 --> 00:05:34,710
+in the free setup kit.
+
+110
+00:05:35,110 --> 00:05:35,950
+Just find your RAM.
+
+111
+00:05:42,690 --> 00:05:45,330
+And one tip I asked charge GPT
+
+112
+00:05:45,330 --> 00:05:48,650
+and one tip is that I asked charge
+
+113
+00:05:48,650 --> 00:05:51,310
+GPT for the latest best coding model for
+
+114
+00:05:51,310 --> 00:05:54,090
+my laptop and it suggested MIMO version 2
+
+115
+00:05:54,090 --> 00:05:55,070
+.69b.
+
+116
+00:05:55,530 --> 00:05:57,950
+It wasn't in Olamis Litch so I let
+
+117
+00:05:57,950 --> 00:06:01,330
+anti -gravity install it.
+
+118
+00:06:01,710 --> 00:06:04,030
+Anti -gravity is a free AI coding app from
+
+119
+00:06:04,030 --> 00:06:05,910
+Google that can run commands on your
+
+120
+00:06:05,910 --> 00:06:06,750
+computer for you.
+
+121
+00:06:07,230 --> 00:06:09,330
+One sentence and it was installed and
+
+122
+00:06:09,330 --> 00:06:09,710
+tested.
+
+123
+00:06:09,710 --> 00:06:12,010
+That's my rule for this whole video.
+
+124
+00:06:12,430 --> 00:06:14,510
+Anything longer than one line and
+
+125
+00:06:17,680 --> 00:06:20,280
+that's my rule for this whole video.
+
+126
+00:06:20,740 --> 00:06:23,040
+Anything longer than one line and AI
+
+127
+00:06:23,040 --> 00:06:23,860
+installs it.
+
+128
+00:06:24,240 --> 00:06:26,240
+And if something breaks, copy the error,
+
+129
+00:06:26,460 --> 00:06:28,320
+paste it back and say fix this.
+
+130
+00:06:36,040 --> 00:06:36,720
+Now watch this.
+
+131
+00:06:37,280 --> 00:06:39,240
+I'm turning the Wi -Fi off.
+
+132
+00:06:39,620 --> 00:06:40,620
+No internet at all.
+
+133
+00:06:40,980 --> 00:06:42,820
+Do you think it can still write an app?
+
+134
+00:06:43,900 --> 00:06:46,560
+I asked for a simple notes app and it's
+
+135
+00:06:46,560 --> 00:06:46,880
+thinking.
+
+136
+00:06:46,880 --> 00:06:49,580
+and it writes the whole thing completely
+
+137
+00:06:49,580 --> 00:06:50,100
+offline.
+
+138
+00:06:50,780 --> 00:06:53,460
+I turn the Wi -Fi back on just to test it.
+
+139
+00:06:54,760 --> 00:06:57,840
+I turn the Wi -Fi back on just to test it
+
+140
+00:06:57,840 --> 00:06:59,420
+on an online compiler.
+
+141
+00:07:00,500 --> 00:07:03,380
+I turn the Wi -Fi back on just to test it
+
+142
+00:07:03,380 --> 00:07:04,080
+in an online.
+
+143
+00:07:06,900 --> 00:07:09,760
+I turn the Wi -Fi back on just to test it
+
+144
+00:07:09,760 --> 00:07:12,120
+in an online compiler and it runs.
+
+145
+00:07:12,880 --> 00:07:14,460
+Your code never left your laptop.
+
+146
+00:07:18,680 --> 00:07:20,300
+Now let's put cloud code on top.
+
+147
+00:07:20,820 --> 00:07:22,300
+In Olama, Go to apps,
+
+148
+00:07:24,680 --> 00:07:27,500
+click cloud code, click
+
+149
+00:07:27,500 --> 00:07:30,680
+cloud code, and it copies one
+
+150
+00:07:30,680 --> 00:07:32,820
+command, Olama launch cloud.
+
+151
+00:07:33,480 --> 00:07:34,380
+Open a terminal,
+
+152
+00:07:34,980 --> 00:07:38,280
+paste it, open a terminal,
+
+153
+00:07:38,820 --> 00:07:41,160
+paste it, pick your model, and look at
+
+154
+00:07:41,160 --> 00:07:43,900
+that, the real cloud code running on my
+
+155
+00:07:43,900 --> 00:07:44,660
+own laptop.
+
+156
+00:07:45,160 --> 00:07:48,040
+No subscription, no API key.
+
+157
+00:07:52,930 --> 00:07:54,490
+Now let's give it a real job.
+
+158
+00:07:54,490 --> 00:07:57,630
+I asked it to build a calculator app on my
+
+159
+00:07:57,630 --> 00:07:58,010
+laptop.
+
+160
+00:07:58,290 --> 00:07:58,910
+It took about,
+
+161
+00:08:03,970 --> 00:08:06,710
+I asked it to build a calculator app on my
+
+162
+00:08:06,710 --> 00:08:09,370
+laptop and because a small,
+
+163
+00:08:09,590 --> 00:08:12,990
+because a small local model is doing
+
+164
+00:08:12,990 --> 00:08:15,350
+all the heavy lifting and that's the
+
+165
+00:08:15,350 --> 00:08:16,230
+honest trade -off.
+
+166
+00:08:17,010 --> 00:08:18,950
+Free means your laptop does the work.
+
+167
+00:08:19,430 --> 00:08:21,830
+So on a normal machine you pay with your
+
+168
+00:08:21,830 --> 00:08:22,850
+time and
+
+169
+00:08:32,320 --> 00:08:34,820
+it is finished and you can see it works.
+
+170
+00:08:34,820 --> 00:08:35,900
+So,
+
+171
+00:08:41,360 --> 00:08:44,500
+method 1 is your private
+
+172
+00:08:44,500 --> 00:08:45,540
+offline option.
+
+173
+00:08:46,100 --> 00:08:48,200
+For everyday speed, let's move to the
+
+174
+00:08:48,200 --> 00:08:48,400
+cloud.
+
+175
+00:08:50,020 --> 00:08:52,240
+So method 1 is your private offline
+
+176
+00:08:52,240 --> 00:08:52,660
+option.
+
+177
+00:08:53,200 --> 00:08:55,260
+For everyday speed, let's move to the
+
+178
+00:08:55,260 --> 00:08:55,520
+cloud.
+
+179
+00:09:02,210 --> 00:09:05,090
+And if this already saved you
+
+180
+00:09:05,090 --> 00:09:08,450
+$20 a month,
+
+181
+00:09:08,890 --> 00:09:10,990
+it's subscribed because it gets better
+
+182
+00:09:10,990 --> 00:09:11,570
+from here.
