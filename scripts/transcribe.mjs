@@ -34,19 +34,42 @@ ffmpeg(["-i", input, "-vn", "-ac", "1", "-ar", "16000", "-c:a", "flac", audio]);
 console.log("transcribing with ElevenLabs Scribe…");
 let res;
 try {
-  res = await client.speechToText.convert(
-    {
-      file: new Blob([readFileSync(audio)], { type: "audio/flac" }),
-      modelId: opts.model ?? "scribe_v2",
-      languageCode: opts.language,
-      diarize: !opts["no-diarize"],
-      numSpeakers: opts.speakers ? Number(opts.speakers) : undefined,
-      tagAudioEvents: true,
-      timestampsGranularity: "word",
-      keyterms: opts.keyterms ? String(opts.keyterms).split(",").map((s) => s.trim()) : undefined,
-    },
-    { timeoutInSeconds: 1800 },
-  );
+  const keyterms = opts.keyterms ? String(opts.keyterms).split(",").map((s) => s.trim()) : undefined;
+  if (process.env.ELEVENLABS_API_KEY?.trim() === "proxy-injected") {
+    // Cloud sessions: the network proxy adds the real key as an Authorization header, and
+    // ElevenLabs rejects requests that also carry the SDK's xi-api-key, so call the API directly.
+    const form = new FormData();
+    form.append("file", new Blob([readFileSync(audio)], { type: "audio/flac" }), "audio.flac");
+    form.append("model_id", opts.model ?? "scribe_v2");
+    if (opts.language) form.append("language_code", opts.language);
+    form.append("diarize", String(!opts["no-diarize"]));
+    if (opts.speakers) form.append("num_speakers", String(Number(opts.speakers)));
+    form.append("tag_audio_events", "true");
+    form.append("timestamps_granularity", "word");
+    for (const k of keyterms ?? []) form.append("keyterms", k);
+    const r = await fetch("https://api.elevenlabs.io/v1/speech-to-text", { method: "POST", body: form });
+    if (!r.ok) die(`ElevenLabs ${r.status}: ${await r.text()}`);
+    const raw = await r.json();
+    res = {
+      ...raw,
+      languageCode: raw.language_code,
+      words: (raw.words ?? []).map((w) => ({ ...w, speakerId: w.speaker_id })),
+    };
+  } else {
+    res = await client.speechToText.convert(
+      {
+        file: new Blob([readFileSync(audio)], { type: "audio/flac" }),
+        modelId: opts.model ?? "scribe_v2",
+        languageCode: opts.language,
+        diarize: !opts["no-diarize"],
+        numSpeakers: opts.speakers ? Number(opts.speakers) : undefined,
+        tagAudioEvents: true,
+        timestampsGranularity: "word",
+        keyterms,
+      },
+      { timeoutInSeconds: 1800 },
+    );
+  }
 } finally {
   rmSync(audio, { force: true });
 }
