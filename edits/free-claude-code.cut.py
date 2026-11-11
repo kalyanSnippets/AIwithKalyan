@@ -214,17 +214,18 @@ ENCA = ['-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2']
 def run(cmd): subprocess.run(['ffmpeg', '-v', 'error', '-y', *cmd], check=True)
 
 def facecam(sid, take, cuts):
+    """Each cut encoded on its own (fast input seek, frame-exact), then joined: low memory."""
     out = f'{OUT}/{sid}_fc.mov'
-    parts, fl = [], []
+    parts = []
     for k, c in enumerate(cuts):
         d = c['end'] - c['start']
-        fl.append(f"[0:v]trim={c['start']}:{c['end']},setpts=PTS-STARTPTS[v{k}];"
-                  f"[0:a]atrim={c['start']}:{c['end']},asetpts=PTS-STARTPTS,afade=t=in:d=0.005,"
-                  f"afade=t=out:st={max(0, d - 0.008):.3f}:d=0.008[a{k}];")
-        parts.append(f'[v{k}][a{k}]')
-    graph = ''.join(fl) + ''.join(parts) + f'concat=n={len(cuts)}:v=1:a=1[v][a]'
-    gf = f'{OUT}/{sid}_fc.graph'; open(gf, 'w').write(graph)
-    run(['-i', f'{RAW}/IMG_{take}.MOV', '-filter_complex_script', gf, '-map', '[v]', '-map', '[a]', *ENCV, *ENCA, out])
+        p = f'{OUT}/{sid}_c{k:03d}.mov'
+        run(['-ss', f"{c['start']:.3f}", '-i', f'{RAW}/IMG_{take}.MOV', '-t', f'{d:.3f}', '-map', '0:v:0', '-map', '0:a:0',
+             '-af', f"afade=t=in:d=0.005,afade=t=out:st={max(0, d - 0.008):.3f}:d=0.008", *ENCV, *ENCA, p])
+        parts.append(p)
+    lst = txt(f'{sid}_fclist', ''.join(f"file '{p}'\n" for p in parts))
+    run(['-f', 'concat', '-safe', '0', '-i', lst, '-c', 'copy', out])
+    for p in parts: os.remove(p)
     return out
 
 def probe_dur(p):
