@@ -867,17 +867,9 @@
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
   "mode": "VO",
   "take": "1477",
-  "src_in": 444.4,
-  "src_out": 445.337,
-  "rec_in": 319.204
- },
- {
-  "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
-  "mode": "VO",
-  "take": "1477",
-  "src_in": 445.373,
+  "src_in": 445.5,
   "src_out": 447.98,
-  "rec_in": 320.17
+  "rec_in": 319.204
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -885,7 +877,7 @@
   "take": "1477",
   "src_in": 451.38,
   "src_out": 459.12,
-  "rec_in": 322.804
+  "rec_in": 321.704
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -893,7 +885,7 @@
   "take": "1477",
   "src_in": 468.3,
   "src_out": 474.635,
-  "rec_in": 330.57
+  "rec_in": 329.47
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -901,7 +893,7 @@
   "take": "1477",
   "src_in": 479.66,
   "src_out": 481.972,
-  "rec_in": 336.937
+  "rec_in": 335.837
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -909,7 +901,7 @@
   "take": "1477",
   "src_in": 482.128,
   "src_out": 484.5,
-  "rec_in": 339.27
+  "rec_in": 338.17
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -917,7 +909,7 @@
   "take": "1477",
   "src_in": 487.2,
   "src_out": 490.86,
-  "rec_in": 341.67
+  "rec_in": 340.57
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -925,7 +917,7 @@
   "take": "1477",
   "src_in": 498.88,
   "src_out": 501.291,
-  "rec_in": 345.337
+  "rec_in": 344.237
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -933,7 +925,7 @@
   "take": "1477",
   "src_in": 501.627,
   "src_out": 505.492,
-  "rec_in": 347.77
+  "rec_in": 346.67
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -941,7 +933,7 @@
   "take": "1477",
   "src_in": 510.3,
   "src_out": 512.699,
-  "rec_in": 351.637
+  "rec_in": 350.537
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -949,7 +941,7 @@
   "take": "1477",
   "src_in": 512.722,
   "src_out": 516.173,
-  "rec_in": 354.037
+  "rec_in": 352.937
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -957,7 +949,7 @@
   "take": "1477",
   "src_in": 516.222,
   "src_out": 520.92,
-  "rec_in": 357.504
+  "rec_in": 356.404
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -965,7 +957,7 @@
   "take": "1477",
   "src_in": 525.54,
   "src_out": 528.636,
-  "rec_in": 362.204
+  "rec_in": 361.104
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -973,7 +965,7 @@
   "take": "1477",
   "src_in": 528.73,
   "src_out": 530.223,
-  "rec_in": 365.304
+  "rec_in": 364.204
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -981,7 +973,7 @@
   "take": "1477",
   "src_in": 530.387,
   "src_out": 538.889,
-  "rec_in": 366.804
+  "rec_in": 365.704
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -989,7 +981,7 @@
   "take": "1477",
   "src_in": 539.1,
   "src_out": 543.198,
-  "rec_in": 375.337
+  "rec_in": 374.237
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -997,7 +989,7 @@
   "take": "1477",
   "src_in": 543.367,
   "src_out": 551.92,
-  "rec_in": 379.437
+  "rec_in": 378.337
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1005,7 +997,7 @@
   "take": "1477",
   "src_in": 551.94,
   "src_out": 554.62,
-  "rec_in": 388.004
+  "rec_in": 386.904
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1013,7 +1005,7 @@
   "take": "1477",
   "src_in": 559.54,
   "src_out": 562.398,
-  "rec_in": 390.704
+  "rec_in": 389.604
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1021,7 +1013,7 @@
   "take": "1477",
   "src_in": 569.16,
   "src_out": 572.132,
-  "rec_in": 393.57
+  "rec_in": 392.47
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1029,7 +1021,7 @@
   "take": "1477",
   "src_in": 572.164,
   "src_out": 574.44,
-  "rec_in": 396.57
+  "rec_in": 395.47
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1037,7 +1029,7 @@
   "take": "1477",
   "src_in": 574.76,
   "src_out": 576.649,
-  "rec_in": 398.87
+  "rec_in": 397.77
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1045,7 +1037,7 @@
   "take": "1477",
   "src_in": 577.012,
   "src_out": 580.537,
-  "rec_in": 400.77
+  "rec_in": 399.67
  },
  {
   "section": "4e Which model for your RAM / 4f Problem -> an AI fixes it",
@@ -1053,7 +1045,7 @@
   "take": "1477",
   "src_in": 580.627,
   "src_out": 585.242,
-  "rec_in": 404.304
+  "rec_in": 403.204
  },
  {
   "section": "4g The rule of this video",
@@ -1061,7 +1053,7 @@
   "take": "1477",
   "src_in": 594.34,
   "src_out": 597.02,
-  "rec_in": 408.945
+  "rec_in": 407.845
  },
  {
   "section": "4g The rule of this video",
@@ -1069,7 +1061,7 @@
   "take": "1477",
   "src_in": 599.44,
   "src_out": 610.76,
-  "rec_in": 411.645
+  "rec_in": 410.545
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1077,7 +1069,7 @@
   "take": "1477",
   "src_in": 625.86,
   "src_out": 627.629,
-  "rec_in": 422.979
+  "rec_in": 421.879
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1085,7 +1077,7 @@
   "take": "1477",
   "src_in": 627.719,
   "src_out": 629.413,
-  "rec_in": 424.779
+  "rec_in": 423.679
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1093,7 +1085,7 @@
   "take": "1477",
   "src_in": 629.423,
   "src_out": 632.5,
-  "rec_in": 426.479
+  "rec_in": 425.379
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1101,7 +1093,7 @@
   "take": "1477",
   "src_in": 638.7,
   "src_out": 640.08,
-  "rec_in": 429.579
+  "rec_in": 428.479
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1109,7 +1101,7 @@
   "take": "1477",
   "src_in": 640.158,
   "src_out": 643.98,
-  "rec_in": 430.979
+  "rec_in": 429.879
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1117,7 +1109,7 @@
   "take": "1477",
   "src_in": 647.5,
   "src_out": 652.66,
-  "rec_in": 434.812
+  "rec_in": 433.712
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1125,7 +1117,7 @@
   "take": "1477",
   "src_in": 656.24,
   "src_out": 659.655,
-  "rec_in": 439.979
+  "rec_in": 438.879
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1133,7 +1125,7 @@
   "take": "1477",
   "src_in": 659.771,
   "src_out": 661.76,
-  "rec_in": 443.412
+  "rec_in": 442.312
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1141,7 +1133,7 @@
   "take": "1477",
   "src_in": 661.839,
   "src_out": 666.66,
-  "rec_in": 445.412
+  "rec_in": 444.312
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1149,7 +1141,7 @@
   "take": "1477",
   "src_in": 668.92,
   "src_out": 670.697,
-  "rec_in": 450.245
+  "rec_in": 449.145
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1157,7 +1149,7 @@
   "take": "1477",
   "src_in": 670.791,
   "src_out": 673.63,
-  "rec_in": 452.045
+  "rec_in": 450.945
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1165,7 +1157,7 @@
   "take": "1477",
   "src_in": 673.794,
   "src_out": 675.84,
-  "rec_in": 454.912
+  "rec_in": 453.812
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1173,7 +1165,7 @@
   "take": "1477",
   "src_in": 676.002,
   "src_out": 677.74,
-  "rec_in": 456.979
+  "rec_in": 455.879
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1181,7 +1173,7 @@
   "take": "1477",
   "src_in": 680.74,
   "src_out": 684.595,
-  "rec_in": 458.745
+  "rec_in": 457.645
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1189,7 +1181,7 @@
   "take": "1477",
   "src_in": 684.689,
   "src_out": 686.892,
-  "rec_in": 462.612
+  "rec_in": 461.512
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1197,7 +1189,7 @@
   "take": "1477",
   "src_in": 686.958,
   "src_out": 689.1,
-  "rec_in": 464.845
+  "rec_in": 463.745
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1205,7 +1197,7 @@
   "take": "1477",
   "src_in": 692.08,
   "src_out": 696.76,
-  "rec_in": 467.012
+  "rec_in": 465.912
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1213,7 +1205,7 @@
   "take": "1477",
   "src_in": 701.28,
   "src_out": 707.56,
-  "rec_in": 471.712
+  "rec_in": 470.612
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1221,7 +1213,7 @@
   "take": "1477",
   "src_in": 716.42,
   "src_out": 717.89,
-  "rec_in": 478.012
+  "rec_in": 476.912
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1229,7 +1221,7 @@
   "take": "1477",
   "src_in": 717.983,
   "src_out": 719.015,
-  "rec_in": 479.512
+  "rec_in": 478.412
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1237,7 +1229,7 @@
   "take": "1477",
   "src_in": 719.074,
   "src_out": 720.687,
-  "rec_in": 480.545
+  "rec_in": 479.445
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1245,7 +1237,7 @@
   "take": "1477",
   "src_in": 720.961,
   "src_out": 723.691,
-  "rec_in": 482.179
+  "rec_in": 481.079
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1253,7 +1245,7 @@
   "take": "1477",
   "src_in": 723.761,
   "src_out": 725.86,
-  "rec_in": 484.912
+  "rec_in": 483.812
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1261,7 +1253,7 @@
   "take": "1477",
   "src_in": 735.22,
   "src_out": 737.56,
-  "rec_in": 487.012
+  "rec_in": 485.912
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1269,7 +1261,7 @@
   "take": "1477",
   "src_in": 737.63,
   "src_out": 741.12,
-  "rec_in": 489.379
+  "rec_in": 488.279
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1277,7 +1269,7 @@
   "take": "1477",
   "src_in": 746.42,
   "src_out": 749.537,
-  "rec_in": 492.879
+  "rec_in": 491.779
  },
  {
   "section": "4h Claude Code on Ollama",
@@ -1285,6 +1277,6 @@
   "take": "1477",
   "src_in": 749.616,
   "src_out": 754.0,
-  "rec_in": 496.012
+  "rec_in": 494.912
  }
 ]
