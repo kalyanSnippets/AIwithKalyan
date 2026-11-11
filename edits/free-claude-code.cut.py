@@ -298,9 +298,9 @@ master = f'{ROOT}/renders/free-claude-code-cut-v1-1080p.mp4'
 run(['-i', joined, '-af', 'loudnorm=I=-14:TP=-1:LRA=11', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-ar', '48000',
      '-movflags', '+faststart', master])
 total = probe_dur(master)
-vbr = int((29 * 8 * 1024 * 1024) / total - 64000)  # fit in ~29 MB with 64 kb/s audio
+vbr = int((25 * 8 * 1e6) / total - 48000)  # leave headroom: x264 overshoots the target
 review = f'{ROOT}/renders/free-claude-code-cut-v1-review.mp4'
 run(['-i', master, '-vf', 'scale=960:540', '-c:v', 'libx264', '-preset', 'medium', '-b:v', str(vbr), '-maxrate', str(int(vbr * 1.5)),
-     '-bufsize', str(vbr * 2), '-c:a', 'aac', '-b:a', '64k', '-ac', '1', '-movflags', '+faststart', review])
+     '-bufsize', str(vbr * 2), '-c:a', 'aac', '-b:a', '48k', '-ac', '1', '-movflags', '+faststart', review])
 print('MASTER', master, f'{total / 60:.1f} min')
 print('REVIEW', review, f'{os.path.getsize(review) / 1e6:.1f} MB')
