@@ -139,8 +139,11 @@ class Stage:
         a = ease_out(t_in / 0.35); dx = (1 - a) * 80
         blend(frame, self.fshadow, self.fx - self.fpad + dx, self.fy - self.fpad, a)
         x, y = int(self.fx + dx), self.fy
-        d = frame[y:y + self.fh, x:x + self.fw].astype(np.float32)
-        frame[y:y + self.fh, x:x + self.fw] = (img * self.fmask * a + d * (1 - self.fmask * a)).astype(np.uint8)
+        vw = min(self.fw, W - x)
+        if vw <= 0: return
+        m = self.fmask[:, :vw]
+        d = frame[y:y + self.fh, x:x + vw].astype(np.float32)
+        frame[y:y + self.fh, x:x + vw] = (img[:, :vw] * m * a + d * (1 - m * a)).astype(np.uint8)
         blend(frame, self.fborder, x, y, a)
 
     def window(self, cw, ch, title):
