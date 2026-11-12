@@ -50,7 +50,11 @@ WIDE = (0.5, 0.5, 1.0)
 C = 1222
 
 # ---- privacy: blur every OCR hit of a key, email, OAuth callback code or the work user name (padded, ±2.2 s around each sample)
-PRIV = re.compile(r'AIza|AQ\.A|sk-or|sk-|nvapi|@gmail|madurikalyan|kmaduri|kalyan ?kumar|code=|state=|127\.0\.0\.1:\d+/callback|Users.?\\?k', re.I)
+# personal names/usernames live in a git-ignored file (one regex per line), never in the repo
+_PT = os.path.join(_d, '..', 'media', 'privacy_terms.txt')
+_EXTRA = [l.strip() for l in open(_PT) if l.strip()] if os.path.exists(_PT) else []
+PRIV = re.compile('|'.join([r'AIza', r'AQ\.A', r'sk-or', r'sk-', r'nvapi', r'@gmail', r'code=', r'state=',
+                            r'127\.0\.0\.1:\d+/callback', r'Users.?\\?k'] + _EXTRA), re.I)
 def autoblur(key, a, b):
     out = []
     for fn in glob.glob(f'/tmp/fcc-style/ocr_{key}_*.json'):
