@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="antigravity" data-start="0" data-width="1920" data-height="1080" data-duration="6.54">
-<section id="antigravity-scene" class="clip" data-start="0" data-duration="6.54" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="antigravity" data-start="0" data-width="1920" data-height="1080" data-duration="7.28">
+<section id="antigravity-scene" class="clip" data-start="0" data-duration="7.28" style="position:absolute;inset:0"><div class="bg"></div>
 
 <div class="hdr"><i></i>Let an AI do it</div>
 <div id="bot" class="card center" style="left:820px;top:200px;width:300px;height:300px"><img src="../icons/bot.png" class="tint-red" style="width:200px;height:200px"></div>
@@ -13,11 +13,12 @@
 
 </section></div>
 <script>
-const B = {"name": 2.7, "google": 4.74};
+const B = {"name": 3.01, "google": 5.31};
 const tl = gsap.timeline({ paused: true });
 
 FX.pop(tl,"#bot",0.05); FX.pulse(tl,"#bot",0.6,1); FX.slide(tl,"#nm",B.name-0.1,{x:-150}); FX.pop(tl,"#g",B.google);
 FX.rise(tl,"#s1",B.google+0.4,{y:30}); FX.rise(tl,"#s2",B.google+0.7,{y:30}); FX.rise(tl,"#s3",B.google+1.0,{y:30});
 
+FX.ambient(tl, 7.28);
 window.__timelines["antigravity"] = tl;
 </script></body></html>

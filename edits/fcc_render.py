@@ -116,20 +116,47 @@ def zoom_at(kfs, st, dur=0.55):
 
 # ------------------------------------------------------------------ frame sources
 class Pipe:
-    def __init__(self, path, ss=0.0, dur=None, speed=1.0, size=None):
+    def __init__(self, path, ss=0.0, dur=None, speed=1.0, size=None, fmt='rgb24'):
         self.w, self.h = size or [int(x) for x in subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v', '-show_entries',
                                   'stream=width,height', '-of', 'csv=p=0', path], capture_output=True, text=True).stdout.strip().split(',')[:2]]
         vf = f'setpts=(PTS-STARTPTS)/{speed:.6f},fps={FPS}'
         cmd = ['ffmpeg', '-v', 'error', '-ss', f'{ss:.3f}'] + (['-t', f'{dur:.3f}'] if dur else []) + ['-i', path, '-an', '-vf', vf,
-               '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-']
+               '-f', 'rawvideo', '-pix_fmt', fmt, '-']
+        self.ch = 4 if fmt == 'rgba' else 3
         self.p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, bufsize=10 ** 8); self.last = None
     def read(self):
-        b = self.p.stdout.read(self.w * self.h * 3)
-        if len(b) == self.w * self.h * 3: self.last = np.frombuffer(b, np.uint8).reshape(self.h, self.w, 3)
+        n = self.w * self.h * self.ch
+        b = self.p.stdout.read(n)
+        if len(b) == n: self.last = np.frombuffer(b, np.uint8).reshape(self.h, self.w, self.ch)
         return self.last
     def close(self):
         try: self.p.kill()
         except Exception: pass
+
+def src_time(sh, lt):
+    key, a, b = sh['clip']
+    if not sh.get('pts'): return a + lt * sh['speed']
+    pts = sh['pts']
+    for (l0, s0), (l1, s1) in zip(pts, pts[1:]):
+        if lt < l1:
+            if s1 - s0 <= l1 - l0: return min(s0 + (lt - l0), s1)          # real time, then hold until the next line
+            return s0 + (s1 - s0) * (lt - l0) / max(1e-6, l1 - l0)          # catch up (sped up)
+    l0, s0 = pts[-1]
+    return min(b, s0 + (lt - l0))
+
+class SrcReader:
+    """Forward-only reader that returns the frame at any (non-decreasing) source second."""
+    def __init__(self, path, a, b):
+        self.p = Pipe(path, ss=a, dur=b - a, speed=1.0); self.t = a - 1.0 / FPS; self.f = None
+    def read_at(self, st):
+        while self.t + 1.0 / FPS <= st + 1e-6:
+            f = self.p.read()
+            if f is None: break
+            self.f = f; self.t += 1.0 / FPS
+            if self.p.last is None: break
+        if self.f is None: self.f = self.p.read(); self.t += 1.0 / FPS
+        return self.f
+    def close(self): self.p.close()
 
 # ------------------------------------------------------------------ sound (synthesised locally, $0)
 SR = 48000
@@ -235,13 +262,14 @@ def build(spec_path, name):
         if sh['kind'] == 'demo':
             key, a, b = sh['clip']; d = sh['t1'] - sh['t0']
             sh['speed'] = max(1.0, (b - a) / max(d, 0.1))
-            kfs = sh.get('zooms') or zoom_plan(analyse(key, a, b), a, b, hold=1.6 * sh['speed'], maxz=sh.get('maxz', 1.5))
-            if sh.get('no_zoom'): kfs = [(a, .5, .5, 1.0)]
-            sh['kfs'] = kfs
-            for t, cx, cy, z in kfs[1:]:
-                lt = (t - a) / sh['speed']
-                if lt < d: ev(sh['t0'] + lt, 'swish')
-        if sh['kind'] in ('demo', 'graphic', 'mg'): ev(sh['t0'], 'whoosh')
+            sh['kfs'] = sh.get('zooms') or [(a, .5, .5, 1.0)]   # no automatic zooming: zooms only where a line asks for one
+            if sh.get('sync'):
+                # word-synced playback: each (anchor, source second) pins the recording to the line being spoken
+                pts = [(0.0, a)]; okfs = [(0.0, .5, .5, 1.0)]
+                for sp in sh['sync']:
+                    lt_ = max(0.0, min(d, at(sp['at'], sh['t0']) - sh['t0'])); pts.append((lt_, sp['src']))
+                    if 'z' in sp: okfs.append((lt_, *sp['z'])); ev(sh['t0'] + lt_, 'click')
+                sh['pts'] = sorted(pts); sh['okfs'] = sorted(okfs)
         for el in sh.get('els', []) + sh.get('pills', []): ev(el['_t'], 'pop')
     for sh in shots:
         # a pill hides when the next pill of the same shot appears (no stacking)
@@ -253,7 +281,6 @@ def build(spec_path, name):
             first = min(sh['els'], key=lambda e: e['_t'])
             if first['_t'] > sh['t0'] + 0.3: first['_t'] = sh['t0'] + 0.15
     badges = [(TL.anchor(a), n, t) for a, n, t in getattr(S, 'BADGES', [])]
-    for b in badges: ev(b[0], 'whoosh')
 
     # talking-head punch-ins: change framing on cut boundaries, at most every ~3 s
     cuts_out = [o for _, _, _, o in tmap]
@@ -279,7 +306,7 @@ def build(spec_path, name):
         if not (os.path.exists(outp) and os.path.getmtime(outp) > os.path.getmtime(face) and open(pj + '.done').read() == json.dumps(plan) if os.path.exists(pj + '.done') else False):
             subprocess.run(['python3', f'{FXREPO}/scripts/fx.py', '--plan', pj, src, outp], capture_output=True)
             open(pj + '.done', 'w').write(json.dumps(plan))
-        if os.path.exists(outp): fx_clips.append((t0, t0 + d, s0, outp)); ev(t0, 'hit')
+        if os.path.exists(outp): fx_clips.append((t0, t0 + d, s0, outp))
         else: print('fx failed', f, flush=True)
 
     # hook captions
@@ -299,7 +326,7 @@ def build(spec_path, name):
     # sound: keep sfx >= 0.9 s apart
     sfx.sort(); kept = []
     for t, k in sfx:
-        if not kept or t - kept[-1][0] >= 0.9: kept.append((t, k))
+        if not kept or t - kept[-1][0] >= 1.0: kept.append((t, k))
     sfx = kept
 
     # ---------------------------------------------------------- render video
@@ -314,7 +341,8 @@ def build(spec_path, name):
     def cached(key, fn):
         if key not in spr_cache: spr_cache[key] = fn()
         return spr_cache[key]
-    si = 0; prev_kind = 'talk'; kind_since = 0.0
+    si = 0; prev_kind = 'talk'; kind_since = 0.0; intro_p = None; tracker = None
+    KEEP = np.zeros((H, W, 1), np.float32)[..., 0]; KEEP[:, :330] = 1.0; KEEP[680:, 1390:] = 1.0   # plants stay in front
     for fi in range(N):
         t = fi / FPS
         if STILLS:
@@ -335,7 +363,23 @@ def build(spec_path, name):
                 fxf = fxp.read(); break
         face_img = fxf if fxf is not None else fr
 
-        if sh['kind'] == 'talk':
+        if sh['kind'] == 'intro':
+            if intro_p is None:
+                intro_p = Pipe(f"{ROOT}/compositions/fcc-part1-mg/out/intro.mov", ss=t if STILLS else 0.0, fmt='rgba')
+                sys.path.insert(0, f'{FXREPO}/scripts'); from fx import Tracker; tracker = Tracker(640, 360)
+            ov = intro_p.read()
+            if STILLS: intro_p.close(); intro_p = None
+            frame = face_img.copy()
+            if fxf is None and ov is not None:
+                small = cv2.resize(fr, (640, 360), interpolation=cv2.INTER_AREA)
+                m, _ = tracker(small, int(t * 1000)); m = cv2.resize(m, (W, H)).astype(np.float32) / 255.0
+                person = np.maximum(m, KEEP)[..., None]
+                dk = sh.get('dark', 0.42)
+                dark = frame.astype(np.float32) * dk + np.array([12, 2, 2], np.float32)
+                a4 = ov[..., 3:4].astype(np.float32) / 255.0
+                wall = ov[..., :3].astype(np.float32) * a4 + dark * (1 - a4)
+                frame = (frame * person + wall * (1 - person)).astype(np.uint8)
+        elif sh['kind'] == 'talk':
             z = 1.0 if fxf is not None else punch_at(t)
             if z > 1.001:
                 cw, ch = W / z, H / z; cx, cy = 960, 470
@@ -352,14 +396,15 @@ def build(spec_path, name):
                 if scr_shot is not sh:
                     if scr: scr.close()
                     key, a, b = sh['clip']
-                    if STILLS: scr = Pipe(FILES[key], ss=min(b - 0.1, a + lt * sh['speed']), dur=0.5)
+                    if STILLS: scr = Pipe(FILES[key], ss=min(b - 0.1, src_time(sh, lt)), dur=0.5)
+                    elif sh.get('pts'): scr = SrcReader(FILES[key], a, b)
                     else: scr = Pipe(FILES[key], ss=a, dur=b - a, speed=sh['speed'])
                     scr_shot = sh
                     pre = None
                     if sh.get('blur'): pre = sh['blur']
-                src = scr.read()
+                src = scr.read() if (STILLS or not sh.get('pts')) else scr.read_at(src_time(sh, lt))
                 if src is not None:
-                    key, a, b = sh['clip']; srct = a + lt * sh['speed']
+                    key, a, b = sh['clip']; srct = src_time(sh, lt)
                     if sh.get('blur'):
                         bx = sh['blur']
                         if bx['t0'] <= srct - a <= bx['t1']:
@@ -374,7 +419,7 @@ def build(spec_path, name):
                     a_in = E.ease_out(lt / 0.35) if prev_kind == 'talk' or lt < 0.35 else 1.0
                     dy = (1 - a_in) * 50
                     E.blend(frame, spr, wx - pad, wy - pad + dy, a_in)
-                    zx, zy, zz = zoom_at(sh['kfs'], srct)
+                    zx, zy, zz = zoom_at(sh['okfs'], lt, 0.6) if sh.get('okfs') else zoom_at(sh['kfs'], srct)
                     vw, vh = sh_w / zz, sh_h / zz
                     x0 = min(max(zx * sh_w - vw / 2, 0), sh_w - vw); y0 = min(max(zy * sh_h - vh / 2, 0), sh_h - vh)
                     view = cv2.resize(src[int(y0):int(y0 + vh), int(x0):int(x0 + vw)], (cw, ch), interpolation=cv2.INTER_AREA if zz < 1.3 else cv2.INTER_CUBIC)
@@ -441,7 +486,7 @@ def build(spec_path, name):
                 a2 = E.ease_out(q / 0.35) * E.clamp((bt + 3.4 - t) / 0.3)
                 E.blend(frame, spr, 50 - pad - (1 - E.ease_out(q / 0.35)) * 120, H - 150 - pad, a2)
         # hook captions
-        for c0, c1, wl in (caps if sh['kind'] == 'talk' else []):
+        for c0, c1, wl in (caps if sh['kind'] in ('talk', 'intro') else []):
             if c0 <= t < c1:
                 key = ('cap', tuple(wl))
                 def mkcap(wl=wl):
@@ -463,7 +508,7 @@ def build(spec_path, name):
     # ---------------------------------------------------------- audio: voice + sfx + bed (ducked)
     lib = synth_sfx(); n = int(total * SR) + SR
     fxa = np.zeros(n, np.float32)
-    gains = {'click': 0.35, 'pop': 0.3, 'whoosh': 0.32, 'swish': 0.18, 'hit': 0.4}
+    gains = {'click': 0.28, 'pop': 0.2, 'whoosh': 0.0, 'swish': 0.0, 'hit': 0.0}
     for tt, k in sfx:
         s = int(tt * SR); x = lib[k] * gains[k]; e = min(n, s + len(x)); fxa[s:e] += x[:e - s]
     bed = synth_bed(total + 1)[:n]

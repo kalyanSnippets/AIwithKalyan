@@ -218,7 +218,7 @@ FX.rise(tl,"#big",0.05,{y:40}); FX.pop(tl,"#a",B.nonet); FX.pop(tl,"#b",B.sub); 
 ''')
 
 # ------------------------------------------------------------------ RAM
-scene('ram', 'Now, which model should', 'Actually, pause the video', dict(guess="Don't guess", ram='depends on your RAM', mem='working memory',
+scene('ram', 'Now, which model should', "It's a pretty normal laptop", dict(guess="Don't guess", ram='depends on your RAM', mem='working memory',
       keys='Press Control', perf='Performance tab'), '''
 <div class="hdr"><i></i>Pick your model</div>
 <div id="q" class="abs big" style="left:620px;top:130px;font-size:80px">Which model? <span id="ng" class="red">Don't guess.</span></div>
@@ -319,6 +319,7 @@ for sid, sp, ep, beats, html, js in SCENES:
 const B = {json.dumps(B)};
 const tl = gsap.timeline({{ paused: true }});
 {js}
+FX.ambient(tl, {dur});
 window.__timelines["{sid}"] = tl;
 </script></body></html>
 '''
