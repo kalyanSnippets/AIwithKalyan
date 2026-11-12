@@ -209,8 +209,9 @@ def build(spec_path, name):
     import hashlib
     FILES.update(getattr(S, 'FILES', {}))
     P.PAUSE_KEEP = getattr(S, 'PAUSE_KEEP', 0.3)
+    P.HOLDS = getattr(S, 'HOLDS', {})
     SPEED = getattr(S, 'SPEED', 1.0)
-    hsh = hashlib.md5((repr(S.CUTS) + repr(P.PAUSE_KEEP) + repr(SPEED)).encode()).hexdigest()[:10]
+    hsh = hashlib.md5((repr(S.CUTS) + repr(P.PAUSE_KEEP) + repr(SPEED) + repr(getattr(S, 'HOLDS', {}))).encode()).hexdigest()[:10]
     cache = f'{WORK}/{name}_face_{hsh}.json'
     if os.path.exists(cache):
         face, tmap = json.load(open(cache)); tmap = [tuple(x) for x in tmap]

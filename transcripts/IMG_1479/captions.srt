@@ -1,1707 +1,1915 @@
 1
-00:00:15,380 --> 00:00:17,700
+00:00:15,740 --> 00:00:17,760
 So here is the problem with every free
 
 2
-00:00:17,700 --> 00:00:18,180
+00:00:17,880 --> 00:00:18,260
 model.
 
 3
-00:00:18,880 --> 00:00:20,840
+00:00:19,040 --> 00:00:20,860
 So here is the problem with every free
 
 4
-00:00:20,840 --> 00:00:22,400
+00:00:20,960 --> 00:00:22,380
 option we have seen so far.
 
 5
-00:00:22,860 --> 00:00:24,620
+00:00:22,920 --> 00:00:24,780
 Every free provider has a limit.
 
 6
-00:00:28,640 --> 00:00:31,580
-Google gives you some free requests,
+00:00:28,520 --> 00:00:29,280
+Google gives you,
 
 7
-00:00:31,940 --> 00:00:34,420
-NVIDIA gives you some, OpenRouter gives
+00:00:30,000 --> 00:00:31,660
+Google gives you some free requests.
 
 8
-00:00:34,420 --> 00:00:36,740
-you 50 a day on its own.
+00:00:31,940 --> 00:00:33,200
+NVIDIA gives you some.
 
 9
-00:00:38,220 --> 00:00:40,780
-On its own, each one runs out fast.
+00:00:33,580 --> 00:00:36,340
+OpenRouter gives you fifty a day on its
 
 10
-00:00:41,280 --> 00:00:43,660
-But if you put them all together, that's a
+00:00:36,440 --> 00:00:36,700
+own.
 
 11
-00:00:43,660 --> 00:00:45,000
-lot of free AI, right?
+00:00:37,840 --> 00:00:40,880
+Each-- On its own, each one runs out fast.
 
 12
-00:00:45,000 --> 00:00:47,820
-and what if
+00:00:41,320 --> 00:00:43,620
+But if you put them all together, that's a
 
 13
-00:00:47,820 --> 00:00:50,980
-when one runs out
+00:00:43,700 --> 00:00:45,080
+lot of free AI, right?
 
 14
-00:00:50,980 --> 00:00:53,580
-the next one simply takes over without you
+00:00:45,660 --> 00:00:46,360
+And what if,
 
 15
-00:00:53,580 --> 00:00:54,460
-doing anything.
+00:00:47,260 --> 00:00:48,400
+and what if one--
 
 16
-00:00:55,500 --> 00:00:58,960
-That's exactly what
+00:00:49,260 --> 00:00:51,660
+And what if when one runs out, the next
 
 17
-00:00:58,960 --> 00:01:00,000
-OmniRoute does.
+00:00:51,700 --> 00:00:53,920
+one simply takes over without you doing
 
 18
-00:01:00,580 --> 00:01:02,640
-OmniRoute is a free open source app.
+00:00:53,980 --> 00:00:54,340
+anything?
 
 19
-00:01:08,900 --> 00:01:12,380
-Here open source means the
+00:00:54,840 --> 00:00:55,240
+That a-
 
 20
-00:01:12,380 --> 00:01:13,940
-code is public on GitHub.
+00:00:55,900 --> 00:00:56,700
+that's actually,
 
 21
-00:01:14,620 --> 00:01:16,380
-So anyone can check what it does.
+00:00:57,960 --> 00:01:00,020
+that's exactly what OmniRoute does.
 
 22
-00:01:16,660 --> 00:01:18,820
-You install it on your own computer and
+00:01:00,540 --> 00:01:02,700
+OmniRoute is a free open source app.
 
 23
-00:01:18,820 --> 00:01:20,800
-sits in the middle you
+00:01:08,840 --> 00:01:10,200
+Here, open source means,
 
 24
-00:01:22,970 --> 00:01:25,130
-install it on your own computer and it
+00:01:11,360 --> 00:01:13,640
+open source means the code is public on
 
 25
-00:01:25,130 --> 00:01:26,230
-sits in the middle.
+00:01:13,700 --> 00:01:16,460
+GitHub, so anyone can check what it does.
 
 26
-00:01:26,670 --> 00:01:29,910
-Clot code talks only
+00:01:16,760 --> 00:01:18,840
+You install it on your own computer and
 
 27
-00:01:29,910 --> 00:01:30,990
-to open route.
+00:01:18,900 --> 00:01:19,860
+sits in the middle.
 
 28
-00:01:31,870 --> 00:01:34,670
-Clot code talks only to OmniRoute and
+00:01:22,900 --> 00:01:24,980
+You install it on your own computer, and
 
 29
-00:01:34,670 --> 00:01:36,890
-OmniRoute decides which AI provider
+00:01:25,060 --> 00:01:26,100
+it sits in the middle.
 
 30
-00:01:36,890 --> 00:01:38,390
-answers each request.
+00:01:26,540 --> 00:01:27,580
+Claude Code ta--
 
 31
-00:01:40,070 --> 00:01:41,650
-And OmniRoute decides which
+00:01:28,660 --> 00:01:31,120
+Claude Code talks only to OpenRoute.
 
 32
-00:01:41,650 --> 00:01:44,850
-AI provider answers
+00:01:32,340 --> 00:01:34,680
+Claude Code talks only to OmniRoute, and
 
 33
-00:01:44,850 --> 00:01:45,770
-each request.
+00:01:34,840 --> 00:01:37,220
+OmniRoute decides which AI provider
 
 34
-00:01:45,770 --> 00:01:48,670
-So, Claude Cote thinks it's talking to one
+00:01:37,340 --> 00:01:38,520
+answers each request.
 
 35
-00:01:48,670 --> 00:01:51,770
-AI, but behind the scenes, OmniRoute is
+00:01:40,060 --> 00:01:42,380
+And OmniRoute decides which A-- And
 
 36
-00:01:51,770 --> 00:01:52,530
-juggling many.
+00:01:42,480 --> 00:01:44,580
+OmniRoute decides which AI provider
 
 37
-00:01:56,060 --> 00:01:59,560
-And we install it with our, and
+00:01:44,680 --> 00:01:45,860
+answers each request.
 
 38
-00:01:59,560 --> 00:02:02,160
-we install it with our rule, and AI does
+00:01:46,280 --> 00:01:48,760
+So Claude Code thinks it's talking to one
 
 39
-00:02:02,160 --> 00:02:02,440
-it.
+00:01:48,860 --> 00:01:51,860
+AI, but behind the scenes, OmniRoute is
 
 40
-00:02:02,840 --> 00:02:03,660
-I open it,
+00:01:51,920 --> 00:01:52,700
+juggling many.
 
 41
-00:02:04,320 --> 00:02:06,840
-I open anti -gravity and give it one
+00:01:56,180 --> 00:01:57,540
+And we install it with our,
 
 42
-00:02:06,840 --> 00:02:07,200
-prompt.
+00:01:59,480 --> 00:02:02,000
+and we install it with our rule, and AI
 
 43
-00:02:07,800 --> 00:02:09,580
-It's in the setup kit and
+00:02:02,060 --> 00:02:02,540
+does it.
 
 44
-00:02:13,070 --> 00:02:15,150
-we
+00:02:03,020 --> 00:02:06,480
+I open it, uh, I open Antigravity and give
 
 45
-00:02:17,010 --> 00:02:18,270
-install it with one rule,
+00:02:06,520 --> 00:02:07,440
+it one prompt.
 
 46
-00:02:18,910 --> 00:02:20,270
-and AI does it.
+00:02:08,020 --> 00:02:09,520
+It's in the setup kit and
 
 47
-00:02:20,270 --> 00:02:22,830
-I open anti -gravity and give it one
+00:02:13,980 --> 00:02:14,080
+it--
 
 48
-00:02:22,830 --> 00:02:25,990
-prompt, it's in the setup kit and it
+00:02:16,760 --> 00:02:18,320
+And we install it with one rule,
 
 49
-00:02:25,990 --> 00:02:28,790
-basically says check whether the plot code
+00:02:19,060 --> 00:02:20,340
+and AI does it.
 
 50
-00:02:28,790 --> 00:02:31,170
-is installed and install it if not.
+00:02:20,760 --> 00:02:23,280
+I open Antigravity and give it one prompt.
 
 51
-00:02:31,990 --> 00:02:35,470
-Then install omni route from github, start
+00:02:23,620 --> 00:02:25,980
+It's the s-- it's in the setup kit, and it
 
 52
-00:02:35,470 --> 00:02:37,690
-it and open the dashboard in my browser.
+00:02:26,040 --> 00:02:28,900
+basically says, "Check whether Claude Code
 
 53
-00:02:38,270 --> 00:02:40,970
-And if any step fails, fix it and keep
+00:02:28,960 --> 00:02:31,320
+is installed and install it if not.
 
 54
-00:02:40,970 --> 00:02:41,390
-going.
+00:02:31,900 --> 00:02:32,080
+Then,
 
 55
-00:02:45,750 --> 00:02:48,130
-Now anti -gravity will ask for permission
+00:02:32,740 --> 00:02:35,540
+then install OmniRoute from GitHub, start
 
 56
-00:02:48,130 --> 00:02:50,690
-a lot here because it's running a real
+00:02:35,600 --> 00:02:37,900
+it, and open the dashboard in my browser.
 
 57
-00:02:50,690 --> 00:02:52,010
-command on your computer.
+00:02:38,320 --> 00:02:41,060
+And if any step fails, fix it and keep
 
 58
-00:02:52,010 --> 00:02:54,790
-don't just click allow on everything read
+00:02:41,120 --> 00:02:41,520
+going."
 
 59
-00:02:54,790 --> 00:02:56,490
-each one and then allow
+00:02:45,920 --> 00:02:48,420
+Now, Antigravity will ask for permission a
 
 60
-00:02:58,190 --> 00:03:01,190
-when it's done it gives me a little
+00:02:48,480 --> 00:02:50,760
+lot here because it's running a real
 
 61
-00:03:01,190 --> 00:03:03,550
-summary table Claude code found
+00:02:50,820 --> 00:02:52,160
+commands on your computer.
 
 62
-00:03:03,550 --> 00:03:06,810
-Claude code found omni -route installed
+00:02:52,540 --> 00:02:54,440
+Don't just click Allow on everything.
 
 63
-00:03:06,810 --> 00:03:09,730
-server running dashboard open the
+00:02:54,660 --> 00:02:56,620
+Read each one and then allow.
 
 64
-00:03:09,730 --> 00:03:12,670
-dashboard the dashboard opens in your
+00:02:59,180 --> 00:03:01,260
+When it's done, it gives me a little
 
 65
-00:03:12,670 --> 00:03:14,170
-browser at localhost
+00:03:01,340 --> 00:03:03,580
+summary table, Claude Code found,
 
 66
-00:03:14,170 --> 00:03:17,550
-the dashboard opens in your
+00:03:04,800 --> 00:03:06,920
+Claude Code found, OmniRoute installed,
 
 67
-00:03:17,550 --> 00:03:20,950
-browser at localhost localhost just means
+00:03:07,080 --> 00:03:08,880
+server running, dashboard open.
 
 68
-00:03:20,950 --> 00:03:22,770
-the website is running on your own
+00:03:09,640 --> 00:03:10,280
+The dashboard,
 
 69
-00:03:22,770 --> 00:03:24,550
-computer not on the internet.
+00:03:11,060 --> 00:03:13,540
+the dashboard opens in your browser at
 
 70
-00:03:25,210 --> 00:03:27,870
-The first time it asked for a password and
+00:03:13,580 --> 00:03:14,240
+localhost.
 
 71
-00:03:27,870 --> 00:03:31,250
-the default one is change me literally so
+00:03:16,320 --> 00:03:18,280
+The dashboard opens in your browser at
 
 72
-00:03:31,250 --> 00:03:33,450
-login and then the
+00:03:18,340 --> 00:03:18,960
+localhost.
 
 73
-00:03:39,430 --> 00:03:41,670
-first time it asked for a password and the
+00:03:19,380 --> 00:03:21,780
+Localhost just means the website is
 
 74
-00:03:41,670 --> 00:03:43,650
-default one is change me literally.
+00:03:21,840 --> 00:03:24,140
+running on your own computer, not on the
 
 75
-00:03:44,670 --> 00:03:47,050
-So login and then go straight to settings
+00:03:24,220 --> 00:03:24,720
+internet.
 
 76
-00:03:47,050 --> 00:03:48,630
-and change it to something real.
+00:03:25,160 --> 00:03:27,420
+The first time, it asks for a password,
 
 77
-00:03:51,980 --> 00:03:54,880
-Now the fun part here is connecting free
+00:03:27,780 --> 00:03:29,720
+and the default one is "change me,"
 
 78
-00:03:54,880 --> 00:03:55,780
-AI providers.
+00:03:30,200 --> 00:03:30,800
+literally.
 
 79
-00:03:56,300 --> 00:03:58,940
-A provider is just a company that reals
+00:03:31,160 --> 00:03:32,600
+So log in and then...
 
 80
-00:03:58,940 --> 00:04:01,860
-a provider Here is just a company that
+00:03:39,360 --> 00:03:41,540
+The first time it asks for a password, and
 
 81
-00:04:01,860 --> 00:04:04,780
-runs AI models like Google, Nvidia or
+00:03:41,580 --> 00:03:43,860
+the default one is "change me," literally.
 
 82
-00:04:04,780 --> 00:04:05,280
-Amazon.
+00:03:44,520 --> 00:03:47,200
+So log in and then go straight to settings
 
 83
-00:04:05,860 --> 00:04:09,240
-In the dashboard, open providers, you will
+00:03:47,240 --> 00:03:48,860
+and change it to something real.
 
 84
-00:04:09,240 --> 00:04:10,200
-see a huge list.
+00:03:52,240 --> 00:03:54,980
+Now, the fun part here is connecting free
 
 85
-00:04:10,720 --> 00:04:12,840
-Some connect with sign -ins, some with an
+00:03:55,100 --> 00:03:55,920
+AI providers.
 
 86
-00:04:12,840 --> 00:04:13,540
-API key.
+00:03:56,300 --> 00:03:58,900
+A provider is just a company that runs,
 
 87
-00:04:13,760 --> 00:04:17,020
-For each one, you search for it.
+00:04:00,020 --> 00:04:02,580
+a provider is just a company that runs AI
 
 88
-00:04:19,650 --> 00:04:22,190
-For each one, you search for it, click it
+00:04:02,640 --> 00:04:05,400
+models like Google, NVIDIA, or Amazon.
 
 89
-00:04:22,190 --> 00:04:22,990
-and click add.
+00:04:05,880 --> 00:04:07,980
+In the d- in the dashboard, open
 
 90
-00:04:23,530 --> 00:04:24,790
-Let me do four of them.
+00:04:08,040 --> 00:04:10,260
+Providers, you'll see a huge list.
 
 91
-00:04:29,610 --> 00:04:31,030
-So number one is Cairo.
+00:04:10,700 --> 00:04:12,860
+Some connect with sign-ins, some with an
 
 92
-00:04:31,030 --> 00:04:34,130
-Cairo is Amazon's AI coding app and its
+00:04:12,980 --> 00:04:13,580
+API key.
 
 93
-00:04:34,130 --> 00:04:36,550
-free plan includes real cloud models like
+00:04:13,760 --> 00:04:15,060
+For each one, you,
 
 94
-00:04:36,550 --> 00:04:39,870
-Clods own earth that's that's why this one
+00:04:16,000 --> 00:04:16,959
+you search for it.
 
 95
-00:04:39,870 --> 00:04:43,110
-that's why this one is special search
+00:04:19,920 --> 00:04:22,220
+For each one, you search for it, click it,
 
 96
-00:04:43,110 --> 00:04:46,150
-Cairo click add and omniroute first source
+00:04:22,360 --> 00:04:23,140
+and click Add.
 
 97
-00:04:46,150 --> 00:04:49,630
-and omniroute first shows a warning read
+00:04:23,580 --> 00:04:24,860
+Let me do four of them.
 
 98
-00:04:49,630 --> 00:04:51,950
-it then pick how you want to sign it
+00:04:29,600 --> 00:04:31,260
+So number one is Kiro.
 
 99
-00:04:51,950 --> 00:04:54,530
-read it then
+00:04:31,540 --> 00:04:34,200
+Kiro is Amazon's AI coding app, and its
 
 100
-00:04:54,530 --> 00:04:57,130
-read it then Then pick how you want to
+00:04:34,260 --> 00:04:36,640
+free plan includes real Claude models like
 
 101
-00:04:57,130 --> 00:04:57,570
-sign in.
+00:04:36,700 --> 00:04:37,540
+Claude Sonnet.
 
 102
-00:04:57,690 --> 00:05:01,030
-It gives you a short code and link.
+00:04:37,900 --> 00:04:38,120
+That's,
 
 103
-00:05:04,550 --> 00:05:06,770
-Open the link, sign in, check
+00:04:38,880 --> 00:04:39,880
+that's why this one,
 
 104
-00:05:06,770 --> 00:05:10,130
-that the code matches and approve.
+00:04:40,920 --> 00:04:42,400
+that's why this one is special.
 
 105
-00:05:10,370 --> 00:05:12,550
-It says device authorized and back
+00:04:42,900 --> 00:04:45,520
+Search Kiro, click Add, and OmniRoute
 
 106
-00:05:12,550 --> 00:05:15,770
-in omni route, kairo shows
+00:04:45,580 --> 00:04:46,180
+first shows,
 
 107
-00:05:15,770 --> 00:05:16,290
-connected.
+00:04:47,040 --> 00:04:49,040
+and OmniRoute first shows a warning.
 
 108
-00:05:21,770 --> 00:05:23,570
-And two honest things about kairo.
+00:04:49,480 --> 00:04:51,480
+Read it, then pick how you want to sign
 
 109
-00:05:23,930 --> 00:05:26,570
-The free allowance is small, so it won't
+00:04:51,540 --> 00:04:51,760
+it.
 
 110
-00:05:26,570 --> 00:05:27,210
-last long.
+00:04:53,240 --> 00:04:54,580
+Uh, read it, then
 
 111
-00:05:27,210 --> 00:05:29,770
-During sign up, it even opened a
+00:04:55,460 --> 00:04:57,360
+read it, then pick how you want to sign
 
 112
-00:05:29,770 --> 00:05:32,390
-subscription required page and OmniRoute
+00:04:57,400 --> 00:04:57,540
+in.
 
 113
-00:05:32,390 --> 00:05:35,650
-itself
+00:04:57,840 --> 00:05:00,000
+It gives you a sh- it gives you a short
 
 114
-00:05:35,650 --> 00:05:37,550
-marks Cairo as terms
+00:05:00,080 --> 00:05:01,160
+code and link.
 
 115
-00:05:37,550 --> 00:05:40,510
-of service avoid.
+00:05:02,620 --> 00:05:04,560
+It gives you a short code and a link.
 
 116
-00:05:41,570 --> 00:05:42,490
-Because using it
+00:05:04,960 --> 00:05:07,140
+Open the link, sign in, check that the,
 
 117
-00:05:42,490 --> 00:05:45,750
-this way
+00:05:08,080 --> 00:05:10,220
+check that the code matches, and approve.
 
 118
-00:05:45,750 --> 00:05:47,570
-may go against Cairo's rules.
+00:05:10,360 --> 00:05:12,820
+It says, "Device authorized," and back in
 
 119
-00:05:48,790 --> 00:05:51,690
-So this one
+00:05:12,920 --> 00:05:15,860
+O- and back in OmniRoute, Kiro shows
 
 120
-00:05:51,690 --> 00:05:54,270
-is your account and it's your call.
+00:05:15,920 --> 00:05:16,460
+Connected.
 
 121
-00:05:54,810 --> 00:05:55,910
-So this one is your ear.
+00:05:21,800 --> 00:05:23,680
+And two honest things about Kiro.
 
 122
-00:05:55,910 --> 00:05:58,710
-So, this one is your account and your
+00:05:24,040 --> 00:05:26,620
+The free allowance is small, so it won't
 
 123
-00:05:58,710 --> 00:05:59,110
-call.
+00:05:26,660 --> 00:05:29,260
+last long, and during sign-up, it even
 
 124
-00:06:01,980 --> 00:06:04,660
-So number 2 is anti -gravity.
+00:05:29,360 --> 00:05:31,680
+opened a subscription required page, and
 
 125
-00:06:05,180 --> 00:06:07,800
-The same Google app we have been using but
+00:05:31,780 --> 00:05:32,440
+OmniRoute,
 
 126
-00:06:07,800 --> 00:06:09,040
-this time as a provider.
+00:05:33,220 --> 00:05:33,820
+OmniRoute,
 
 127
-00:06:09,640 --> 00:06:12,120
-Click add, it opens a Google sign -in,
+00:05:34,720 --> 00:05:37,620
+and OmniRoute itself marks Kiro as terms
 
 128
-00:06:12,420 --> 00:06:13,760
-pick your account and allow.
+00:05:37,740 --> 00:05:40,680
+of service, terms of service avoid.
 
 129
-00:06:14,660 --> 00:06:18,040
-Then your browser lands on a page that
+00:05:41,320 --> 00:05:42,260
+Because using it,
 
 130
-00:06:18,040 --> 00:06:20,120
-doesn't load and that's normal.
+00:05:44,200 --> 00:05:46,280
+u- because using it this way may go
 
 131
-00:06:20,760 --> 00:06:22,820
-Copy the full address from the top of that
+00:05:46,380 --> 00:05:47,560
+against Kiro's rules,
 
 132
-00:06:22,820 --> 00:06:24,960
-page and paste it back into the omni route
+00:05:48,620 --> 00:05:50,160
+so this one is o-
 
 133
-00:06:24,960 --> 00:06:26,000
-and click connect.
+00:05:50,920 --> 00:05:51,800
+so this one
 
 134
-00:06:26,000 --> 00:06:28,200
-That's how OmniRoute gets permission.
+00:05:52,520 --> 00:05:54,360
+is your account, and it's your call.
 
 135
-00:06:32,460 --> 00:06:35,020
-Now you get Gemini model plus some Claude
+00:05:54,760 --> 00:05:55,900
+So this one is your, your--
 
 136
-00:06:35,020 --> 00:06:36,260
-models within limits.
+00:05:56,600 --> 00:05:59,160
+So this one is your account and your call.
 
 137
-00:06:36,860 --> 00:06:38,600
-The warning here is even stronger.
+00:06:01,920 --> 00:06:04,780
+So number, so number two is Antigravity.
 
 138
-00:06:39,120 --> 00:06:41,380
-OmniRoute says Google may restrict the
+00:06:05,220 --> 00:06:07,360
+The same Google app we have been using,
 
 139
-00:06:41,380 --> 00:06:41,780
-account.
+00:06:07,680 --> 00:06:09,200
+but this time as a provider.
 
 140
-00:06:42,300 --> 00:06:44,100
-So please use a spare account,
+00:06:09,680 --> 00:06:12,640
+Click Add, it opens a Google sign-in, pick
 
 141
-00:06:44,760 --> 00:06:45,980
-not your main one.
+00:06:12,700 --> 00:06:13,920
+your account and allow.
 
 142
-00:06:52,320 --> 00:06:53,720
-So number 3 is NVIDIA.
+00:06:14,300 --> 00:06:14,500
+Then,
 
 143
-00:06:54,200 --> 00:06:56,180
-NVIDIA, the graphics card company
+00:06:15,160 --> 00:06:15,500
+then your,
 
 144
-00:06:56,180 --> 00:06:58,100
-also
+00:06:16,160 --> 00:06:18,180
+then your browser lands on a page that
 
 145
-00:06:58,100 --> 00:07:01,440
-gives free access to
+00:06:18,240 --> 00:06:20,280
+doesn't load, and that's normal.
 
 146
-00:07:01,440 --> 00:07:04,580
-bunch of AI models on build .nvidia .com.
+00:06:20,720 --> 00:06:22,920
+Copy the full address from the top of that
 
 147
-00:07:04,580 --> 00:07:07,840
-Create a free account, go to API keys and
+00:06:22,980 --> 00:06:25,180
+page and paste it back into the OmniRoute
 
 148
-00:07:07,840 --> 00:07:09,400
-click generate API key.
+00:06:25,260 --> 00:06:26,140
+and click Connect.
 
 149
-00:07:10,020 --> 00:07:11,940
-Give it a name and copy it.
+00:06:26,480 --> 00:06:28,320
+That's how OmniRoute gets permission.
 
 150
-00:07:12,100 --> 00:07:13,340
-Then back in omni route,
+00:06:32,340 --> 00:06:35,120
+Now you get Gemini model plus some Claude
 
 151
-00:07:14,180 --> 00:07:17,620
-open nvidia, click add and paste
+00:06:35,180 --> 00:06:36,400
+models within limits.
 
 152
-00:07:17,620 --> 00:07:18,020
-the key.
+00:06:36,820 --> 00:06:38,740
+The warning here is even stronger.
 
 153
-00:07:18,560 --> 00:07:20,880
-And here switch on import only free
+00:06:39,100 --> 00:06:41,420
+OmniRoute says Google may restrict the
 
 154
-00:07:20,880 --> 00:07:21,220
-models.
+00:06:41,520 --> 00:06:44,200
+account, so please use a spare account,
 
 155
-00:07:21,740 --> 00:07:23,440
-So only the free ones comes in.
+00:06:44,960 --> 00:06:46,060
+not your main one.
 
 156
-00:07:25,640 --> 00:07:26,400
-And then save.
+00:06:52,240 --> 00:06:53,900
+So number three is NVIDIA.
 
 157
-00:07:27,640 --> 00:07:28,780
-Number 4 is Gemini.
+00:06:54,200 --> 00:06:56,260
+NVIDIA, the graphic card company--
 
 158
-00:07:28,780 --> 00:07:31,960
-Gemini is Google's own AI model
+00:06:57,660 --> 00:07:00,240
+NVIDIA, the graphics card company, also
 
 159
-00:07:31,960 --> 00:07:32,920
-and Google
+00:07:00,320 --> 00:07:02,900
+gives free access to bunch of AI models on
 
 160
-00:07:34,840 --> 00:07:37,220
-AI Studio
+00:07:03,020 --> 00:07:04,660
+build.nvidia.com.
 
 161
-00:07:37,220 --> 00:07:40,540
-gives you a free
+00:07:05,100 --> 00:07:07,840
+Create a free account, go to API keys and
 
 162
-00:07:40,540 --> 00:07:41,340
-key for it.
+00:07:07,940 --> 00:07:09,520
+click Generate API Key.
 
 163
-00:07:41,660 --> 00:07:43,060
-Go to Google AI Studio,
+00:07:10,140 --> 00:07:11,640
+Give it a name and copy it.
 
 164
-00:07:44,040 --> 00:07:47,360
-click Get API Key and create API
+00:07:12,080 --> 00:07:13,460
+Then back in OmniRoute,
 
 165
-00:07:47,360 --> 00:07:49,260
-key and copy it.
+00:07:15,520 --> 00:07:18,100
+open NVIDIA, click Add and paste the key.
 
 166
-00:07:50,860 --> 00:07:52,720
-In Omni -Rote, open Gemini,
+00:07:18,540 --> 00:07:20,900
+And here, switch on Import only free
 
 167
-00:07:53,740 --> 00:07:57,060
-click Add and paste it.
+00:07:20,980 --> 00:07:23,500
+models, so only the free ones comes in.
 
 168
-00:07:57,060 --> 00:07:59,360
-It checks to make sure it works and then
+00:07:25,800 --> 00:07:26,640
+And then Save.
 
 169
-00:07:59,360 --> 00:07:59,680
-save.
+00:07:27,480 --> 00:07:29,060
+Number four is Gemini.
 
 170
-00:08:03,580 --> 00:08:05,260
-And that's 4 providers connected.
+00:07:29,640 --> 00:07:32,360
+Gemini is Google's own AI model, and
 
 171
-00:08:05,800 --> 00:08:06,700
-Now one by one
+00:07:32,600 --> 00:07:32,940
+Google,
 
 172
-00:08:08,490 --> 00:08:11,030
-and that's 4 providers connected.
+00:07:35,820 --> 00:07:37,300
+and Google AI Studio,
 
 173
-00:08:11,510 --> 00:08:13,350
-Now one by one they are small.
+00:07:38,540 --> 00:07:40,840
+and Google AI Studio gives you a free key
 
 174
-00:08:13,870 --> 00:08:16,110
-So let's make them work as one team.
+00:07:40,920 --> 00:07:41,220
+for it.
 
 175
-00:08:23,560 --> 00:08:25,280
-Now one by one they are small.
+00:07:41,780 --> 00:07:43,080
+Go to Google AI Studio,
 
 176
-00:08:25,740 --> 00:08:27,700
-So let's make them work as one team.
+00:07:43,920 --> 00:07:44,300
+click g--
 
 177
-00:08:29,080 --> 00:08:31,700
-In Omnirode the team is called combo.
+00:07:44,980 --> 00:07:47,700
+click Get API key and Create API key,
 
 178
-00:08:33,520 --> 00:08:36,260
-A combo is a list of models in an order.
+00:07:48,440 --> 00:07:49,280
+and copy it.
 
 179
-00:08:36,260 --> 00:08:39,340
-The first one answers and if it is busy
+00:07:51,060 --> 00:07:52,780
+In OmniRoute, open Gemini,
 
 180
-00:08:39,340 --> 00:08:42,040
-out of free credits or for failing.
+00:07:54,860 --> 00:07:56,660
+click Add and paste it.
 
 181
-00:08:43,220 --> 00:08:45,460
-A combo is a list of models in an order.
+00:07:57,000 --> 00:07:59,420
+Hit Check to make sure it works, and then
 
 182
-00:08:45,760 --> 00:08:47,580
-The first one answer, and if
+00:07:59,480 --> 00:07:59,880
+Save.
 
 183
-00:08:47,580 --> 00:08:50,980
-it's busy
+00:08:03,460 --> 00:08:05,460
+And that's four providers connected.
 
 184
-00:08:50,980 --> 00:08:54,160
-out of free credits or
+00:08:05,760 --> 00:08:06,740
+Now one by one...
 
 185
-00:08:54,160 --> 00:08:54,680
-failing.
+00:08:09,360 --> 00:08:11,279
+And that's four providers connected.
 
 186
-00:08:57,870 --> 00:09:00,390
-A combo is a list of models in an order.
+00:08:11,580 --> 00:08:13,560
+Now one by one, they are small.
 
 187
-00:09:00,850 --> 00:09:04,190
-The first one answers and if it's busy out
+00:08:14,040 --> 00:08:16,200
+So let's make them work as one team.
 
 188
-00:09:04,190 --> 00:09:06,530
-of free credits or failing, the next one
+00:08:23,720 --> 00:08:25,460
+Now one by one, they are small.
 
 189
-00:09:06,530 --> 00:09:07,630
-takes over automatically.
+00:08:25,720 --> 00:08:27,840
+So let's make them work as one team.
 
 190
-00:09:07,630 --> 00:09:09,170
-Go to combos,
+00:08:29,200 --> 00:08:31,840
+In OmniRoute, the team is called Combo.
 
 191
-00:09:09,850 --> 00:09:11,670
-click create and give it a name.
+00:08:33,420 --> 00:08:36,360
+A combo is a list of models in an order.
 
 192
-00:09:12,190 --> 00:09:14,130
-I called it mine as a Claude.
+00:08:36,700 --> 00:08:39,580
+The first one answers, and if it's busy
 
 193
-00:09:15,390 --> 00:09:18,050
-I called mine Claude and you will see why
+00:08:39,680 --> 00:08:42,200
+out of free credits or f- or failing.
 
 194
-00:09:18,050 --> 00:09:18,270
-that
+00:08:43,200 --> 00:08:45,540
+A combo is a list of models in an order.
 
 195
-00:09:21,380 --> 00:09:24,640
-name matters in a second.
+00:08:45,940 --> 00:08:48,580
+The first one answer, and if it's busy out
 
 196
-00:09:25,260 --> 00:09:26,100
-Now at the steps,
+00:08:48,660 --> 00:08:49,420
+of, uh,
 
 197
-00:09:27,100 --> 00:09:29,720
-for each step you pick a provider, then a
+00:08:50,440 --> 00:08:51,160
+if it's busy,
 
 198
-00:09:29,720 --> 00:09:31,760
-model and then leave the account on
+00:08:51,760 --> 00:08:54,220
+uh, out of, out of free credits or
 
 199
-00:09:31,760 --> 00:09:32,280
-automatic.
+00:08:54,320 --> 00:08:54,820
+failing.
 
 200
-00:09:32,280 --> 00:09:35,740
-Click Add Step, I put Gemini first, then
+00:08:58,080 --> 00:09:00,520
+A combo is a list of models in an order.
 
 201
-00:09:35,740 --> 00:09:36,040
-Cairo,
+00:09:00,980 --> 00:09:03,560
+The first one answers, and if it's busy,
 
 202
-00:09:38,340 --> 00:09:41,440
-then Kairos, I put Gemini
+00:09:04,080 --> 00:09:06,360
+out of free credits or failing, the next
 
 203
-00:09:41,440 --> 00:09:44,680
-first, then Kairos slots on it and then
+00:09:06,460 --> 00:09:07,960
+one takes over automatically.
 
 204
-00:09:44,680 --> 00:09:46,520
-more free backups behind them.
+00:09:08,420 --> 00:09:11,380
+Go to Combos, click Create and give it a
 
 205
-00:09:47,020 --> 00:09:49,460
-You can use the little up
+00:09:11,460 --> 00:09:11,760
+name.
 
 206
-00:09:52,240 --> 00:09:55,480
-and down arrows to change the order.
+00:09:12,320 --> 00:09:14,340
+I called it mine as a Claude.
 
 207
-00:09:56,140 --> 00:09:56,920
-Top goes first.
+00:09:15,420 --> 00:09:18,080
+I called mine Claude, and you'll see why
 
 208
-00:10:02,390 --> 00:10:04,870
-Then it asks for the strategy, which is
+00:09:18,140 --> 00:09:18,400
+that...
 
 209
-00:10:04,870 --> 00:10:07,590
-simply how OmniRaud chooses between the
+00:09:22,300 --> 00:09:24,320
+And you'll see why that name matters in a
 
 210
-00:10:07,590 --> 00:10:08,810
-models in your combo.
+00:09:24,360 --> 00:09:24,780
+second.
 
 211
-00:10:08,810 --> 00:10:11,990
-You could keep the exact order or rotate
+00:09:25,160 --> 00:09:26,260
+Now add the steps.
 
 212
-00:10:11,990 --> 00:10:12,710
-between them.
+00:09:27,080 --> 00:09:29,700
+For each step, you pick a provider, then a
 
 213
-00:10:12,970 --> 00:10:15,530
-I picked Smart Routing so it scores each
+00:09:29,760 --> 00:09:31,840
+model, and then leave the account on
 
 214
-00:10:15,530 --> 00:10:17,250
-option and picks the best one.
+00:09:31,920 --> 00:09:32,500
+automatic.
 
 215
-00:10:17,790 --> 00:10:18,670
-For every request
+00:09:32,860 --> 00:09:33,740
+Click Add Step.
 
 216
-00:10:18,670 --> 00:10:22,510
-I
+00:09:34,120 --> 00:09:36,320
+I put Gemini first, then Kiro.
 
 217
-00:10:22,510 --> 00:10:25,710
-never
+00:09:38,480 --> 00:09:39,180
+Then Kairos--
 
 218
-00:10:25,710 --> 00:10:27,630
-have to switch anything by hand.
+00:09:40,860 --> 00:09:43,400
+I put Gemini first, then Kairos, Claude
 
 219
-00:10:28,010 --> 00:10:28,610
-Then save.
+00:09:43,480 --> 00:09:46,260
+Sonnet, and then more free backups behind
 
 220
-00:10:29,510 --> 00:10:31,630
-And the combo is ready.
+00:09:46,300 --> 00:09:46,520
+them.
 
 221
-00:10:35,880 --> 00:10:37,540
-Now, Claude Code needs one key.
+00:09:47,040 --> 00:09:48,500
+You can use the little w...
 
 222
-00:10:37,540 --> 00:10:41,000
-to use this now Claude code needs one key
+00:09:52,220 --> 00:09:54,600
+You can use the little up and down arrows
 
 223
-00:10:41,000 --> 00:10:43,980
-to use this whole combo and that's the
+00:09:54,660 --> 00:09:55,620
+to change the order.
 
 224
-00:10:43,980 --> 00:10:47,400
-Omni route API key Omni route own password
+00:09:56,040 --> 00:09:57,080
+Top goes first.
 
 225
-00:10:47,400 --> 00:10:50,560
-it's it's Omni routes own password
+00:10:02,500 --> 00:10:04,900
+Then it asks for the strategy, which is
 
 226
-00:10:50,560 --> 00:10:53,760
-Claude code shows this key Claude code
+00:10:04,980 --> 00:10:07,600
+simply how OmniRoute chooses between the
 
 227
-00:10:53,760 --> 00:10:55,980
-shows this key to Omni route and Omni
+00:10:07,660 --> 00:10:08,980
+models in your combo.
 
 228
-00:10:55,980 --> 00:10:58,580
-route then uses all your provider keys
+00:10:09,520 --> 00:10:12,100
+You could keep the exact order or rotate
 
 229
-00:10:58,580 --> 00:11:02,060
-behind the scenes Omni route then uses
+00:10:12,140 --> 00:10:12,740
+between them.
 
 230
-00:11:02,060 --> 00:11:04,820
-all the provider keys behind the scenes so
+00:10:12,960 --> 00:10:15,600
+I picked smart routing, so it scores each
 
 231
-00:11:04,820 --> 00:11:07,280
-Claude code never needs to see your Google
+00:10:15,700 --> 00:10:17,340
+option and picks the best one.
 
 232
-00:11:07,280 --> 00:11:08,600
-or Nvidia keys.
+00:10:17,780 --> 00:10:19,940
+For every request, I never have to
 
 233
-00:11:09,220 --> 00:11:10,800
-In the dashboard open API
+00:10:20,019 --> 00:10:20,319
+switch--
 
 234
-00:11:10,800 --> 00:11:14,280
-keys and click
+00:10:21,360 --> 00:10:23,220
+For every request, I, i--
 
 235
-00:11:14,280 --> 00:11:15,540
-create API key.
+00:10:23,960 --> 00:10:26,260
+for every request, and I never have to
 
 236
-00:11:16,220 --> 00:11:19,680
-Give it a name like Claude code
+00:10:26,340 --> 00:10:27,680
+switch anything by hand.
 
 237
-00:11:19,680 --> 00:11:21,260
-and then create it.
+00:10:28,120 --> 00:10:28,740
+Then Save,
 
 238
-00:11:21,540 --> 00:11:23,320
-And now copy it straight away.
+00:10:29,460 --> 00:10:31,740
+and the clomb-- and the combo is ready.
 
 239
-00:11:23,600 --> 00:11:26,100
-And now copy it straight away because just
+00:10:35,880 --> 00:10:37,660
+Now Claude Code needs one key.
 
 240
-00:11:26,100 --> 00:11:29,040
-like the other keys you only get to see it
+00:10:38,020 --> 00:10:38,640
+To use this--
 
 241
-00:11:29,040 --> 00:11:29,320
-once.
+00:10:39,300 --> 00:10:42,140
+Now Claude Code needs one key to use this
 
 242
-00:11:32,870 --> 00:11:35,910
-Keep it somewhere Now I don't want to type
+00:10:42,260 --> 00:10:45,160
+whole combo, and that's the OmniRoute API
 
 243
-00:11:35,910 --> 00:11:37,030
-commands every time.
+00:10:45,220 --> 00:10:45,480
+key.
 
 244
-00:11:38,190 --> 00:11:40,590
-Now I don't want to type commands every
+00:10:45,960 --> 00:10:47,480
+OmniRoute's own password,
 
 245
-00:11:40,590 --> 00:11:41,550
-time I use this.
+00:10:48,360 --> 00:10:50,640
+it's, it's OmniRoute's own password.
 
 246
-00:11:41,990 --> 00:11:44,130
-So I gave anti -gravity one more prompt.
+00:10:51,140 --> 00:10:53,880
+Claude Code shows this key, Claude Code
 
 247
-00:11:44,730 --> 00:11:45,670
-It's the same kit.
+00:10:53,940 --> 00:10:56,320
+shows this key to OmniRoute, and OmniRoute
 
 248
-00:11:46,210 --> 00:11:47,570
-It's in the setup kit too.
+00:10:56,380 --> 00:10:59,400
+then uses all your provider keys behind
 
 249
-00:11:48,290 --> 00:11:51,190
-It says make two shortcuts on my desktop.
+00:10:59,440 --> 00:10:59,900
+the scenes.
 
 250
-00:11:51,850 --> 00:11:53,790
-The first is free clock code.
+00:11:01,060 --> 00:11:03,500
+OmniRoute then uses all the provider keys
 
 251
-00:11:54,290 --> 00:11:56,650
-When I double click it, it checks that,
+00:11:03,560 --> 00:11:04,380
+behind the scenes.
 
 252
-00:11:59,080 --> 00:12:01,760
-when I double click it, it checks that
+00:11:04,720 --> 00:11:07,000
+So Claude Code never needs to see your
 
 253
-00:12:01,760 --> 00:12:02,740
-omni route is running.
+00:11:07,080 --> 00:11:08,720
+Google or NVIDIA keys.
 
 254
-00:12:03,380 --> 00:12:04,700
-Start it if it is not.
+00:11:09,180 --> 00:11:11,040
+In the dashboard, open API.
 
 255
-00:12:04,700 --> 00:12:07,100
-opens a terminal in a work folder
+00:11:11,960 --> 00:11:14,360
+In the dashboard, open API keys and click
 
 256
-00:12:07,100 --> 00:12:10,540
-and launches cloud code through omni
+00:11:14,400 --> 00:11:15,620
+Create API key.
 
 257
-00:12:10,540 --> 00:12:11,940
--route using mycombo.
+00:11:16,260 --> 00:11:16,920
+Give it a name,
 
 258
-00:12:12,620 --> 00:12:15,360
-Remember I named the combo Claude so the
+00:11:17,800 --> 00:11:20,460
+give it a name like Claude Code and then
 
 259
-00:12:15,360 --> 00:12:18,320
-command simply says run Claude with the
+00:11:20,520 --> 00:11:21,120
+create it.
 
 260
-00:12:18,320 --> 00:12:19,220
-model Claude.
+00:11:21,520 --> 00:11:23,300
+And now copy it straight away.
 
 261
-00:12:19,740 --> 00:12:21,820
-The second shortcut is omni -route
+00:11:23,720 --> 00:11:26,220
+And now copy it straight away because just
 
 262
-00:12:21,820 --> 00:12:24,380
-dashboard which opens the control panel
+00:11:26,300 --> 00:11:28,860
+like the other keys, you only get to see
 
 263
-00:12:24,380 --> 00:12:27,520
-and one important safety
+00:11:28,940 --> 00:11:29,500
+it once.
 
 264
-00:12:27,520 --> 00:12:30,580
-tip here is Anti -gravity will ask for
+00:11:33,000 --> 00:11:34,140
+Keep it somewhere safe.
 
 265
-00:12:30,580 --> 00:12:33,140
-your omni -route key while it sets this
+00:11:34,620 --> 00:11:36,800
+Now, I don't want to type commands every
 
 266
-00:12:33,140 --> 00:12:33,500
-up.
-
-267
-00:12:38,360 --> 00:12:40,120
-Don't paste the key into the chat.
-
-268
-00:12:40,560 --> 00:12:43,120
-Ask it to open a file, paste the key into
-
-269
-00:12:43,120 --> 00:12:45,260
-the file, save it and type continue.
-
-270
-00:12:45,780 --> 00:12:48,260
-That way your key never sits in a chat
-
-271
-00:12:48,260 --> 00:12:48,720
-history.
-
-272
-00:12:52,330 --> 00:12:54,610
-And then one last fix, when plot code
-
-273
-00:12:54,610 --> 00:12:57,050
-connects to omni -route, its model menu
-
-274
-00:12:57,050 --> 00:12:59,270
-can show every model from your providers,
-
-275
-00:12:59,270 --> 00:13:00,810
-including paid ones.
-
-276
-00:13:01,230 --> 00:13:04,290
-Pick a paid one by accident
-
-277
-00:13:04,290 --> 00:13:06,850
-and you get errors or worse a bill.
-
-278
-00:13:07,790 --> 00:13:09,990
-So I gave anti -gravity one more prompt,
-
-279
-00:13:11,150 --> 00:13:14,010
-turn
-
-280
-00:13:14,010 --> 00:13:16,950
-on high paid models in
-
-281
-00:13:16,950 --> 00:13:20,270
-omniroute and keep my clod combo as the
-
-282
-00:13:20,270 --> 00:13:20,650
-default.
-
-283
-00:13:23,570 --> 00:13:26,470
-On my test machine that's exactly what
-
-284
-00:13:26,470 --> 00:13:26,890
-happened.
-
-285
-00:13:27,330 --> 00:13:29,470
-The menu only showed free options.
-
-286
-00:13:32,670 --> 00:13:33,870
-Okay, everything's connected.
-
-287
-00:13:34,410 --> 00:13:35,270
-Movement of truth.
-
-288
-00:13:37,210 --> 00:13:39,170
-Movement movement of truth.
-
-289
-00:13:39,730 --> 00:13:42,110
-Then I double click free cloud code.
-
-290
-00:13:42,490 --> 00:13:45,110
-It checks it checks omnirode.
-
-291
-00:13:45,130 --> 00:13:47,430
-It's running and cloud code opens.
-
-292
-00:13:48,030 --> 00:13:50,290
-So I asked obvious question which model
-
-293
-00:13:50,290 --> 00:13:52,870
-are you and the error 503.
-
-294
-00:13:55,870 --> 00:13:58,470
-503 means service temporary.
-
-295
-00:13:59,430 --> 00:14:02,810
-503 means service temporarily unavailable.
-
-296
-00:14:36,620 --> 00:14:38,840
-So obvious question is which model are
-
-297
-00:14:38,840 --> 00:14:39,100
-you?
-
-298
-00:14:40,620 --> 00:14:43,940
-And it answers I am Claude but remember a
-
-299
-00:14:43,940 --> 00:14:46,780
-model's word isn't approved so let's check
-
-300
-00:14:46,780 --> 00:14:47,220
-the bill.
-
-301
-00:14:48,620 --> 00:14:52,120
-I open the OmniRoute dashboard go to
-
-302
-00:14:52,120 --> 00:14:52,480
-logs.
-
-303
-00:15:00,470 --> 00:15:01,030
-I open the
-
-304
-00:15:01,790 --> 00:15:04,810
-OmniRoute dashboard go to logs which is
-
-305
-00:15:04,810 --> 00:15:07,590
-the list of every which is the list of
-
-306
-00:15:07,590 --> 00:15:10,270
-every request, which model answered, which
-
-307
-00:15:10,270 --> 00:15:10,810
-provider
-
-308
-00:15:10,810 --> 00:15:14,250
-and whether
-
-309
-00:15:14,250 --> 00:15:15,690
-it worked or not.
-
-310
-00:15:16,250 --> 00:15:17,970
-And look at this line,
-
-311
-00:15:18,730 --> 00:15:22,130
-model Claude Sonat 4 .5, provider Cairo,
-
-312
-00:15:22,690 --> 00:15:25,830
-combo Claude, status 200,
-
-313
-00:15:26,210 --> 00:15:27,970
-and 200 just means success.
-
-314
-00:15:32,330 --> 00:15:34,410
-So that's real Claude Sonat answering
-
-315
-00:15:34,410 --> 00:15:37,090
-inside Claude code through a free account.
-
-316
-00:15:37,090 --> 00:15:38,390
-That's the receipt.
-
-317
-00:15:41,940 --> 00:15:43,080
-But a high proves nothing.
-
-318
-00:15:43,360 --> 00:15:44,640
-So let's build something real.
-
-319
-00:15:45,180 --> 00:15:47,980
-On my machine with the same kind of setup
-
-320
-00:15:47,980 --> 00:15:48,900
-I asked,
-
-321
-00:15:50,920 --> 00:15:54,020
-design me a simple personal
-
-322
-00:15:54,020 --> 00:15:56,840
-note taking application and it
-
-323
-00:15:58,500 --> 00:16:05,140
-doesn't
-
-324
-00:16:06,520 --> 00:16:07,100
-just start
-
-325
-00:16:07,100 --> 00:16:10,800
-writing
-
-326
-00:16:13,610 --> 00:16:14,070
-code.
-
-327
-00:16:14,070 --> 00:16:16,730
-It's in plan mode, a clod code
-
-328
-00:16:16,730 --> 00:16:17,610
-mode,
-
-329
-00:16:21,840 --> 00:16:24,640
-it's in plan mode, a clod code mode where
-
-330
-00:16:24,640 --> 00:16:26,920
-it plans and asks you questions before it
-
-331
-00:16:26,920 --> 00:16:27,700
-writes anything.
-
-332
-00:16:28,180 --> 00:16:30,800
-So it asked me which text stack, which
-
-333
-00:16:30,800 --> 00:16:32,780
-features and how should the nodes be
-
-334
-00:16:32,780 --> 00:16:33,080
-stored.
-
-335
-00:16:33,440 --> 00:16:36,080
-Then it showed me a plan and only then it
-
-336
-00:16:36,080 --> 00:16:36,640
-starts building.
-
-337
-00:16:40,100 --> 00:16:41,440
-And here is the coolest part.
-
-338
-00:16:41,740 --> 00:16:44,280
-Straight from the logs, real clod did the
-
-339
-00:16:44,280 --> 00:16:46,780
-planning until its free limit ran out.
-
-340
-00:16:46,780 --> 00:16:49,500
-The Omni Road switched by itself to free
-
-341
-00:16:49,500 --> 00:16:51,400
-NVIDIA and it kept building.
-
-342
-00:16:51,860 --> 00:16:53,740
-I didn't touch anything, that's the whole
-
-343
-00:16:53,740 --> 00:16:54,740
-point of a combo.
-
-344
-00:16:57,370 --> 00:16:59,730
-Now honestly the first version didn't
-
-345
-00:16:59,730 --> 00:16:59,990
-work.
-
-346
-00:17:00,350 --> 00:17:03,250
-It took a few fixed rounds and a final
-
-347
-00:17:03,250 --> 00:17:05,170
-cleanup but here it is.
-
-348
-00:17:05,550 --> 00:17:08,770
-Nodes, tags, markdown, search and it even,
-
-349
-00:17:08,770 --> 00:17:11,450
-and it even survives a refresh.
-
-350
-00:17:12,290 --> 00:17:15,050
-And it even, and it even survives a
-
-351
-00:17:15,050 --> 00:17:15,370
-refresh.
-
-352
-00:17:15,370 --> 00:17:18,870
-and the bill and the bill for all of that
-
-353
-00:17:18,870 --> 00:17:20,590
-is zero dollars
-
-354
-00:17:25,450 --> 00:17:27,750
-and here is your free clot
-
-355
-00:17:27,750 --> 00:17:31,110
-and here is your free clot code
-
-356
-00:17:31,110 --> 00:17:34,390
-map which one fits you privacy or
-
-357
-00:17:34,390 --> 00:17:37,650
-offline go with Olama no strong
-
-358
-00:17:37,650 --> 00:17:40,910
-hardware or if you don't have
-
-359
-00:17:40,910 --> 00:17:44,010
-strong hardware and you want speed go with
-
-360
-00:17:44,010 --> 00:17:46,250
-open router and if you want it
-
-361
-00:17:46,250 --> 00:17:49,610
-and if you want it to keep going
-
-362
-00:17:49,610 --> 00:17:52,430
-when one provider runs out the best option
-
-363
-00:17:52,430 --> 00:17:55,790
-is Omni route and the four rules one
-
-364
-00:17:55,790 --> 00:17:57,110
-and
-
-365
-00:18:00,470 --> 00:18:03,490
-keep this four rules in mind and keep
-
-366
-00:18:03,490 --> 00:18:06,770
-and keep the and keep these four
-
-367
-00:18:06,770 --> 00:18:09,290
-rules in mind the first thing is
-
-368
-00:18:09,290 --> 00:18:12,530
-nothing is unlimited the second
-
-369
-00:18:12,530 --> 00:18:15,710
-one is cloud providers providers see
-
-370
-00:18:15,710 --> 00:18:16,650
-what you send.
-
-371
-00:18:17,170 --> 00:18:18,650
-So keep private code in.
-
-372
-00:18:20,130 --> 00:18:23,090
-And the four rules, one is nothing
-
-373
-00:18:23,090 --> 00:18:24,150
-and
-
-374
-00:18:25,560 --> 00:18:26,320
-the four rules,
-
-375
-00:18:26,960 --> 00:18:29,980
-one, nothing is unlimited and the two
-
-376
-00:18:29,980 --> 00:18:32,520
-cloud providers see what you send.
-
-377
-00:18:32,840 --> 00:18:34,880
-So keep private code on Olama.
-
-378
-00:18:35,460 --> 00:18:37,560
-And the third thing is Cairo and anti
-
-379
-00:18:37,560 --> 00:18:39,680
--gravity may go again is their terms.
-
-380
-00:18:40,200 --> 00:18:40,860
-So it's call.
-
-381
-00:18:41,820 --> 00:18:42,640
-So it's your call.
-
-382
-00:18:42,640 --> 00:18:46,080
-and the fourth one is things will
-
-383
-00:18:46,080 --> 00:18:48,480
-break copy paste fix
-
-384
-00:18:48,480 --> 00:18:51,880
-and the fourth one is
-
-385
-00:18:51,880 --> 00:18:55,060
-things will break copy paste fix
-
-386
-00:18:55,060 --> 00:18:58,180
-this and always check the bill not the
-
-387
-00:18:58,180 --> 00:18:58,560
-label
-
-388
-00:19:01,630 --> 00:19:04,630
-everyone told you Claude code cost
-
-389
-00:19:04,630 --> 00:19:07,450
-$20 a month everyone told you Claude code
-
-390
-00:19:07,450 --> 00:19:10,930
-everyone told you Claude code cost $20
-
-391
-00:19:10,930 --> 00:19:13,810
-a month today we ran the real Claude code
-
-392
-00:19:13,810 --> 00:19:15,110
-3 ways for free.
-
-393
-00:19:15,450 --> 00:19:18,070
-Offline, in the cloud and with the
-
-394
-00:19:18,070 --> 00:19:19,890
-providers that switch by themselves.
-
-395
-00:19:20,530 --> 00:19:22,170
-Same cloud code, 0 will.
-
-396
-00:19:22,770 --> 00:19:25,270
-The free setup kit with the model list,
-
-397
-00:19:25,490 --> 00:19:27,810
-every prompt and every setting is in the
-
-398
-00:19:27,810 --> 00:19:29,030
-first link in the description.
-
-399
-00:19:29,850 --> 00:19:30,910
-Tell me in the comments,
-
-400
-00:19:34,810 --> 00:19:36,790
-tell me in the comments which one you are,
-
-401
-00:19:37,810 --> 00:19:39,790
-tell me in the comments which one you are
-
-402
-00:19:39,790 --> 00:19:40,410
-trying first.
-
-403
-00:19:40,410 --> 00:19:43,650
-And if this
-
-404
-00:19:43,650 --> 00:19:46,970
-saved you $20 a month,
-
-405
-00:19:47,410 --> 00:19:49,130
-subscribe to AI with Kalyan.
-
-406
-00:19:49,590 --> 00:19:51,950
-I test these AI tools so you don't have
-
-407
-00:19:51,950 --> 00:19:52,190
-to.
-
-408
-00:19:52,590 --> 00:19:54,510
-And if you want to see what else Claude
-
-409
-00:19:54,510 --> 00:19:57,390
-code can do, and if you want to see what
-
-410
-00:19:57,390 --> 00:19:58,850
-else Claude code can do,
-
-411
-00:20:00,150 --> 00:20:02,650
-this video right here is one.
-
-412
-00:20:04,070 --> 00:20:06,110
-And if you want to see, And if you want to
-
-413
-00:20:06,110 --> 00:20:09,270
-see what else Claude
-
-414
-00:20:09,270 --> 00:20:12,590
-code can do, this video right here is one
-
-415
-00:20:12,590 --> 00:20:13,170
-to
-
-416
-00:20:15,280 --> 00:20:17,260
-watch
-
-417
-00:20:28,380 --> 00:20:28,940
-next.
-
-418
-00:21:56,290 --> 00:21:58,390
-So, if you want the next free AI trick
-
-419
-00:21:58,390 --> 00:22:01,410
-before everyone else, subscribe to AI with
-
-420
-00:22:01,410 --> 00:22:01,850
-Kalyan.
-
-421
-00:22:02,030 --> 00:22:04,330
-I test it first, so you don't waste your
-
-422
-00:22:04,330 --> 00:22:04,630
+00:11:36,860 --> 00:11:37,140
 time.
 
+267
+00:11:38,680 --> 00:11:40,680
+Now, I don't want to type commands every
+
+268
+00:11:40,720 --> 00:11:43,620
+time I use this, so I give Antigravity one
+
+269
+00:11:43,680 --> 00:11:44,260
+more prompt.
+
+270
+00:11:44,680 --> 00:11:45,820
+It's the same kit.
+
+271
+00:11:46,300 --> 00:11:47,700
+It's in the setup kit too.
+
+272
+00:11:48,320 --> 00:11:50,820
+It says, "Make two shortcuts on my
+
+273
+00:11:50,860 --> 00:11:51,420
+desktop.
+
+274
+00:11:51,800 --> 00:11:53,880
+The first is free Claude Code.
+
+275
+00:11:54,280 --> 00:11:56,460
+When I double-click it, it checks that...
+
+276
+00:11:59,700 --> 00:12:01,820
+When I double-click it, it checks that
+
+277
+00:12:01,920 --> 00:12:02,900
+OmniRoute is running.
+
+278
+00:12:03,300 --> 00:12:04,800
+Start it if it is not.
+
+279
+00:12:05,200 --> 00:12:07,200
+Opens a terminal in a work folder."
+
+280
+00:12:08,716 --> 00:12:10,876
+And launches Claude Code through OmniRoute
+
+281
+00:12:11,036 --> 00:12:11,956
+using my combo.
+
+282
+00:12:12,416 --> 00:12:15,356
+Remember, I named the combo Claude, so the
+
+283
+00:12:15,416 --> 00:12:18,356
+command simply says, "Run Claude with the
+
+284
+00:12:18,416 --> 00:12:21,376
+model Claude." The second shortcut is
+
+285
+00:12:21,476 --> 00:12:23,636
+OmniRoute dashboard, which opens the
+
+286
+00:12:23,676 --> 00:12:24,556
+control panel.
+
+287
+00:12:26,436 --> 00:12:28,696
+And one important safety tip here is,
+
+288
+00:12:29,076 --> 00:12:31,436
+Antigravity will ask for your OmniRoute
+
+289
+00:12:31,516 --> 00:12:33,516
+key while it sets this up.
+
+290
+00:12:34,876 --> 00:12:37,796
+While, while it, while it sets this up.
+
+291
+00:12:38,656 --> 00:12:40,236
+Don't paste the key into the chat.
+
+292
+00:12:40,616 --> 00:12:43,156
+Ask it to open a file, paste the key into
+
+293
+00:12:43,216 --> 00:12:45,456
+the file, save it, and type continue.
+
+294
+00:12:45,896 --> 00:12:48,356
+That way your key never sits in a chat
+
+295
+00:12:48,396 --> 00:12:48,796
+history.
+
+296
+00:12:52,236 --> 00:12:53,596
+And then one last fix.
+
+297
+00:12:53,856 --> 00:12:55,956
+When Claude Code connects to OmniRoute,
+
+298
+00:12:56,276 --> 00:12:58,656
+its model menu can show every model from
+
+299
+00:12:58,716 --> 00:13:00,896
+your providers, including paid ones.
+
+300
+00:13:01,236 --> 00:13:03,976
+Pick a paid one by, pick a paid one by
+
+301
+00:13:04,076 --> 00:13:06,616
+accident, and you get errors or worse, a
+
+302
+00:13:06,676 --> 00:13:06,956
+bill.
+
+303
+00:13:07,716 --> 00:13:10,016
+So I gave Antigravity one more prompt.
+
+304
+00:13:11,076 --> 00:13:13,396
+So I gave Antigravity one more prompt:
+
+305
+00:13:13,876 --> 00:13:14,336
+Turn on,
+
+306
+00:13:15,016 --> 00:13:17,976
+turn on hide paid models in OmniRoute, and
+
+307
+00:13:18,056 --> 00:13:20,276
+keep my Claude combo as the, as the
+
+308
+00:13:20,336 --> 00:13:20,756
+default.
+
+309
+00:13:21,216 --> 00:13:23,496
+And keep my Claude combo as the default.
+
+310
+00:13:24,076 --> 00:13:26,536
+On my test machine, that's exactly what
+
+311
+00:13:26,576 --> 00:13:26,996
+happened.
+
+312
+00:13:27,356 --> 00:13:29,616
+The menu only showed free options.
+
+313
+00:13:32,516 --> 00:13:33,976
+Okay, everything's connected.
+
+314
+00:13:34,316 --> 00:13:35,396
+Moment of truth.
+
+315
+00:13:37,396 --> 00:13:39,276
+Moment, moment of truth.
+
+316
+00:13:39,656 --> 00:13:39,816
+The--
+
+317
+00:13:40,416 --> 00:13:42,196
+I double-click free Claude Code.
+
+318
+00:13:42,516 --> 00:13:43,096
+It checks,
+
+319
+00:13:44,076 --> 00:13:46,416
+it checks OmniRoute, it's running, and
+
+320
+00:13:46,496 --> 00:13:47,636
+Claude Code opens.
+
+321
+00:13:47,936 --> 00:13:50,416
+So I ask obvious question, "Which model
+
+322
+00:13:50,496 --> 00:13:50,776
+are you?"
+
+323
+00:13:51,496 --> 00:13:53,096
+And the error five zero three.
+
+324
+00:13:56,096 --> 00:13:58,596
+Five zero three means service temporary--
+
+325
+00:13:59,936 --> 00:14:02,396
+Five zero three means service temporarily
+
+326
+00:14:02,476 --> 00:14:36,516
+unavailable.
+
+327
+00:14:36,556 --> 00:14:38,856
+So obvious question is, which model are
+
+328
+00:14:38,916 --> 00:14:39,096
+you?
+
+329
+00:14:40,836 --> 00:14:43,136
+And it answers, "I am Claude." But
+
+330
+00:14:43,196 --> 00:14:46,276
+remember, a model's word isn't a proof, so
+
+331
+00:14:46,356 --> 00:14:47,276
+let's check the bill.
+
+332
+00:14:47,616 --> 00:14:48,396
+I open the ro--
+
+333
+00:14:49,096 --> 00:14:50,736
+I open the OmniRoute dashboard,
+
+334
+00:14:51,836 --> 00:14:52,616
+go to logs.
+
+335
+00:15:00,456 --> 00:15:02,636
+I open the O-- I open the OmniRoute
+
+336
+00:15:02,696 --> 00:15:05,276
+dashboard, go to logs, which is the list
+
+337
+00:15:05,356 --> 00:15:05,916
+of every,
+
+338
+00:15:06,696 --> 00:15:08,796
+which is the list of every request, which
+
+339
+00:15:08,856 --> 00:15:11,576
+model answered, which provider and whe--
+
+340
+00:15:12,856 --> 00:15:15,116
+which provider, and whether it worked or
+
+341
+00:15:15,176 --> 00:15:15,496
+not.
+
+342
+00:15:16,116 --> 00:15:16,436
+And
+
+343
+00:15:17,136 --> 00:15:18,756
+look at this line, model
+
+344
+00:15:19,376 --> 00:15:21,776
+Claude Sonnet four point five, provider
+
+345
+00:15:21,836 --> 00:15:23,056
+Kiro, combo
+
+346
+00:15:24,296 --> 00:15:26,076
+Claude, status two hundred.
+
+347
+00:15:26,216 --> 00:15:28,176
+And two hundred just means success.
+
+348
+00:15:32,436 --> 00:15:34,536
+So that's real Claude Sonnet answering
+
+349
+00:15:34,596 --> 00:15:37,236
+inside Claude Code through a free account.
+
+350
+00:15:37,596 --> 00:15:38,596
+That's the receipt.
+
+351
+00:15:41,876 --> 00:15:43,956
+But a high proves nothing, so let's build
+
+352
+00:15:44,016 --> 00:15:44,736
+something real.
+
+353
+00:15:45,136 --> 00:15:47,716
+On my machine, with the same kind of
+
+354
+00:15:47,756 --> 00:15:51,216
+setup, I asked, "Design me
+
+355
+00:15:51,296 --> 00:15:51,876
+a simple,
+
+356
+00:15:52,796 --> 00:15:55,016
+design me a simple personal note-taking
+
+357
+00:15:55,096 --> 00:15:56,336
+application," and...
+
+358
+00:15:58,996 --> 00:16:01,036
+Design me a simple personal note-taking
+
+359
+00:16:01,116 --> 00:16:03,616
+application, and it doesn't just start,
+
+360
+00:16:05,876 --> 00:16:07,596
+and it doesn't just start wr--
+
+361
+00:16:12,276 --> 00:16:14,176
+And it doesn't just start writing code.
+
+362
+00:16:14,496 --> 00:16:17,036
+It's in plan mode, a Claude Code mo...
+
+363
+00:16:21,956 --> 00:16:22,976
+It's in plan mode.
+
+364
+00:16:23,316 --> 00:16:25,796
+A Claude Code mode where it plans and asks
+
+365
+00:16:25,856 --> 00:16:27,815
+you questions before it writes anything.
+
+366
+00:16:28,256 --> 00:16:30,876
+So it asked me which tech stack, which
+
+367
+00:16:30,956 --> 00:16:32,776
+features, and how should the notes be
+
+368
+00:16:32,856 --> 00:16:33,176
+stored.
+
+369
+00:16:33,556 --> 00:16:35,996
+Then it showed me a plan, and only then
+
+370
+00:16:36,076 --> 00:16:36,756
+starts building.
+
+371
+00:16:40,236 --> 00:16:41,496
+And here is the coolest part.
+
+372
+00:16:41,836 --> 00:16:44,136
+Straight from the logs, real Claude did
+
+373
+00:16:44,196 --> 00:16:46,816
+the planning until its free limit ran out.
+
+374
+00:16:47,156 --> 00:16:49,576
+The OmniRoute switched by itself to free
+
+375
+00:16:49,696 --> 00:16:51,536
+NVIDIA, and it kept building.
+
+376
+00:16:51,896 --> 00:16:53,036
+I didn't touch anything.
+
+377
+00:16:53,196 --> 00:16:54,876
+That's the whole point of a combo.
+
+378
+00:16:57,516 --> 00:16:59,756
+Now, honestly, the first version didn't
+
+379
+00:16:59,816 --> 00:17:00,096
+work.
+
+380
+00:17:00,496 --> 00:17:03,316
+It took a few fix rounds and a final
+
+381
+00:17:03,376 --> 00:17:05,096
+cleanup, but here it is.
+
+382
+00:17:05,436 --> 00:17:08,416
+Notes, tags, markdown, search, and it
+
+383
+00:17:08,516 --> 00:17:08,776
+even,
+
+384
+00:17:09,736 --> 00:17:11,816
+and it even survives a refresh.
+
+385
+00:17:12,256 --> 00:17:15,036
+And it even, and it even survives a
+
+386
+00:17:15,076 --> 00:17:15,556
+refresh.
+
+387
+00:17:16,056 --> 00:17:16,556
+And the bill,
+
+388
+00:17:17,516 --> 00:17:18,876
+and the bill for all of that
+
+389
+00:17:19,696 --> 00:17:20,636
+is zero dollars.
+
+390
+00:17:26,356 --> 00:17:27,896
+And here is your free Claude,
+
+391
+00:17:29,656 --> 00:17:31,476
+and here is your free Claude Code map.
+
+392
+00:17:31,996 --> 00:17:32,976
+Which one fits you?
+
+393
+00:17:33,556 --> 00:17:34,996
+Privacy or offline?
+
+394
+00:17:35,576 --> 00:17:36,616
+Go with Ollama.
+
+395
+00:17:37,076 --> 00:17:38,676
+No strong hardware or
+
+396
+00:17:40,116 --> 00:17:42,416
+if you don't have strong hardware and you
+
+397
+00:17:42,476 --> 00:17:44,876
+want speed, go with OpenRouter.
+
+398
+00:17:45,296 --> 00:17:46,256
+And if you want it,
+
+399
+00:17:48,096 --> 00:17:50,196
+and if you want it to keep going when one
+
+400
+00:17:50,236 --> 00:17:52,956
+provider runs out, the best option is
+
+401
+00:17:53,076 --> 00:17:53,696
+OmniRoute.
+
+402
+00:17:54,136 --> 00:17:55,156
+And the four rules.
+
+403
+00:17:55,676 --> 00:17:56,116
+One...
+
+404
+00:18:00,276 --> 00:18:02,616
+And keep these four rules in mind.
+
+405
+00:18:02,956 --> 00:18:03,576
+And keep,
+
+406
+00:18:04,736 --> 00:18:07,256
+and keep the, and keep these four rules in
+
+407
+00:18:07,316 --> 00:18:07,616
+mind.
+
+408
+00:18:08,096 --> 00:18:09,336
+The first thing is
+
+409
+00:18:10,116 --> 00:18:11,316
+nothing is unlimited
+
+410
+00:18:12,168 --> 00:18:14,848
+The second one is cloud provi-- cloud
+
+411
+00:18:14,928 --> 00:18:16,708
+providers see what you send.
+
+412
+00:18:17,108 --> 00:18:18,728
+So keep private code in.
+
+413
+00:18:20,668 --> 00:18:21,588
+And the four rules.
+
+414
+00:18:22,008 --> 00:18:23,328
+One is nothing.
+
+415
+00:18:25,488 --> 00:18:26,408
+And the four rules.
+
+416
+00:18:26,988 --> 00:18:28,908
+One, nothing is unlimited.
+
+417
+00:18:29,448 --> 00:18:29,968
+And the two,
+
+418
+00:18:30,708 --> 00:18:32,628
+cloud providers see what you send.
+
+419
+00:18:32,768 --> 00:18:34,808
+So keep private code on Ollama.
+
+420
+00:18:35,388 --> 00:18:37,268
+And the third thing is Kiro and
+
+421
+00:18:37,368 --> 00:18:39,788
+Antigravity may go against their terms.
+
+422
+00:18:40,148 --> 00:18:40,928
+So it's call--
+
 423
-00:22:04,630 --> 00:22:08,130
-Every week on AI with Kalyan, one AI
+00:18:41,748 --> 00:18:42,848
+So it's your call.
 
 424
-00:22:08,130 --> 00:22:10,530
-tool tested honestly and receipts
+00:18:43,628 --> 00:18:44,828
+And the fourth one is
 
 425
-00:22:10,530 --> 00:22:11,190
-included.
+00:18:45,648 --> 00:18:46,508
+things will break.
 
 426
-00:22:11,750 --> 00:22:13,610
-Subscribe and I'll see you in the next
+00:18:47,068 --> 00:18:48,808
+Copy, paste, fix.
 
 427
-00:22:13,610 --> 00:22:13,870
+00:18:50,608 --> 00:18:53,168
+And the fourth one is things will break.
+
+428
+00:18:53,768 --> 00:18:56,908
+Copy, paste, fix this, and always check
+
+429
+00:18:56,968 --> 00:18:58,688
+the bill, not the label.
+
+430
+00:19:02,468 --> 00:19:05,528
+Everyone told you Claude Code cost $20 a
+
+431
+00:19:05,568 --> 00:19:05,788
+month.
+
+432
+00:19:05,888 --> 00:19:08,508
+Everyone told you Claude Code twen--
+
+433
+00:19:08,608 --> 00:19:11,248
+Everyone told you Claude Code costs $20 a
+
+434
+00:19:11,308 --> 00:19:11,528
+month.
+
+435
+00:19:11,888 --> 00:19:14,268
+Today, we ran the real Claude Code three
+
+436
+00:19:14,368 --> 00:19:15,088
+ways for free:
+
+437
+00:19:15,708 --> 00:19:18,028
+offline, in the cloud, and with the
+
+438
+00:19:18,088 --> 00:19:20,048
+providers that switch by themself.
+
+439
+00:19:20,528 --> 00:19:22,248
+Same Claude Code, zero bill.
+
+440
+00:19:22,928 --> 00:19:25,368
+The free setup kit with the model list,
+
+441
+00:19:25,588 --> 00:19:27,808
+every prompt, and every setting is in the
+
+442
+00:19:27,888 --> 00:19:29,308
+first link in the description.
+
+443
+00:19:29,908 --> 00:19:31,028
+Tell me in the comments.
+
+444
+00:19:34,828 --> 00:19:36,588
+Tell me in the comments which one you
+
+445
+00:19:36,628 --> 00:19:36,768
+are--
+
+446
+00:19:38,048 --> 00:19:39,768
+Tell me in the comments which one you are
+
+447
+00:19:39,828 --> 00:19:40,488
+trying first.
+
+448
+00:19:40,868 --> 00:19:41,388
+And if you--
+
+449
+00:19:42,808 --> 00:19:45,748
+And if this saved you-- And if this saved
+
+450
+00:19:45,788 --> 00:19:48,708
+you $20 a month, subscribe to AI with
+
+451
+00:19:48,748 --> 00:19:49,208
+Kalyan.
+
+452
+00:19:49,728 --> 00:19:52,008
+I test these AI tools so you don't have
+
+453
+00:19:52,068 --> 00:19:52,228
+to.
+
+454
+00:19:52,548 --> 00:19:54,588
+And if you want to see what else Claude
+
+455
+00:19:54,668 --> 00:19:55,468
+Code can do--
+
+456
+00:19:56,208 --> 00:19:57,948
+And if you want to see what else Claude
+
+457
+00:19:58,068 --> 00:19:58,748
+Code can do,
+
+458
+00:19:59,488 --> 00:19:59,688
+the--
+
+459
+00:20:00,588 --> 00:20:02,828
+this video right here is one.
+
+460
+00:20:04,008 --> 00:20:06,008
+And if you want to see-- And if you want
+
+461
+00:20:06,028 --> 00:20:06,408
+to see--
+
+462
+00:20:07,688 --> 00:20:09,368
+And if you want to see what else Claude
+
+463
+00:20:09,468 --> 00:20:12,668
+Code can do, this video right here is one
+
+464
+00:20:13,088 --> 00:20:13,408
+to...
+
+465
+00:20:16,288 --> 00:20:18,088
+And if you want to see what else Claude...
+
+466
+00:20:19,728 --> 00:20:20,868
+And if you want to see...
+
+467
+00:20:23,488 --> 00:20:25,168
+And if you want to see what else Claude
+
+468
+00:20:25,248 --> 00:20:28,248
+Code can do, this video right here is one
+
+469
+00:20:28,288 --> 00:20:29,088
+to watch next.
+
+470
+00:20:30,068 --> 00:21:56,368
+Ah.
+
+471
+00:21:56,408 --> 00:21:58,528
+So if you want the next free AI trick
+
+472
+00:21:58,588 --> 00:22:01,428
+before everyone else, subscribe to AI with
+
+473
+00:22:01,468 --> 00:22:01,888
+Kalyan.
+
+474
+00:22:02,108 --> 00:22:04,328
+I test it first, so you don't waste your
+
+475
+00:22:04,428 --> 00:22:04,708
+time.
+
+476
+00:22:05,268 --> 00:22:08,488
+Every week on AI with Kalyan, one AI tool
+
+477
+00:22:08,828 --> 00:22:11,268
+tested honestly and receipts included.
+
+478
+00:22:11,728 --> 00:22:13,648
+Subscribe, and I'll see you in the next
+
+479
+00:22:13,708 --> 00:22:14,008
 one.

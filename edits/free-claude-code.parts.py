@@ -125,6 +125,7 @@ PART1 = [  # timings from ElevenLabs Scribe (transcripts/IMG_14xx/elevenlabs.jso
 ]
 PAUSES = {'1477': [315.70, 316.50]}  # "Is it pretty? ... No."  # "So be honest. ... Do you think", "Is it pretty? ... No."
 PARTS = {1: PART1}
+HOLDS = {}
 PAUSE_KEEP = 0.3  # longest silence kept inside a cut (s); fast-paced edits set this lower
 
 # ------------------------------------------------------------------ helpers
@@ -161,6 +162,8 @@ def refine(take, s, e):
     for a, b in sil:
         if a <= s or b >= e: continue                      # only silences fully inside the cut
         keep = 0.7 if any(a - 0.3 <= p <= b + 0.3 for p in PAUSES.get(take, [])) else PAUSE_KEEP
+        for ht, hk in HOLDS.get(take, []):   # deliberate holds (e.g. room for an on-screen explainer)
+            if a - 0.3 <= ht <= b + 0.3: keep = hk
         if b - a <= keep: continue
         cut0, cut1 = a + keep / 2, b - keep / 2
         nxt = []
