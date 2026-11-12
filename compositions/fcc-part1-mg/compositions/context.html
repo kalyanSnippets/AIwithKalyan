@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="context" data-start="0" data-width="1920" data-height="1080" data-duration="13.14">
+<section id="context-scene" class="clip" data-start="0" data-duration="13.14" style="position:absolute;inset:0"><div class="bg"></div>
+
+<div class="hdr"><i></i>Context length</div>
+<div id="title" class="abs" style="left:620px;top:120px;font-weight:900;font-size:66px">= the AI's <span class="red">short-term memory</span></div>
+<div id="box" class="abs" style="left:1100px;top:300px;width:420px;height:440px;border:6px solid #fff;border-radius:30px"></div>
+<div id="cap" class="abs" style="left:1100px;top:760px;width:420px;text-align:center;font-weight:900;font-size:44px">4K</div>
+<div id="f1" class="pill" style="left:640px;top:330px;font-size:30px">📄 app.js</div><div id="f2" class="pill" style="left:640px;top:440px;font-size:30px">📄 index.html</div>
+<div id="f3" class="pill" style="left:640px;top:550px;font-size:30px">📄 styles.css</div><div id="f4" class="pill" style="left:640px;top:660px;font-size:30px">💬 your chat</div>
+<div id="warn" class="pill red" style="left:1560px;top:470px">⚠ loses track</div>
+
+</section></div>
+<script>
+const B = {"mem": 1.6, "files": 7.26, "small": 9.92, "lose": 11.55};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#title",0.05,{y:30}); FX.pop(tl,"#box",B.mem-0.2); FX.pop(tl,"#cap",B.mem);
+FX.slide(tl,"#f1",B.files-0.1); FX.slide(tl,"#f2",B.files+0.15); FX.slide(tl,"#f3",B.files+0.3); FX.slide(tl,"#f4",B.files+0.45);
+tl.to("#f1",{x:520,y:20,duration:0.5,ease:"power3.inOut"},B.small); tl.to("#f2",{x:520,y:-10,duration:0.5,ease:"power3.inOut"},B.small+0.1);
+tl.to("#f3",{x:520,y:-150,duration:0.5,ease:"power3.inOut"},B.small+0.2); tl.to("#f4",{x:520,y:-260,duration:0.5,ease:"power3.inOut"},B.small+0.3);
+tl.to(["#f3","#f4"],{y:"+=420",rotation:20,opacity:0,duration:0.7,ease:"power2.in"},B.lose); FX.pop(tl,"#warn",B.lose); FX.shake(tl,"#box",B.lose);
+
+window.__timelines["context"] = tl;
+</script></body></html>

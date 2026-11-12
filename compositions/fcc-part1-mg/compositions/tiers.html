@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="tiers" data-start="0" data-width="1920" data-height="1080" data-duration="15.4">
+<section id="tiers-scene" class="clip" data-start="0" data-duration="15.4" style="position:absolute;inset:0"><div class="bg"></div>
+
+<div class="hdr"><i></i>Which model for your RAM</div>
+<div id="r1" class="abs" style="left:640px;top:200px;width:1220px"><div style="display:flex;justify-content:space-between;font-weight:900;font-size:46px"><span>8–16 GB</span><span>Small · 4–12B</span></div>
+  <div style="height:40px;border-radius:20px;background:#26262c;margin-top:12px"><div id="b1" style="height:100%;width:0;border-radius:20px;background:var(--red)"></div></div></div>
+<div id="you" class="pill red" style="left:1500px;top:110px;font-size:30px">← my laptop: 16 GB</div>
+<div id="r2" class="abs" style="left:640px;top:380px;width:1220px"><div style="display:flex;justify-content:space-between;font-weight:900;font-size:46px"><span>32 GB</span><span>Medium</span></div>
+  <div style="height:40px;border-radius:20px;background:#26262c;margin-top:12px"><div id="b2" style="height:100%;width:0;border-radius:20px;background:#ffb74d"></div></div></div>
+<div id="r3" class="abs" style="left:640px;top:560px;width:1220px"><div style="display:flex;justify-content:space-between;font-weight:900;font-size:46px"><span>64 GB +</span><span>Big · close to paid</span></div>
+  <div style="height:40px;border-radius:20px;background:#26262c;margin-top:12px"><div id="b3" style="height:100%;width:0;border-radius:20px;background:#2ecc71"></div></div></div>
+<div id="kit" class="pill" style="left:1150px;top:760px">📦 Full list → free setup kit</div>
+
+</section></div>
+<script>
+const B = {"t1": 0.67, "t2": 5.52, "t3": 7.74, "kit": 11.81};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#r1",0.05,{y:30}); tl.to("#b1",{width:"33%",duration:0.8,ease:"power3.out"},B.t1); FX.pop(tl,"#you",B.t1+0.5);
+FX.rise(tl,"#r2",B.t2-0.2,{y:30}); tl.to("#b2",{width:"62%",duration:0.8,ease:"power3.out"},B.t2);
+FX.rise(tl,"#r3",B.t3-0.4,{y:30}); tl.to("#b3",{width:"100%",duration:0.8,ease:"power3.out"},B.t3); FX.pop(tl,"#kit",B.kit);
+
+window.__timelines["tiers"] = tl;
+</script></body></html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="roadmap" data-start="0" data-width="1920" data-height="1080" data-duration="22.41">
+<section id="roadmap-scene" class="clip" data-start="0" data-duration="22.41" style="position:absolute;inset:0"><div class="bg"></div>
+
+<div class="hdr"><i></i>Here's the plan</div>
+<div id="price" class="abs big" style="left:600px;top:110px;width:900px;text-align:center;font-size:150px">$<span id="num">20</span></div>
+<div id="sub" class="abs" style="left:600px;top:280px;width:900px;text-align:center;font-weight:800;font-size:40px;color:#cfcfd6">the real Claude Code · <span class="red">3 ways</span></div>
+<div id="c1" class="card center" style="left:600px;top:380px;width:400px;height:420px;flex-direction:column;gap:14px">
+  <div class="big red" style="font-size:60px">1</div><img src="../icons/logo-ollama.png" style="width:120px;height:120px;background:#111;border-radius:26px;padding:14px">
+  <div style="font-weight:900;font-size:46px">Ollama</div><div style="font-weight:600;font-size:28px;color:#666">on your laptop</div>
+  <div id="wo" class="pill red" style="position:relative;font-size:26px;padding:8px 18px">Wi-Fi OFF</div></div>
+<div id="c2" class="card center" style="left:1030px;top:380px;width:400px;height:420px;flex-direction:column;gap:14px">
+  <div class="big red" style="font-size:60px">2</div><img src="../icons/cloud.png" class="tint-red" style="width:120px;height:120px">
+  <div style="font-weight:900;font-size:46px">OpenRouter</div><div style="font-weight:600;font-size:28px;color:#666">free cloud models</div>
+  <div id="tr" class="pill" style="position:relative;font-size:26px;padding:8px 18px;background:#ffe0de">⚠ the one trap</div></div>
+<div id="c3" class="card center" style="left:1460px;top:380px;width:400px;height:420px;flex-direction:column;gap:14px">
+  <div class="big red" style="font-size:60px">3</div><img src="../icons/zap.png" class="tint-red" style="width:120px;height:120px">
+  <div style="font-weight:900;font-size:46px">OmniRoute</div><div style="font-weight:600;font-size:28px;color:#666">many free providers</div>
+  <div id="so" class="pill" style="position:relative;font-size:26px;padding:8px 18px;background:#ffe0de"><img src="../icons/logo-claude.png" style="width:30px;height:30px">real Claude Sonnet</div></div>
+<div id="lg" class="pill red" style="left:1340px;top:850px">🧾 the logs prove it</div>
+
+</section></div>
+<script>
+const B = {"zero": 3.44, "three": 4.63, "m1": 5.85, "wifi": 8.85, "m2": 10.04, "trap": 12.3, "m3": 14.99, "sonnet": 19.16, "logs": 21.33};
+const tl = gsap.timeline({ paused: true });
+
+FX.pop(tl,"#price",0.05); FX.count(tl,"#num",20,0,B.zero-0.2,0.8,v=>Math.round(v)); FX.rise(tl,"#sub",B.three-0.2,{y:30});
+FX.rise(tl,"#c1",B.m1-0.1); FX.pop(tl,"#wo",B.wifi); FX.rise(tl,"#c2",B.m2-0.1); FX.pop(tl,"#tr",B.trap); FX.shake(tl,"#tr",B.trap+0.4);
+FX.rise(tl,"#c3",B.m3-0.1); FX.pop(tl,"#so",B.sonnet); FX.pop(tl,"#lg",B.logs);
+tl.to(["#c1","#c2"],{opacity:0.45,scale:0.96,duration:0.3},B.m3); tl.to("#c3",{scale:1.06,duration:0.3},B.sonnet);
+
+window.__timelines["roadmap"] = tl;
+</script></body></html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="hook2" data-start="0" data-width="1920" data-height="1080" data-duration="5.34">
+<section id="hook2-scene" class="clip" data-start="0" data-duration="5.34" style="position:absolute;inset:0"><div class="bg"></div>
+
+<div id="shell" class="dcard center" style="left:700px;top:150px;width:700px;height:520px;flex-direction:column">
+  <div style="position:absolute;top:26px;font-weight:800;font-size:34px;color:#cfcfd6">Claude Code <span class="red">· FREE app</span></div>
+  <div id="slot" style="width:300px;height:300px;border:4px dashed #3a3a44;border-radius:40px;margin-top:40px"></div></div>
+<div id="paid" class="abs center" style="left:900px;top:300px;width:300px;height:300px;flex-direction:column">
+  <img src="../icons/brain.png" class="tint-red" style="width:200px;height:200px"><div class="pill red" style="position:relative;font-size:34px;margin-top:-10px">$20 / month</div></div>
+<div id="f1" class="pill" style="left:1500px;top:250px">🧠 Free brain</div>
+<div id="f2" class="pill" style="left:1520px;top:380px">🧠 Free brain</div>
+<div id="f3" class="pill" style="left:1500px;top:510px">🧠 Free brain</div>
+<div id="freeb" class="abs center" style="left:900px;top:300px;width:300px;height:300px;flex-direction:column;opacity:0">
+  <img src="../icons/brain.png" style="width:200px;height:200px"><div class="pill" style="position:relative;font-size:34px;margin-top:-10px;background:#2ecc71;color:#fff">$0</div></div>
+<div id="zero" class="abs big" style="left:700px;top:720px;width:700px;text-align:center;font-size:110px">$20 → <span class="red">$0</span></div>
+
+</section></div>
+<script>
+const B = {"brain": 1.08, "swap": 3.64, "free": 4.44};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#shell",0.05); FX.pop(tl,"#paid",B.brain-0.3); FX.pulse(tl,"#paid",B.brain+0.3,1);
+tl.to("#paid",{x:-700,y:120,rotation:-25,opacity:0,duration:0.7,ease:"power3.in"},B.swap);
+FX.pop(tl,"#f1",B.swap+0.2); FX.pop(tl,"#f2",B.swap+0.35); FX.pop(tl,"#f3",B.swap+0.5);
+tl.to("#f2",{x:-560,y:-80,opacity:0,duration:0.5,ease:"power3.in"},B.free); tl.fromTo("#freeb",{scale:0.5,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(2)"},B.free+0.4);
+FX.pop(tl,"#zero",B.free+0.6);
+
+window.__timelines["hook2"] = tl;
+</script></body></html>

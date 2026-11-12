@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="ram" data-start="0" data-width="1920" data-height="1080" data-duration="13.21">
+<section id="ram-scene" class="clip" data-start="0" data-duration="13.21" style="position:absolute;inset:0"><div class="bg"></div>
+
+<div class="hdr"><i></i>Pick your model</div>
+<div id="q" class="abs big" style="left:620px;top:130px;font-size:80px">Which model? <span id="ng" class="red">Don't guess.</span></div>
+<div id="chip" class="card center" style="left:640px;top:300px;width:560px;height:360px;flex-direction:column;gap:10px">
+  <img src="../icons/memory-stick.png" class="tint-red" style="width:180px;height:180px"><div style="font-weight:900;font-size:60px">RAM</div>
+  <div id="wm" style="font-weight:700;font-size:30px;color:#666;opacity:0">working memory = model size</div></div>
+<div id="keys" class="abs" style="left:1240px;top:380px;display:flex;gap:10px;align-items:center">
+  <div id="k1" class="card center" style="position:relative;width:150px;height:120px;font-weight:900;font-size:42px">Ctrl</div><div class="big" style="font-size:50px">+</div>
+  <div id="k2" class="card center" style="position:relative;width:160px;height:120px;font-weight:900;font-size:42px">Shift</div><div class="big" style="font-size:50px">+</div>
+  <div id="k3" class="card center" style="position:relative;width:130px;height:120px;font-weight:900;font-size:42px">Esc</div></div>
+<div id="tm" class="pill" style="left:1300px;top:560px">Task Manager → Performance</div>
+
+</section></div>
+<script>
+const B = {"guess": 1.95, "ram": 2.7, "mem": 4.9, "keys": 9.16, "perf": 12.36};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#q",0.05,{y:30}); tl.fromTo("#ng",{opacity:0},{opacity:1,duration:0.2},B.guess);
+FX.pop(tl,"#chip",B.ram-0.1); tl.to("#wm",{opacity:1,duration:0.3},B.mem);
+FX.pop(tl,"#k1",B.keys); FX.pop(tl,"#k2",B.keys+0.2); FX.pop(tl,"#k3",B.keys+0.4);
+tl.to(["#k1","#k2","#k3"],{y:10,boxShadow:"0 6px 12px rgba(0,0,0,.5)",duration:0.12,yoyo:true,repeat:1},B.keys+0.9);
+FX.pop(tl,"#tm",B.perf-0.4);
+
+window.__timelines["ram"] = tl;
+</script></body></html>

@@ -116,8 +116,9 @@ class Stage:
     def __init__(self):
         self.bg = make_background()
         # face card (tall, rounded, right)
-        self.fw, self.fh = 430, 650
-        self.fx, self.fy = W - self.fw - 56, (H - self.fh) // 2 + 10
+        # rounded rectangle, bottom-left (Kalyan's usual PiP)
+        self.fw, self.fh = 470, 316
+        self.fx, self.fy = 46, H - self.fh - 46
         m = Image.new('L', (self.fw, self.fh), 0)
         ImageDraw.Draw(m).rounded_rectangle([0, 0, self.fw - 1, self.fh - 1], 30, fill=255)
         self.fmask = (np.asarray(m, np.float32) / 255.0)[..., None]
@@ -132,11 +133,11 @@ class Stage:
 
     def face_card(self, frame, face, t_in=99.0):
         """Tall rounded card on the right: crop around the face (face sits ~x960, y380 in the camera frame)."""
-        cw = 700; ch = int(cw * self.fh / self.fw)
-        x0 = 960 - cw // 2; y0 = 20
+        cw = 980; ch = int(cw * self.fh / self.fw)
+        x0 = 960 - cw // 2; y0 = 40
         crop = face[y0:y0 + ch, x0:x0 + cw]
         img = cv2.resize(crop, (self.fw, self.fh), interpolation=cv2.INTER_AREA)
-        a = ease_out(t_in / 0.35); dx = (1 - a) * 80
+        a = ease_out(t_in / 0.35); dx = 0
         blend(frame, self.fshadow, self.fx - self.fpad + dx, self.fy - self.fpad, a)
         x, y = int(self.fx + dx), self.fy
         vw = min(self.fw, W - x)

@@ -47,15 +47,16 @@ def phrase_time(take, phrase, after=0.0, end=False):
 
 # ------------------------------------------------------------------ cut map
 class Timeline:
-    def __init__(self, tmap): self.tmap = tmap
+    def __init__(self, tmap, speed=1.0): self.tmap = tmap; self.speed = speed
     def out(self, take, t):
         for tk, x, y, o in self.tmap:
-            if tk == take and x - 0.06 <= t <= y + 0.06: return o + max(0.0, t - x)
+            if tk == take and x - 0.06 <= t <= y + 0.06: return o + max(0.0, t - x) / self.speed
         for tk, x, y, o in self.tmap:
             if tk == take and x >= t: return o
         raise ValueError(f'time {take}@{t} is after the last cut')
     def anchor(self, a, after=0.0):
         take, v = a[0], a[1]
+        if take == 'OUT': return float(v)
         t = v if isinstance(v, (int, float)) else phrase_time(take, v, a[2] if len(a) > 2 else after)
         return self.out(take, t)
 
@@ -179,15 +180,34 @@ def synth_bed(seconds):
 def build(spec_path, name):
     S = load(spec_path, 'spec')
     import hashlib
-    hsh = hashlib.md5(repr(S.CUTS).encode()).hexdigest()[:10]
+    P.PAUSE_KEEP = getattr(S, 'PAUSE_KEEP', 0.3)
+    SPEED = getattr(S, 'SPEED', 1.0)
+    hsh = hashlib.md5((repr(S.CUTS) + repr(P.PAUSE_KEEP) + repr(SPEED)).encode()).hexdigest()[:10]
     cache = f'{WORK}/{name}_face_{hsh}.json'
     if os.path.exists(cache):
         face, tmap = json.load(open(cache)); tmap = [tuple(x) for x in tmap]
     else:
-        face, tmap = P.face_track(f'{name}_all', S.CUTS)
-        os.replace(face, f'{WORK}/{name}_face_{hsh}.mov'); face = f'{WORK}/{name}_face_{hsh}.mov'
+        face0, tmap = P.face_track(f'{name}_all', S.CUTS)
+        face = f'{WORK}/{name}_face_{hsh}.mov'
+        if SPEED != 1.0:  # speed up picture and voice together (pitch kept), lip-sync stays locked
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', face0, '-filter_complex',
+                            f'[0:v]setpts=PTS/{SPEED},fps={FPS}[v];[0:a]atempo={SPEED}[a]', '-map', '[v]', '-map', '[a]',
+                            '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '16', '-pix_fmt', 'yuv420p', '-c:a', 'pcm_s16le', face], check=True)
+            os.remove(face0); tmap = [(tk, x, y, o / SPEED) for tk, x, y, o in tmap]
+        else:
+            os.replace(face0, face)
         json.dump([face, tmap], open(cache, 'w'))
-    TL = Timeline(tmap); total = P.dur(face)
+    if False:
+        json.dump([face, tmap], open(cache, 'w'))
+    TL = Timeline(tmap, SPEED); total = P.dur(face)
+    if os.environ.get('FCC_FACE_ONLY'):
+        ws = []
+        for tk in sorted({c[0] for c in S.CUTS}):
+            for w in words(tk):
+                for t2, x, y, o in tmap:
+                    if t2 == tk and x <= w[1] <= y: ws.append((round(o + (w[1] - x) / SPEED, 2), tk, round(w[1], 2), w[3])); break
+        ws.sort(); json.dump(dict(total=total, words=ws), open(f'{WORK}/{name}_words.json', 'w'))
+        print('face only', total); return
     print(f'face track {total:.1f}s, {len(tmap)} pieces', flush=True)
 
     # shots in output time
@@ -221,7 +241,7 @@ def build(spec_path, name):
             for t, cx, cy, z in kfs[1:]:
                 lt = (t - a) / sh['speed']
                 if lt < d: ev(sh['t0'] + lt, 'swish')
-        if sh['kind'] in ('demo', 'graphic'): ev(sh['t0'], 'whoosh')
+        if sh['kind'] in ('demo', 'graphic', 'mg'): ev(sh['t0'], 'whoosh')
         for el in sh.get('els', []) + sh.get('pills', []): ev(el['_t'], 'pop')
     for sh in shots:
         # a pill hides when the next pill of the same shot appears (no stacking)
@@ -346,11 +366,11 @@ def build(spec_path, name):
                             src = src.copy(); x, y, w2, h2 = bx['x'], bx['y'], bx['w'], bx['h']
                             src[y:y + h2, x:x + w2] = cv2.GaussianBlur(src[y:y + h2, x:x + w2], (0, 0), 14)
                     sh_h, sh_w = src.shape[:2]
-                    maxw, maxh = 1290, 820
+                    maxw, maxh = 1300, 840
                     cw = maxw; ch = int(cw * sh_h / sh_w)
                     if ch > maxh: ch = maxh; cw = int(ch * sh_w / sh_h)
                     spr, pad, bar, mask = st.window(cw, ch, sh.get('url', ''))
-                    wx = 70 + (maxw - cw) // 2; wy = (H - (ch + bar)) // 2 + 6
+                    wx = 572 + (maxw - cw) // 2; wy = (H - (ch + bar)) // 2 - 8
                     a_in = E.ease_out(lt / 0.35) if prev_kind == 'talk' or lt < 0.35 else 1.0
                     dy = (1 - a_in) * 50
                     E.blend(frame, spr, wx - pad, wy - pad + dy, a_in)
@@ -391,6 +411,13 @@ def build(spec_path, name):
                             E.pop_draw(frame, spr2, mg.get('cx', 715), mg.get('cy', 560), mlt, alpha=fade)
                     if sh.get('header'):
                         hs = cached(('h', sh['header']), lambda: E.header_spr(sh['header'])); E.blend(frame, hs, 70, 34, E.ease_out(lt / 0.3))
+            elif sh['kind'] == 'mg':
+                if scr_shot is not sh:
+                    if scr: scr.close()
+                    mgf = f"{ROOT}/compositions/fcc-part1-mg/out/{sh['mg']}.mp4"
+                    scr = Pipe(mgf, ss=lt if STILLS else 0.0); scr_shot = sh
+                g = scr.read()
+                if g is not None: frame = g.copy()
             elif sh['kind'] == 'graphic':
                 if sh.get('header'):
                     hs = cached(('h', sh['header']), lambda: E.header_spr(sh['header'])); E.blend(frame, hs, 70, 34, E.ease_out(lt / 0.3))
@@ -406,7 +433,7 @@ def build(spec_path, name):
                 spr = cached(('pill', el['text'], el.get('icon'), el.get('red')), lambda: E.pill_spr(el['text'], el.get('icon'),
                              fill=E.RED if el.get('red') else E.CREAM, color=(255, 255, 255) if el.get('red') else E.INK,
                              icolor=(255, 255, 255) if el.get('red') else None))
-                E.pop_draw(frame, spr, el.get('cx', 715), el.get('cy', 990), elt)
+                E.pop_draw(frame, spr, el.get('cx', 1222), el.get('cy', 1018), elt)
         # chapter badge
         for bt, n, txt in badges:
             if bt <= t < bt + 3.4:
@@ -414,7 +441,7 @@ def build(spec_path, name):
                 a2 = E.ease_out(q / 0.35) * E.clamp((bt + 3.4 - t) / 0.3)
                 E.blend(frame, spr, 50 - pad - (1 - E.ease_out(q / 0.35)) * 120, H - 150 - pad, a2)
         # hook captions
-        for c0, c1, wl in caps:
+        for c0, c1, wl in (caps if sh['kind'] == 'talk' else []):
             if c0 <= t < c1:
                 key = ('cap', tuple(wl))
                 def mkcap(wl=wl):
