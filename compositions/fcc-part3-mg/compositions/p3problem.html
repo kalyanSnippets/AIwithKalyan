@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="p3problem" data-start="0" data-width="1920" data-height="1080" data-duration="24.95">
-<section id="p3problem-scene" class="clip" data-start="0" data-duration="24.95" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="p3problem" data-start="0" data-width="1920" data-height="1080" data-duration="23.94">
+<section id="p3problem-scene" class="clip" data-start="0" data-duration="23.94" style="position:absolute;inset:0"><div class="bg"></div>
 <style>
 .tank{position:absolute;width:250px;height:330px}
 .tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
@@ -15,33 +15,136 @@
 .om{background:linear-gradient(135deg,#E53935,#b71c1c);color:#fff;box-shadow:0 0 90px rgba(229,57,53,.6)}
 .dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff}
 .prw{position:absolute;left:600px;top:150px;width:1240px;border-radius:26px;background:#fff;color:#111;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
-.prw .bar{height:60px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 22px;font-weight:700;font-size:22px;color:#666}
-.prw .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.prw .bar{height:56px;background:#f3f3f3;display:flex;align-items:center;gap:10px;padding:0 0 0 22px;font-weight:600;font-size:21px;color:#333}
+.prw .bar i{display:none}
+.prw .bar .wc{margin-left:auto;display:flex;height:56px}
+.prw .bar .wc b{width:66px;display:flex;align-items:center;justify-content:center;font-weight:400;font-size:22px;color:#444}
 .prw .body{padding:34px 44px;font-weight:600;font-size:36px;line-height:1.55;min-height:300px}
 .hl{background:#ffe0de;border-radius:8px;padding:0 6px}
 
-#pipe{position:absolute;left:640px;top:620px;width:1100px;height:26px;border-radius:13px;background:#2a2a32;opacity:0}
-#flow{position:absolute;left:640px;top:620px;width:0;height:26px;border-radius:13px;background:linear-gradient(90deg,#4285f4,#76b900,#7c3aed);box-shadow:0 0 30px #7c3aed}
-#omb{position:absolute;left:900px;top:700px;opacity:0}
+.tk{position:absolute;top:150px;width:340px;height:640px}
+.tlogo{position:absolute;left:0;right:0;top:0;height:96px;display:flex;justify-content:center}
+.tnm{position:absolute;left:0;right:0;top:100px;text-align:center;font-weight:900;font-size:38px}
+.tbox{position:absolute;left:0;right:0;top:160px;height:470px;border-radius:34px;border:5px solid #3a3a44;overflow:hidden;background:#141418;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.liq{position:absolute;left:0;right:0;bottom:0;height:88%}
+.tnum{position:absolute;left:0;right:0;top:150px;text-align:center;font-weight:900;font-size:110px;color:#fff;z-index:3;text-shadow:0 6px 24px rgba(0,0,0,.6)}
+.tlim{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-weight:800;font-size:28px;color:#fff;z-index:3}
+.stamp{position:absolute;left:30px;right:30px;top:180px;text-align:center;font-weight:900;font-size:64px;color:#ff4d47;border:7px solid #ff4d47;border-radius:16px;
+ transform:rotate(-14deg);opacity:0;z-index:4;background:rgba(20,20,24,.75)}
+#lim{position:absolute;left:630px;top:330px;width:1240px;height:0;border-top:6px dashed #ff4d47;opacity:0;z-index:5}
+#limt{position:absolute;left:520px;top:312px;font-weight:900;font-size:30px;color:#ff4d47;opacity:0}
+#cc{position:absolute;left:90px;top:250px;width:400px;height:300px;border-radius:30px;background:#fff;color:#111;display:flex;flex-direction:column;
+ align-items:center;justify-content:center;gap:14px;font-weight:900;font-size:40px;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+#ring{position:absolute;left:190px;top:200px;width:200px;height:200px;border-radius:50%;border:4px solid rgba(229,57,53,.6);opacity:0}
+#pipe{position:absolute;left:830px;top:880px;width:840px;height:22px;border-radius:11px;background:linear-gradient(90deg,#4285f4,#76b900,#7c3aed);
+ box-shadow:0 0 30px rgba(124,58,237,.8);transform-origin:0 50%}
+#sum{left:820px;top:940px;font-size:38px;opacity:0}
+#sw{position:absolute;left:1240px;top:20px;opacity:0}
+#om{position:absolute;left:880px;top:330px;width:720px;height:300px;border-radius:44px;background:linear-gradient(135deg,#E53935,#9d1c1a);display:flex;
+ align-items:center;justify-content:center;gap:26px;font-weight:900;font-size:96px;color:#fff;box-shadow:0 0 140px rgba(229,57,53,.75);opacity:0;z-index:8}
+#shock{position:absolute;left:1240px;top:480px;width:20px;height:20px;margin:-10px;border-radius:50%;border:8px solid #ff6a5a;opacity:0;z-index:7}
 </style>
-<div class="hdr"><i></i>The problem</div><div class="tank" id="tk0" style="left:640px;top:220px"><div class="nm" style="color:#4285f4">Google</div><div class="box"><div class="liq" id="lq0" style="background:linear-gradient(180deg,#4285f4,#4285f488)"></div><div class="lim">some free requests</div></div></div><div class="tank" id="tk1" style="left:1040px;top:220px"><div class="nm" style="color:#76b900">NVIDIA</div><div class="box"><div class="liq" id="lq1" style="background:linear-gradient(180deg,#76b900,#76b90088)"></div><div class="lim">some free requests</div></div></div><div class="tank" id="tk2" style="left:1440px;top:220px"><div class="nm" style="color:#7c3aed">OpenRouter</div><div class="box"><div class="liq" id="lq2" style="background:linear-gradient(180deg,#7c3aed,#7c3aed88)"></div><div class="lim">50 / day</div></div></div>
-<div id="pipe"></div><div id="flow"></div>
-<div id="omb" class="pill red" style="font-size:52px">⚡ OmniRoute</div>
+<div class="hdr"><i></i>The problem</div>
+<div id="ring"></div><div id="cc"><img src="../icons/logo-claude.png" style="width:110px;height:110px">Claude Code</div><div class="tk" id="tk0" style="left:660px"><div class="tlogo"><svg viewBox="0 0 24 24" width="86" height="86"><path fill="#4285f4" d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></div><div class="tnm" style="color:#4285f4">Google</div>
+ <div class="tbox"><div class="liq" id="lq0" style="background:linear-gradient(180deg,#4285f4,#4285f466)"><svg class="wave" width="680" height="40" viewBox="0 0 680 40" style="position:absolute;left:0;top:-30px"><path fill="#4285f4" d="M0 20 Q 42.5 6 85.0 20 Q 127.5 34 170.0 20 Q 212.5 6 255.0 20 Q 297.5 34 340.0 20 Q 382.5 6 425.0 20 Q 467.5 34 510.0 20 Q 552.5 6 595.0 20 Q 637.5 34 680.0 20 V 40 H 0 Z"/></svg></div>
+ <div class="tnum" id="tn0">100%</div><div class="tlim">some free requests</div>
+ <div class="stamp" id="em0">EMPTY</div></div></div><div class="tk" id="tk1" style="left:1080px"><div class="tlogo"><svg viewBox="0 0 24 24" width="86" height="86"><path fill="#76b900" d="M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z"/></svg></div><div class="tnm" style="color:#76b900">NVIDIA</div>
+ <div class="tbox"><div class="liq" id="lq1" style="background:linear-gradient(180deg,#76b900,#76b90066)"><svg class="wave" width="680" height="40" viewBox="0 0 680 40" style="position:absolute;left:0;top:-30px"><path fill="#76b900" d="M0 20 Q 42.5 6 85.0 20 Q 127.5 34 170.0 20 Q 212.5 6 255.0 20 Q 297.5 34 340.0 20 Q 382.5 6 425.0 20 Q 467.5 34 510.0 20 Q 552.5 6 595.0 20 Q 637.5 34 680.0 20 V 40 H 0 Z"/></svg></div>
+ <div class="tnum" id="tn1">100%</div><div class="tlim">some free requests</div>
+ <div class="stamp" id="em1">EMPTY</div></div></div><div class="tk" id="tk2" style="left:1500px"><div class="tlogo"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="86"
+  height="86"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#7c3aed"
+  stroke-width="2.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <circle cx="6" cy="19" r="3" />
+  <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+  <circle cx="18" cy="5" r="3" />
+</svg>
+</div><div class="tnm" style="color:#7c3aed">OpenRouter</div>
+ <div class="tbox"><div class="liq" id="lq2" style="background:linear-gradient(180deg,#7c3aed,#7c3aed66)"><svg class="wave" width="680" height="40" viewBox="0 0 680 40" style="position:absolute;left:0;top:-30px"><path fill="#7c3aed" d="M0 20 Q 42.5 6 85.0 20 Q 127.5 34 170.0 20 Q 212.5 6 255.0 20 Q 297.5 34 340.0 20 Q 382.5 6 425.0 20 Q 467.5 34 510.0 20 Q 552.5 6 595.0 20 Q 637.5 34 680.0 20 V 40 H 0 Z"/></svg></div>
+ <div class="tnum" id="tn2">50</div><div class="tlim">50 / day</div>
+ <div class="stamp" id="em2">EMPTY</div></div></div>
+<div id="lim"></div><div id="limt">LIMIT</div>
+<div id="pipe"></div><div id="sum" class="pill">∑ together: a lot of free AI</div>
+<div id="sw"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="90"
+  height="90"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#fff"
+  stroke-width="2.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" />
+</svg>
+</div>
+<div id="shock"></div><div id="om"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="120"
+  height="120"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#fff"
+  stroke-width="2.6"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z" />
+</svg>
+OmniRoute</div>
 
 </section></div>
 <script>
-const B = {"limit": 4.55, "g": 5.31, "n": 7.07, "o": 8.47, "out": 12.52, "together": 14.6, "what": 17.81, "next": 19.74, "om": 22.86};
+const B = {"limit": 4.55, "g": 5.31, "n": 7.07, "o": 8.47, "out": 11.5, "together": 13.59, "what": 16.8, "next": 18.72, "om": 21.85}; const DUR = 23.94;
 const tl = gsap.timeline({ paused: true });
 
-FX.pop(tl,"#tk0",B.g-0.1); FX.pop(tl,"#tk1",B.n-0.1); FX.pop(tl,"#tk2",B.o-0.1);
-[0,1,2].forEach(i=>tl.to("#lq"+i,{height:"6%",duration:1.6,ease:"power2.in"},B.out+i*0.25));
-[0,1,2].forEach(i=>tl.to("#tk"+i,{x:-10,duration:0.06,yoyo:true,repeat:5},B.out+1.6+i*0.25));
-tl.to("#pipe",{opacity:1,duration:0.3},B.together); [0,1,2].forEach(i=>tl.to("#lq"+i,{height:"100%",duration:0.6},B.together+0.1));
-tl.to("#flow",{width:"1100px",duration:1.0,ease:"power2.inOut"},B.together+0.3);
-tl.to("#lq0",{height:"0%",duration:1.2,ease:"none"},B.what); tl.to("#tk1",{scale:1.08,duration:0.3,yoyo:true,repeat:1},B.next);
-tl.to("#lq1",{height:"40%",duration:1.4,ease:"none"},B.next+0.4);
-tl.fromTo("#omb",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.5,ease:"back.out(2)"},B.om);
+const W=340; FX.loop(tl,DUR,t=>{document.querySelectorAll('.wave').forEach((w,i)=>gsap.set(w,{x:-((t*(90+i*25))%(W/2))*2}));
+  gsap.set("#ring",{scale:1+((t*0.9)%1)*0.9,opacity:0.6*(1-((t*0.9)%1))}); gsap.set("#sw",{rotation:t*240});});
+FX.pop(tl,"#cc",0.05); tl.set("#ring",{opacity:1},0.3);
+tl.fromTo(".tk",{opacity:0,y:60},{opacity:0.22,y:0,duration:0.6,stagger:0.15,ease:"power3.out"},0.4);
+[["#tk0",B.g],["#tk1",B.n],["#tk2",B.o]].forEach(([e,t])=>tl.fromTo(e,{opacity:0.22,scale:0.92},{opacity:1,scale:1,duration:0.45,ease:"back.out(2)",immediateRender:false},t-0.15));
+tl.fromTo("#lim",{opacity:0,scaleX:0},{opacity:1,scaleX:1,duration:0.6,ease:"power3.out",transformOrigin:"0 50%"},B.limit); FX.pop(tl,"#limt",B.limit+0.4);
+// each one runs out fast: requests drain every tank
+const TXc=[830,1250,1670];
+[0,1,2].forEach(i=>{FX.stream(tl,{from:[490,400],to:[TXc[i],560],t0:B.out-0.6,t1:B.out+1.8,rate:7,color:"#ffb199",arc:120,travel:0.6});
+  tl.to("#lq"+i,{height:"0%",duration:1.2,ease:"power2.in"},B.out-0.3+i*0.12);
+  tl.fromTo("#em"+i,{opacity:0,scale:2.2},{opacity:1,scale:1,duration:0.25,ease:"back.out(2.5)",immediateRender:false},B.out+0.95+i*0.12); FX.shake(tl,"#tk"+i,B.out+1.0+i*0.12);});
+const cnt={a:100,b:50}; const setc=()=>{tn0.textContent=tn1.textContent=Math.round(cnt.a)+"%"; tn2.textContent=Math.round(cnt.b);};
+const tn0=document.getElementById('tn0'),tn1=document.getElementById('tn1'),tn2=document.getElementById('tn2');
+tl.fromTo(cnt,{a:100,b:50},{a:0,b:0,duration:1.2,ease:"power2.in",onUpdate:setc},B.out-0.3);
+tl.to(cnt,{a:100,b:50,duration:0.8,ease:"power2.out",onUpdate:setc},B.together);
+// together: refill, slide closer, one pipe
+tl.to(".stamp",{opacity:0,duration:0.25},B.together+0.05); tl.to(["#lq0","#lq1","#lq2"],{height:"88%",duration:0.8,ease:"power2.out"},B.together);
+tl.to("#tk0",{x:80,duration:0.6,ease:"power3.inOut"},B.together); tl.to("#tk2",{x:-80,duration:0.6,ease:"power3.inOut"},B.together);
+tl.fromTo("#pipe",{scaleX:0},{scaleX:1,duration:0.7,ease:"power3.out"},B.together+0.4); tl.set("#pipe",{scaleX:0},0); FX.pop(tl,"#sum",B.together+0.8); tl.to(["#lim","#limt"],{opacity:0,duration:0.3},B.together);
+// when one runs out, the next one takes over
+FX.stream(tl,{from:[490,400],to:t=>t<B.next+0.4?[910,560]:[1250,560],t0:B.what,t1:B.om-0.2,rate:8,color:"#ffffff",arc:140,travel:0.6});
+tl.to("#lq0",{height:"0%",duration:Math.max(0.6,B.next+0.3-B.what),ease:"none"},B.what); tl.fromTo("#em0",{opacity:0,scale:2.2},{opacity:1,scale:1,duration:0.25,ease:"back.out(2.5)",immediateRender:false},B.next+0.2);
+tl.to("#lq1",{height:"55%",duration:Math.max(0.8,B.om-B.next-0.4),ease:"none"},B.next+0.4);
+tl.fromTo("#sw",{opacity:0,scale:0.3},{opacity:1,scale:1,duration:0.4,ease:"back.out(2)"},B.next); FX.out(tl,"#sw",B.om-0.3);
+tl.to("#tk1",{scale:1.05,duration:0.25,yoyo:true,repeat:1},B.next+0.4); FX.out(tl,"#sum",B.next);
+// OmniRoute
+tl.to(".tk",{scale:0.8,opacity:0.25,duration:0.4},B.om-0.1); tl.to("#pipe",{opacity:0.3,duration:0.3},B.om);
+tl.fromTo("#om",{opacity:0,scale:0.3},{opacity:1,scale:1,duration:0.5,ease:"back.out(2.2)"},B.om);
+tl.fromTo("#shock",{opacity:1,scale:1},{opacity:0,scale:90,duration:0.9,ease:"power2.out",immediateRender:false},B.om+0.1);
 
-FX.ambient(tl, 24.95);
+FX.ambient(tl, 23.94);
 window.__timelines["p3problem"] = tl;
 </script></body></html>

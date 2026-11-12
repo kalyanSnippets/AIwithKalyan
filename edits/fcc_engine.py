@@ -147,14 +147,24 @@ class Stage:
         frame[y:y + self.fh, x:x + vw] = (img[:, :vw] * m * a + d * (1 - m * a)).astype(np.uint8)
         blend(frame, self.fborder, x, y, a)
 
-    def window(self, cw, ch, title):
-        k = (cw, ch, title)
+    def window(self, cw, ch, title, style='mac'):
+        k = (cw, ch, title, style)
         if k not in self.win_cache:
-            bar = 46; r = 22
+            bar = 46; r = 22 if style == 'mac' else 12
             card = Image.new('RGBA', (cw, ch + bar), (0, 0, 0, 0)); d = ImageDraw.Draw(card)
             d.rounded_rectangle([0, 0, cw - 1, ch + bar - 1], r, fill=(32, 32, 36, 255))
-            for i, c in enumerate([(255, 95, 87), (254, 188, 46), (40, 200, 64)]):
-                d.ellipse([20 + i * 24, 16, 34 + i * 24, 30], fill=c + (255,))
+            if style == 'win':   # Windows 11 title bar: app title on the left, minimise / maximise / close on the right
+                g = (200, 200, 205, 255); x = cw - 150
+                d.line([x, 23, x + 16, 23], fill=g, width=2)
+                d.rectangle([x + 52, 15, x + 66, 29], outline=g, width=2)
+                d.line([x + 102, 15, x + 116, 29], fill=g, width=2); d.line([x + 116, 15, x + 102, 29], fill=g, width=2)
+                if title:
+                    ic = icon_im('terminal' if 'Claude Code' in title or 'PowerShell' in title else 'app-window', 18, (200, 200, 205))
+                    card.alpha_composite(ic, (18, 14)); card.alpha_composite(text_im(title, 19, (220, 220, 225), 'Medium'), (46, 12))
+                title = None
+            else:
+                for i, c in enumerate([(255, 95, 87), (254, 188, 46), (40, 200, 64)]):
+                    d.ellipse([20 + i * 24, 16, 34 + i * 24, 30], fill=c + (255,))
             if title:
                 t = text_im(title, 19, (200, 200, 205), 'Medium')
                 pw = t.width + 60; px = (cw - pw) // 2

@@ -8,7 +8,9 @@ _m = importlib.util.module_from_spec(_s); _s.loader.exec_module(_m)
 CUTS = _m.CUTS
 SPEED = 1.05
 PAUSE_KEEP = 0.2
-HOLDS = {'1479': [(855.0, 3.2)]}  # after the 503: room for the 'Kiro paused, ask again' explainer
+HOLDS = {}
+CHROME = 'win'    # Windows-style window frames
+JUMPCUT = True    # skipped footage is never fast-forwarded on screen
 A = '1479'
 MGD = os.path.join(_d, '..', 'compositions', 'fcc-part3-mg')
 MG = {s['id']: s for s in json.load(open(os.path.join(MGD, 'scenes.json')))}
@@ -54,7 +56,7 @@ C = 1222
 _PT = os.path.join(_d, '..', 'media', 'privacy_terms.txt')
 _EXTRA = [l.strip() for l in open(_PT) if l.strip()] if os.path.exists(_PT) else []
 PRIV = re.compile('|'.join([r'AIza', r'AQ\.A', r'sk-or', r'sk-', r'nvapi', r'@gmail', r'code=', r'state=',
-                            r'127\.0\.0\.1:\d+/callback', r'Users.?\\?k'] + _EXTRA), re.I)
+                            r'127\.0\.0\.1:\d+/callback', r'Users.?\\?k', r'/home/'] + _EXTRA), re.I)
 def autoblur(key, a, b):
     out = []
     for fn in glob.glob(f'/tmp/fcc-style/ocr_{key}_*.json'):
@@ -71,7 +73,7 @@ ZN, RN = cropper(BROWSER_NB)
 BADGES = [(('OUT', 0.0), 8, 'Method 3 · OmniRoute'), (('OUT', MG['p3team']['start']), 9, 'The combo'),
           (O(349.2), 10, 'Moment of truth'), (O(398.1), 11, 'A real build')]
 W_ = OUTRO['fx']
-def fxw(k, **kw): return dict(at=O(W_[k][0]), dur=round(W_[k][1] - W_[k][0], 3), **kw)
+def fxw(k, **kw): return dict(at=('OUT', W_[k][0]), dur=round(W_[k][1] - W_[k][0], 3), **kw)
 FX = [  # repo effects; in the conclusion only these sit behind the head (the rest of the layer lives on the side walls)
     fxw('strike', fx='huge-strike', text='$20/MONTH'),
     fxw('zero', fx='spotlight', text='$0'),
@@ -90,7 +92,7 @@ SHOTS = [
     # dashboard login (default password) -> home
     dict(at=O(70.30), kind='demo', clip=('154801', 112, 136), url='localhost:20128', header='The dashboard', crop=BROWSER_NB,
          blurs=autoblur('154801', 112, 136), sync=SY(
-        S(70.3, 113.0, WIDE),
+        S(70.3, 115.5, WIDE),
         S(73.0, 117.0, ZN(0.14, 0.6, 2.1)),
         S(77.4, 124.0, ZN(0.14, 0.6, 1.4)),
         S(79.6, 133.0, WIDE)),
@@ -111,7 +113,7 @@ SHOTS = [
         S(113.4, 50.0, ZB(0.34, 0.68, 1.7)),
         S(117.5, 53.0, WIDE),
         S(126.0, 56.0, WIDE)),
-         pills=[P(99.8, 'Kiro · free Claude Sonnet', 'check'), P(103.3, 'Read the warning', 'triangle-alert', True),
+         pills=[P(99.8, 'Kiro · free Claude Sonnet', 'check'), P(101.0, 'Read the warning', 'triangle-alert', True),
                 P(105.7, 'Short code + link', 'key-round'), P(111.2, 'Kiro → Connected ✓', 'check'),
                 P(117.6, 'Small free allowance', 'gauge')]),
     dict(at=O(126.50), kind='demo', clip=('113521', 7, 10), url='OmniRoute · Kiro', header='1 · Kiro', crop=BROWSER,
@@ -120,7 +122,7 @@ SHOTS = [
     # 2 · Antigravity (the callback page and pasted callback URL are blurred; the minutes in between are skipped)
     dict(at=O(135.50), kind='demo', clip=('113521', 86, 228), url='OmniRoute · Antigravity', header='2 · Antigravity', crop=BROWSER,
          blurs=autoblur('113521', 86, 228) + [dict(t0=106, t1=128, r=(0.0, 0.44, 0.46, 0.82)), dict(t0=128, t1=152, r=(0.28, 0.5, 0.72, 0.86)),
-                                             dict(t0=196, t1=219, r=(0.3, 0.6, 0.66, 0.75))], sync=SY(
+                                             dict(t0=196, t1=219, r=(0.3, 0.6, 0.72, 0.75)), dict(t0=213, t1=232, r=(0.32, 0.53, 0.5, 0.58))], sync=SY(
         S(135.5, 86.5, WIDE),
         S(137.4, 88.0, ZB(0.3, 0.42, 1.6)),
         S(141.3, 103.0, WIDE),
@@ -132,8 +134,7 @@ SHOTS = [
          pills=[P(141.5, 'Google sign-in → allow', 'check'), P(145.7, 'Page won\'t load? Normal.', 'app-window'),
                 P(149.8, 'Copy the address → paste → Connect', 'key-round'), P(155.0, 'Gemini + some Claude models', 'check')]),
     dict(at=O(158.90), kind='demo', clip=('113521', 94, 100), url='OmniRoute · Antigravity', header='The warning', crop=BROWSER,
-         zooms=[(94, *ZB(0.5, 0.55, 1.6))],
-         mags=[dict(at=O(160.9), r=RB(0.44, 0.47, 0.84, 0.68), w=900, cx=C, cy=420, dur=5.0)],
+         zooms=[(94, *ZB(0.5, 0.5, 1.8))],
          pills=[P(161.2, 'Use a spare Google account', 'triangle-alert', True)]),
     # 3 · NVIDIA: OmniRoute page -> build.nvidia.com -> Generate API key; then paste + import only free
     dict(at=O(167.10), kind='demo', clip=('113521', 252, 299), url='build.nvidia.com', header='3 · NVIDIA', crop=BROWSER,
@@ -171,9 +172,9 @@ SHOTS = [
         S(225.0, 64.0, WIDE),
         S(226.4, 67.0, ZB(0.33, 0.7, 1.8)),
         S(228.2, 72.0, WIDE),
-        S(232.0, 80.0, ZB(0.45, 0.5, 1.2)),
-        S(233.2, 84.0, ZB(0.45, 0.48, 1.7)),
-        S(238.4, 88.0, ZB(0.25, 0.6, 1.8)),
+        S(232.0, 76.0, ZB(0.5, 0.55, 1.1)),
+        S(233.2, 78.0, ZB(0.45, 0.61, 1.7)),
+        S(238.4, 82.0, ZB(0.22, 0.74, 1.9)),
         S(239.5, 98.0, ZB(0.45, 0.64, 1.45)),
         S(245.0, 104.0, ZB(0.75, 0.65, 2.0)),
         S(248.4, 110.0, ZB(0.42, 0.6, 1.6)),
@@ -193,29 +194,26 @@ SHOTS = [
         S(283.3, 717.8, ZB(0.55, 0.42, 1.6))),
          pills=[P(280.2, 'Name: Claude Code', 'key-round'), P(283.5, 'Shown once → copy it now', 'key-round', True)]),
     mg('p3shortcut'), mg('p3safe'), mg('p3paid'),
-    dict(at=O(342.70), kind='demo', clip=('CR01', 8, 34), url='TEST MACHINE · Claude Code', header='Free models only',
+    dict(at=O(342.70), kind='demo', clip=('CR01', 8, 34), url='Claude Code', header='Free models only', blurs=autoblur('CR01', 8, 34),
          sync=SY(S(342.8, 10.0, WIDE), S(345.7, 19.0, (0.33, 0.6, 1.55))),
          pills=[P(345.9, 'Menu: free models only ✓', 'check', True)]),
     dict(at=O(348.00), kind='talk'),
     # moment of truth: double-click -> server check -> Claude Code -> question -> 503
     dict(at=O(350.50), kind='demo', clip=('121406', 2, 70), url='Free Claude Code', header='Moment of truth',
-         blurs=autoblur('121406', 2, 70) + [dict(t0=3, t1=28, r=(0.17, 0.36, 0.72, 0.55))], sync=SY(
+         blurs=autoblur('121406', 2, 70) + [dict(t0=5.5, t1=28, r=(0.17, 0.36, 0.72, 0.55))], sync=SY(
         S(350.5, 2.5, (0.08, 0.22, 2.4)),
         S(352.3, 7.0, (0.3, 0.3, 1.6)),
-        S(354.4, 10.0, WIDE),
-        S(355.8, 26.0, (0.4, 0.3, 1.5)),
-        S(357.9, 63.0, (0.45, 0.37, 1.5))),
-         mags=[dict(at=O(358.4), r=(0.04, 0.32, 0.88, 0.42), w=1100, cx=C, cy=380, dur=2.0)],
-         pills=[P(352.5, 'OmniRoute: running ✓', 'check'), P(358.4, 'API Error 503', 'triangle-alert', True)]),
-    mg('p3e503'),
-    dict(at=O(366.40), kind='demo', clip=('121406', 138, 148.5), url='Free Claude Code', header='Ask again',
+        S(354.4, 10.0, WIDE)),
+         pills=[P(352.5, 'OmniRoute: running ✓', 'check')]),
+    # only the second question and its answer (the earlier error stays out of frame)
+    dict(at=O(366.40), kind='demo', clip=('121406', 138, 148.5), url='Free Claude Code', header='Which model are you?', crop=(0.03, 0.4, 0.95, 0.9),
          blurs=autoblur('121406', 138, 148.5), sync=SY(
-        S(366.4, 139.0, (0.5, 0.4, 1.25)),
-        S(369.2, 143.0, (0.3, 0.5, 1.6)),
-        S(372.2, 147.0, (0.5, 0.5, 1.1))),
+        S(366.4, 140.0, (0.5, 0.5, 1.0)),
+        S(369.2, 143.0, (0.3, 0.25, 1.6)),
+        S(372.2, 147.0, (0.5, 0.45, 1.1))),
          pills=[P(369.5, '"I am Claude"', 'check'), P(372.4, 'A model\'s word ≠ proof', 'x', True)]),
     # the receipt: OmniRoute logs, one row magnified
-    dict(at=O(375.30), kind='demo', clip=('121406', 158, 185), url='localhost:20128/dashboard/logs', header='The receipt', crop=BROWSER_NB,
+    dict(at=O(375.30), kind='demo', clip=('121406', 158, 179), url='localhost:20128/dashboard/logs', header='The receipt', crop=BROWSER_NB,
          blurs=autoblur('121406', 158, 185), sync=SY(
         S(375.3, 159.0, WIDE),
         S(377.0, 164.0, ZN(0.12, 0.7, 1.4)),
@@ -225,7 +223,7 @@ SHOTS = [
                 P(389.6, 'Real Claude · free account', 'check', True)]),
     dict(at=O(395.20), kind='talk'),
     # a real build on the test machine: plan mode questions -> plan -> build
-    dict(at=O(398.10), kind='demo', clip=('CR04', 44, 160), url='TEST MACHINE · Claude Code', header='A real build', sync=SY(
+    dict(at=O(398.10), kind='demo', clip=('CR04', 44, 160), url='Claude Code', header='A real build', blurs=autoblur('CR04', 44, 160), sync=SY(
         S(398.1, 45.0, WIDE),
         S(401.3, 48.0, (0.3, 0.23, 1.6)),
         S(406.4, 56.0, (0.3, 0.72, 1.35)),
@@ -235,12 +233,12 @@ SHOTS = [
          pills=[P(406.6, 'Plan mode: asks first', 'app-window', True), P(412.3, 'Stack · features · storage', 'settings'),
                 P(417.1, 'Plan → then build', 'check')]),
     mg('p3switch'),
-    dict(at=O(433.50), kind='demo', clip=('CR05', 30, 72), url='TEST MACHINE · Claude Code', header='Fix rounds', sync=SY(
+    dict(at=O(433.50), kind='demo', clip=('CR05', 30, 72), url='Claude Code', header='Fix rounds', blurs=autoblur('CR05', 30, 72), sync=SY(
         S(433.5, 33.0, WIDE), S(436.2, 66.0, (0.3, 0.35, 1.7))),
          pills=[P(434.0, 'v1 didn\'t work', 'x', True), P(436.4, 'A few fix rounds → fixed ✓', 'check')]),
-    dict(at=O(440.50), kind='demo', clip=('CR07', 0, 44), url='TEST MACHINE · localhost:5173', header='It works', sync=SY(
+    dict(at=O(440.50), kind='demo', clip=('CR07', 0, 44), url='localhost:5173', header='It works', blurs=autoblur('CR07', 0, 44), sync=SY(
         S(440.5, 6.0, WIDE), S(441.8, 12.0, (0.35, 0.3, 1.4)), S(443.4, 24.0, (0.5, 0.4, 1.2)), S(445.0, 30.0, WIDE)),
          pills=[P(440.7, 'Notes · tags · markdown · search', 'check'), P(445.2, 'Bill: $0', 'coins', True)]),
     # conclusion: full screen, heavy moving graphics on the side walls behind the speaker (like the intro)
-    dict(at=O(OUTRO['start']), kind='intro', layer=os.path.join(MGD, 'out', 'outro.mov')),
+    dict(at=('OUT', OUTRO['start']), kind='intro', layer=os.path.join(MGD, 'out', 'outro.mov')),
 ]

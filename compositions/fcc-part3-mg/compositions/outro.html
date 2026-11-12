@@ -70,8 +70,8 @@ html,body,#root{background:transparent!important}
 .circ{width:260px;height:260px;border-radius:50%;border:5px dashed rgba(255,255,255,.75);background:rgba(10,10,14,.55);display:flex;align-items:center;
  justify-content:center;text-align:center;font-weight:900;font-size:30px;color:#fff}
 </style><script src="../vendor/gsap.min.js"></script></head>
-<body><div id="root" data-composition-id="outro" data-start="0" data-width="1920" data-height="1080" data-duration="77.035">
-<section id="outro-scene" class="clip" data-start="0" data-duration="77.035" style="position:absolute;inset:0">
+<body><div id="root" data-composition-id="outro" data-start="0" data-width="1920" data-height="1080" data-duration="77.042">
+<section id="outro-scene" class="clip" data-start="0" data-duration="77.042" style="position:absolute;inset:0">
 <div id="L" class="lay">
  <div id="h1" class="neon small" style="left:335px;top:30px;width:420px;text-align:left;font-size:54px">which one<br>fits you?</div>
  <div id="pa" class="path" style="left:345px;top:200px"><div class="q">privacy · offline</div><div class="a"><img src="../icons/logo-ollama.png" style="background:#111;border-radius:12px;padding:4px">Ollama</div></div>
@@ -96,12 +96,12 @@ html,body,#root{background:transparent!important}
  <div id="sb2" class="subbtn" style="left:1340px;top:200px;background:#e6e6ea;color:#444">SUBSCRIBED 🔔</div>
  <div id="tst" class="pill" style="left:345px;top:220px;font-size:34px">🧪 tested for you</div>
  <div id="rcp" class="pill red" style="left:345px;top:330px;font-size:34px">🧾 receipts included</div>
- <div id="slot" class="slot" style="left:1290px;top:110px"><i>▶</i>WATCH NEXT</div>
- <div id="circ" class="circ" style="left:400px;top:190px">SUBSCRIBE<br>AI with Kalyan</div>
+ <div id="slot" class="slot" style="left:330px;top:22px;width:420px;height:236px"><i>▶</i>WATCH NEXT</div>
+ <div id="circ" class="circ" style="left:1480px;top:150px">SUBSCRIBE<br>AI with Kalyan</div>
  <div id="dust"></div>
 </div></section></div>
 <script>
-const B = {"map": 0.1, "fits": 2.01, "priv": 3.11, "oll": 4.91, "speed": 7.94, "orr": 9.28, "keep": 11.52, "omni": 13.87, "rules": 15.78, "r1": 16.86, "r2": 19.64, "r3": 23.78, "r4": 29.26, "bill": 33.89, "everyone": 36.21, "today": 39.14, "off": 42.53, "zero": 46.71, "kit": 48.55, "link": 53.11, "comm": 54.63, "sub": 59.35, "test": 61.12, "next": 63.68, "watch": 66.61, "week": 69.12, "bye": 74.86}, END = 77.035;
+const B = {"map": 0.1, "fits": 2.01, "priv": 3.11, "oll": 4.91, "speed": 7.94, "orr": 9.28, "keep": 11.52, "omni": 13.87, "rules": 15.78, "r1": 16.86, "r2": 19.64, "r3": 23.78, "r4": 29.26, "bill": 33.89, "everyone": 36.21, "today": 39.14, "off": 42.53, "zero": 46.7, "kit": 48.55, "link": 53.11, "comm": 54.63, "sub": 59.35, "test": 61.12, "next": 63.68, "watch": 66.61, "week": 69.12, "bye": 74.86}, END = 77.042;
 const tl = gsap.timeline({paused:true});
 function on(sel,t,o={}){tl.fromTo(sel,{opacity:0,scale:o.s??0.6,y:o.y??0,x:o.x??0},{opacity:1,scale:1,y:0,x:0,duration:o.d??0.5,ease:o.e??"back.out(1.7)"},t);}
 function off(sel,t){tl.to(sel,{opacity:0,scale:0.85,duration:0.3,ease:"power2.in"},t);}
@@ -131,7 +131,7 @@ on("#sb",B.sub,{s:0.4}); tl.to("#sb",{scale:0.9,duration:0.1,yoyo:true,repeat:1}
 tl.fromTo("#sb2",{opacity:0,scale:0.8},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)"},B.sub+1.2); off("#sb2",B.next-0.15);
 on("#tst",B.test,{x:-160}); on("#rcp",B.test+0.8,{x:-160}); off(["#tst","#rcp"],B.next-0.15);
 // end screen slots (YouTube end-screen elements go here)
-on("#slot",B.next,{x:200,s:0.8}); on("#circ",B.week,{x:-160,s:0.8});
+on("#slot",B.next,{x:-200,s:0.8}); on("#circ",B.week,{x:160,s:0.8});
 tl.to("#slot",{boxShadow:"0 0 60px rgba(229,57,53,.8)",duration:0.6,yoyo:true,repeat:5},B.watch);
 window.__timelines["outro"]=tl;
 </script></body></html>

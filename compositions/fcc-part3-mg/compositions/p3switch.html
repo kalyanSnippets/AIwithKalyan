@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="p3switch" data-start="0" data-width="1920" data-height="1080" data-duration="13.57">
-<section id="p3switch-scene" class="clip" data-start="0" data-duration="13.57" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="p3switch" data-start="0" data-width="1920" data-height="1080" data-duration="13.56">
+<section id="p3switch-scene" class="clip" data-start="0" data-duration="13.56" style="position:absolute;inset:0"><div class="bg"></div>
 <style>
 .tank{position:absolute;width:250px;height:330px}
 .tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
@@ -15,32 +15,107 @@
 .om{background:linear-gradient(135deg,#E53935,#b71c1c);color:#fff;box-shadow:0 0 90px rgba(229,57,53,.6)}
 .dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff}
 .prw{position:absolute;left:600px;top:150px;width:1240px;border-radius:26px;background:#fff;color:#111;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
-.prw .bar{height:60px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 22px;font-weight:700;font-size:22px;color:#666}
-.prw .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.prw .bar{height:56px;background:#f3f3f3;display:flex;align-items:center;gap:10px;padding:0 0 0 22px;font-weight:600;font-size:21px;color:#333}
+.prw .bar i{display:none}
+.prw .bar .wc{margin-left:auto;display:flex;height:56px}
+.prw .bar .wc b{width:66px;display:flex;align-items:center;justify-content:center;font-weight:400;font-size:22px;color:#444}
 .prw .body{padding:34px 44px;font-weight:600;font-size:36px;line-height:1.55;min-height:300px}
 .hl{background:#ffe0de;border-radius:8px;padding:0 6px}
 
-.lane{position:absolute;left:640px;width:1200px;height:110px;border-radius:20px;background:#1b1b20;border:2px solid #2c2c34}
-.lane span{position:absolute;left:24px;top:30px;font-weight:900;font-size:36px;z-index:2}
-.lb{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:20px}
-#cursor{position:absolute;left:640px;top:200px;width:6px;height:380px;background:#fff;box-shadow:0 0 18px #fff}
+#feed{position:absolute;left:620px;top:140px;width:1240px;height:640px;border-radius:30px;background:#0f0f13;border:2px solid #2c2c34;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+#fh{position:absolute;left:0;right:0;top:0;height:70px;background:#1b1b20;display:flex;align-items:center;gap:16px;padding:0 28px;font-weight:800;font-size:28px;color:#bbb}
+#rows{position:absolute;left:0;right:0;top:80px}
+.lr{position:absolute;left:24px;right:24px;height:74px;border-radius:14px;display:flex;align-items:center;gap:22px;padding:0 20px;font-family:"JBMono",monospace;font-size:28px;color:#ddd;background:#17171c}
+.lr b{padding:6px 14px;border-radius:8px;font-family:Inter;font-weight:900;font-size:24px}
+#lim{left:1260px;top:820px;font-size:34px;opacity:0}
+#sw{left:640px;top:820px;font-size:34px;opacity:0}
+#hand{left:1100px;top:930px;font-size:34px;opacity:0}
+#rec{width:16px;height:16px;border-radius:50%;background:#ff4d47}
 </style>
-<div class="hdr"><i></i>From the logs</div>
-<div class="lane" style="top:220px"><span>Claude Sonnet · Kiro</span><div class="lb" id="b1" style="background:linear-gradient(90deg,#ff9900,#ffb84d)"></div></div>
-<div class="lane" style="top:380px"><span>Nemotron · NVIDIA</span><div class="lb" id="b2" style="background:linear-gradient(90deg,#76b900,#a6e22e)"></div></div>
-<div id="lim" class="pill red" style="left:1060px;top:120px;font-size:30px">⚠ free limit reached</div>
-<div id="auto" class="pill" style="left:900px;top:540px;font-size:34px">🔀 switched automatically</div>
-<div id="hand" class="pill red" style="left:640px;top:660px;font-size:36px">🙌 I didn't touch anything</div>
+<div class="hdr"><i></i>Straight from the logs</div>
+<div id="feed"><div id="fh"><div id="rec"></div>OmniRoute · request log · combo "claude"</div><div id="rows"></div></div>
+<div id="lim" class="pill red"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#fff"
+  stroke-width="2.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M5 22h14" />
+  <path d="M5 2h14" />
+  <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
+  <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
+</svg>
+ Kiro free limit reached</div>
+<div id="sw" class="pill"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#111"
+  stroke-width="2.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+  <path d="M21 3v5h-5" />
+  <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+  <path d="M8 16H3v5" />
+</svg>
+ switched to NVIDIA by itself</div>
+<div id="hand" class="pill red"><!-- @license lucide-static v1.57.0 - ISC -->
+<svg
+  
+  xmlns="http://www.w3.org/2000/svg"
+  width="40"
+  height="40"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#fff"
+  stroke-width="2.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2" />
+  <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2" />
+  <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8" />
+  <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15" />
+</svg>
+ I didn't touch anything</div>
 
 </section></div>
 <script>
-const B = {"logs": 1.42, "ran": 5.05, "nv": 7.09, "kept": 9.59, "touch": 10.62, "point": 12.06};
+const B = {"logs": 1.41, "planning": 3.43, "ran": 5.05, "nv": 7.09, "kept": 9.58, "touch": 10.61, "point": 12.06}; const DUR = 13.56;
 const tl = gsap.timeline({ paused: true });
 
-tl.to("#b1",{width:"45%",duration:(B.ran-B.logs)+0.4,ease:"none"},B.logs); FX.pop(tl,"#lim",B.ran);
-tl.set("#b2",{left:"45%"},0); tl.to("#b2",{width:"55%",duration:(B.touch-B.nv)+1.5,ease:"none"},B.nv); FX.pop(tl,"#auto",B.nv+0.3);
-FX.pop(tl,"#hand",B.touch); tl.to(["#auto"],{scale:1.1,duration:0.2,yoyo:true,repeat:1},B.point);
+const rows=document.getElementById('rows'); const N=16; const els=[];
+const KIRO="<!-- @license lucide-static v1.57.0 - ISC -->\n<svg\n  \n  xmlns=\"http://www.w3.org/2000/svg\"\n  width=\"40\"\n  height=\"40\"\n  viewBox=\"0 0 24 24\"\n  fill=\"none\"\n  stroke=\"#9046ff\"\n  stroke-width=\"2.2\"\n  stroke-linecap=\"round\"\n  stroke-linejoin=\"round\"\n>\n  <path d=\"M15 10v1\" />\n  <path d=\"M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z\" />\n  <path d=\"M9 10v1\" />\n</svg>\n", NV="<svg viewBox=\"0 0 24 24\" width=\"40\" height=\"40\"><path fill=\"#76b900\" d=\"M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z\"/></svg>";
+for(let i=0;i<N;i++){const r=document.createElement('div'); r.className='lr'; rows.appendChild(r); els.push(r);}
+// row i appears at time T[i]; content depends on which provider was answering then
+const T=[]; for(let i=0;i<N;i++) T.push(0.4+i*((DUR-0.6)/N));
+const sw=B.nv;
+els.forEach((r,i)=>{const t=T[i]; const lim=(t>=B.ran-0.4&&t<sw); const nv=t>=sw;
+  r.innerHTML= lim ? '<b style="background:#ff4d47;color:#fff">LIMIT</b><span style="flex:1">claude-sonnet-4.5</span>'+KIRO+'<span>Kiro</span>'
+    : nv ? '<b style="background:#2ecc71;color:#08311a">200</b><span style="flex:1">nemotron</span>'+NV+'<span>NVIDIA</span>'
+         : '<b style="background:#2ecc71;color:#08311a">200</b><span style="flex:1">claude-sonnet-4.5</span>'+KIRO+'<span>Kiro</span>';
+  if(lim) r.style.background='rgba(229,57,53,.25)'; if(nv) r.style.background='rgba(118,185,0,.16)';
+  gsap.set(r,{opacity:0});});
+FX.loop(tl,DUR,t=>{let k=0; for(let i=N-1;i>=0;i--){const r=els[i]; if(t<T[i]){gsap.set(r,{opacity:0}); continue;}
+    const u=Math.min(1,(t-T[i])/0.35); gsap.set(r,{opacity:k<7?u:0,y:k*82+(1-u)*-40}); k++;}
+  gsap.set("#rec",{opacity:0.4+0.6*Math.abs(Math.sin(t*3))});});
+FX.rise(tl,"#feed",0.05); FX.pop(tl,"#lim",B.ran); FX.out(tl,"#lim",B.nv);
+FX.pop(tl,"#sw",B.nv+0.2); tl.to("#feed",{boxShadow:"0 0 90px rgba(118,185,0,.55)",duration:0.4},B.nv+0.2);
+FX.pop(tl,"#hand",B.touch); FX.pulse(tl,"#sw",B.point,1);
 
-FX.ambient(tl, 13.57);
+FX.ambient(tl, 13.56);
 window.__timelines["p3switch"] = tl;
 </script></body></html>

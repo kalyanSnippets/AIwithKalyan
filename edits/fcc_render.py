@@ -24,6 +24,8 @@ def load(path, name):
 
 P = load(f'{ROOT}/edits/free-claude-code.parts.py', 'parts')
 FILES = P.FILES
+CHROME = 'mac'
+JUMPCUT = False
 
 # ------------------------------------------------------------------ word lookup (Scribe)
 _words = {}
@@ -140,6 +142,7 @@ def src_time(sh, lt):
     for (l0, s0), (l1, s1) in zip(pts, pts[1:]):
         if lt < l1:
             if s1 - s0 <= l1 - l0: return min(s0 + (lt - l0), s1)          # real time, then hold until the next line
+            if JUMPCUT: return s0 + (lt - l0)                                # real time, then cut straight to the next point
             return s0 + (s1 - s0) * (lt - l0) / max(1e-6, l1 - l0)          # catch up (sped up)
     l0, s0 = pts[-1]
     return min(b, s0 + (lt - l0))
@@ -211,6 +214,8 @@ def build(spec_path, name):
     P.PAUSE_KEEP = getattr(S, 'PAUSE_KEEP', 0.3)
     P.HOLDS = getattr(S, 'HOLDS', {})
     SPEED = getattr(S, 'SPEED', 1.0)
+    global CHROME; CHROME = getattr(S, 'CHROME', 'mac')
+    global JUMPCUT; JUMPCUT = getattr(S, 'JUMPCUT', False)
     hsh = hashlib.md5((repr(S.CUTS) + repr(P.PAUSE_KEEP) + repr(SPEED) + repr(getattr(S, 'HOLDS', {}))).encode()).hexdigest()[:10]
     cache = f'{WORK}/{name}_face_{hsh}.json'
     if os.path.exists(cache):
@@ -428,7 +433,7 @@ def build(spec_path, name):
                     maxw, maxh = 1300, 840
                     cw = maxw; ch = int(cw * sh_h / sh_w)
                     if ch > maxh: ch = maxh; cw = int(ch * sh_w / sh_h)
-                    spr, pad, bar, mask = st.window(cw, ch, sh.get('url', ''))
+                    spr, pad, bar, mask = st.window(cw, ch, sh.get('url', ''), sh.get('chrome', CHROME))
                     wx = 572 + (maxw - cw) // 2; wy = (H - (ch + bar)) // 2 - 8
                     a_in = E.ease_out(lt / 0.35) if prev_kind == 'talk' or lt < 0.35 else 1.0
                     dy = (1 - a_in) * 50

@@ -68,8 +68,8 @@ html = '''
  <div id="sb2" class="subbtn" style="left:1340px;top:200px;background:#e6e6ea;color:#444">SUBSCRIBED 🔔</div>
  <div id="tst" class="pill" style="left:345px;top:220px;font-size:34px">🧪 tested for you</div>
  <div id="rcp" class="pill red" style="left:345px;top:330px;font-size:34px">🧾 receipts included</div>
- <div id="slot" class="slot" style="left:1290px;top:110px"><i>▶</i>WATCH NEXT</div>
- <div id="circ" class="circ" style="left:400px;top:190px">SUBSCRIBE<br>AI with Kalyan</div>
+ <div id="slot" class="slot" style="left:330px;top:22px;width:420px;height:236px"><i>▶</i>WATCH NEXT</div>
+ <div id="circ" class="circ" style="left:1480px;top:150px">SUBSCRIBE<br>AI with Kalyan</div>
  <div id="dust"></div>
 </div>'''
 js = r'''
@@ -103,7 +103,7 @@ on("#sb",B.sub,{s:0.4}); tl.to("#sb",{scale:0.9,duration:0.1,yoyo:true,repeat:1}
 tl.fromTo("#sb2",{opacity:0,scale:0.8},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)"},B.sub+1.2); off("#sb2",B.next-0.15);
 on("#tst",B.test,{x:-160}); on("#rcp",B.test+0.8,{x:-160}); off(["#tst","#rcp"],B.next-0.15);
 // end screen slots (YouTube end-screen elements go here)
-on("#slot",B.next,{x:200,s:0.8}); on("#circ",B.week,{x:-160,s:0.8});
+on("#slot",B.next,{x:-200,s:0.8}); on("#circ",B.week,{x:160,s:0.8});
 tl.to("#slot",{boxShadow:"0 0 60px rgba(229,57,53,.8)",duration:0.6,yoyo:true,repeat:5},B.watch);
 window.__timelines["outro"]=tl;
 '''

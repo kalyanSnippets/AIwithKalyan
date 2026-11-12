@@ -9,7 +9,7 @@ KEEPS = [
     ('Google gives you some free requests', 27.0, 'some free requests.'),
     ('NVIDIA gives you some', 31.5, 'gives you some.'),
     ('OpenRouter gives you fifty a day', 33.0, 'fifty a day on its own.'),
-    ('On its own, each one runs out fast', 38.0, 'runs out fast.'),
+    ('each one runs out fast', 39.0, 'runs out fast.'),                  # drop the repeated 'On its own,'
     ('But if you put them all together', 41.0, 'free AI, right?'),
     ('And what if when one runs out', 49.0, 'without you doing anything?'),
     ("that's exactly what OmniRoute does", 57.5, 'OmniRoute does.'),
@@ -39,7 +39,8 @@ KEEPS = [
     ('and back in OmniRoute, Kiro shows Connected', 312.0, 'shows Connected.'),
     ('And two honest things about Kiro', 321.5, 'about Kiro.'),
     ('The free allowance is small', 324.0, 'subscription required page,'),
-    ('and OmniRoute itself marks Kiro', 334.5, 'service avoid.'),
+    ('and OmniRoute itself marks Kiro as', 334.5, 'Kiro as'),
+    ('terms of service avoid', 338.5, 'service avoid.'),                 # 'terms of service' said once
     ('because using it this way', 344.0, "Kiro's rules,"),
     ('So this one is your account and your call', 356.0, 'your call.'),
     ('so number two is Antigravity', 362.5, 'is Antigravity.'),
@@ -101,13 +102,11 @@ KEEPS = [
     ('So I gave Antigravity one more prompt:', 791.0, 'one more prompt:'),
     ('turn on hide paid models in OmniRoute', 793.0, 'in OmniRoute,'),
     ('And keep my Claude combo as the default', 801.0, 'the default.'),
-    ("On my test machine, that's exactly what happened", 804.0, 'free options.'),
+    ("that's exactly what happened", 805.0, 'free options.'),
     ("everything's connected", 812.5, 'connected.'),
     ('Moment of truth', 814.0, 'of truth.'),
     ('I double-click free Claude Code', 819.5, 'free Claude Code.'),
     ("it checks OmniRoute, it's running", 824.0, 'Claude Code opens.'),
-    ('So I ask obvious question', 827.5, 'five zero three.'),
-    ('Five zero three means service temporarily unavailable', 839.5, 'temporarily unavailable.'),
     ('So obvious question is, which model are you', 876.5, 'which model are you?'),
     ('And it answers, "I am Claude."', 880.5, 'check the bill.'),
     ('I open the OmniRoute dashboard, go to logs,', 901.0, 'go to logs,'),
@@ -117,7 +116,8 @@ KEEPS = [
     ("So that's real Claude Sonnet answering", 932.0, 'through a free account.'),
     ("That's the receipt", 937.5, 'the receipt.'),
     ('But a high proves nothing', 941.5, 'something real.'),
-    ('On my machine, with the same kind of setup, I asked,', 945.0, 'I asked,'),
+    ('On my machine,', 945.0, 'my machine,'),
+    ('I asked,', 948.0, 'I asked,'),
     ('Design me a simple personal note-taking application,', 959.0, 'note-taking application,'),
     ("And it doesn't just start writing code", 972.0, 'writing code.'),
     ("It's in plan mode", 982.0, 'in plan mode.'),
@@ -179,3 +179,6 @@ def _split(cuts, at_s, gap_s, gap_e):
     return out
 CUTS = _split(CUTS, None, 152.10, 152.93)          # "Then, then install" -> "Then, install"
 CUTS = [(tk, s, 948.85 if (s < 948.6 < e and e < 949.2) else e) for tk, s, e in CUTS]
+# end before a cough / sigh / the next word's onset
+_END = {24.9: 24.8, 337.32: 337.24, 359.28: 359.2}
+CUTS = [(tk, s, _END.get(round(e, 2), e)) for tk, s, e in CUTS]
