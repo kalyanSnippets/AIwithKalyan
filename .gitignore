@@ -42,3 +42,4 @@ REA/remotion/out/
 
 # REA proofs build output
 REA/proofs/*/dist/
+__pycache__/
