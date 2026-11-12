@@ -62,8 +62,8 @@ html = '''
      <div id="bill" class="billtxt">$20<small>/mo</small></div><div id="zero" class="billtxt green">$0</div></div>
    <div id="tray" class="tray"><div class="chip"></div></div></div></div>
  <div id="bigsim" class="sim big" style="left:380px;top:300px"><div class="chip"></div><b id="simlbl">SIM</b><i id="simprice">$20 / month</i></div>
- <div id="lbl1" class="neon small" style="left:340px;top:70px;width:900px;text-align:left">phone = Claude Code</div>
- <div id="lbl2" class="neon small" style="left:340px;top:190px;width:900px;text-align:left;color:#ffb3a9">SIM = the AI model</div>
+ <div id="lbl1" class="neon small" style="left:360px;top:8px;width:1200px;text-align:center">phone = Claude Code</div>
+ <div id="lbl2" class="neon small" style="left:360px;top:100px;width:1200px;text-align:center;color:#ffb3a9">SIM = the AI model</div>
  ''' + ''.join(f'<div id="fs{i}" class="sim small"><div class="chip"></div><b>$0</b></div>' for i in range(3)) + '''
  <!-- plan -->
  <div id="zeroN" class="neon" style="left:420px;top:20px;width:1080px">$<span id="zn">20</span></div>
@@ -176,11 +176,11 @@ tl.set("#stage3d",{opacity:1},B.phone); on("#phone",B.phone,{y:300,s:0.8,d:0.9,e
 const ph={v:0};tl.fromTo(ph,{v:0},{v:1,duration:B.end-B.phone,ease:"none",onUpdate:()=>{const tt=ph.v*(B.end-B.phone);
   gsap.set("#phone",{rotationY:-28+Math.sin(tt*0.9)*14,rotationX:6+Math.sin(tt*0.6)*4,y:Math.sin(tt*1.3)*14});}},B.phone);
 tl.to("#hw",{opacity:0,duration:0.3},B.ccphone); tl.fromTo("#boot",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.6,ease:"back.out(2)"},B.ccphone+0.1);
-on("#lbl1",B.ccphone,{x:-80,s:1}); ["#rw1","#rw2","#rw3"].forEach((s,i)=>tl.fromTo(s,{opacity:0,y:20},{opacity:1,y:0,duration:0.3},B.rwr+i*0.9));
+on("#lbl1",B.ccphone,{y:-60,s:1}); ["#rw1","#rw2","#rw3"].forEach((s,i)=>tl.fromTo(s,{opacity:0,y:20},{opacity:1,y:0,duration:0.3},B.rwr+i*0.9));
 tl.fromTo("#tray",{x:0},{x:120,duration:0.5,ease:"power2.out"},B.sim);
 on("#bigsim",B.sim+0.4,{x:900,r:200,s:0.3,d:0.9,e:"power3.out"});
 const sp={v:0};tl.fromTo(sp,{v:0},{v:1,duration:B.others-B.sim,ease:"none",onUpdate:()=>{gsap.set("#bigsim",{rotationY:Math.sin(sp.v*(B.others-B.sim)*1.2)*25});}},B.sim+1.3);
-on("#lbl2",B.model,{x:-80,s:1}); tl.to("#simprice",{opacity:1,duration:0.3},B.simprice); tl.to("#bill",{opacity:1,duration:0.3},B.simprice+0.3);
+on("#lbl2",B.model,{y:-60,s:1}); tl.to("#simprice",{opacity:1,duration:0.3},B.simprice); tl.to("#bill",{opacity:1,duration:0.3},B.simprice+0.3);
 tl.to("#boot",{opacity:0.3,duration:0.3},B.simprice+0.3); tl.to("#bigsim",{x:-40,duration:0.06,yoyo:true,repeat:5},B.simprice+0.4);
 tl.to("#bigsim",{y:900,rotation:-60,opacity:0,duration:0.9,ease:"power3.in"},B.others); tl.to("#bill",{opacity:0,duration:0.3},B.others);
 const orb={v:0};[0,1,2].forEach(i=>tl.set("#fs"+i,{opacity:1},B.others+0.3));
