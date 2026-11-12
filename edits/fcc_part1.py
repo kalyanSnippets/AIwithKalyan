@@ -29,21 +29,21 @@ SHOTS = [
     # ---------------- 2 · phone / SIM example
     dict(at=(A, 55.62), kind='graphic', header='How this works', els=[
         dict(type='card', at=(A, 'Claude Code is like the phone', 64.0), title='Claude Code', sub='= the phone\nfree app from Anthropic',
-             icon='logo-claude', cx=L, cy=470, w=400),
+             icon='logo-claude', cx=L, cy=520, w=400),
         dict(type='card', at=(A, 'The AI model is like the SIM', 73.0), title='AI model', sub='= the SIM card\nthe brain that thinks',
-             icon='brain', cx=M, cy=470, w=400),
+             icon='brain', cx=M, cy=520, w=400),
         dict(type='pill', at=(A, "Anthropic's model costs", 77.5), text="Anthropic's brain: $20/month", icon='coins', cx=M, cy=790, red=True),
-        dict(type='card', at=(A, 'accepts other SIMs', 80.0), title='Free SIMs', sub='other brains\nthat cost $0', icon='sparkles', cx=R, cy=470, w=400),
+        dict(type='card', at=(A, 'accepts other SIMs', 80.0), title='Free SIMs', sub='other brains\nthat cost $0', icon='sparkles', cx=R, cy=520, w=400),
     ]),
     # ---------------- 3 roadmap
     dict(at=(A, 95.30), kind='graphic', header="Here's the plan", els=[
         dict(type='pill', at=(A, 95.30), text='The real Claude Code · $0 · 3 ways', icon='check', cx=M, cy=200),
         dict(type='card', at=(A, 'First, completely on your own laptop', 105.0), num=1, title='Ollama', sub='your own laptop\nWi-Fi OFF',
-             icon='logo-ollama', cx=L, cy=540, w=380, hl=(A, 'First, completely on your own laptop', 105.0)),
+             icon='logo-ollama', cx=L, cy=560, w=380, hl=(A, 'First, completely on your own laptop', 105.0)),
         dict(type='card', at=(A, 'Then free AI models in the cloud', 114.5), num=2, title='OpenRouter', sub='free cloud models\n+ the one trap',
-             icon='cloud', cx=M, cy=540, w=380, hl=(A, 'Then free AI models in the cloud', 114.5)),
+             icon='cloud', cx=M, cy=560, w=380, hl=(A, 'Then free AI models in the cloud', 114.5)),
         dict(type='card', at=(A, 'And finally, several free providers', 164.3), num=3, title='OmniRoute', sub='many free providers\nreal Claude Sonnet',
-             icon='zap', cx=R, cy=540, w=380, hl=(A, 'And finally, several free providers', 164.3)),
+             icon='zap', cx=R, cy=560, w=380, hl=(A, 'And finally, several free providers', 164.3)),
         dict(type='pill', at=(A, 'with the logs to prove it', 164.3), text='Receipts: the logs prove it', icon='receipt', cx=M, cy=880),
     ]),
     dict(at=(A, 'And I have put everything into a free setup kit', 173.4), kind='graphic', header='Free setup kit', els=[
@@ -67,9 +67,9 @@ SHOTS = [
     ]),
     dict(at=(B, 'The big difference from ChatGPT', 34.8), kind='graphic', header='The big difference', els=[
         dict(type='card', at=(B, 'The big difference from ChatGPT', 34.8), title='ChatGPT / Claude', sub='your prompts go\nto the cloud',
-             icon='cloud', cx=L + 40, cy=470, w=500),
+             icon='cloud', cx=L + 40, cy=500, w=500),
         dict(type='card', at=(B, 'nothing goes to the cloud', 34.8), title='Ollama', sub='nothing leaves\nyour laptop', icon='laptop',
-             cx=R - 40, cy=470, w=500, hl=(B, 'The AI lives on your own machine', 39.6)),
+             cx=R - 40, cy=500, w=500, hl=(B, 'The AI lives on your own machine', 39.6)),
         dict(type='pill', at=(B, "so it's private", 39.6), text='Private', icon='shield-check', cx=M - 170, cy=820),
         dict(type='pill', at=(B, 'works without internet', 39.6), text='Works offline', icon='wifi-off', cx=M + 170, cy=820),
     ]),
@@ -138,9 +138,10 @@ SHOTS = [
         dict(type='pill', at=(B, 'The exact list I would pick', 429.7), text='Full list → free setup kit', icon='package', cx=M, cy=820, red=True),
     ]),
     dict(at=(B, 441.32), kind='demo', clip=('145317', 95, 210), url='chatgpt.com', header='Ask an AI',
+         zooms=[(95, .5, .5, 1.0), (100, 0.52, 0.49, 1.25), (172, .5, .5, 1.0)],
          pills=[dict(at=(B, 'and the latest one', 451.3), text='Ask for the LATEST model', icon='sparkles', cy=1010),
                 dict(at=(B, 'And it suggested MiMo', 468.3), text='Answer: MiMo v2.6 · 9B', icon='bot', cy=1010, red=True)]),
-    dict(at=(B, 479.66), kind='demo', clip=('145317', 224, 240), url='Ollama · model list', header='First problem',
+    dict(at=(B, 479.66), kind='demo', clip=('145317', 238, 252), url='Ollama · model list', header='First problem',
          pills=[dict(at=(B, "wasn't in Ollama's drop-down", 479.6), text="MiMo isn't in the list", icon='x', cy=1010, red=True)]),
     dict(at=(B, 498.88), kind='demo', clip=('145317', 268.5, 277), url='Windows PowerShell', header='Try the terminal', zooms=[(268.5, 0.32, 0.26, 1.6)],
          pills=[dict(at=(B, 'the black text window', 498.9), text='Terminal = where you type commands', icon='terminal', cy=1010)]),
@@ -157,7 +158,7 @@ SHOTS = [
         dict(type='pill', at=(B, 'reads the errors', 539.2), text='Reads the errors', icon='search', cx=R - 60, cy=520),
         dict(type='pill', at=(B, 'and fixes them', 539.2), text='Fixes them', icon='wand-sparkles', cx=R - 60, cy=640, red=True),
     ]),
-    dict(at=(B, 'Download it from antigravity.google', 543.5), kind='demo', clip=('145317', 330, 362), url='antigravity.google/download',
+    dict(at=(B, 'Download it from antigravity.google', 543.5), kind='demo', clip=('145317', 353.5, 362), url='antigravity.google/download',
          header='Get Antigravity'),
     dict(at=(B, 'I am running AI model locally', 549.0), kind='graphic', header='One sentence', els=[
         dict(type='prompt', at=(B, 'I am running AI model locally', 549.0),
@@ -178,9 +179,9 @@ SHOTS = [
         dict(type='card', at=(B, 'An AI installs it', 602.9), title='An AI installs it', sub='Antigravity does the work', icon='bot', cx=R - 20,
              cy=420, w=480, hl=(B, 'An AI installs it', 602.9)),
         dict(type='arrow', at=(B, 'An AI installs it', 602.9), p=(520, 420, 680, 420)),
-        dict(type='pill', at=(B, 'you just copy the error', 604.5), text='Copy the error', icon='triangle-alert', cx=M - 330, cy=800),
-        dict(type='pill', at=(B, 'paste it back to Antigravity', 604.5), text='Paste it back', icon='message-square', cx=M, cy=800),
-        dict(type='pill', at=(B, 'Fix this', 604.5), text='"Fix this"', icon='wand-sparkles', cx=M + 320, cy=800, red=True),
+        dict(type='pill', at=(B, 'you just copy the error', 604.5), text='Copy the error', icon='triangle-alert', cx=L - 30, cy=820, size=32),
+        dict(type='pill', at=(B, 'paste it back to Antigravity', 604.5), text='Paste it back', icon='message-square', cx=M + 10, cy=820, size=32),
+        dict(type='pill', at=(B, 'Fix this', 604.5), text='"Fix this"', icon='wand-sparkles', cx=R + 40, cy=820, size=32, red=True),
     ]),
 
     # ---------------- 4 · Claude Code on Ollama

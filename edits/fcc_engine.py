@@ -196,7 +196,7 @@ def pill_spr(text, icon=None, fill=CREAM, color=INK, size=36, icolor=None, outli
     card.alpha_composite(t, (26 + iw, (h - t.height) // 2))
     sh, pad = with_shadow(card, 14, 8, 130, 30); return np_rgba(sh)
 
-def card_spr(title, sub=None, icon=None, w=380, accent=False, num=None, big_icon=120, dark=False):
+def card_spr(title, sub=None, icon=None, w=380, accent=False, num=None, big_icon=140, dark=False):
     fill = (24, 24, 28, 255) if dark else (255, 255, 255, 255)
     tc = (255, 255, 255) if dark else INK; sc = (170, 170, 178) if dark else (95, 95, 105)
     parts = []
@@ -205,7 +205,7 @@ def card_spr(title, sub=None, icon=None, w=380, accent=False, num=None, big_icon
         if icon in ('logo-ollama', 'logo-anthropic', 'logo-openai', 'logo-google'):
             disc = rrect_im(big_icon + 34, big_icon + 34, 28, INK + (255,)); disc.alpha_composite(ic, (17, 17)); ic = disc
         parts.append((ic, 20))
-    ts = 50
+    ts = 56
     tt = text_im(title, ts, tc, 'ExtraBold')
     while tt.width > w - 48 and ts > 26: ts -= 2; tt = text_im(title, ts, tc, 'ExtraBold')
     parts.append((tt, 8))
