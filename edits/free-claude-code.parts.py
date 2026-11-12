@@ -176,12 +176,17 @@ def face_track(name, cuts):
     parts, tmap, t = [], [], 0.0
     for take, s, e in cuts:
         for x, y in refine(take, s, e):
-            d = y - x
+            # A/V sync: cut on the 30 fps frame grid and make the audio exactly as long as the video
+            # (otherwise each piece's audio is a fraction of a frame short and the voice drifts ahead of the lips).
+            f0, f1 = round(x * 30), round(y * 30)
+            n = f1 - f0
+            if n < 3: continue
+            x, d = f0 / 30, n / 30
             p = f'{OUT}/{name}_p{len(parts):04d}.mov'
-            run(['-ss', f'{x:.3f}', '-i', f'{RAW}/IMG_{take}.MOV', '-t', f'{d:.3f}', '-map', '0:v:0', '-map', '0:a:0',
-                 '-af', f'afade=t=in:d=0.006,afade=t=out:st={max(0, d - 0.010):.3f}:d=0.010', *ENCV, *ENCA, p])
-            real = dur(p)
-            tmap.append((take, x, y, t)); t += real; parts.append(p)
+            run(['-ss', f'{x:.4f}', '-i', f'{RAW}/IMG_{take}.MOV', '-map', '0:v:0', '-map', '0:a:0', '-frames:v', str(n),
+                 '-af', f'aresample=48000,afade=t=in:d=0.006,afade=t=out:st={d - 0.010:.4f}:d=0.010,apad,atrim=end_sample={n * 1600}',
+                 *ENCV, *ENCA, p])
+            tmap.append((take, x, x + d, t)); t += d; parts.append(p)
     out = f'{OUT}/{name}_face.mov'
     run(['-f', 'concat', '-safe', '0', '-i', txt(f'{name}_flist', ''.join(f"file '{p}'\n" for p in parts)), '-c', 'copy', out])
     for p in parts: os.remove(p)
