@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="p3key" data-start="0" data-width="1920" data-height="1080" data-duration="14.27">
-<section id="p3key-scene" class="clip" data-start="0" data-duration="14.27" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="p3key" data-start="0" data-width="1920" data-height="1080" data-duration="14.28">
+<section id="p3key-scene" class="clip" data-start="0" data-duration="14.28" style="position:absolute;inset:0"><div class="bg"></div>
 <style>
 .tank{position:absolute;width:250px;height:330px}
 .tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
@@ -30,13 +30,13 @@
 
 </section></div>
 <script>
-const B = {"one": 0.86, "omk": 4.36, "pw": 6.27, "shows": 8.53, "behind": 13.29};
+const B = {"one": 0.87, "omk": 4.37, "pw": 6.27, "shows": 8.53, "behind": 13.3};
 const tl = gsap.timeline({ paused: true });
 
 FX.pop(tl,"#cc",0.05); FX.pop(tl,"#om",B.one); FX.pop(tl,"#k",B.omk); FX.pop(tl,"#kp",B.pw);
 tl.to("#k",{x:400,y:-300,duration:0.8,ease:"power2.inOut"},B.shows); tl.to("#om",{scale:1.08,duration:0.2,yoyo:true,repeat:1},B.shows+0.8);
 [0,1,2,3].forEach(i=>FX.slide(tl,"#vk"+i,B.behind-1.0+i*0.15,{x:150}));
 
-FX.ambient(tl, 14.27);
+FX.ambient(tl, 14.28);
 window.__timelines["p3key"] = tl;
 </script></body></html>

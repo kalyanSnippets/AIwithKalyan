@@ -177,5 +177,5 @@ def _split(cuts, at_s, gap_s, gap_e):
         if s < gap_s < e: out += [(tk, s, gap_s), (tk, gap_e, e)]
         else: out.append((tk, s, e))
     return out
-CUTS = _split(CUTS, None, 152.12, 152.70)          # "Then, then install" -> "Then install"
-CUTS = [(tk, s, 948.9 if (s < 948.6 < e and e < 949.2) else e) for tk, s, e in CUTS]
+CUTS = _split(CUTS, None, 152.10, 152.93)          # "Then, then install" -> "Then, install"
+CUTS = [(tk, s, 948.85 if (s < 948.6 < e and e < 949.2) else e) for tk, s, e in CUTS]

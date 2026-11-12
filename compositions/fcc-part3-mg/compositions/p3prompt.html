@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="p3prompt" data-start="0" data-width="1920" data-height="1080" data-duration="17.41">
-<section id="p3prompt-scene" class="clip" data-start="0" data-duration="17.41" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="p3prompt" data-start="0" data-width="1920" data-height="1080" data-duration="17.16">
+<section id="p3prompt-scene" class="clip" data-start="0" data-duration="17.16" style="position:absolute;inset:0"><div class="bg"></div>
 <style>
 .tank{position:absolute;width:250px;height:330px}
 .tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
@@ -27,7 +27,7 @@
 
 </section></div>
 <script>
-const B = {"kit": 2.64, "says": 5.3, "then": 9.57, "fails": 14.57};
+const B = {"kit": 2.64, "says": 5.3, "then": 9.32, "fails": 14.32};
 const tl = gsap.timeline({ paused: true });
 
 FX.rise(tl,"#pw",0.05); FX.pop(tl,"#kit",B.kit);
@@ -36,6 +36,6 @@ const HL=['Claude Code is installed','install OmniRoute from GitHub','open the d
 tl.fromTo(o,{n:0},{n:txt.length,duration:(B.fails+3.0-B.says),ease:"none",onUpdate:()=>{let s=txt.slice(0,Math.round(o.n));
   HL.forEach(h=>{s=s.replace(h,'<span class="hl">'+h+'</span>');}); el.innerHTML=s+'<span style="color:#E53935">▍</span>';}},B.says);
 
-FX.ambient(tl, 17.41);
+FX.ambient(tl, 17.16);
 window.__timelines["p3prompt"] = tl;
 </script></body></html>

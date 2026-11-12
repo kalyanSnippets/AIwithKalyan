@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
 <link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
-<body><div id="root" data-composition-id="p3shortcut" data-start="0" data-width="1920" data-height="1080" data-duration="18.08">
-<section id="p3shortcut-scene" class="clip" data-start="0" data-duration="18.08" style="position:absolute;inset:0"><div class="bg"></div>
+<body><div id="root" data-composition-id="p3shortcut" data-start="0" data-width="1920" data-height="1080" data-duration="18.09">
+<section id="p3shortcut-scene" class="clip" data-start="0" data-duration="18.09" style="position:absolute;inset:0"><div class="bg"></div>
 <style>
 .tank{position:absolute;width:250px;height:330px}
 .tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
@@ -31,7 +31,7 @@
 
 </section></div>
 <script>
-const B = {"prompt": 6.2, "first": 8.35, "launch": 10.46, "second": 13.72};
+const B = {"prompt": 6.2, "first": 8.36, "launch": 10.47, "second": 13.73};
 const tl = gsap.timeline({ paused: true });
 
 FX.rise(tl,"#pw",0.05);
@@ -42,6 +42,6 @@ tl.fromTo(o,{n:0},{n:txt.length,duration:(B.second+2.5-B.prompt),ease:"none",onU
 tl.fromTo("#i1",{opacity:0,y:60},{opacity:1,y:0,duration:0.5,ease:"back.out(1.8)"},B.first);
 tl.fromTo("#i2",{opacity:0,y:60},{opacity:1,y:0,duration:0.5,ease:"back.out(1.8)"},B.second);
 
-FX.ambient(tl, 18.08);
+FX.ambient(tl, 18.09);
 window.__timelines["p3shortcut"] = tl;
 </script></body></html>
