@@ -223,6 +223,15 @@ def build(spec_path, name):
                 if lt < d: ev(sh['t0'] + lt, 'swish')
         if sh['kind'] in ('demo', 'graphic'): ev(sh['t0'], 'whoosh')
         for el in sh.get('els', []) + sh.get('pills', []): ev(el['_t'], 'pop')
+    for sh in shots:
+        # a pill hides when the next pill of the same shot appears (no stacking)
+        ps = sorted(sh.get('pills', []), key=lambda e: e['_t'])
+        for a1, a2 in zip(ps, ps[1:]):
+            if a1.get('cy', 990) == a2.get('cy', 990) and a1.get('cx', 715) == a2.get('cx', 715): a1['_until'] = a2['_t']
+        # no empty graphic scenes: the first element is there from the first frame
+        if sh['kind'] == 'graphic' and sh.get('els'):
+            first = min(sh['els'], key=lambda e: e['_t'])
+            if first['_t'] > sh['t0'] + 0.3: first['_t'] = sh['t0'] + 0.15
     badges = [(TL.anchor(a), n, t) for a, n, t in getattr(S, 'BADGES', [])]
     for b in badges: ev(b[0], 'whoosh')
 
@@ -393,7 +402,7 @@ def build(spec_path, name):
         # pills (any shot)
         for el in sh.get('pills', []):
             elt = t - el['_t']
-            if elt >= 0:
+            if elt >= 0 and t < el.get('_until', 1e9):
                 spr = cached(('pill', el['text'], el.get('icon'), el.get('red')), lambda: E.pill_spr(el['text'], el.get('icon'),
                              fill=E.RED if el.get('red') else E.CREAM, color=(255, 255, 255) if el.get('red') else E.INK,
                              icolor=(255, 255, 255) if el.get('red') else None))
