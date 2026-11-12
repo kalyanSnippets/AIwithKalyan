@@ -301,6 +301,108 @@ tl.to("#beam",{rotation:-8,duration:0.6,ease:"back.out(2)"},B.pay+0.3); tl.to("#
 FX.pop(tl,"#ok",B.works);
 ''')
 
+# ------------------------------------------------------------------ RECREATION: Ollama's three tabs (Apps -> Claude Code -> Chat)
+APPS = [('logo-claude', 'Claude Code'), ('logo-openai', 'Codex CLI'), ('terminal', 'OpenCode'), ('bot', 'Hermes Agent'),
+        ('cpu', 'Droid'), ('sparkles', 'Qwen Code'), ('app-window', 'Cline'), ('terminal', 'Terminal')]
+apps_html = ''.join(f'<div class="ap" id="ap{i}"><img src="../icons/{ic}.png" class="{"" if ic.startswith("logo-") else "tint-ink"}"><span>{nm}</span></div>'
+                    for i, (ic, nm) in enumerate(APPS))
+scene('tabs', "Once it's open", 'In Settings, two things matter', dict(left='three things on the left', apps='Apps, this is where', tools='coding tools like',
+      click='like Claude Code', chat='Chat, this is where', model='talk to a model', test='to test it'), f"""
+<style>
+#win{{position:absolute;left:600px;top:120px;width:1240px;height:820px;border-radius:26px;background:#fff;color:#111;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6)}}
+#bar{{height:52px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 20px;border-bottom:1px solid #e3e3e8}}
+#bar i{{width:14px;height:14px;border-radius:50%;display:block}} #bar b{{margin-left:16px;font-weight:700;font-size:22px;color:#555}}
+#side{{position:absolute;left:0;top:52px;bottom:0;width:250px;background:#fafafb;border-right:1px solid #ececf0;padding:26px 18px;box-sizing:border-box}}
+.tab{{display:flex;align-items:center;gap:14px;font-weight:700;font-size:30px;padding:14px 16px;border-radius:14px;margin-bottom:8px;color:#333}}
+.tab img{{width:34px;height:34px}} .tab.on{{background:#ffe3e0;color:#c62828}}
+#main{{position:absolute;left:250px;top:52px;right:0;bottom:0;padding:34px 40px;box-sizing:border-box}}
+#apps h2,#chatv h2{{margin:0 0 22px;font-size:38px;font-weight:900}}
+#grid{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.ap{{display:flex;align-items:center;gap:16px;font-weight:700;font-size:28px;padding:16px 18px;border:2px solid #eee;border-radius:16px}}
+.ap img{{width:40px;height:40px}}
+#toast{{position:absolute;right:30px;top:24px;width:430px;background:#fff;border:2px solid #eee;border-radius:18px;padding:18px 22px;box-shadow:0 16px 40px rgba(0,0,0,.18)}}
+#toast b{{display:block;font-size:28px}} #toast span{{font-size:22px;color:#777}}
+#chatv{{position:absolute;inset:34px 40px;opacity:0}}
+.bub{{position:absolute;right:0;top:90px;background:#f1f1f4;border-radius:20px;padding:14px 24px;font-size:30px;font-weight:600}}
+#reply{{position:absolute;left:0;top:180px;font-size:30px;font-weight:600;max-width:800px;line-height:1.4}}
+#box{{position:absolute;left:0;right:0;bottom:0;height:110px;border:2px solid #e6e6ea;border-radius:24px;display:flex;align-items:center;padding:0 26px;font-size:28px;color:#999}}
+#msel{{position:absolute;right:24px;bottom:30px;font-weight:800;font-size:24px;color:#333;background:#f1f1f4;border-radius:12px;padding:8px 14px}}
+#cur{{position:absolute;width:44px;height:44px;left:0;top:0;z-index:5}}
+#rip{{position:absolute;width:70px;height:70px;border-radius:50%;border:5px solid #E53935;opacity:0;z-index:4}}
+#rtag{{position:absolute;right:30px;top:62px;font-weight:800;font-size:18px;color:#999;letter-spacing:2px}}
+</style>
+<div class="hdr"><i></i>3 things on the left</div>
+<div id="win"><div id="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><b>Ollama</b></div>
+ <div id="side"><div class="tab" id="tApps"><img src="../icons/app-window.png" class="tint-ink">Apps</div>
+   <div class="tab" id="tChat"><img src="../icons/message-square.png" class="tint-ink">Chat</div>
+   <div class="tab" id="tSet"><img src="../icons/settings.png" class="tint-ink">Settings</div></div>
+ <div id="main"><div id="apps" style="opacity:0"><h2>Apps</h2><div id="grid">{apps_html}</div>
+     <div id="toast" style="opacity:0"><b>✓ Launch command copied.</b><span>Paste it into your terminal</span></div></div>
+   <div id="chatv"><h2>Chat</h2><div class="bub" id="hi">hi</div><div id="reply"></div>
+     <div id="box">Send a message<div id="msel">qwen3.5:4b ▾</div></div></div></div>
+ <div id="rtag">RECREATION</div></div>
+<img id="cur" src="../icons/mouse-pointer-click.png" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))"><div id="rip"></div>
+<div id="p1" class="pill" style="left:620px;top:960px">Apps → connect coding tools</div>
+<div id="p2" class="pill red" style="left:620px;top:960px">Click → it copies the launch command</div>
+<div id="p3" class="pill" style="left:620px;top:960px">Chat → test a model</div>
+""", """
+FX.rise(tl,"#win",0.05,{y:60});
+["#tApps","#tChat","#tSet"].forEach((s,i)=>tl.fromTo(s,{x:-30,opacity:0},{x:0,opacity:1,duration:0.35,ease:"power3.out"},B.left+i*0.35));
+tl.to(["#tApps","#tChat","#tSet"],{backgroundColor:"#fff1ef",duration:0.2,yoyo:true,repeat:1,stagger:0.3},B.left+1.2);
+function click(t,x,y){tl.to("#cur",{x:x,y:y,duration:0.5,ease:"power2.inOut"},t-0.5);
+  tl.fromTo("#rip",{x:x-13,y:y-13,scale:0.3,opacity:1},{scale:1.6,opacity:0,duration:0.5,ease:"power2.out"},t);}
+tl.set("#cur",{x:1500,y:900},0);
+click(B.apps,760,265); tl.set("#tApps",{className:"tab on"},B.apps); tl.to("#apps",{opacity:1,duration:0.3},B.apps+0.1);
+tl.fromTo(".ap",{y:30,opacity:0},{y:0,opacity:1,duration:0.35,stagger:0.07,ease:"power3.out"},B.apps+0.15);
+tl.to(["#ap0","#ap1","#ap2"],{borderColor:"#E53935",duration:0.2,stagger:0.25},B.tools);
+FX.pop(tl,"#p1",B.apps+0.3); FX.out(tl,"#p1",B.click-0.2);
+click(B.click,1120,345); tl.to("#ap0",{backgroundColor:"#ffe3e0",duration:0.15},B.click);
+tl.fromTo("#toast",{y:-30,opacity:0},{y:0,opacity:1,duration:0.4,ease:"back.out(1.7)"},B.click+0.4);
+FX.pop(tl,"#p2",B.click+0.4); FX.out(tl,"#p2",B.chat-0.2);
+click(B.chat,760,330); tl.set("#tApps",{className:"tab"},B.chat); tl.set("#tChat",{className:"tab on"},B.chat);
+tl.to("#apps",{opacity:0,duration:0.2},B.chat); tl.to("#chatv",{opacity:1,duration:0.3},B.chat+0.1);
+FX.type(tl,"#box",'hi',B.chat+0.5,8); tl.fromTo("#hi",{opacity:0,y:20},{opacity:1,y:0,duration:0.3},B.model);
+FX.type(tl,"#reply","Hello! How can I help you today?",B.model+0.5,26); FX.pop(tl,"#p3",B.chat+0.2);
+""")
+
+# ------------------------------------------------------------------ RECREATION: Windows quick settings, Wi-Fi off
+scene('wifi', 'So watch this', 'So be honest', dict(off="I'm turning the Wi-Fi off", see='See?', none='No internet at all'), """
+<style>
+#qs{position:absolute;left:760px;top:150px;width:880px;height:640px;border-radius:30px;background:#202024;border:2px solid #34343c;box-shadow:0 40px 90px rgba(0,0,0,.6);padding:40px;box-sizing:border-box}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.tl{height:150px;border-radius:22px;background:#2f2f36;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-weight:700;font-size:26px;color:#ddd}
+.tl img{width:56px;height:56px}
+#wf{background:#3b82f6;color:#fff}
+#tray{position:absolute;left:760px;top:830px;width:880px;height:84px;border-radius:20px;background:#1a1a1f;display:flex;align-items:center;justify-content:flex-end;gap:26px;padding:0 30px;box-sizing:border-box;font-weight:700;font-size:26px;color:#ddd}
+#glob{width:40px;height:40px}
+#warn{position:absolute;left:1210px;top:690px;background:#fff;color:#111;border-radius:16px;padding:16px 22px;font-weight:800;font-size:26px;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+#cur{position:absolute;width:44px;height:44px;left:0;top:0;z-index:5}
+#rip{position:absolute;width:70px;height:70px;border-radius:50%;border:5px solid #E53935;opacity:0;z-index:4}
+#rtag{position:absolute;left:1500px;top:110px;font-weight:800;font-size:18px;color:#888;letter-spacing:2px}
+</style>
+<div class="hdr"><i></i>Wi-Fi off</div><div id="rtag">RECREATION</div>
+<div id="qs"><div class="tiles">
+ <div class="tl" id="wf"><img id="wfi" src="../icons/wifi.png"><span id="wft">Wi-Fi</span></div>
+ <div class="tl"><img src="../icons/zap.png">Bluetooth</div><div class="tl"><img src="../icons/rocket.png">Airplane mode</div>
+ <div class="tl"><img src="../icons/gauge.png">Energy saver</div><div class="tl"><img src="../icons/settings.png">Accessibility</div>
+ <div class="tl"><img src="../icons/app-window.png">Live captions</div></div></div>
+<div id="tray"><span id="trayt">Connected</span><img id="glob" src="../icons/wifi.png"><span>ENG</span></div>
+<div id="warn" style="opacity:0">⚠ No internet access</div>
+<img id="cur" src="../icons/mouse-pointer-click.png" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))"><div id="rip"></div>
+<div id="big" class="pill red" style="left:900px;top:960px;font-size:46px">📴 No internet at all</div>
+""", """
+FX.rise(tl,"#qs",0.05,{y:80}); FX.rise(tl,"#tray",0.2,{y:40});
+tl.set("#cur",{x:1500,y:950},0); tl.to("#cur",{x:900,y:260,duration:0.6,ease:"power2.inOut"},B.off-0.6);
+tl.fromTo("#rip",{x:887,y:247,scale:0.3,opacity:1},{scale:1.7,opacity:0,duration:0.5},B.off);
+tl.to("#wf",{backgroundColor:"#2f2f36",color:"#9a9aa4",duration:0.25},B.off);
+tl.call(()=>{},null,B.off);
+const sw=(on)=>{document.getElementById('wfi').src=on?'../icons/wifi.png':'../icons/wifi-off.png';document.getElementById('glob').src=on?'../icons/wifi.png':'../icons/wifi-off.png';
+  document.getElementById('wft').textContent=on?'Wi-Fi':'Wi-Fi · Off';document.getElementById('trayt').textContent=on?'Connected':'Not connected';};
+const st={v:0};tl.fromTo(st,{v:0},{v:1,duration:0.05,onUpdate:()=>sw(st.v<0.5)},B.off+0.05);
+tl.fromTo("#warn",{y:20,opacity:0},{y:0,opacity:1,duration:0.35,ease:"back.out(1.7)"},B.see);
+FX.pop(tl,"#big",B.none);
+""")
+
 # ------------------------------------------------------------------ write
 out = []
 for sid, sp, ep, beats, html, js in SCENES:

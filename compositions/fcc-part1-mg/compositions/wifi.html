@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="wifi" data-start="0" data-width="1920" data-height="1080" data-duration="4.35">
+<section id="wifi-scene" class="clip" data-start="0" data-duration="4.35" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+#qs{position:absolute;left:760px;top:150px;width:880px;height:640px;border-radius:30px;background:#202024;border:2px solid #34343c;box-shadow:0 40px 90px rgba(0,0,0,.6);padding:40px;box-sizing:border-box}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.tl{height:150px;border-radius:22px;background:#2f2f36;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font-weight:700;font-size:26px;color:#ddd}
+.tl img{width:56px;height:56px}
+#wf{background:#3b82f6;color:#fff}
+#tray{position:absolute;left:760px;top:830px;width:880px;height:84px;border-radius:20px;background:#1a1a1f;display:flex;align-items:center;justify-content:flex-end;gap:26px;padding:0 30px;box-sizing:border-box;font-weight:700;font-size:26px;color:#ddd}
+#glob{width:40px;height:40px}
+#warn{position:absolute;left:1210px;top:690px;background:#fff;color:#111;border-radius:16px;padding:16px 22px;font-weight:800;font-size:26px;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+#cur{position:absolute;width:44px;height:44px;left:0;top:0;z-index:5}
+#rip{position:absolute;width:70px;height:70px;border-radius:50%;border:5px solid #E53935;opacity:0;z-index:4}
+#rtag{position:absolute;left:1500px;top:110px;font-weight:800;font-size:18px;color:#888;letter-spacing:2px}
+</style>
+<div class="hdr"><i></i>Wi-Fi off</div><div id="rtag">RECREATION</div>
+<div id="qs"><div class="tiles">
+ <div class="tl" id="wf"><img id="wfi" src="../icons/wifi.png"><span id="wft">Wi-Fi</span></div>
+ <div class="tl"><img src="../icons/zap.png">Bluetooth</div><div class="tl"><img src="../icons/rocket.png">Airplane mode</div>
+ <div class="tl"><img src="../icons/gauge.png">Energy saver</div><div class="tl"><img src="../icons/settings.png">Accessibility</div>
+ <div class="tl"><img src="../icons/app-window.png">Live captions</div></div></div>
+<div id="tray"><span id="trayt">Connected</span><img id="glob" src="../icons/wifi.png"><span>ENG</span></div>
+<div id="warn" style="opacity:0">⚠ No internet access</div>
+<img id="cur" src="../icons/mouse-pointer-click.png" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))"><div id="rip"></div>
+<div id="big" class="pill red" style="left:900px;top:960px;font-size:46px">📴 No internet at all</div>
+
+</section></div>
+<script>
+const B = {"off": 0.98, "see": 2.72, "none": 3.25};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#qs",0.05,{y:80}); FX.rise(tl,"#tray",0.2,{y:40});
+tl.set("#cur",{x:1500,y:950},0); tl.to("#cur",{x:900,y:260,duration:0.6,ease:"power2.inOut"},B.off-0.6);
+tl.fromTo("#rip",{x:887,y:247,scale:0.3,opacity:1},{scale:1.7,opacity:0,duration:0.5},B.off);
+tl.to("#wf",{backgroundColor:"#2f2f36",color:"#9a9aa4",duration:0.25},B.off);
+tl.call(()=>{},null,B.off);
+const sw=(on)=>{document.getElementById('wfi').src=on?'../icons/wifi.png':'../icons/wifi-off.png';document.getElementById('glob').src=on?'../icons/wifi.png':'../icons/wifi-off.png';
+  document.getElementById('wft').textContent=on?'Wi-Fi':'Wi-Fi · Off';document.getElementById('trayt').textContent=on?'Connected':'Not connected';};
+const st={v:0};tl.fromTo(st,{v:0},{v:1,duration:0.05,onUpdate:()=>sw(st.v<0.5)},B.off+0.05);
+tl.fromTo("#warn",{y:20,opacity:0},{y:0,opacity:1,duration:0.35,ease:"back.out(1.7)"},B.see);
+FX.pop(tl,"#big",B.none);
+
+FX.ambient(tl, 4.35);
+window.__timelines["wifi"] = tl;
+</script></body></html>

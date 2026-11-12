@@ -26,13 +26,10 @@ BADGES = [(('OUT', MG['ollama']['start']), 1, 'Method 1 · Ollama'), (('OUT', MG
           ((B, 625.86), 3, 'Claude Code on Ollama')]
 W_ = INTRO['fx']
 def fxw(k, **kw): return dict(at=('OUT', W_[k][0]), dur=round(W_[k][1] - W_[k][0], 3), **kw)
-FX = [  # effects from github.com/Vibha-Ramprakash/claude-video-effects, on the full-screen intro
+FX = [  # effects from github.com/Vibha-Ramprakash/claude-video-effects: only these three sit behind the head
     fxw('strike', fx='huge-strike', text='$20/MONTH'),
     fxw('free', fx='spotlight', text='FREE'),
-    fxw('lineup', fx='lineup', text='Ollama|OpenRouter|OmniRoute'),
     fxw('led', fx='led-sign', text='STAY TILL|THE END'),
-    fxw('stamp', fx='reject-stamp', text='NOT SPONSORED', y=0.80, angle=-8),
-    fxw('locked', fx='locked-on', text='TESTED FOR YOU'),
     dict(at=(B, 'Every single word came from a model', 277.1), dur=2.6, fx='spotlight', text='OFFLINE'),
 ]
 
@@ -48,11 +45,7 @@ SHOTS = [
     dict(at=(B, 70.58), kind='demo', clip=('142752', 81, 93), url='OllamaSetup.exe', header='Install Ollama', sync=[
         S('click through the steps', 84.0, 70.5, (0.62, 0.62, 1.4))]),
     # the three tabs
-    dict(at=(B, 80.14), kind='demo', clip=('142752', 184, 210), url='Ollama', header='3 things on the left', sync=[
-        S('Apps, this is where', 184.5, 80.0, (0.45, 0.45, 1.25)),
-        S('Chat, this is where', 188.5, 105.0, (0.2, 0.32, 1.7))],
-         pills=[dict(at=(B, 'Apps, this is where', 83.1), text='Apps: connect coding tools', icon='app-window'),
-                dict(at=(B, 105.42), text='Chat: test a model', icon='message-square')]),
+    mg('tabs'),
     dict(at=(B, 113.18), kind='demo', clip=('142752', 217, 236), url='Ollama · Settings', header='2 settings that matter', sync=[
         S('In Settings, two things matter', 218.0, 113.0, (0.42, 0.42, 1.2)),
         S('First, the Claude toggle', 224.0, 117.0, (0.5, 0.39, 1.75)),
@@ -73,10 +66,7 @@ SHOTS = [
         S('But hi proves nothing', 440.0, 230.0, (0.4, 0.3, 1.5))],
          pills=[dict(at=(B, 'just to warm things up', 206.2), text='qwen3.5:4b · type "hi"', icon='message-square'),
                 dict(at=(B, 'The first message downloads', 212.6), text='First message downloads the model', icon='download')]),
-    dict(at=(B, 'So watch this', 233.0), kind='demo', clip=('142752', 446, 462), url='Windows · Wi-Fi', header='Wi-Fi off', sync=[
-        S("I'm turning the Wi-Fi off", 449.5, 233.0, (0.76, 0.58, 1.9)),
-        S('No internet at all', 455.0, 236.0, (0.76, 0.58, 1.6))],
-         pills=[dict(at=(B, 'No internet at all', 237.2), text='No internet at all', icon='wifi-off', red=True)]),
+    mg('wifi'),
     dict(at=(B, 241.62), kind='talk'),
     dict(at=(B, 253.04), kind='demo', clip=('142752', 528, 668), url='Ollama · Chat (offline)', header='Offline test', sync=[
         S('make a simple notes app', 531.0, 253.0, (0.28, 0.82, 1.7)),
@@ -128,8 +118,11 @@ SHOTS = [
          mags=[dict(at=(B, 'right there in the drop-down', 582.0), r=(0.40, 0.56, 0.70, 0.61), w=760, cx=C, cy=330, dur=2.4)]),
     mg('rule'),
     dict(at=(B, 625.86), kind='talk'),
-    dict(at=(B, 'In Ollama, go to Apps', 629.5), kind='demo', clip=('121640', 8, 30), url='Ollama · Apps', header='Apps → Claude Code',
-         mags=[dict(at=(B, 'See that little message', 638.7), r=(0.44, 0.20, 0.76, 0.29), w=860, cx=C, cy=360, dur=3.0)],
+    dict(at=(B, 'In Ollama, go to Apps', 629.5), kind='demo', clip=('121640', 22, 33), url='Ollama · Apps', header='Apps → Claude Code', sync=[
+        S('go to Apps', 22.5, 629.5, (0.35, 0.3, 1.5)),
+        S('and click Claude Code', 25.5, 629.5, (0.4, 0.3, 1.6)),
+        S('See that little message', 27.2, 638.0, (0.6, 0.25, 1.6))],
+         mags=[dict(at=(B, 'It copied the launch command', 639.0), r=(0.44, 0.20, 0.76, 0.29), w=860, cx=C, cy=360, dur=3.0)],
          pills=[dict(at=(B, 'Ollama launch Claude', 640.3), text='ollama launch claude', icon='terminal', red=True)]),
     dict(at=(B, 647.50), kind='demo', clip=('121640', 30, 55), url='File Explorer', header='Open a terminal in a folder', blur=EXPLORER_BLUR,
          zooms=[(30, .5, .5, 1.0), (32.5, 0.62, 0.45, 1.35)],

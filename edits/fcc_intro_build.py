@@ -30,8 +30,7 @@ B = dict(
     worked=at('I have already worked through'), receipt=at("I'll show you the receipt"), start=at("So let's start"))
 DUR = round(B['start'] + 0.9, 3)
 FX_WINDOWS = {  # repo effects run here; the layer stays empty in these windows
-    'strike': (B['price'], B['limit']), 'free': (B['free'], B['brain']), 'lineup': (B['three'], B['m1']),
-    'led': (B['stay'], B['nobody']), 'stamp': (B['nobody'], B['worked']), 'locked': (B['worked'], B['receipt'])}
+    'strike': (B['price'], B['limit']), 'free': (B['free'], B['brain']), 'led': (B['stay'], B['nobody'])}
 
 def sims(n, left, top, gap):
     return ''.join(f'<div id="fs{i}" class="sim small"><div class="chip"></div><b>$0</b></div>' for i in range(n))
@@ -49,10 +48,10 @@ html = '''
  <div id="paym" class="pill red" style="left:350px;top:330px;font-size:44px">💸 PAY MORE</div>
  <div id="waitw" class="pill" style="left:1360px;top:330px;font-size:44px">⏳ WAIT 5 HOURS</div>
  <!-- brain halo behind head -->
- <div id="halo" class="halo" style="left:700px;top:-20px"><img src="../icons/brain.png" class="tint-red"></div>
- <div id="halop" class="pill red" style="left:1300px;top:120px;font-size:44px">$20 / month brain</div>
- <div id="halo2" class="halo green" style="left:700px;top:-20px"><img src="../icons/brain.png"></div>
- <div id="halo2p" class="pill" style="left:1300px;top:120px;font-size:44px;background:#2ecc71;color:#fff">FREE brain · $0</div>
+ <div id="halo" class="halo" style="left:1300px;top:40px"><img src="../icons/brain.png" class="tint-red"></div>
+ <div id="halop" class="pill red" style="left:1360px;top:500px;font-size:44px">$20 / month brain</div>
+ <div id="halo2" class="halo green" style="left:1300px;top:40px"><img src="../icons/brain.png"></div>
+ <div id="halo2p" class="pill" style="left:1380px;top:500px;font-size:44px;background:#2ecc71;color:#fff">FREE brain · $0</div>
  <!-- 3D phone (right wall) -->
  <div id="stage3d" style="position:absolute;left:1300px;top:40px;width:520px;height:700px;perspective:1400px">
   <div id="phone" class="phone3d"><div class="edge"></div>
@@ -61,31 +60,35 @@ html = '''
        <div class="rw"><span id="rw1">read</span><span id="rw2">write</span><span id="rw3">run</span></div></div>
      <div id="bill" class="billtxt">$20<small>/mo</small></div><div id="zero" class="billtxt green">$0</div></div>
    <div id="tray" class="tray"><div class="chip"></div></div></div></div>
- <div id="bigsim" class="sim big" style="left:380px;top:300px"><div class="chip"></div><b id="simlbl">SIM</b><i id="simprice">$20 / month</i></div>
- <div id="lbl1" class="neon small" style="left:360px;top:8px;width:1200px;text-align:center">phone = Claude Code</div>
- <div id="lbl2" class="neon small" style="left:360px;top:100px;width:1200px;text-align:center;color:#ffb3a9">SIM = the AI model</div>
+ <div id="bigsim" class="sim big" style="left:330px;top:260px"><div class="chip"></div><b id="simlbl">SIM</b><i id="simprice">$20 / month</i></div>
+ <div id="lbl1" class="neon small" style="left:40px;top:40px;width:680px;text-align:left;font-size:62px">phone = Claude Code</div>
+ <div id="lbl2" class="neon small" style="left:40px;top:130px;width:680px;text-align:left;color:#ffb3a9;font-size:62px">SIM = the AI model</div>
  ''' + ''.join(f'<div id="fs{i}" class="sim small"><div class="chip"></div><b>$0</b></div>' for i in range(3)) + '''
  <!-- plan -->
- <div id="zeroN" class="neon" style="left:420px;top:20px;width:1080px">$<span id="zn">20</span></div>
- <div id="c1" class="mcard" style="left:340px;top:90px"><div class="n">1</div><img src="../icons/logo-ollama.png" class="tint-ink">
+ <div id="zeroN" class="neon" style="left:40px;top:60px;width:660px;font-size:170px">$<span id="zn">20</span></div>
+ <div id="c1" class="mcard" style="left:320px;top:60px"><div class="n">1</div><img src="../icons/logo-ollama.png" class="tint-ink">
    <div class="tt">Ollama</div><div class="st">on your laptop</div><div id="c1t" class="tag red">Wi-Fi OFF</div></div>
- <div id="c2" class="mcard" style="left:340px;top:420px"><div class="n">2</div><img src="../icons/cloud.png" class="tint-red">
+ <div id="c2" class="mcard" style="left:320px;top:390px"><div class="n">2</div><img src="../icons/cloud.png" class="tint-red">
    <div class="tt">OpenRouter</div><div class="st">free cloud models</div><div id="c2t" class="tag">⚠ the trap</div></div>
- <div id="c3" class="mcard best" style="left:1330px;top:110px;width:440px;height:520px"><div class="n">3</div><img src="../icons/zap.png" class="tint-red">
+ <div id="c3" class="mcard best" style="left:1300px;top:80px;width:440px;height:520px"><div class="n">3</div><img src="../icons/zap.png" class="tint-red">
    <div class="tt">OmniRoute</div><div class="st">many free providers</div><div id="c3t" class="tag red"><img src="../icons/logo-claude.png" style="width:28px;height:28px;margin:0 6px -6px 0">real Claude Sonnet</div>
    <div id="c3l" class="tag">🧾 logs prove it</div></div>
  <!-- setup kit -->
  <div id="kitbox" class="mcard" style="left:1340px;top:120px;width:420px;height:440px"><img src="../icons/package.png" class="tint-red" style="width:170px;height:170px">
    <div class="tt">Free setup kit</div><div class="st">copy · paste · done</div></div>
- <div id="k1" class="pill" style="left:360px;top:140px;font-size:42px">📋 Model list</div>
- <div id="k2" class="pill" style="left:360px;top:280px;font-size:42px">💬 Every prompt</div>
- <div id="k3" class="pill" style="left:360px;top:420px;font-size:42px">⚙️ Every setting</div>
- <div id="klink" class="pill red" style="left:350px;top:590px;font-size:40px">1st link in description ↓</div>
+ <div id="k1" class="pill" style="left:300px;top:140px;font-size:40px">📋 Model list</div>
+ <div id="k2" class="pill" style="left:300px;top:280px;font-size:40px">💬 Every prompt</div>
+ <div id="k3" class="pill" style="left:300px;top:420px;font-size:40px">⚙️ Every setting</div>
+ <div id="klink" class="pill red" style="left:1290px;top:600px;font-size:36px">1st link in description ↓</div>
  <!-- receipt -->
  <div id="rcpt" class="receipt" style="left:1360px;top:20px"><div id="rin">
    <div class="rh">RECEIPT</div><div>Claude Code ........ $0.00</div><div>Ollama ............. $0.00</div><div>OpenRouter ......... $0.00</div>
    <div>OmniRoute .......... $0.00</div><div class="rt">TOTAL .............. $0.00</div><div class="rp">✓ PAID: NOTHING</div></div></div>
- <div id="neonR" class="neon small" style="left:340px;top:120px;width:800px;text-align:left">receipts ✓</div>
+ <div id="neonR" class="neon small" style="left:60px;top:140px;width:640px;text-align:left;font-size:72px">receipts ✓</div>
+
+ <div id="nsp" class="stamp" style="left:1300px;top:200px;font-size:58px">NOT SPONSORED</div>
+ <div id="tst" class="pill" style="left:300px;top:250px;font-size:40px">✓ Every setup tested</div>
+ <div id="tst2" class="pill red" style="left:300px;top:390px;font-size:40px">✓ Every trap found</div>
  <div id="dust"></div>
 </div>
 '''
@@ -176,11 +179,11 @@ tl.set("#stage3d",{opacity:1},B.phone); on("#phone",B.phone,{y:300,s:0.8,d:0.9,e
 const ph={v:0};tl.fromTo(ph,{v:0},{v:1,duration:B.end-B.phone,ease:"none",onUpdate:()=>{const tt=ph.v*(B.end-B.phone);
   gsap.set("#phone",{rotationY:-28+Math.sin(tt*0.9)*14,rotationX:6+Math.sin(tt*0.6)*4,y:Math.sin(tt*1.3)*14});}},B.phone);
 tl.to("#hw",{opacity:0,duration:0.3},B.ccphone); tl.fromTo("#boot",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.6,ease:"back.out(2)"},B.ccphone+0.1);
-on("#lbl1",B.ccphone,{y:-60,s:1}); ["#rw1","#rw2","#rw3"].forEach((s,i)=>tl.fromTo(s,{opacity:0,y:20},{opacity:1,y:0,duration:0.3},B.rwr+i*0.9));
+on("#lbl1",B.ccphone,{x:-80,s:1}); ["#rw1","#rw2","#rw3"].forEach((s,i)=>tl.fromTo(s,{opacity:0,y:20},{opacity:1,y:0,duration:0.3},B.rwr+i*0.9));
 tl.fromTo("#tray",{x:0},{x:120,duration:0.5,ease:"power2.out"},B.sim);
 on("#bigsim",B.sim+0.4,{x:900,r:200,s:0.3,d:0.9,e:"power3.out"});
 const sp={v:0};tl.fromTo(sp,{v:0},{v:1,duration:B.others-B.sim,ease:"none",onUpdate:()=>{gsap.set("#bigsim",{rotationY:Math.sin(sp.v*(B.others-B.sim)*1.2)*25});}},B.sim+1.3);
-on("#lbl2",B.model,{y:-60,s:1}); tl.to("#simprice",{opacity:1,duration:0.3},B.simprice); tl.to("#bill",{opacity:1,duration:0.3},B.simprice+0.3);
+on("#lbl2",B.model,{x:-80,s:1}); tl.to("#simprice",{opacity:1,duration:0.3},B.simprice); tl.to("#bill",{opacity:1,duration:0.3},B.simprice+0.3);
 tl.to("#boot",{opacity:0.3,duration:0.3},B.simprice+0.3); tl.to("#bigsim",{x:-40,duration:0.06,yoyo:true,repeat:5},B.simprice+0.4);
 tl.to("#bigsim",{y:900,rotation:-60,opacity:0,duration:0.9,ease:"power3.in"},B.others); tl.to("#bill",{opacity:0,duration:0.3},B.others);
 const orb={v:0};[0,1,2].forEach(i=>tl.set("#fs"+i,{opacity:1},B.others+0.3));
@@ -200,6 +203,8 @@ on("#kitbox",B.kit,{y:-200,d:0.7}); floaty("#kitbox",B.kit+0.8,B.stay,10,2.2);
 on("#k1",B.list,{x:600,s:0.4}); on("#k2",B.prompt,{x:600,s:0.4}); on("#k3",B.setting,{x:600,s:0.4});
 on("#klink",B.link); tl.to("#klink",{y:14,duration:0.35,yoyo:true,repeat:3,ease:"sine.inOut"},B.link+0.5);
 off(["#kitbox","#k1","#k2","#k3","#klink"],B.stay-0.1);
+on("#nsp",B.nobody,{s:2.4,d:0.3,e:"power4.out"}); off("#nsp",B.receipt-0.2);
+on("#tst",B.worked,{x:-160}); on("#tst2",B.worked+1.2,{x:-160}); off(["#tst","#tst2"],B.receipt-0.2);
 // receipt
 tl.set("#rcpt",{opacity:1},B.receipt); tl.fromTo("#rcpt",{height:0},{height:470,duration:1.6,ease:"steps(16)"},B.receipt);
 on("#neonR",B.receipt+0.3,{x:-80,s:1}); off(["#rcpt","#neonR"],END-0.35);
