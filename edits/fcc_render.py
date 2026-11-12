@@ -372,13 +372,13 @@ def build(spec_path, name):
             if STILLS: intro_p.close(); intro_p = None
             frame = face_img.copy()
             # darkness eases to 1.0 (no darkening) inside the repo-effect windows, 0.45 elsewhere
-            infx = any(c[0] - 0.3 <= t <= c[1] + 0.3 for c in fx_clips); dk = 0.45
-            if infx: dk = 0.45 + 0.55 * max(E.clamp((0.3 + min(t - c[0], c[1] - t)) / 0.6) for c in fx_clips if c[0] - 0.3 <= t <= c[1] + 0.3)
+            infx = any(c[0] - 0.3 <= t <= c[1] + 0.3 for c in fx_clips); dk = 0.3
+            if infx: dk = 0.3 + 0.7 * max(E.clamp((0.3 + min(t - c[0], c[1] - t)) / 0.6) for c in fx_clips if c[0] - 0.3 <= t <= c[1] + 0.3)
             if ov is not None and (dk < 0.99 or fxf is None):
                 small = cv2.resize(fr, (640, 360), interpolation=cv2.INTER_AREA)
                 m, _ = tracker(small, int(t * 1000)); m = cv2.resize(m, (W, H)).astype(np.float32)[..., None] / 255.0
                 f32 = frame.astype(np.float32)
-                wall = f32 * dk + np.array([12, 2, 2], np.float32) * (1 - dk) / 0.55
+                wall = f32 * dk + np.array([14, 3, 3], np.float32) * (1 - dk) / 0.7
                 if fxf is None:
                     a4 = ov[..., 3:4].astype(np.float32) / 255.0 * (1 - KEEPF)
                     wall = ov[..., :3].astype(np.float32) * a4 + wall * (1 - a4)
