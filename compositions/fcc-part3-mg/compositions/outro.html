@@ -1,0 +1,137 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><style>
+html,body,#root{background:transparent!important}
+.lay{position:absolute;inset:0}
+.lay>*{position:absolute;opacity:0}
+@font-face{font-family:"Serif";src:url("fonts/InstrumentSerif-Italic.ttf")}
+.neon{font-family:"Serif",serif;font-style:italic;font-size:200px;text-align:center;color:#ffd2c8;line-height:1;
+ text-shadow:0 0 12px #ff8a75,0 0 40px #ff5a45,0 0 90px #e53935,0 0 160px #e53935}
+.neon.small{font-size:78px;white-space:nowrap}
+.glass{background:rgba(20,20,26,.72);border:2px solid rgba(255,255,255,.18);border-radius:28px;padding:28px;box-sizing:border-box;
+ box-shadow:0 0 60px rgba(229,57,53,.35)}
+.glass .lbl{font-weight:800;font-size:24px;letter-spacing:3px;color:#cfcfd6}
+.track{height:30px;border-radius:16px;background:#2a2a32;margin-top:14px;overflow:hidden}
+.fillbar{height:100%;width:0;background:linear-gradient(90deg,#ffb74d,#e53935);box-shadow:0 0 30px #e53935}
+.stamp{font-weight:900;font-size:66px;color:#ff4d47;border:8px solid #ff4d47;border-radius:16px;padding:6px 26px;transform:rotate(-8deg);
+ text-shadow:0 0 20px rgba(229,57,53,.8);box-shadow:0 0 30px rgba(229,57,53,.6)}
+.halo{width:520px;height:440px;display:flex;align-items:center;justify-content:center;
+ background:radial-gradient(closest-side,rgba(229,57,53,.55),rgba(229,57,53,.15) 60%,transparent)}
+.halo.green{background:radial-gradient(closest-side,rgba(46,204,113,.55),rgba(46,204,113,.12) 60%,transparent)}
+.halo img{width:300px;height:300px;filter:drop-shadow(0 0 30px #e53935)}
+.halo.green img{filter:drop-shadow(0 0 30px #2ecc71)}
+.phone3d{position:absolute;left:110px;top:20px;width:300px;height:620px;border-radius:52px;background:#0b0b0e;border:8px solid #3a3a44;
+ transform-style:preserve-3d;box-shadow:0 0 80px rgba(229,57,53,.45),0 40px 80px rgba(0,0,0,.6)}
+.phone3d .edge{position:absolute;inset:-8px;border-radius:56px;transform:translateZ(-18px);background:#26262e}
+.scr{position:absolute;inset:16px;border-radius:40px;background:linear-gradient(160deg,#1c1c22,#101014);overflow:hidden;
+ display:flex;align-items:center;justify-content:center}
+.hwtxt{font-weight:900;font-size:34px;letter-spacing:4px;color:#6f6f7a}
+.boot{position:absolute;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0}
+.boot img{width:130px;height:130px;filter:drop-shadow(0 0 24px #D97757)}
+.boot .t{font-weight:900;font-size:36px}
+.rw{display:flex;gap:8px}.rw span{background:#f5efe6;color:#111;font-weight:800;font-size:20px;border-radius:20px;padding:6px 12px;opacity:0}
+.billtxt{position:absolute;bottom:60px;font-weight:900;font-size:76px;color:#ff6b66;opacity:0;text-shadow:0 0 30px #e53935}
+.billtxt small{font-size:30px}.billtxt.green{color:#5dff9e;text-shadow:0 0 30px #2ecc71}
+.tray{position:absolute;right:-8px;top:250px;width:90px;height:120px;background:#9a9aa6;border-radius:10px 0 0 10px}
+.tray .chip,.sim .chip{width:56px;height:44px;border-radius:8px;background:linear-gradient(135deg,#f3d27a,#b8860b);margin:18px auto 0}
+.sim{width:220px;height:300px;background:#f4f4f7;color:#111;border-radius:22px;clip-path:polygon(20% 0,100% 0,100% 100%,0 100%,0 15%);
+ display:flex;flex-direction:column;align-items:center;box-shadow:0 0 50px rgba(229,57,53,.6)}
+.sim .chip{width:110px;height:86px;margin-top:50px}
+.sim b{font-weight:900;font-size:44px;margin-top:20px}.sim i{font-style:normal;font-weight:900;font-size:30px;color:#e53935;opacity:0}
+.sim.small{width:120px;height:160px;box-shadow:0 0 40px rgba(46,204,113,.8)}
+.sim.small .chip{width:60px;height:46px;margin-top:26px}.sim.small b{font-size:34px;color:#1a8f45;margin-top:8px}
+.mcard{width:330px;height:300px;background:#fff;color:#111;border-radius:28px;display:flex;flex-direction:column;align-items:center;
+ justify-content:center;gap:6px;box-shadow:0 0 50px rgba(229,57,53,.35),0 30px 60px rgba(0,0,0,.6)}
+.mcard img{width:100px;height:100px}.mcard .tt{font-weight:900;font-size:42px}.mcard .st{font-weight:700;font-size:24px;color:#666}
+.mcard .n{position:absolute;left:18px;top:14px;width:52px;height:52px;border-radius:14px;background:#e53935;color:#fff;font-weight:900;
+ font-size:32px;display:flex;align-items:center;justify-content:center}
+.mcard.best{border:6px solid #e53935;box-shadow:0 0 90px rgba(229,57,53,.7)}
+.mcard img.tint-ink{background:#111;border-radius:22px;padding:10px;filter:none}
+.tag{font-weight:800;font-size:24px;border-radius:999px;padding:8px 16px;background:#ffe0de;color:#111;margin-top:6px}
+.tag.red{background:#e53935;color:#fff}
+.receipt{width:440px;height:0;overflow:hidden;background:#f6f1e7;color:#111;font-family:"JBMono",monospace;font-size:24px;
+ box-shadow:0 0 50px rgba(255,255,255,.25)}
+#rin{padding:26px 24px;line-height:1.8}.rh{font-weight:700;font-size:34px;text-align:center;letter-spacing:6px;margin-bottom:6px}
+.rt{border-top:3px dashed #111;margin-top:8px;padding-top:6px;font-weight:700}.rp{color:#1a8f45;font-weight:700;text-align:center;margin-top:8px}
+#dust{inset:0;opacity:1!important}
+.dot{position:absolute;width:6px;height:6px;border-radius:50%;background:#ff8a75;box-shadow:0 0 12px #ff5a45}
+
+.path{width:330px;padding:18px 20px;border-radius:22px;background:#fff;color:#111;box-shadow:0 0 40px rgba(229,57,53,.35),0 20px 50px rgba(0,0,0,.5)}
+.path .q{font-weight:700;font-size:22px;color:#777}.path .a{font-weight:900;font-size:40px;display:flex;align-items:center;gap:12px}
+.path .a img{width:52px;height:52px}
+.rule{width:560px;display:flex;align-items:center;gap:16px;padding:14px 22px;border-radius:18px;background:rgba(20,20,26,.82);border:2px solid rgba(255,255,255,.18);
+ font-weight:800;font-size:32px;color:#fff;box-shadow:0 0 40px rgba(229,57,53,.3)}
+.rule b{width:50px;height:50px;border-radius:14px;background:#E53935;display:flex;align-items:center;justify-content:center;font-size:30px;flex:none}
+.cbox{width:560px;padding:20px 24px;border-radius:20px;background:#fff;color:#111;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.cbox .u{font-weight:800;font-size:22px;color:#555;margin-bottom:8px}.cbox .t{font-weight:700;font-size:32px;min-height:44px}
+.subbtn{padding:20px 40px;border-radius:999px;background:#ff0000;color:#fff;font-weight:900;font-size:40px;box-shadow:0 0 40px rgba(255,0,0,.5)}
+.slot{width:560px;height:315px;border-radius:22px;border:5px dashed rgba(255,255,255,.75);background:rgba(10,10,14,.55);display:flex;flex-direction:column;
+ align-items:center;justify-content:center;gap:12px;font-weight:900;font-size:40px;color:#fff}
+.slot i{font-style:normal;font-size:80px}
+.circ{width:260px;height:260px;border-radius:50%;border:5px dashed rgba(255,255,255,.75);background:rgba(10,10,14,.55);display:flex;align-items:center;
+ justify-content:center;text-align:center;font-weight:900;font-size:30px;color:#fff}
+</style><script src="../vendor/gsap.min.js"></script></head>
+<body><div id="root" data-composition-id="outro" data-start="0" data-width="1920" data-height="1080" data-duration="77.035">
+<section id="outro-scene" class="clip" data-start="0" data-duration="77.035" style="position:absolute;inset:0">
+<div id="L" class="lay">
+ <div id="h1" class="neon small" style="left:335px;top:30px;width:420px;text-align:left;font-size:54px">which one<br>fits you?</div>
+ <div id="pa" class="path" style="left:345px;top:200px"><div class="q">privacy · offline</div><div class="a"><img src="../icons/logo-ollama.png" style="background:#111;border-radius:12px;padding:4px">Ollama</div></div>
+ <div id="pb" class="path" style="left:345px;top:380px"><div class="q">no strong hardware · speed</div><div class="a"><img src="../icons/cloud.png" class="tint-red">OpenRouter</div></div>
+ <div id="pc" class="path" style="left:1300px;top:120px;width:460px;border:6px solid #E53935;box-shadow:0 0 90px rgba(229,57,53,.7)"><div class="q">keeps going when one runs out</div>
+   <div class="a" style="font-size:52px"><img src="../icons/zap.png" class="tint-red">OmniRoute</div><div class="tag red" style="display:inline-block;margin-top:8px">★ the best one</div></div>
+ <div id="rh" class="neon small" style="left:1260px;top:20px;width:600px;text-align:left;font-size:60px">4 rules</div>
+ <div id="r1" class="rule" style="left:1260px;top:130px"><b>1</b>Nothing is unlimited</div>
+ <div id="r2" class="rule" style="left:1260px;top:230px"><b>2</b>Clouds see what you send</div>
+ <div id="r3" class="rule" style="left:1260px;top:330px"><b>3</b>Kiro / Antigravity: your call</div>
+ <div id="r4" class="rule" style="left:1260px;top:430px"><b>4</b>Things break: copy · paste · fix</div>
+ <div id="chk" class="stamp" style="left:1270px;top:540px;font-size:44px">CHECK THE BILL ✓</div>
+ <div id="w1" class="pill" style="left:345px;top:150px;font-size:34px">📴 offline</div>
+ <div id="w2" class="pill" style="left:345px;top:260px;font-size:34px">☁️ in the cloud</div>
+ <div id="w3" class="pill red" style="left:345px;top:370px;font-size:34px">⚡ auto-switching</div>
+ <div id="kitbox" class="mcard" style="left:1340px;top:100px;width:420px;height:400px"><img src="../icons/package.png" class="tint-red" style="width:150px;height:150px">
+   <div class="tt">Free setup kit</div><div class="st">models · prompts · settings</div></div>
+ <div id="klink" class="pill red" style="left:1300px;top:540px;font-size:36px">1st link in the description ↓</div>
+ <div id="cb" class="cbox" style="left:1290px;top:150px"><div class="u">@you · just now</div><div class="t" id="ct"></div></div>
+ <div id="heart" class="pill" style="left:1300px;top:330px;font-size:32px">❤️ 1 · Reply</div>
+ <div id="sb" class="subbtn" style="left:1340px;top:200px">SUBSCRIBE</div>
+ <div id="sb2" class="subbtn" style="left:1340px;top:200px;background:#e6e6ea;color:#444">SUBSCRIBED 🔔</div>
+ <div id="tst" class="pill" style="left:345px;top:220px;font-size:34px">🧪 tested for you</div>
+ <div id="rcp" class="pill red" style="left:345px;top:330px;font-size:34px">🧾 receipts included</div>
+ <div id="slot" class="slot" style="left:1290px;top:110px"><i>▶</i>WATCH NEXT</div>
+ <div id="circ" class="circ" style="left:400px;top:190px">SUBSCRIBE<br>AI with Kalyan</div>
+ <div id="dust"></div>
+</div></section></div>
+<script>
+const B = {"map": 0.1, "fits": 2.01, "priv": 3.11, "oll": 4.91, "speed": 7.94, "orr": 9.28, "keep": 11.52, "omni": 13.87, "rules": 15.78, "r1": 16.86, "r2": 19.64, "r3": 23.78, "r4": 29.26, "bill": 33.89, "everyone": 36.21, "today": 39.14, "off": 42.53, "zero": 46.71, "kit": 48.55, "link": 53.11, "comm": 54.63, "sub": 59.35, "test": 61.12, "next": 63.68, "watch": 66.61, "week": 69.12, "bye": 74.86}, END = 77.035;
+const tl = gsap.timeline({paused:true});
+function on(sel,t,o={}){tl.fromTo(sel,{opacity:0,scale:o.s??0.6,y:o.y??0,x:o.x??0},{opacity:1,scale:1,y:0,x:0,duration:o.d??0.5,ease:o.e??"back.out(1.7)"},t);}
+function off(sel,t){tl.to(sel,{opacity:0,scale:0.85,duration:0.3,ease:"power2.in"},t);}
+const dust=document.getElementById('dust');let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
+const dots=[];for(let i=0;i<46;i++){const d=document.createElement('div');d.className='dot';dust.appendChild(d);dots.push({x:rnd()*1920,y:rnd()*760,s:0.4+rnd()*1.2,p:rnd()*6.28,v:8+rnd()*22});}
+const dd={t:0};tl.fromTo(dd,{t:0},{t:END,duration:END,ease:"none",onUpdate:()=>{dots.forEach((o,i)=>{gsap.set(dust.children[i],{x:o.x+Math.sin(dd.t*0.5+o.p)*30,
+  y:(o.y-dd.t*o.v+760)%760,scale:o.s,opacity:0.25+0.5*Math.abs(Math.sin(dd.t+o.p))});});}},0);
+const flo=(sel,t0,t1)=>{const o={v:0};tl.fromTo(o,{v:0},{v:1,duration:Math.max(0.1,t1-t0),ease:"none",onUpdate:()=>{gsap.set(sel,{yPercent:Math.sin(o.v*(t1-t0)*1.7)*5});}},t0);};
+// decision map
+on("#h1",B.map,{x:-120,s:1}); on("#pa",B.oll-0.4,{x:-200}); on("#pb",B.orr-0.4,{x:-200}); on("#pc",B.omni-0.3,{x:200,s:0.4,d:0.7});
+tl.to("#pc",{scale:1.06,duration:0.4,yoyo:true,repeat:3,ease:"sine.inOut"},B.omni+0.6); flo("#pa",B.oll,B.rules); flo("#pb",B.orr,B.rules);
+off(["#h1","#pa","#pb","#pc"],B.rules-0.15);
+// rules
+on("#rh",B.rules,{x:120,s:1}); on("#r1",B.r1,{x:300}); on("#r2",B.r2,{x:300}); on("#r3",B.r3,{x:300}); on("#r4",B.r4,{x:300});
+on("#chk",B.bill,{s:2.2,d:0.3,e:"power4.out"}); off(["#rh","#r1","#r2","#r3","#r4","#chk"],B.everyone-0.15);
+// three ways
+on("#w1",B.off,{x:-160}); on("#w2",B.off+0.8,{x:-160}); on("#w3",B.off+1.8,{x:-160}); off(["#w1","#w2","#w3"],B.zero-0.1);
+// setup kit
+on("#kitbox",B.kit,{y:-200,d:0.7}); on("#klink",B.link); tl.to("#klink",{y:14,duration:0.35,yoyo:true,repeat:3,ease:"sine.inOut"},B.link+0.5);
+off(["#kitbox","#klink"],B.comm-0.15);
+// comment
+on("#cb",B.comm,{x:200}); const ct={n:0},T="Trying method 3 first 🔥",ce=document.getElementById('ct');
+tl.fromTo(ct,{n:0},{n:T.length,duration:1.6,ease:"none",onUpdate:()=>{ce.textContent=T.slice(0,Math.round(ct.n));}},B.comm+0.4);
+on("#heart",B.comm+2.2); off(["#cb","#heart"],B.sub-0.15);
+// subscribe
+on("#sb",B.sub,{s:0.4}); tl.to("#sb",{scale:0.9,duration:0.1,yoyo:true,repeat:1},B.sub+1.0); tl.set("#sb",{opacity:0},B.sub+1.2);
+tl.fromTo("#sb2",{opacity:0,scale:0.8},{opacity:1,scale:1,duration:0.3,ease:"back.out(2)"},B.sub+1.2); off("#sb2",B.next-0.15);
+on("#tst",B.test,{x:-160}); on("#rcp",B.test+0.8,{x:-160}); off(["#tst","#rcp"],B.next-0.15);
+// end screen slots (YouTube end-screen elements go here)
+on("#slot",B.next,{x:200,s:0.8}); on("#circ",B.week,{x:-160,s:0.8});
+tl.to("#slot",{boxShadow:"0 0 60px rgba(229,57,53,.8)",duration:0.6,yoyo:true,repeat:5},B.watch);
+window.__timelines["outro"]=tl;
+</script></body></html>

@@ -168,3 +168,14 @@ CUTS = []
 for a, after, b in KEEPS:
     s = _find(a, after); e = _find(b, s, last=True)
     CUTS.append((A, round(s - 0.08, 3), round(e + 0.12, 3)))
+# word-level fixes inside long pieces
+FIX = {('1479', 'asked'): 948.9,                    # end "I asked," before the first "Design..." (retake follows)
+       }
+def _split(cuts, at_s, gap_s, gap_e):
+    out = []
+    for tk, s, e in cuts:
+        if s < gap_s < e: out += [(tk, s, gap_s), (tk, gap_e, e)]
+        else: out.append((tk, s, e))
+    return out
+CUTS = _split(CUTS, None, 152.12, 152.70)          # "Then, then install" -> "Then install"
+CUTS = [(tk, s, 948.9 if (s < 948.6 < e and e < 949.2) else e) for tk, s, e in CUTS]

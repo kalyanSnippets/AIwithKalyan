@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p3prompt" data-start="0" data-width="1920" data-height="1080" data-duration="17.41">
+<section id="p3prompt-scene" class="clip" data-start="0" data-duration="17.41" style="position:absolute;inset:0"><div class="bg"></div>
+<style>
+.tank{position:absolute;width:250px;height:330px}
+.tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
+.tank .liq{position:absolute;left:0;right:0;bottom:0;height:100%}
+.tank .nm{position:absolute;left:0;right:0;top:0;text-align:center;font-weight:900;font-size:32px}
+.tank .lim{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-weight:800;font-size:24px;color:#fff;z-index:2}
+.node{position:absolute;border-radius:26px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:8px;font-weight:900;box-shadow:0 26px 60px rgba(0,0,0,.5)}
+.node img{width:80px;height:80px}
+.om{background:linear-gradient(135deg,#E53935,#b71c1c);color:#fff;box-shadow:0 0 90px rgba(229,57,53,.6)}
+.dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff}
+.prw{position:absolute;left:600px;top:150px;width:1240px;border-radius:26px;background:#fff;color:#111;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
+.prw .bar{height:60px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 22px;font-weight:700;font-size:22px;color:#666}
+.prw .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.prw .body{padding:34px 44px;font-weight:600;font-size:36px;line-height:1.55;min-height:300px}
+.hl{background:#ffe0de;border-radius:8px;padding:0 6px}
+</style>
+<div class="hdr"><i></i>Install with one prompt</div>
+<div class="prw" id="pw"><div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+ <span style="margin-left:20px">Antigravity · new conversation</span></div><div class="body" id="pt"></div></div>
+<div id="kit" class="pill" style="left:640px;top:720px;font-size:34px">📦 Exact prompt in the setup kit</div>
+
+</section></div>
+<script>
+const B = {"kit": 2.64, "says": 5.3, "then": 9.57, "fails": 14.57};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#pw",0.05); FX.pop(tl,"#kit",B.kit);
+const txt="Check whether Claude Code is installed and install it if not. Then install OmniRoute from GitHub, start it, and open the dashboard in my browser. If any step fails, fix it and keep going."; const o={n:0}; const el=document.getElementById('pt');
+const HL=['Claude Code is installed','install OmniRoute from GitHub','open the dashboard','fix it and keep going'];
+tl.fromTo(o,{n:0},{n:txt.length,duration:(B.fails+3.0-B.says),ease:"none",onUpdate:()=>{let s=txt.slice(0,Math.round(o.n));
+  HL.forEach(h=>{s=s.replace(h,'<span class="hl">'+h+'</span>');}); el.innerHTML=s+'<span style="color:#E53935">▍</span>';}},B.says);
+
+FX.ambient(tl, 17.41);
+window.__timelines["p3prompt"] = tl;
+</script></body></html>

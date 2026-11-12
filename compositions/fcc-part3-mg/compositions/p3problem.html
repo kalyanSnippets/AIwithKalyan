@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p3problem" data-start="0" data-width="1920" data-height="1080" data-duration="24.95">
+<section id="p3problem-scene" class="clip" data-start="0" data-duration="24.95" style="position:absolute;inset:0"><div class="bg"></div>
+<style>
+.tank{position:absolute;width:250px;height:330px}
+.tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
+.tank .liq{position:absolute;left:0;right:0;bottom:0;height:100%}
+.tank .nm{position:absolute;left:0;right:0;top:0;text-align:center;font-weight:900;font-size:32px}
+.tank .lim{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-weight:800;font-size:24px;color:#fff;z-index:2}
+.node{position:absolute;border-radius:26px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:8px;font-weight:900;box-shadow:0 26px 60px rgba(0,0,0,.5)}
+.node img{width:80px;height:80px}
+.om{background:linear-gradient(135deg,#E53935,#b71c1c);color:#fff;box-shadow:0 0 90px rgba(229,57,53,.6)}
+.dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff}
+.prw{position:absolute;left:600px;top:150px;width:1240px;border-radius:26px;background:#fff;color:#111;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
+.prw .bar{height:60px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 22px;font-weight:700;font-size:22px;color:#666}
+.prw .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.prw .body{padding:34px 44px;font-weight:600;font-size:36px;line-height:1.55;min-height:300px}
+.hl{background:#ffe0de;border-radius:8px;padding:0 6px}
+
+#pipe{position:absolute;left:640px;top:620px;width:1100px;height:26px;border-radius:13px;background:#2a2a32;opacity:0}
+#flow{position:absolute;left:640px;top:620px;width:0;height:26px;border-radius:13px;background:linear-gradient(90deg,#4285f4,#76b900,#7c3aed);box-shadow:0 0 30px #7c3aed}
+#omb{position:absolute;left:900px;top:700px;opacity:0}
+</style>
+<div class="hdr"><i></i>The problem</div><div class="tank" id="tk0" style="left:640px;top:220px"><div class="nm" style="color:#4285f4">Google</div><div class="box"><div class="liq" id="lq0" style="background:linear-gradient(180deg,#4285f4,#4285f488)"></div><div class="lim">some free requests</div></div></div><div class="tank" id="tk1" style="left:1040px;top:220px"><div class="nm" style="color:#76b900">NVIDIA</div><div class="box"><div class="liq" id="lq1" style="background:linear-gradient(180deg,#76b900,#76b90088)"></div><div class="lim">some free requests</div></div></div><div class="tank" id="tk2" style="left:1440px;top:220px"><div class="nm" style="color:#7c3aed">OpenRouter</div><div class="box"><div class="liq" id="lq2" style="background:linear-gradient(180deg,#7c3aed,#7c3aed88)"></div><div class="lim">50 / day</div></div></div>
+<div id="pipe"></div><div id="flow"></div>
+<div id="omb" class="pill red" style="font-size:52px">⚡ OmniRoute</div>
+
+</section></div>
+<script>
+const B = {"limit": 4.55, "g": 5.31, "n": 7.07, "o": 8.47, "out": 12.52, "together": 14.6, "what": 17.81, "next": 19.74, "om": 22.86};
+const tl = gsap.timeline({ paused: true });
+
+FX.pop(tl,"#tk0",B.g-0.1); FX.pop(tl,"#tk1",B.n-0.1); FX.pop(tl,"#tk2",B.o-0.1);
+[0,1,2].forEach(i=>tl.to("#lq"+i,{height:"6%",duration:1.6,ease:"power2.in"},B.out+i*0.25));
+[0,1,2].forEach(i=>tl.to("#tk"+i,{x:-10,duration:0.06,yoyo:true,repeat:5},B.out+1.6+i*0.25));
+tl.to("#pipe",{opacity:1,duration:0.3},B.together); [0,1,2].forEach(i=>tl.to("#lq"+i,{height:"100%",duration:0.6},B.together+0.1));
+tl.to("#flow",{width:"1100px",duration:1.0,ease:"power2.inOut"},B.together+0.3);
+tl.to("#lq0",{height:"0%",duration:1.2,ease:"none"},B.what); tl.to("#tk1",{scale:1.08,duration:0.3,yoyo:true,repeat:1},B.next);
+tl.to("#lq1",{height:"40%",duration:1.4,ease:"none"},B.next+0.4);
+tl.fromTo("#omb",{opacity:0,scale:0.4},{opacity:1,scale:1,duration:0.5,ease:"back.out(2)"},B.om);
+
+FX.ambient(tl, 24.95);
+window.__timelines["p3problem"] = tl;
+</script></body></html>

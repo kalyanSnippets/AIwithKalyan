@@ -368,7 +368,8 @@ def build(spec_path, name):
 
         if sh['kind'] == 'intro':
             if intro_p is None:
-                intro_p = Pipe(f"{ROOT}/compositions/fcc-part1-mg/out/intro.mov", ss=t if STILLS else 0.0, fmt='rgba')
+                lay = sh.get('layer', f"{ROOT}/compositions/fcc-part1-mg/out/intro.mov")
+                intro_p = Pipe(lay, ss=(t - sh['t0']) if STILLS else 0.0, fmt='rgba')
                 sys.path.insert(0, f'{FXREPO}/scripts'); from fx import Tracker; tracker = Tracker(640, 360)
             ov = intro_p.read()
             if STILLS: intro_p.close(); intro_p = None

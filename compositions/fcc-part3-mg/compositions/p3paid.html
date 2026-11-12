@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p3paid" data-start="0" data-width="1920" data-height="1080" data-duration="19.59">
+<section id="p3paid-scene" class="clip" data-start="0" data-duration="19.59" style="position:absolute;inset:0"><div class="bg"></div>
+<style>
+.tank{position:absolute;width:250px;height:330px}
+.tank .box{position:absolute;left:0;right:0;top:50px;bottom:0;border-radius:26px;border:4px solid #44444e;overflow:hidden;background:#17171c}
+.tank .liq{position:absolute;left:0;right:0;bottom:0;height:100%}
+.tank .nm{position:absolute;left:0;right:0;top:0;text-align:center;font-weight:900;font-size:32px}
+.tank .lim{position:absolute;left:0;right:0;bottom:16px;text-align:center;font-weight:800;font-size:24px;color:#fff;z-index:2}
+.node{position:absolute;border-radius:26px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:8px;font-weight:900;box-shadow:0 26px 60px rgba(0,0,0,.5)}
+.node img{width:80px;height:80px}
+.om{background:linear-gradient(135deg,#E53935,#b71c1c);color:#fff;box-shadow:0 0 90px rgba(229,57,53,.6)}
+.dot{position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 18px #fff}
+.prw{position:absolute;left:600px;top:150px;width:1240px;border-radius:26px;background:#fff;color:#111;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
+.prw .bar{height:60px;background:#f1f1f4;display:flex;align-items:center;gap:10px;padding:0 22px;font-weight:700;font-size:22px;color:#666}
+.prw .bar i{width:14px;height:14px;border-radius:50%;display:block}
+.prw .body{padding:34px 44px;font-weight:600;font-size:36px;line-height:1.55;min-height:300px}
+.hl{background:#ffe0de;border-radius:8px;padding:0 6px}
+
+#menu{position:absolute;left:640px;top:150px;width:760px;border-radius:24px;background:#0f0f13;border:2px solid #2c2c34;padding:22px;box-sizing:border-box;font-family:"JBMono",monospace}
+.mr{display:flex;justify-content:space-between;font-size:30px;padding:12px 16px;border-radius:10px;color:#ddd}
+#tg{position:absolute;left:1460px;top:230px;width:380px;height:200px;border-radius:24px;background:#1b1b20;border:2px solid #2c2c34;padding:26px;box-sizing:border-box;font-weight:800;font-size:28px}
+#sw{width:110px;height:56px;border-radius:28px;background:#444;margin-top:20px;position:relative} #kn{position:absolute;left:6px;top:6px;width:44px;height:44px;border-radius:50%;background:#fff}
+</style>
+<div class="hdr"><i></i>Hide paid models</div>
+<div id="menu"><div style="color:#888;font-size:22px;margin-bottom:8px">/model</div><div class="mr " id="mr0"><span>claude (combo)</span><b style="color:#2ecc71">FREE</b></div><div class="mr " id="mr1"><span>gemini-2.5-flash</span><b style="color:#2ecc71">FREE</b></div><div class="mr paid" id="mr2"><span>claude-opus-4</span><b style="color:#E53935">$$$</b></div><div class="mr " id="mr3"><span>nemotron-nano</span><b style="color:#2ecc71">FREE</b></div><div class="mr paid" id="mr4"><span>gpt-5</span><b style="color:#E53935">$$$</b></div><div class="mr paid" id="mr5"><span>gemini-2.5-pro</span><b style="color:#E53935">$$$</b></div></div>
+<div id="tg">Hide paid models<div id="sw"><div id="kn"></div></div></div>
+<div id="warn" class="pill red" style="left:1440px;top:500px;font-size:34px">⚠ errors · or a bill</div>
+<div id="def" class="pill" style="left:1440px;top:620px;font-size:32px">★ default: claude combo</div>
+
+</section></div>
+<script>
+const B = {"menu": 3.83, "paid": 7.2, "acc": 8.39, "bill": 11.02, "prompt": 12.24, "hide": 15.15, "default": 17.54};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#menu",B.menu-0.3); tl.fromTo(".mr",{opacity:0,x:-30},{opacity:1,x:0,duration:0.25,stagger:0.08},B.menu);
+tl.to(".mr.paid",{backgroundColor:"rgba(229,57,53,.22)",duration:0.3},B.paid); FX.pop(tl,"#warn",B.bill-0.4);
+FX.pop(tl,"#tg",B.prompt); tl.to("#sw",{backgroundColor:"#2ecc71",duration:0.2},B.hide); tl.to("#kn",{x:54,duration:0.25,ease:"back.out(2)"},B.hide);
+tl.to(".mr.paid",{height:0,padding:0,opacity:0,duration:0.5,stagger:0.1},B.hide+0.3); FX.out(tl,"#warn",B.hide+0.3);
+tl.to("#mr0",{backgroundColor:"rgba(46,204,113,.2)",duration:0.3},B.default); FX.pop(tl,"#def",B.default);
+
+FX.ambient(tl, 19.59);
+window.__timelines["p3paid"] = tl;
+</script></body></html>
