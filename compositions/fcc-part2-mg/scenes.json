@@ -1,0 +1,38 @@
+[
+ {
+  "id": "p2open",
+  "start": 0.01,
+  "end": 20.23,
+  "dur": 20.22
+ },
+ {
+  "id": "p2tip",
+  "start": 71.05,
+  "end": 85.73,
+  "dur": 14.68
+ },
+ {
+  "id": "p2settings",
+  "start": 85.73,
+  "end": 132.18,
+  "dur": 46.45
+ },
+ {
+  "id": "p2session",
+  "start": 132.18,
+  "end": 147.13,
+  "dur": 14.95
+ },
+ {
+  "id": "p2catch",
+  "start": 220.51,
+  "end": 246.25,
+  "dur": 25.74
+ },
+ {
+  "id": "p2privacy",
+  "start": 246.25,
+  "end": 257.67,
+  "dur": 11.42
+ }
+]

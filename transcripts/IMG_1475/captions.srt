@@ -1,715 +1,823 @@
 1
-00:00:15,660 --> 00:00:19,000
-And if this already saved you $20
+00:00:16,020 --> 00:00:16,440
+And if,
 
 2
-00:00:19,000 --> 00:00:21,500
-a month, hit subscribe because it gets
+00:00:17,220 --> 00:00:19,640
+and if this already saved you $20 a month,
 
 3
-00:00:21,500 --> 00:00:22,560
-better from here.
+00:00:20,000 --> 00:00:22,100
+hit subscribe because it gets better from
 
 4
-00:00:27,470 --> 00:00:29,250
-So method two is OpenRouter.
+00:00:22,160 --> 00:00:22,400
+here.
 
 5
-00:00:29,910 --> 00:00:32,430
-OpenRouter is one,
+00:00:27,440 --> 00:00:29,380
+So method two is OpenRouter.
 
 6
-00:00:34,560 --> 00:00:37,380
-method two is
+00:00:29,860 --> 00:00:30,540
+OpenRouter,
 
 7
-00:00:37,380 --> 00:00:38,160
-OpenRouter.
+00:00:31,200 --> 00:00:32,420
+OpenRouter is one--
 
 8
-00:00:38,520 --> 00:00:40,880
-OpenRouter is one website that gives you
+00:00:35,320 --> 00:00:35,900
+Method two,
 
 9
-00:00:40,880 --> 00:00:43,220
-dozens of AI models with a single account
+00:00:36,700 --> 00:00:38,220
+method two is OpenRouter.
 
 10
-00:00:43,220 --> 00:00:45,300
-and key and many of them are free.
+00:00:38,720 --> 00:00:40,860
+OpenRouter is one website that gives you
 
 11
-00:00:45,300 --> 00:00:48,200
-They run on its servers so they
+00:00:40,940 --> 00:00:43,320
+dozens of AI models with a single account
 
 12
-00:00:48,200 --> 00:00:53,440
-are
+00:00:43,360 --> 00:00:45,360
+and key, and many of them are free.
 
 13
-00:00:53,440 --> 00:00:54,240
-much faster.
+00:00:46,120 --> 00:00:48,440
+They run on its servers, so they're...
 
 14
-00:00:54,940 --> 00:00:58,340
-For sign up go
+00:00:50,360 --> 00:00:53,200
+They run on, they run on its servers, so
 
 15
-00:00:58,340 --> 00:01:00,520
-to API keys, click create.
+00:00:53,260 --> 00:00:54,260
+they are much faster.
 
 16
-00:01:01,400 --> 00:01:04,560
-For sign up go to API keys, click create
+00:00:54,860 --> 00:00:55,360
+Sign up.
 
 17
-00:01:04,560 --> 00:01:07,460
-key and API key is a
+00:00:57,160 --> 00:01:00,140
+For sign up, go to API keys, click
 
 18
-00:01:13,290 --> 00:01:19,910
-password
+00:01:00,200 --> 00:01:00,680
+Create.
 
 19
-00:01:19,910 --> 00:01:22,450
-that lets clot code use your account.
+00:01:01,640 --> 00:01:04,680
+For sign up, go to API keys, click Create
 
 20
-00:01:23,770 --> 00:01:26,110
-An API key is a password that lets cloud
+00:01:04,760 --> 00:01:05,019
+key.
 
 21
-00:01:26,110 --> 00:01:27,310
-code use your account.
+00:01:05,379 --> 00:01:06,480
+An API key is...
 
 22
-00:01:27,930 --> 00:01:30,430
-So set it to expire in a seven day and set
+00:01:13,160 --> 00:01:14,740
+For sign up, go to API,
 
 23
-00:01:30,430 --> 00:01:32,170
-the credit limit to zero.
+00:01:15,440 --> 00:01:17,880
+go to API keys, and click Create key.
 
 24
-00:01:33,470 --> 00:01:36,630
-Set it to expire in seven days and set the
+00:01:18,480 --> 00:01:21,080
+An API key is a password that lets Claude
 
 25
-00:01:36,630 --> 00:01:37,750
-credit limit to zero.
+00:01:21,200 --> 00:01:22,600
+Code use your account.
 
 26
-00:01:38,290 --> 00:01:40,190
-So it physically can't change you.
+00:01:23,720 --> 00:01:26,180
+An API key is a password that lets Claude
 
 27
-00:01:50,650 --> 00:01:53,930
-Set the expiry and set the credit limit to
+00:01:26,280 --> 00:01:29,180
+Code use your account, so set it to expire
 
 28
-00:01:53,930 --> 00:01:54,230
-zero.
+00:01:29,220 --> 00:01:31,880
+in a seven day and set the credit limit to
 
 29
-00:02:00,460 --> 00:02:03,680
-So it physically can't charge you.
+00:01:31,960 --> 00:01:32,220
+zero.
 
 30
-00:02:06,120 --> 00:02:08,260
-Then in models filter by free.
+00:01:33,940 --> 00:01:36,600
+Set it to expire in seven days and set the
 
 31
-00:02:15,260 --> 00:02:17,660
-To connect it you paste a small setting
+00:01:36,760 --> 00:01:39,160
+credit limit to zero, so it physically
 
 32
-00:02:17,660 --> 00:02:19,020
-block into your terminal.
+00:01:39,220 --> 00:01:40,160
+can't change you.
 
 33
-00:02:19,020 --> 00:02:21,780
-It tells Claude code talk to open router
+00:01:40,500 --> 00:01:40,620
+Cha-
 
 34
-00:02:21,780 --> 00:02:24,480
-instead of anthropic and here is my key.
+00:01:51,140 --> 00:01:53,920
+Set the expiry and set the credit limit to
 
 35
-00:02:25,380 --> 00:02:27,620
-It's in the setup key
+00:01:54,000 --> 00:01:56,700
+zero, so it physically can't charge you,
 
 36
-00:02:28,800 --> 00:02:31,560
-it's in the setup kit and you only charge
+00:01:57,280 --> 00:01:57,660
+then...
 
 37
-00:02:31,560 --> 00:02:34,980
-one thing and it's
+00:02:00,980 --> 00:02:03,380
+So it physically cha-can't charge you.
 
 38
-00:02:34,980 --> 00:02:37,480
-in the setup kit and you only change one
+00:02:06,300 --> 00:02:08,400
+Then in Models, filter by Free.
 
 39
-00:02:37,480 --> 00:02:38,900
-thing, it's your key.
+00:02:15,460 --> 00:02:17,740
+To connect it, you paste a small setting
 
 40
-00:03:05,210 --> 00:03:07,790
-If you see your Claude plan here, you are
+00:02:17,820 --> 00:02:19,160
+block into your terminal.
 
 41
-00:03:07,790 --> 00:03:08,870
-not on the free setup.
+00:02:19,460 --> 00:02:22,020
+It tells Claude Code, "Talk to OpenRouter
 
 42
-00:03:13,000 --> 00:03:15,940
-Open a fresh terminal, one line at a time
+00:02:22,100 --> 00:02:24,580
+instead of Anthropic," and here is my key.
 
 43
-00:03:15,940 --> 00:03:18,980
-and go and now it says open router for
+00:02:25,020 --> 00:02:25,340
+It's,
 
 44
-00:03:18,980 --> 00:03:19,260
-free.
+00:02:26,600 --> 00:02:27,720
+it's in the setup key.
 
 45
-00:03:24,450 --> 00:03:27,790
-And this is where I almost
+00:02:29,320 --> 00:02:31,700
+It's in the setup kit, and you only charge
 
 46
-00:03:27,790 --> 00:03:28,410
-got fooled.
+00:02:31,760 --> 00:02:32,340
+one thing.
 
 47
-00:03:29,350 --> 00:03:30,650
-My paste failed silently.
+00:02:34,000 --> 00:02:34,060
+Uh,
 
 48
-00:03:31,150 --> 00:03:33,410
-I typed Claude, it opened and it looked
+00:02:34,860 --> 00:02:37,280
+it's in the setup kit, and you only change
 
 49
-00:03:33,410 --> 00:03:33,770
-fine.
+00:02:37,380 --> 00:02:37,780
+one thing.
 
 50
-00:03:34,370 --> 00:03:35,330
-Look at the top line.
+00:02:38,280 --> 00:02:39,040
+It's your key.
 
 51
-00:03:35,730 --> 00:03:36,590
-Spot anything wrong?
-
-52
-00:03:36,590 --> 00:03:37,930
-Now, Claude Pro,
-
-53
-00:03:41,820 --> 00:03:44,380
-Claude Code had quietly gone back to my
-
-54
-00:03:44,380 --> 00:03:45,080
-paid subscription.
-
-55
-00:03:45,700 --> 00:03:48,060
+00:03:05,260 --> 00:03:07,780
 If you see your Claude plan here, you're
 
+52
+00:03:07,840 --> 00:03:09,080
+not on the free setup.
+
+53
+00:03:13,060 --> 00:03:15,960
+Open a fresh terminal, one line at a time,
+
+54
+00:03:16,300 --> 00:03:19,000
+and go-- And now it says openrouter for
+
+55
+00:03:19,080 --> 00:03:19,420
+free.
+
 56
-00:03:48,060 --> 00:03:49,100
-not on a free setup.
+00:03:24,400 --> 00:03:25,900
+And this is where I almost go--
 
 57
-00:03:49,820 --> 00:03:52,500
-Go to fresh terminal again, one line at a
+00:03:26,540 --> 00:03:28,540
+And this is where I almost got fooled.
 
 58
-00:03:52,500 --> 00:03:55,920
-time and now it says open router and
+00:03:29,420 --> 00:03:30,880
+My paste failed silently.
 
 59
-00:03:58,190 --> 00:04:00,710
-now it says open router slash free.
+00:03:31,200 --> 00:03:33,520
+I typed Claude, it opened, and it looked
 
 60
-00:04:09,320 --> 00:04:11,620
-The menu still says Opus and so on.
+00:03:33,600 --> 00:03:33,920
+fine.
 
 61
-00:04:13,060 --> 00:04:14,360
-The menu still
+00:03:34,400 --> 00:03:35,440
+Look at the top line.
 
 62
-00:04:14,360 --> 00:04:20,580
-says
+00:03:35,780 --> 00:03:36,680
+Spot anything wrong?
 
 63
-00:04:24,300 --> 00:04:27,260
-Opus and Sonnet but those are just slot
+00:03:37,380 --> 00:03:38,120
+Claude Pro.
 
 64
-00:04:27,260 --> 00:04:27,600
-names.
+00:03:42,240 --> 00:03:44,380
+Claude Code had quietly gone back to my
 
 65
-00:04:28,240 --> 00:04:29,240
-So let's check the bill.
+00:03:44,460 --> 00:03:45,360
+paid subscription.
 
 66
-00:04:29,680 --> 00:04:31,720
-Before I scroll, how much do you think
+00:03:45,800 --> 00:03:48,040
+If you see your Claude plan here, you're
 
 67
-00:04:31,720 --> 00:04:32,260
-this costs?
+00:03:48,100 --> 00:03:49,280
+not on a free setup.
 
 68
-00:04:34,560 --> 00:04:36,440
-3 requires 0 dollars.
+00:03:49,900 --> 00:03:52,480
+Go to fresh terminal again, one line at a
 
 69
-00:04:37,240 --> 00:04:39,260
-And if the slot code's own usage screen
+00:03:52,540 --> 00:03:54,920
+time, and now it says openrouter.
 
 70
-00:04:39,260 --> 00:04:41,600
-shows a few cents, that's only its
+00:03:58,120 --> 00:04:00,880
+And now it says openrouter/free.
 
 71
-00:04:41,600 --> 00:04:43,420
-estimate at anthrophic's prices.
+00:04:09,380 --> 00:04:11,860
+The menu still says Opus and Sonnet.
 
 72
-00:04:44,020 --> 00:04:45,360
-The real bill is 0.
+00:04:13,640 --> 00:04:15,520
+The menu still says Opus and--
 
 73
-00:04:45,360 --> 00:04:48,520
-and the catch here is free
+00:04:16,579 --> 00:04:18,000
+The menu still says Ope--
 
 74
-00:04:48,520 --> 00:04:51,600
-models are capped about 50 requests a day
+00:04:18,540 --> 00:04:23,220
+Mm.
 
 75
-00:04:51,600 --> 00:04:54,780
-on a new account and one clock code
+00:04:23,260 --> 00:04:25,460
+The menu still says Opus and Sonnet,
 
 76
-00:04:54,780 --> 00:04:57,340
-tasks can use 10 or 20 or 30
+00:04:26,080 --> 00:04:27,680
+but those are just Claude names.
 
 77
-00:04:57,340 --> 00:04:58,320
-and
+00:04:28,160 --> 00:04:29,320
+So let's check the bill.
 
 78
-00:05:00,840 --> 00:05:03,320
-the catch here is free models are capped
+00:04:29,660 --> 00:04:31,780
+Before I scroll, how much do you think
 
 79
-00:05:03,320 --> 00:05:06,140
-about 50 requests a day on a new account
+00:04:31,840 --> 00:04:32,440
+this costs?
 
 80
-00:05:06,140 --> 00:05:09,640
-and one clock code task can use 10 or 20
+00:04:34,620 --> 00:04:36,560
+Three requests, zero dollars.
 
 81
-00:05:09,640 --> 00:05:10,700
-then
+00:04:37,120 --> 00:04:39,340
+And if Claude Code's own usage screen
 
 82
-00:05:11,950 --> 00:05:15,250
-you hit error then you hit
+00:04:39,400 --> 00:04:41,600
+shows a few cents, that's only its
 
 83
-00:05:15,250 --> 00:05:16,550
-error and
+00:04:41,680 --> 00:04:43,620
+estimate at Anthropic's prices.
 
 84
-00:05:19,050 --> 00:05:22,230
-then you hit error 429 the server
+00:04:44,120 --> 00:04:45,440
+The real bill is zero.
 
 85
-00:05:22,230 --> 00:05:24,650
-says you have used up your free quota.
+00:04:46,520 --> 00:04:47,760
+And the catch here is
 
 86
-00:05:33,410 --> 00:05:35,770
-Now let's ask a quick question which one
+00:04:48,360 --> 00:04:50,760
+free models are capped, about fifty
 
 87
-00:05:35,770 --> 00:05:38,370
-are you leaning towards so far Olama or
+00:04:50,820 --> 00:04:52,920
+requests a day on a new account.
 
 88
-00:05:38,370 --> 00:05:41,650
-the open router tell me in the comments
+00:04:53,740 --> 00:04:56,380
+And one Claude Code task can use ten or
 
 89
-00:05:41,650 --> 00:05:43,250
-below because
+00:04:56,420 --> 00:04:57,420
+twenty or thirty.
 
 90
-00:05:44,940 --> 00:05:48,100
-because method 3 is where it gets
+00:05:00,780 --> 00:05:02,960
+And the catch here is free models are
 
 91
-00:05:48,100 --> 00:05:49,260
-really interesting.
+00:05:03,040 --> 00:05:05,560
+capped, about fifty requests a day on a
 
 92
-00:05:54,830 --> 00:05:57,130
-Which one are you leaning towards so far?
+00:05:05,640 --> 00:05:08,480
+new account, and one Claude Code task can
 
 93
-00:05:57,750 --> 00:05:59,710
-Which one are you leaning towards so far?
+00:05:08,560 --> 00:05:09,820
+use ten or twenty.
 
 94
-00:06:00,170 --> 00:06:01,590
-Olama or the OpenRouter.
+00:05:11,860 --> 00:05:12,900
+Then you hit error.
 
 95
-00:06:01,910 --> 00:06:03,890
-Tell me in the comments below because
+00:05:14,760 --> 00:05:16,040
+Then you hit error four...
 
 96
-00:06:03,890 --> 00:06:05,990
-method 3 is where it gets really
+00:05:19,320 --> 00:05:21,500
+And then you hit error four twenty-nine.
 
 97
-00:06:05,990 --> 00:06:06,510
-interesting.
+00:05:21,840 --> 00:05:24,300
+The server says you have used up your free
 
 98
-00:06:12,260 --> 00:06:14,220
-Every free provider has a limit.
+00:05:24,360 --> 00:05:24,800
+quota.
 
 99
-00:06:14,840 --> 00:06:17,500
-But what if you connect all of them and it
+00:05:33,340 --> 00:05:34,820
+Now let's ask a quick question.
 
 100
-00:06:17,500 --> 00:06:20,140
-switches automatically when one ran out?
+00:05:35,420 --> 00:05:37,280
+Which one are you leaning towards so far,
 
 101
-00:06:21,780 --> 00:06:23,340
-That's only wrote for you.
+00:05:37,700 --> 00:05:39,260
+Ollama or the OpenRouter?
 
 102
-00:06:23,780 --> 00:06:26,200
-A free open source app that sits between
+00:05:39,600 --> 00:05:40,380
+Tell me in the curre--
 
 103
-00:06:26,200 --> 00:06:29,520
-cloud code and all of the AI providers and
+00:05:41,020 --> 00:05:42,140
+Tell me in the comments below,
 
 104
-00:06:29,520 --> 00:06:33,000
-a free open source app that
+00:05:42,860 --> 00:05:43,240
+because,
 
 105
-00:06:33,000 --> 00:06:35,700
-sits between cloud code and all of your AI
+00:05:45,900 --> 00:05:48,260
+because method three is where it gets
 
 106
-00:06:35,700 --> 00:06:38,240
-providers and sends each request to one
+00:05:48,380 --> 00:05:49,520
+really interesting.
 
 107
-00:06:38,240 --> 00:06:39,480
-that's free and working.
+00:05:54,760 --> 00:05:56,840
+Which one are you leaning towards so far?
 
 108
-00:06:40,040 --> 00:06:42,440
-One prompt to anti -gravity installs it
+00:05:57,700 --> 00:05:59,680
+Which one are you leaning towards so far,
 
 109
-00:06:42,440 --> 00:06:43,640
-and open the dashboard.
+00:06:00,100 --> 00:06:01,640
+Ollama or the OpenRouter?
 
 110
-00:06:48,530 --> 00:06:50,910
-Its control panel running
+00:06:02,080 --> 00:06:03,960
+Tell me in the comments below, because
 
 111
-00:06:50,910 --> 00:06:53,950
-on your own
+00:06:04,020 --> 00:06:06,060
+method three is where it gets really
 
 112
-00:06:53,950 --> 00:06:57,290
-computer first password is change me.
+00:06:06,140 --> 00:06:06,600
+interesting
 
 113
-00:07:01,200 --> 00:07:04,500
-First password is always change me so So
+00:06:12,450 --> 00:06:14,270
+Every free provider has a limit,
 
 114
-00:07:04,500 --> 00:07:07,880
-type it and change it in the settings
+00:06:14,870 --> 00:06:17,510
+but what if you connect all of them and it
 
 115
-00:07:07,880 --> 00:07:09,340
-later on.
+00:06:17,550 --> 00:06:19,770
+switches automatically when one ran out?
 
 116
-00:07:13,450 --> 00:07:14,110
-In the dashboard,
+00:06:20,510 --> 00:06:21,010
+That's O--
 
 117
-00:07:15,770 --> 00:07:16,530
-open providers.
+00:06:22,130 --> 00:06:23,410
+that's OmniRoute for you.
 
 118
-00:07:17,210 --> 00:07:18,910
-Search and click at Cairo.
+00:06:23,910 --> 00:06:26,270
+A free open source app that sits between
 
 119
-00:07:20,630 --> 00:07:22,210
-In the dashboard, open providers.
+00:06:26,310 --> 00:06:28,630
+Claude Code and all of the AI providers
 
 120
-00:07:23,410 --> 00:07:25,030
-Search and click at Cairo.
+00:06:29,390 --> 00:06:29,570
+and--
 
 121
-00:07:27,580 --> 00:07:31,000
-Amazon's AI coding app
+00:06:31,390 --> 00:06:33,730
+A free open source app that sits between
 
 122
-00:07:31,000 --> 00:07:33,360
-whose free plan includes real cloud
+00:06:33,790 --> 00:06:36,290
+Claude Code and all of your AI providers,
 
 123
-00:07:33,360 --> 00:07:33,900
-models.
+00:06:36,630 --> 00:06:38,930
+and sends each request to one that's free
 
 124
-00:07:34,240 --> 00:07:36,420
-You approve a code and it's connected.
+00:06:38,990 --> 00:06:39,570
+and working.
 
 125
-00:07:37,800 --> 00:07:40,500
-The free allowance is small and the
+00:06:40,250 --> 00:06:42,750
+One prompt to Antigravity installs it and
 
 126
-00:07:40,500 --> 00:07:42,040
-omnirode flags its terms.
+00:06:42,850 --> 00:06:43,810
+open the dashboard.
 
 127
-00:07:42,380 --> 00:07:44,060
-So your account, your call.
+00:06:44,970 --> 00:06:46,070
+Its control panel.
 
 128
-00:07:44,600 --> 00:07:46,400
-Antigravity sign in with Google.
+00:06:49,070 --> 00:06:50,550
+Its control panel.
 
 129
-00:07:48,260 --> 00:07:49,980
-And the next one is Antigravity.
+00:06:50,650 --> 00:06:51,110
+Its control--
 
 130
-00:07:50,780 --> 00:07:51,540
-Sign in with Google.
+00:06:52,070 --> 00:06:54,010
+Its control panel running on your own
 
 131
-00:07:51,840 --> 00:07:53,280
-The warning is stronger here.
+00:06:54,070 --> 00:06:54,610
+computer.
 
 132
-00:07:53,660 --> 00:07:54,880
-So use the spare account.
+00:06:55,030 --> 00:06:55,890
+First password
 
 133
-00:07:59,560 --> 00:08:01,140
-The next one is Antigravity.
+00:06:56,690 --> 00:06:57,290
+is «change me».
 
 134
-00:08:01,840 --> 00:08:02,740
-Sign in with Google.
+00:07:01,370 --> 00:07:03,310
+First password is always «change me»,
 
 135
-00:08:04,080 --> 00:08:05,760
-Sign in with the Google account.
+00:07:04,370 --> 00:07:06,230
+so type it and change it in the
 
 136
-00:08:06,400 --> 00:08:08,380
-The warning here is stronger here.
+00:07:06,910 --> 00:07:08,410
+s-- and change it in the settings later
 
 137
-00:08:09,420 --> 00:08:12,480
-The warning is stronger here, so use a
+00:07:08,470 --> 00:07:08,730
+on.
 
 138
-00:08:12,480 --> 00:08:13,600
-spare account.
+00:07:13,430 --> 00:07:16,050
+In the dashboard, in the dashboard, open
 
 139
-00:08:17,490 --> 00:08:19,910
-Next we will connect nvidia,
+00:07:16,090 --> 00:07:16,710
+Providers.
 
 140
-00:08:20,590 --> 00:08:21,490
-a free key,
+00:07:17,090 --> 00:07:19,170
+Search and click Add Cairo.
 
 141
-00:08:22,570 --> 00:08:25,990
-you can get a free key from build .nvidia
+00:07:20,690 --> 00:07:22,350
+In the dashboard, open Providers.
 
 142
-00:08:25,990 --> 00:08:27,490
-.com.
+00:07:23,490 --> 00:07:25,170
+Search and click Add Cairo.
 
 143
-00:08:27,810 --> 00:08:31,270
-Next we will connect
+00:07:27,590 --> 00:07:28,530
+Amazon's AI,
 
 144
-00:08:31,270 --> 00:08:31,890
-nvidia.
+00:07:29,590 --> 00:07:32,310
+Amazon's AI coding app, whose free plan
 
 145
-00:08:39,130 --> 00:08:42,470
-Get a API key from build .nvidia .com,
+00:07:32,390 --> 00:07:33,990
+includes real Claude models.
 
 146
-00:08:42,910 --> 00:08:44,010
-paste it in,
+00:07:34,450 --> 00:07:36,690
+You approve a code, and it's connected.
 
 147
-00:08:46,810 --> 00:08:48,110
-paste it in
+00:07:38,350 --> 00:07:40,490
+The free allowance is small, and the
 
 148
-00:08:49,580 --> 00:08:50,800
-and boom it's connected.
+00:07:40,590 --> 00:07:42,750
+OmniRoute flags its terms, so your
 
 149
-00:08:50,800 --> 00:08:51,960
-Next
+00:07:42,830 --> 00:07:44,170
+account, your call.
 
 150
-00:08:56,820 --> 00:08:58,600
-one we connect is Gemini.
+00:07:44,630 --> 00:07:46,630
+Antigravity, sign in with Google.
 
 151
-00:09:00,600 --> 00:09:02,240
-Gemini offers free key.
+00:07:48,210 --> 00:07:50,130
+And the next one is Antigravity.
 
 152
-00:09:05,810 --> 00:09:08,790
-You can get the API key from Google AI
+00:07:50,690 --> 00:07:51,630
+Sign in with Google.
 
 153
-00:09:08,790 --> 00:09:10,210
-Studio and
+00:07:51,990 --> 00:07:54,170
+The warning is stronger here, so use a
 
 154
-00:09:18,460 --> 00:09:20,720
-switch on import only free models whenever
+00:07:54,290 --> 00:07:55,090
+spare account.
 
 155
-00:09:20,720 --> 00:09:21,820
-you see it.
+00:07:59,590 --> 00:08:01,270
+The next one is Antigravity.
 
 156
-00:09:28,340 --> 00:09:29,140
-Now make a combo.
+00:08:01,730 --> 00:08:02,770
+Sign in with the Google--
 
 157
-00:09:31,040 --> 00:09:33,340
-A team of models with an order.
+00:08:04,570 --> 00:08:05,910
+Sign in with the Google account.
 
 158
-00:09:35,290 --> 00:09:36,610
-Now make a combo.
+00:08:06,570 --> 00:08:08,430
+The warning here is stronger here.
 
 159
-00:09:37,030 --> 00:09:39,270
-A team of models with an order of who
+00:08:10,050 --> 00:08:12,450
+The warning is stronger here, so use a
 
 160
-00:09:39,270 --> 00:09:41,470
-answers first and who takes over next.
+00:08:12,570 --> 00:08:13,390
+spare account.
 
 161
-00:09:41,470 --> 00:09:43,250
-combos for
+00:08:17,390 --> 00:08:19,489
+Next, we'll-- Next, we will connect
 
 162
-00:09:43,250 --> 00:09:45,890
-creating combos
+00:08:19,650 --> 00:08:21,670
+NVIDIA, a free key f--
 
 163
-00:09:45,890 --> 00:09:48,210
-go to combos
+00:08:23,350 --> 00:08:24,950
+You can get a free key from
 
 164
-00:09:48,210 --> 00:09:50,430
-create
+00:08:25,010 --> 00:08:26,810
+build.nvidia.com.
 
 165
-00:09:50,430 --> 00:09:53,130
-name it I
+00:08:27,990 --> 00:08:29,690
+Next, we'll connect-- Next,
 
 166
-00:09:56,870 --> 00:09:59,230
-have named it as Claude add
+00:08:30,410 --> 00:08:32,070
+next, we will connect NVIDIA.
 
 167
-00:10:01,150 --> 00:10:04,630
-your steps pick smart routing and then
+00:08:39,410 --> 00:08:42,390
+Get a API key from build.nvidia.com,
 
 168
-00:10:04,630 --> 00:10:05,970
-save add
+00:08:42,910 --> 00:08:43,470
+paste it in,
 
 169
-00:10:10,070 --> 00:10:13,170
-your steps pick smart routing and then
+00:08:47,010 --> 00:08:47,570
+paste it in,
 
 170
-00:10:13,170 --> 00:10:15,790
-save then the omri
+00:08:49,950 --> 00:08:50,970
+and boom, it's connected.
 
 171
-00:10:15,790 --> 00:10:18,430
-then the omni route key
+00:08:56,690 --> 00:08:58,870
+Next one we connect is Gemini.
 
 172
-00:10:19,900 --> 00:10:22,980
-omni rounds omni out its own
+00:09:00,290 --> 00:09:01,850
+Gemini offers free key.
 
 173
-00:10:22,980 --> 00:10:24,860
-password that clock code uses.
+00:09:04,930 --> 00:09:05,090
+Gem--
 
 174
-00:10:25,740 --> 00:10:26,360
-API keys,
+00:09:06,410 --> 00:09:08,850
+You can get the API key from Google AI
 
 175
-00:10:27,400 --> 00:10:27,640
-create,
+00:09:08,910 --> 00:09:09,330
+Studio.
 
 176
-00:10:28,440 --> 00:10:30,080
-name it and copy it once.
+00:09:18,370 --> 00:09:20,510
+And switch on Import only free models
 
 177
-00:10:32,580 --> 00:10:34,840
-The tip here is when anti -gravity
+00:09:20,570 --> 00:09:21,510
+whenever you see it.
 
 178
-00:10:34,840 --> 00:10:37,680
-aspirate, don't paste it into the chat.
+00:09:28,270 --> 00:09:29,210
+Now make a combo,
 
 179
-00:10:38,440 --> 00:10:39,220
+00:09:31,270 --> 00:09:33,450
+a team of models with an order.
+
+180
+00:09:35,770 --> 00:09:38,450
+Now make a combo, a team of models with an
+
+181
+00:09:38,550 --> 00:09:40,930
+order of who answers first and who takes
+
+182
+00:09:41,010 --> 00:09:41,570
+over next.
+
+183
+00:09:41,970 --> 00:09:42,570
+Combos.
+
+184
+00:09:43,150 --> 00:09:43,250
+For,
+
+185
+00:09:44,830 --> 00:09:45,950
+for creating combos,
+
+186
+00:09:47,490 --> 00:09:48,290
+go to Combos,
+
+187
+00:09:50,110 --> 00:09:50,550
+Create,
+
+188
+00:09:51,770 --> 00:09:52,310
+name it.
+
+189
+00:09:56,830 --> 00:09:58,310
+I have named it as Claude.
+
+190
+00:10:01,050 --> 00:10:01,830
+Add your steps,
+
+191
+00:10:02,490 --> 00:10:03,550
+pick Smart Routing,
+
+192
+00:10:04,390 --> 00:10:05,130
+and then Save.
+
+193
+00:10:09,970 --> 00:10:10,650
+Add your steps,
+
+194
+00:10:11,510 --> 00:10:13,650
+pick Smart Routing, and then Save.
+
+195
+00:10:15,130 --> 00:10:15,790
+Then the Omni,
+
+196
+00:10:17,250 --> 00:10:18,510
+then the OmniRoute key.
+
+197
+00:10:20,910 --> 00:10:21,510
+OmniRoute's,
+
+198
+00:10:22,150 --> 00:10:24,490
+OmniRoute's own password that Claude Code
+
+199
+00:10:24,590 --> 00:10:24,990
+uses.
+
+200
+00:10:25,690 --> 00:10:26,450
+API keys,
+
+201
+00:10:27,350 --> 00:10:27,749
+Create,
+
+202
+00:10:28,429 --> 00:10:30,230
+name it, and copy it once.
+
+203
+00:10:32,530 --> 00:10:33,450
+The tip here is,
+
+204
+00:10:34,110 --> 00:10:36,870
+when Antigravity asks for it, don't paste
+
+205
+00:10:36,930 --> 00:10:37,770
+it into the chat.
+
+206
+00:10:38,450 --> 00:10:39,410
 Put it in a file.

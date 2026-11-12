@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p2tip" data-start="0" data-width="1920" data-height="1080" data-duration="14.68">
+<section id="p2tip-scene" class="clip" data-start="0" data-duration="14.68" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+#list{position:absolute;left:640px;top:160px;width:720px;background:#fff;border-radius:26px;padding:26px;box-sizing:border-box;box-shadow:0 30px 70px rgba(0,0,0,.55);color:#111}
+.row{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:32px;padding:18px 16px;border-bottom:2px solid #f0f0f3}
+.row b{color:#1a8f45}
+#flt{position:absolute;left:1430px;top:200px;width:400px;height:330px;border-radius:26px;background:#1b1b20;border:3px solid #E53935;padding:30px;box-sizing:border-box;
+ box-shadow:0 0 70px rgba(229,57,53,.45)}
+#flt h3{margin:0 0 30px;font-size:30px;font-weight:900} #trk{height:12px;border-radius:6px;background:#3a3a44;position:relative}
+#knob{position:absolute;left:-6px;top:-14px;width:40px;height:40px;border-radius:50%;background:#7c3aed;box-shadow:0 0 20px #7c3aed}
+#lbl{display:flex;justify-content:space-between;margin-top:26px;font-weight:800;font-size:24px;color:#aaa} #lbl b{color:#2ecc71;font-size:30px}
+#x{position:absolute;left:600px;top:120px;width:800px;height:640px;opacity:0}
+</style>
+<div class="hdr"><i></i>Important tip</div>
+<div id="list"><div class="row" id="r0"><span class="nm" id="n0">deepseek-r1 (free)</span><b>$0</b></div><div class="row" id="r1"><span class="nm" id="n1">llama-3.3-70b (free)</span><b>$0</b></div><div class="row" id="r2"><span class="nm" id="n2">qwen3-coder (free)</span><b>$0</b></div><div class="row" id="r3"><span class="nm" id="n3">gemma-3-27b (free)</span><b>$0</b></div><div class="row" id="r4"><span class="nm" id="n4">mistral-small (free)</span><b>$0</b></div></div>
+<svg id="x" viewBox="0 0 800 640"><line x1="40" y1="40" x2="760" y2="600" stroke="#E53935" stroke-width="22" stroke-linecap="round"/>
+ <line x1="760" y1="40" x2="40" y2="600" stroke="#E53935" stroke-width="22" stroke-linecap="round"/></svg>
+<div id="flt"><h3>Prompt pricing</h3><div id="trk"><div id="knob"></div></div><div id="lbl"><b>FREE</b><span>$0.50</span><span>$10+</span></div></div>
+<div id="p1" class="pill" style="left:640px;top:820px;font-size:36px">📌 Don't memorize names</div>
+<div id="p2" class="pill red" style="left:1230px;top:600px;font-size:38px">✓ Remember the filter</div>
+
+</section></div>
+<script>
+const B = {"changes": 1.68, "go": 3.54, "end": 4.76, "dont": 6.93, "filter": 9.03, "always": 12.87};
+const tl = gsap.timeline({ paused: true });
+
+FX.rise(tl,"#list",0.05); tl.fromTo(".row",{x:-40,opacity:0},{x:0,opacity:1,duration:0.3,stagger:0.08},0.2);
+const NEW=['kimi-k2 (free)','glm-4.5-air (free)','nemotron-nano (free)'];
+tl.to("#r1",{x:-760,opacity:0,duration:0.45,ease:"power3.in"},B.go); tl.to("#r3",{x:-760,opacity:0,duration:0.45,ease:"power3.in"},B.go+0.3);
+tl.call(()=>{},null,B.go+0.8);
+const sw={v:0};tl.fromTo(sw,{v:0},{v:1,duration:0.05,onUpdate:()=>{document.getElementById('n1').textContent=sw.v>0.5?NEW[0]:'llama-3.3-70b (free)';
+  document.getElementById('n3').textContent=sw.v>0.5?NEW[1]:'gemma-3-27b (free)';}},B.go+0.8);
+tl.to(["#r1","#r3"],{x:0,opacity:1,duration:0.45,ease:"back.out(1.6)"},B.go+0.85);
+tl.to("#r4",{opacity:0.25,duration:0.3},B.end); tl.to("#r4 b",{color:"#E53935",duration:0.2},B.end);
+tl.to("#x",{opacity:1,duration:0.25},B.dont); FX.pop(tl,"#p1",B.dont);
+FX.pop(tl,"#flt",B.filter-0.2); tl.fromTo("#knob",{x:256},{x:0,duration:0.8,ease:"power3.inOut"},B.filter+0.2); FX.pop(tl,"#p2",B.filter+0.4);
+tl.to("#x",{opacity:0,duration:0.3},B.always); tl.to(["#r1","#r3","#r4"],{opacity:1,duration:0.3},B.always); tl.to("#r4 b",{color:"#1a8f45",duration:0.2},B.always);
+
+FX.ambient(tl, 14.68);
+window.__timelines["p2tip"] = tl;
+</script></body></html>

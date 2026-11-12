@@ -207,6 +207,7 @@ def synth_bed(seconds):
 def build(spec_path, name):
     S = load(spec_path, 'spec')
     import hashlib
+    FILES.update(getattr(S, 'FILES', {}))
     P.PAUSE_KEEP = getattr(S, 'PAUSE_KEEP', 0.3)
     SPEED = getattr(S, 'SPEED', 1.0)
     hsh = hashlib.md5((repr(S.CUTS) + repr(P.PAUSE_KEEP) + repr(SPEED)).encode()).hexdigest()[:10]
@@ -407,6 +408,15 @@ def build(spec_path, name):
                 src = scr.read() if (STILLS or not sh.get('pts')) else scr.read_at(src_time(sh, lt))
                 if src is not None:
                     key, a, b = sh['clip']; srct = src_time(sh, lt)
+                    if sh.get('blurs'):   # timed blurs in source seconds, regions normalised to the full source frame
+                        hh, ww = src.shape[:2]
+                        for bz in sh['blurs']:
+                            if bz['t0'] <= srct <= bz['t1']:
+                                x0_, y0_, x1_, y1_ = [int(v) for v in (bz['r'][0] * ww, bz['r'][1] * hh, bz['r'][2] * ww, bz['r'][3] * hh)]
+                                src = src.copy(); src[y0_:y1_, x0_:x1_] = cv2.GaussianBlur(src[y0_:y1_, x0_:x1_], (0, 0), 22)
+                    if sh.get('crop'):    # show only part of the recording (e.g. drop browser bars with private bookmarks)
+                        hh, ww = src.shape[:2]; c_ = sh['crop']
+                        src = src[int(c_[1] * hh):int(c_[3] * hh), int(c_[0] * ww):int(c_[2] * ww)]
                     if sh.get('blur'):
                         bx = sh['blur']
                         if bx['t0'] <= srct - a <= bx['t1']:
@@ -461,7 +471,7 @@ def build(spec_path, name):
             elif sh['kind'] == 'mg':
                 if scr_shot is not sh:
                     if scr: scr.close()
-                    mgf = f"{ROOT}/compositions/fcc-part1-mg/out/{sh['mg']}.mp4"
+                    mgf = f"{ROOT}/compositions/{sh.get('mgdir', 'fcc-part1-mg')}/out/{sh['mg']}.mp4"
                     scr = Pipe(mgf, ss=lt if STILLS else 0.0); scr_shot = sh
                 g = scr.read()
                 if g is not None: frame = g.copy()

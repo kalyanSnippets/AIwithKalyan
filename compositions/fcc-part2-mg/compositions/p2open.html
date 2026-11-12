@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p2open" data-start="0" data-width="1920" data-height="1080" data-duration="20.22">
+<section id="p2open-scene" class="clip" data-start="0" data-duration="20.22" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+.mc{position:absolute;padding:14px 22px;border-radius:16px;background:#fff;color:#111;font-weight:800;font-size:30px;box-shadow:0 14px 34px rgba(0,0,0,.5)}
+.mc .fr{margin-left:12px;font-size:20px;background:#2ecc71;color:#fff;border-radius:8px;padding:3px 8px;opacity:0}
+#hub{position:absolute;left:1020px;top:330px;width:380px;height:240px;border-radius:30px;background:linear-gradient(135deg,#6d28d9,#4f46e5);
+ display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 80px rgba(109,40,217,.6)}
+#hub b{font-weight:900;font-size:58px} #hub span{font-weight:700;font-size:26px;opacity:.85}
+#k1{position:absolute;left:1080px;top:620px}
+#srv{position:absolute;left:640px;top:170px;width:420px;height:470px} .rk{height:96px;margin-bottom:16px;border-radius:16px;background:#22222a;border:2px solid #3a3a44;
+ display:flex;align-items:center;gap:16px;padding:0 24px} .rk i{width:14px;height:14px;border-radius:50%;background:#2ecc71;display:block;box-shadow:0 0 12px #2ecc71}
+#lap{position:absolute;left:1340px;top:300px;width:460px;text-align:center}
+#gauge{position:absolute;left:1100px;top:640px;width:420px;height:230px}
+</style>
+<div class="hdr"><i></i>Method 2 · OpenRouter</div>
+<div id="g1"><div id="hub"><b>OpenRouter</b><span>one website</span></div><div class="mc" id="m0">DeepSeek<b class="fr">FREE</b></div><div class="mc" id="m1">Llama<b class="fr">FREE</b></div><div class="mc" id="m2">Qwen<b class="fr">FREE</b></div><div class="mc" id="m3">Mistral<b class="fr">FREE</b></div><div class="mc" id="m4">Gemma<b class="fr">FREE</b></div><div class="mc" id="m5">GPT-OSS<b class="fr">FREE</b></div><div class="mc" id="m6">Nemotron<b class="fr">FREE</b></div><div class="mc" id="m7">Kimi<b class="fr">FREE</b></div>
+ <div id="k1" class="pill red" style="font-size:36px">🔑 one account · one key</div></div>
+<div id="g2"><div id="srv"><div class="rk"><i></i><b>their servers</b></div><div class="rk"><i></i>GPU · GPU · GPU</div><div class="rk"><i></i>GPU · GPU · GPU</div><div class="rk"><i></i>GPU · GPU · GPU</div></div>
+ <div id="lap"><img src="../icons/laptop.png" style="width:220px;height:220px"><div style="font-weight:800;font-size:34px">your laptop</div>
+  <div class="pill" style="position:relative;display:inline-flex;margin-top:14px;font-size:28px">just sends the question</div></div>
+ <svg id="gauge" viewBox="0 0 420 230"><path d="M30 210 A180 180 0 0 1 390 210" stroke="#33333c" stroke-width="28" fill="none"/>
+  <path id="garc" d="M30 210 A180 180 0 0 1 390 210" stroke="#E53935" stroke-width="28" fill="none" stroke-dasharray="566" stroke-dashoffset="566"/>
+  <line id="needle" x1="210" y1="210" x2="60" y2="210" stroke="#fff" stroke-width="10" stroke-linecap="round" style="transform-origin:210px 210px"/>
+  <text x="210" y="190" text-anchor="middle" font-size="42" font-weight="900" fill="#fff">FAST</text></svg></div>
+
+</section></div>
+<script>
+const B = {"web": 3.25, "models": 5.29, "key": 9.05, "free": 11.28, "diff": 12.21, "servers": 14.84, "laptop": 16.19, "faster": 17.89};
+const tl = gsap.timeline({ paused: true });
+
+const P=[[640,150],[650,300],[640,450],[700,600],[1500,150],[1520,300],[1540,450],[1480,600]];
+FX.pop(tl,"#hub",0.05);
+P.forEach((p,i)=>{gsap.set("#m"+i,{left:p[0],top:p[1]}); tl.fromTo("#m"+i,{x:(p[0]<1000?-300:300),opacity:0},{x:0,opacity:1,duration:0.45,ease:"power3.out"},B.models+i*0.12);});
+tl.to(".mc",{x:(i)=> (P[i][0]<1000? 330-(P[i][0]-640) : -(P[i][0]-1250)), y:(i)=>360-P[i][1]+ (i%4)*14-20, scale:0.55, opacity:0.0, duration:0.7, ease:"power3.in", stagger:0.05},B.key-0.6);
+FX.pop(tl,"#k1",B.key); FX.pulse(tl,"#hub",B.key,1);
+tl.set(".mc",{x:0,y:0,scale:1},B.free-0.05); tl.to(".mc",{opacity:1,duration:0.3,stagger:0.05},B.free-0.05); tl.to(".fr",{opacity:1,duration:0.2,stagger:0.08},B.free+0.3);
+tl.to("#g1",{opacity:0,duration:0.3},B.diff-0.2);
+tl.fromTo("#srv",{x:-200,opacity:0},{x:0,opacity:1,duration:0.5,ease:"power3.out"},B.servers-0.2);
+tl.fromTo(".rk i",{opacity:0.2},{opacity:1,duration:0.15,yoyo:true,repeat:9,stagger:0.05},B.servers);
+tl.fromTo("#lap",{x:200,opacity:0},{x:0,opacity:1,duration:0.5,ease:"power3.out"},B.laptop-0.1);
+tl.fromTo("#gauge",{opacity:0,y:40},{opacity:1,y:0,duration:0.4},B.faster-0.3);
+tl.to("#garc",{strokeDashoffset:60,duration:0.9,ease:"power3.out"},B.faster); tl.to("#needle",{rotation:160,duration:0.9,ease:"back.out(1.6)"},B.faster);
+
+FX.ambient(tl, 20.22);
+window.__timelines["p2open"] = tl;
+</script></body></html>

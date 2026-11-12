@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p2session" data-start="0" data-width="1920" data-height="1080" data-duration="14.95">
+<section id="p2session-scene" class="clip" data-start="0" data-duration="14.95" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+.st{position:absolute;top:200px;width:200px;height:200px;border-radius:26px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:10px;font-weight:900;font-size:26px;box-shadow:0 26px 50px rgba(0,0,0,.5)} .st img{width:80px;height:80px}
+.ar{position:absolute;top:280px;font-size:50px;font-weight:900;color:#E53935}
+#win2{position:absolute;left:760px;top:470px;width:820px;height:300px;border-radius:20px;background:#0f0f13;border:2px solid #2c2c34;font-family:"JBMono",monospace;
+ font-size:26px;color:#6ee7b7;padding:24px 28px;box-sizing:border-box;opacity:0}
+#sc{position:absolute;left:1640px;top:500px;width:180px;text-align:center;font-weight:800;font-size:24px;opacity:0}
+#sc div{width:140px;height:140px;margin:0 auto 12px;border-radius:30px;background:linear-gradient(135deg,#D97757,#E53935);display:flex;align-items:center;justify-content:center;font-size:70px}
+</style>
+<div class="hdr"><i></i>Run it</div>
+<div class="st" id="s0" style="left:600px"><img src="../icons/folder.png" class="tint-red">folder</div><div class="ar" id="a0" style="left:812px">→</div>
+<div class="st" id="s1" style="left:860px"><img src="../icons/mouse-pointer-click.png" class="tint-red">right-click</div><div class="ar" id="a1" style="left:1072px">→</div>
+<div class="st" id="s2" style="left:1120px"><img src="../icons/terminal.png" class="tint-red">terminal</div><div class="ar" id="a2" style="left:1332px">→</div>
+<div class="st" id="s3" style="left:1380px"><img src="../icons/list-checks.png" class="tint-red">paste · Enter</div><div class="ar" id="a3" style="left:1592px">→</div>
+<div class="st" id="s4" style="left:1640px;background:#E53935;color:#fff;font-size:34px">claude</div>
+<div id="win2">PS&gt; $env:ANTHROPIC_BASE_URL = "…openrouter…"<br>PS&gt; $env:ANTHROPIC_AUTH_TOKEN = "YOUR_KEY"<br>PS&gt; …<br>PS&gt; claude</div>
+<div id="only" class="pill red" style="left:780px;top:800px;font-size:34px">⚠ only this terminal window</div>
+<div id="sc"><div>✻</div>Free Claude Code</div>
+
+</section></div>
+<script>
+const B = {"rc": 1.59, "term": 2.49, "paste": 3.62, "enter": 4.44, "claude": 5.24, "only": 8.51, "again": 11.41, "shortcut": 12.4};
+const tl = gsap.timeline({ paused: true });
+
+const S=["#s0","#a0","#s1","#a1","#s2","#a2","#s3","#a3","#s4"];
+FX.pop(tl,"#s0",0.05);
+[[1,2,B.rc],[3,4,B.term],[5,6,B.paste],[7,8,B.claude]].forEach(([a,b,t])=>{FX.pop(tl,S[a],t-0.15);FX.pop(tl,S[b],t);});
+FX.pulse(tl,"#s3",B.enter,1);
+tl.fromTo("#win2",{opacity:0,y:40},{opacity:1,y:0,duration:0.4},B.only-0.3); FX.pop(tl,"#only",B.only+0.3);
+tl.to("#win2",{scale:0.2,opacity:0,duration:0.5,ease:"power3.in"},B.again-0.2);
+tl.fromTo("#win2",{scale:0.2,opacity:0},{scale:1,opacity:1,duration:0.45,ease:"back.out(1.7)"},B.again+0.5);
+FX.out(tl,"#only",B.shortcut-0.1); tl.fromTo("#sc",{opacity:0,y:60},{opacity:1,y:0,duration:0.5,ease:"back.out(1.7)"},B.shortcut);
+
+FX.ambient(tl, 14.95);
+window.__timelines["p2session"] = tl;
+</script></body></html>

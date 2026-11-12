@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p2settings" data-start="0" data-width="1920" data-height="1080" data-duration="46.45">
+<section id="p2settings-scene" class="clip" data-start="0" data-duration="46.45" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+#term{position:absolute;left:600px;top:130px;width:1260px;border-radius:24px;background:#0f0f13;border:2px solid #2c2c34;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden}
+#tb{height:54px;display:flex;align-items:center;gap:10px;padding:0 20px;background:#18181d;border-bottom:2px solid #24242b}
+#tb i{width:14px;height:14px;border-radius:50%;display:block} .tab{margin-left:18px;font-weight:800;font-size:22px;color:#888;padding:8px 14px;border-radius:10px}
+.tab.on{background:#2a2a32;color:#fff}
+#code{padding:26px 30px;font-family:"JBMono",monospace;font-size:30px;line-height:1.75}
+.ln{padding:0 14px;border-radius:10px;opacity:0;white-space:nowrap} .k{color:#6ee7b7} .v{color:#93c5fd} .ln.on{background:rgba(229,57,53,.22);box-shadow:inset 6px 0 0 #E53935}
+#flow{position:absolute;left:640px;top:150px;width:1200px;height:520px}
+.bx{position:absolute;top:160px;width:330px;height:200px;border-radius:26px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:10px;font-weight:900;font-size:36px;box-shadow:0 30px 60px rgba(0,0,0,.5)} .bx img{width:90px;height:90px}
+#ann{position:absolute;left:640px;top:880px}
+</style>
+<div class="hdr"><i></i>Connect it to Claude Code</div>
+<div id="flow"><div class="bx" id="bcc" style="left:0"><img src="../icons/logo-claude.png">Claude Code</div>
+ <div class="bx" id="ban" style="left:440px"><img src="../icons/logo-anthropic.png" style="background:#111;border-radius:18px;padding:8px">Anthropic</div>
+ <div class="bx" id="bor" style="left:880px;background:linear-gradient(135deg,#6d28d9,#4f46e5);color:#fff">🔀<br>OpenRouter</div>
+ <svg style="position:absolute;left:330px;top:250px" width="560" height="20"><line id="a1" x1="0" y1="10" x2="110" y2="10" stroke="#fff" stroke-width="8"/></svg>
+ <div id="xa" class="big red" style="position:absolute;left:530px;top:110px;font-size:260px;opacity:0">✕</div>
+ <svg id="curve" style="position:absolute;left:160px;top:0;opacity:0" width="900" height="170"><path d="M10 160 C 300 -40, 600 -40, 880 150" stroke="#E53935" stroke-width="10" fill="none" stroke-dasharray="1200" stroke-dashoffset="1200" id="cp"/></svg>
+ <div id="kk" class="pill" style="left:760px;top:420px">🔑 + my key</div></div>
+<div id="term"><div id="tb"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
+  <span class="tab on" id="tps">PowerShell</span><span class="tab" id="tcmd">Command Prompt</span></div><div id="code"><div class="ln" id="L0"><span class="k">$env:ANTHROPIC_BASE_URL</span><span class="v"> = "https://openrouter.ai/api"</span></div><div class="ln" id="L1"><span class="k">$env:ANTHROPIC_AUTH_TOKEN</span><span class="v"> = "YOUR_OPENROUTER_KEY"</span></div><div class="ln" id="L2"><span class="k">$env:ANTHROPIC_API_KEY</span><span class="v"> = ""</span></div><div class="ln" id="L3"><span class="k">$env:ANTHROPIC_MODEL</span><span class="v"> = "openrouter/free"</span></div><div class="ln" id="L4"><span class="k">$env:ANTHROPIC_DEFAULT_OPUS_MODEL</span><span class="v"> = "openrouter/free"</span></div><div class="ln" id="L5"><span class="k">$env:ANTHROPIC_DEFAULT_SONNET_MODEL</span><span class="v"> = "openrouter/free"</span></div><div class="ln" id="L6"><span class="k">$env:ANTHROPIC_DEFAULT_HAIKU_MODEL</span><span class="v"> = "openrouter/free"</span></div><div class="ln" id="L7"><span class="k">claude</span><span class="v"></span></div></div></div>
+<div id="ann" class="pill">📦 Whole block in the setup kit</div>
+
+</section></div>
+<script>
+const B = {"block": 3.41, "kit": 5.89, "ps": 7.95, "dont": 12.08, "talk": 13.43, "key": 15.2, "each": 16.78, "l1": 17.97, "l2": 21.72, "paste": 25.35, "l3": 27.29, "l4": 33.2, "slots": 36.42, "free": 40.48, "picks": 43.93};
+const tl = gsap.timeline({ paused: true });
+
+FX.pop(tl,"#bcc",0.05); FX.pop(tl,"#ban",0.4);
+tl.set("#term",{opacity:0},0); tl.set("#ann",{opacity:0},0);
+tl.to("#flow",{opacity:0,duration:0.3},B.block-0.2); tl.fromTo("#term",{opacity:0,y:60},{opacity:1,y:0,duration:0.5,ease:"power3.out"},B.block);
+tl.to(".ln",{opacity:1,duration:0.15,stagger:0.12},B.block+0.3); FX.pop(tl,"#ann",B.kit);
+tl.set("#tcmd",{className:"tab on"},B.ps+0.6); tl.set("#tps",{className:"tab"},B.ps+0.6); tl.set("#tps",{className:"tab on"},B.ps+1.4); tl.set("#tcmd",{className:"tab"},B.ps+1.4);
+tl.to("#term",{opacity:0,duration:0.3},B.dont-0.2); tl.to("#flow",{opacity:1,duration:0.3},B.dont-0.2); FX.out(tl,"#ann",B.dont-0.2);
+tl.fromTo("#xa",{opacity:0,scale:2},{opacity:1,scale:1,duration:0.3,ease:"power4.out"},B.dont+0.4);
+FX.pop(tl,"#bor",B.talk); tl.set("#curve",{opacity:1},B.talk); tl.to("#cp",{strokeDashoffset:0,duration:0.7,ease:"power2.out"},B.talk+0.1);
+FX.pop(tl,"#kk",B.key);
+tl.to("#flow",{opacity:0,duration:0.3},B.each-0.2); tl.to("#term",{opacity:1,duration:0.3},B.each-0.2);
+const HL=(i,t)=>{tl.set(".ln",{className:"ln"},t); tl.set(i.map(n=>"#L"+n),{className:"ln on"},t);};
+HL([0],B.l1); HL([1],B.l2); HL([1],B.paste); HL([2],B.l3); HL([3,4,5,6],B.l4);
+tl.to(["#L4 .v","#L5 .v","#L6 .v"],{color:"#fca5a5",duration:0.2,stagger:0.25},B.slots); HL([3,4,5,6],B.free); HL([7],B.picks+1.2);
+
+FX.ambient(tl, 46.45);
+window.__timelines["p2settings"] = tl;
+</script></body></html>

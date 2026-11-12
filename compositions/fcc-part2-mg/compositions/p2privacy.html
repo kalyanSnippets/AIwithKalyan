@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="../lib.css"><script src="../vendor/gsap.min.js"></script><script src="../lib.js"></script></head>
+<body><div id="root" data-composition-id="p2privacy" data-start="0" data-width="1920" data-height="1080" data-duration="11.42">
+<section id="p2privacy-scene" class="clip" data-start="0" data-duration="11.42" style="position:absolute;inset:0"><div class="bg"></div>
+
+<style>
+.nd{position:absolute;top:250px;width:300px;height:280px;border-radius:28px;background:#fff;color:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:12px;font-weight:900;font-size:34px;box-shadow:0 30px 60px rgba(0,0,0,.5)} .nd img{width:110px;height:110px}
+#doc{position:absolute;left:1000px;top:330px;font-size:70px}
+#tr{position:absolute;left:940px;top:390px;width:400px;height:10px;background:repeating-linear-gradient(90deg,#E53935 0 26px,transparent 26px 44px)}
+</style>
+<div class="hdr"><i></i>The catch · 2 of 2: privacy</div>
+<div class="nd" id="me" style="left:620px"><img src="../icons/laptop.png" class="tint-ink">your code</div>
+<div id="tr"></div><div id="doc">📄</div>
+<div class="nd" id="them" style="left:1360px"><img src="../icons/cloud.png" class="tint-red">their server</div>
+<div id="p1" class="pill red" style="left:700px;top:620px;font-size:36px">✕ no client code · no passwords</div>
+<div id="p2" class="pill" style="left:1060px;top:740px;font-size:36px"><img src="../icons/lock.png" class="tint-ink">private stuff → Ollama</div>
+
+</section></div>
+<script>
+const B = {"unlike": 1.86, "go": 4.52, "dont": 6.47, "keep": 10.17};
+const tl = gsap.timeline({ paused: true });
+
+FX.pop(tl,"#me",0.05); FX.pop(tl,"#them",B.go-0.3); tl.fromTo("#tr",{scaleX:0,transformOrigin:"0 50%"},{scaleX:1,duration:0.5},B.go-0.1);
+tl.fromTo("#doc",{x:0,opacity:0},{x:330,opacity:1,duration:1.0,ease:"power2.inOut"},B.go);
+FX.pop(tl,"#p1",B.dont); FX.pop(tl,"#p2",B.keep); tl.to("#doc",{x:-400,duration:0.8,ease:"power2.inOut"},B.keep);
+
+FX.ambient(tl, 11.42);
+window.__timelines["p2privacy"] = tl;
+</script></body></html>

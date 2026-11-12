@@ -3,3 +3,4 @@
 | File | Title | URL | Captured |
 |---|---|---|---|
 | openrouter-free | Compare AI Models: Pricing, Context & Benchmarks \| OpenRouter | https://openrouter.ai/models?max_price=0 | 2026-11-10T01:51:09.023Z |
+| openrouter-free-models | Compare AI Models: Pricing, Context & Benchmarks \| OpenRouter | https://openrouter.ai/models?max_price=0 | 2026-11-12T10:26:16.781Z |
