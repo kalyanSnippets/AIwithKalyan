@@ -69,6 +69,13 @@ export async function writeStream(stream, file) {
   const { createWriteStream } = await import("node:fs");
   const { Readable } = await import("node:stream");
   const { pipeline } = await import("node:stream/promises");
-  const src = stream instanceof ReadableStream ? Readable.fromWeb(stream) : stream;
-  await pipeline(src, createWriteStream(ensureDir(file)));
+  if (stream instanceof ReadableStream) {
+    // read the web stream chunk by chunk (Readable.fromWeb can trip an undici "paused" assertion on long responses)
+    const { writeFile } = await import("node:fs/promises");
+    const reader = stream.getReader(); const chunks = [];
+    for (;;) { const { done, value } = await reader.read(); if (done) break; chunks.push(Buffer.from(value)); }
+    await writeFile(ensureDir(file), Buffer.concat(chunks));
+    return;
+  }
+  await pipeline(stream, createWriteStream(ensureDir(file)));
 }

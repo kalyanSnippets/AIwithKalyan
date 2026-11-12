@@ -1,0 +1,1892 @@
+[
+{
+"s": 0.12,
+"e": 3.22,
+"t": "Claude Code is one of the most powerful coding tools out there,"
+},
+{
+"s": 3.24,
+"e": 6.74,
+"t": "but it costs twenty dollars a month, and the moment you hit your limit in"
+},
+{
+"s": 6.76,
+"e": 9.0,
+"t": "the middle of a task, it just stops."
+},
+{
+"s": 9.02,
+"e": 11.24,
+"t": "You either pay more or you wait."
+},
+{
+"s": 11.26,
+"e": 13.620000000000001,
+"t": "But here is what the most people don't know about."
+},
+{
+"s": 13.64,
+"e": 15.4,
+"t": "Claude Code itself is free."
+},
+{
+"s": 15.42,
+"e": 17.84,
+"t": "What you're paying for is the brain inside it."
+},
+{
+"s": 17.86,
+"e": 21.32,
+"t": "And today, I am going to swap that brain for free ones."
+},
+{
+"s": 21.34,
+"e": 24.21,
+"t": "Let's take a phone. The phone is just the hardware,"
+},
+{
+"s": 24.34,
+"e": 26.36,
+"t": "and the SIM card decides who you pay."
+},
+{
+"s": 26.38,
+"e": 30.82,
+"t": "Claude Code is like the phone, a free coding assistant from Anthropic that"
+},
+{
+"s": 30.84,
+"e": 34.37,
+"t": "lives in your terminal and can read, write, and run code for you."
+},
+{
+"s": 34.4,
+"e": 38.39,
+"t": "The AI model is like the SIM, the brain that does the thinking."
+},
+{
+"s": 38.42,
+"e": 41.01,
+"t": "Anthropic's model costs twenty dollars a month,"
+},
+{
+"s": 41.08,
+"e": 43.58,
+"t": "but this phone accepts other SIMs as well."
+},
+{
+"s": 43.6,
+"e": 47.599999999999994,
+"t": "So by the end of this video, you will have the real Claude Code running for"
+},
+{
+"s": 47.62,
+"e": 50.04,
+"t": "zero dollars in three different ways."
+},
+{
+"s": 50.06,
+"e": 54.62,
+"t": "First, completely on your own laptop, and I'll even switch the Wi-Fi off."
+},
+{
+"s": 54.64,
+"e": 59.099999999999994,
+"t": "Then, free AI models in the cloud, plus the one trap that can quietly charge"
+},
+{
+"s": 59.12,
+"e": 63.26,
+"t": "you a paid plan. And finally, several free providers connected together,"
+},
+{
+"s": 63.28,
+"e": 67.12,
+"t": "where I'll show you real Claude Sonnet answering through a free account with"
+},
+{
+"s": 67.14,
+"e": 70.89,
+"t": "the logs to prove it. And I have put everything into a free setup kit,"
+},
+{
+"s": 70.98,
+"e": 73.76,
+"t": "the model list, every prompt, and every setting."
+},
+{
+"s": 73.78,
+"e": 76.04,
+"t": "It's the first link in the description below."
+},
+{
+"s": 76.06,
+"e": 79.28,
+"t": "So stay till the end because the last method is the best one."
+},
+{
+"s": 79.3,
+"e": 81.03,
+"t": "Nobody paid for this video."
+},
+{
+"s": 81.14,
+"e": 84.14,
+"t": "I have already worked through every setup and every trap,"
+},
+{
+"s": 84.16,
+"e": 87.11,
+"t": "so you don't have to. And I won't just tell you it's free,"
+},
+{
+"s": 87.28,
+"e": 89.18,
+"t": "I'll show you the receipt every time."
+},
+{
+"s": 89.2,
+"e": 92.08,
+"t": "So let's start. So method one, it's called Ollama."
+},
+{
+"s": 92.1,
+"e": 96.16000000000001,
+"t": "Ollama is a free app that downloads AI models and runs them right on your"
+},
+{
+"s": 96.18,
+"e": 99.62,
+"t": "own laptop. Kind of like a media player, but for AI."
+},
+{
+"s": 99.64,
+"e": 104.06,
+"t": "The big difference from ChatGPT or Claude is that nothing goes to the cloud."
+},
+{
+"s": 104.08,
+"e": 106.94,
+"t": "The AI lives on your own machine, so it's private,"
+},
+{
+"s": 106.96,
+"e": 109.14,
+"t": "and it's even works without internet."
+},
+{
+"s": 109.16,
+"e": 110.96000000000001,
+"t": "Installing it is super simple."
+},
+{
+"s": 110.98,
+"e": 113.52000000000001,
+"t": "So go to ollama.com and click Download."
+},
+{
+"s": 113.54,
+"e": 115.86,
+"t": "It works on Windows, Mac, and Linux."
+},
+{
+"s": 115.88,
+"e": 118.35,
+"t": "Then double-click the file, click through the steps,"
+},
+{
+"s": 118.42,
+"e": 121.75,
+"t": "and that's it. Once it's open, you'll see three things on the left."
+},
+{
+"s": 121.78,
+"e": 125.04,
+"t": "Apps, this is where you connect coding tools like Claude Code,"
+},
+{
+"s": 125.06,
+"e": 129.79999999999998,
+"t": "Codex, and others. Chat, this is where you talk to a model directly to test"
+},
+{
+"s": 129.82,
+"e": 132.01999999999998,
+"t": "it. In Settings, two things matter."
+},
+{
+"s": 132.04,
+"e": 136.29999999999998,
+"t": "First, the cloud toggle. Ollama can also run some models on its own servers"
+},
+{
+"s": 136.32,
+"e": 139.25,
+"t": "in the cloud, but we want everything on our laptop,"
+},
+{
+"s": 139.3,
+"e": 142.65,
+"t": "so leave that off. And the second, the most people miss,"
+},
+{
+"s": 142.7,
+"e": 146.56,
+"t": "is the context length. Context length is the AI's short-term memory,"
+},
+{
+"s": 146.58,
+"e": 150.66,
+"t": "how much of your conversation and your project it can hold in its head at"
+},
+{
+"s": 150.68,
+"e": 154.66,
+"t": "once. Claude Code reads a lot of your files before it changes anything."
+},
+{
+"s": 154.68,
+"e": 158.22,
+"t": "If the memory is too small, it loses track halfway through."
+},
+{
+"s": 158.24,
+"e": 160.56,
+"t": "So drag this slide up to sixty-four k."
+},
+{
+"s": 160.58,
+"e": 162.54,
+"t": "That's the fix. Now let's test it."
+},
+{
+"s": 162.56,
+"e": 165.23,
+"t": "Open Chat, click the model menu at the bottom,"
+},
+{
+"s": 165.38,
+"e": 169.73,
+"t": "and pick a small model. I pick a small one, Qwen 3.5 4B,"
+},
+{
+"s": 169.94,
+"e": 172.15,
+"t": "just to warm things up, and type hi."
+},
+{
+"s": 172.18,
+"e": 175.44,
+"t": "The first message downloads the model, so it takes a minute,"
+},
+{
+"s": 175.46,
+"e": 176.89999999999998,
+"t": "but hi proves nothing."
+},
+{
+"s": 176.92,
+"e": 179.57,
+"t": "So watch this. I'm turning the Wi-Fi off."
+},
+{
+"s": 179.6,
+"e": 181.26,
+"t": "See? No internet at all."
+},
+{
+"s": 181.28,
+"e": 184.16,
+"t": "So be honest, do you think it can still write an app?"
+},
+{
+"s": 184.18,
+"e": 187.5,
+"t": "I type, make a simple notes app, and it's thinking."
+},
+{
+"s": 187.52,
+"e": 190.84,
+"t": "Thinking, and it writes the whole thing, completely offline."
+},
+{
+"s": 190.86,
+"e": 193.98,
+"t": "Every single word came from a model sitting on this laptop."
+},
+{
+"s": 194,
+"e": 195.54,
+"t": "Is it pretty? No."
+},
+{
+"s": 195.56,
+"e": 200.11999999999998,
+"t": "But a laptop with no internet just wrote working software with no subscription,"
+},
+{
+"s": 200.14,
+"e": 203.17999999999998,
+"t": "no usage limits, and your code never left your computer."
+},
+{
+"s": 203.2,
+"e": 206.71,
+"t": "And honestly, if that alone just saved you twenty dollars a month,"
+},
+{
+"s": 206.8,
+"e": 209.76,
+"t": "hit Subscribe because it only gets better from here."
+},
+{
+"s": 209.78,
+"e": 211.87,
+"t": "Now, which model should you actually run?"
+},
+{
+"s": 211.94,
+"e": 214.05,
+"t": "Don't guess. It depends on your RAM."
+},
+{
+"s": 214.1,
+"e": 217.64,
+"t": "RAM is your computer's working memory, and for local AI,"
+},
+{
+"s": 217.66,
+"e": 219.89999999999998,
+"t": "it decides how big a model you can run."
+},
+{
+"s": 219.92,
+"e": 224.0,
+"t": "Press Control + Shift + Escape to open Task Manager and click the Performance"
+},
+{
+"s": 224.02,
+"e": 227.79,
+"t": "tab. It's a pretty normal laptop, no separate graphics card,"
+},
+{
+"s": 227.86,
+"e": 230.66,
+"t": "just the built-in graphics and sixteen GB of RAM."
+},
+{
+"s": 230.68,
+"e": 234.64,
+"t": "Roughly with eight to sixteen GB of RAM, stick to small models,"
+},
+{
+"s": 234.66,
+"e": 236.7,
+"t": "around four to twelve billion parameters."
+},
+{
+"s": 236.72,
+"e": 240.65,
+"t": "With thirty-two GB, you can go to medium, and with sixty-four GB or more,"
+},
+{
+"s": 240.74,
+"e": 243.6,
+"t": "you can run the big ones that feel close to paid thing."
+},
+{
+"s": 243.62,
+"e": 247.64,
+"t": "The exact list I would pick for each size is in the free setup kit."
+},
+{
+"s": 247.66,
+"e": 249.5,
+"t": "Here is a little trick I use too."
+},
+{
+"s": 249.52,
+"e": 251.84,
+"t": "I ask ChatGPT, \"Here is my laptop."
+},
+{
+"s": 251.86,
+"e": 255.29999999999998,
+"t": "Give me the best coding model for Ollama, its exact name,"
+},
+{
+"s": 255.32,
+"e": 259.24,
+"t": "and the latest one,\" because new model comes out literally every week."
+},
+{
+"s": 259.26,
+"e": 262.97,
+"t": "And it suggested MiMo version two point six, a nine B model."
+},
+{
+"s": 263.14,
+"e": 265.28000000000003,
+"t": "The exact prompt is in the setup kit."
+},
+{
+"s": 265.3,
+"e": 267.5,
+"t": "And this is where I hit my first problem."
+},
+{
+"s": 267.52,
+"e": 272.34000000000003,
+"t": "MiMo wasn't in Ollama's dropdown, and Ollama only shows a handful of popular"
+},
+{
+"s": 272.36,
+"e": 275.40000000000003,
+"t": "models there. So I tried installing it in the terminal,"
+},
+{
+"s": 275.42,
+"e": 277.71,
+"t": "and it told me my Ollama was too old."
+},
+{
+"s": 277.76,
+"e": 280.90000000000003,
+"t": "I updated it, tried again, and I was still stuck."
+},
+{
+"s": 280.92,
+"e": 285.26,
+"t": "And this is exactly where a five-minute step turned into an hour of Googling."
+},
+{
+"s": 285.28,
+"e": 288.24,
+"t": "So instead, I let another AI do it for me."
+},
+{
+"s": 288.26,
+"e": 292.56,
+"t": "It's called Antigravity. Antigravity is a free AI coding app from Google."
+},
+{
+"s": 292.58,
+"e": 294.91,
+"t": "Download it from antigravity.google."
+},
+{
+"s": 294.98,
+"e": 298.61,
+"t": "Sign in with your Google account and open it and give it one sentence:"
+},
+{
+"s": 298.66,
+"e": 300.44,
+"t": "\"I am running AI model locally."
+},
+{
+"s": 300.46,
+"e": 304.90000000000003,
+"t": "Install MiMo version two point six nine b and set everything up so it works"
+},
+{
+"s": 304.92,
+"e": 308.92,
+"t": "with Ollama.\" It will ask your permission before running each command because"
+},
+{
+"s": 308.94,
+"e": 310.62,
+"t": "it's running things on your machine."
+},
+{
+"s": 310.64,
+"e": 312.44,
+"t": "Read each step and then allow."
+},
+{
+"s": 312.46,
+"e": 316.64000000000004,
+"t": "A few minutes later, it says, \"Installed and tested.\" Close Ollama,"
+},
+{
+"s": 316.66,
+"e": 320.0,
+"t": "open it again, and the new model is right there in the dropdown."
+},
+{
+"s": 320.02,
+"e": 322.58000000000004,
+"t": "And that's going to be the rule for this whole video."
+},
+{
+"s": 322.6,
+"e": 325.75,
+"t": "Anything longer than one line, you don't type it yourself,"
+},
+{
+"s": 325.82,
+"e": 327.32,
+"t": "and AI installs it."
+},
+{
+"s": 327.34,
+"e": 330.41,
+"t": "And if something breaks on the way, you just copy the error,"
+},
+{
+"s": 330.44,
+"e": 333.52000000000004,
+"t": "paste it back to Antigravity, and say, \"Fix this.\" Now,"
+},
+{
+"s": 333.54,
+"e": 336.56,
+"t": "the part you came here for, putting Claude Code on top."
+},
+{
+"s": 336.58,
+"e": 339.40000000000003,
+"t": "In Ollama, go to Apps and click Claude Code."
+},
+{
+"s": 339.42,
+"e": 342.65,
+"t": "See that little message? It copied the launch command for you,"
+},
+{
+"s": 342.78,
+"e": 346.55,
+"t": "Ollama launch Claude. Now make a folder anywhere on your computer."
+},
+{
+"s": 346.7,
+"e": 348.37,
+"t": "Mine is called claude-code."
+},
+{
+"s": 348.46,
+"e": 352.28000000000003,
+"t": "Open it, right-click in the empty space, and choose Open in Terminal."
+},
+{
+"s": 352.3,
+"e": 354.08000000000004,
+"t": "Paste the command and hit Enter."
+},
+{
+"s": 354.1,
+"e": 358.54,
+"t": "If the Claude Code isn't installed yet, it offers to install it and say Yes."
+},
+{
+"s": 358.56,
+"e": 361.90000000000003,
+"t": "And this is the real Claude Code, Anthropic's official app,"
+},
+{
+"s": 361.92,
+"e": 366.20000000000005,
+"t": "not a copy. Then it asks which model to use, and I pick my local one."
+},
+{
+"s": 366.22,
+"e": 370.72,
+"t": "And look at that, the real Claude Code running on my laptop with a free local"
+},
+{
+"s": 370.74,
+"e": 373.72,
+"t": "brain inside it. No subscription, no API key."
+},
+{
+"s": 373.74,
+"e": 375.39,
+"t": "Now let's give it a real job."
+},
+{
+"s": 375.42,
+"e": 378.94,
+"t": "I type, \"Build me a simple calculator app.\" On my laptop,"
+},
+{
+"s": 378.96,
+"e": 383.32,
+"t": "it took about thirty minutes because a small local model is doing all the"
+},
+{
+"s": 383.34,
+"e": 385.44,
+"t": "heavy lifting. And that's the honest trade-off."
+},
+{
+"s": 385.46,
+"e": 387.74,
+"t": "Free means your laptop does the work."
+},
+{
+"s": 387.76,
+"e": 390.288,
+"t": "So on normal machine, you pay with your time."
+},
+{
+"s": 390.308,
+"e": 392.18800000000005,
+"t": "But it finished, and it works."
+},
+{
+"s": 392.208,
+"e": 395.048,
+"t": "So method one is your private offline option."
+},
+{
+"s": 395.068,
+"e": 399.18800000000005,
+"t": "For everyday speed, we need something faster, so let's move to the cloud."
+},
+{
+"s": 399.208,
+"e": 401.408,
+"t": "So method two is called OpenRouter."
+},
+{
+"s": 401.428,
+"e": 405.848,
+"t": "OpenRouter is one website that gives you access to dozens of AI models from"
+},
+{
+"s": 405.868,
+"e": 409.058,
+"t": "different companies with one single account and single key,"
+},
+{
+"s": 409.128,
+"e": 411.32800000000003,
+"t": "and a lot of those models are completely free."
+},
+{
+"s": 411.348,
+"e": 415.278,
+"t": "The big difference from Ollama, these models run on their servers,"
+},
+{
+"s": 415.328,
+"e": 419.38800000000003,
+"t": "not on your laptop, so they are much faster, even on a basic laptop."
+},
+{
+"s": 419.408,
+"e": 422.048,
+"t": "Go to OpenRouter.ai and sign up."
+},
+{
+"s": 422.068,
+"e": 424.048,
+"t": "It's free. No credit card needed."
+},
+{
+"s": 424.068,
+"e": 426.438,
+"t": "Then click API keys and create key."
+},
+{
+"s": 426.468,
+"e": 431.288,
+"t": "A API key is basically a password that lets an app like Claude Code use your"
+},
+{
+"s": 431.308,
+"e": 433.368,
+"t": "OpenRouter account. Give it a name."
+},
+{
+"s": 433.388,
+"e": 435.928,
+"t": "Mine is just The Claude. Now, two seat belts."
+},
+{
+"s": 435.948,
+"e": 437.678,
+"t": "First, set an expiry."
+},
+{
+"s": 437.748,
+"e": 442.698,
+"t": "I set seven days, so even if the key leaks, it dies on its own."
+},
+{
+"s": 442.748,
+"e": 444.56800000000004,
+"t": "Second is to set a credit limit."
+},
+{
+"s": 444.588,
+"e": 448.518,
+"t": "That means even if you click the wrong model, it physically can't charge you."
+},
+{
+"s": 448.608,
+"e": 453.088,
+"t": "Then create it and copy the key straight away because OpenRouter shows it"
+},
+{
+"s": 453.108,
+"e": 455.428,
+"t": "only once, and treat it like a password."
+},
+{
+"s": 455.448,
+"e": 458.00800000000004,
+"t": "Anyone who has it can use your account."
+},
+{
+"s": 458.028,
+"e": 459.478,
+"t": "Now, which models are free?"
+},
+{
+"s": 459.508,
+"e": 463.118,
+"t": "Click Models at the top, and in the price filter on the left,"
+},
+{
+"s": 463.248,
+"e": 464.788,
+"t": "slide it all the way to free."
+},
+{
+"s": 464.808,
+"e": 467.908,
+"t": "Now you will only see models with free in their name,"
+},
+{
+"s": 467.928,
+"e": 470.218,
+"t": "and every request to those cost zero."
+},
+{
+"s": 470.248,
+"e": 471.778,
+"t": "And here is an important tip."
+},
+{
+"s": 471.868,
+"e": 473.708,
+"t": "This list changes all the time."
+},
+{
+"s": 473.728,
+"e": 476.88800000000003,
+"t": "Models come and go. Companies end their free offers,"
+},
+{
+"s": 476.908,
+"e": 479.18800000000005,
+"t": "so don't memorize the names you see today."
+},
+{
+"s": 479.208,
+"e": 482.958,
+"t": "Remember the filter. As long as you know how to find the free list,"
+},
+{
+"s": 483.048,
+"e": 484.88800000000003,
+"t": "you will always have a free model."
+},
+{
+"s": 484.908,
+"e": 487.12800000000004,
+"t": "Now let's connect OpenRouter to Claude Code."
+},
+{
+"s": 487.148,
+"e": 490.558,
+"t": "For that, you paste a small block of settings into your terminal,"
+},
+{
+"s": 490.648,
+"e": 494.908,
+"t": "and the whole block is in the setup kit for both PowerShell and command prompt."
+},
+{
+"s": 494.928,
+"e": 498.288,
+"t": "These settings simply tell Claude Code, \"Don't talk to Anthropic."
+},
+{
+"s": 498.308,
+"e": 502.148,
+"t": "Talk to OpenRouter instead, and here is my key.\" Let me show you what each"
+},
+{
+"s": 502.168,
+"e": 506.458,
+"t": "line does. The first line sends all of the Claude Code's request to OpenRouter,"
+},
+{
+"s": 506.588,
+"e": 510.18800000000005,
+"t": "the second line in your key, and that's the only thing you change."
+},
+{
+"s": 510.208,
+"e": 512.128,
+"t": "Paste your key between these codes."
+},
+{
+"s": 512.148,
+"e": 516.828,
+"t": "The third line clears out the old Anthropic key so there is no chance of falling"
+},
+{
+"s": 516.848,
+"e": 521.198,
+"t": "back to a paid key. And the last few lines point Claude Code's model slots,"
+},
+{
+"s": 521.268,
+"e": 525.328,
+"t": "Opus, Sonnet, and Haiku at OpenRouter/free."
+},
+{
+"s": 525.348,
+"e": 528.598,
+"t": "OpenRouter/free is OpenRouter's free router."
+},
+{
+"s": 528.788,
+"e": 531.3480000000001,
+"t": "It picks a free model for you automatically."
+},
+{
+"s": 531.368,
+"e": 534.898,
+"t": "Then open your folder, right click, open the terminal,"
+},
+{
+"s": 534.928,
+"e": 537.678,
+"t": "paste the block, hit Enter, and type Claude."
+},
+{
+"s": 537.748,
+"e": 541.768,
+"t": "One thing to know here is these settings only apply to that terminal window,"
+},
+{
+"s": 541.788,
+"e": 546.308,
+"t": "so next time, you paste them again or you let Antigravity make you a shortcut."
+},
+{
+"s": 546.328,
+"e": 548.368,
+"t": "And this is where I almost got fooled."
+},
+{
+"s": 548.388,
+"e": 550.038,
+"t": "My paste failed silently."
+},
+{
+"s": 550.088,
+"e": 552.828,
+"t": "I typed Claude, it opened, and it looked fine."
+},
+{
+"s": 552.848,
+"e": 555.118,
+"t": "Look at the top line. Spot anything wrong?"
+},
+{
+"s": 555.188,
+"e": 559.248,
+"t": "Claude Pro? Claude Code had quietly gone back to my paid subscription."
+},
+{
+"s": 559.268,
+"e": 562.668,
+"t": "If you see your Claude plan here, you're not on a free setup."
+},
+{
+"s": 562.688,
+"e": 566.6080000000001,
+"t": "I opened a fresh terminal, entered the settings one line at a time,"
+},
+{
+"s": 566.628,
+"e": 571.1080000000001,
+"t": "typed Claude. Now it says OpenRouter/free, API usage billing."
+},
+{
+"s": 571.128,
+"e": 574.008,
+"t": "That's the free one. Now let's check it's really free."
+},
+{
+"s": 574.028,
+"e": 578.1080000000001,
+"t": "Type /model. You'll see Opus, Sonnet, and Haiku,"
+},
+{
+"s": 578.128,
+"e": 582.008,
+"t": "but those are just the names of the slots, not what's actually answering."
+},
+{
+"s": 582.028,
+"e": 586.3480000000001,
+"t": "I asked it, \"Which model are you?\" And it said it's a free model running through"
+},
+{
+"s": 586.368,
+"e": 590.748,
+"t": "OpenRouter, but a model's word isn't a proof, so let's check the bill."
+},
+{
+"s": 590.768,
+"e": 593.408,
+"t": "Go to OpenRouter and open the Activity page."
+},
+{
+"s": 593.428,
+"e": 596.208,
+"t": "This is the real log of every request we have sent,"
+},
+{
+"s": 596.228,
+"e": 598.448,
+"t": "which model answered, and what it costs."
+},
+{
+"s": 598.468,
+"e": 601.648,
+"t": "So before I scroll down, how much do you think this cost me?"
+},
+{
+"s": 601.668,
+"e": 605.528,
+"t": "Three requests, about twenty-four thousand tokens and zero dollars."
+},
+{
+"s": 605.548,
+"e": 609.488,
+"t": "And one more thing that might scare you, if you type /usage in Claude Code,"
+},
+{
+"s": 609.508,
+"e": 611.588,
+"t": "it might say something like thirteen cents."
+},
+{
+"s": 611.608,
+"e": 616.368,
+"t": "Relax. That's just the Claude Code estimating the cost at Anthropic's prices."
+},
+{
+"s": 616.388,
+"e": 619.668,
+"t": "The real bill is on OpenRouter, and it says zero."
+},
+{
+"s": 619.688,
+"e": 621.168,
+"t": "But of course, there is a catch."
+},
+{
+"s": 621.188,
+"e": 623.3480000000001,
+"t": "Two, actually. First, limits."
+},
+{
+"s": 623.368,
+"e": 627.028,
+"t": "Free models are capped about fifty requests a day on a new account."
+},
+{
+"s": 627.048,
+"e": 631.6080000000001,
+"t": "Fifty sounds like plenty until you realize one Claude Code task can use ten"
+},
+{
+"s": 631.628,
+"e": 634.888,
+"t": "or twenty requests because it reads files, writes them,"
+},
+{
+"s": 634.908,
+"e": 637.548,
+"t": "checks its own work, and fixes what it broke."
+},
+{
+"s": 637.568,
+"e": 640.408,
+"t": "Hit the cap, and you'll see error four twenty-nine."
+},
+{
+"s": 640.428,
+"e": 644.488,
+"t": "Four twenty-nine is just the server saying, \"You have used your free quota."
+},
+{
+"s": 644.508,
+"e": 647.197,
+"t": "Come back later.\" And the second is the privacy."
+},
+{
+"s": 647.228,
+"e": 651.667,
+"t": "Unlike Ollama, your prompts and your code now go to someone else's service,"
+},
+{
+"s": 651.687,
+"e": 655.528,
+"t": "so don't send client code or passwords through free Claude models."
+},
+{
+"s": 655.548,
+"e": 658.668,
+"t": "Keep those on Ollama. So quick question before method three."
+},
+{
+"s": 658.688,
+"e": 662.588,
+"t": "Which one are you leaning towards so far, Ollama or the OpenRouter?"
+},
+{
+"s": 662.608,
+"e": 664.508,
+"t": "Or are you waiting for the next one?"
+},
+{
+"s": 664.528,
+"e": 668.708,
+"t": "Tell me in the comments. I actually read them because method three is where"
+},
+{
+"s": 668.728,
+"e": 670.168,
+"t": "it gets really interesting."
+},
+{
+"s": 670.188,
+"e": 673.548,
+"t": "So here is the problem with every free option we have seen so far."
+},
+{
+"s": 673.568,
+"e": 675.388,
+"t": "Every free provider has a limit."
+},
+{
+"s": 675.408,
+"e": 677.188,
+"t": "Google gives you some free requests."
+},
+{
+"s": 677.208,
+"e": 680.718,
+"t": "NVIDIA gives you some. OpenRouter gives you fifty a day."
+},
+{
+"s": 680.768,
+"e": 685.048,
+"t": "On its own, each one runs out fast, but if you put them all together,"
+},
+{
+"s": 685.068,
+"e": 686.868,
+"t": "that's a lot of free AI, right?"
+},
+{
+"s": 686.888,
+"e": 691.068,
+"t": "And what if when one runs out, the next one simply takes over without you"
+},
+{
+"s": 691.088,
+"e": 694.068,
+"t": "doing anything? That's exactly what OmniRoute does."
+},
+{
+"s": 694.088,
+"e": 696.308,
+"t": "OmniRoute is a free open source app."
+},
+{
+"s": 696.328,
+"e": 699.508,
+"t": "You install it on your own computer, and it sits in the middle."
+},
+{
+"s": 699.528,
+"e": 704.288,
+"t": "Claude Code talks only to OmniRoute, and OmniRoute decides which AI provider"
+},
+{
+"s": 704.308,
+"e": 708.438,
+"t": "answers each request. So Claude Code thinks it's talking to one AI,"
+},
+{
+"s": 708.568,
+"e": 711.748,
+"t": "but behind the scenes, OmniRoute is juggling many,"
+},
+{
+"s": 711.768,
+"e": 714.9680000000001,
+"t": "and we install it with one rule, and AI does it."
+},
+{
+"s": 714.988,
+"e": 717.528,
+"t": "I open Antigravity and give it one prompt."
+},
+{
+"s": 717.548,
+"e": 721.708,
+"t": "It's in the setup kit, and it basically says, \"Check whether Claude Code is"
+},
+{
+"s": 721.728,
+"e": 723.978,
+"t": "installed and install it if not."
+},
+{
+"s": 724.008,
+"e": 728.3480000000001,
+"t": "Then install OmniRoute from GitHub, start it, and open the dashboard in my"
+},
+{
+"s": 728.368,
+"e": 733.018,
+"t": "browser. And if any step fails, fix it and keep going.\" When it's done,"
+},
+{
+"s": 733.128,
+"e": 736.1080000000001,
+"t": "it gives me a little summary table, Claude Code found,"
+},
+{
+"s": 736.128,
+"e": 739.1080000000001,
+"t": "OmniRoute installed, server running, dashboard open."
+},
+{
+"s": 739.128,
+"e": 741.828,
+"t": "The dashboard opens in your browser at localhost."
+},
+{
+"s": 741.848,
+"e": 745.568,
+"t": "The first time, it asks for a password, and the default one is \"change me\""
+},
+{
+"s": 745.588,
+"e": 749.948,
+"t": "literally. So log in and then go straight to Settings and change it to something"
+},
+{
+"s": 749.968,
+"e": 753.9680000000001,
+"t": "real. Now, the fun part here is connecting free AI providers."
+},
+{
+"s": 753.988,
+"e": 756.078,
+"t": "In the dashboard, open Providers."
+},
+{
+"s": 756.128,
+"e": 759.208,
+"t": "You'll see a huge list. For each one, you search for it,"
+},
+{
+"s": 759.228,
+"e": 760.688,
+"t": "click it, and click Add."
+},
+{
+"s": 760.708,
+"e": 762.448,
+"t": "So number one is Kiro."
+},
+{
+"s": 762.468,
+"e": 767.088,
+"t": "Kiro is Amazon's AI coding app, and its free plan includes real Claude models"
+},
+{
+"s": 767.108,
+"e": 772.1080000000001,
+"t": "like Claude Sonnet. Search Kiro, click Add, and OmniRoute first shows a warning."
+},
+{
+"s": 772.128,
+"e": 774.288,
+"t": "Read it, then pick how you want to sign in."
+},
+{
+"s": 774.308,
+"e": 776.328,
+"t": "It gives you a short code and a link."
+},
+{
+"s": 776.348,
+"e": 779.148,
+"t": "Open the link, sign in, check that the code matches,"
+},
+{
+"s": 779.168,
+"e": 782.998,
+"t": "and approve. It says device authorized, and back in OmniRoute,"
+},
+{
+"s": 783.088,
+"e": 786.308,
+"t": "Kiro shows connected. And two honest things about Kiro,"
+},
+{
+"s": 786.328,
+"e": 789.4680000000001,
+"t": "the free allowance is small, so it won't last long."
+},
+{
+"s": 789.488,
+"e": 793.1080000000001,
+"t": "And during sign-up, it even opened a subscription required page,"
+},
+{
+"s": 793.128,
+"e": 798.2280000000001,
+"t": "and OmniRoute itself marks Kiro as terms of service avoid because using it"
+},
+{
+"s": 798.248,
+"e": 802.6080000000001,
+"t": "this way may go against Kiro's rules, so this one is your account and your"
+},
+{
+"s": 802.628,
+"e": 807.178,
+"t": "call. So number two is Antigravity, the same Google app we have been using,"
+},
+{
+"s": 807.228,
+"e": 808.828,
+"t": "but this time as a provider."
+},
+{
+"s": 808.848,
+"e": 811.418,
+"t": "Click Add. It opens a Google sign-in."
+},
+{
+"s": 811.448,
+"e": 812.948,
+"t": "Pick your account and allow."
+},
+{
+"s": 812.968,
+"e": 815.798,
+"t": "Then your browser lands on a page that doesn't load,"
+},
+{
+"s": 815.948,
+"e": 819.948,
+"t": "and that's normal. Copy the full address from the top of that page and paste"
+},
+{
+"s": 819.968,
+"e": 822.3480000000001,
+"t": "it back into the OmniRoute and click Connect."
+},
+{
+"s": 822.368,
+"e": 826.388,
+"t": "Now you get Gemini model plus some Claude models within limits."
+},
+{
+"s": 826.408,
+"e": 828.428,
+"t": "The warning here is even stronger."
+},
+{
+"s": 828.448,
+"e": 831.248,
+"t": "OmniRoute says Google may restrict the account,"
+},
+{
+"s": 831.268,
+"e": 834.548,
+"t": "so please use a spare account, not your main one."
+},
+{
+"s": 834.568,
+"e": 836.328,
+"t": "So number three is NVIDIA."
+},
+{
+"s": 836.348,
+"e": 841.208,
+"t": "NVIDIA, the graphics card company, also gives free access to bunch of AI models"
+},
+{
+"s": 841.228,
+"e": 843.068,
+"t": "on build.nvidia.com."
+},
+{
+"s": 843.088,
+"e": 847.388,
+"t": "Create a free account, go to API keys, and click Generate API key."
+},
+{
+"s": 847.408,
+"e": 848.988,
+"t": "Give it a name and copy it."
+},
+{
+"s": 849.008,
+"e": 852.148,
+"t": "Then back in OmniRoute, open NVIDIA, click Add,"
+},
+{
+"s": 852.168,
+"e": 856.648,
+"t": "and paste the key. And here, switch on Import only free models so only the"
+},
+{
+"s": 856.668,
+"e": 858.828,
+"t": "free ones comes in, and then Save."
+},
+{
+"s": 858.848,
+"e": 860.478,
+"t": "Number four is Gemini."
+},
+{
+"s": 860.512,
+"e": 863.212,
+"t": "And Google AI Studio gives you a free key for it."
+},
+{
+"s": 863.232,
+"e": 868.4110000000001,
+"t": "Go to Google AI Studio, click Get API key and create API key and copy it."
+},
+{
+"s": 868.431,
+"e": 871.892,
+"t": "In OmniRoute, open Gemini, click Add and paste it."
+},
+{
+"s": 871.912,
+"e": 874.572,
+"t": "Hit Check to make sure it works, and then Save."
+},
+{
+"s": 874.592,
+"e": 876.572,
+"t": "And that's four providers connected."
+},
+{
+"s": 876.592,
+"e": 880.552,
+"t": "Now, one by one, they are small, so let's make them work as one team."
+},
+{
+"s": 880.572,
+"e": 883.2520000000001,
+"t": "In OmniRoute, the team is called combo."
+},
+{
+"s": 883.272,
+"e": 885.782,
+"t": "A combo is a list of models in an order."
+},
+{
+"s": 885.872,
+"e": 889.712,
+"t": "The first one answers, and if it's busy, out of free credits,"
+},
+{
+"s": 889.732,
+"e": 892.451,
+"t": "or failing, the next one takes over automatically."
+},
+{
+"s": 892.471,
+"e": 895.6320000000001,
+"t": "Go to Combos, click Create, and give it a name."
+},
+{
+"s": 895.652,
+"e": 899.5120000000001,
+"t": "I called mine Claude, and you'll see why that name matters in a second."
+},
+{
+"s": 899.532,
+"e": 902.852,
+"t": "Now, add the steps. For each step, you pick a provider,"
+},
+{
+"s": 902.872,
+"e": 905.932,
+"t": "then a model, and then leave the account on automatic."
+},
+{
+"s": 905.952,
+"e": 910.162,
+"t": "Click Add Step. I put Gemini first, then Kiro's Claude Sonnet,"
+},
+{
+"s": 910.332,
+"e": 912.5120000000001,
+"t": "and then more free backups behind them."
+},
+{
+"s": 912.532,
+"e": 915.8720000000001,
+"t": "You can use the little up and down arrows to change the order."
+},
+{
+"s": 915.892,
+"e": 918.712,
+"t": "Top goes first. Then it asks for the strategy,"
+},
+{
+"s": 918.732,
+"e": 923.112,
+"t": "which is simply how OmniRoute chooses between the models in your combo."
+},
+{
+"s": 923.132,
+"e": 927.432,
+"t": "I picked Smart Routing, so it scores each option and picks the best one."
+},
+{
+"s": 927.452,
+"e": 929.572,
+"t": "Then Save, and the combo is ready."
+},
+{
+"s": 929.592,
+"e": 933.262,
+"t": "Now, Claude Code needs one key to use this whole combo,"
+},
+{
+"s": 933.412,
+"e": 935.532,
+"t": "and that's the OmniRoute API key."
+},
+{
+"s": 935.552,
+"e": 937.452,
+"t": "It's OmniRoute's own password."
+},
+{
+"s": 937.472,
+"e": 941.712,
+"t": "Claude Code shows this key to OmniRoute, and OmniRoute then uses all your"
+},
+{
+"s": 941.732,
+"e": 943.8720000000001,
+"t": "provider keys behind the scenes."
+},
+{
+"s": 943.892,
+"e": 947.472,
+"t": "In the dashboard, open API Keys and click Create API Key."
+},
+{
+"s": 947.492,
+"e": 950.812,
+"t": "Give it a name, like Claude Code, and then create it."
+},
+{
+"s": 950.832,
+"e": 954.482,
+"t": "And now copy it straight away because just like the other keys,"
+},
+{
+"s": 954.612,
+"e": 956.432,
+"t": "you only get to see it once."
+},
+{
+"s": 956.452,
+"e": 959.452,
+"t": "Now, I don't want to type commands every time I use this,"
+},
+{
+"s": 959.472,
+"e": 961.852,
+"t": "so I give Antigravity one more prompt."
+},
+{
+"s": 961.872,
+"e": 964.7520000000001,
+"t": "It says, \"Make two shortcuts on my desktop."
+},
+{
+"s": 964.772,
+"e": 969.072,
+"t": "The first is Free Claude Code,\" and launches Claude Code through OmniRoute"
+},
+{
+"s": 969.092,
+"e": 972.852,
+"t": "using my combo. The second shortcut is OmniRoute Dashboard,"
+},
+{
+"s": 972.872,
+"e": 974.532,
+"t": "which opens the control panel."
+},
+{
+"s": 974.552,
+"e": 979.3720000000001,
+"t": "And one important safety tip here is Antigravity will ask for your OmniRoute"
+},
+{
+"s": 979.392,
+"e": 981.392,
+"t": "key while it sets this up."
+},
+{
+"s": 981.412,
+"e": 983.052,
+"t": "Don't paste the key into the chat."
+},
+{
+"s": 983.072,
+"e": 986.032,
+"t": "Ask it to open a file, paste the key into the file,"
+},
+{
+"s": 986.052,
+"e": 987.732,
+"t": "save it, and type Continue."
+},
+{
+"s": 987.752,
+"e": 990.672,
+"t": "That way, your key never sits in a chat history."
+},
+{
+"s": 990.692,
+"e": 992.152,
+"t": "And then one last fix."
+},
+{
+"s": 992.172,
+"e": 996.552,
+"t": "When Claude Code connects to OmniRoute, its model menu can show every model"
+},
+{
+"s": 996.572,
+"e": 998.992,
+"t": "from your providers, including paid ones."
+},
+{
+"s": 999.012,
+"e": 1001.852,
+"t": "Pick a paid one by accident, and you get errors or,"
+},
+{
+"s": 1001.872,
+"e": 1005.192,
+"t": "worse, a bill. So I give Antigravity one more prompt,"
+},
+{
+"s": 1005.212,
+"e": 1010.272,
+"t": "\"Turn on hide paid models in OmniRoute and keep my Claude combo as the default.\""
+},
+{
+"s": 1010.292,
+"e": 1011.852,
+"t": "That's exactly what happened."
+},
+{
+"s": 1011.872,
+"e": 1014.172,
+"t": "The menu only showed free options."
+},
+{
+"s": 1014.192,
+"e": 1016.652,
+"t": "Everything's connected. Moment of truth."
+},
+{
+"s": 1016.672,
+"e": 1018.5120000000001,
+"t": "I double-click Free Claude Code."
+},
+{
+"s": 1018.532,
+"e": 1022.032,
+"t": "It checks OmniRoute. It's running, and Claude Code opens."
+},
+{
+"s": 1022.052,
+"e": 1025.622,
+"t": "So obvious question is, \"Which model are you?\" And it answers,"
+},
+{
+"s": 1025.692,
+"e": 1029.452,
+"t": "\"I am Claude.\" But remember, a model's word isn't a proof,"
+},
+{
+"s": 1029.472,
+"e": 1032.372,
+"t": "so let's check the bill. I open the OmniRoute dashboard,"
+},
+{
+"s": 1032.392,
+"e": 1035.0720000000001,
+"t": "go to Logs, which is the list of every request,"
+},
+{
+"s": 1035.092,
+"e": 1036.872,
+"t": "and look at this line."
+},
+{
+"s": 1036.892,
+"e": 1039.252,
+"t": "\"Model: Claude Sonnet four point five."
+},
+{
+"s": 1039.272,
+"e": 1041.732,
+"t": "Provider: Kiro. Combo: Claude."
+},
+{
+"s": 1041.752,
+"e": 1044.852,
+"t": "Status: two hundred.\" And two hundred just means success."
+},
+{
+"s": 1044.872,
+"e": 1049.5720000000001,
+"t": "So that's real Claude Sonnet answering inside Claude Code through a free account."
+},
+{
+"s": 1049.592,
+"e": 1051.972,
+"t": "That's the receipt. But a hi proves nothing,"
+},
+{
+"s": 1051.992,
+"e": 1053.512,
+"t": "so let's build something real."
+},
+{
+"s": 1053.532,
+"e": 1057.752,
+"t": "On my machine, I asked, \"Design me a simple personal note-taking application,\""
+},
+{
+"s": 1057.772,
+"e": 1059.752,
+"t": "and it doesn't just start writing code."
+},
+{
+"s": 1059.772,
+"e": 1063.952,
+"t": "It's in plan mode, a Claude Code mode where it plans and asks you questions"
+},
+{
+"s": 1063.972,
+"e": 1065.412,
+"t": "before it writes anything."
+},
+{
+"s": 1065.432,
+"e": 1068.492,
+"t": "So it asked me which tech stack, which features,"
+},
+{
+"s": 1068.512,
+"e": 1070.192,
+"t": "and how should the notes be stored."
+},
+{
+"s": 1070.212,
+"e": 1073.252,
+"t": "Then it showed me a plan and only then starts building."
+},
+{
+"s": 1073.272,
+"e": 1074.632,
+"t": "And here is the coolest part."
+},
+{
+"s": 1074.652,
+"e": 1078.912,
+"t": "Straight from the logs, real Claude did the planning until its free limit"
+},
+{
+"s": 1078.932,
+"e": 1082.652,
+"t": "ran out. The OmniRoute switched by itself to free NVIDIA,"
+},
+{
+"s": 1082.672,
+"e": 1085.0720000000001,
+"t": "and it kept building. I didn't touch anything."
+},
+{
+"s": 1085.092,
+"e": 1086.832,
+"t": "That's the whole point of a combo."
+},
+{
+"s": 1086.852,
+"e": 1089.452,
+"t": "Now, honestly, the first version didn't work."
+},
+{
+"s": 1089.472,
+"e": 1093.892,
+"t": "It took a few fix rounds and a final cleanup, but here it is,"
+},
+{
+"s": 1093.912,
+"e": 1098.3120000000001,
+"t": "notes, tags, markdown, search, and it even survives a refresh."
+},
+{
+"s": 1098.332,
+"e": 1100.932,
+"t": "And the bill for all of that is zero dollars."
+},
+{
+"s": 1100.952,
+"e": 1102.852,
+"t": "And here is your free Claude Code map."
+},
+{
+"s": 1102.872,
+"e": 1106.832,
+"t": "Which one fits you? Privacy or offline, go with Ollama."
+},
+{
+"s": 1106.852,
+"e": 1109.962,
+"t": "If you don't have strong hardware and you want speed,"
+},
+{
+"s": 1110.132,
+"e": 1114.212,
+"t": "go with OpenRouter. And if you want it to keep going when one provider runs"
+},
+{
+"s": 1114.232,
+"e": 1116.612,
+"t": "out, the best option is OmniRoute."
+},
+{
+"s": 1116.632,
+"e": 1119.571,
+"t": "And the four rules. One, nothing is unlimited."
+},
+{
+"s": 1119.591,
+"e": 1122.472,
+"t": "And the two, cloud providers see what you send,"
+},
+{
+"s": 1122.492,
+"e": 1124.612,
+"t": "so keep private code on Ollama."
+},
+{
+"s": 1124.632,
+"e": 1128.932,
+"t": "And the third thing is Kiro and Antigravity may go against their terms,"
+},
+{
+"s": 1128.952,
+"e": 1132.392,
+"t": "so it's your call. And the fourth one is things will break."
+},
+{
+"s": 1132.412,
+"e": 1136.022,
+"t": "Copy, paste, fix this, and always check the bill,"
+},
+{
+"s": 1136.072,
+"e": 1139.972,
+"t": "not the label. Everyone told you Claude Code costs twenty dollars a month."
+},
+{
+"s": 1139.992,
+"e": 1143.302,
+"t": "Today, we ran the real Claude Code three ways for free,"
+},
+{
+"s": 1143.392,
+"e": 1147.552,
+"t": "offline, in the cloud, and with the providers that switch by themself."
+},
+{
+"s": 1147.572,
+"e": 1149.372,
+"t": "Same Claude Code, zero bill."
+},
+{
+"s": 1149.392,
+"e": 1152.492,
+"t": "The free setup kit with the model list, every prompt,"
+},
+{
+"s": 1152.512,
+"e": 1155.472,
+"t": "and every setting is in the first link in the description."
+},
+{
+"s": 1155.492,
+"e": 1157.932,
+"t": "Tell me in the comments which one you are trying first."
+},
+{
+"s": 1157.952,
+"e": 1161.952,
+"t": "And if this save you twenty dollars a month, subscribe to AI with Kalyan."
+},
+{
+"s": 1161.972,
+"e": 1164.532,
+"t": "I test these AI tools so you don't have to."
+},
+{
+"s": 1164.552,
+"e": 1167.242,
+"t": "And if you want to see what else Claude Code can do,"
+},
+{
+"s": 1167.452,
+"e": 1169.972,
+"t": "this video right here is one to watch next."
+},
+{
+"s": 1169.992,
+"e": 1175.712,
+"t": "Every week on AI with Kalyan, one AI tool tested honestly and receipts included."
+},
+{
+"s": 1175.732,
+"e": 1178.082,
+"t": "Subscribe, and I'll see you in the next one."
+}
+]

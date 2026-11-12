@@ -1,0 +1,2535 @@
+1
+00:00:00,120 --> 00:00:01,920
+Claude Code is one of the most powerful
+
+2
+00:00:02,020 --> 00:00:03,900
+coding tools out there, but it costs
+
+3
+00:00:03,940 --> 00:00:05,940
+twenty dollars a month, and the moment you
+
+4
+00:00:05,980 --> 00:00:08,100
+hit your limit in the middle of a task, it
+
+5
+00:00:08,160 --> 00:00:08,840
+just stops.
+
+6
+00:00:09,020 --> 00:00:11,040
+You either pay more or you wait.
+
+7
+00:00:11,260 --> 00:00:13,020
+But here is what the most people don't
+
+8
+00:00:13,060 --> 00:00:13,460
+know about.
+
+9
+00:00:13,640 --> 00:00:15,160
+Claude Code itself is free.
+
+10
+00:00:15,420 --> 00:00:17,460
+What you're paying for is the brain inside
+
+11
+00:00:17,520 --> 00:00:17,680
+it.
+
+12
+00:00:17,860 --> 00:00:20,240
+And today, I am going to swap that brain
+
+13
+00:00:20,280 --> 00:00:21,120
+for free ones.
+
+14
+00:00:21,340 --> 00:00:22,220
+Let's take a phone.
+
+15
+00:00:22,500 --> 00:00:24,540
+The phone is just the hardware, and the
+
+16
+00:00:24,600 --> 00:00:26,140
+SIM card decides who you pay.
+
+17
+00:00:26,380 --> 00:00:28,680
+Claude Code is like the phone, a free
+
+18
+00:00:28,740 --> 00:00:31,040
+coding assistant from Anthropic that lives
+
+19
+00:00:31,080 --> 00:00:33,220
+in your terminal and can read, write, and
+
+20
+00:00:33,280 --> 00:00:34,120
+run code for you.
+
+21
+00:00:34,400 --> 00:00:37,020
+The AI model is like the SIM, the brain
+
+22
+00:00:37,080 --> 00:00:38,140
+that does the thinking.
+
+23
+00:00:38,420 --> 00:00:40,420
+Anthropic's model costs twenty dollars a
+
+24
+00:00:40,480 --> 00:00:42,940
+month, but this phone accepts other SIMs
+
+25
+00:00:43,020 --> 00:00:43,340
+as well.
+
+26
+00:00:43,600 --> 00:00:45,680
+So by the end of this video, you will have
+
+27
+00:00:45,720 --> 00:00:47,900
+the real Claude Code running for zero
+
+28
+00:00:47,960 --> 00:00:49,860
+dollars in three different ways.
+
+29
+00:00:50,060 --> 00:00:52,720
+First, completely on your own laptop, and
+
+30
+00:00:52,780 --> 00:00:54,420
+I'll even switch the Wi-Fi off.
+
+31
+00:00:54,640 --> 00:00:57,080
+Then, free AI models in the cloud, plus
+
+32
+00:00:57,120 --> 00:00:59,280
+the one trap that can quietly charge you a
+
+33
+00:00:59,320 --> 00:00:59,900
+paid plan.
+
+34
+00:01:00,060 --> 00:01:02,120
+And finally, several free providers
+
+35
+00:01:02,180 --> 00:01:04,239
+connected together, where I'll show you
+
+36
+00:01:04,300 --> 00:01:06,060
+real Claude Sonnet answering through a
+
+37
+00:01:06,140 --> 00:01:08,200
+free account with the logs to prove it.
+
+38
+00:01:08,260 --> 00:01:09,980
+And I have put everything into a free
+
+39
+00:01:10,040 --> 00:01:12,680
+setup kit, the model list, every prompt,
+
+40
+00:01:12,740 --> 00:01:13,560
+and every setting.
+
+41
+00:01:13,780 --> 00:01:15,560
+It's the first link in the description
+
+42
+00:01:15,600 --> 00:01:15,840
+below.
+
+43
+00:01:16,060 --> 00:01:17,820
+So stay till the end because the last
+
+44
+00:01:17,860 --> 00:01:19,060
+method is the best one.
+
+45
+00:01:19,300 --> 00:01:20,780
+Nobody paid for this video.
+
+46
+00:01:21,140 --> 00:01:23,040
+I have already worked through every setup
+
+47
+00:01:23,120 --> 00:01:25,060
+and every trap, so you don't have to.
+
+48
+00:01:25,320 --> 00:01:27,400
+And I won't just tell you it's free, I'll
+
+49
+00:01:27,460 --> 00:01:28,940
+show you the receipt every time.
+
+50
+00:01:29,200 --> 00:01:29,940
+So let's start.
+
+51
+00:01:30,100 --> 00:01:31,860
+So method one, it's called Ollama.
+
+52
+00:01:32,100 --> 00:01:34,300
+Ollama is a free app that downloads AI
+
+53
+00:01:34,360 --> 00:01:36,320
+models and runs them right on your own
+
+54
+00:01:36,380 --> 00:01:36,760
+laptop.
+
+55
+00:01:36,920 --> 00:01:39,480
+Kind of like a media player, but for AI.
+
+56
+00:01:39,640 --> 00:01:42,100
+The big difference from ChatGPT or Claude
+
+57
+00:01:42,180 --> 00:01:43,840
+is that nothing goes to the cloud.
+
+58
+00:01:44,080 --> 00:01:46,380
+The AI lives on your own machine, so it's
+
+59
+00:01:46,420 --> 00:01:48,480
+private, and it's even works without
+
+60
+00:01:48,560 --> 00:01:49,000
+internet.
+
+61
+00:01:49,160 --> 00:01:50,800
+Installing it is super simple.
+
+62
+00:01:50,980 --> 00:01:53,300
+So go to ollama.com and click Download.
+
+63
+00:01:53,540 --> 00:01:55,660
+It works on Windows, Mac, and Linux.
+
+64
+00:01:55,880 --> 00:01:57,680
+Then double-click the file, click through
+
+65
+00:01:57,720 --> 00:01:58,980
+the steps, and that's it.
+
+66
+00:01:59,180 --> 00:02:01,080
+Once it's open, you'll see three things on
+
+67
+00:02:01,120 --> 00:02:01,500
+the left.
+
+68
+00:02:01,780 --> 00:02:03,720
+Apps, this is where you connect coding
+
+69
+00:02:03,760 --> 00:02:06,040
+tools like Claude Code, Codex, and others.
+
+70
+00:02:06,260 --> 00:02:08,780
+Chat, this is where you talk to a model
+
+71
+00:02:08,820 --> 00:02:09,960
+directly to test it.
+
+72
+00:02:10,220 --> 00:02:11,840
+In Settings, two things matter.
+
+73
+00:02:12,040 --> 00:02:13,140
+First, the cloud toggle.
+
+74
+00:02:13,380 --> 00:02:15,840
+Ollama can also run some models on its own
+
+75
+00:02:15,900 --> 00:02:17,640
+servers in the cloud, but we want
+
+76
+00:02:17,720 --> 00:02:19,900
+everything on our laptop, so leave that
+
+77
+00:02:19,980 --> 00:02:20,200
+off.
+
+78
+00:02:20,400 --> 00:02:22,780
+And the second, the most people miss, is
+
+79
+00:02:22,800 --> 00:02:23,700
+the context length.
+
+80
+00:02:23,840 --> 00:02:26,020
+Context length is the AI's short-term
+
+81
+00:02:26,080 --> 00:02:28,160
+memory, how much of your conversation and
+
+82
+00:02:28,220 --> 00:02:30,560
+your project it can hold in its head at
+
+83
+00:02:30,680 --> 00:02:30,960
+once.
+
+84
+00:02:31,160 --> 00:02:33,080
+Claude Code reads a lot of your files
+
+85
+00:02:33,140 --> 00:02:34,420
+before it changes anything.
+
+86
+00:02:34,680 --> 00:02:37,240
+If the memory is too small, it loses track
+
+87
+00:02:37,320 --> 00:02:38,000
+halfway through.
+
+88
+00:02:38,240 --> 00:02:40,380
+So drag this slide up to sixty-four k.
+
+89
+00:02:40,580 --> 00:02:41,240
+That's the fix.
+
+90
+00:02:41,440 --> 00:02:42,340
+Now let's test it.
+
+91
+00:02:42,560 --> 00:02:44,600
+Open Chat, click the model menu at the
+
+92
+00:02:44,660 --> 00:02:46,440
+bottom, and pick a small model.
+
+93
+00:02:46,680 --> 00:02:49,020
+I pick a small one, quen three point five
+
+94
+00:02:49,080 --> 00:02:51,600
+four b, just to warm things up, and type
+
+95
+00:02:51,660 --> 00:02:51,900
+hi.
+
+96
+00:02:52,180 --> 00:02:54,400
+The first message downloads the model, so
+
+97
+00:02:54,460 --> 00:02:56,680
+it takes a minute, but hi proves nothing.
+
+98
+00:02:56,920 --> 00:02:57,580
+So watch this.
+
+99
+00:02:57,860 --> 00:02:59,320
+I'm turning the Wi-Fi off.
+
+100
+00:02:59,600 --> 00:02:59,740
+See?
+
+101
+00:03:00,120 --> 00:03:01,080
+No internet at all.
+
+102
+00:03:01,280 --> 00:03:03,260
+So be honest, do you think it can still
+
+103
+00:03:03,300 --> 00:03:03,960
+write an app?
+
+104
+00:03:04,180 --> 00:03:06,840
+I type, make a simple notes app, and it's
+
+105
+00:03:06,900 --> 00:03:07,260
+thinking.
+
+106
+00:03:07,520 --> 00:03:09,320
+Thinking, and it writes the whole thing,
+
+107
+00:03:09,680 --> 00:03:10,660
+completely offline.
+
+108
+00:03:10,860 --> 00:03:12,720
+Every single word came from a model
+
+109
+00:03:12,760 --> 00:03:13,860
+sitting on this laptop.
+
+110
+00:03:14,000 --> 00:03:14,520
+Is it pretty?
+
+111
+00:03:15,320 --> 00:03:15,500
+No.
+
+112
+00:03:15,560 --> 00:03:17,860
+But a laptop with no internet just wrote
+
+113
+00:03:17,940 --> 00:03:20,320
+working software with no subscription, no
+
+114
+00:03:20,420 --> 00:03:22,360
+usage limits, and your code never left
+
+115
+00:03:22,400 --> 00:03:23,040
+your computer.
+
+116
+00:03:23,200 --> 00:03:25,500
+And honestly, if that alone just saved you
+
+117
+00:03:25,540 --> 00:03:27,720
+twenty dollars a month, hit Subscribe
+
+118
+00:03:27,780 --> 00:03:29,620
+because it only gets better from here.
+
+119
+00:03:29,780 --> 00:03:31,620
+Now, which model should you actually run?
+
+120
+00:03:31,940 --> 00:03:32,400
+Don't guess.
+
+121
+00:03:32,640 --> 00:03:33,800
+It depends on your RAM.
+
+122
+00:03:34,100 --> 00:03:36,480
+RAM is your computer's working memory, and
+
+123
+00:03:36,540 --> 00:03:39,140
+for local AI, it decides how big a model
+
+124
+00:03:39,180 --> 00:03:39,760
+you can run.
+
+125
+00:03:39,920 --> 00:03:41,980
+Press Control + Shift + Escape to open
+
+126
+00:03:42,040 --> 00:03:43,960
+Task Manager and click the Performance
+
+127
+00:03:44,020 --> 00:03:44,240
+tab.
+
+128
+00:03:44,400 --> 00:03:46,740
+It's a pretty normal laptop, no separate
+
+129
+00:03:46,780 --> 00:03:49,220
+graphics card, just the built-in graphics
+
+130
+00:03:49,280 --> 00:03:50,540
+and sixteen GB of RAM.
+
+131
+00:03:50,680 --> 00:03:52,820
+Roughly with eight to sixteen GB of RAM,
+
+132
+00:03:53,280 --> 00:03:55,320
+stick to small models, around four to
+
+133
+00:03:55,380 --> 00:03:56,600
+twelve billion parameters.
+
+134
+00:03:56,720 --> 00:03:58,700
+With thirty-two GB, you can go to medium,
+
+135
+00:03:58,860 --> 00:04:01,000
+and with sixty-four GB or more, you can
+
+136
+00:04:01,080 --> 00:04:03,160
+run the big ones that feel close to paid
+
+137
+00:04:03,200 --> 00:04:03,400
+thing.
+
+138
+00:04:03,620 --> 00:04:06,200
+The exact list I would pick for each size
+
+139
+00:04:06,280 --> 00:04:07,460
+is in the free setup kit.
+
+140
+00:04:07,660 --> 00:04:09,300
+Here is a little trick I use too.
+
+141
+00:04:09,520 --> 00:04:11,740
+I ask ChatGPT, "Here is my laptop.
+
+142
+00:04:11,860 --> 00:04:13,960
+Give me the best coding model for Ollama,
+
+143
+00:04:14,320 --> 00:04:16,160
+its exact name, and the latest one,"
+
+144
+00:04:16,459 --> 00:04:18,500
+because new model comes out literally
+
+145
+00:04:18,579 --> 00:04:19,079
+every week.
+
+146
+00:04:19,260 --> 00:04:21,260
+And it suggested MiMo version two point
+
+147
+00:04:21,320 --> 00:04:22,720
+six, a nine B model.
+
+148
+00:04:23,140 --> 00:04:25,120
+The exact prompt is in the setup kit.
+
+149
+00:04:25,300 --> 00:04:27,300
+And this is where I hit my first problem.
+
+150
+00:04:27,520 --> 00:04:30,040
+MiMo wasn't in Ollama's dropdown, and
+
+151
+00:04:30,120 --> 00:04:32,280
+Ollama only shows a handful of popular
+
+152
+00:04:32,360 --> 00:04:32,960
+models there.
+
+153
+00:04:33,180 --> 00:04:35,220
+So I tried installing it in the terminal,
+
+154
+00:04:35,420 --> 00:04:37,460
+and it told me my Ollama was too old.
+
+155
+00:04:37,760 --> 00:04:40,320
+I updated it, tried again, and I was still
+
+156
+00:04:40,400 --> 00:04:40,680
+stuck.
+
+157
+00:04:40,920 --> 00:04:42,800
+And this is exactly where a five-minute
+
+158
+00:04:42,880 --> 00:04:45,100
+step turned into an hour of Googling.
+
+159
+00:04:45,280 --> 00:04:48,080
+So instead, I let another AI do it for me.
+
+160
+00:04:48,260 --> 00:04:49,440
+It's called Antigravity.
+
+161
+00:04:49,620 --> 00:04:52,080
+Antigravity is a free AI coding app from
+
+162
+00:04:52,140 --> 00:04:52,440
+Google.
+
+163
+00:04:52,580 --> 00:04:54,660
+Download it from antigravity.google.
+
+164
+00:04:54,980 --> 00:04:56,900
+Sign in with your Google account and open
+
+165
+00:04:56,980 --> 00:04:59,220
+it and give it one sentence: "I am running
+
+166
+00:04:59,300 --> 00:05:00,300
+AI model locally.
+
+167
+00:05:00,460 --> 00:05:03,000
+Install MiMo version two point six nine b
+
+168
+00:05:03,040 --> 00:05:05,120
+and set everything up so it works with
+
+169
+00:05:05,180 --> 00:05:06,780
+Ollama." It will ask your permission
+
+170
+00:05:06,820 --> 00:05:09,080
+before running each command because it's
+
+171
+00:05:09,160 --> 00:05:10,460
+running things on your machine.
+
+172
+00:05:10,640 --> 00:05:12,260
+Read each step and then allow.
+
+173
+00:05:12,460 --> 00:05:14,880
+A few minutes later, it says, "Installed
+
+174
+00:05:14,940 --> 00:05:17,320
+and tested." Close Ollama, open it again,
+
+175
+00:05:17,460 --> 00:05:19,340
+and the new model is right there in the
+
+176
+00:05:19,400 --> 00:05:19,980
+dropdown.
+
+177
+00:05:20,020 --> 00:05:21,780
+And that's going to be the rule for this
+
+178
+00:05:21,840 --> 00:05:22,420
+whole video.
+
+179
+00:05:22,600 --> 00:05:24,640
+Anything longer than one line, you don't
+
+180
+00:05:24,700 --> 00:05:27,120
+type it yourself, and AI installs it.
+
+181
+00:05:27,340 --> 00:05:29,200
+And if something breaks on the way, you
+
+182
+00:05:29,260 --> 00:05:31,260
+just copy the error, paste it back to
+
+183
+00:05:31,340 --> 00:05:33,640
+Antigravity, and say, "Fix this." Now, the
+
+184
+00:05:33,700 --> 00:05:35,600
+part you came here for, putting Claude
+
+185
+00:05:35,720 --> 00:05:36,380
+Code on top.
+
+186
+00:05:36,580 --> 00:05:38,880
+In Ollama, go to Apps and click Claude
+
+187
+00:05:38,980 --> 00:05:39,220
+Code.
+
+188
+00:05:39,420 --> 00:05:40,440
+See that little message?
+
+189
+00:05:40,740 --> 00:05:42,400
+It copied the launch command for you,
+
+190
+00:05:42,780 --> 00:05:43,960
+Ollama launch Claude.
+
+191
+00:05:44,200 --> 00:05:45,800
+Now make a folder anywhere on your
+
+192
+00:05:45,840 --> 00:05:46,300
+computer.
+
+193
+00:05:46,700 --> 00:05:48,120
+Mine is called claude-code.
+
+194
+00:05:48,460 --> 00:05:50,400
+Open it, right-click in the empty space,
+
+195
+00:05:50,500 --> 00:05:52,040
+and choose Open in Terminal.
+
+196
+00:05:52,300 --> 00:05:53,880
+Paste the command and hit Enter.
+
+197
+00:05:54,100 --> 00:05:56,240
+If the Claude Code isn't installed yet, it
+
+198
+00:05:56,320 --> 00:05:58,380
+offers to install it and say Yes.
+
+199
+00:05:58,560 --> 00:06:00,080
+And this is the real Claude Code,
+
+200
+00:06:00,300 --> 00:06:02,560
+Anthropic's official app, not a copy.
+
+201
+00:06:02,820 --> 00:06:04,900
+Then it asks which model to use, and I
+
+202
+00:06:04,980 --> 00:06:05,960
+pick my local one.
+
+203
+00:06:06,220 --> 00:06:08,220
+And look at that, the real Claude Code
+
+204
+00:06:08,280 --> 00:06:10,620
+running on my laptop with a free local
+
+205
+00:06:10,740 --> 00:06:11,640
+brain inside it.
+
+206
+00:06:11,800 --> 00:06:13,540
+No subscription, no API key.
+
+207
+00:06:13,740 --> 00:06:15,140
+Now let's give it a real job.
+
+208
+00:06:15,420 --> 00:06:17,580
+I type, "Build me a simple calculator
+
+209
+00:06:17,760 --> 00:06:20,100
+app." On my laptop, it took about thirty
+
+210
+00:06:20,220 --> 00:06:22,640
+minutes because a small local model is
+
+211
+00:06:22,680 --> 00:06:23,940
+doing all the heavy lifting.
+
+212
+00:06:24,080 --> 00:06:25,280
+And that's the honest trade-off.
+
+213
+00:06:25,460 --> 00:06:27,580
+Free means your laptop does the work.
+
+214
+00:06:27,760 --> 00:06:29,720
+So on normal machine, you pay with your
+
+215
+00:06:29,800 --> 00:06:30,040
+time.
+
+216
+00:06:30,308 --> 00:06:31,968
+But it finished, and it works.
+
+217
+00:06:32,208 --> 00:06:34,468
+So method one is your private offline
+
+218
+00:06:34,528 --> 00:06:34,928
+option.
+
+219
+00:06:35,068 --> 00:06:36,988
+For everyday speed, we need something
+
+220
+00:06:37,128 --> 00:06:39,088
+faster, so let's move to the cloud.
+
+221
+00:06:39,208 --> 00:06:41,188
+So method two is called OpenRouter.
+
+222
+00:06:41,428 --> 00:06:43,868
+OpenRouter is one website that gives you
+
+223
+00:06:43,968 --> 00:06:45,808
+access to dozens of AI models from
+
+224
+00:06:45,868 --> 00:06:47,588
+different companies with one single
+
+225
+00:06:47,648 --> 00:06:49,868
+account and single key, and a lot of those
+
+226
+00:06:49,928 --> 00:06:51,188
+models are completely free.
+
+227
+00:06:51,348 --> 00:06:53,528
+The big difference from Ollama, these
+
+228
+00:06:53,588 --> 00:06:55,908
+models run on their servers, not on your
+
+229
+00:06:55,968 --> 00:06:58,408
+laptop, so they are much faster, even on a
+
+230
+00:06:58,448 --> 00:06:59,248
+basic laptop.
+
+231
+00:06:59,408 --> 00:07:01,828
+Go to OpenRouter.ai and sign up.
+
+232
+00:07:02,068 --> 00:07:02,508
+It's free.
+
+233
+00:07:02,708 --> 00:07:03,888
+No credit card needed.
+
+234
+00:07:04,068 --> 00:07:06,188
+Then click API keys and create key.
+
+235
+00:07:06,468 --> 00:07:08,868
+A API key is basically a password that
+
+236
+00:07:08,928 --> 00:07:11,228
+lets an app like Claude Code use your
+
+237
+00:07:11,308 --> 00:07:12,248
+OpenRouter account.
+
+238
+00:07:12,488 --> 00:07:13,128
+Give it a name.
+
+239
+00:07:13,388 --> 00:07:14,468
+Mine is just The Claude.
+
+240
+00:07:14,668 --> 00:07:15,768
+Now, two seat belts.
+
+241
+00:07:15,948 --> 00:07:17,428
+First, set an expiry.
+
+242
+00:07:17,748 --> 00:07:20,428
+I set seven days, so even if the key
+
+243
+00:07:20,488 --> 00:07:22,448
+leaks, it dies on its own.
+
+244
+00:07:22,748 --> 00:07:24,408
+Second is to set a credit limit.
+
+245
+00:07:24,588 --> 00:07:26,308
+That means even if you click the wrong
+
+246
+00:07:26,348 --> 00:07:28,268
+model, it physically can't charge you.
+
+247
+00:07:28,608 --> 00:07:30,888
+Then create it and copy the key straight
+
+248
+00:07:30,948 --> 00:07:33,348
+away because OpenRouter shows it only
+
+249
+00:07:33,468 --> 00:07:35,288
+once, and treat it like a password.
+
+250
+00:07:35,448 --> 00:07:37,848
+Anyone who has it can use your account.
+
+251
+00:07:38,028 --> 00:07:39,228
+Now, which models are free?
+
+252
+00:07:39,508 --> 00:07:41,788
+Click Models at the top, and in the price
+
+253
+00:07:41,828 --> 00:07:44,268
+filter on the left, slide it all the way
+
+254
+00:07:44,328 --> 00:07:44,708
+to free.
+
+255
+00:07:44,808 --> 00:07:47,308
+Now you will only see models with free in
+
+256
+00:07:47,348 --> 00:07:49,348
+their name, and every request to those
+
+257
+00:07:49,408 --> 00:07:49,968
+cost zero.
+
+258
+00:07:50,248 --> 00:07:51,528
+And here is an important tip.
+
+259
+00:07:51,868 --> 00:07:53,488
+This list changes all the time.
+
+260
+00:07:53,728 --> 00:07:54,888
+Models come and go.
+
+261
+00:07:54,948 --> 00:07:57,348
+Companies end their free offers, so don't
+
+262
+00:07:57,388 --> 00:07:58,988
+memorize the names you see today.
+
+263
+00:07:59,208 --> 00:08:00,108
+Remember the filter.
+
+264
+00:08:00,448 --> 00:08:02,388
+As long as you know how to find the free
+
+265
+00:08:02,468 --> 00:08:04,668
+list, you will always have a free model.
+
+266
+00:08:04,908 --> 00:08:06,648
+Now let's connect OpenRouter to Claude
+
+267
+00:08:06,748 --> 00:08:07,008
+Code.
+
+268
+00:08:07,148 --> 00:08:08,928
+For that, you paste a small block of
+
+269
+00:08:08,988 --> 00:08:11,088
+settings into your terminal, and the whole
+
+270
+00:08:11,128 --> 00:08:13,208
+block is in the setup kit for both
+
+271
+00:08:13,268 --> 00:08:14,748
+PowerShell and command prompt.
+
+272
+00:08:14,928 --> 00:08:16,748
+These settings simply tell Claude Code,
+
+273
+00:08:16,968 --> 00:08:18,148
+"Don't talk to Anthropic.
+
+274
+00:08:18,308 --> 00:08:20,568
+Talk to OpenRouter instead, and here is my
+
+275
+00:08:20,608 --> 00:08:22,628
+key." Let me show you what each line does.
+
+276
+00:08:22,828 --> 00:08:24,708
+The first line sends all of the Claude
+
+277
+00:08:24,808 --> 00:08:27,008
+Code's request to OpenRouter, the second
+
+278
+00:08:27,088 --> 00:08:29,168
+line in your key, and that's the only
+
+279
+00:08:29,228 --> 00:08:30,008
+thing you change.
+
+280
+00:08:30,208 --> 00:08:31,908
+Paste your key between these codes.
+
+281
+00:08:32,148 --> 00:08:34,128
+The third line clears out the old
+
+282
+00:08:34,208 --> 00:08:36,448
+Anthropic key so there is no chance of
+
+283
+00:08:36,508 --> 00:08:37,828
+falling back to a paid key.
+
+284
+00:08:38,088 --> 00:08:40,208
+And the last few lines point Claude Code's
+
+285
+00:08:40,268 --> 00:08:43,568
+model slots, Opus, Sonnet, and Haiku at
+
+286
+00:08:43,768 --> 00:08:45,108
+OpenRouter/free.
+
+287
+00:08:45,348 --> 00:08:47,908
+OpenRouter/free is OpenRouter's free
+
+288
+00:08:47,968 --> 00:08:48,348
+router.
+
+289
+00:08:48,788 --> 00:08:50,468
+It picks a free model for you
+
+290
+00:08:50,528 --> 00:08:51,148
+automatically.
+
+291
+00:08:51,368 --> 00:08:54,008
+Then open your folder, right click, open
+
+292
+00:08:54,048 --> 00:08:56,368
+the terminal, paste the block, hit Enter,
+
+293
+00:08:56,568 --> 00:08:57,428
+and type Claude.
+
+294
+00:08:57,748 --> 00:08:59,768
+One thing to know here is these settings
+
+295
+00:08:59,828 --> 00:09:01,908
+only apply to that terminal window, so
+
+296
+00:09:01,968 --> 00:09:04,328
+next time, you paste them again or you let
+
+297
+00:09:04,428 --> 00:09:06,168
+Antigravity make you a shortcut.
+
+298
+00:09:06,328 --> 00:09:08,208
+And this is where I almost got fooled.
+
+299
+00:09:08,388 --> 00:09:09,788
+My paste failed silently.
+
+300
+00:09:10,088 --> 00:09:12,308
+I typed Claude, it opened, and it looked
+
+301
+00:09:12,388 --> 00:09:12,648
+fine.
+
+302
+00:09:12,848 --> 00:09:13,848
+Look at the top line.
+
+303
+00:09:14,048 --> 00:09:14,868
+Spot anything wrong?
+
+304
+00:09:15,188 --> 00:09:15,748
+Claude Pro?
+
+305
+00:09:16,088 --> 00:09:18,148
+Claude Code had quietly gone back to my
+
+306
+00:09:18,208 --> 00:09:19,028
+paid subscription.
+
+307
+00:09:19,268 --> 00:09:21,388
+If you see your Claude plan here, you're
+
+308
+00:09:21,448 --> 00:09:22,488
+not on a free setup.
+
+309
+00:09:22,688 --> 00:09:24,828
+I opened a fresh terminal, entered the
+
+310
+00:09:24,888 --> 00:09:27,268
+settings one line at a time, typed Claude.
+
+311
+00:09:27,388 --> 00:09:30,508
+Now it says OpenRouter/free, API usage
+
+312
+00:09:30,568 --> 00:09:30,868
+billing.
+
+313
+00:09:31,128 --> 00:09:32,048
+That's the free one.
+
+314
+00:09:32,288 --> 00:09:33,848
+Now let's check it's really free.
+
+315
+00:09:34,028 --> 00:09:35,088
+Type /model.
+
+316
+00:09:35,408 --> 00:09:38,308
+You'll see Opus, Sonnet, and Haiku, but
+
+317
+00:09:38,368 --> 00:09:40,568
+those are just the names of the slots, not
+
+318
+00:09:40,628 --> 00:09:41,808
+what's actually answering.
+
+319
+00:09:42,028 --> 00:09:44,368
+I asked it, "Which model are you?" And it
+
+320
+00:09:44,408 --> 00:09:46,288
+said it's a free model running through
+
+321
+00:09:46,368 --> 00:09:48,768
+OpenRouter, but a model's word isn't a
+
+322
+00:09:48,828 --> 00:09:50,508
+proof, so let's check the bill.
+
+323
+00:09:50,768 --> 00:09:52,828
+Go to OpenRouter and open the Activity
+
+324
+00:09:52,948 --> 00:09:53,188
+page.
+
+325
+00:09:53,428 --> 00:09:55,568
+This is the real log of every request we
+
+326
+00:09:55,588 --> 00:09:57,708
+have sent, which model answered, and what
+
+327
+00:09:57,768 --> 00:09:58,248
+it costs.
+
+328
+00:09:58,468 --> 00:10:00,388
+So before I scroll down, how much do you
+
+329
+00:10:00,428 --> 00:10:01,488
+think this cost me?
+
+330
+00:10:01,668 --> 00:10:03,768
+Three requests, about twenty-four thousand
+
+331
+00:10:03,808 --> 00:10:05,388
+tokens and zero dollars.
+
+332
+00:10:05,548 --> 00:10:07,148
+And one more thing that might scare you,
+
+333
+00:10:07,268 --> 00:10:09,608
+if you type /usage in Claude Code, it
+
+334
+00:10:09,648 --> 00:10:11,408
+might say something like thirteen cents.
+
+335
+00:10:11,608 --> 00:10:12,088
+Relax.
+
+336
+00:10:12,288 --> 00:10:14,288
+That's just the Claude Code estimating the
+
+337
+00:10:14,348 --> 00:10:16,248
+cost at Anthropic's prices.
+
+338
+00:10:16,388 --> 00:10:18,808
+The real bill is on OpenRouter, and it
+
+339
+00:10:18,868 --> 00:10:19,428
+says zero.
+
+340
+00:10:19,688 --> 00:10:20,968
+But of course, there is a catch.
+
+341
+00:10:21,188 --> 00:10:21,848
+Two, actually.
+
+342
+00:10:22,068 --> 00:10:23,108
+First, limits.
+
+343
+00:10:23,368 --> 00:10:25,208
+Free models are capped about fifty
+
+344
+00:10:25,248 --> 00:10:26,928
+requests a day on a new account.
+
+345
+00:10:27,048 --> 00:10:29,488
+Fifty sounds like plenty until you realize
+
+346
+00:10:29,568 --> 00:10:32,048
+one Claude Code task can use ten or twenty
+
+347
+00:10:32,128 --> 00:10:34,408
+requests because it reads files, writes
+
+348
+00:10:34,448 --> 00:10:36,828
+them, checks its own work, and fixes what
+
+349
+00:10:36,868 --> 00:10:37,348
+it broke.
+
+350
+00:10:37,568 --> 00:10:39,648
+Hit the cap, and you'll see error four
+
+351
+00:10:39,708 --> 00:10:40,228
+twenty-nine.
+
+352
+00:10:40,428 --> 00:10:42,188
+Four twenty-nine is just the server
+
+353
+00:10:42,248 --> 00:10:44,368
+saying, "You have used your free quota.
+
+354
+00:10:44,508 --> 00:10:46,387
+Come back later." And the second is the
+
+355
+00:10:46,447 --> 00:10:46,947
+privacy.
+
+356
+00:10:47,228 --> 00:10:49,528
+Unlike Ollama, your prompts and your code
+
+357
+00:10:49,588 --> 00:10:52,067
+now go to someone else's service, so don't
+
+358
+00:10:52,127 --> 00:10:54,568
+send client code or passwords through free
+
+359
+00:10:54,628 --> 00:10:55,368
+Claude models.
+
+360
+00:10:55,548 --> 00:10:56,688
+Keep those on Ollama.
+
+361
+00:10:56,868 --> 00:10:58,508
+So quick question before method three.
+
+362
+00:10:58,688 --> 00:11:00,588
+Which one are you leaning towards so far,
+
+363
+00:11:00,848 --> 00:11:02,388
+Ollama or the OpenRouter?
+
+364
+00:11:02,608 --> 00:11:04,308
+Or are you waiting for the next one?
+
+365
+00:11:04,528 --> 00:11:05,488
+Tell me in the comments.
+
+366
+00:11:05,688 --> 00:11:08,248
+I actually read them because method three
+
+367
+00:11:08,348 --> 00:11:10,048
+is where it gets really interesting.
+
+368
+00:11:10,188 --> 00:11:11,928
+So here is the problem with every free
+
+369
+00:11:12,028 --> 00:11:13,388
+option we have seen so far.
+
+370
+00:11:13,568 --> 00:11:15,228
+Every free provider has a limit.
+
+371
+00:11:15,408 --> 00:11:16,988
+Google gives you some free requests.
+
+372
+00:11:17,208 --> 00:11:18,348
+NVIDIA gives you some.
+
+373
+00:11:18,568 --> 00:11:20,468
+OpenRouter gives you fifty a day.
+
+374
+00:11:20,768 --> 00:11:23,488
+On its own, each one runs out fast, but if
+
+375
+00:11:23,528 --> 00:11:25,728
+you put them all together, that's a lot of
+
+376
+00:11:25,788 --> 00:11:26,688
+free AI, right?
+
+377
+00:11:26,888 --> 00:11:29,168
+And what if when one runs out, the next
+
+378
+00:11:29,248 --> 00:11:31,328
+one simply takes over without you doing
+
+379
+00:11:31,388 --> 00:11:31,728
+anything?
+
+380
+00:11:31,928 --> 00:11:33,888
+That's exactly what OmniRoute does.
+
+381
+00:11:34,088 --> 00:11:36,128
+OmniRoute is a free open source app.
+
+382
+00:11:36,328 --> 00:11:38,308
+You install it on your own computer, and
+
+383
+00:11:38,388 --> 00:11:39,368
+it sits in the middle.
+
+384
+00:11:39,528 --> 00:11:41,828
+Claude Code talks only to OmniRoute, and
+
+385
+00:11:41,908 --> 00:11:44,208
+OmniRoute decides which AI provider
+
+386
+00:11:44,308 --> 00:11:45,368
+answers each request.
+
+387
+00:11:45,528 --> 00:11:47,868
+So Claude Code thinks it's talking to one
+
+388
+00:11:47,968 --> 00:11:50,828
+AI, but behind the scenes, OmniRoute is
+
+389
+00:11:50,888 --> 00:11:52,988
+juggling many, and we install it with one
+
+390
+00:11:53,048 --> 00:11:54,768
+rule, and AI does it.
+
+391
+00:11:54,988 --> 00:11:57,368
+I open Antigravity and give it one prompt.
+
+392
+00:11:57,548 --> 00:11:59,628
+It's in the setup kit, and it basically
+
+393
+00:11:59,708 --> 00:12:01,668
+says, "Check whether Claude Code is
+
+394
+00:12:01,728 --> 00:12:03,728
+installed and install it if not.
+
+395
+00:12:04,008 --> 00:12:06,568
+Then install OmniRoute from GitHub, start
+
+396
+00:12:06,628 --> 00:12:08,808
+it, and open the dashboard in my browser.
+
+397
+00:12:09,008 --> 00:12:11,528
+And if any step fails, fix it and keep
+
+398
+00:12:11,588 --> 00:12:13,748
+going." When it's done, it gives me a
+
+399
+00:12:13,808 --> 00:12:15,988
+little summary table, Claude Code found,
+
+400
+00:12:16,128 --> 00:12:17,888
+OmniRoute installed, server running,
+
+401
+00:12:18,048 --> 00:12:18,888
+dashboard open.
+
+402
+00:12:19,128 --> 00:12:21,008
+The dashboard opens in your browser at
+
+403
+00:12:21,048 --> 00:12:21,668
+localhost.
+
+404
+00:12:21,848 --> 00:12:23,688
+The first time, it asks for a password,
+
+405
+00:12:23,828 --> 00:12:25,488
+and the default one is "change me"
+
+406
+00:12:25,588 --> 00:12:26,028
+literally.
+
+407
+00:12:26,228 --> 00:12:28,768
+So log in and then go straight to Settings
+
+408
+00:12:28,828 --> 00:12:30,228
+and change it to something real.
+
+409
+00:12:30,428 --> 00:12:32,948
+Now, the fun part here is connecting free
+
+410
+00:12:33,048 --> 00:12:33,848
+AI providers.
+
+411
+00:12:33,988 --> 00:12:35,828
+In the dashboard, open Providers.
+
+412
+00:12:36,128 --> 00:12:37,268
+You'll see a huge list.
+
+413
+00:12:37,468 --> 00:12:39,648
+For each one, you search for it, click it,
+
+414
+00:12:39,788 --> 00:12:40,528
+and click Add.
+
+415
+00:12:40,708 --> 00:12:42,228
+So number one is Kiro.
+
+416
+00:12:42,468 --> 00:12:45,008
+Kiro is Amazon's AI coding app, and its
+
+417
+00:12:45,048 --> 00:12:47,328
+free plan includes real Claude morals like
+
+418
+00:12:47,388 --> 00:12:48,148
+Claude Sonnet.
+
+419
+00:12:48,368 --> 00:12:50,788
+Search Kiro, click Add, and OmniRoute
+
+420
+00:12:50,848 --> 00:12:51,928
+first shows a warning.
+
+421
+00:12:52,128 --> 00:12:53,928
+Read it, then pick how you want to sign
+
+422
+00:12:53,988 --> 00:12:54,128
+in.
+
+423
+00:12:54,308 --> 00:12:56,128
+It gives you a short code and a link.
+
+424
+00:12:56,348 --> 00:12:58,188
+Open the link, sign in, check that the
+
+425
+00:12:58,288 --> 00:12:59,768
+code matches, and approve.
+
+426
+00:12:59,928 --> 00:13:02,088
+It says device authorized, and back in
+
+427
+00:13:02,188 --> 00:13:04,248
+OmniRoute, Kiro shows connected.
+
+428
+00:13:04,388 --> 00:13:06,728
+And two honest things about Kiro, the free
+
+429
+00:13:06,828 --> 00:13:09,308
+allowance is small, so it won't last long.
+
+430
+00:13:09,488 --> 00:13:11,528
+And during sign-up, it even opened a
+
+431
+00:13:11,588 --> 00:13:13,868
+subscription required page, and OmniRoute
+
+432
+00:13:13,948 --> 00:13:16,688
+itself marks Kiro as terms of service
+
+433
+00:13:16,788 --> 00:13:19,088
+avoid because using it this way may go
+
+434
+00:13:19,188 --> 00:13:21,588
+against Kiro's rules, so this one is your
+
+435
+00:13:21,648 --> 00:13:22,848
+account and your call.
+
+436
+00:13:23,028 --> 00:13:25,308
+So number two is Antigravity, the same
+
+437
+00:13:25,368 --> 00:13:27,648
+Google app we have been using, but this
+
+438
+00:13:27,688 --> 00:13:28,668
+time as a provider.
+
+439
+00:13:28,848 --> 00:13:29,488
+Click Add.
+
+440
+00:13:29,668 --> 00:13:31,168
+It opens a Google sign-in.
+
+441
+00:13:31,448 --> 00:13:32,748
+Pick your account and allow.
+
+442
+00:13:32,968 --> 00:13:34,908
+Then your browser lands on a page that
+
+443
+00:13:34,968 --> 00:13:36,908
+doesn't load, and that's normal.
+
+444
+00:13:37,068 --> 00:13:39,168
+Copy the full address from the top of that
+
+445
+00:13:39,208 --> 00:13:41,328
+page and paste it back into the OmniRoute
+
+446
+00:13:41,408 --> 00:13:42,168
+and click Connect.
+
+447
+00:13:42,368 --> 00:13:45,008
+Now you get Gemini model plus some Claude
+
+448
+00:13:45,068 --> 00:13:46,228
+models within limits.
+
+449
+00:13:46,408 --> 00:13:48,188
+The warning here is even stronger.
+
+450
+00:13:48,448 --> 00:13:50,668
+OmniRoute says Google may restrict the
+
+451
+00:13:50,748 --> 00:13:53,108
+account, so please use a spare account,
+
+452
+00:13:53,368 --> 00:13:54,368
+not your main one.
+
+453
+00:13:54,568 --> 00:13:56,128
+So number three is NVIDIA.
+
+454
+00:13:56,348 --> 00:13:58,808
+NVIDIA, the graphics card company, also
+
+455
+00:13:58,888 --> 00:14:01,328
+gives free access to bunch of AI models on
+
+456
+00:14:01,468 --> 00:14:02,948
+build.nvidia.com.
+
+457
+00:14:03,088 --> 00:14:05,708
+Create a free account, go to API keys, and
+
+458
+00:14:05,808 --> 00:14:07,188
+click Generate API key.
+
+459
+00:14:07,408 --> 00:14:08,788
+Give it a name and copy it.
+
+460
+00:14:09,008 --> 00:14:11,788
+Then back in OmniRoute, open NVIDIA, click
+
+461
+00:14:11,908 --> 00:14:12,908
+Add, and paste the key.
+
+462
+00:14:13,148 --> 00:14:15,408
+And here, switch on Import only free
+
+463
+00:14:15,488 --> 00:14:18,008
+models so only the free ones comes in, and
+
+464
+00:14:18,028 --> 00:14:18,608
+then Save.
+
+465
+00:14:18,848 --> 00:14:20,228
+Number four is Gemini.
+
+466
+00:14:20,512 --> 00:14:22,732
+And Google AI Studio gives you a free key
+
+467
+00:14:22,772 --> 00:14:23,012
+for it.
+
+468
+00:14:23,232 --> 00:14:25,832
+Go to Google AI Studio, click Get API key
+
+469
+00:14:26,112 --> 00:14:28,172
+and create API key and copy it.
+
+470
+00:14:28,431 --> 00:14:31,192
+In OmniRoute, open Gemini, click Add and
+
+471
+00:14:31,312 --> 00:14:31,752
+paste it.
+
+472
+00:14:31,912 --> 00:14:34,052
+Hit Check to make sure it works, and then
+
+473
+00:14:34,112 --> 00:14:34,332
+Save.
+
+474
+00:14:34,592 --> 00:14:36,352
+And that's four providers connected.
+
+475
+00:14:36,592 --> 00:14:38,872
+Now, one by one, they are small, so let's
+
+476
+00:14:38,912 --> 00:14:40,332
+make them work as one team.
+
+477
+00:14:40,572 --> 00:14:43,092
+In OmniRoute, the team is called combo.
+
+478
+00:14:43,272 --> 00:14:45,532
+A combo is a list of models in an order.
+
+479
+00:14:45,872 --> 00:14:48,312
+The first one answers, and if it's busy,
+
+480
+00:14:48,672 --> 00:14:50,832
+out of free credits, or failing, the next
+
+481
+00:14:50,912 --> 00:14:52,292
+one takes over automatically.
+
+482
+00:14:52,471 --> 00:14:55,112
+Go to Combos, click Create, and give it a
+
+483
+00:14:55,172 --> 00:14:55,392
+name.
+
+484
+00:14:55,652 --> 00:14:57,852
+I called mine Claude, and you'll see why
+
+485
+00:14:57,892 --> 00:14:59,352
+that name matters in a second.
+
+486
+00:14:59,532 --> 00:15:00,532
+Now, add the steps.
+
+487
+00:15:00,752 --> 00:15:03,112
+For each step, you pick a provider, then a
+
+488
+00:15:03,172 --> 00:15:05,172
+model, and then leave the account on
+
+489
+00:15:05,252 --> 00:15:05,792
+automatic.
+
+490
+00:15:05,952 --> 00:15:06,772
+Click Add Step.
+
+491
+00:15:06,992 --> 00:15:09,412
+I put Gemini first, then Kairos Claude
+
+492
+00:15:09,492 --> 00:15:12,132
+Sonnet, and then more free backups behind
+
+493
+00:15:12,172 --> 00:15:12,332
+them.
+
+494
+00:15:12,532 --> 00:15:14,792
+You can use the little up and down arrows
+
+495
+00:15:14,852 --> 00:15:15,712
+to change the order.
+
+496
+00:15:15,892 --> 00:15:16,812
+Top goes first.
+
+497
+00:15:16,972 --> 00:15:19,072
+Then it asks for the strategy, which is
+
+498
+00:15:19,132 --> 00:15:21,632
+simply how OmniRoute chooses between the
+
+499
+00:15:21,692 --> 00:15:22,952
+models in your combo.
+
+500
+00:15:23,132 --> 00:15:25,631
+I picked Smart Routing, so it scores each
+
+501
+00:15:25,732 --> 00:15:27,232
+option and picks the best one.
+
+502
+00:15:27,452 --> 00:15:29,432
+Then Save, and the combo is ready.
+
+503
+00:15:29,592 --> 00:15:32,232
+Now, Claude Code needs one key to use this
+
+504
+00:15:32,332 --> 00:15:35,112
+whole combo, and that's the OmniRoute API
+
+505
+00:15:35,172 --> 00:15:35,372
+key.
+
+506
+00:15:35,552 --> 00:15:37,252
+It's OmniRoute's own password.
+
+507
+00:15:37,472 --> 00:15:39,432
+Claude Code shows this key to OmniRoute,
+
+508
+00:15:39,612 --> 00:15:42,212
+and OmniRoute then uses all your provider
+
+509
+00:15:42,292 --> 00:15:43,672
+keys behind the scenes.
+
+510
+00:15:43,892 --> 00:15:46,152
+In the dashboard, open API Keys and click
+
+511
+00:15:46,212 --> 00:15:47,332
+Create API Key.
+
+512
+00:15:47,492 --> 00:15:50,032
+Give it a name, like Claude Code, and then
+
+513
+00:15:50,092 --> 00:15:50,612
+create it.
+
+514
+00:15:50,832 --> 00:15:53,212
+And now copy it straight away because just
+
+515
+00:15:53,272 --> 00:15:55,712
+like the other keys, you only get to see
+
+516
+00:15:55,792 --> 00:15:56,292
+it once.
+
+517
+00:15:56,452 --> 00:15:58,372
+Now, I don't want to type commands every
+
+518
+00:15:58,412 --> 00:16:01,072
+time I use this, so I give Antigravity one
+
+519
+00:16:01,132 --> 00:16:01,672
+more prompt.
+
+520
+00:16:01,872 --> 00:16:04,012
+It says, "Make two shortcuts on my
+
+521
+00:16:04,072 --> 00:16:04,612
+desktop.
+
+522
+00:16:04,772 --> 00:16:07,012
+The first is Free Claude Code," and
+
+523
+00:16:07,072 --> 00:16:08,992
+launches Claude Code through OmniRoute
+
+524
+00:16:09,092 --> 00:16:09,972
+using my combo.
+
+525
+00:16:10,152 --> 00:16:12,132
+The second shortcut is OmniRoute
+
+526
+00:16:12,212 --> 00:16:14,372
+Dashboard, which opens the control panel.
+
+527
+00:16:14,552 --> 00:16:16,992
+And one important safety tip here is
+
+528
+00:16:17,072 --> 00:16:19,312
+Antigravity will ask for your OmniRoute
+
+529
+00:16:19,392 --> 00:16:21,332
+key while it sets this up.
+
+530
+00:16:21,412 --> 00:16:22,872
+Don't paste the key into the chat.
+
+531
+00:16:23,072 --> 00:16:25,412
+Ask it to open a file, paste the key into
+
+532
+00:16:25,452 --> 00:16:27,592
+the file, save it, and type Continue.
+
+533
+00:16:27,752 --> 00:16:30,092
+That way, your key never sits in a chat
+
+534
+00:16:30,152 --> 00:16:30,492
+history.
+
+535
+00:16:30,692 --> 00:16:31,932
+And then one last fix.
+
+536
+00:16:32,172 --> 00:16:34,152
+When Claude Code connects to OmniRoute,
+
+537
+00:16:34,452 --> 00:16:36,732
+its model menu can show every model from
+
+538
+00:16:36,772 --> 00:16:38,812
+your providers, including paid ones.
+
+539
+00:16:39,012 --> 00:16:41,112
+Pick a paid one by accident, and you get
+
+540
+00:16:41,192 --> 00:16:42,692
+errors or, worse, a bill.
+
+541
+00:16:42,872 --> 00:16:45,072
+So I give Antigravity one more prompt,
+
+542
+00:16:45,212 --> 00:16:48,092
+"Turn on hide paid models in OmniRoute and
+
+543
+00:16:48,152 --> 00:16:50,072
+keep my Claude combo as the default."
+
+544
+00:16:50,292 --> 00:16:51,712
+That's exactly what happened.
+
+545
+00:16:51,872 --> 00:16:54,012
+The menu only showed free options.
+
+546
+00:16:54,192 --> 00:16:55,252
+Everything's connected.
+
+547
+00:16:55,432 --> 00:16:56,452
+Moment of truth.
+
+548
+00:16:56,672 --> 00:16:58,312
+I double-click Free Claude Code.
+
+549
+00:16:58,532 --> 00:16:59,552
+It checks OmniRoute.
+
+550
+00:16:59,732 --> 00:17:01,792
+It's running, and Claude Code opens.
+
+551
+00:17:02,052 --> 00:17:04,232
+So obvious question is, "Which model are
+
+552
+00:17:04,292 --> 00:17:06,752
+you?" And it answers, "I am Claude." But
+
+553
+00:17:06,812 --> 00:17:09,572
+remember, a model's word isn't a proof, so
+
+554
+00:17:09,632 --> 00:17:10,452
+let's check the bill.
+
+555
+00:17:10,712 --> 00:17:12,652
+I open the OmniRoute dashboard, go to
+
+556
+00:17:12,712 --> 00:17:14,892
+Logs, which is the list of every request,
+
+557
+00:17:15,092 --> 00:17:16,632
+and look at this line.
+
+558
+00:17:16,892 --> 00:17:19,112
+"Model: Claude Sonnet four point five.
+
+559
+00:17:19,272 --> 00:17:20,192
+Provider: Kiro.
+
+560
+00:17:20,432 --> 00:17:21,572
+Combo: Claude.
+
+561
+00:17:21,752 --> 00:17:23,832
+Status: two hundred." And two hundred just
+
+562
+00:17:23,892 --> 00:17:24,692
+means success.
+
+563
+00:17:24,872 --> 00:17:26,852
+So that's real Claude Sonnet answering
+
+564
+00:17:26,932 --> 00:17:29,372
+inside Claude Code through a free account.
+
+565
+00:17:29,592 --> 00:17:30,412
+That's the receipt.
+
+566
+00:17:30,612 --> 00:17:32,612
+But a high proves nothing, so let's build
+
+567
+00:17:32,672 --> 00:17:33,292
+something real.
+
+568
+00:17:33,532 --> 00:17:35,612
+On my machine, I asked, "Design me a
+
+569
+00:17:35,672 --> 00:17:37,592
+simple personal note-taking application,"
+
+570
+00:17:37,772 --> 00:17:39,572
+and it doesn't just start writing code.
+
+571
+00:17:39,772 --> 00:17:42,032
+It's in plan mode, a Claude Code mode
+
+572
+00:17:42,092 --> 00:17:43,912
+where it plans and asks you questions
+
+573
+00:17:43,972 --> 00:17:45,192
+before it writes anything.
+
+574
+00:17:45,432 --> 00:17:47,852
+So it asked me which tech stack, which
+
+575
+00:17:47,932 --> 00:17:49,672
+features, and how should the notes be
+
+576
+00:17:49,752 --> 00:17:50,032
+stored.
+
+577
+00:17:50,212 --> 00:17:52,392
+Then it showed me a plan and only then
+
+578
+00:17:52,472 --> 00:17:53,092
+starts building.
+
+579
+00:17:53,272 --> 00:17:54,452
+And here is the coolest part.
+
+580
+00:17:54,652 --> 00:17:56,852
+Straight from the logs, real Claude did
+
+581
+00:17:56,892 --> 00:17:59,332
+the planning until its free limit ran out.
+
+582
+00:17:59,512 --> 00:18:01,832
+The OmniRoute switched by itself to free
+
+583
+00:18:01,952 --> 00:18:03,632
+NVIDIA, and it kept building.
+
+584
+00:18:03,852 --> 00:18:04,932
+I didn't touch anything.
+
+585
+00:18:05,092 --> 00:18:06,652
+That's the whole point of a combo.
+
+586
+00:18:06,852 --> 00:18:08,992
+Now, honestly, the first version didn't
+
+587
+00:18:09,032 --> 00:18:09,272
+work.
+
+588
+00:18:09,472 --> 00:18:12,092
+It took a few fix rounds and a final
+
+589
+00:18:12,212 --> 00:18:14,832
+cleanup, but here it is, notes, tags,
+
+590
+00:18:15,052 --> 00:18:17,692
+markdown, search, and it even survives a
+
+591
+00:18:17,732 --> 00:18:18,132
+refresh.
+
+592
+00:18:18,332 --> 00:18:20,372
+And the bill for all of that is zero
+
+593
+00:18:20,432 --> 00:18:20,832
+dollars.
+
+594
+00:18:20,952 --> 00:18:22,692
+And here is your free Claude Code map.
+
+595
+00:18:22,872 --> 00:18:23,752
+Which one fits you?
+
+596
+00:18:23,972 --> 00:18:26,672
+Privacy or offline, go with Ollama.
+
+597
+00:18:26,852 --> 00:18:29,052
+If you don't have strong hardware and you
+
+598
+00:18:29,092 --> 00:18:31,192
+want speed, go with OpenRouter.
+
+599
+00:18:31,412 --> 00:18:33,352
+And if you want it to keep going when one
+
+600
+00:18:33,432 --> 00:18:35,852
+provider runs out, the best option is
+
+601
+00:18:35,952 --> 00:18:36,512
+OmniRoute.
+
+602
+00:18:36,632 --> 00:18:37,492
+And the four rules.
+
+603
+00:18:37,711 --> 00:18:39,452
+One, nothing is unlimited.
+
+604
+00:18:39,591 --> 00:18:41,992
+And the two, cloud providers see what you
+
+605
+00:18:42,052 --> 00:18:44,432
+send, so keep private code on Ollama.
+
+606
+00:18:44,632 --> 00:18:46,432
+And the third thing is Kiro and
+
+607
+00:18:46,512 --> 00:18:48,772
+Antigravity may go again is their terms,
+
+608
+00:18:48,952 --> 00:18:49,912
+so it's your call.
+
+609
+00:18:50,112 --> 00:18:52,232
+And the fourth one is things will break.
+
+610
+00:18:52,412 --> 00:18:55,412
+Copy, paste, fix this, and always check
+
+611
+00:18:55,452 --> 00:18:56,912
+the bill, not the label.
+
+612
+00:18:57,072 --> 00:18:59,152
+Everyone told you Claude Code costs twenty
+
+613
+00:18:59,232 --> 00:18:59,852
+dollars a month.
+
+614
+00:18:59,992 --> 00:19:02,292
+Today, we ran the real Claude Code three
+
+615
+00:19:02,352 --> 00:19:05,292
+ways for free, offline, in the cloud, and
+
+616
+00:19:05,332 --> 00:19:06,912
+with the providers that switch by
+
+617
+00:19:06,972 --> 00:19:07,432
+themself.
+
+618
+00:19:07,572 --> 00:19:09,192
+Same Claude Code, zero bill.
+
+619
+00:19:09,392 --> 00:19:11,552
+The free setup kit with the model list,
+
+620
+00:19:11,772 --> 00:19:13,892
+every prompt, and every setting is in the
+
+621
+00:19:13,972 --> 00:19:15,272
+first link in the description.
+
+622
+00:19:15,492 --> 00:19:17,132
+Tell me in the comments which one you are
+
+623
+00:19:17,172 --> 00:19:17,892
+trying first.
+
+624
+00:19:17,952 --> 00:19:19,712
+And if this save you twenty dollars a
+
+625
+00:19:19,772 --> 00:19:21,872
+month, subscribe to AI with Kalyan.
+
+626
+00:19:21,972 --> 00:19:24,152
+I test these AI tools so you don't have
+
+627
+00:19:24,212 --> 00:19:24,312
+to.
+
+628
+00:19:24,552 --> 00:19:26,132
+And if you want to see what else Claude
+
+629
+00:19:26,212 --> 00:19:29,012
+Code can do, this video right here is one
+
+630
+00:19:29,052 --> 00:19:29,792
+to watch next.
+
+631
+00:19:29,992 --> 00:19:32,892
+Every week on AI with Kalyan, one AI tool
+
+632
+00:19:33,212 --> 00:19:35,572
+tested honestly and receipts included.
+
+633
+00:19:35,732 --> 00:19:37,552
+Subscribe, and I'll see you in the next
+
+634
+00:19:37,612 --> 00:19:37,832
+one.

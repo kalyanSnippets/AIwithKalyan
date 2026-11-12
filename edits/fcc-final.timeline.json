@@ -1,0 +1,70 @@
+{
+ "parts": [
+  {
+   "file": "fcc-part1-v4-1080p.mp4",
+   "start": 0,
+   "dur": 399.133
+  },
+  {
+   "file": "fcc-part2-1080p.mp4",
+   "start": 399.133,
+   "dur": 270.967
+  },
+  {
+   "file": "fcc-part3-1080p.mp4",
+   "start": 670.1,
+   "dur": 507.8
+  }
+ ],
+ "outro_start": 1101.01,
+ "music": [
+  {
+   "track": "intro-hype",
+   "start": 0.0,
+   "end": 91.05,
+   "gain": 0.68
+  },
+  {
+   "track": "body-a",
+   "start": 89.05,
+   "end": 263.85,
+   "gain": 0.26
+  },
+  {
+   "track": "body-b",
+   "start": 260.85,
+   "end": 439.89,
+   "gain": 0.26
+  },
+  {
+   "track": "body-a",
+   "start": 436.89,
+   "end": 611.69,
+   "gain": 0.26
+  },
+  {
+   "track": "body-b",
+   "start": 608.69,
+   "end": 787.73,
+   "gain": 0.26
+  },
+  {
+   "track": "body-a",
+   "start": 784.73,
+   "end": 959.53,
+   "gain": 0.26
+  },
+  {
+   "track": "body-b",
+   "start": 956.53,
+   "end": 1100.83,
+   "gain": 0.26
+  },
+  {
+   "track": "outro-hype",
+   "start": 1097.83,
+   "end": 1177.9,
+   "gain": 0.4
+  }
+ ]
+}
