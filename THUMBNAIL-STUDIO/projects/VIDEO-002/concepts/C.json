@@ -1,0 +1,93 @@
+{
+ "titleSynergy": "Claude Code for $0: 3 Free Ways (Offline, Cloud, and Real Claude Sonnet)",
+ "image_prompts": [],
+ "canva": "Face cutout and evidence crops uploaded as separate images; all text native; background is a CSS gradient (rebuild as a Canva gradient).",
+ "option": "C",
+ "revision": 1,
+ "archetype": "Minimalist Tech",
+ "headline": "CLAUDE CODE $0",
+ "story": "No face, no clutter: the real Claude Code header running on \"openrouter/free\", and a giant $0.",
+ "curiosity": "The official Claude Code header, but on a free model.",
+ "composition": "Giant coral \"$0\" left two-thirds; real terminal header card right/top, tilted slightly; small \"CLAUDE CODE\" label above the $0.",
+ "evidence": "assets/evidence/crop-claude-header.png (Claude Code header, recording 123051 @ 268 s)",
+ "background": "Ink, subtle grid glow",
+ "typography": "\"$0\" 360 px coral; \"CLAUDE CODE\" 70 px white",
+ "colors": "Ink, coral, white",
+ "why": [
+  "Cleanest structure (vidIQ rewarded clean, rectilinear thumbnails: 99 vs 26–51)",
+  "Real UI as evidence"
+ ],
+ "risks": [
+  "No face: less human; relies on the title for the \"3 ways\" promise",
+  "Terminal text is small at 320 px"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(760px 600px at 80% 30%, rgba(232,119,95,.26), transparent 70%), radial-gradient(600px 500px at 10% 100%, rgba(110,168,255,.08), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "lab",
+   "type": "text",
+   "role": "label",
+   "text": "CLAUDE CODE",
+   "x": 70,
+   "y": 90,
+   "size": 74,
+   "color": "#FFFFFF",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "zero",
+   "type": "text",
+   "role": "headline",
+   "text": "$0",
+   "x": 50,
+   "y": 185,
+   "size": 400,
+   "color": "#E8775F",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "term",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/crop-claude-header.png",
+   "x": 600,
+   "y": 190,
+   "w": 640,
+   "h": 94,
+   "fit": "cover",
+   "radius": 18,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 20px 50px rgba(0,0,0,.65)",
+   "canva": "separate"
+  },
+  {
+   "id": "chip",
+   "type": "shape",
+   "x": 600,
+   "y": 330,
+   "w": 420,
+   "h": 70,
+   "radius": 35,
+   "background": "rgba(76,214,138,.15)",
+   "border": "3px solid #4CD68A"
+  },
+  {
+   "id": "chipt",
+   "type": "text",
+   "role": "label",
+   "text": "no subscription",
+   "x": 630,
+   "y": 344,
+   "size": 40,
+   "color": "#4CD68A",
+   "shadow": "none",
+   "font": "heavy"
+  }
+ ],
+ "notes_rev1": "Rev 1: glow moved behind the face (contrast), plus the fix from the review."
+}

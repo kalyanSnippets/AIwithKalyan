@@ -1,0 +1,19 @@
+{
+ "option": "A",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 4,
+  "hierarchy": 4,
+  "isolation": 5,
+  "uniqueness": 3,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Rev 1: edge artifact gone, glow behind the face. Clearest price message; bill card is supporting proof.",
+ "notes": [
+  "dark crop edge visible bottom-centre: move face lower so the cutout edge is off-frame",
+  "bill card is supporting detail, fine if small"
+ ],
+ "revisions": 1
+}

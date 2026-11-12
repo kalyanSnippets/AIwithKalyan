@@ -1,0 +1,18 @@
+{
+ "option": "C",
+ "scores": {
+  "legibility": 5,
+  "curiosity": 3,
+  "hierarchy": 5,
+  "isolation": 5,
+  "uniqueness": 4,
+  "synergy": 4,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Rev 1: spacing fixed. Cleanest, strongest at 320 px, but no face and the weakest curiosity.",
+ "notes": [
+  "nudge $0 down 20 px"
+ ],
+ "revisions": 1
+}

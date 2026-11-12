@@ -1,0 +1,18 @@
+{
+ "option": "E",
+ "scores": {
+  "legibility": 4,
+  "curiosity": 3,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 3,
+  "synergy": 5,
+  "authenticity": 4,
+  "brand": 5
+ },
+ "verdict": "Rev 1: headline spacing fixed. Literal and clear; closest to existing 3-ways formats.",
+ "notes": [
+  "space between '3 WAYS.' and '$0.'"
+ ],
+ "revisions": 1
+}

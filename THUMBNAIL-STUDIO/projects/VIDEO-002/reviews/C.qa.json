@@ -1,0 +1,221 @@
+{
+  "option": "C",
+  "revision": 1,
+  "renderedAt": "2026-11-12T23:57:29.661Z",
+  "pass": true,
+  "checks": [
+    {
+      "name": "export exists",
+      "pass": true,
+      "detail": "296513 bytes",
+      "severity": "error"
+    },
+    {
+      "name": "dimensions 1280x720",
+      "pass": true,
+      "detail": "1280x720",
+      "severity": "error"
+    },
+    {
+      "name": "format png",
+      "pass": true,
+      "detail": "png",
+      "severity": "error"
+    },
+    {
+      "name": "not blank",
+      "pass": true,
+      "detail": "pixel stdev 57.5 (blank/placeholder images are near 0)",
+      "severity": "error"
+    },
+    {
+      "name": "headline 0–4 words",
+      "pass": true,
+      "detail": "3 words: \"CLAUDE CODE $0\"",
+      "severity": "warn"
+    },
+    {
+      "name": "total text ≤ 8 words",
+      "pass": true,
+      "detail": "5 words across 3 text layers",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"CLAUDE CODE\"",
+      "pass": true,
+      "detail": "74px → 18.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"CLAUDE CODE\"",
+      "pass": true,
+      "detail": "18.19:1 vs background rgb(24,20,25) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"CLAUDE CODE\"",
+      "pass": true,
+      "detail": "box {\"x\":70,\"y\":90,\"w\":507,\"h\":70}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"CLAUDE CODE\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"$0\"",
+      "pass": true,
+      "detail": "400px → 100px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"$0\"",
+      "pass": true,
+      "detail": "6.27:1 vs background rgb(24,20,25) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"$0\"",
+      "pass": true,
+      "detail": "box {\"x\":50,\"y\":185,\"w\":531,\"h\":380}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"$0\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"no subscription\"",
+      "pass": true,
+      "detail": "40px → 10px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"no subscription\"",
+      "pass": true,
+      "detail": "9.78:1 vs background rgb(24,20,25) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"no subscription\"",
+      "pass": true,
+      "detail": "box {\"x\":630,\"y\":344,\"w\":283,\"h\":38}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"no subscription\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "one focal point",
+      "pass": false,
+      "detail": "0 layers marked focal/face",
+      "severity": "warn"
+    }
+  ],
+  "metrics": {
+    "texts": [
+      {
+        "text": "CLAUDE CODE",
+        "fontSize": 74,
+        "mobilePx": 18.5,
+        "contrast": 18.19
+      },
+      {
+        "text": "$0",
+        "fontSize": 400,
+        "mobilePx": 100,
+        "contrast": 6.27
+      },
+      {
+        "text": "no subscription",
+        "fontSize": 40,
+        "mobilePx": 10,
+        "contrast": 9.78
+      }
+    ]
+  },
+  "layout": [
+    {
+      "id": "bg",
+      "type": "fill",
+      "role": "background",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "lab",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 70,
+        "y": 90,
+        "w": 507,
+        "h": 70
+      },
+      "fontSize": 74,
+      "color": "rgb(255, 255, 255)",
+      "text": "CLAUDE CODE"
+    },
+    {
+      "id": "zero",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 50,
+        "y": 185,
+        "w": 531,
+        "h": 380
+      },
+      "fontSize": 400,
+      "color": "rgb(232, 119, 95)",
+      "text": "$0"
+    },
+    {
+      "id": "term",
+      "type": "image",
+      "role": "evidence",
+      "box": {
+        "x": 600,
+        "y": 190,
+        "w": 640,
+        "h": 94
+      }
+    },
+    {
+      "id": "chip",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 600,
+        "y": 330,
+        "w": 420,
+        "h": 70
+      }
+    },
+    {
+      "id": "chipt",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 630,
+        "y": 344,
+        "w": 283,
+        "h": 38
+      },
+      "fontSize": 40,
+      "color": "rgb(76, 214, 138)",
+      "text": "no subscription"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "VIDEO-002",
+  "topic": "Free Claude Code: run the real Claude Code for $0, 3 ways (Ollama offline, OpenRouter cloud, OmniRoute combo with real Claude Sonnet)",
+  "workingTitle": "Claude Code for $0: 3 Free Ways (Offline, Cloud, and Real Claude Sonnet)",
+  "notes": "",
+  "createdAt": "2026-11-12T23:47:10.065Z",
+  "stage": "delivered",
+  "options": {
+    "A": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "B": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "C": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "D": {
+      "rendered": true,
+      "qaPass": true
+    },
+    "E": {
+      "rendered": true,
+      "qaPass": true
+    }
+  },
+  "approved": null,
+  "history": [
+    {
+      "at": "2026-11-12T23:56:43.534Z",
+      "event": "rendered A,B,C,D,E"
+    },
+    {
+      "at": "2026-11-12T23:57:31.761Z",
+      "event": "rendered A,B,C,D,E"
+    },
+    {
+      "at": "2026-11-12T23:58:01.954Z",
+      "event": "delivered"
+    }
+  ]
+}

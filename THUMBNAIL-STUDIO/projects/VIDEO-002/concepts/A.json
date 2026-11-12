@@ -1,0 +1,104 @@
+{
+ "titleSynergy": "Claude Code for $0: 3 Free Ways (Offline, Cloud, and Real Claude Sonnet)",
+ "image_prompts": [],
+ "canva": "Face cutout and evidence crops uploaded as separate images; all text native; background is a CSS gradient (rebuild as a Canva gradient).",
+ "option": "A",
+ "revision": 1,
+ "archetype": "Before/After",
+ "headline": "$20 → $0",
+ "story": "Same Claude Code, the monthly price goes from $20 to $0, and the real OpenRouter bill shows $0.00.",
+ "curiosity": "How can the same tool cost nothing? (the video answers: swap the model behind it)",
+ "composition": "Face left (40% width). Right: \"$20/mo\" struck through in red above a huge coral \"$0\", with the real $0.00 spend card underneath.",
+ "evidence": "assets/evidence/crop-openrouter-0usd.png (OpenRouter Activity, screen recording 123051 @ 382 s); face k1474@348",
+ "background": "Ink with coral glow (CSS gradient)",
+ "typography": "\"$20/mo\" 96 px white with red strike; \"$0\" 260 px coral Inter Display Black",
+ "colors": "Ink, white, coral; red only for the strike",
+ "why": [
+  "Price contrast is instantly readable at 320 px",
+  "Proof card makes the $0 believable (receipts angle no competitor shows)",
+  "Natural explaining expression"
+ ],
+ "risks": [
+  "$20 → $0 is a common framing in this niche",
+  "Evidence card text is small on mobile (it is supporting, not the focal point)"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(760px 600px at 22% 50%, rgba(232,119,95,.26), transparent 70%), radial-gradient(600px 500px at 10% 100%, rgba(110,168,255,.08), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k1474_348.png",
+   "x": -40,
+   "y": 90,
+   "w": 938,
+   "h": 680,
+   "fit": "contain",
+   "position": "bottom",
+   "faceBox": {
+    "x": 150,
+    "y": 70,
+    "w": 230,
+    "h": 240
+   },
+   "canva": "separate",
+   "overflow": "visible",
+   "imgCss": "filter: drop-shadow(0 0 40px rgba(232,119,95,.35));"
+  },
+  {
+   "id": "was",
+   "type": "text",
+   "role": "label",
+   "text": "$20/mo",
+   "x": 700,
+   "y": 70,
+   "size": 96,
+   "color": "#FFFFFF",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "strike",
+   "type": "shape",
+   "x": 690,
+   "y": 112,
+   "w": 330,
+   "h": 12,
+   "background": "#FF4D4F",
+   "radius": 6,
+   "css": "transform: rotate(-8deg);",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "now",
+   "type": "text",
+   "role": "headline",
+   "text": "$0",
+   "x": 700,
+   "y": 160,
+   "size": 270,
+   "color": "#E8775F",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "proof",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/crop-openrouter-0usd.png",
+   "x": 690,
+   "y": 450,
+   "w": 560,
+   "h": 128,
+   "fit": "cover",
+   "radius": 18,
+   "border": "5px solid #E8775F",
+   "shadow": "0 20px 50px rgba(0,0,0,.65)",
+   "canva": "separate"
+  }
+ ],
+ "notes_rev1": "Rev 1: glow moved behind the face (contrast), plus the fix from the review."
+}

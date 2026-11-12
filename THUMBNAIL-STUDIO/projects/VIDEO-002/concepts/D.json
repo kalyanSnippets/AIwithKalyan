@@ -1,0 +1,100 @@
+{
+ "titleSynergy": "Claude Code for $0: 3 Free Ways (Offline, Cloud, and Real Claude Sonnet)",
+ "image_prompts": [],
+ "canva": "Face cutout and evidence crops uploaded as separate images; all text native; background is a CSS gradient (rebuild as a Canva gradient).",
+ "option": "D",
+ "revision": 0,
+ "archetype": "Curiosity/Mystery",
+ "headline": "WHO'S PAYING?",
+ "story": "The Claude Code header says \"API Usage Billing\", yet the real bill is $0.00. Who is paying? (Free providers, explained in the video.)",
+ "curiosity": "An open question backed by two real screens that seem to contradict each other.",
+ "composition": "Face left (calm, k1474@375). Right column: terminal header card, a coral \"?\" badge, the $0.00 bill card.",
+ "evidence": "crop-claude-header.png + crop-openrouter-0usd.png (both from recording 123051)",
+ "background": "Ink + coral glow",
+ "typography": "\"WHO'S PAYING?\" 104 px, PAYING? in coral",
+ "colors": "Ink, white, coral",
+ "why": [
+  "vidIQ flagged \"no open question\" on competitors; this poses one honestly",
+  "Two genuine receipts"
+ ],
+ "risks": [
+  "Question headline is less direct than \"$0\"",
+  "Two cards make it the busiest option"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(900px 620px at 70% 40%, rgba(232,119,95,.30), transparent 70%), radial-gradient(600px 500px at 10% 100%, rgba(110,168,255,.10), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k1474_375.png",
+   "x": -60,
+   "y": 50,
+   "w": 924,
+   "h": 670,
+   "fit": "contain",
+   "position": "bottom",
+   "faceBox": {
+    "x": 140,
+    "y": 75,
+    "w": 230,
+    "h": 235
+   },
+   "canva": "separate",
+   "overflow": "visible",
+   "imgCss": "filter: drop-shadow(0 0 40px rgba(232,119,95,.35));"
+  },
+  {
+   "id": "h",
+   "type": "text",
+   "role": "headline",
+   "text": "WHO'S\nPAYING?",
+   "x": 700,
+   "y": 40,
+   "size": 120,
+   "color": "#FFFFFF",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)",
+   "highlight": [
+    {
+     "word": "PAYING?",
+     "color": "#E8775F"
+    }
+   ]
+  },
+  {
+   "id": "term",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/crop-claude-header.png",
+   "x": 690,
+   "y": 320,
+   "w": 560,
+   "h": 82,
+   "fit": "cover",
+   "radius": 18,
+   "border": "5px solid #FFFFFF",
+   "shadow": "0 20px 50px rgba(0,0,0,.65)",
+   "canva": "separate"
+  },
+  {
+   "id": "bill",
+   "type": "image",
+   "role": "evidence",
+   "src": "assets/evidence/crop-openrouter-0usd.png",
+   "x": 690,
+   "y": 430,
+   "w": 560,
+   "h": 128,
+   "fit": "cover",
+   "radius": 18,
+   "border": "5px solid #E8775F",
+   "shadow": "0 20px 50px rgba(0,0,0,.65)",
+   "canva": "separate"
+  }
+ ]
+}

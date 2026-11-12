@@ -1,0 +1,208 @@
+{
+ "titleSynergy": "Claude Code for $0: 3 Free Ways (Offline, Cloud, and Real Claude Sonnet)",
+ "image_prompts": [],
+ "canva": "Face cutout and evidence crops uploaded as separate images; all text native; background is a CSS gradient (rebuild as a Canva gradient).",
+ "option": "E",
+ "revision": 1,
+ "archetype": "AI Workflow/Result",
+ "headline": "3 WAYS. $0.",
+ "story": "Three tested routes (offline Ollama, cloud OpenRouter, OmniRoute combo), all ending at $0.",
+ "curiosity": "Which of the three is best for me? (the video ends with a decision map)",
+ "composition": "Headline across the top; three stacked route cards with icons and green checks on the left; face right.",
+ "evidence": "Structure mirrors the real video chapters; checks mean \"tested in the video\", no invented numbers",
+ "background": "Ink + coral glow",
+ "typography": "\"3 WAYS.\" white + \"$0.\" coral 132 px; route labels 66 px",
+ "colors": "Ink, white, coral, green checks",
+ "why": [
+  "Tells the exact promise of the title (3 ways, $0) at a glance",
+  "Clean grid structure"
+ ],
+ "risks": [
+  "Structured \"3 ways\" list is closest to an existing competitor format (don't copy their layout; ours is a vertical checklist with Kalyan's face)",
+  "Icons are generic"
+ ],
+ "layers": [
+  {
+   "id": "bg",
+   "type": "fill",
+   "role": "background",
+   "background": "radial-gradient(760px 600px at 82% 45%, rgba(232,119,95,.26), transparent 70%), radial-gradient(600px 500px at 10% 100%, rgba(110,168,255,.08), transparent 70%), #0B0B12"
+  },
+  {
+   "id": "face",
+   "type": "image",
+   "role": "face",
+   "src": "assets/cutouts/kalyan-k1479_658.png",
+   "x": 760,
+   "y": 70,
+   "w": 896,
+   "h": 650,
+   "fit": "contain",
+   "position": "bottom",
+   "faceBox": {
+    "x": 905,
+    "y": 95,
+    "w": 210,
+    "h": 230
+   },
+   "canva": "separate",
+   "overflow": "visible",
+   "imgCss": "filter: drop-shadow(0 0 40px rgba(232,119,95,.35));"
+  },
+  {
+   "id": "h",
+   "type": "text",
+   "role": "headline",
+   "text": "3 WAYS.",
+   "x": 50,
+   "y": 40,
+   "size": 132,
+   "color": "#FFFFFF",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "h2",
+   "type": "text",
+   "role": "headline",
+   "text": "$0.",
+   "x": 600,
+   "y": 40,
+   "size": 132,
+   "color": "#E8775F",
+   "shadow": "0 8px 30px rgba(0,0,0,.7)"
+  },
+  {
+   "id": "p0",
+   "type": "shape",
+   "x": 50,
+   "y": 220,
+   "w": 560,
+   "h": 116,
+   "radius": 24,
+   "background": "rgba(255,255,255,.06)",
+   "border": "2px solid rgba(255,255,255,.18)"
+  },
+  {
+   "id": "i0",
+   "type": "icon",
+   "name": "laptop",
+   "x": 80,
+   "y": 246,
+   "w": 64,
+   "h": 64,
+   "color": "#E8775F",
+   "stroke": 2.4
+  },
+  {
+   "id": "t0",
+   "type": "text",
+   "role": "label",
+   "text": "OFFLINE",
+   "x": 170,
+   "y": 246,
+   "size": 66,
+   "color": "#FFFFFF",
+   "shadow": "none"
+  },
+  {
+   "id": "c0",
+   "type": "icon",
+   "name": "circle-check",
+   "x": 520,
+   "y": 250,
+   "w": 58,
+   "h": 58,
+   "color": "#4CD68A",
+   "stroke": 2.6
+  },
+  {
+   "id": "p1",
+   "type": "shape",
+   "x": 50,
+   "y": 360,
+   "w": 560,
+   "h": 116,
+   "radius": 24,
+   "background": "rgba(255,255,255,.06)",
+   "border": "2px solid rgba(255,255,255,.18)"
+  },
+  {
+   "id": "i1",
+   "type": "icon",
+   "name": "cloud",
+   "x": 80,
+   "y": 386,
+   "w": 64,
+   "h": 64,
+   "color": "#E8775F",
+   "stroke": 2.4
+  },
+  {
+   "id": "t1",
+   "type": "text",
+   "role": "label",
+   "text": "CLOUD",
+   "x": 170,
+   "y": 386,
+   "size": 66,
+   "color": "#FFFFFF",
+   "shadow": "none"
+  },
+  {
+   "id": "c1",
+   "type": "icon",
+   "name": "circle-check",
+   "x": 520,
+   "y": 390,
+   "w": 58,
+   "h": 58,
+   "color": "#4CD68A",
+   "stroke": 2.6
+  },
+  {
+   "id": "p2",
+   "type": "shape",
+   "x": 50,
+   "y": 500,
+   "w": 560,
+   "h": 116,
+   "radius": 24,
+   "background": "rgba(255,255,255,.06)",
+   "border": "2px solid rgba(255,255,255,.18)"
+  },
+  {
+   "id": "i2",
+   "type": "icon",
+   "name": "route",
+   "x": 80,
+   "y": 526,
+   "w": 64,
+   "h": 64,
+   "color": "#E8775F",
+   "stroke": 2.4
+  },
+  {
+   "id": "t2",
+   "type": "text",
+   "role": "label",
+   "text": "COMBO",
+   "x": 170,
+   "y": 526,
+   "size": 66,
+   "color": "#FFFFFF",
+   "shadow": "none"
+  },
+  {
+   "id": "c2",
+   "type": "icon",
+   "name": "circle-check",
+   "x": 520,
+   "y": 530,
+   "w": 58,
+   "h": 58,
+   "color": "#4CD68A",
+   "stroke": 2.6
+  }
+ ],
+ "notes_rev1": "Rev 1: glow moved behind the face (contrast), plus the fix from the review."
+}

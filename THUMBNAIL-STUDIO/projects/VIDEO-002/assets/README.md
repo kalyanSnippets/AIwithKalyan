@@ -1,0 +1,7 @@
+# VIDEO-002 assets (all real, from Kalyan's own footage and recordings)
+- frames/k1474_*.png, k1479_*.png: stills from media/raw/free-claude-code/IMG_1474.MOV / IMG_1479.MOV (ranked by scripts/faces.py)
+- cutouts/kalyan-k1474_348, k1479_658, k1474_375: studio cutout of those frames (no retouching)
+- evidence/openrouter-activity.png: screen recording 2026-11-06_123051.mp4 @ 382 s (OpenRouter Activity: $0.00, 3 requests, 24.6K tokens)
+- evidence/claude-openrouter-free.png: 2026-11-06_123051.mp4 @ 268 s (Claude Code header "openrouter/free · API Usage Billing")
+- evidence/omniroute-logs.png: 2026-11-10_121406.mp4 @ 167 s (OmniRoute log: 200 · claude-sonnet-4.5 · KIRO · combo Claude)
+- evidence/crop-*.png: crops of the above (no API key text in any crop)

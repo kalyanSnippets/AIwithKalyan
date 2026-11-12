@@ -1,0 +1,427 @@
+{
+  "option": "E",
+  "revision": 1,
+  "renderedAt": "2026-11-12T23:57:31.670Z",
+  "pass": true,
+  "checks": [
+    {
+      "name": "export exists",
+      "pass": true,
+      "detail": "505643 bytes",
+      "severity": "error"
+    },
+    {
+      "name": "dimensions 1280x720",
+      "pass": true,
+      "detail": "1280x720",
+      "severity": "error"
+    },
+    {
+      "name": "format png",
+      "pass": true,
+      "detail": "png",
+      "severity": "error"
+    },
+    {
+      "name": "not blank",
+      "pass": true,
+      "detail": "pixel stdev 74.9 (blank/placeholder images are near 0)",
+      "severity": "error"
+    },
+    {
+      "name": "headline 0–4 words",
+      "pass": true,
+      "detail": "3 words: \"3 WAYS. $0.\"",
+      "severity": "warn"
+    },
+    {
+      "name": "total text ≤ 8 words",
+      "pass": true,
+      "detail": "6 words across 5 text layers",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"3 WAYS.\"",
+      "pass": true,
+      "detail": "132px → 33px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"3 WAYS.\"",
+      "pass": true,
+      "detail": "13.30:1 vs background rgb(51,46,48) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"3 WAYS.\"",
+      "pass": true,
+      "detail": "box {\"x\":50,\"y\":40,\"w\":521,\"h\":125}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"3 WAYS.\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"$0.\"",
+      "pass": true,
+      "detail": "132px → 33px on a 320px-wide mobile thumbnail (min 64px)",
+      "severity": "error"
+    },
+    {
+      "name": "contrast \"$0.\"",
+      "pass": true,
+      "detail": "4.58:1 vs background rgb(51,46,48) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"$0.\"",
+      "pass": true,
+      "detail": "box {\"x\":600,\"y\":40,\"w\":203,\"h\":125}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"$0.\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"OFFLINE\"",
+      "pass": true,
+      "detail": "66px → 16.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"OFFLINE\"",
+      "pass": true,
+      "detail": "13.30:1 vs background rgb(51,46,48) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"OFFLINE\"",
+      "pass": true,
+      "detail": "box {\"x\":170,\"y\":246,\"w\":267,\"h\":63}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"OFFLINE\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"CLOUD\"",
+      "pass": true,
+      "detail": "66px → 16.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"CLOUD\"",
+      "pass": true,
+      "detail": "13.30:1 vs background rgb(51,46,48) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"CLOUD\"",
+      "pass": true,
+      "detail": "box {\"x\":170,\"y\":386,\"w\":220,\"h\":63}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"CLOUD\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text size \"COMBO\"",
+      "pass": true,
+      "detail": "66px → 16.5px on a 320px-wide mobile thumbnail (min 40px)",
+      "severity": "warn"
+    },
+    {
+      "name": "contrast \"COMBO\"",
+      "pass": true,
+      "detail": "13.30:1 vs background rgb(51,46,48) (min 4.5:1; strokes/shadows not counted)",
+      "severity": "warn"
+    },
+    {
+      "name": "inside frame \"COMBO\"",
+      "pass": true,
+      "detail": "box {\"x\":170,\"y\":526,\"w\":244,\"h\":63}",
+      "severity": "error"
+    },
+    {
+      "name": "clear of timestamp \"COMBO\"",
+      "pass": true,
+      "detail": "bottom-right duration badge area",
+      "severity": "warn"
+    },
+    {
+      "name": "text off face \"3 WAYS.\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"$0.\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"OFFLINE\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"CLOUD\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "text off face \"COMBO\"",
+      "pass": true,
+      "detail": "0% of the text box overlaps the face box",
+      "severity": "error"
+    },
+    {
+      "name": "one focal point",
+      "pass": true,
+      "detail": "1 layers marked focal/face",
+      "severity": "warn"
+    }
+  ],
+  "metrics": {
+    "texts": [
+      {
+        "text": "3 WAYS.",
+        "fontSize": 132,
+        "mobilePx": 33,
+        "contrast": 13.3
+      },
+      {
+        "text": "$0.",
+        "fontSize": 132,
+        "mobilePx": 33,
+        "contrast": 4.58
+      },
+      {
+        "text": "OFFLINE",
+        "fontSize": 66,
+        "mobilePx": 16.5,
+        "contrast": 13.3
+      },
+      {
+        "text": "CLOUD",
+        "fontSize": 66,
+        "mobilePx": 16.5,
+        "contrast": 13.3
+      },
+      {
+        "text": "COMBO",
+        "fontSize": 66,
+        "mobilePx": 16.5,
+        "contrast": 13.3
+      }
+    ]
+  },
+  "layout": [
+    {
+      "id": "bg",
+      "type": "fill",
+      "role": "background",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      }
+    },
+    {
+      "id": "face",
+      "type": "image",
+      "role": "face",
+      "box": {
+        "x": 760,
+        "y": 70,
+        "w": 896,
+        "h": 650
+      }
+    },
+    {
+      "id": "h",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 50,
+        "y": 40,
+        "w": 521,
+        "h": 125
+      },
+      "fontSize": 132,
+      "color": "rgb(255, 255, 255)",
+      "text": "3 WAYS."
+    },
+    {
+      "id": "h2",
+      "type": "text",
+      "role": "headline",
+      "box": {
+        "x": 600,
+        "y": 40,
+        "w": 203,
+        "h": 125
+      },
+      "fontSize": 132,
+      "color": "rgb(232, 119, 95)",
+      "text": "$0."
+    },
+    {
+      "id": "p0",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 50,
+        "y": 220,
+        "w": 560,
+        "h": 116
+      }
+    },
+    {
+      "id": "i0",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 80,
+        "y": 246,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "t0",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 170,
+        "y": 246,
+        "w": 267,
+        "h": 63
+      },
+      "fontSize": 66,
+      "color": "rgb(255, 255, 255)",
+      "text": "OFFLINE"
+    },
+    {
+      "id": "c0",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 520,
+        "y": 250,
+        "w": 58,
+        "h": 58
+      }
+    },
+    {
+      "id": "p1",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 50,
+        "y": 360,
+        "w": 560,
+        "h": 116
+      }
+    },
+    {
+      "id": "i1",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 80,
+        "y": 386,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "t1",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 170,
+        "y": 386,
+        "w": 220,
+        "h": 63
+      },
+      "fontSize": 66,
+      "color": "rgb(255, 255, 255)",
+      "text": "CLOUD"
+    },
+    {
+      "id": "c1",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 520,
+        "y": 390,
+        "w": 58,
+        "h": 58
+      }
+    },
+    {
+      "id": "p2",
+      "type": "shape",
+      "role": "",
+      "box": {
+        "x": 50,
+        "y": 500,
+        "w": 560,
+        "h": 116
+      }
+    },
+    {
+      "id": "i2",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 80,
+        "y": 526,
+        "w": 64,
+        "h": 64
+      }
+    },
+    {
+      "id": "t2",
+      "type": "text",
+      "role": "label",
+      "box": {
+        "x": 170,
+        "y": 526,
+        "w": 244,
+        "h": 63
+      },
+      "fontSize": 66,
+      "color": "rgb(255, 255, 255)",
+      "text": "COMBO"
+    },
+    {
+      "id": "c2",
+      "type": "icon",
+      "role": "",
+      "box": {
+        "x": 520,
+        "y": 530,
+        "w": 58,
+        "h": 58
+      }
+    }
+  ]
+}

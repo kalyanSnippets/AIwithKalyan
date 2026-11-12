@@ -1,0 +1,18 @@
+{
+ "option": "B",
+ "scores": {
+  "legibility": 4,
+  "curiosity": 5,
+  "hierarchy": 4,
+  "isolation": 4,
+  "uniqueness": 5,
+  "synergy": 5,
+  "authenticity": 5,
+  "brand": 5
+ },
+ "verdict": "Rev 1: tighter, larger log crop; 'claude-sonnet-4.5' now reads at full size, still small on mobile. Most differentiated claim.",
+ "notes": [
+  "crop the log row to '200 \u00b7 claude-sonnet-4.5 \u00b7 kiro/claude-sonnet-4.5 \u00b7 KIRO' and enlarge it so the model name reads"
+ ],
+ "revisions": 1
+}
