@@ -97,7 +97,7 @@ def zoom_plan(events, a, b, hold=1.6, maxz=2.0):
         elif bw * bh < 0.0015:                       # only the cursor moved
             continue
         else:
-            bw2, bh2 = max(bw * 1.7, 0.42), max(bh * 1.7, 0.42 * 9 / 16 * 1.0)
+            bw2, bh2 = max(bw * 1.8, 0.62), max(bh * 1.8, 0.62)
             z = min(maxz, 1.0 / max(bw2, bh2 * 0.95))
             tgt = ((x0 + x1) / 2, (y0 + y1) / 2, max(1.0, z))
         p = kfs[-1]
@@ -215,7 +215,7 @@ def build(spec_path, name):
         if sh['kind'] == 'demo':
             key, a, b = sh['clip']; d = sh['t1'] - sh['t0']
             sh['speed'] = max(1.0, (b - a) / max(d, 0.1))
-            kfs = sh.get('zooms') or zoom_plan(analyse(key, a, b), a, b, hold=1.6 * sh['speed'], maxz=sh.get('maxz', 1.9))
+            kfs = sh.get('zooms') or zoom_plan(analyse(key, a, b), a, b, hold=1.6 * sh['speed'], maxz=sh.get('maxz', 1.5))
             if sh.get('no_zoom'): kfs = [(a, .5, .5, 1.0)]
             sh['kfs'] = kfs
             for t, cx, cy, z in kfs[1:]:
@@ -364,7 +364,8 @@ def build(spec_path, name):
                     for sp in sh.get('spots', []):
                         if sp['t0'] <= srct - a <= sp['t1']:
                             (rx0, ry0), (rx1, ry1) = to_c(sp['r'][0], sp['r'][1]), to_c(sp['r'][2], sp['r'][3])
-                            cv2.rectangle(frame, (int(rx0), int(ry0)), (int(rx1), int(ry1)), E.RED, 4, cv2.LINE_AA)
+                            rx0, rx1 = max(rx0, wx + 4), min(rx1, wx + cw - 4); ry0, ry1 = max(ry0, y + 4), min(ry1, y + ch - 4)
+                            if rx1 > rx0 and ry1 > ry0: cv2.rectangle(frame, (int(rx0), int(ry0)), (int(rx1), int(ry1)), E.RED, 4, cv2.LINE_AA)
                     # magnifier bubbles
                     for mg in sh.get('mags', []):
                         mlt = t - mg['_t']
@@ -465,7 +466,7 @@ def draw_el(frame, el, elt, t, cached):
                      lambda: E.card_spr(el['title'], el.get('sub'), el.get('icon'), el.get('w', 380), accent=hl, num=el.get('num')))
         E.pop_draw(frame, spr, cx, cy, elt)
     elif ty == 'pill':
-        spr = cached(('gp', el['text'], el.get('icon'), el.get('red')), lambda: E.pill_spr(el['text'], el.get('icon'), size=el.get('size', 30),
+        spr = cached(('gp', el['text'], el.get('icon'), el.get('red'), el.get('size')), lambda: E.pill_spr(el['text'], el.get('icon'), size=el.get('size', 40),
                      fill=E.RED if el.get('red') else E.CREAM, color=(255, 255, 255) if el.get('red') else E.INK,
                      icolor=(255, 255, 255) if el.get('red') else None))
         E.pop_draw(frame, spr, cx, cy, elt)

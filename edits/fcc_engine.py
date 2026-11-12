@@ -184,7 +184,7 @@ def badge_spr(num, text):
     card.alpha_composite(t, (n.width + 62, (h - t.height) // 2))
     sh, pad = with_shadow(card, 18, 10, 150, 36); return np_rgba(sh), pad
 
-def pill_spr(text, icon=None, fill=CREAM, color=INK, size=30, icolor=None, outline=None):
+def pill_spr(text, icon=None, fill=CREAM, color=INK, size=36, icolor=None, outline=None):
     t = text_im(text, size, color, 'Bold'); ih = int(size * 1.15)
     iw = ih + 14 if icon else 0
     w = t.width + iw + 52; h = int(size * 2.1)
@@ -193,28 +193,32 @@ def pill_spr(text, icon=None, fill=CREAM, color=INK, size=30, icolor=None, outli
     card.alpha_composite(t, (26 + iw, (h - t.height) // 2))
     sh, pad = with_shadow(card, 14, 8, 130, 30); return np_rgba(sh)
 
-def card_spr(title, sub=None, icon=None, w=380, accent=False, num=None, big_icon=96, dark=False):
+def card_spr(title, sub=None, icon=None, w=380, accent=False, num=None, big_icon=120, dark=False):
     fill = (24, 24, 28, 255) if dark else (255, 255, 255, 255)
     tc = (255, 255, 255) if dark else INK; sc = (170, 170, 178) if dark else (95, 95, 105)
-    h = 120 + big_icon + (60 if sub else 0)
-    card = rrect_im(w, h, 26, fill, RED + (255,) if accent else None, 5 if accent else 0); d = ImageDraw.Draw(card)
-    y = 30
-    if num is not None:
-        nb = text_im(str(num), 30, (255, 255, 255), 'Black'); d.rounded_rectangle([24, 22, 70, 68], 12, fill=RED + (255,))
-        card.alpha_composite(nb, (47 - nb.width // 2, 45 - nb.height // 2))
+    parts = []
     if icon:
         ic = icon_im(icon, big_icon, None if icon.startswith('logo-') else (RED if not dark else (255, 255, 255)))
         if icon in ('logo-ollama', 'logo-anthropic', 'logo-openai', 'logo-google'):
-            disc = rrect_im(big_icon + 30, big_icon + 30, 24, INK + (255,)); disc.alpha_composite(ic, (15, 15)); ic = disc
-        card.alpha_composite(ic, ((w - ic.width) // 2, y)); y += ic.height + 18
-    tt = text_im(title, 38, tc, 'ExtraBold')
-    if tt.width > w - 40: tt = text_im(title, 30, tc, 'ExtraBold')
-    card.alpha_composite(tt, ((w - tt.width) // 2, y)); y += tt.height + 6
+            disc = rrect_im(big_icon + 34, big_icon + 34, 28, INK + (255,)); disc.alpha_composite(ic, (17, 17)); ic = disc
+        parts.append((ic, 20))
+    ts = 50
+    tt = text_im(title, ts, tc, 'ExtraBold')
+    while tt.width > w - 48 and ts > 26: ts -= 2; tt = text_im(title, ts, tc, 'ExtraBold')
+    parts.append((tt, 8))
     if sub:
         for line in sub.split('\n'):
-            st = text_im(line, 24, sc, 'Medium'); card.alpha_composite(st, ((w - st.width) // 2, y)); y += st.height + 2
-    card = card.crop((0, 0, w, max(h, y + 26))) if y + 26 > h else card
-    sh, pad = with_shadow(card, 22, 12, 160, 40); return np_rgba(sh)
+            ss = 30; st = text_im(line, ss, sc, 'Medium')
+            while st.width > w - 40 and ss > 18: ss -= 1; st = text_im(line, ss, sc, 'Medium')
+            parts.append((st, 2))
+    h = 44 + sum(p.height + g for p, g in parts) + 30
+    card = rrect_im(w, h, 30, fill, RED + (255,) if accent else None, 6 if accent else 0); d = ImageDraw.Draw(card)
+    if num is not None:
+        nb = text_im(str(num), 36, (255, 255, 255), 'Black'); d.rounded_rectangle([22, 22, 76, 76], 14, fill=RED + (255,))
+        card.alpha_composite(nb, (49 - nb.width // 2, 49 - nb.height // 2))
+    y = 44
+    for p, g in parts: card.alpha_composite(p, ((w - p.width) // 2, y)); y += p.height + g
+    sh, pad = with_shadow(card, 24, 14, 170, 44); return np_rgba(sh)
 
 def keys_spr(keys):
     parts = []

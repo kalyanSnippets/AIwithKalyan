@@ -29,11 +29,11 @@ SHOTS = [
     # ---------------- 2 · phone / SIM example
     dict(at=(A, 55.62), kind='graphic', header='How this works', els=[
         dict(type='card', at=(A, 'Claude Code is like the phone', 64.0), title='Claude Code', sub='= the phone\nfree app from Anthropic',
-             icon='logo-claude', cx=L, cy=470, w=390),
+             icon='logo-claude', cx=L, cy=470, w=400),
         dict(type='card', at=(A, 'The AI model is like the SIM', 73.0), title='AI model', sub='= the SIM card\nthe brain that thinks',
-             icon='brain', cx=M, cy=470, w=390),
+             icon='brain', cx=M, cy=470, w=400),
         dict(type='pill', at=(A, "Anthropic's model costs", 77.5), text="Anthropic's brain: $20/month", icon='coins', cx=M, cy=790, red=True),
-        dict(type='card', at=(A, 'accepts other SIMs', 80.0), title='Free SIMs', sub='other brains\nthat cost $0', icon='sparkles', cx=R, cy=470, w=390),
+        dict(type='card', at=(A, 'accepts other SIMs', 80.0), title='Free SIMs', sub='other brains\nthat cost $0', icon='sparkles', cx=R, cy=470, w=400),
     ]),
     # ---------------- 3 roadmap
     dict(at=(A, 95.30), kind='graphic', header="Here's the plan", els=[
@@ -48,7 +48,7 @@ SHOTS = [
     ]),
     dict(at=(A, 'And I have put everything into a free setup kit', 173.4), kind='graphic', header='Free setup kit', els=[
         dict(type='card', at=(A, 'And I have put everything into a free setup kit', 173.4), title='Free setup kit', sub='everything in one place',
-             icon='package', cx=L + 60, cy=500, w=430),
+             icon='package', cx=L + 60, cy=500, w=480),
         dict(type='pill', at=(A, 'the model list', 173.4), text='The model list', icon='list-checks', cx=M + 230, cy=380),
         dict(type='pill', at=(A, 'every prompt', 173.4), text='Every prompt', icon='message-square', cx=M + 230, cy=500),
         dict(type='pill', at=(A, 'and every setting', 173.4), text='Every setting', icon='settings', cx=M + 230, cy=620),
@@ -62,14 +62,14 @@ SHOTS = [
     # ---------------- Method 1 · Ollama: what it is
     dict(at=(B, 20.82), kind='graphic', header='What is Ollama?', els=[
         dict(type='card', at=(B, 'Ollama is a free app', 23.0), title='Ollama', sub='free app · downloads AI models\nruns them on YOUR laptop',
-             icon='logo-ollama', cx=M, cy=420, w=520),
+             icon='logo-ollama', cx=M, cy=430, w=640),
         dict(type='pill', at=(B, 'Kind of like a media player', 28.4), text='Like a media player, but for AI', icon='play', cx=M, cy=760),
     ]),
     dict(at=(B, 'The big difference from ChatGPT', 34.8), kind='graphic', header='The big difference', els=[
         dict(type='card', at=(B, 'The big difference from ChatGPT', 34.8), title='ChatGPT / Claude', sub='your prompts go\nto the cloud',
-             icon='cloud', cx=L + 40, cy=470, w=420),
+             icon='cloud', cx=L + 40, cy=470, w=500),
         dict(type='card', at=(B, 'nothing goes to the cloud', 34.8), title='Ollama', sub='nothing leaves\nyour laptop', icon='laptop',
-             cx=R - 40, cy=470, w=420, hl=(B, 'The AI lives on your own machine', 39.6)),
+             cx=R - 40, cy=470, w=500, hl=(B, 'The AI lives on your own machine', 39.6)),
         dict(type='pill', at=(B, "so it's private", 39.6), text='Private', icon='shield-check', cx=M - 170, cy=820),
         dict(type='pill', at=(B, 'works without internet', 39.6), text='Works offline', icon='wifi-off', cx=M + 170, cy=820),
     ]),
@@ -79,7 +79,7 @@ SHOTS = [
     dict(at=(B, 70.58), kind='demo', clip=('142752', 81, 93), url='OllamaSetup.exe', header='Install Ollama',
          pills=[dict(at=(B, "Seriously, that's the whole install", 74.4), text="That's the whole install", icon='check', cy=1010)]),
     dict(at=(B, 80.14), kind='demo', clip=('142752', 184, 210), url='Ollama', header='3 things on the left',
-         spots=[dict(t0=0, t1=26, r=(0.02, 0.10, 0.20, 0.36))],
+         no_zoom=True, spots=[dict(t0=0, t1=26, r=(0.02, 0.10, 0.20, 0.36))],
          pills=[dict(at=(B, 'Apps, this is where', 83.1), text='Apps: connect coding tools', icon='app-window', cy=1010),
                 dict(at=(B, "It just copies the command", 90.3), text='It only copies a command', icon='terminal', cy=1010),
                 dict(at=(B, 105.42), text='Chat: talk to a model to test it', icon='message-square', cy=1010)]),
@@ -121,7 +121,7 @@ SHOTS = [
     # ---------------- 3 · pick your model
     dict(at=(B, 364.12), kind='graphic', header='It depends on your RAM', els=[
         dict(type='card', at=(B, 'It depends on your RAM', 364.1), title='RAM', sub="your computer's working memory\n= how big a model you can run",
-             icon='memory-stick', cx=M, cy=420, w=620),
+             icon='memory-stick', cx=M, cy=420, w=700),
         dict(type='keys', at=(B, 'Press Control', 379.0), keys=['Ctrl', 'Shift', 'Esc'], cx=M, cy=800),
     ]),
     dict(at=(B, 384.44), kind='talk'),
@@ -142,7 +142,7 @@ SHOTS = [
                 dict(at=(B, 'And it suggested MiMo', 468.3), text='Answer: MiMo v2.6 · 9B', icon='bot', cy=1010, red=True)]),
     dict(at=(B, 479.66), kind='demo', clip=('145317', 224, 240), url='Ollama · model list', header='First problem',
          pills=[dict(at=(B, "wasn't in Ollama's drop-down", 479.6), text="MiMo isn't in the list", icon='x', cy=1010, red=True)]),
-    dict(at=(B, 498.88), kind='demo', clip=('145317', 255, 270), url='Windows PowerShell', header='Try the terminal',
+    dict(at=(B, 498.88), kind='demo', clip=('145317', 268.5, 277), url='Windows PowerShell', header='Try the terminal', zooms=[(268.5, 0.32, 0.26, 1.6)],
          pills=[dict(at=(B, 'the black text window', 498.9), text='Terminal = where you type commands', icon='terminal', cy=1010)]),
     dict(at=(B, 510.30), kind='demo', clip=('145317', 278, 305), url='Windows PowerShell', header='Try the terminal',
          mags=[dict(at=(B, 'too old', 510.3), r=(0.03, 0.215, 0.62, 0.275), w=1000, cx=715, cy=420, dur=3.2)],
@@ -151,7 +151,7 @@ SHOTS = [
     dict(at=(B, 'And this is exactly where a five-minute', 516.3), kind='talk'),
     dict(at=(B, 525.54), kind='graphic', header='Let an AI do it', els=[
         dict(type='card', at=(B, "It's called Antigravity", 528.8), title='Antigravity', sub='free AI coding app\nfrom Google',
-             icon='logo-google', cx=L + 40, cy=430, w=430),
+             icon='logo-google', cx=L + 40, cy=430, w=480),
         dict(type='pill', at=(B, 'It opens the terminal', 539.2), text='Opens the terminal', icon='terminal', cx=R - 60, cy=280),
         dict(type='pill', at=(B, 'runs command', 539.2), text='Runs commands', icon='play', cx=R - 60, cy=400),
         dict(type='pill', at=(B, 'reads the errors', 539.2), text='Reads the errors', icon='search', cx=R - 60, cy=520),
@@ -174,9 +174,9 @@ SHOTS = [
          mags=[dict(at=(B, 'right there in the drop-down', 582.0), r=(0.40, 0.56, 0.70, 0.61), w=760, cx=715, cy=330, dur=2.6)]),
     dict(at=(B, 594.34), kind='talk'),
     dict(at=(B, 599.44), kind='graphic', header='The rule', els=[
-        dict(type='card', at=(B, 599.44), title='Longer than 1 line?', sub="don't type it yourself", icon='keyboard', cx=L + 20, cy=420, w=430),
+        dict(type='card', at=(B, 599.44), title='Longer than 1 line?', sub="don't type it yourself", icon='keyboard', cx=L + 20, cy=420, w=480),
         dict(type='card', at=(B, 'An AI installs it', 602.9), title='An AI installs it', sub='Antigravity does the work', icon='bot', cx=R - 20,
-             cy=420, w=430, hl=(B, 'An AI installs it', 602.9)),
+             cy=420, w=480, hl=(B, 'An AI installs it', 602.9)),
         dict(type='arrow', at=(B, 'An AI installs it', 602.9), p=(520, 420, 680, 420)),
         dict(type='pill', at=(B, 'you just copy the error', 604.5), text='Copy the error', icon='triangle-alert', cx=M - 330, cy=800),
         dict(type='pill', at=(B, 'paste it back to Antigravity', 604.5), text='Paste it back', icon='message-square', cx=M, cy=800),
@@ -189,6 +189,7 @@ SHOTS = [
          mags=[dict(at=(B, 'See that little message', 638.7), r=(0.44, 0.20, 0.76, 0.29), w=860, cx=715, cy=360, dur=3.4)],
          pills=[dict(at=(B, 'Ollama launch Claude', 640.3), text='ollama launch claude', icon='terminal', cy=1010, red=True)]),
     dict(at=(B, 647.50), kind='demo', clip=('121640', 30, 55), url='File Explorer', header='Open a terminal in a folder', blur=EXPLORER_BLUR,
+         zooms=[(30, .5, .5, 1.0), (32.5, 0.62, 0.45, 1.35)],
          pills=[dict(at=(B, 'Mine is called Claude Code', 650.2), text='Folder: claude-code', icon='folder', cy=1010),
                 dict(at=(B, 'right-click in the empty space', 656.2), text='Right-click → Open in Terminal', icon='mouse-pointer-click', cy=1010)]),
     dict(at=(B, 'Paste the command and hit Enter', 659.9), kind='graphic', header='Paste & Enter', els=[
@@ -208,7 +209,7 @@ SHOTS = [
         dict(type='prompt', at=(B, 'I type, "Build me a simple', 692.0), text='Build me a simple calculator app.', hl_words=['calculator app'],
              cx=M, cy=380, cps=18, w=1000),
         dict(type='card', at=(B, 'it took about thirty minutes', 701.2), title='~30 minutes', sub='a small local model\ndoes all the heavy lifting',
-             icon='hourglass', cx=M, cy=720, w=520),
+             icon='hourglass', cx=M, cy=720, w=600),
     ]),
     dict(at=(B, 716.42), kind='graphic', header='The honest trade-off', els=[
         dict(type='card', at=(B, 716.42), title='$0', sub='no money', icon='coins', cx=L + 60, cy=450, w=400),
