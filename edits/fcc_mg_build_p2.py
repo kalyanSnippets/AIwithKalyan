@@ -125,8 +125,8 @@ scene('p2settings', "Now let's connect OpenRouter", 'Then open your folder', dic
  <div id="xa" class="big red" style="position:absolute;left:530px;top:110px;font-size:260px;opacity:0">✕</div>
  <svg id="curve" style="position:absolute;left:160px;top:0;opacity:0" width="900" height="170"><path d="M10 160 C 300 -40, 600 -40, 880 150" stroke="#E53935" stroke-width="10" fill="none" stroke-dasharray="1200" stroke-dashoffset="1200" id="cp"/></svg>
  <div id="kk" class="pill" style="left:760px;top:420px">🔑 + my key</div></div>
-<div id="term"><div id="tb"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i>
-  <span class="tab on" id="tps">PowerShell</span><span class="tab" id="tcmd">Command Prompt</span></div><div id="code">{code}</div></div>
+<div id="term"><div id="tb">
+  <span class="tab on" id="tps">PowerShell</span><span class="tab" id="tcmd">Command Prompt</span><span style="margin-left:auto;display:flex;gap:34px;align-items:center;color:#8b8b94;font-size:22px;font-weight:400">─<span style="font-size:20px">☐</span>✕</span></div><div id="code">{code}</div></div>
 <div id="ann" class="pill">📦 Whole block in the setup kit</div>
 """, """
 FX.pop(tl,"#bcc",0.05); FX.pop(tl,"#ban",0.4);

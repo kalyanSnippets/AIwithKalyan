@@ -33,8 +33,7 @@ scene('hook1', 'Claude Code is one of the most', 'But here is what', dict(tool='
       limit='the moment you hit', stops='it just stops', pay='You either pay more', wait='or you wait'), '''
 <div id="term" class="dcard" style="left:600px;top:150px;width:900px;height:470px;padding:0">
   <div style="height:56px;border-bottom:2px solid #2c2c34;display:flex;align-items:center;gap:12px;padding:0 24px">
-    <i style="width:16px;height:16px;border-radius:50%;background:#ff5f57;display:block"></i><i style="width:16px;height:16px;border-radius:50%;background:#febc2e;display:block"></i><i style="width:16px;height:16px;border-radius:50%;background:#28c840;display:block"></i>
-    <span style="margin-left:auto;margin-right:auto;color:#9a9aa4;font-weight:700;font-size:22px">Claude Code</span></div>
+    <span style="color:#D97757;font-size:24px">✻</span><span style="color:#c8c8d0;font-weight:700;font-size:22px">Claude Code</span><span style="margin-left:auto;display:flex;gap:34px;align-items:center;color:#8b8b94;font-size:22px;font-weight:400">─<span style="font-size:20px">☐</span>✕</span></div>
   <div class="mono" style="padding:30px 36px;font-size:30px;line-height:1.7;color:#e8e8ee">
     <div><span style="color:#D97757">✻</span> Welcome to Claude Code</div><div style="color:#8b8b94">&gt; build me an app<span id="cur">▍</span></div>
     <div id="lim" style="margin-top:18px;color:#ff6b66;opacity:0">⚠ Usage limit reached · resets in 5h</div></div>
@@ -332,7 +331,7 @@ scene('tabs', "Once it's open", 'In Settings, two things matter', dict(left='thr
 #rtag{{position:absolute;right:30px;top:62px;font-weight:800;font-size:18px;color:#999;letter-spacing:2px}}
 </style>
 <div class="hdr"><i></i>3 things on the left</div>
-<div id="win"><div id="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><b>Ollama</b></div>
+<div id="win"><div id="bar"><b style="margin-left:4px">Ollama</b><span style="margin-left:auto;display:flex;gap:34px;align-items:center;color:#555;font-size:22px;font-weight:400">─<span style="font-size:20px">☐</span>✕</span></div>
  <div id="side"><div class="tab" id="tApps"><img src="../icons/app-window.png" class="tint-ink">Apps</div>
    <div class="tab" id="tChat"><img src="../icons/message-square.png" class="tint-ink">Chat</div>
    <div class="tab" id="tSet"><img src="../icons/settings.png" class="tint-ink">Settings</div></div>
