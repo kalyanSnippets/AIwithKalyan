@@ -19,52 +19,71 @@
  "outro_start": 1101.01,
  "music": [
   {
-   "track": "intro-hype",
+   "track": "intro",
    "start": 0.0,
-   "end": 91.05,
-   "gain": 0.68
+   "end": 91.3,
+   "gain": 0.47
   },
   {
-   "track": "body-a",
-   "start": 89.05,
-   "end": 263.85,
-   "gain": 0.26
+   "track": "body1",
+   "start": 88.8,
+   "end": 327.79,
+   "gain": 0.29
   },
   {
-   "track": "body-b",
-   "start": 260.85,
-   "end": 439.89,
-   "gain": 0.26
+   "track": "body1",
+   "start": 325.29,
+   "end": 400.38,
+   "gain": 0.29
   },
   {
-   "track": "body-a",
-   "start": 436.89,
-   "end": 611.69,
-   "gain": 0.26
+   "track": "body2",
+   "start": 397.88,
+   "end": 636.82,
+   "gain": 0.29
   },
   {
-   "track": "body-b",
-   "start": 608.69,
-   "end": 787.73,
-   "gain": 0.26
+   "track": "body2",
+   "start": 634.32,
+   "end": 671.35,
+   "gain": 0.29
   },
   {
-   "track": "body-a",
-   "start": 784.73,
-   "end": 959.53,
-   "gain": 0.26
+   "track": "body3",
+   "start": 668.85,
+   "end": 907.78,
+   "gain": 0.23
   },
   {
-   "track": "body-b",
-   "start": 956.53,
-   "end": 1100.83,
-   "gain": 0.26
+   "track": "body3",
+   "start": 905.28,
+   "end": 1094.07,
+   "gain": 0.23
   },
   {
-   "track": "outro-hype",
-   "start": 1097.83,
+   "track": "outro",
+   "start": 1091.57,
    "end": 1177.9,
-   "gain": 0.4
+   "gain": 0.26
   }
+ ],
+ "chapter_sounds": [
+  89,
+  209,
+  265,
+  333,
+  399,
+  458,
+  484,
+  546,
+  571,
+  619,
+  670,
+  711,
+  749,
+  876,
+  929,
+  1014,
+  1049
  ]
 }

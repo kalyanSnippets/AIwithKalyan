@@ -41,14 +41,15 @@ def norm(src, dst):
     run('ffmpeg', '-v', 'error', '-y', '-i', src, '-af', f'loudnorm=I=-16:TP=-2:LRA=11,aformat=sample_rates={SR}:channel_layouts=stereo', dst)
 TRK = ('intro', 'body1', 'body2', 'body3', 'outro')
 for k in TRK: norm(f'{MUS}/fcc2-{k}.mp3', f'{WORK}/m2_{k}.wav')
-G_IN, G_BODY, G_OUT, XF = 0.47, 0.29, 0.37, 2.5     # intro ~16 dB, body ~20 dB, outro ~18 dB under the voice after ducking
+G_IN, G_BODY, G_OUT, XF = 0.47, 0.29, 0.26, 2.5     # intro ~16 dB, body ~20 dB, outro ~18 dB under the voice after ducking
 M1, M2, M3 = INTRO_END, D[0], D[0] + D[1]           # method 1/2/3 start (Ollama, OpenRouter, OmniRoute)
 outro_at = T - dur(f'{WORK}/m2_outro.wav')          # outro track ends on the last frame
 plan = [('intro', 0.0, M1 + XF / 2, G_IN)]
+G_TRK = {'body1': G_BODY, 'body2': G_BODY, 'body3': 0.23}   # body3 track is ~2 dB hotter: measured, trimmed to ~20 dB under
 for trk, a, b in (('body1', M1, M2), ('body2', M2, M3), ('body3', M3, outro_at)):
     L = dur(f'{WORK}/m2_{trk}.wav') - 1.0; t = a - XF / 2
     while t < b + XF / 2 - 0.5:                     # loop a track (crossfaded) when its section is longer than the track
-        plan.append((trk, t, min(t + L, b + XF / 2), G_BODY)); t += L - XF
+        plan.append((trk, t, min(t + L, b + XF / 2), G_TRK[trk])); t += L - XF
 plan.append(('outro', outro_at - XF / 2, T, G_OUT))
 SWELL = 12.0                                        # last seconds: +4 dB lift, then the track's own fade-out
 ins, fc = [], []
