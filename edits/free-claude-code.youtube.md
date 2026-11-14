@@ -74,6 +74,6 @@ The free setup kit with every prompt and setting is here: https://docs.google.co
 - Right circle: **Subscribe**.
 
 ## Before publishing
-- Replace `https://docs.google.com/document/d/1Vw4_ppMYK30eqzx3KVT8oTFSJZzQSzkYhrsxCzMp6Wk/view?usp=sharing` (2 places) once the setup kit is hosted.
+- Setup kit: hosted as a view-only Google Doc (link already in the description and pinned comment).
 - Re-check the model names in the setup kit on ollama.com/library and openrouter.ai/models.
 - Upload the three .srt files under Subtitles (English, Telugu, Hindi).
