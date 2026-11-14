@@ -13,7 +13,7 @@
 
 Claude Code itself is free. You only pay for the AI model inside it. In this video I swap that model for free ones, three ways, and show the bill every time.
 
-📦 FREE SETUP KIT (model list, every prompt, every setting): [SETUP KIT LINK]
+📦 FREE SETUP KIT (model list, every prompt, every setting): https://docs.google.com/document/d/1Vw4_ppMYK30eqzx3KVT8oTFSJZzQSzkYhrsxCzMp6Wk/view?usp=sharing
 
 What you'll learn:
 • Method 1, Ollama: run Claude Code 100% on your own laptop, even with Wi-Fi off
@@ -66,7 +66,7 @@ claude code free, free claude code, claude code ollama, claude code openrouter, 
 
 ## Pinned comment
 Which one are you trying first: 1) Ollama (offline), 2) OpenRouter (cloud), or 3) OmniRoute (auto-switching)? 👇
-The free setup kit with every prompt and setting is here: [SETUP KIT LINK]
+The free setup kit with every prompt and setting is here: https://docs.google.com/document/d/1Vw4_ppMYK30eqzx3KVT8oTFSJZzQSzkYhrsxCzMp6Wk/view?usp=sharing
 ⚠️ Free tiers change often. If a model name in the video is gone, use the price filter / "Import only free models" trick instead of the exact name.
 
 ## End screen (last 20 s: the WATCH NEXT slot appears at 19:24, the subscribe circle at 19:30)
@@ -74,6 +74,6 @@ The free setup kit with every prompt and setting is here: [SETUP KIT LINK]
 - Right circle: **Subscribe**.
 
 ## Before publishing
-- Replace `[SETUP KIT LINK]` (2 places) once the setup kit is hosted.
+- Replace `https://docs.google.com/document/d/1Vw4_ppMYK30eqzx3KVT8oTFSJZzQSzkYhrsxCzMp6Wk/view?usp=sharing` (2 places) once the setup kit is hosted.
 - Re-check the model names in the setup kit on ollama.com/library and openrouter.ai/models.
 - Upload the three .srt files under Subtitles (English, Telugu, Hindi).

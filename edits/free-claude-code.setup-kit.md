@@ -21,7 +21,7 @@ Check your RAM: **Ctrl + Shift + Esc → Performance → Memory** (Mac: Apple me
 | 32 GB | Medium, ~20–35B | the latest "coder" model in the 20–35B range |
 | 64 GB+ | Large, 70B+ | the biggest coding model that fits in about half your RAM |
 
-⚠️ *Before publishing: re-check these names on ollama.com/library. Models change monthly.*
+⚠️ *Model names change often. Search ollama.com/library for the latest version before you pull one.*
 
 ### 3. Prompt: ask an AI which model to run
 ```
