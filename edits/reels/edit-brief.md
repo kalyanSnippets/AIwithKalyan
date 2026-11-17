@@ -103,3 +103,15 @@ None. Every visual already exists in Kalyan's recordings and the long video's sc
 | C | 5 Payoff | 145 | 0.30 s |
 
 The delivery matches each beat's intended emotion: the hooks are quick and energetic, and the payoffs slow down. Nothing is flagged.
+
+## As built (review v1)
+- **Reel A (34.6 s):** hook "Watch this…" with the Wi-Fi panel → Ollama card (logo, FREE APP, models drop into the laptop) → full-face
+  question → offline chat (3 pauses trimmed) → notes app → "Is it pretty? No." → kinetic payoff (captions hidden, "no subscription,
+  no usage limits" cut for length) → stamp **$0 · OFFLINE · PRIVATE** → new voice ending over the "3 FREE WAYS" end card.
+- **Reel C (31.6 s):** new-voice hook over the failed paste (paths blurred) → "Look at the top line… Claude Pro?" → full-face lesson →
+  "Now it says OpenRouter/free…" (the key-typing part is skipped because it shows key material) → new-voice bridge "And the real bill
+  for all of that?" → "$0.00" bill + stamp → new-voice ending over the end card.
+- New lines: level- and tone-matched to the studio voice (`scripts/match-eq.py`). Music ~20 dB under the voice, +3 dB on the end card.
+  3–4 synthesised pops + 1 whoosh. −14 LUFS.
+- Privacy: OCR blur on every screen frame, then a 3 fps OCR re-scan of the output (0 hits on both).
+- Build: `python3 edits/reels/build_reels.py A C [--review]`.
