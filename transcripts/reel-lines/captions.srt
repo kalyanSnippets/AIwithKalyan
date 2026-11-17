@@ -1,0 +1,255 @@
+1
+00:00:01,540 --> 00:00:03,280
+So this almost cost me $20.
+
+2
+00:00:05,800 --> 00:00:07,440
+The very first thing, viewers, here,
+
+3
+00:00:08,560 --> 00:00:09,380
+it sets up what--
+
+4
+00:00:10,780 --> 00:00:13,460
+I set up Claude Code to run for free, and
+
+5
+00:00:13,560 --> 00:00:15,540
+this one line almost cost me $20.
+
+6
+00:00:18,420 --> 00:00:19,800
+Using Claude Code for free,
+
+7
+00:00:20,680 --> 00:00:21,920
+using Claude Code for free,
+
+8
+00:00:22,760 --> 00:00:25,020
+check this one line, or you might be
+
+9
+00:00:25,060 --> 00:00:26,920
+paying $20 without knowing it.
+
+10
+00:00:32,200 --> 00:00:34,000
+And the real bill for all of that?
+
+11
+00:00:37,060 --> 00:00:38,840
+That's just one of the three ways I
+
+12
+00:00:38,920 --> 00:00:39,340
+tested.
+
+13
+00:00:39,820 --> 00:00:40,900
+The full video is my--
+
+14
+00:00:42,700 --> 00:00:44,640
+The full video is on my YouTube channel,
+
+15
+00:00:45,000 --> 00:00:45,700
+link in the bio.
+
+16
+00:00:49,280 --> 00:00:49,660
+That's j-
+
+17
+00:00:50,440 --> 00:00:52,240
+that is just one of the three ways I
+
+18
+00:00:52,320 --> 00:00:52,720
+tested.
+
+19
+00:00:53,000 --> 00:00:54,060
+The full video is my ,
+
+20
+00:00:55,480 --> 00:00:57,240
+the full video is on my YouTube channel,
+
+21
+00:00:57,340 --> 00:00:58,100
+link in the bio.
+
+22
+00:00:58,280 --> 00:00:58,760
+Check it out.
+
+23
+00:01:03,980 --> 00:01:04,360
+And that's,
+
+24
+00:01:05,040 --> 00:01:07,100
+and that is only the first of three ways
+
+25
+00:01:07,140 --> 00:01:08,220
+to run Claude Code.
+
+26
+00:01:08,580 --> 00:01:10,460
+And that is only the first of three ways
+
+27
+00:01:10,480 --> 00:01:11,400
+to run Claude Code.
+
+28
+00:01:11,860 --> 00:01:13,880
+Full video on my YouTube, link in bio.
+
+29
+00:01:17,760 --> 00:01:19,920
+I test these AI tools so you don't have
+
+30
+00:01:19,960 --> 00:01:20,080
+to.
+
+31
+00:01:20,240 --> 00:01:22,420
+Full video on my YouTube, link in bio.
+
+32
+00:01:34,040 --> 00:01:36,280
+I set up Claude Code to run for free, and
+
+33
+00:01:36,320 --> 00:01:38,720
+this one line cost almost $20,
+
+34
+00:01:39,500 --> 00:01:41,580
+and this one line almost cost me $20.
+
+35
+00:01:45,640 --> 00:01:47,060
+My paste failed silently.
+
+36
+00:01:47,240 --> 00:01:49,380
+I typed Claude, it opened, and it looked
+
+37
+00:01:49,480 --> 00:01:49,760
+fine.
+
+38
+00:01:50,960 --> 00:01:51,840
+Look at the top line.
+
+39
+00:01:51,960 --> 00:01:52,800
+Spot anything wrong?
+
+40
+00:01:53,420 --> 00:01:54,000
+Claude Pro
+
+41
+00:01:54,740 --> 00:01:56,360
+gone back to my paid subscription.
+
+42
+00:01:56,720 --> 00:01:57,600
+If you see your Cod--
+
+43
+00:01:58,720 --> 00:01:59,840
+If you see your Claude pa--
+
+44
+00:02:00,520 --> 00:02:02,420
+If you see your Claude plan here, you're
+
+45
+00:02:02,460 --> 00:02:03,520
+not on a free setup.
+
+46
+00:02:04,180 --> 00:02:05,420
+I opened a fresh terminal.
+
+47
+00:02:05,560 --> 00:02:07,680
+Now it says open router/free.
+
+48
+00:02:08,340 --> 00:02:09,100
+That's the free one.
+
+49
+00:02:09,979 --> 00:02:11,540
+And the real bill for all of that?
+
+50
+00:02:12,480 --> 00:02:15,520
+Three requests, about 24,000 tokens and
+
+51
+00:02:15,580 --> 00:02:15,940
+$0.
+
+52
+00:02:16,920 --> 00:02:19,060
+That, that is just one of the three ways I
+
+53
+00:02:19,100 --> 00:02:19,460
+tested.
+
+54
+00:02:19,540 --> 00:02:21,440
+The full video is on my YouTube channel,
+
+55
+00:02:21,700 --> 00:02:22,380
+link in the bio.
+
+56
+00:02:27,860 --> 00:02:29,780
+Your original clips unchanged.
+
+57
+00:02:30,880 --> 00:02:31,180
+Your al--
+
+58
+00:02:32,200 --> 00:02:33,400
+So, so watch this.
+
+59
+00:02:33,540 --> 00:02:34,900
+I'm turning the Wi-Fi off
+
+60
+00:02:35,680 --> 00:02:35,920
+to--
+
+61
+00:02:37,280 --> 00:02:38,960
+Your code never left your computer.
+
+62
+00:02:39,360 --> 00:02:41,500
+And that's only the first of three ways to
+
+63
+00:02:41,560 --> 00:02:42,400
+run Claude Code.
+
+64
+00:02:42,520 --> 00:02:44,700
+Full video on my YouTube, link in bio.
