@@ -1,6 +1,6 @@
 # Free Claude Code, 3 ways: YouTube upload package
 
-**Video file:** `renders/free-claude-code-3-ways-FINAL-1080p.mp4` (19:38, 1080p30, H.264 + AAC 320k, −14 LUFS)
+**Video file:** `renders/free-claude-code-3-ways-FINAL-1080p-blurred.mp4` (privacy-patched; use this one) (19:38, 1080p30, H.264 + AAC 320k, −14 LUFS)
 **Captions:** `transcripts/fcc-final/free-claude-code-3-ways.en.srt` · `.te.srt` (Telugu) · `.hi.srt` (Hindi)
 
 ## Title options

@@ -13,8 +13,9 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); os.chdir(ROOT)
-MASTER = 'renders/free-claude-code-3-ways-FINAL-1080p.mp4'
-OUT = 'renders/free-claude-code-3-ways-FINAL-1080p-v2.mp4'
+MASTER = os.environ.get('SRC', 'renders/free-claude-code-3-ways-FINAL-1080p.mp4')
+OUT = os.environ.get('DST', 'renders/free-claude-code-3-ways-FINAL-1080p-v2.mp4')
+STEP = int(os.environ.get('STEP', '5'))
 TMP = '/tmp/fcc-priv'; os.makedirs(TMP, exist_ok=True)
 W, H = 1920, 1080
 TERMS = [l.strip().lower() for l in open('media/privacy_terms.txt') if l.strip()]
@@ -64,13 +65,13 @@ for i, f in enumerate(segs):
         pr.wait()
     boxes = {}
     for k, fr in enumerate(frames()):
-        if k % 5: continue
+        if k % STEP: continue
         res, _ = ocr(fr[:, :, ::-1])
         for box, txt, conf in (res or []):
             if bad(txt):
                 xs = [q[0] for q in box]; ys = [q[1] for q in box]
                 bx = (max(0, int(min(xs)) - 8), max(0, int(min(ys)) - 8), min(W, int(max(xs)) + 8), min(H, int(max(ys)) + 8))
-                for j in range(k - 5, k + 6): boxes.setdefault(j, []).append(bx)
+                for j in range(k - STEP - 1, k + STEP + 2): boxes.setdefault(j, []).append(bx)
     print(f'{f}: start {start:.2f}s, {n} frames, {sum(1 for j in boxes if 0 <= j < n)} frames blurred', flush=True)
     outp = f'{TMP}/fix_{f}'
     enc = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', '30', '-i', '-',
