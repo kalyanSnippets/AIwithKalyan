@@ -19,6 +19,13 @@ tone-mapped HLG → SDR Rec.709 (zscale + hable) so Higgsfield doesn't get washe
 S1–S6 are each one continuous shot with no stumbles. S7 needs 2 jump cuts to remove the stumbles,
 because no clean single run exists in either take.
 
+## Pickup lines (recorded 2026-11-19)
+
+Source: `media/voiceover/higgsfield/missing_lines.m4a` (77 s). Transcript in `transcripts/missing_lines/`.
+It's split into 20 WAVs (48 kHz, 24-bit) in `renders/higgsfield/lines/`, named `S<scene>_<order>_<line>.wav`,
+and zipped as `renders/higgsfield/missing_lines.zip`.
+Still missing: S6 "No… no, no…". Unused alternate: "How did I do that?" at 9.68 s.
+
 ## Lines in the master prompt that were not recorded
 
 - S1: "WHAT?!" (the loud reaction as the fireball grows); "Bro… how did I just do that?" (recorded as "How did I do that?")
