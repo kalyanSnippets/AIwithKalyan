@@ -1,0 +1,1878 @@
+[
+  {
+    "id": "w0",
+    "text": "Okay.",
+    "start": 14.32,
+    "end": 14.58,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w1",
+    "text": "Today",
+    "start": 15.08,
+    "end": 15.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w2",
+    "text": "I'm",
+    "start": 15.36,
+    "end": 15.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w3",
+    "text": "going",
+    "start": 15.54,
+    "end": 15.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w4",
+    "text": "to",
+    "start": 15.76,
+    "end": 15.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w5",
+    "text": "show",
+    "start": 15.9,
+    "end": 16.1,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w6",
+    "text": "you",
+    "start": 16.16,
+    "end": 16.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w7",
+    "text": "something",
+    "start": 16.36,
+    "end": 16.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w8",
+    "text": "really",
+    "start": 16.8,
+    "end": 17.08,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w9",
+    "text": "crazy.",
+    "start": 17.2,
+    "end": 17.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w10",
+    "text": "Okay?",
+    "start": 18.46,
+    "end": 18.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w11",
+    "text": "Let's",
+    "start": 19.22,
+    "end": 19.4,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w12",
+    "text": "start.",
+    "start": 19.44,
+    "end": 19.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w13",
+    "text": "Wait.",
+    "start": 22.6,
+    "end": 22.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w14",
+    "text": "What's",
+    "start": 25.26,
+    "end": 25.46,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w15",
+    "text": "happening?",
+    "start": 25.5,
+    "end": 25.92,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w16",
+    "text": "How",
+    "start": 33.64,
+    "end": 33.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w17",
+    "text": "did",
+    "start": 33.86,
+    "end": 34,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w18",
+    "text": "I",
+    "start": 34.08,
+    "end": 34.14,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w19",
+    "text": "do",
+    "start": 34.18,
+    "end": 34.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w20",
+    "text": "that?",
+    "start": 34.38,
+    "end": 34.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w21",
+    "text": "How",
+    "start": 36.84,
+    "end": 37,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w22",
+    "text": "did",
+    "start": 37.04,
+    "end": 37.18,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w23",
+    "text": "I",
+    "start": 37.26,
+    "end": 37.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w24",
+    "text": "do",
+    "start": 37.38,
+    "end": 37.5,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w25",
+    "text": "that?",
+    "start": 37.54,
+    "end": 37.76,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w26",
+    "text": "Okay,",
+    "start": 56.2,
+    "end": 56.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w27",
+    "text": "that",
+    "start": 56.42,
+    "end": 56.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w28",
+    "text": "was",
+    "start": 56.42,
+    "end": 56.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w29",
+    "text": "weird.",
+    "start": 56.42,
+    "end": 56.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w30",
+    "text": "Okay,",
+    "start": 56.42,
+    "end": 56.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w31",
+    "text": "that",
+    "start": 56.9,
+    "end": 57.04,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w32",
+    "text": "was",
+    "start": 57.1,
+    "end": 57.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w33",
+    "text": "weird.",
+    "start": 57.28,
+    "end": 57.56,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w34",
+    "text": "Okay,",
+    "start": 91.52,
+    "end": 91.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w35",
+    "text": "that",
+    "start": 92.18,
+    "end": 92.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w36",
+    "text": "was",
+    "start": 92.36,
+    "end": 92.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w37",
+    "text": "weird.",
+    "start": 92.56,
+    "end": 92.88,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w38",
+    "text": "No,",
+    "start": 99.26,
+    "end": 99.38,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w39",
+    "text": "no,",
+    "start": 99.68,
+    "end": 99.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w40",
+    "text": "no.",
+    "start": 100.08,
+    "end": 100.22,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w41",
+    "text": "Wait,",
+    "start": 100.38,
+    "end": 100.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w42",
+    "text": "wait.",
+    "start": 100.82,
+    "end": 101.14,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w43",
+    "text": "Okay,",
+    "start": 121.32,
+    "end": 121.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w44",
+    "text": "I'm",
+    "start": 122.22,
+    "end": 122.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w45",
+    "text": "back.",
+    "start": 122.38,
+    "end": 122.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w46",
+    "text": "I'm",
+    "start": 123.1,
+    "end": 123.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w47",
+    "text": "fine.",
+    "start": 123.32,
+    "end": 123.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w48",
+    "text": "Bro,",
+    "start": 144.6,
+    "end": 144.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w49",
+    "text": "am",
+    "start": 147.02,
+    "end": 147.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w50",
+    "text": "I",
+    "start": 147.2,
+    "end": 147.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w51",
+    "text": "a",
+    "start": 147.34,
+    "end": 147.38,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w52",
+    "text": "robot",
+    "start": 147.44,
+    "end": 147.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w53",
+    "text": "now?",
+    "start": 147.8,
+    "end": 147.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w54",
+    "text": "Oh,",
+    "start": 163.9,
+    "end": 164,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w55",
+    "text": "finally,",
+    "start": 164.16,
+    "end": 164.54,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w56",
+    "text": "I'm",
+    "start": 164.9,
+    "end": 165,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w57",
+    "text": "normal",
+    "start": 165.1,
+    "end": 165.44,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w58",
+    "text": "again.",
+    "start": 165.5,
+    "end": 165.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w59",
+    "text": "Guys,",
+    "start": 178.96,
+    "end": 179.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w60",
+    "text": "guys,",
+    "start": 179.82,
+    "end": 180.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w61",
+    "text": "this",
+    "start": 180.42,
+    "end": 180.54,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w62",
+    "text": "is",
+    "start": 180.6,
+    "end": 180.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w63",
+    "text": "my",
+    "start": 180.76,
+    "end": 180.92,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w64",
+    "text": "channel.",
+    "start": 180.98,
+    "end": 181.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w65",
+    "text": "Can",
+    "start": 203.54,
+    "end": 203.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w66",
+    "text": "I",
+    "start": 203.7,
+    "end": 203.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w67",
+    "text": "please",
+    "start": 203.86,
+    "end": 204.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w68",
+    "text": "finish",
+    "start": 204.3,
+    "end": 204.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w69",
+    "text": "this",
+    "start": 204.66,
+    "end": 204.88,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w70",
+    "text": "video?",
+    "start": 204.92,
+    "end": 205.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w71",
+    "text": "Can",
+    "start": 207.94,
+    "end": 208.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w72",
+    "text": "I",
+    "start": 208.12,
+    "end": 208.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w73",
+    "text": "just",
+    "start": 208.26,
+    "end": 208.4,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w74",
+    "text": "please",
+    "start": 208.52,
+    "end": 208.76,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w75",
+    "text": "finish",
+    "start": 208.84,
+    "end": 209.1,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w76",
+    "text": "this",
+    "start": 209.12,
+    "end": 209.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w77",
+    "text": "video?",
+    "start": 209.36,
+    "end": 209.76,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w78",
+    "text": "What?",
+    "start": 226.16,
+    "end": 226.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w79",
+    "text": "Why",
+    "start": 227.38,
+    "end": 227.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w80",
+    "text": "is",
+    "start": 227.56,
+    "end": 227.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w81",
+    "text": "ev-",
+    "start": 227.78,
+    "end": 227.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w82",
+    "text": "everything",
+    "start": 228.06,
+    "end": 228.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w83",
+    "text": "so",
+    "start": 228.54,
+    "end": 228.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w84",
+    "text": "big?",
+    "start": 228.78,
+    "end": 229.04,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w85",
+    "text": "Okay,",
+    "start": 241.78,
+    "end": 241.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w86",
+    "text": "that's...",
+    "start": 242.44,
+    "end": 242.86,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w87",
+    "text": "Okay,",
+    "start": 243.32,
+    "end": 243.56,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w88",
+    "text": "that's",
+    "start": 244.06,
+    "end": 244.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w89",
+    "text": "enough",
+    "start": 244.28,
+    "end": 244.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w90",
+    "text": "AI",
+    "start": 244.7,
+    "end": 244.92,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w91",
+    "text": "for",
+    "start": 244.96,
+    "end": 245.08,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w92",
+    "text": "today.",
+    "start": 245.14,
+    "end": 245.4,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w93",
+    "text": "Great.",
+    "start": 263.5,
+    "end": 263.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w94",
+    "text": "Great,",
+    "start": 268.24,
+    "end": 268.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w95",
+    "text": "now",
+    "start": 268.78,
+    "end": 268.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w96",
+    "text": "in",
+    "start": 268.92,
+    "end": 269,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w97",
+    "text": "space.",
+    "start": 269.06,
+    "end": 269.56,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w98",
+    "text": "Great,",
+    "start": 270.34,
+    "end": 270.58,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w99",
+    "text": "now",
+    "start": 271.06,
+    "end": 271.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w100",
+    "text": "I'm",
+    "start": 271.22,
+    "end": 271.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w101",
+    "text": "in",
+    "start": 271.34,
+    "end": 271.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w102",
+    "text": "space.",
+    "start": 271.48,
+    "end": 271.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w103",
+    "text": "Perfect.",
+    "start": 272.7,
+    "end": 273.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w104",
+    "text": "Okay.",
+    "start": 298.04,
+    "end": 298.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w105",
+    "text": "Obviously,",
+    "start": 299.34,
+    "end": 299.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w106",
+    "text": "none",
+    "start": 300.26,
+    "end": 300.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w107",
+    "text": "of",
+    "start": 300.48,
+    "end": 300.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w108",
+    "text": "that",
+    "start": 300.66,
+    "end": 300.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w109",
+    "text": "seriously",
+    "start": 300.9,
+    "end": 301.34,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w110",
+    "text": "happened.",
+    "start": 301.38,
+    "end": 301.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w111",
+    "text": "I",
+    "start": 302.34,
+    "end": 302.4,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w112",
+    "text": "made",
+    "start": 302.44,
+    "end": 302.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w113",
+    "text": "all",
+    "start": 302.78,
+    "end": 302.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w114",
+    "text": "of",
+    "start": 302.94,
+    "end": 303.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w115",
+    "text": "these",
+    "start": 303.1,
+    "end": 303.26,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w116",
+    "text": "crazy",
+    "start": 303.28,
+    "end": 303.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w117",
+    "text": "videos",
+    "start": 303.66,
+    "end": 304.08,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w118",
+    "text": "using",
+    "start": 304.28,
+    "end": 304.54,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w119",
+    "text": "Higgsfield",
+    "start": 304.78,
+    "end": 305.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w120",
+    "text": "AI.",
+    "start": 305.52,
+    "end": 305.88,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w121",
+    "text": "Okay.",
+    "start": 308.92,
+    "end": 309.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w122",
+    "text": "Obviously,",
+    "start": 309.44,
+    "end": 309.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w123",
+    "text": "none",
+    "start": 310.06,
+    "end": 310.22,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w124",
+    "text": "of",
+    "start": 310.28,
+    "end": 310.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w125",
+    "text": "that",
+    "start": 310.48,
+    "end": 310.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w126",
+    "text": "actually",
+    "start": 310.76,
+    "end": 311.1,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w127",
+    "text": "happened.",
+    "start": 311.14,
+    "end": 311.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w128",
+    "text": "I",
+    "start": 312.04,
+    "end": 312.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w129",
+    "text": "made",
+    "start": 312.18,
+    "end": 312.42,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w130",
+    "text": "all",
+    "start": 312.48,
+    "end": 312.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w131",
+    "text": "of",
+    "start": 312.66,
+    "end": 312.76,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w132",
+    "text": "these",
+    "start": 312.8,
+    "end": 312.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w133",
+    "text": "crazy",
+    "start": 312.96,
+    "end": 313.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w134",
+    "text": "videos",
+    "start": 313.32,
+    "end": 313.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w135",
+    "text": "using",
+    "start": 313.84,
+    "end": 314.08,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w136",
+    "text": "Higgsfield",
+    "start": 314.12,
+    "end": 314.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w137",
+    "text": "A...",
+    "start": 314.78,
+    "end": 314.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w138",
+    "text": "I",
+    "start": 316.86,
+    "end": 316.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w139",
+    "text": "made",
+    "start": 316.98,
+    "end": 317.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w140",
+    "text": "all",
+    "start": 317.36,
+    "end": 317.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w141",
+    "text": "of",
+    "start": 317.54,
+    "end": 317.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w142",
+    "text": "these",
+    "start": 317.68,
+    "end": 317.82,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w143",
+    "text": "crazy",
+    "start": 317.84,
+    "end": 318.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w144",
+    "text": "videos",
+    "start": 318.2,
+    "end": 318.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w145",
+    "text": "using",
+    "start": 318.7,
+    "end": 318.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w146",
+    "text": "Higgsfield",
+    "start": 319,
+    "end": 319.46,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w147",
+    "text": "AI.",
+    "start": 319.66,
+    "end": 320,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w148",
+    "text": "And",
+    "start": 326.5,
+    "end": 326.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w149",
+    "text": "you",
+    "start": 326.66,
+    "end": 326.78,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w150",
+    "text": "And",
+    "start": 335.2,
+    "end": 335.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w151",
+    "text": "you",
+    "start": 335.38,
+    "end": 335.44,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w152",
+    "text": "know,",
+    "start": 335.5,
+    "end": 335.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w153",
+    "text": "and",
+    "start": 336.74,
+    "end": 336.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w154",
+    "text": "you",
+    "start": 336.9,
+    "end": 336.96,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w155",
+    "text": "know",
+    "start": 337,
+    "end": 337.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w156",
+    "text": "the",
+    "start": 337.2,
+    "end": 337.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w157",
+    "text": "best",
+    "start": 337.32,
+    "end": 337.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w158",
+    "text": "part?",
+    "start": 337.56,
+    "end": 337.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w159",
+    "text": "I",
+    "start": 338.5,
+    "end": 338.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w160",
+    "text": "didn't",
+    "start": 338.66,
+    "end": 339.02,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w161",
+    "text": "need",
+    "start": 339.08,
+    "end": 339.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w162",
+    "text": "a",
+    "start": 339.3,
+    "end": 339.34,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w163",
+    "text": "Holly...",
+    "start": 339.46,
+    "end": 339.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w164",
+    "text": "I",
+    "start": 340.8,
+    "end": 340.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w165",
+    "text": "didn't",
+    "start": 340.88,
+    "end": 341.08,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w166",
+    "text": "need",
+    "start": 341.12,
+    "end": 341.26,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w167",
+    "text": "a",
+    "start": 341.32,
+    "end": 341.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w168",
+    "text": "Hollywood",
+    "start": 341.4,
+    "end": 341.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w169",
+    "text": "studio",
+    "start": 341.94,
+    "end": 342.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w170",
+    "text": "or",
+    "start": 342.34,
+    "end": 342.46,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w171",
+    "text": "expensive",
+    "start": 342.52,
+    "end": 343.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w172",
+    "text": "VFX",
+    "start": 343.12,
+    "end": 343.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w173",
+    "text": "a...",
+    "start": 344.94,
+    "end": 344.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w174",
+    "text": "And",
+    "start": 358.94,
+    "end": 359.02,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w175",
+    "text": "the",
+    "start": 359.06,
+    "end": 359.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w176",
+    "text": "best",
+    "start": 359.16,
+    "end": 359.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w177",
+    "text": "part,",
+    "start": 359.42,
+    "end": 359.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w178",
+    "text": "I",
+    "start": 361.08,
+    "end": 361.14,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w179",
+    "text": "didn't",
+    "start": 361.16,
+    "end": 361.34,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w180",
+    "text": "need",
+    "start": 361.38,
+    "end": 361.54,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w181",
+    "text": "a",
+    "start": 361.6,
+    "end": 361.66,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w182",
+    "text": "Hollywood",
+    "start": 361.7,
+    "end": 362.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w183",
+    "text": "studio",
+    "start": 362.16,
+    "end": 362.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w184",
+    "text": "or",
+    "start": 362.68,
+    "end": 362.78,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w185",
+    "text": "expensive",
+    "start": 362.9,
+    "end": 363.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w186",
+    "text": "VFX",
+    "start": 364.6,
+    "end": 365.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w187",
+    "text": "software.",
+    "start": 365.14,
+    "end": 365.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w188",
+    "text": "And",
+    "start": 367.12,
+    "end": 367.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w189",
+    "text": "the",
+    "start": 367.24,
+    "end": 367.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w190",
+    "text": "best",
+    "start": 367.34,
+    "end": 367.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w191",
+    "text": "part,",
+    "start": 367.6,
+    "end": 367.86,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w192",
+    "text": "I",
+    "start": 368.46,
+    "end": 368.5,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w193",
+    "text": "didn't",
+    "start": 368.56,
+    "end": 368.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w194",
+    "text": "need",
+    "start": 368.8,
+    "end": 368.96,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w195",
+    "text": "a",
+    "start": 369.02,
+    "end": 369.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w196",
+    "text": "Hollywood",
+    "start": 369.1,
+    "end": 369.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w197",
+    "text": "studio",
+    "start": 369.6,
+    "end": 369.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w198",
+    "text": "or",
+    "start": 370.02,
+    "end": 370.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w199",
+    "text": "expensive",
+    "start": 370.16,
+    "end": 370.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w200",
+    "text": "VFX",
+    "start": 370.74,
+    "end": 371.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w201",
+    "text": "software.",
+    "start": 371.26,
+    "end": 371.66,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w202",
+    "text": "In",
+    "start": 373.08,
+    "end": 373.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w203",
+    "text": "this",
+    "start": 373.22,
+    "end": 373.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w204",
+    "text": "video,",
+    "start": 373.4,
+    "end": 373.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w205",
+    "text": "I'll",
+    "start": 374.1,
+    "end": 374.18,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w206",
+    "text": "show",
+    "start": 374.22,
+    "end": 374.34,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w207",
+    "text": "you",
+    "start": 374.4,
+    "end": 374.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w208",
+    "text": "how",
+    "start": 374.56,
+    "end": 374.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w209",
+    "text": "I",
+    "start": 374.84,
+    "end": 374.92,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w210",
+    "text": "created",
+    "start": 374.96,
+    "end": 375.4,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w211",
+    "text": "these",
+    "start": 375.5,
+    "end": 375.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w212",
+    "text": "effects,",
+    "start": 375.82,
+    "end": 376.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w213",
+    "text": "the",
+    "start": 376.88,
+    "end": 377.02,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w214",
+    "text": "exact",
+    "start": 377.1,
+    "end": 377.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w215",
+    "text": "prompts",
+    "start": 377.72,
+    "end": 378.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w216",
+    "text": "I",
+    "start": 378.16,
+    "end": 378.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w217",
+    "text": "used,",
+    "start": 378.34,
+    "end": 378.56,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w218",
+    "text": "and",
+    "start": 378.98,
+    "end": 379.14,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w219",
+    "text": "what",
+    "start": 379.38,
+    "end": 379.56,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w220",
+    "text": "actually",
+    "start": 379.64,
+    "end": 380,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w221",
+    "text": "worked.",
+    "start": 380.08,
+    "end": 380.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w222",
+    "text": "In",
+    "start": 385.88,
+    "end": 385.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w223",
+    "text": "this",
+    "start": 386.04,
+    "end": 386.2,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w224",
+    "text": "video,",
+    "start": 386.24,
+    "end": 386.6,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w225",
+    "text": "I'll",
+    "start": 386.84,
+    "end": 386.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w226",
+    "text": "sh...",
+    "start": 387.08,
+    "end": 387.22,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w227",
+    "text": "In",
+    "start": 388.04,
+    "end": 388.12,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w228",
+    "text": "this",
+    "start": 388.2,
+    "end": 388.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w229",
+    "text": "video,",
+    "start": 388.4,
+    "end": 388.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w230",
+    "text": "I'll",
+    "start": 388.98,
+    "end": 389.1,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w231",
+    "text": "show",
+    "start": 389.16,
+    "end": 389.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w232",
+    "text": "you",
+    "start": 389.36,
+    "end": 389.44,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w233",
+    "text": "how",
+    "start": 389.6,
+    "end": 389.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w234",
+    "text": "I",
+    "start": 389.9,
+    "end": 389.94,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w235",
+    "text": "created",
+    "start": 390.04,
+    "end": 390.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w236",
+    "text": "these",
+    "start": 390.52,
+    "end": 390.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w237",
+    "text": "effects",
+    "start": 390.76,
+    "end": 391.18,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w238",
+    "text": "and",
+    "start": 391.36,
+    "end": 391.46,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w239",
+    "text": "the",
+    "start": 391.5,
+    "end": 391.62,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w240",
+    "text": "exact",
+    "start": 391.66,
+    "end": 392.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w241",
+    "text": "prompts",
+    "start": 392.14,
+    "end": 392.5,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w242",
+    "text": "I",
+    "start": 392.8,
+    "end": 392.86,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w243",
+    "text": "used.",
+    "start": 392.98,
+    "end": 393.22,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w244",
+    "text": "In",
+    "start": 394.24,
+    "end": 394.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w245",
+    "text": "this",
+    "start": 394.38,
+    "end": 394.54,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w246",
+    "text": "video,",
+    "start": 394.58,
+    "end": 394.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w247",
+    "text": "I'll",
+    "start": 395.04,
+    "end": 395.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w248",
+    "text": "show",
+    "start": 395.2,
+    "end": 395.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w249",
+    "text": "you",
+    "start": 395.4,
+    "end": 395.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w250",
+    "text": "how",
+    "start": 395.54,
+    "end": 395.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w251",
+    "text": "I",
+    "start": 395.76,
+    "end": 395.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w252",
+    "text": "created",
+    "start": 395.86,
+    "end": 396.28,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w253",
+    "text": "these",
+    "start": 396.34,
+    "end": 396.48,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w254",
+    "text": "effects",
+    "start": 396.56,
+    "end": 396.98,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w255",
+    "text": "and",
+    "start": 397.04,
+    "end": 397.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w256",
+    "text": "the",
+    "start": 397.18,
+    "end": 397.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w257",
+    "text": "exact",
+    "start": 397.36,
+    "end": 397.78,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w258",
+    "text": "prompts",
+    "start": 397.86,
+    "end": 398.18,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w259",
+    "text": "I",
+    "start": 398.26,
+    "end": 398.32,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w260",
+    "text": "used",
+    "start": 398.44,
+    "end": 398.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w261",
+    "text": "and",
+    "start": 398.9,
+    "end": 399.1,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w262",
+    "text": "what",
+    "start": 399.18,
+    "end": 399.38,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w263",
+    "text": "actually",
+    "start": 399.46,
+    "end": 399.8,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w264",
+    "text": "worked.",
+    "start": 399.96,
+    "end": 400.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w265",
+    "text": "Let's",
+    "start": 400.9,
+    "end": 401.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w266",
+    "text": "get",
+    "start": 401.2,
+    "end": 401.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w267",
+    "text": "started.",
+    "start": 401.42,
+    "end": 401.82,
+    "speaker": "speaker_0"
+  }
+]
