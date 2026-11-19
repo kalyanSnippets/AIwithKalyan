@@ -122,6 +122,42 @@ These are the same as v3 (`edits/higgsfield-short-script-v3.md`), with the trans
 - **Beat 4:** "…the walls crack into floating leaves and light particles that blow away in the wind, revealing the jungle."
 - **Beat 6:** "…instant hard reset to the normal studio, no transition effect."
 
+## 5b. "How to get it free" (short version, replaces the offer lines in beat 5)
+
+Spoken (about 12 s):
+> Here's how. / Go to higgsfield.ai slash MCP and sign in.
+> Then in Claude, open Connectors, / add Higgsfield, / and accept the three-day trial.
+> Now just type your idea… / and Claude makes the video.
+> After three days it becomes a paid plan, / so cancel before that if you only want the free part.
+
+On-screen steps (one card each, bottom third, about 2 s each):
+1. **higgsfield.ai/mcp → Sign in**
+2. **Claude → Connectors → Add Higgsfield**
+3. **Accept the 3-day trial**
+4. **Type your idea 🎬**
+5. **⏰ Cancel before 72 h to stay free**
+
+Connector URL for the pinned comment: `https://mcp.higgsfield.ai/mcp`.
+To cancel, type "cancel auto-renewal" in the Claude chat, or go to Higgsfield → Manage Account → Subscription.
+
+## 5c. Platform endings (replace the last line of beat 6)
+
+**Instagram Reels**
+- **Comment hook (spoken):** "Comment SNAP… and I'll send you the setup steps."
+- **Follow hook (spoken):** "And follow — / I test a new AI tool every week, so you don't have to."
+- **Save hook (on screen):** "📌 Save this for when you try it."
+- **Last on-screen line:** **Comment "SNAP" for the steps** · **Follow @AIwithKalyan**
+
+**YouTube Shorts**
+- **Comment hook (spoken):** "Tell me in the comments… / what should I turn into next?"
+- **Subscribe hook (spoken):** "Subscribe — / the full tutorial with every prompt is coming on this channel."
+- **Last on-screen line:** **Full tutorial coming → Subscribe** · **Comment your next transformation 👇**
+
+Why they're different: Instagram rewards comments, saves and shares, so the keyword comment drives reach.
+YouTube rewards subscribers and watch history, so the Short sends people to the full tutorial.
+
+**Note:** only promise "I'll send you the steps" if you'll actually reply to comments or DMs, or have an auto-DM tool like ManyChat set up. Otherwise use: "The steps are in the pinned comment."
+
 ## 6. Caption and pinned comment
 
 - **Caption:** One snap. 🫰 None of this is real. I filmed it in my bedroom, Claude cut the scenes, and Higgsfield added every effect. Higgsfield is free for 3 days inside Claude right now: higgsfield.ai/mcp. It becomes a paid plan after that, so set a reminder. #AIwithKalyan #Higgsfield #ClaudeAI #AIVideo
