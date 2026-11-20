@@ -190,3 +190,29 @@ svg.lines { position: absolute; inset: 0; z-index: 15; }
 .hero { position: absolute; z-index: 15; left: 0; width: 1920px; top: 300px; display: flex; flex-direction: column; align-items: center; gap: 30px; opacity: 0; }
 .hero b { font-size: 190px; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
 .desc { position: absolute; inset: 0; z-index: 16; }
+
+/* ── v2 layers ── */
+#gl { position: absolute; inset: 0; width: 1920px; height: 1080px; z-index: 7; opacity: 0; pointer-events: none; }
+#hud2d { position: absolute; inset: 0; width: 1920px; height: 1080px; z-index: 12; pointer-events: none; }
+.flash { position: absolute; inset: 0; z-index: 47; background: #fff; opacity: 0; pointer-events: none; }
+.ch3 { position: absolute; left: 0; right: 0; bottom: 140px; z-index: 46; text-align: center; }
+.ch3 .lab { font-size: 30px; font-weight: 800; letter-spacing: 0.4em; color: var(--teal); opacity: 0; text-shadow: 0 4px 20px rgba(0,0,0,0.8); }
+.ch3 .ttl { margin-top: 14px; font-size: 116px; font-weight: 900; letter-spacing: -0.04em; text-shadow: 0 8px 40px rgba(0,0,0,0.8); }
+.ch3 .ttl span { display: inline-block; opacity: 0; }
+.hd { text-shadow: 0 6px 30px rgba(0,0,0,0.85); }
+/* source card tilts in like a real page in 3D */
+.src { transform-style: preserve-3d; transform: perspective(1600px) rotateY(-14deg) rotateX(4deg); box-shadow: 0 50px 120px rgba(0,0,0,0.7), 0 0 80px rgba(255,61,154,0.35); }
+/* chat over the real store */
+.chat { left: auto; background: rgba(18,10,32,0.88); backdrop-filter: blur(10px); }
+/* end screen */
+.endsc { position: absolute; inset: 0; z-index: 46; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 46px; }
+.endsc .chn { font-size: 40px; font-weight: 900; letter-spacing: 0.4em; color: #fff; opacity: 0; text-shadow: 0 4px 24px rgba(0,0,0,0.8); }
+.endsc .row { display: flex; align-items: center; gap: 60px; }
+.endsc .sbtn { position: static; width: 620px; height: 160px; border-radius: 80px; font-size: 66px; display: flex; align-items: center; justify-content: center; gap: 24px; }
+.endsc .sbtn .a { display: flex; align-items: center; gap: 22px; }
+.endsc .bell { position: static; opacity: 0; }
+.endsc .cmt { display: flex; align-items: center; gap: 22px; padding: 28px 44px; border-radius: 30px; background: rgba(13,8,24,0.82); border: 2px solid rgba(25,227,211,0.6); font-size: 54px; font-weight: 800; opacity: 0; }
+.endsc .cmt b { color: var(--teal); } .endsc .cmt b.p { color: var(--pink); }
+.endsc .nxt { font-size: 46px; font-weight: 800; color: var(--muted); opacity: 0; }
+
+.endsc .sbtn.on .a { display: none; } .endsc .sbtn .b { gap: 18px; } .endsc .sbtn.on .b { display: flex; align-items: center; }

@@ -202,5 +202,103 @@
   "t1": 1572.6,
   "label": "Vice City skyline at sunset",
   "margin": true
+ },
+ "el_walk": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1092.2,
+  "t1": 1095.5,
+  "label": "Lucia walks down a Vice City street",
+  "margin": true
+ },
+ "el_talk": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 645.4,
+  "t1": 650.3,
+  "label": "Two people talking at a rooftop table",
+  "margin": true
+ },
+ "el_listen": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 650.8,
+  "t1": 653.3,
+  "label": "Walking up close behind people talking",
+  "margin": true
+ },
+ "el_steal": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 696.3,
+  "t1": 699.6,
+  "label": "Walking up to a car",
+  "margin": true
+ },
+ "el_crime": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 717.3,
+  "t1": 718.75,
+  "label": "Masked robbers in a store",
+  "margin": true
+ },
+ "el_crime2": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 719.1,
+  "t1": 720.55,
+  "label": "Masked robbers, outfit close-up",
+  "margin": true
+ },
+ "el_shop": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 706.0,
+  "t1": 711.0,
+  "label": "Inside a convenience store, clerk at the counter",
+  "margin": true
+ },
+ "el_incar": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 791.0,
+  "t1": 793.9,
+  "label": "Jason and Lucia sitting in a car",
+  "margin": true
+ },
+ "el_drive2": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 755.0,
+  "t1": 761.0,
+  "label": "Driving through Vice City (gameplay)",
+  "margin": true
+ },
+ "el_arrive": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1008.3,
+  "t1": 1013.0,
+  "label": "Jason and Lucia arrive together",
+  "margin": true
+ },
+ "el_couple": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1013.4,
+  "t1": 1017.0,
+  "label": "Jason and Lucia side by side",
+  "margin": true
+ },
+ "el_race": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1062.0,
+  "t1": 1066.5,
+  "label": "Street race (side activity)",
+  "margin": true
+ },
+ "el_airboat": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1030.1,
+  "t1": 1032.8,
+  "label": "Airboat in the swamp (side activity)",
+  "margin": true
+ },
+ "el_neon": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1240.0,
+  "t1": 1246.0,
+  "label": "Neon nightclub street at night",
+  "margin": true
  }
 }
