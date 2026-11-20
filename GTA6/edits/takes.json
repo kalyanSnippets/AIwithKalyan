@@ -1,17 +1,22 @@
 [
  {
   "line": "Guys\u2026 GTA 6 is finally here!",
-  "start": 31.31,
+  "start": 31.59,
   "end": 34.47,
   "score": 1.0,
-  "w0": 0,
-  "w1": 5,
-  "said": "Guys, GTA 6 is finally here.",
+  "w0": 10,
+  "w1": 15,
+  "said": "Guys, GTA 6 is finally here",
   "takes": [
    {
-    "start": 31.31,
+    "start": 31.59,
     "end": 34.47,
     "score": 1.0
+   },
+   {
+    "start": 44.05,
+    "end": 46.41,
+    "score": 0.909
    },
    {
     "start": 1057.07,
@@ -19,379 +24,364 @@
     "score": 0.6
    },
    {
-    "start": 1068.44,
-    "end": 1070.0,
-    "score": 0.6
-   },
-   {
-    "start": 1253.24,
-    "end": 1278.01,
+    "start": 1068.46,
+    "end": 1070.02,
     "score": 0.6
    }
   ]
  },
  {
   "line": "And honestly, after all these years of waiting, the technology behind this game is just fascinating!",
-  "start": 35.09,
-  "end": 52.44,
-  "score": 0.938,
-  "w0": 6,
-  "w1": 21,
-  "said": "And honestly, after all those years of waiting, the technology behind this game is just fascinating.",
+  "start": 46.87,
+  "end": 52.61,
+  "score": 1.0,
+  "w0": 37,
+  "w1": 52,
+  "said": "and honestly, after all these years of waiting, the technology behind this game is just fascinating.",
   "takes": [
    {
-    "start": 35.09,
-    "end": 52.44,
-    "score": 0.938
+    "start": 34.47,
+    "end": 40.35,
+    "score": 0.903
+   },
+   {
+    "start": 46.87,
+    "end": 52.61,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "But wait\u2026 here's something that might actually surprise you.",
-  "start": 112.26,
-  "end": 141.01,
+  "start": 138.03,
+  "end": 140.97,
   "score": 1.0,
-  "w0": 70,
-  "w1": 79,
-  "said": "but wait here is something that might actually surprise you",
+  "w0": 104,
+  "w1": 113,
+  "said": "but wait, here is something that might actually surprise you.",
   "takes": [
    {
-    "start": 52.98,
-    "end": 57.02,
+    "start": 53.05,
+    "end": 57.01,
     "score": 1.0
    },
    {
-    "start": 67.94,
-    "end": 71.26,
+    "start": 67.96,
+    "end": 71.24,
     "score": 0.889
    },
    {
-    "start": 112.26,
-    "end": 141.01,
+    "start": 138.03,
+    "end": 140.97,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Rockstar says they didn't use generative AI to build GTA 6's world.",
-  "start": 141.01,
-  "end": 146.95,
+  "start": 142.66,
+  "end": 146.96,
   "score": 1.0,
-  "w0": 80,
-  "w1": 90,
-  "said": "rockstar says they didn't use generative ai to build gts6 world",
+  "w0": 114,
+  "w1": 125,
+  "said": "Rockstar says they didn't use generative AI to build GTA 6 world.",
   "takes": [
    {
-    "start": 105.5,
-    "end": 110.56,
+    "start": 105.49,
+    "end": 110.57,
     "score": 1.0
    },
    {
-    "start": 141.01,
-    "end": 146.95,
+    "start": 142.66,
+    "end": 146.96,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Yeah\u2026 you heard that right!",
-  "start": 146.95,
-  "end": 149.05,
+  "start": 147.28,
+  "end": 149.06,
   "score": 1.0,
-  "w0": 91,
-  "w1": 95,
-  "said": "yeah you heard that right",
+  "w0": 126,
+  "w1": 130,
+  "said": "Yeah, you heard that right.",
   "takes": [
    {
-    "start": 110.56,
-    "end": 112.26,
+    "start": 111.03,
+    "end": 112.25,
     "score": 0.75
    },
    {
-    "start": 146.95,
-    "end": 149.05,
+    "start": 147.28,
+    "end": 149.06,
     "score": 1.0
    }
   ]
  },
  {
   "line": "No ChatGPT generating an entire city. No single AI prompt creating the whole game.",
-  "start": 151.17,
-  "end": 155.15,
-  "score": 0.923,
-  "w0": 101,
-  "w1": 112,
-  "said": "generating an entire city no single ai prompt creating the whole game",
+  "start": 149.58,
+  "end": 155.16,
+  "score": 1.0,
+  "w0": 131,
+  "w1": 144,
+  "said": "No ChatGPT generating an entire city. No single AI prompt creating the whole game.",
   "takes": [
    {
-    "start": 151.17,
-    "end": 155.15,
-    "score": 0.923
+    "start": 149.58,
+    "end": 155.16,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "So then\u2026 how did they make a world where people can notice you following them, police can react to your criminal history, and thousands of characters move so naturally?",
-  "start": 162.75,
-  "end": 177.46,
+  "start": 167.83,
+  "end": 177.31,
   "score": 1.0,
-  "w0": 137,
-  "w1": 165,
-  "said": "so then how did they make a world where people can notice you following them police can react to your criminal history and thousands of characters move so naturally.",
+  "w0": 163,
+  "w1": 191,
+  "said": "So then how did they make a world where people can notice you following them? Police can react to your criminal history and thousands of characters move so naturally.",
   "takes": [
    {
-    "start": 162.75,
-    "end": 177.46,
+    "start": 167.83,
+    "end": 177.31,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Well, that's where things get really interesting.",
-  "start": 178.64,
-  "end": 181.66,
+  "start": 178.98,
+  "end": 181.6,
   "score": 0.875,
-  "w0": 166,
-  "w1": 172,
-  "said": "Well that's where things really gets interesting",
+  "w0": 192,
+  "w1": 198,
+  "said": "Well, that's where things really get interesting,",
   "takes": [
    {
-    "start": 178.64,
-    "end": 181.66,
+    "start": 178.98,
+    "end": 181.6,
     "score": 0.875
    }
   ]
  },
  {
   "line": "Because today, I'm going to break down six technologies behind GTA 6, with simple examples.",
-  "start": 201.41,
+  "start": 198.57,
   "end": 206.15,
-  "score": 0.903,
-  "w0": 209,
-  "w1": 222,
-  "said": "today I'm going to break down six technologies behind GTS 6 with simple examples",
+  "score": 1.0,
+  "w0": 230,
+  "w1": 245,
+  "said": "Because today, I am going to break down 6 technologies behind GTA 6 with simple examples.",
   "takes": [
    {
-    "start": 181.66,
-    "end": 186.52,
-    "score": 0.828
+    "start": 182.26,
+    "end": 185.62,
+    "score": 0.815
    },
    {
-    "start": 187.64,
-    "end": 194.3,
-    "score": 0.903
+    "start": 187.96,
+    "end": 194.4,
+    "score": 0.968
    },
    {
-    "start": 201.41,
+    "start": 198.57,
     "end": 206.15,
-    "score": 0.903
+    "score": 1.0
    }
   ]
  },
  {
   "line": "And trust me\u2026 the last one changes how you might think about the future of gaming.",
-  "start": 206.15,
-  "end": 210.63,
+  "start": 206.65,
+  "end": 210.61,
   "score": 1.0,
-  "w0": 223,
-  "w1": 238,
-  "said": "and trust me the last one changes how you might think about the future of gaming",
+  "w0": 246,
+  "w1": 261,
+  "said": "And trust me, the last one changes how you might think about the future of gaming.",
   "takes": [
    {
-    "start": 206.15,
-    "end": 210.63,
+    "start": 206.65,
+    "end": 210.61,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Okay, before we get into those six technologies, there's one thing you need to understand.",
-  "start": 225.78,
-  "end": 232.42,
-  "score": 0.865,
-  "w0": 244,
-  "w1": 264,
-  "said": "okay before we get into those six technologies he there is one thing there is one thing you need to understand",
+  "start": 225.9,
+  "end": 232.4,
+  "score": 0.889,
+  "w0": 267,
+  "w1": 286,
+  "said": "okay, before we get into those 6 technologies, there is one thing, there is one thing you need to understand.",
   "takes": [
    {
-    "start": 225.78,
-    "end": 232.42,
-    "score": 0.865
+    "start": 225.9,
+    "end": 232.4,
+    "score": 0.889
    }
   ]
  },
  {
   "line": "See, whenever we hear the word AI nowadays, we immediately think about ChatGPT, Claude, or AI-generated videos, right?",
-  "start": 238.72,
-  "end": 247.96,
-  "score": 0.872,
-  "w0": 277,
-  "w1": 296,
-  "said": "see whenever we hear the word ai nowadays we immediately think about chat gpt cloud or ai generated videos right",
+  "start": 238.73,
+  "end": 247.97,
+  "score": 1.0,
+  "w0": 299,
+  "w1": 317,
+  "said": "see, whenever we hear the word AI nowadays, We immediately think about ChatGPT, Claude or AI -generated videos, right?",
   "takes": [
    {
-    "start": 238.72,
-    "end": 247.96,
-    "score": 0.872
+    "start": 238.73,
+    "end": 247.97,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "But here's the thing.",
-  "start": 247.96,
-  "end": 249.5,
+  "start": 248.55,
+  "end": 249.51,
   "score": 1.0,
-  "w0": 297,
-  "w1": 301,
-  "said": "but here is the thing",
+  "w0": 318,
+  "w1": 321,
+  "said": "But here's the thing,",
   "takes": [
    {
-    "start": 52.98,
-    "end": 54.88,
+    "start": 53.05,
+    "end": 54.89,
     "score": 0.667
    },
    {
-    "start": 62.86,
+    "start": 63.59,
     "end": 67.6,
     "score": 0.667
    },
    {
-    "start": 112.26,
+    "start": 138.03,
     "end": 139.19,
     "score": 0.667
    },
    {
-    "start": 247.96,
-    "end": 249.5,
+    "start": 248.55,
+    "end": 249.51,
     "score": 1.0
    },
    {
-    "start": 685.25,
-    "end": 686.29,
+    "start": 685.56,
+    "end": 686.28,
     "score": 0.75
    },
    {
-    "start": 757.15,
+    "start": 757.35,
     "end": 759.27,
     "score": 0.889
    },
    {
-    "start": 767.5,
-    "end": 768.3,
+    "start": 767.51,
+    "end": 768.31,
     "score": 0.889
    },
    {
-    "start": 834.01,
-    "end": 834.59,
-    "score": 0.75
-   },
-   {
-    "start": 836.25,
-    "end": 837.47,
+    "start": 834.02,
+    "end": 837.46,
     "score": 0.8
    },
    {
-    "start": 1097.67,
+    "start": 1097.87,
     "end": 1098.25,
     "score": 0.75
    },
    {
-    "start": 1099.39,
-    "end": 1100.39,
-    "score": 0.75
-   },
-   {
-    "start": 1110.03,
+    "start": 1110.45,
     "end": 1110.87,
-    "score": 0.75
-   },
-   {
-    "start": 1112.65,
-    "end": 1113.27,
     "score": 0.75
    }
   ]
  },
  {
   "line": "Games have been using AI for decades!",
-  "start": 249.5,
-  "end": 252.08,
+  "start": 249.73,
+  "end": 252.09,
   "score": 1.0,
-  "w0": 302,
-  "w1": 308,
-  "said": "Games have been using AI for decades.",
+  "w0": 322,
+  "w1": 328,
+  "said": "games have been using AI for decades.",
   "takes": [
    {
-    "start": 249.5,
-    "end": 252.08,
+    "start": 249.73,
+    "end": 252.09,
     "score": 1.0
    }
   ]
  },
  {
   "line": "For example, imagine you're playing GTA.",
-  "start": 252.48,
-  "end": 254.9,
+  "start": 252.45,
+  "end": 254.97,
   "score": 1.0,
-  "w0": 309,
-  "w1": 315,
+  "w0": 329,
+  "w1": 335,
   "said": "For example, imagine you are playing GTA,",
   "takes": [
    {
-    "start": 252.48,
-    "end": 254.9,
+    "start": 252.45,
+    "end": 254.97,
     "score": 1.0
    }
   ]
  },
  {
   "line": "You steal a car.",
-  "start": 255.26,
-  "end": 256.2,
+  "start": 255.33,
+  "end": 256.21,
   "score": 1.0,
-  "w0": 316,
-  "w1": 319,
+  "w0": 336,
+  "w1": 339,
   "said": "you steal a car,",
   "takes": [
    {
-    "start": 255.26,
-    "end": 256.2,
+    "start": 255.33,
+    "end": 256.21,
     "score": 1.0
    },
    {
     "start": 596.84,
-    "end": 597.32,
+    "end": 597.28,
     "score": 0.667
    }
   ]
  },
  {
   "line": "A police officer notices you.",
-  "start": 256.34,
-  "end": 258.02,
+  "start": 256.31,
+  "end": 257.99,
   "score": 1.0,
-  "w0": 320,
-  "w1": 324,
+  "w0": 340,
+  "w1": 344,
   "said": "a police officer notices you.",
   "takes": [
    {
-    "start": 256.34,
-    "end": 258.02,
+    "start": 256.31,
+    "end": 257.99,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And suddenly, police vehicles start chasing you.",
-  "start": 258.42,
+  "start": 258.46,
   "end": 264.48,
   "score": 1.0,
-  "w0": 325,
-  "w1": 331,
+  "w0": 345,
+  "w1": 351,
   "said": "And suddenly police vehicles start chasing you.",
   "takes": [
    {
-    "start": 258.42,
+    "start": 258.46,
     "end": 264.48,
     "score": 1.0
    }
@@ -402,8 +392,8 @@
   "start": 264.78,
   "end": 270.72,
   "score": 1.0,
-  "w0": 332,
-  "w1": 342,
+  "w0": 352,
+  "w1": 362,
   "said": "Now somebody has to decide how those police officers behave, right?",
   "takes": [
    {
@@ -415,21 +405,21 @@
  },
  {
   "line": "Well, that's traditional game AI.",
-  "start": 271.08,
-  "end": 272.82,
+  "start": 271.16,
+  "end": 272.78,
   "score": 1.0,
-  "w0": 343,
-  "w1": 347,
+  "w0": 363,
+  "w1": 367,
   "said": "Well, that's traditional game AI.",
   "takes": [
    {
-    "start": 176.86,
-    "end": 180.0,
+    "start": 176.89,
+    "end": 179.98,
     "score": 0.6
    },
    {
-    "start": 271.08,
-    "end": 272.82,
+    "start": 271.16,
+    "end": 272.78,
     "score": 1.0
    }
   ]
@@ -437,97 +427,97 @@
  {
   "line": "It's a combination of programmed rules, decision-making systems, and simulations.",
   "start": 273.34,
-  "end": 277.4,
-  "score": 0.957,
-  "w0": 348,
-  "w1": 357,
-  "said": "It's combination of programmed rules, decision -making systems and simulations.",
+  "end": 277.38,
+  "score": 1.0,
+  "w0": 368,
+  "w1": 378,
+  "said": "It's a combination of programmed rules, decision -making systems, and simulations.",
   "takes": [
    {
     "start": 273.34,
-    "end": 277.4,
-    "score": 0.957
+    "end": 277.38,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "And GTA 6 takes that kind of world-building much further.",
-  "start": 284.24,
-  "end": 289.94,
+  "start": 286.23,
+  "end": 289.95,
   "score": 1.0,
-  "w0": 370,
-  "w1": 379,
-  "said": "and gta6 takes that kind of world building much further",
+  "w0": 388,
+  "w1": 398,
+  "said": "And GTA 6 takes that kind of world building much further.",
   "takes": [
    {
-    "start": 281.32,
+    "start": 278.93,
     "end": 284.24,
-    "score": 0.8
+    "score": 0.9
    },
    {
-    "start": 284.24,
-    "end": 289.94,
+    "start": 286.23,
+    "end": 289.95,
     "score": 1.0
    }
   ]
  },
  {
   "line": "So\u2026 let's start with technology number one.",
-  "start": 289.94,
-  "end": 292.68,
+  "start": 290.23,
+  "end": 292.65,
   "score": 1.0,
-  "w0": 380,
-  "w1": 386,
-  "said": "so let's start with technology number one",
+  "w0": 399,
+  "w1": 405,
+  "said": "So let's start with technology number 1.",
   "takes": [
    {
-    "start": 289.94,
-    "end": 292.68,
+    "start": 290.23,
+    "end": 292.65,
     "score": 1.0
    }
   ]
  },
  {
   "line": "which is NPC behaviour",
-  "start": 301.83,
-  "end": 304.17,
+  "start": 302.48,
+  "end": 303.94,
   "score": 0.857,
-  "w0": 387,
-  "w1": 389,
-  "said": "which is npc",
+  "w0": 406,
+  "w1": 408,
+  "said": "Which is NPC,",
   "takes": [
    {
-    "start": 301.83,
-    "end": 304.17,
+    "start": 302.48,
+    "end": 303.94,
     "score": 0.857
    },
    {
-    "start": 440.21,
-    "end": 440.69,
+    "start": 435.56,
+    "end": 440.68,
     "score": 0.667
    },
    {
-    "start": 544.83,
-    "end": 545.37,
+    "start": 544.71,
+    "end": 545.39,
     "score": 0.667
    },
    {
-    "start": 561.47,
-    "end": 561.97,
+    "start": 561.74,
+    "end": 561.96,
     "score": 0.667
    },
    {
-    "start": 567.6,
-    "end": 568.2,
+    "start": 567.65,
+    "end": 568.19,
     "score": 0.667
    },
    {
-    "start": 746.82,
-    "end": 747.42,
+    "start": 747.23,
+    "end": 747.43,
     "score": 0.667
    },
    {
-    "start": 867.56,
+    "start": 867.6,
     "end": 869.38,
     "score": 0.667
    }
@@ -535,629 +525,634 @@
  },
  {
   "line": "Okay, imagine this.",
-  "start": 309.9,
+  "start": 310.18,
   "end": 311.1,
   "score": 1.0,
-  "w0": 393,
-  "w1": 395,
-  "said": "okay imagine this",
+  "w0": 412,
+  "w1": 414,
+  "said": "Okay. Imagine this.",
   "takes": [
    {
-    "start": 309.9,
+    "start": 310.18,
     "end": 311.1,
     "score": 1.0
    },
    {
-    "start": 442.03,
-    "end": 447.98,
+    "start": 446.91,
+    "end": 448.03,
     "score": 0.667
    }
   ]
  },
  {
   "line": "You're casually walking through Vice City.",
-  "start": 311.1,
-  "end": 313.34,
+  "start": 311.26,
+  "end": 313.32,
   "score": 0.933,
-  "w0": 396,
-  "w1": 403,
-  "said": "you are casually walking through a vice city",
+  "w0": 415,
+  "w1": 422,
+  "said": "You are casually walking through a Vice City.",
   "takes": [
    {
-    "start": 311.1,
-    "end": 313.34,
+    "start": 311.26,
+    "end": 313.32,
     "score": 0.933
+   },
+   {
+    "start": 448.19,
+    "end": 449.47,
+    "score": 0.615
+   },
+   {
+    "start": 933.72,
+    "end": 935.56,
+    "score": 0.615
    }
   ]
  },
  {
   "line": "You notice two people having a conversation.",
-  "start": 313.34,
-  "end": 315.88,
+  "start": 313.54,
+  "end": 315.86,
   "score": 1.0,
-  "w0": 404,
-  "w1": 410,
-  "said": "you notice two people having a conversation",
+  "w0": 423,
+  "w1": 429,
+  "said": "You notice two people having a conversation.",
   "takes": [
    {
-    "start": 313.34,
-    "end": 315.88,
+    "start": 313.54,
+    "end": 315.86,
     "score": 1.0
    }
   ]
  },
  {
   "line": "So, you stop nearby\u2026 just to listen.",
-  "start": 315.88,
-  "end": 318.48,
+  "start": 316.16,
+  "end": 318.5,
   "score": 1.0,
-  "w0": 411,
-  "w1": 417,
-  "said": "so you stop nearby just to listen",
+  "w0": 430,
+  "w1": 436,
+  "said": "So you stop nearby just to listen.",
   "takes": [
    {
-    "start": 315.88,
-    "end": 318.48,
+    "start": 316.16,
+    "end": 318.5,
     "score": 1.0
    },
    {
-    "start": 320.24,
-    "end": 325.16,
+    "start": 323.29,
+    "end": 325.17,
     "score": 0.923
    }
   ]
  },
  {
   "line": "But instead of standing there and ignoring you\u2026",
-  "start": 325.16,
-  "end": 328.58,
+  "start": 325.81,
+  "end": 328.57,
   "score": 1.0,
-  "w0": 428,
-  "w1": 435,
-  "said": "but instead of standing there and ignoring you",
+  "w0": 447,
+  "w1": 454,
+  "said": "But instead of standing there and ignoring you,",
   "takes": [
    {
-    "start": 318.48,
-    "end": 321.2,
+    "start": 318.8,
+    "end": 323.55,
     "score": 0.769
    },
    {
-    "start": 325.16,
-    "end": 328.58,
+    "start": 325.81,
+    "end": 328.57,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Those characters might actually notice that you're eavesdropping!",
-  "start": 336.82,
-  "end": 340.34,
+  "start": 334.59,
+  "end": 340.35,
   "score": 1.0,
-  "w0": 450,
-  "w1": 458,
-  "said": "those characters might actually notice that you are eavesdropping",
+  "w0": 463,
+  "w1": 471,
+  "said": "Those characters might actually notice that you are eavesdropping.",
   "takes": [
    {
-    "start": 328.58,
-    "end": 331.7,
+    "start": 329.05,
+    "end": 331.71,
     "score": 0.941
    },
    {
-    "start": 336.82,
-    "end": 340.34,
+    "start": 334.59,
+    "end": 340.35,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Bro\u2026 imagine getting caught being nosy by a video game character!",
-  "start": 353.0,
-  "end": 361.12,
+  "start": 357.53,
+  "end": 361.09,
   "score": 1.0,
-  "w0": 477,
-  "w1": 487,
-  "said": "Bro, imagine getting caught being nosy by a video game character?",
+  "w0": 496,
+  "w1": 506,
+  "said": "Bro, imagine getting caught being nosy by a video game character",
   "takes": [
    {
-    "start": 339.64,
-    "end": 344.8,
+    "start": 339.63,
+    "end": 344.83,
     "score": 0.667
    },
    {
-    "start": 348.2,
-    "end": 352.4,
-    "score": 1.0
+    "start": 348.78,
+    "end": 352.1,
+    "score": 0.952
    },
    {
-    "start": 353.0,
-    "end": 361.12,
+    "start": 352.36,
+    "end": 355.22,
+    "score": 0.667
+   },
+   {
+    "start": 357.53,
+    "end": 361.09,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And that's one of the interesting details Rockstar has discussed.",
-  "start": 366.06,
-  "end": 368.92,
+  "start": 365.59,
+  "end": 368.87,
   "score": 1.0,
-  "w0": 498,
-  "w1": 507,
-  "said": "And that's one of the interesting details Rockstar has discussed.",
+  "w0": 517,
+  "w1": 526,
+  "said": "and that's one of the interesting details Rockstar has discussed.",
   "takes": [
    {
-    "start": 361.62,
-    "end": 365.6,
+    "start": 361.09,
+    "end": 365.59,
     "score": 1.0
    },
    {
-    "start": 366.06,
-    "end": 368.92,
+    "start": 365.59,
+    "end": 368.87,
     "score": 1.0
    },
    {
-    "start": 768.06,
-    "end": 770.44,
+    "start": 768.07,
+    "end": 770.47,
     "score": 0.667
    }
   ]
  },
  {
   "line": "NPCs are designed to respond to situations like being followed or having their personal space interrupted.",
-  "start": 369.64,
-  "end": 377.42,
-  "score": 1.0,
-  "w0": 508,
-  "w1": 523,
-  "said": "NPCs are designed to respond to situations like being followed or having their personal space interrupted.",
+  "start": 369.52,
+  "end": 377.41,
+  "score": 0.97,
+  "w0": 527,
+  "w1": 543,
+  "said": "NPCs are designed to respond to situations like being followed or Or having their personal space interrupted.",
   "takes": [
    {
-    "start": 369.64,
-    "end": 377.42,
-    "score": 1.0
+    "start": 369.52,
+    "end": 377.41,
+    "score": 0.97
    }
   ]
  },
  {
   "line": "Now, why does this matter?",
-  "start": 377.92,
-  "end": 379.22,
+  "start": 377.83,
+  "end": 379.21,
   "score": 1.0,
-  "w0": 524,
-  "w1": 528,
-  "said": "Now why does this matter?",
+  "w0": 544,
+  "w1": 548,
+  "said": "Now, why does this matter?",
   "takes": [
    {
-    "start": 377.92,
-    "end": 379.22,
+    "start": 377.83,
+    "end": 379.21,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Because normally, you can walk around a game world and most background characters barely acknowledge you.",
-  "start": 385.22,
-  "end": 395.65,
+  "start": 389.94,
+  "end": 395.64,
   "score": 0.938,
-  "w0": 540,
-  "w1": 555,
-  "said": "because normally you can walk around the game world and most background characters barely acknowledge you",
+  "w0": 558,
+  "w1": 573,
+  "said": "Because normally, you can walk around the game world and most background characters barely acknowledge you.",
   "takes": [
    {
-    "start": 379.62,
-    "end": 385.22,
+    "start": 378.67,
+    "end": 385.21,
     "score": 0.667
    },
    {
-    "start": 385.22,
-    "end": 395.65,
+    "start": 389.94,
+    "end": 395.64,
     "score": 0.938
    }
   ]
  },
  {
   "line": "But when characters respond to your actions, even small interactions can feel more believable.",
-  "start": 395.65,
-  "end": 401.09,
+  "start": 395.88,
+  "end": 401.1,
   "score": 0.963,
-  "w0": 556,
-  "w1": 568,
-  "said": "but when characters respond to your actions even small interactions feel more believable",
+  "w0": 574,
+  "w1": 586,
+  "said": "But when characters respond to your actions, even small interactions feel more believable.",
   "takes": [
    {
-    "start": 395.65,
-    "end": 401.09,
+    "start": 395.88,
+    "end": 401.1,
     "score": 0.963
    }
   ]
  },
  {
   "line": "And if you think that's interesting\u2026 wait until you hear how the police system works.",
-  "start": 401.09,
-  "end": 406.87,
+  "start": 402.19,
+  "end": 406.89,
   "score": 0.968,
-  "w0": 569,
-  "w1": 582,
-  "said": "and if you think that's interesting wait until you hear how police system works",
+  "w0": 587,
+  "w1": 600,
+  "said": "And if you think that's interesting, wait until you hear how police system works.",
   "takes": [
    {
-    "start": 401.09,
-    "end": 406.87,
+    "start": 402.19,
+    "end": 406.89,
     "score": 0.968
    }
   ]
  },
  {
   "line": "Because this next one could completely change the way you escape a crime.",
-  "start": 409.27,
-  "end": 414.15,
+  "start": 409.74,
+  "end": 414.12,
   "score": 1.0,
-  "w0": 585,
-  "w1": 597,
-  "said": "because this next one could completely change the way you escape a crime",
+  "w0": 603,
+  "w1": 615,
+  "said": "Because this next one could completely change the way you escape a crime.",
   "takes": [
    {
-    "start": 409.27,
-    "end": 414.15,
+    "start": 409.74,
+    "end": 414.12,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Okay, picture this.",
-  "start": 442.03,
-  "end": 447.98,
+  "start": 446.91,
+  "end": 448.03,
   "score": 1.0,
-  "w0": 629,
-  "w1": 631,
-  "said": "okay picture this",
+  "w0": 638,
+  "w1": 640,
+  "said": "Okay, picture this.",
   "takes": [
    {
-    "start": 309.9,
+    "start": 310.18,
     "end": 311.1,
     "score": 0.667
    },
    {
-    "start": 442.03,
-    "end": 447.98,
+    "start": 446.91,
+    "end": 448.03,
     "score": 1.0
    }
   ]
  },
  {
   "line": "You're driving around Vice City.",
-  "start": 447.98,
-  "end": 449.44,
-  "score": 0.833,
-  "w0": 632,
-  "w1": 637,
-  "said": "you are driving around y city",
+  "start": 448.19,
+  "end": 449.47,
+  "score": 1.0,
+  "w0": 641,
+  "w1": 646,
+  "said": "You are driving around Vice City.",
   "takes": [
    {
-    "start": 447.98,
-    "end": 449.44,
-    "score": 0.833
+    "start": 448.19,
+    "end": 449.47,
+    "score": 1.0
    },
    {
-    "start": 933.26,
-    "end": 934.56,
-    "score": 0.6
-   },
-   {
-    "start": 937.42,
-    "end": 938.44,
-    "score": 0.6
+    "start": 933.72,
+    "end": 935.56,
+    "score": 0.667
    }
   ]
  },
  {
   "line": "You commit a crime.",
-  "start": 449.44,
-  "end": 450.74,
+  "start": 449.63,
+  "end": 450.79,
   "score": 1.0,
-  "w0": 638,
-  "w1": 641,
-  "said": "you commit a crime",
+  "w0": 647,
+  "w1": 650,
+  "said": "You commit a crime.",
   "takes": [
    {
-    "start": 413.07,
-    "end": 414.15,
+    "start": 413.1,
+    "end": 414.12,
     "score": 0.75
    },
    {
-    "start": 449.44,
-    "end": 450.74,
+    "start": 449.63,
+    "end": 450.79,
     "score": 1.0
    },
    {
-    "start": 504.63,
-    "end": 505.07,
+    "start": 504.64,
+    "end": 505.08,
     "score": 0.667
    }
   ]
  },
  {
   "line": "The police see your car\u2026 your clothes\u2026 maybe even your face.",
-  "start": 456.1,
-  "end": 461.02,
+  "start": 457.83,
+  "end": 461.05,
   "score": 1.0,
-  "w0": 648,
-  "w1": 658,
-  "said": "the police see your car your clothes maybe even your face",
+  "w0": 657,
+  "w1": 667,
+  "said": "The police see your car, your clothes, maybe even your face",
   "takes": [
    {
-    "start": 450.46,
-    "end": 456.1,
-    "score": 0.667
-   },
-   {
-    "start": 456.1,
-    "end": 461.02,
+    "start": 457.83,
+    "end": 461.05,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And somehow, you manage to escape.",
-  "start": 461.02,
-  "end": 462.94,
+  "start": 461.05,
+  "end": 462.93,
   "score": 1.0,
-  "w0": 659,
-  "w1": 664,
-  "said": "and somehow you manage to escape",
+  "w0": 668,
+  "w1": 673,
+  "said": "and somehow you manage to escape.",
   "takes": [
    {
-    "start": 461.02,
-    "end": 462.94,
+    "start": 461.05,
+    "end": 462.93,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Now, in a typical game, once the wanted level disappears, you might feel like everything's back to normal.",
-  "start": 472.44,
-  "end": 488.35,
-  "score": 0.919,
-  "w0": 684,
-  "w1": 702,
-  "said": "Now in a typical game, once the wanted level disappears, you might feel like everything is back to normal.",
+  "start": 463.25,
+  "end": 469.11,
+  "score": 1.0,
+  "w0": 674,
+  "w1": 691,
+  "said": "Now in a typical game, once the wanted level disappears, you might feel like everything's back to normal.",
   "takes": [
    {
-    "start": 462.94,
-    "end": 469.16,
-    "score": 0.919
+    "start": 463.25,
+    "end": 469.11,
+    "score": 1.0
    },
    {
-    "start": 472.44,
-    "end": 488.35,
+    "start": 472.68,
+    "end": 480.6,
+    "score": 0.909
+   },
+   {
+    "start": 482.96,
+    "end": 488.36,
     "score": 0.919
    }
   ]
  },
  {
   "line": "But GTA 6 introduces something called the Criminal Profile system.",
-  "start": 488.55,
-  "end": 493.11,
+  "start": 488.66,
+  "end": 493.1,
   "score": 1.0,
-  "w0": 703,
-  "w1": 712,
-  "said": "But GTA 6 introduces something called the criminal profile system.",
+  "w0": 726,
+  "w1": 735,
+  "said": "But GTA 6 introduces something called the Criminal Profile System.",
   "takes": [
    {
-    "start": 488.55,
-    "end": 493.11,
+    "start": 488.66,
+    "end": 493.1,
     "score": 1.0
    }
   ]
  },
  {
   "line": "The idea is that details associated with your criminal behaviour can affect how the world responds to you.",
-  "start": 495.89,
-  "end": 501.95,
+  "start": 496.26,
+  "end": 501.96,
   "score": 0.889,
-  "w0": 713,
-  "w1": 730,
+  "w0": 741,
+  "w1": 758,
   "said": "The idea is that details associated with your crime behavior can affect how the world responds to you.",
   "takes": [
    {
-    "start": 495.89,
-    "end": 501.95,
+    "start": 496.26,
+    "end": 501.96,
     "score": 0.889
    }
   ]
  },
  {
   "line": "So, for example, an outfit connected to a crime could become something you need to think about.",
-  "start": 502.29,
-  "end": 507.35,
+  "start": 502.36,
+  "end": 507.32,
   "score": 1.0,
-  "w0": 731,
-  "w1": 747,
+  "w0": 759,
+  "w1": 775,
   "said": "So for example, an outfit connected to a crime could become something you need to think about.",
   "takes": [
    {
-    "start": 502.29,
-    "end": 507.35,
+    "start": 502.36,
+    "end": 507.32,
     "score": 1.0
    }
   ]
  },
  {
   "line": "I mean\u2026 suddenly, escaping isn't just about driving faster!",
-  "start": 508.09,
-  "end": 512.37,
+  "start": 507.88,
+  "end": 512.38,
   "score": 1.0,
-  "w0": 748,
-  "w1": 756,
+  "w0": 776,
+  "w1": 784,
   "said": "I mean suddenly escaping isn't just about driving faster.",
   "takes": [
    {
-    "start": 508.09,
-    "end": 512.37,
+    "start": 507.88,
+    "end": 512.38,
     "score": 1.0
    }
   ]
  },
  {
   "line": "It's also about what people saw and what information might still matter.",
-  "start": 512.69,
-  "end": 518.47,
+  "start": 512.72,
+  "end": 518.46,
   "score": 1.0,
-  "w0": 757,
-  "w1": 768,
+  "w0": 785,
+  "w1": 796,
   "said": "It's also about what people saw and what information might still matter.",
   "takes": [
    {
-    "start": 512.69,
-    "end": 518.47,
+    "start": 512.72,
+    "end": 518.46,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And that's a fascinating direction for game AI.",
-  "start": 518.75,
-  "end": 522.53,
+  "start": 520.06,
+  "end": 522.58,
   "score": 1.0,
-  "w0": 769,
-  "w1": 776,
+  "w0": 797,
+  "w1": 804,
   "said": "And that's a fascinating direction for game AI.",
   "takes": [
    {
-    "start": 518.75,
-    "end": 522.53,
+    "start": 520.06,
+    "end": 522.58,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But okay\u2026 NPC behaviour is one thing.",
-  "start": 522.53,
-  "end": 525.89,
+  "start": 523.02,
+  "end": 525.88,
   "score": 0.857,
-  "w0": 777,
-  "w1": 783,
+  "w0": 805,
+  "w1": 811,
   "said": "But okay, NPC behavior is one thing.",
   "takes": [
    {
-    "start": 522.53,
-    "end": 525.89,
+    "start": 523.02,
+    "end": 525.88,
     "score": 0.857
    }
   ]
  },
  {
   "line": "How do you make thousands of completely different people move naturally?",
-  "start": 526.09,
-  "end": 529.63,
+  "start": 526.1,
+  "end": 529.62,
   "score": 1.0,
-  "w0": 784,
-  "w1": 794,
+  "w0": 812,
+  "w1": 822,
   "said": "How do you make thousands of completely different people move naturally?",
   "takes": [
    {
-    "start": 526.09,
-    "end": 529.63,
+    "start": 526.1,
+    "end": 529.62,
     "score": 1.0
    }
   ]
  },
  {
   "line": "That's technology number three.",
-  "start": 565.88,
-  "end": 567.3,
+  "start": 565.89,
+  "end": 567.29,
   "score": 1.0,
-  "w0": 824,
-  "w1": 827,
-  "said": "that's technology number three,",
+  "w0": 852,
+  "w1": 855,
+  "said": "that's technology number 3,",
   "takes": [
    {
-    "start": 433.15,
-    "end": 434.35,
+    "start": 433.2,
+    "end": 434.32,
     "score": 0.6
    },
    {
-    "start": 438.31,
-    "end": 439.43,
-    "score": 0.6
-   },
-   {
-    "start": 530.59,
-    "end": 532.03,
+    "start": 530.26,
+    "end": 531.98,
     "score": 1.0
    },
    {
-    "start": 534.45,
-    "end": 535.89,
+    "start": 534.48,
+    "end": 535.86,
     "score": 1.0
    },
    {
-    "start": 543.29,
-    "end": 544.73,
+    "start": 543.17,
+    "end": 544.71,
     "score": 1.0
    },
    {
-    "start": 559.89,
-    "end": 561.31,
+    "start": 559.92,
+    "end": 561.3,
     "score": 1.0
    },
    {
-    "start": 565.88,
-    "end": 567.3,
+    "start": 565.89,
+    "end": 567.29,
     "score": 1.0
    },
    {
-    "start": 744.88,
-    "end": 745.88,
+    "start": 744.91,
+    "end": 745.91,
     "score": 0.667
    }
   ]
  },
  {
   "line": "which is animation retargeting",
-  "start": 567.6,
-  "end": 569.58,
+  "start": 567.65,
+  "end": 569.57,
   "score": 1.0,
-  "w0": 828,
-  "w1": 831,
+  "w0": 856,
+  "w1": 859,
   "said": "which is animation retargeting.",
   "takes": [
    {
-    "start": 301.83,
-    "end": 303.11,
+    "start": 302.48,
+    "end": 303.1,
     "score": 0.667
    },
    {
-    "start": 440.21,
-    "end": 440.69,
+    "start": 435.56,
+    "end": 440.68,
     "score": 0.667
    },
    {
-    "start": 544.83,
-    "end": 545.37,
+    "start": 544.71,
+    "end": 545.39,
     "score": 0.667
    },
    {
-    "start": 561.47,
-    "end": 563.41,
+    "start": 561.74,
+    "end": 563.42,
     "score": 1.0
    },
    {
-    "start": 567.6,
-    "end": 569.58,
+    "start": 567.65,
+    "end": 569.57,
     "score": 1.0
    },
    {
-    "start": 640.29,
-    "end": 641.79,
+    "start": 640.27,
+    "end": 641.77,
     "score": 0.667
    },
    {
-    "start": 746.82,
-    "end": 747.42,
+    "start": 747.23,
+    "end": 747.43,
     "score": 0.667
    },
    {
-    "start": 867.56,
+    "start": 867.6,
     "end": 869.38,
     "score": 0.667
    }
@@ -1165,153 +1160,163 @@
  },
  {
   "line": "Now, here's something most people probably won't even notice while playing.",
-  "start": 570.7,
-  "end": 574.54,
+  "start": 571.08,
+  "end": 574.58,
   "score": 1.0,
-  "w0": 832,
-  "w1": 843,
+  "w0": 860,
+  "w1": 871,
   "said": "Now here is something most people probably won't even notice while playing.",
   "takes": [
    {
-    "start": 570.7,
-    "end": 574.54,
+    "start": 571.08,
+    "end": 574.58,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But developers spend an incredible amount of time solving this problem.",
-  "start": 575.12,
+  "start": 583.9,
   "end": 587.6,
-  "score": 1.0,
-  "w0": 844,
-  "w1": 854,
-  "said": "But developers spend an incredible amount of time solving this problem.",
+  "score": 0.952,
+  "w0": 886,
+  "w1": 895,
+  "said": "But developers spend incredible amount of time solving this problem.",
   "takes": [
    {
-    "start": 575.12,
+    "start": 579.0,
+    "end": 581.86,
+    "score": 0.842
+   },
+   {
+    "start": 583.9,
     "end": 587.6,
-    "score": 1.0
+    "score": 0.952
    }
   ]
  },
  {
   "line": "Imagine you've created one animation of a character sitting inside a car.",
-  "start": 588.64,
-  "end": 597.32,
+  "start": 588.58,
+  "end": 597.28,
   "score": 1.0,
-  "w0": 855,
-  "w1": 867,
+  "w0": 896,
+  "w1": 908,
   "said": "Imagine you have created one animation of a character sitting inside a car.",
   "takes": [
    {
-    "start": 588.64,
-    "end": 597.32,
+    "start": 588.58,
+    "end": 597.28,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Sounds simple, right?",
-  "start": 597.98,
-  "end": 599.26,
+  "start": 598.26,
+  "end": 599.28,
   "score": 1.0,
-  "w0": 868,
-  "w1": 870,
-  "said": "Sounds simple right?",
+  "w0": 909,
+  "w1": 911,
+  "said": "Sounds simple, right?",
   "takes": [
    {
-    "start": 597.98,
-    "end": 599.26,
+    "start": 598.26,
+    "end": 599.28,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But what happens when a much taller character tries to use that same animation?",
-  "start": 612.68,
-  "end": 620.21,
+  "start": 616.18,
+  "end": 620.2,
   "score": 1.0,
-  "w0": 893,
-  "w1": 906,
-  "said": "but what happens when a much taller character tries to use that same animation",
+  "w0": 946,
+  "w1": 959,
+  "said": "But what happens when a much taller character tries to use that same animation",
   "takes": [
    {
     "start": 599.5,
-    "end": 603.74,
+    "end": 603.7,
     "score": 1.0
    },
    {
-    "start": 612.68,
-    "end": 620.21,
+    "start": 606.16,
+    "end": 610.2,
+    "score": 1.0
+   },
+   {
+    "start": 616.18,
+    "end": 620.2,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Or someone with different body proportions?",
-  "start": 620.21,
-  "end": 622.13,
+  "start": 620.2,
+  "end": 622.12,
   "score": 0.833,
-  "w0": 907,
-  "w1": 912,
+  "w0": 960,
+  "w1": 965,
   "said": "or someone with a different body",
   "takes": [
    {
-    "start": 610.18,
-    "end": 612.68,
+    "start": 610.2,
+    "end": 612.66,
     "score": 1.0
    },
    {
-    "start": 620.21,
-    "end": 622.13,
+    "start": 620.2,
+    "end": 622.12,
     "score": 0.833
    }
   ]
  },
  {
   "line": "Their hands might not reach the steering wheel properly.",
-  "start": 626.57,
-  "end": 632.31,
+  "start": 627.25,
+  "end": 632.27,
   "score": 1.0,
-  "w0": 914,
-  "w1": 922,
-  "said": "their hands might not reach the steering wheel properly",
+  "w0": 967,
+  "w1": 975,
+  "said": "Their hands might not reach the steering wheel properly,",
   "takes": [
    {
-    "start": 626.57,
-    "end": 632.31,
+    "start": 627.25,
+    "end": 632.27,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Their legs might not line up with the seat.",
-  "start": 632.31,
-  "end": 634.77,
+  "start": 632.67,
+  "end": 634.79,
   "score": 1.0,
-  "w0": 923,
-  "w1": 931,
+  "w0": 976,
+  "w1": 984,
   "said": "their legs might not line up with the seat",
   "takes": [
    {
-    "start": 632.31,
-    "end": 634.77,
+    "start": 632.67,
+    "end": 634.79,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And suddenly\u2026 the animation looks weird!",
-  "start": 634.77,
+  "start": 634.79,
   "end": 637.07,
   "score": 1.0,
-  "w0": 932,
-  "w1": 937,
-  "said": "and suddenly the animation looks weird",
+  "w0": 985,
+  "w1": 990,
+  "said": "and suddenly the animation looks weird.",
   "takes": [
    {
-    "start": 634.77,
+    "start": 634.79,
     "end": 637.07,
     "score": 1.0
    }
@@ -1319,279 +1324,259 @@
  },
  {
   "line": "So Rockstar developed technology called runtime animation retargeting.",
-  "start": 637.07,
-  "end": 641.79,
+  "start": 637.83,
+  "end": 641.77,
   "score": 0.941,
-  "w0": 938,
-  "w1": 946,
-  "said": "so the rockstar developed technology called runtime animation retargeting",
+  "w0": 991,
+  "w1": 999,
+  "said": "So the Rockstar developed technology called runtime animation retargeting.",
   "takes": [
    {
-    "start": 637.07,
-    "end": 641.79,
+    "start": 637.83,
+    "end": 641.77,
     "score": 0.941
    }
   ]
  },
  {
   "line": "Basically, it helps adapt animations to different characters while the game is running.",
-  "start": 650.91,
-  "end": 655.89,
+  "start": 649.18,
+  "end": 655.88,
   "score": 0.963,
-  "w0": 965,
-  "w1": 978,
-  "said": "basically it helps adapt animations to different characters while the game is still running",
+  "w0": 1014,
+  "w1": 1027,
+  "said": "Basically it helps adapt animations to different characters while the game is still running.",
   "takes": [
    {
-    "start": 641.79,
-    "end": 647.61,
-    "score": 0.857
+    "start": 642.05,
+    "end": 647.57,
+    "score": 0.963
    },
    {
-    "start": 650.91,
-    "end": 655.89,
+    "start": 649.18,
+    "end": 655.88,
     "score": 0.963
    }
   ]
  },
  {
   "line": "And when you multiply that across a huge population of characters\u2026",
-  "start": 665.52,
-  "end": 671.12,
+  "start": 668.02,
+  "end": 671.1,
   "score": 1.0,
-  "w0": 1003,
-  "w1": 1013,
-  "said": "and when you multiply that across a huge population of characters",
+  "w0": 1052,
+  "w1": 1062,
+  "said": "And when you multiply that across a huge population of characters,",
   "takes": [
    {
-    "start": 655.89,
-    "end": 661.04,
+    "start": 657.84,
+    "end": 661.02,
     "score": 1.0
    },
    {
-    "start": 665.52,
-    "end": 671.12,
+    "start": 668.02,
+    "end": 671.1,
     "score": 1.0
    }
   ]
  },
  {
   "line": "You start to understand how much engineering goes into making a city feel natural.",
-  "start": 679.67,
-  "end": 684.05,
+  "start": 680.04,
+  "end": 684.0,
   "score": 1.0,
-  "w0": 1028,
-  "w1": 1041,
+  "w0": 1077,
+  "w1": 1090,
   "said": "You start to understand how much engineering goes into making a city feel natural.",
   "takes": [
    {
-    "start": 661.04,
+    "start": 661.36,
     "end": 664.2,
     "score": 0.75
    },
    {
-    "start": 671.12,
-    "end": 675.72,
+    "start": 671.56,
+    "end": 675.64,
     "score": 1.0
    },
    {
-    "start": 679.67,
-    "end": 684.05,
+    "start": 680.04,
+    "end": 684.0,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But here's where it gets even more interesting.",
-  "start": 685.25,
-  "end": 690.95,
+  "start": 685.56,
+  "end": 690.94,
   "score": 1.0,
-  "w0": 1042,
-  "w1": 1050,
-  "said": "But here is where it gets even more interesting.",
+  "w0": 1091,
+  "w1": 1099,
+  "said": "But here is where it gets even more interesting",
   "takes": [
    {
-    "start": 685.25,
-    "end": 690.95,
+    "start": 685.56,
+    "end": 690.94,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Because Rockstar isn't just simulating individual characters.",
-  "start": 691.29,
-  "end": 694.89,
+  "start": 696.81,
+  "end": 702.67,
   "score": 0.875,
-  "w0": 1051,
-  "w1": 1058,
-  "said": "Because Rockstar is not just stimulating individual characters.",
+  "w0": 1108,
+  "w1": 1115,
+  "said": "Because Rockstar is not just stimulating individual characters,",
   "takes": [
    {
-    "start": 691.29,
-    "end": 694.89,
+    "start": 690.94,
+    "end": 694.8,
+    "score": 0.875
+   },
+   {
+    "start": 696.81,
+    "end": 702.67,
     "score": 0.875
    }
   ]
  },
  {
   "line": "It's also building systems around how characters interact with each other.",
-  "start": 712.71,
-  "end": 716.43,
+  "start": 708.93,
+  "end": 716.41,
   "score": 1.0,
-  "w0": 1079,
-  "w1": 1090,
-  "said": "it is also building systems around how characters interact with each other",
+  "w0": 1127,
+  "w1": 1138,
+  "said": "It is also building systems around how characters interact with each other.",
   "takes": [
    {
-    "start": 702.63,
-    "end": 706.59,
+    "start": 703.23,
+    "end": 706.55,
     "score": 0.957
    },
    {
-    "start": 706.59,
-    "end": 712.35,
-    "score": 0.6
-   },
-   {
-    "start": 712.71,
-    "end": 716.43,
+    "start": 708.93,
+    "end": 716.41,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And that is where technology 4 comes in, which is character relationships",
-  "start": 742.94,
-  "end": 748.58,
+  "start": 744.59,
+  "end": 748.41,
   "score": 1.0,
-  "w0": 1096,
-  "w1": 1107,
-  "said": "and that is where technology 4 comes in which is character relationships",
+  "w0": 1144,
+  "w1": 1155,
+  "said": "And that is where technology 4 comes in, which is character relationships.",
   "takes": [
    {
-    "start": 430.89,
-    "end": 435.31,
-    "score": 0.667
-   },
-   {
-    "start": 436.75,
-    "end": 440.69,
+    "start": 432.86,
+    "end": 440.68,
     "score": 0.783
    },
    {
-    "start": 536.09,
-    "end": 545.37,
+    "start": 542.41,
+    "end": 545.39,
     "score": 0.6
    },
    {
-    "start": 546.95,
-    "end": 561.97,
+    "start": 559.56,
+    "end": 561.96,
     "score": 0.6
    },
    {
-    "start": 565.48,
-    "end": 568.2,
+    "start": 565.57,
+    "end": 568.19,
     "score": 0.6
    },
    {
-    "start": 742.94,
-    "end": 748.58,
+    "start": 744.59,
+    "end": 748.41,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Now, you already know GTA 6 has two main characters: Jason and Lucia.",
-  "start": 762.54,
-  "end": 767.36,
+  "start": 763.17,
+  "end": 767.37,
   "score": 1.0,
-  "w0": 1127,
-  "w1": 1139,
-  "said": "Now you already know GTA 6 has two main characters, Jason and Lucia,",
+  "w0": 1175,
+  "w1": 1187,
+  "said": "Now you already know, GTA 6 has two main characters, Jason and Lucia,",
   "takes": [
    {
-    "start": 752.38,
-    "end": 757.15,
+    "start": 752.37,
+    "end": 757.17,
     "score": 1.0
    },
    {
-    "start": 762.54,
-    "end": 767.36,
+    "start": 763.17,
+    "end": 767.37,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But here's the interesting part.",
-  "start": 767.5,
-  "end": 768.96,
+  "start": 767.51,
+  "end": 768.97,
   "score": 1.0,
-  "w0": 1140,
-  "w1": 1145,
-  "said": "but here is the interesting part.",
+  "w0": 1188,
+  "w1": 1193,
+  "said": "but here is the interesting part,",
   "takes": [
    {
-    "start": 52.98,
-    "end": 54.88,
+    "start": 53.05,
+    "end": 54.89,
     "score": 0.6
    },
    {
-    "start": 62.86,
+    "start": 63.59,
     "end": 67.6,
     "score": 0.6
    },
    {
-    "start": 112.26,
+    "start": 138.03,
     "end": 139.19,
     "score": 0.6
    },
    {
-    "start": 247.96,
-    "end": 249.3,
+    "start": 248.55,
+    "end": 249.29,
     "score": 0.8
    },
    {
-    "start": 683.67,
-    "end": 686.29,
+    "start": 683.68,
+    "end": 686.28,
     "score": 0.6
    },
    {
-    "start": 757.15,
-    "end": 759.95,
+    "start": 757.35,
+    "end": 759.93,
     "score": 1.0
    },
    {
-    "start": 767.5,
-    "end": 768.96,
+    "start": 767.51,
+    "end": 768.97,
     "score": 1.0
    },
    {
-    "start": 832.97,
-    "end": 834.59,
+    "start": 833.46,
+    "end": 834.6,
     "score": 0.6
    },
    {
-    "start": 834.59,
-    "end": 836.79,
-    "score": 0.6
-   },
-   {
-    "start": 1095.51,
-    "end": 1098.25,
-    "score": 0.6
-   },
-   {
-    "start": 1099.39,
+    "start": 1097.87,
     "end": 1101.05,
     "score": 0.727
    },
    {
-    "start": 1105.67,
-    "end": 1110.87,
-    "score": 0.6
-   },
-   {
-    "start": 1112.65,
+    "start": 1110.45,
     "end": 1113.93,
     "score": 0.727
    }
@@ -1599,324 +1584,299 @@
  },
  {
   "line": "Rockstar has discussed AI systems designed to support their interactions as a couple.",
-  "start": 769.46,
-  "end": 780.41,
+  "start": 775.96,
+  "end": 780.42,
   "score": 1.0,
-  "w0": 1146,
-  "w1": 1158,
+  "w0": 1207,
+  "w1": 1219,
   "said": "Rockstar has discussed AI systems designed to support their interactions as a couple.",
   "takes": [
    {
-    "start": 769.46,
-    "end": 780.41,
+    "start": 769.35,
+    "end": 773.83,
+    "score": 1.0
+   },
+   {
+    "start": 775.96,
+    "end": 780.42,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Think about that for a second.",
-  "start": 791.23,
-  "end": 794.63,
+  "start": 791.36,
+  "end": 794.62,
   "score": 1.0,
-  "w0": 1180,
-  "w1": 1185,
+  "w0": 1241,
+  "w1": 1246,
   "said": "Think about that for a second.",
   "takes": [
    {
-    "start": 780.63,
-    "end": 782.19,
+    "start": 780.7,
+    "end": 782.18,
     "score": 1.0
    },
    {
-    "start": 791.23,
-    "end": 794.63,
+    "start": 791.36,
+    "end": 794.62,
     "score": 1.0
    }
   ]
  },
  {
   "line": "In a normal game, a character might just follow you because the mission says so.",
-  "start": 794.63,
-  "end": 799.11,
+  "start": 794.9,
+  "end": 799.1,
   "score": 1.0,
-  "w0": 1186,
-  "w1": 1200,
+  "w0": 1247,
+  "w1": 1261,
   "said": "In a normal game, a character might just follow you because the mission says so.",
   "takes": [
    {
-    "start": 782.53,
-    "end": 786.27,
+    "start": 782.48,
+    "end": 786.28,
     "score": 0.966
    },
    {
-    "start": 794.63,
-    "end": 799.11,
+    "start": 794.9,
+    "end": 799.1,
     "score": 1.0
-   },
-   {
-    "start": 799.73,
-    "end": 802.87,
-    "score": 0.846
    }
   ]
  },
  {
   "line": "But when you're designing a believable relationship, you need much more than that.",
-  "start": 804.13,
-  "end": 808.85,
+  "start": 804.34,
+  "end": 808.86,
   "score": 0.966,
-  "w0": 1212,
-  "w1": 1226,
+  "w0": 1262,
+  "w1": 1276,
   "said": "But when you are designing a believable relationship, you might need much more than that.",
   "takes": [
    {
-    "start": 804.13,
-    "end": 808.85,
+    "start": 804.34,
+    "end": 808.86,
     "score": 0.966
    }
   ]
  },
  {
   "line": "Characters need to move together, react to situations, and participate in activities in ways that make sense.",
-  "start": 809.41,
-  "end": 815.11,
+  "start": 809.4,
+  "end": 815.14,
   "score": 1.0,
-  "w0": 1227,
-  "w1": 1243,
+  "w0": 1277,
+  "w1": 1293,
   "said": "Characters need to move together, react to situations and participate in activities in ways that make sense.",
   "takes": [
    {
-    "start": 809.41,
-    "end": 815.11,
+    "start": 809.4,
+    "end": 815.14,
     "score": 1.0
    }
   ]
  },
  {
   "line": "For example, imagine two characters arriving at a location together.",
-  "start": 815.93,
-  "end": 821.07,
+  "start": 817.76,
+  "end": 821.06,
   "score": 1.0,
-  "w0": 1244,
-  "w1": 1253,
+  "w0": 1296,
+  "w1": 1305,
   "said": "For example, imagine two characters arriving at a location together.",
   "takes": [
    {
-    "start": 815.93,
-    "end": 821.07,
+    "start": 817.76,
+    "end": 821.06,
     "score": 1.0
    }
   ]
  },
  {
   "line": "One might need to wait, reposition, or react to what the other character is doing.",
-  "start": 822.95,
-  "end": 828.57,
+  "start": 821.48,
+  "end": 828.56,
   "score": 1.0,
-  "w0": 1259,
-  "w1": 1273,
-  "said": "one might need to wait reposition or react to what the other character is doing",
+  "w0": 1306,
+  "w1": 1320,
+  "said": "One might need to wait, reposition or react to what the other character is doing.",
   "takes": [
    {
-    "start": 822.95,
-    "end": 828.57,
+    "start": 821.48,
+    "end": 828.56,
     "score": 1.0
    }
   ]
  },
  {
   "line": "That's the kind of coordination game developers have to solve.",
-  "start": 828.57,
-  "end": 832.97,
+  "start": 829.86,
+  "end": 832.98,
   "score": 0.909,
-  "w0": 1274,
-  "w1": 1283,
-  "said": "that's a kind of coordination game developers have to solve",
+  "w0": 1321,
+  "w1": 1330,
+  "said": "That's a kind of coordination game developers have to solve.",
   "takes": [
    {
-    "start": 828.57,
-    "end": 832.97,
+    "start": 829.86,
+    "end": 832.98,
     "score": 0.909
    }
   ]
  },
  {
   "line": "And here's the important thing.",
-  "start": 834.59,
-  "end": 837.47,
+  "start": 833.46,
+  "end": 837.46,
   "score": 1.0,
-  "w0": 1288,
-  "w1": 1293,
-  "said": "and here is the important thing",
+  "w0": 1331,
+  "w1": 1336,
+  "said": "And here is the important thing.",
   "takes": [
    {
-    "start": 248.82,
-    "end": 249.5,
+    "start": 248.83,
+    "end": 249.51,
     "score": 0.8
    },
    {
-    "start": 756.49,
+    "start": 756.37,
     "end": 759.27,
     "score": 0.667
    },
    {
-    "start": 766.64,
-    "end": 768.3,
+    "start": 766.63,
+    "end": 768.31,
     "score": 0.667
    },
    {
-    "start": 832.97,
-    "end": 834.59,
-    "score": 0.8
-   },
-   {
-    "start": 834.59,
-    "end": 837.47,
+    "start": 833.46,
+    "end": 837.46,
     "score": 1.0
    },
    {
-    "start": 981.08,
-    "end": 983.98,
+    "start": 981.09,
+    "end": 983.97,
     "score": 0.6
    },
    {
-    "start": 985.12,
-    "end": 996.16,
+    "start": 985.11,
+    "end": 996.18,
     "score": 0.6
    },
    {
-    "start": 1095.51,
+    "start": 1097.31,
     "end": 1098.25,
     "score": 0.6
    },
    {
-    "start": 1098.25,
-    "end": 1100.39,
-    "score": 0.6
-   },
-   {
-    "start": 1104.59,
+    "start": 1109.67,
     "end": 1110.87,
-    "score": 0.615
-   },
-   {
-    "start": 1110.87,
-    "end": 1113.27,
     "score": 0.6
    }
   ]
  },
  {
   "line": "This doesn't mean Jason and Lucia are secretly powered by ChatGPT.",
-  "start": 845.31,
-  "end": 849.23,
-  "score": 0.957,
-  "w0": 1310,
-  "w1": 1319,
-  "said": "this doesn't mean Jason and Lucia are secretly powered by",
+  "start": 842.95,
+  "end": 850.05,
+  "score": 1.0,
+  "w0": 1345,
+  "w1": 1355,
+  "said": "This doesn't mean Jason and Lucia are secretly powered by ChatGPT.",
   "takes": [
    {
-    "start": 837.47,
-    "end": 840.83,
+    "start": 837.92,
+    "end": 841.08,
     "score": 0.857
    },
    {
-    "start": 840.83,
-    "end": 845.31,
-    "score": 0.857
-   },
-   {
-    "start": 845.31,
-    "end": 849.23,
-    "score": 0.957
+    "start": 842.95,
+    "end": 850.05,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "It's about carefully designed gameplay and character systems.",
-  "start": 853.51,
-  "end": 857.39,
+  "start": 850.31,
+  "end": 857.31,
   "score": 1.0,
-  "w0": 1329,
-  "w1": 1336,
-  "said": "it's about carefully designed gameplay and character systems",
+  "w0": 1356,
+  "w1": 1363,
+  "said": "It's about carefully designed gameplay and character systems.",
   "takes": [
    {
-    "start": 849.99,
-    "end": 853.11,
-    "score": 0.875
-   },
-   {
-    "start": 853.51,
-    "end": 857.39,
+    "start": 850.31,
+    "end": 857.31,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Now\u2026 let's move from characters to the actual world.",
-  "start": 857.39,
-  "end": 863.2,
+  "start": 860.86,
+  "end": 863.22,
   "score": 0.947,
-  "w0": 1337,
-  "w1": 1344,
-  "said": "now let's move from characters to actual world",
+  "w0": 1364,
+  "w1": 1371,
+  "said": "Now let's move from characters to actual world",
   "takes": [
    {
-    "start": 857.39,
-    "end": 863.2,
+    "start": 860.86,
+    "end": 863.22,
     "score": 0.947
    }
   ]
  },
  {
   "line": "Because technology number five is something you can see almost everywhere.",
-  "start": 863.2,
-  "end": 867.56,
+  "start": 863.22,
+  "end": 867.6,
   "score": 1.0,
-  "w0": 1345,
-  "w1": 1355,
-  "said": "because technology number five is something you can see almost everywhere",
+  "w0": 1372,
+  "w1": 1382,
+  "said": "because technology number 5 is something you can see almost everywhere",
   "takes": [
    {
-    "start": 863.2,
-    "end": 867.56,
+    "start": 863.22,
+    "end": 867.6,
     "score": 1.0
    }
   ]
  },
  {
   "line": "and that technology is called RAGE engine, lighting and weather",
-  "start": 869.92,
-  "end": 883.6,
-  "score": 0.952,
-  "w0": 1359,
-  "w1": 1369,
-  "said": "and that technology is called raging rage engine lighting and weather",
+  "start": 878.62,
+  "end": 883.56,
+  "score": 1.0,
+  "w0": 1386,
+  "w1": 1395,
+  "said": "And that technology is called RAGE engine, Lighting and Weather.",
   "takes": [
    {
-    "start": 869.92,
-    "end": 883.6,
-    "score": 0.952
+    "start": 878.62,
+    "end": 883.56,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "Okay, have you seen the lighting in GTA 6?",
-  "start": 891.14,
+  "start": 892.68,
   "end": 894.98,
   "score": 1.0,
-  "w0": 1376,
-  "w1": 1384,
-  "said": "okay have you seen the lighting in gta 6",
+  "w0": 1402,
+  "w1": 1410,
+  "said": "Okay, have you seen the lighting in GTA 6?",
   "takes": [
    {
-    "start": 883.6,
-    "end": 891.14,
+    "start": 888.99,
+    "end": 891.29,
     "score": 0.667
    },
    {
-    "start": 891.14,
+    "start": 892.68,
     "end": 894.98,
     "score": 1.0
    }
@@ -1924,89 +1884,84 @@
  },
  {
   "line": "The reflections on cars\u2026 the neon lights\u2026 the weather\u2026",
-  "start": 894.98,
-  "end": 898.5,
-  "score": 0.889,
-  "w0": 1385,
-  "w1": 1393,
-  "said": "the reflections from cars the neon lights the weather",
+  "start": 895.3,
+  "end": 898.56,
+  "score": 1.0,
+  "w0": 1411,
+  "w1": 1419,
+  "said": "The reflections on cars, the neon lights, the weather,",
   "takes": [
    {
-    "start": 894.98,
-    "end": 898.5,
-    "score": 0.889
+    "start": 895.3,
+    "end": 898.56,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "I mean, some of these scenes look incredible!",
-  "start": 906.2,
-  "end": 908.8,
+  "start": 904.73,
+  "end": 908.77,
   "score": 1.0,
-  "w0": 1407,
-  "w1": 1414,
-  "said": "I mean some of these scenes look incredible",
+  "w0": 1427,
+  "w1": 1434,
+  "said": "I mean some of these scenes look incredible,",
   "takes": [
    {
-    "start": 899.76,
+    "start": 900.14,
     "end": 901.48,
     "score": 0.769
    },
    {
-    "start": 901.48,
-    "end": 905.9,
-    "score": 0.769
-   },
-   {
-    "start": 906.2,
-    "end": 908.8,
+    "start": 904.73,
+    "end": 908.77,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But how does all of that actually work?",
-  "start": 908.8,
-  "end": 911.26,
+  "start": 909.31,
+  "end": 911.23,
   "score": 1.0,
-  "w0": 1415,
-  "w1": 1422,
-  "said": "but how does all of that actually work",
+  "w0": 1435,
+  "w1": 1442,
+  "said": "but how does all of that actually work?",
   "takes": [
    {
-    "start": 908.8,
-    "end": 911.26,
+    "start": 909.31,
+    "end": 911.23,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Well, Rockstar uses its own game engine called RAGE.",
-  "start": 911.26,
-  "end": 914.68,
+  "start": 911.55,
+  "end": 914.87,
   "score": 1.0,
-  "w0": 1423,
-  "w1": 1431,
-  "said": "well Rockstar uses its own game engine called rage",
+  "w0": 1443,
+  "w1": 1451,
+  "said": "Well Rockstar uses its own game engine called RAGE.",
   "takes": [
    {
-    "start": 911.26,
-    "end": 914.68,
+    "start": 911.55,
+    "end": 914.87,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And a game engine is basically the technology that helps bring the entire game together.",
-  "start": 914.68,
+  "start": 916.26,
   "end": 920.74,
   "score": 1.0,
-  "w0": 1432,
-  "w1": 1446,
-  "said": "and a game engine is basically the technology that helps bring the entire game together",
+  "w0": 1452,
+  "w1": 1466,
+  "said": "And a game engine is basically the technology that helps bring the entire game together",
   "takes": [
    {
-    "start": 914.68,
+    "start": 916.26,
     "end": 920.74,
     "score": 1.0
    }
@@ -2014,62 +1969,52 @@
  },
  {
   "line": "Graphics, physics, animation, and the systems running behind the scenes.",
-  "start": 925.9,
-  "end": 930.06,
+  "start": 922.44,
+  "end": 930.04,
   "score": 1.0,
-  "w0": 1455,
-  "w1": 1464,
-  "said": "graphics physics animation and the systems running behind the scenes",
+  "w0": 1468,
+  "w1": 1477,
+  "said": "graphics, physics, animation and the systems running behind the scenes.",
   "takes": [
    {
-    "start": 920.74,
-    "end": 925.64,
-    "score": 0.706
-   },
-   {
-    "start": 925.9,
-    "end": 930.06,
+    "start": 922.44,
+    "end": 930.04,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Now imagine you're driving through Vice City at night.",
-  "start": 936.34,
-  "end": 939.78,
-  "score": 0.842,
-  "w0": 1476,
-  "w1": 1484,
-  "said": "now imagine you are driving through YCT at night",
+  "start": 932.04,
+  "end": 936.36,
+  "score": 0.9,
+  "w0": 1478,
+  "w1": 1487,
+  "said": "Now imagine you are driving through Y -City at night.",
   "takes": [
    {
-    "start": 310.34,
-    "end": 313.34,
+    "start": 310.44,
+    "end": 313.32,
     "score": 0.6
    },
    {
-    "start": 932.82,
-    "end": 936.34,
-    "score": 0.8
-   },
-   {
-    "start": 936.34,
-    "end": 939.78,
-    "score": 0.842
+    "start": 932.04,
+    "end": 936.36,
+    "score": 0.9
    }
   ]
  },
  {
   "line": "It starts raining.",
-  "start": 939.78,
+  "start": 939.68,
   "end": 941.02,
   "score": 1.0,
-  "w0": 1485,
-  "w1": 1487,
-  "said": "it starts raining",
+  "w0": 1488,
+  "w1": 1490,
+  "said": "It starts raining.",
   "takes": [
    {
-    "start": 939.78,
+    "start": 939.68,
     "end": 941.02,
     "score": 1.0
    }
@@ -2077,94 +2022,109 @@
  },
  {
   "line": "The road becomes wet, streetlights reflect across the surface, and the atmosphere changes.",
-  "start": 941.02,
-  "end": 948.8,
+  "start": 941.38,
+  "end": 948.86,
   "score": 0.889,
-  "w0": 1488,
-  "w1": 1501,
-  "said": "the road becomes wet street lights reflect across the surface and the atmosphere changes",
+  "w0": 1491,
+  "w1": 1504,
+  "said": "The road becomes wet. Street lights reflect across the surface. And the atmosphere changes.",
   "takes": [
    {
-    "start": 941.02,
-    "end": 948.8,
+    "start": 941.38,
+    "end": 948.86,
     "score": 0.889
    }
   ]
  },
  {
   "line": "To make that look believable, the engine has to coordinate rendering, lighting, materials, and environmental simulation.",
-  "start": 951.1,
+  "start": 949.32,
   "end": 957.7,
   "score": 0.968,
-  "w0": 1506,
-  "w1": 1520,
-  "said": "to make that look believable the engine has to coordinate rendering lighting materials and environmental",
+  "w0": 1505,
+  "w1": 1519,
+  "said": "To make that look believable, the engine has to coordinate rendering, lighting, materials and environmental",
   "takes": [
    {
-    "start": 951.1,
+    "start": 949.32,
     "end": 957.7,
     "score": 0.968
    },
    {
     "start": 957.7,
-    "end": 965.64,
+    "end": 965.67,
     "score": 0.741
    }
   ]
  },
  {
   "line": "Rockstar has discussed advanced ray-traced rendering and weather technology.",
-  "start": 966.96,
-  "end": 981.7,
+  "start": 976.91,
+  "end": 981.67,
   "score": 1.0,
-  "w0": 1533,
-  "w1": 1542,
-  "said": "Rockstar has discussed advanced ray traced rendering and weather technology.",
+  "w0": 1545,
+  "w1": 1554,
+  "said": "Rockstar has discussed advanced ray -traced rendering and weather technology.",
   "takes": [
    {
-    "start": 966.96,
-    "end": 981.7,
+    "start": 971.65,
+    "end": 975.27,
+    "score": 0.824
+   },
+   {
+    "start": 976.91,
+    "end": 981.67,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And here's something people often misunderstand.",
-  "start": 985.66,
-  "end": 997.78,
+  "start": 995.48,
+  "end": 997.76,
   "score": 1.0,
-  "w0": 1550,
-  "w1": 1556,
-  "said": "And here is something people often misunderstand.",
+  "w0": 1562,
+  "w1": 1568,
+  "said": "And here is something people often misunderstand,",
   "takes": [
    {
-    "start": 571.38,
+    "start": 571.4,
     "end": 572.58,
     "score": 0.667
    },
    {
-    "start": 981.94,
-    "end": 985.66,
+    "start": 982.07,
+    "end": 985.51,
     "score": 1.0
    },
    {
-    "start": 985.66,
-    "end": 997.78,
+    "start": 995.48,
+    "end": 997.76,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Realistic graphics don't automatically mean AI!",
-  "start": 1002.84,
+  "start": 1010.62,
   "end": 1013.34,
   "score": 1.0,
-  "w0": 1557,
-  "w1": 1562,
+  "w0": 1579,
+  "w1": 1584,
   "said": "Realistic graphics don't automatically mean AI.",
   "takes": [
    {
-    "start": 1002.84,
+    "start": 1001.4,
+    "end": 1005.5,
+    "score": 0.727
+   },
+   {
+    "start": 1007.5,
+    "end": 1009.06,
+    "score": 0.727
+   },
+   {
+    "start": 1010.62,
     "end": 1013.34,
     "score": 1.0
    }
@@ -2172,62 +2132,67 @@
  },
  {
   "line": "A lot of this comes from graphics programming, physics, and incredibly detailed artistic work.",
-  "start": 1013.7,
-  "end": 1019.16,
+  "start": 1013.72,
+  "end": 1019.2,
   "score": 1.0,
-  "w0": 1563,
-  "w1": 1576,
+  "w0": 1585,
+  "w1": 1598,
   "said": "A lot of this comes from graphics programming, physics and incredibly detailed artistic work.",
   "takes": [
    {
-    "start": 1013.7,
-    "end": 1019.16,
+    "start": 1013.72,
+    "end": 1019.2,
     "score": 1.0
    }
   ]
  },
  {
   "line": "But when you combine all of these technologies\u2026",
-  "start": 1019.16,
-  "end": 1022.0,
+  "start": 1019.5,
+  "end": 1022.02,
   "score": 1.0,
-  "w0": 1577,
-  "w1": 1584,
+  "w0": 1599,
+  "w1": 1606,
   "said": "But when you combine all of these technologies",
   "takes": [
    {
-    "start": 1019.16,
-    "end": 1022.0,
+    "start": 1019.5,
+    "end": 1022.02,
     "score": 1.0
    }
   ]
  },
  {
   "line": "You get something much more powerful than just good-looking graphics.",
-  "start": 1039.92,
+  "start": 1040.18,
   "end": 1044.92,
   "score": 1.0,
-  "w0": 1618,
-  "w1": 1628,
-  "said": "you get something much more powerful than just good -looking graphics",
+  "w0": 1648,
+  "w1": 1658,
+  "said": "you get something much more powerful than just good -looking graphics.",
   "takes": [
    {
-    "start": 1022.8,
-    "end": 1028.74,
-    "score": 0.952
+    "start": 1022.76,
+    "end": 1024.78,
+    "score": 0.778
    },
    {
-    "start": 1030.52,
-    "end": 1034.22,
-    "score": 0.952
+    "start": 1025.36,
+    "end": 1028.78,
+    "score": 0.909
    },
    {
-    "start": 1036.54,
-    "end": 1039.92,
+    "start": 1030.87,
+    "end": 1033.83,
     "score": 0.9
    },
    {
-    "start": 1039.92,
+    "start": 1036.58,
+    "end": 1039.96,
+    "score": 0.9
+   },
+   {
+    "start": 1040.18,
     "end": 1044.92,
     "score": 1.0
    }
@@ -2235,56 +2200,56 @@
  },
  {
   "line": "You get a world that feels believable.",
-  "start": 1044.92,
-  "end": 1047.94,
+  "start": 1045.72,
+  "end": 1047.96,
   "score": 1.0,
-  "w0": 1629,
-  "w1": 1635,
-  "said": "you get a world that feels believable",
+  "w0": 1659,
+  "w1": 1665,
+  "said": "You get a world that feels believable.",
   "takes": [
    {
-    "start": 1044.92,
-    "end": 1047.94,
+    "start": 1045.72,
+    "end": 1047.96,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And now\u2026 technology number six.",
-  "start": 1063.76,
+  "start": 1063.98,
   "end": 1066.24,
   "score": 1.0,
-  "w0": 1658,
-  "w1": 1662,
-  "said": "and now technology number six",
+  "w0": 1688,
+  "w1": 1692,
+  "said": "and now technology number 6.",
   "takes": [
    {
-    "start": 533.95,
-    "end": 535.55,
+    "start": 534.1,
+    "end": 535.56,
     "score": 0.6
    },
    {
-    "start": 536.09,
+    "start": 542.41,
     "end": 544.35,
     "score": 0.6
    },
    {
-    "start": 546.95,
-    "end": 560.95,
+    "start": 559.56,
+    "end": 560.96,
     "score": 0.6
    },
    {
-    "start": 565.48,
-    "end": 566.86,
+    "start": 565.57,
+    "end": 566.87,
     "score": 0.6
    },
    {
-    "start": 1047.94,
-    "end": 1051.5,
+    "start": 1049.25,
+    "end": 1051.53,
     "score": 1.0
    },
    {
-    "start": 1063.76,
+    "start": 1063.98,
     "end": 1066.24,
     "score": 1.0
    }
@@ -2292,160 +2257,150 @@
  },
  {
   "line": "This one isn't just about GTA 6.",
-  "start": 1066.24,
-  "end": 1069.14,
+  "start": 1066.66,
+  "end": 1069.18,
   "score": 1.0,
-  "w0": 1663,
-  "w1": 1670,
-  "said": "this one is not just about gta 6",
+  "w0": 1693,
+  "w1": 1700,
+  "said": "This one is not just about GTA 6.",
   "takes": [
    {
-    "start": 509.79,
-    "end": 511.57,
+    "start": 39.01,
+    "end": 45.55,
+    "score": 0.667
+   },
+   {
+    "start": 509.76,
+    "end": 511.58,
     "score": 0.615
    },
    {
-    "start": 1053.02,
+    "start": 1055.29,
     "end": 1057.83,
     "score": 1.0
    },
    {
-    "start": 1066.24,
-    "end": 1069.14,
+    "start": 1066.66,
+    "end": 1069.18,
     "score": 1.0
    }
   ]
  },
  {
   "line": "It's about what comes next.",
-  "start": 1072.72,
-  "end": 1075.06,
+  "start": 1073.47,
+  "end": 1074.99,
   "score": 1.0,
-  "w0": 1673,
-  "w1": 1677,
-  "said": "it's about what comes next",
+  "w0": 1703,
+  "w1": 1707,
+  "said": "It's about what comes next.",
   "takes": [
    {
-    "start": 512.69,
-    "end": 515.71,
+    "start": 512.72,
+    "end": 515.72,
     "score": 0.727
    },
    {
-    "start": 849.49,
-    "end": 851.23,
+    "start": 849.23,
+    "end": 851.25,
     "score": 0.6
    },
    {
-    "start": 853.11,
-    "end": 854.81,
-    "score": 0.6
-   },
-   {
-    "start": 1057.83,
-    "end": 1059.87,
+    "start": 1058.07,
+    "end": 1059.83,
     "score": 1.0
    },
    {
-    "start": 1072.72,
-    "end": 1075.06,
+    "start": 1073.47,
+    "end": 1074.99,
     "score": 1.0
    }
   ]
  },
  {
   "line": "and that technology is machine learning and the future of gaming",
-  "start": 1075.06,
-  "end": 1087.02,
+  "start": 1083.05,
+  "end": 1086.99,
   "score": 1.0,
-  "w0": 1678,
-  "w1": 1688,
-  "said": "and that technology is machine learning and the future of gaming",
+  "w0": 1708,
+  "w1": 1718,
+  "said": "And that technology is machine learning and the future of gaming.",
   "takes": [
    {
-    "start": 1075.06,
-    "end": 1087.02,
+    "start": 1083.05,
+    "end": 1086.99,
     "score": 1.0
    },
    {
-    "start": 1087.02,
-    "end": 1095.51,
+    "start": 1091.47,
+    "end": 1095.47,
     "score": 0.909
    }
   ]
  },
  {
   "line": "Okay, here's the really interesting question.",
-  "start": 1110.87,
-  "end": 1114.41,
+  "start": 1109.67,
+  "end": 1114.39,
   "score": 1.0,
-  "w0": 1727,
-  "w1": 1733,
-  "said": "okay here is the really interesting question",
+  "w0": 1749,
+  "w1": 1755,
+  "said": "Okay, here is the really interesting question.",
   "takes": [
    {
-    "start": 758.75,
-    "end": 759.61,
+    "start": 758.77,
+    "end": 759.59,
     "score": 0.727
    },
    {
-    "start": 767.86,
-    "end": 768.62,
+    "start": 767.87,
+    "end": 768.61,
     "score": 0.727
    },
    {
-    "start": 1095.51,
-    "end": 1098.25,
-    "score": 0.727
-   },
-   {
-    "start": 1098.25,
+    "start": 1097.31,
     "end": 1101.49,
     "score": 1.0
    },
    {
-    "start": 1105.67,
-    "end": 1110.87,
-    "score": 0.727
-   },
-   {
-    "start": 1110.87,
-    "end": 1114.41,
+    "start": 1109.67,
+    "end": 1114.39,
     "score": 1.0
    }
   ]
  },
  {
   "line": "If Rockstar can build such a detailed world using handcrafted design, traditional AI, animation, and simulation\u2026",
-  "start": 1114.41,
-  "end": 1120.95,
-  "score": 0.909,
-  "w0": 1734,
-  "w1": 1750,
-  "said": "if rockstar can build such a detailed world using and crafter design traditional ai animation and simulation",
+  "start": 1114.63,
+  "end": 1120.93,
+  "score": 1.0,
+  "w0": 1756,
+  "w1": 1771,
+  "said": "If Rockstar can build such a detailed world using handcrafted design, traditional AI, animation and simulation,",
   "takes": [
    {
-    "start": 1101.05,
-    "end": 1104.91,
-    "score": 0.741
+    "start": 1101.73,
+    "end": 1105.65,
+    "score": 0.714
    },
    {
-    "start": 1114.41,
-    "end": 1120.95,
-    "score": 0.909
+    "start": 1114.63,
+    "end": 1120.93,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "What happens when future games combine those systems with generative AI?",
-  "start": 1120.95,
+  "start": 1122.03,
   "end": 1125.83,
   "score": 1.0,
-  "w0": 1751,
-  "w1": 1761,
-  "said": "what happens when future games combine those systems with generative ai",
+  "w0": 1772,
+  "w1": 1782,
+  "said": "What happens when future games combine those systems with generative AI?",
   "takes": [
    {
-    "start": 1120.95,
+    "start": 1122.03,
     "end": 1125.83,
     "score": 1.0
    }
@@ -2453,63 +2408,63 @@
  },
  {
   "line": "Imagine walking into a shop in a future GTA-style game.",
-  "start": 1128.55,
-  "end": 1136.93,
+  "start": 1133.56,
+  "end": 1136.92,
   "score": 1.0,
-  "w0": 1764,
-  "w1": 1774,
-  "said": "Imagine walking into a shop in a future GTA style game,",
+  "w0": 1788,
+  "w1": 1798,
+  "said": "Imagine walking into a shop in a future GTA -style game,",
   "takes": [
    {
-    "start": 1128.55,
-    "end": 1136.93,
+    "start": 1133.56,
+    "end": 1136.92,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Instead of choosing from three fixed dialogue options\u2026",
-  "start": 1137.21,
-  "end": 1140.43,
+  "start": 1137.28,
+  "end": 1140.42,
   "score": 1.0,
-  "w0": 1775,
-  "w1": 1782,
-  "said": "instead of choosing from 3 fixed dialogue options,",
+  "w0": 1799,
+  "w1": 1806,
+  "said": "instead of choosing from three fixed dialogue options,",
   "takes": [
    {
-    "start": 1137.21,
-    "end": 1140.43,
+    "start": 1137.28,
+    "end": 1140.42,
     "score": 1.0
    }
   ]
  },
  {
   "line": "You could actually talk to the shopkeeper naturally.",
-  "start": 1140.63,
-  "end": 1143.83,
+  "start": 1140.64,
+  "end": 1143.66,
   "score": 1.0,
-  "w0": 1783,
-  "w1": 1790,
+  "w0": 1807,
+  "w1": 1814,
   "said": "you could actually talk to the shopkeeper naturally.",
   "takes": [
    {
-    "start": 1140.63,
-    "end": 1143.83,
+    "start": 1140.64,
+    "end": 1143.66,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Or imagine an NPC remembering a conversation you had with them yesterday.",
-  "start": 1144.43,
+  "start": 1144.55,
   "end": 1150.09,
   "score": 1.0,
-  "w0": 1791,
-  "w1": 1802,
+  "w0": 1815,
+  "w1": 1826,
   "said": "Or imagine an NPC remembering a conversation you had with them yesterday.",
   "takes": [
    {
-    "start": 1144.43,
+    "start": 1144.55,
     "end": 1150.09,
     "score": 1.0
    }
@@ -2517,98 +2472,93 @@
  },
  {
   "line": "Maybe they recognise you.",
-  "start": 1154.37,
+  "start": 1156.21,
   "end": 1157.49,
   "score": 0.75,
-  "w0": 1812,
-  "w1": 1815,
-  "said": "maybe they recognize you",
+  "w0": 1835,
+  "w1": 1838,
+  "said": "Maybe they recognize you,",
   "takes": [
    {
-    "start": 1150.21,
+    "start": 1150.89,
     "end": 1152.55,
     "score": 0.75
    },
    {
-    "start": 1152.55,
+    "start": 1152.81,
     "end": 1153.59,
     "score": 0.667
    },
    {
-    "start": 1154.37,
+    "start": 1156.21,
     "end": 1157.49,
     "score": 0.75
    },
    {
-    "start": 1157.49,
+    "start": 1157.87,
     "end": 1158.57,
     "score": 0.667
    },
    {
-    "start": 1162.1,
-    "end": 1163.4,
-    "score": 0.667
-   },
-   {
-    "start": 1163.72,
-    "end": 1164.88,
+    "start": 1162.81,
+    "end": 1163.41,
     "score": 0.667
    }
   ]
  },
  {
   "line": "Maybe they react differently because of what you said.",
-  "start": 1163.72,
-  "end": 1166.82,
+  "start": 1162.81,
+  "end": 1166.83,
   "score": 1.0,
-  "w0": 1826,
-  "w1": 1834,
-  "said": "maybe they react differently because of what you said",
+  "w0": 1846,
+  "w1": 1854,
+  "said": "Maybe they react differently because of what you said",
   "takes": [
    {
-    "start": 1157.49,
+    "start": 1157.87,
     "end": 1160.15,
     "score": 0.8
    },
    {
-    "start": 1163.72,
-    "end": 1166.82,
+    "start": 1162.81,
+    "end": 1166.83,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Or imagine side missions that adapt to your decisions.",
-  "start": 1173.34,
-  "end": 1176.82,
+  "start": 1173.98,
+  "end": 1176.78,
   "score": 1.0,
-  "w0": 1842,
-  "w1": 1850,
-  "said": "or imagine side missions that adapt to your decisions",
+  "w0": 1862,
+  "w1": 1870,
+  "said": "Or imagine side missions that adapt to your decisions.",
   "takes": [
    {
-    "start": 1167.16,
-    "end": 1170.56,
+    "start": 1167.19,
+    "end": 1170.53,
     "score": 0.8
    },
    {
-    "start": 1173.34,
-    "end": 1176.82,
+    "start": 1173.98,
+    "end": 1176.78,
     "score": 1.0
    }
   ]
  },
  {
   "line": "I mean\u2026 the possibilities are fascinating!",
-  "start": 1176.82,
+  "start": 1177.58,
   "end": 1180.26,
   "score": 1.0,
-  "w0": 1851,
-  "w1": 1856,
-  "said": "i mean the possibilities are fascinating",
+  "w0": 1871,
+  "w1": 1876,
+  "said": "I mean, the possibilities are fascinating.",
   "takes": [
    {
-    "start": 1176.82,
+    "start": 1177.58,
     "end": 1180.26,
     "score": 1.0
    }
@@ -2616,168 +2566,173 @@
  },
  {
   "line": "Now, to be clear, these are future gaming possibilities.",
-  "start": 1185.07,
-  "end": 1191.09,
+  "start": 1185.35,
+  "end": 1191.13,
   "score": 1.0,
-  "w0": 1865,
-  "w1": 1873,
+  "w0": 1885,
+  "w1": 1893,
   "said": "Now to be clear, these are future gaming possibilities.",
   "takes": [
    {
-    "start": 1180.26,
+    "start": 1180.76,
     "end": 1182.64,
     "score": 0.75
    },
    {
-    "start": 1185.07,
-    "end": 1191.09,
+    "start": 1185.35,
+    "end": 1191.13,
     "score": 1.0
    }
   ]
  },
  {
   "line": "They're not confirmed GTA 6 features.",
-  "start": 1191.43,
-  "end": 1193.67,
+  "start": 1191.41,
+  "end": 1193.65,
   "score": 1.0,
-  "w0": 1874,
-  "w1": 1880,
+  "w0": 1894,
+  "w1": 1900,
   "said": "They are not confirmed GTA 6 features.",
   "takes": [
    {
-    "start": 1191.43,
-    "end": 1193.67,
+    "start": 1191.41,
+    "end": 1193.65,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Rockstar has machine-learning research teams, but that doesn't mean every character is running a language model.",
-  "start": 1194.57,
-  "end": 1200.53,
+  "start": 1194.42,
+  "end": 1200.54,
   "score": 1.0,
-  "w0": 1881,
-  "w1": 1897,
-  "said": "Rockstar has machine learning research teams but that doesn't mean every character is running a language model.",
+  "w0": 1901,
+  "w1": 1917,
+  "said": "Rockstar has machine learning research teams, but that doesn't mean every character is running a language model.",
   "takes": [
    {
-    "start": 1194.57,
-    "end": 1200.53,
+    "start": 1194.42,
+    "end": 1200.54,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And there's a reason developers have to be careful.",
-  "start": 1200.91,
-  "end": 1203.85,
+  "start": 1200.98,
+  "end": 1203.84,
   "score": 0.952,
-  "w0": 1898,
-  "w1": 1908,
+  "w0": 1918,
+  "w1": 1928,
   "said": "And there is a reason developers have to be very careful.",
   "takes": [
    {
-    "start": 1200.91,
-    "end": 1203.85,
+    "start": 1200.98,
+    "end": 1203.84,
     "score": 0.952
    }
   ]
  },
  {
   "line": "If every character could say absolutely anything, how would you control the story?",
-  "start": 1204.33,
-  "end": 1209.11,
+  "start": 1204.24,
+  "end": 1209.1,
   "score": 1.0,
-  "w0": 1909,
-  "w1": 1921,
+  "w0": 1929,
+  "w1": 1941,
   "said": "If every character could say absolutely anything, how would you control the story?",
   "takes": [
    {
-    "start": 1204.33,
-    "end": 1209.11,
+    "start": 1204.24,
+    "end": 1209.1,
     "score": 1.0
    }
   ]
  },
  {
   "line": "How would you make sure the game stays consistent, fun, and safe?",
-  "start": 1218.72,
-  "end": 1222.44,
+  "start": 1214.85,
+  "end": 1222.47,
   "score": 1.0,
-  "w0": 1943,
-  "w1": 1954,
-  "said": "how would you make sure the game stays consistent fun and safe",
+  "w0": 1951,
+  "w1": 1962,
+  "said": "How would you make sure the game stays consistent, fun and safe?",
   "takes": [
    {
-    "start": 1209.43,
-    "end": 1212.13,
+    "start": 1209.79,
+    "end": 1212.07,
     "score": 0.857
    },
    {
-    "start": 1212.13,
-    "end": 1216.48,
-    "score": 0.8
-   },
-   {
-    "start": 1218.72,
-    "end": 1222.44,
+    "start": 1214.85,
+    "end": 1222.47,
     "score": 1.0
    }
   ]
  },
  {
   "line": "That's a much harder problem than simply connecting an NPC to a chatbot.",
-  "start": 1238.56,
-  "end": 1243.44,
+  "start": 1239.11,
+  "end": 1243.43,
   "score": 1.0,
   "w0": 1986,
   "w1": 1998,
-  "said": "that's a much harder problem than simply connecting an npc to a chatbot",
+  "said": "That's a much harder problem than simply connecting an NPC to a chatbot.",
   "takes": [
    {
-    "start": 1222.44,
-    "end": 1226.22,
+    "start": 1223.37,
+    "end": 1226.23,
     "score": 0.833
    },
    {
-    "start": 1231.72,
-    "end": 1236.8,
+    "start": 1228.74,
+    "end": 1236.82,
     "score": 1.0
    },
    {
-    "start": 1238.56,
-    "end": 1243.44,
+    "start": 1239.11,
+    "end": 1243.43,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And this brings us to the biggest lesson from GTA 6.",
-  "start": 1244.14,
-  "end": 1254.02,
+  "start": 1250.9,
+  "end": 1254.0,
   "score": 0.909,
-  "w0": 1999,
-  "w1": 2009,
+  "w0": 2011,
+  "w1": 2021,
   "said": "And this brings us to the biggest lesson of GTA 6.",
   "takes": [
    {
-    "start": 1244.14,
-    "end": 1254.02,
+    "start": 1243.85,
+    "end": 1245.93,
+    "score": 0.778
+   },
+   {
+    "start": 1250.9,
+    "end": 1254.0,
     "score": 0.909
    }
   ]
  },
  {
   "line": "See, here's what I find most fascinating about GTA 6.",
-  "start": 1273.62,
+  "start": 1281.85,
   "end": 1290.31,
   "score": 1.0,
-  "w0": 2010,
-  "w1": 2020,
+  "w0": 2033,
+  "w1": 2043,
   "said": "See, here is what I find most fascinating about GTA 6.",
   "takes": [
    {
-    "start": 1273.62,
+    "start": 1273.88,
+    "end": 1278.83,
+    "score": 0.667
+   },
+   {
+    "start": 1281.85,
     "end": 1290.31,
     "score": 1.0
    }
@@ -2785,15 +2740,15 @@
  },
  {
   "line": "The breakthrough isn't necessarily that AI can create an entire game for us.",
-  "start": 1290.47,
+  "start": 1290.51,
   "end": 1295.03,
   "score": 1.0,
-  "w0": 2021,
-  "w1": 2033,
+  "w0": 2044,
+  "w1": 2056,
   "said": "The breakthrough isn't necessarily that AI can create an entire game for us.",
   "takes": [
    {
-    "start": 1290.47,
+    "start": 1290.51,
     "end": 1295.03,
     "score": 1.0
    }
@@ -2801,36 +2756,36 @@
  },
  {
   "line": "It's that human creativity and sophisticated technology can work together to make a world feel alive.",
-  "start": 1304.84,
-  "end": 1311.02,
+  "start": 1305.56,
+  "end": 1311.04,
   "score": 1.0,
-  "w0": 2052,
-  "w1": 2067,
-  "said": "it's that human creativity and sophisticated technology can work together to make a world feel alive",
+  "w0": 2075,
+  "w1": 2090,
+  "said": "It's that human creativity and sophisticated technology can work together to make a world feel alive.",
   "takes": [
    {
-    "start": 1296.25,
+    "start": 1296.55,
     "end": 1301.63,
     "score": 0.97
    },
    {
-    "start": 1304.84,
-    "end": 1311.02,
+    "start": 1305.56,
+    "end": 1311.04,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And honestly, that's something we can apply outside gaming too.",
-  "start": 1311.02,
+  "start": 1311.4,
   "end": 1315.12,
   "score": 1.0,
-  "w0": 2068,
-  "w1": 2077,
-  "said": "and honestly that's something we can apply outside gaming too",
+  "w0": 2091,
+  "w1": 2100,
+  "said": "And honestly, that's something we can apply outside gaming too.",
   "takes": [
    {
-    "start": 1311.02,
+    "start": 1311.4,
     "end": 1315.12,
     "score": 1.0
    }
@@ -2838,166 +2793,166 @@
  },
  {
   "line": "Whether you're building an app, creating content, or learning AI\u2026",
-  "start": 1315.12,
-  "end": 1318.94,
+  "start": 1315.56,
+  "end": 1319.0,
   "score": 1.0,
-  "w0": 2078,
-  "w1": 2088,
-  "said": "whether you are building an app creating content or learning ai",
+  "w0": 2101,
+  "w1": 2110,
+  "said": "Whether you're building an app, creating content or learning AI,",
   "takes": [
    {
-    "start": 1315.12,
-    "end": 1318.94,
+    "start": 1315.56,
+    "end": 1319.0,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Don't just ask, \"How can I add AI?\"",
-  "start": 1323.02,
-  "end": 1326.18,
+  "start": 1320.37,
+  "end": 1323.03,
   "score": 1.0,
-  "w0": 2098,
-  "w1": 2105,
-  "said": "don't just ask how can I add AI",
+  "w0": 2112,
+  "w1": 2119,
+  "said": "Don't just ask how can I add AI,",
   "takes": [
    {
-    "start": 1319.74,
-    "end": 1323.02,
-    "score": 1.0
-   },
-   {
-    "start": 1323.02,
-    "end": 1326.18,
+    "start": 1320.37,
+    "end": 1323.03,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Ask, \"What experience can I make genuinely better?\"",
-  "start": 1326.18,
-  "end": 1329.16,
+  "start": 1326.39,
+  "end": 1329.19,
   "score": 1.0,
-  "w0": 2106,
-  "w1": 2113,
-  "said": "ask what experience can I make genuinely better",
+  "w0": 2120,
+  "w1": 2127,
+  "said": "ask what experience can I make genuinely better.",
   "takes": [
    {
-    "start": 1326.18,
-    "end": 1329.16,
+    "start": 1326.39,
+    "end": 1329.19,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Now, I have a question for you.",
-  "start": 1330.84,
-  "end": 1334.9,
+  "start": 1333.03,
+  "end": 1334.91,
   "score": 1.0,
-  "w0": 2115,
-  "w1": 2121,
-  "said": "now I have a question for you",
+  "w0": 2128,
+  "w1": 2134,
+  "said": "Now, I have a question for you.",
   "takes": [
    {
-    "start": 1330.84,
-    "end": 1334.9,
+    "start": 1333.03,
+    "end": 1334.91,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Imagine GTA 7 had NPCs that could actually remember you and have natural conversations.",
-  "start": 1334.9,
-  "end": 1340.96,
+  "start": 1335.27,
+  "end": 1340.93,
   "score": 1.0,
-  "w0": 2122,
-  "w1": 2135,
-  "said": "imagine GTA 7 had NPCs that could actually remember you and have natural conversations",
+  "w0": 2135,
+  "w1": 2148,
+  "said": "Imagine GTA 7 had NPCs that could actually remember you and have natural conversations.",
   "takes": [
    {
-    "start": 1334.9,
-    "end": 1340.96,
+    "start": 1335.27,
+    "end": 1340.93,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Would that make the game more exciting\u2026 or would it be a little creepy?",
-  "start": 1344.02,
-  "end": 1349.94,
-  "score": 0.933,
-  "w0": 2140,
-  "w1": 2155,
-  "said": "would that make the game more exciting or would or would it be a little creepy",
+  "start": 1343.07,
+  "end": 1349.91,
+  "score": 1.0,
+  "w0": 2149,
+  "w1": 2162,
+  "said": "Would that make the game more exciting or would it be a little creepy?",
   "takes": [
    {
-    "start": 1344.02,
-    "end": 1349.94,
-    "score": 0.933
+    "start": 1343.07,
+    "end": 1349.91,
+    "score": 1.0
    }
   ]
  },
  {
   "line": "Comment EXCITING or CREEPY, and tell me why!",
-  "start": 1349.94,
-  "end": 1353.44,
+  "start": 1350.63,
+  "end": 1353.43,
   "score": 1.0,
-  "w0": 2156,
-  "w1": 2163,
-  "said": "comment exciting or creepy and tell me why",
+  "w0": 2163,
+  "w1": 2170,
+  "said": "Comment exciting or creepy and tell me why.",
   "takes": [
    {
-    "start": 1349.94,
-    "end": 1353.44,
+    "start": 1350.63,
+    "end": 1353.43,
     "score": 1.0
    }
   ]
  },
  {
   "line": "And if you enjoy discovering the technology behind the things we use every day\u2026",
-  "start": 1357.88,
-  "end": 1362.24,
+  "start": 1358.17,
+  "end": 1362.23,
   "score": 1.0,
-  "w0": 2169,
-  "w1": 2182,
-  "said": "and if you enjoy discovering the technology behind the things we use every day",
+  "w0": 2176,
+  "w1": 2189,
+  "said": "And if you enjoy discovering the technology behind the things we use every day,",
   "takes": [
    {
-    "start": 1357.88,
-    "end": 1362.24,
+    "start": 1358.17,
+    "end": 1362.23,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Subscribe to AI with Kalyan.",
-  "start": 1362.24,
-  "end": 1364.08,
+  "start": 1362.69,
+  "end": 1364.09,
   "score": 1.0,
-  "w0": 2183,
-  "w1": 2187,
+  "w0": 2190,
+  "w1": 2194,
   "said": "subscribe to AI with Kalyan",
   "takes": [
    {
-    "start": 1362.24,
-    "end": 1364.08,
+    "start": 27.52,
+    "end": 27.6,
+    "score": 0.75
+   },
+   {
+    "start": 1362.69,
+    "end": 1364.09,
     "score": 1.0
    }
   ]
  },
  {
   "line": "Because there's a lot more happening behind the screen than we realise!",
-  "start": 1364.08,
-  "end": 1366.38,
-  "score": 0.818,
-  "w0": 2188,
-  "w1": 2195,
-  "said": "because there's a lot more happening behind the",
+  "start": 1364.09,
+  "end": 1367.31,
+  "score": 0.88,
+  "w0": 2195,
+  "w1": 2205,
+  "said": "because there's a lot more happening behind the scene than we",
   "takes": [
    {
-    "start": 1364.08,
-    "end": 1366.38,
-    "score": 0.818
+    "start": 1364.09,
+    "end": 1367.31,
+    "score": 0.88
    }
   ]
  }

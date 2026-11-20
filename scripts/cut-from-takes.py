@@ -23,6 +23,22 @@ FR = 160; n = len(x) // FR
 env = 20 * np.log10(np.sqrt((x[:n * FR].reshape(n, FR) ** 2).mean(1)) + 1e-9)
 quiet = lambda a, b: (a if b <= a else (int(a * 100) + int(np.argmin(env[int(a * 100):max(int(a * 100) + 1, int(b * 100))]))) / 100)
 
+# Over-long words usually hide untranscribed retake fragments: keep only the first speech burst
+SIL0 = F.get("silence_db", -50.0)
+trimmed = []
+for k, w in enumerate(W):
+    exp = .15 + .08 * len(w["text"])
+    if w["end"] - w["start"] > max(1.0, 3 * exp):
+        a, b = int(w["start"] * 100), int(w["end"] * 100)
+        sp = env[a:b] >= SIL0
+        on = np.where(sp)[0]
+        if len(on):
+            j = on[0]
+            while j < len(sp) and (sp[j] or sp[j:j + 12].any()): j += 1   # burst, bridging gaps < 0.12 s
+            new_end = round((a + j) / 100 + .05, 2)
+            if new_end < w["end"] - .3:
+                trimmed.append((w["text"], w["start"], w["end"], new_end)); w["end"] = new_end
+print(f"trimmed {len(trimmed)} over-long words")
 for pre, w, why in F.get("extend", []):
     o = next(o for o in T if o["line"].startswith(pre))
     if w > o["w1"]: o["w1"] = w
@@ -81,6 +97,23 @@ for e in tight:
         e["src_in"] = round(max(e["src_in"], (a + act[0]) / 100 - .08), 3)
         e["src_out"] = round(min(e["src_out"], (a + act[-1]) / 100 + .12), 3)
 edl = [e for e in tight if e["src_out"] - e["src_in"] > .08]
+# source-time additions (words the ASR lumped into a neighbour, e.g. 'rage' inside 'RAGE engine')
+for t0, t1, why in F.get("keep_time", []):
+    edl.append({"src_in": t0, "src_out": t1, "text": why})
+edl.sort(key=lambda e: e["src_in"]); merged = []
+for e in edl:
+    if merged and e["src_in"] <= merged[-1]["src_out"] + .02:
+        merged[-1]["src_out"] = max(merged[-1]["src_out"], e["src_out"])
+    else: merged.append(dict(e))
+edl = merged
+# source-time removals found by verify-cut.py (fragments hidden inside words)
+for t0, t1, why in F.get("remove_time", []):
+    out = []
+    for e in edl:
+        if e["src_out"] <= t0 or e["src_in"] >= t1: out.append(e); continue
+        if e["src_in"] < t0: out.append({**e, "src_out": round(t0, 3)})
+        if e["src_out"] > t1: out.append({**e, "src_in": round(t1, 3)})
+    edl = [e for e in out if e["src_out"] - e["src_in"] > .08]
 dur = sum(e["src_out"] - e["src_in"] for e in edl)
 json.dump({"source": "IMG_1825", "segments": edl, "duration": round(dur, 2)}, open(edl_p, "w"), indent=1)
 print(f"{len(edl)} segments, {dur/60:.2f} min")

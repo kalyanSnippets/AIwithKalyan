@@ -1,43 +1,119 @@
 {
- "max_gap": 0.35,
- "pause": 0.22,
+ "transcript": "GTA6/transcripts/IMG_1825 (chunked Whisper pass)",
+ "max_gap": 0.3,
+ "pause": 0.18,
+ "silence_db": -50,
  "remove": [
   [
-   252,
-   256,
-   "false start: 'he there is one thing' (kept the second 'there is one thing')"
+   275,
+   278,
+   "false start: first 'there is one thing'"
   ],
   [
-   389,
-   389,
-   "doubled 'npc'"
-  ],
-  [
-   1364,
-   1364,
-   "stumble: 'raging' before 'rage engine'"
-  ],
-  [
-   2147,
-   2148,
-   "doubled 'or would'"
+   408,
+   408,
+   "doubled 'NPC'"
   ]
  ],
  "extend": [
   [
    "which is NPC behaviour",
-   391,
-   "include 'npc behavior' (second npc)"
+   410,
+   "include 'NPC behavior'"
   ],
   [
    "Or someone with different body proportions?",
-   913,
+   966,
    "include 'proportion'"
   ],
   [
    "Because there's a lot more happening behind the screen",
-   2199,
-   "include 'scene than we realize' (last words)"
+   2206,
+   "include 'realize' (last word)"
+  ],
+  [
+   "To make that look believable",
+   1520,
+   "include 'simulations' (was clipped)"
+  ]
+ ],
+ "remove_time": [
+  [
+   702.5,
+   712.65,
+   "fragment 'it also building systems around how it is also' (kept final take)"
+  ],
+  [
+   780.4,
+   781.0,
+   "stray 'think' after 'as a couple'"
+  ],
+  [
+   791.6,
+   791.86,
+   "stray 'of' before 'think about that'"
+  ],
+  [
+   820.9,
+   822.88,
+   "doubled 'one might need to wait'"
+  ],
+  [
+   832.95,
+   836.25,
+   "false start 'and here is the and'"
+  ],
+  [
+   925.27,
+   925.87,
+   "'systems from' before 'systems running'"
+  ],
+  [
+   930.0,
+   932.78,
+   "doubled 'now imagine'"
+  ],
+  [
+   935.82,
+   936.32,
+   "doubled 'night'"
+  ],
+  [
+   1140.4,
+   1141.44,
+   "doubled 'you could'"
+  ],
+  [
+   1209.08,
+   1218.7,
+   "false start 'how would you make sure the game say could you'"
+  ],
+  [
+   328.57,
+   328.95,
+   "lead-in of an abandoned 'those'"
+  ],
+  [
+   334.5,
+   335.15,
+   "false start 'those can-'"
+  ],
+  [
+   852.78,
+   856.2,
+   "doubled 'gameplay and characters'"
+  ],
+  [
+   880.33,
+   881.0,
+   "stumble 'raging' before 'rage engine'"
+  ]
+ ],
+ "keep_time": [
+  [
+   880.3,
+   882.35,
+   "'RAGE engine' (ASR merged 'raging rage' into one long word)"
   ]
  ]
 }

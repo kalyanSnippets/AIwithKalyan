@@ -1,0 +1,7 @@
+{
+ "engine": "faster-whisper large-v3-turbo int8 (local, free fallback)",
+ "language": "en",
+ "duration": 1380.3933125,
+ "words": 2211,
+ "seconds": 592
+}
