@@ -345,6 +345,16 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   kinetic({ x: 0, y: 760, w: 1920, size: 96, align: "center", t1: m1, parts: [{ text: "× A WHOLE CITY", t: at("huge population"), cls: "hl" }] });
 }
 
+// 23c. "not just simulating individual characters… how characters interact"
+{
+  const i0 = at("but here is where it gets"), i1 = at("and that is where technology four") - 0.1;
+  scene(i0 - 0.2, i1);
+  hd(i0, i1, "Not just individuals", "ROCKSTAR IS SIMULATING", 110);
+  tile({ x: 420, y: 340, ic: "user", label: "Individuals", sub: "one character at a time", t: at("simulating individual"), t1: i1 });
+  arrow({ x: 830, y: 520, w: 260, t: at("building systems around"), t1: i1 });
+  tile({ x: 1140, y: 340, ic: "users", label: "Interactions", sub: "characters with each other", t: at("interact with each other"), t1: i1, color: TEAL, cls: "on" });
+}
+
 // ═══════════════════════════ SCENE 6 — TECH 4: RELATIONSHIPS ═══════════════
 {
   chapter(4, "Characters with relationships", "heart-handshake", at("and that is where technology four") - 0.1);
@@ -424,6 +434,11 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 // ═══════════════════════════ SCENE 8 — TECH 6: FUTURE ══════════════════════
 {
   chapter(6, "What comes next?", "rocket", at("and now technology number six"));
+  {
+    const f0 = Math.max(at("and now technology number six") + 2.0, at("this one is not just")), f1 = at("okay here is the really") - 0.05;
+    foot("el_sunset", f0, f1, { kb: "in", dim: true });
+    kinetic({ x: 0, y: 360, w: 1920, size: 110, align: "center", t1: f1, parts: [{ text: "WHAT COMES NEXT", t: at("what comes next") }, { text: "MACHINE LEARNING", t: at("machine learning", find("what comes next")), cls: "hl" }, { text: "+ THE FUTURE OF GAMING", t: at("future of gaming"), cls: "t" }] });
+  }
   // 35. handcrafted world → generative AI?
   const h0 = at("okay here is the really"), h1 = at("imagine walking into a shop") - 0.05;
   foot("bridge_aerial", h0, h1, { kb: "in", dim: true });
@@ -455,7 +470,13 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
     hd(b0, b1, "Missions that adapt", "", 110);
   }
   // 38. caveat — his own words as a lower third
-  lowerThird(at("now to be clear"), at("and there is a reason") - 0.05, "Future idea · not a confirmed GTA 6 feature");
+  lowerThird(at("now to be clear"), at("rockstar has machine learning") - 0.05, "Future idea · not a confirmed GTA 6 feature");
+  {
+    const l0 = at("rockstar has machine learning"), l1 = at("and there is a reason") - 0.05;
+    scene(l0 - 0.2, l1);
+    tile({ x: 420, y: 330, ic: "flask-conical", label: "ML research teams", sub: "Rockstar has them", t: at("machine learning research"), t1: l1, color: TEAL, cls: "on" });
+    tile({ x: 1140, y: 330, ic: "message-square-x", label: "Every NPC a chatbot", sub: "not what that means", t: at("doesn't mean every character"), t1: l1, color: PINK, cls: "off" });
+  }
   // 39. control the story — consistent, fun, safe
   const s0 = at("if every character could"), s1 = at("and this brings us") - 0.05;
   scene(s0 - 0.2, s1);
@@ -483,6 +504,20 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   tile({ x: 780, y: 330, ic: "cpu", label: "Technology", t: at("sophisticated technology"), t1: m1, color: TEAL });
   tile({ x: 1260, y: 330, ic: "sparkles", label: "A world that feels alive", t: at("feel alive"), t1: m1, color: ORANGE, cls: "on" });
   kinetic({ x: 1080, y: 140, w: 780, size: 76, align: "right", t1: at("now i have a question") - 0.05, parts: [{ text: "DON'T ASK", t: at("don't just ask"), cls: "sm" }, { text: "“How can I add AI?”", t: at("how can i add"), cls: "x" }, { text: "ASK", t: at("ask what experience"), cls: "sm" }, { text: "“What can I make better?”", t: at("genuinely better"), cls: "hl" }] });
+  // 41b. "whether you're building an app, creating content, or learning AI"
+  {
+    const w0 = at("whether you are building"), w1 = at("don't just ask") - 0.05;
+    scene(w0 - 0.2, w1);
+    tile({ x: 340, y: 330, ic: "app-window", label: "Building an app", t: at("building an app"), t1: w1, color: TEAL });
+    tile({ x: 780, y: 330, ic: "video", label: "Creating content", t: at("creating content"), t1: w1, color: ORANGE });
+    tile({ x: 1220, y: 330, ic: "brain", label: "Learning AI", t: at("learning ai"), t1: w1, color: PINK });
+  }
+  // 41c. GTA 7 question over the city
+  {
+    const q0 = at("imagine gta 7"), q1 = at("would that make") - 0.05;
+    foot("bridge_aerial", q0, q1, { kb: "in", dim: true });
+    kinetic({ x: 0, y: 380, w: 1920, size: 110, align: "center", t1: q1, parts: [{ text: "GTA 7:", t: at("gta 7"), cls: "t" }, { text: "NPCs THAT", t: at("had npcs") }, { text: "REMEMBER YOU?", t: at("remember you", find("imagine gta 7")), cls: "hl" }] });
+  }
   // 42. EXCITING or CREEPY
   const e0 = at("imagine gta 7"), e1 = at("and if you enjoy") - 0.05;
   const bid = nid("cta");
@@ -579,12 +614,12 @@ let coverCount = 0;
   for (const w of capWords) {
     if (off(w.t)) { if (g.length) groups.push(g); g = []; continue; }
     const prev = g.at(-1);
-    if (g.length && (g.length >= 5 || w.t - prev.e > 0.45 || /[.?!,]$/.test(prev.text) && g.length >= 2)) { groups.push(g); g = []; }
+    if (g.length && (g.length >= 5 || w.t - prev.e > 0.6 || (/[.?!]$/.test(prev.text) && g.length >= 2) || (/,$/.test(prev.text) && g.length >= 3))) { groups.push(g); g = []; }
     g.push(w);
   }
   if (g.length) groups.push(g);
   groups.forEach((gr, k) => {
-    const t0 = gr[0].t - 0.05, t1 = Math.min(gr.at(-1).e + 0.25, (groups[k + 1]?.[0].t ?? Infinity) - 0.06);
+    const t0 = gr[0].t - 0.05, t1 = Math.min(Math.max(gr.at(-1).e + 0.3, t0 + 1.1), (groups[k + 1]?.[0].t ?? Infinity) - 0.06);
     if (t1 - t0 < 0.15) return;
     const id = nid("cap");
     clipDiv(id, "cap", t0, t1, `<div class="in" style="opacity:1">${gr.map((w, j) => `<span class="cw" id="${id}-${j}">${esc(w.text)}</span>`).join(" ")}</div>`, "", 44);
@@ -608,7 +643,7 @@ let coverCount = 0;
   audio("m4", "m4.mp3", c4 - 0.2, Math.min(86, m4d), 0, env(Math.min(86, m4d), 0.8, 2.5, 0.09, [[tL - 0.6, tL + 0.4]]), 33);
   const DUR = { whoosh: 1.0, pop: 0.5, tick: 0.5 };
   const keepS = [];
-  for (const s of sfxList.sort((a, b) => a[0] - b[0])) { const gap = keepS.length ? s[0] - keepS.at(-1)[0] : 99; if (gap >= 0.9) keepS.push(s); }
+  for (const s of sfxList.sort((a, b) => a[0] - b[0])) { const gap = keepS.length ? s[0] - keepS.at(-1)[0] : 99; if (gap >= (s[1] === "whoosh" ? 1.5 : 6.5)) keepS.push(s); }
   keepS.forEach(([t, name, vol], k) => html.push(`<audio id="sfx-${k}" class="clip" src="media/sfx-${name}.mp3" data-start="${t}" data-duration="${DUR[name]}" data-volume="${vol}" data-track-index="${40 + (k % 4)}"></audio>`));
   sfxList.length = 0; sfxList.push(...keepS);
 }

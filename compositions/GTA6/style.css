@@ -155,7 +155,7 @@ svg.lines { position: absolute; inset: 0; z-index: 15; }
 .btn2.cr { background: linear-gradient(135deg, var(--pink), #9d1f63); }
 
 /* lower third */
-.lt { position: absolute; z-index: 30; left: 120px; bottom: 140px; display: flex; align-items: center; gap: 16px; padding: 16px 28px; border-radius: 16px; background: var(--glass); border: 1px solid var(--line); font-size: 30px; font-weight: 800; opacity: 0; }
+.lt { position: absolute; z-index: 30; left: 580px; bottom: 150px; display: flex; align-items: center; gap: 16px; padding: 16px 28px; border-radius: 16px; background: var(--glass); border: 1px solid var(--line); font-size: 30px; font-weight: 800; opacity: 0; }
 .lt .dt { width: 14px; height: 14px; border-radius: 50%; background: var(--teal); box-shadow: 0 0 10px var(--teal); }
 
 /* outro */
