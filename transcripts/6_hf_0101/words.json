@@ -1,0 +1,289 @@
+[
+  {
+    "id": "w0",
+    "text": "Seriously?",
+    "start": 4.72,
+    "end": 5.24,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w1",
+    "text": "Why",
+    "start": 5.8,
+    "end": 5.92,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w2",
+    "text": "are",
+    "start": 5.98,
+    "end": 6.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w3",
+    "text": "there",
+    "start": 6.12,
+    "end": 6.26,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w4",
+    "text": "three",
+    "start": 6.3,
+    "end": 6.46,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w5",
+    "text": "of",
+    "start": 6.52,
+    "end": 6.64,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w6",
+    "text": "me?",
+    "start": 6.7,
+    "end": 6.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w7",
+    "text": "So",
+    "start": 7.42,
+    "end": 7.64,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w8",
+    "text": "who's",
+    "start": 8.1,
+    "end": 8.3,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w9",
+    "text": "making",
+    "start": 8.34,
+    "end": 8.56,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w10",
+    "text": "the",
+    "start": 8.58,
+    "end": 8.66,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w11",
+    "text": "YouTube",
+    "start": 8.7,
+    "end": 8.94,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w12",
+    "text": "video?",
+    "start": 8.98,
+    "end": 9.24,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w13",
+    "text": "Not",
+    "start": 9.8,
+    "end": 9.96,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w14",
+    "text": "me,",
+    "start": 10,
+    "end": 10.08,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w15",
+    "text": "bro.",
+    "start": 10.18,
+    "end": 10.34,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w16",
+    "text": "I'm",
+    "start": 10.58,
+    "end": 10.7,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w17",
+    "text": "going",
+    "start": 10.74,
+    "end": 10.94,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w18",
+    "text": "home.",
+    "start": 10.98,
+    "end": 11.2,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w19",
+    "text": "Then",
+    "start": 11.54,
+    "end": 11.72,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w20",
+    "text": "you",
+    "start": 11.78,
+    "end": 11.88,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w21",
+    "text": "make",
+    "start": 11.92,
+    "end": 12.06,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w22",
+    "text": "the",
+    "start": 12.1,
+    "end": 12.16,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w23",
+    "text": "video.",
+    "start": 12.2,
+    "end": 12.46,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w24",
+    "text": "Guys,",
+    "start": 13.16,
+    "end": 13.5,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w25",
+    "text": "this",
+    "start": 13.74,
+    "end": 13.84,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w26",
+    "text": "is",
+    "start": 13.88,
+    "end": 14.02,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w27",
+    "text": "my",
+    "start": 14.08,
+    "end": 14.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w28",
+    "text": "channel.",
+    "start": 14.34,
+    "end": 14.7,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w29",
+    "text": "Okay,",
+    "start": 15.08,
+    "end": 15.26,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w30",
+    "text": "bye.",
+    "start": 15.36,
+    "end": 15.66,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w31",
+    "text": "You",
+    "start": 15.8,
+    "end": 15.88,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w32",
+    "text": "do",
+    "start": 15.92,
+    "end": 16.02,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w33",
+    "text": "your",
+    "start": 16.059,
+    "end": 16.14,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w34",
+    "text": "video.",
+    "start": 16.18,
+    "end": 16.5,
+    "speaker": "speaker_2"
+  },
+  {
+    "id": "w35",
+    "text": "Good",
+    "start": 16.9,
+    "end": 17.02,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w36",
+    "text": "luck,",
+    "start": 17.06,
+    "end": 17.2,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w37",
+    "text": "bro.",
+    "start": 17.26,
+    "end": 17.46,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w38",
+    "text": "Oh,",
+    "start": 22.72,
+    "end": 22.88,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w39",
+    "text": "come",
+    "start": 23.06,
+    "end": 23.3,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w40",
+    "text": "on!",
+    "start": 23.4,
+    "end": 23.88,
+    "speaker": "speaker_0"
+  }
+]

@@ -1,0 +1,39 @@
+1
+00:00:03,400 --> 00:00:03,820
+Finally,
+
+2
+00:00:04,600 --> 00:00:05,040
+I'm back.
+
+3
+00:00:06,060 --> 00:00:06,560
+Okay, okay,
+
+4
+00:00:07,180 --> 00:00:07,640
+relax.
+
+5
+00:00:08,100 --> 00:00:09,900
+Obviously, none of that actually happened.
+
+6
+00:00:10,260 --> 00:00:12,420
+I made all these crazy effects using
+
+7
+00:00:12,460 --> 00:00:14,900
+Higgsfield AI, and I started with my
+
+8
+00:00:14,940 --> 00:00:17,200
+normal studio videos in these exact
+
+9
+00:00:17,260 --> 00:00:19,580
+prompts I used and what actually worked.
+
+10
+00:00:20,400 --> 00:00:21,960
+So let's get started

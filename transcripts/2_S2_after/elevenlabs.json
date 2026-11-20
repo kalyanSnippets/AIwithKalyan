@@ -1,0 +1,17 @@
+{
+  "languageCode": "eng",
+  "languageProbability": 1,
+  "text": "[outro jingle]",
+  "words": [
+    {
+      "text": "[outro jingle]",
+      "start": 2.02,
+      "end": 12,
+      "type": "audio_event",
+      "speakerId": "speaker_0",
+      "logprob": -0.0008069998391874833
+    }
+  ],
+  "transcriptionId": "uwdPEsv3NF8Km8SgLkIS",
+  "audioDurationSecs": 12.064
+}

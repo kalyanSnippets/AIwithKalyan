@@ -1,0 +1,170 @@
+[
+  {
+    "id": "w0",
+    "text": "What?",
+    "start": 1.94,
+    "end": 2.18,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w1",
+    "text": "Why",
+    "start": 3.9,
+    "end": 4.019,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w2",
+    "text": "are",
+    "start": 4.059,
+    "end": 4.16,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w3",
+    "text": "there",
+    "start": 4.2,
+    "end": 4.36,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w4",
+    "text": "three",
+    "start": 4.38,
+    "end": 4.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w5",
+    "text": "of",
+    "start": 4.6,
+    "end": 4.72,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w6",
+    "text": "me?",
+    "start": 4.76,
+    "end": 4.9,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w7",
+    "text": "Who's",
+    "start": 5.5,
+    "end": 5.68,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w8",
+    "text": "making",
+    "start": 5.72,
+    "end": 5.96,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w9",
+    "text": "the",
+    "start": 6,
+    "end": 6.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w10",
+    "text": "video?",
+    "start": 6.1,
+    "end": 6.38,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w11",
+    "text": "Not",
+    "start": 6.9,
+    "end": 7.08,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w12",
+    "text": "me,",
+    "start": 7.12,
+    "end": 7.22,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w13",
+    "text": "bro.",
+    "start": 7.3,
+    "end": 7.46,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w14",
+    "text": "Guys,",
+    "start": 8.18,
+    "end": 8.52,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w15",
+    "text": "this",
+    "start": 8.74,
+    "end": 8.86,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w16",
+    "text": "is",
+    "start": 8.92,
+    "end": 9.06,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w17",
+    "text": "my",
+    "start": 9.12,
+    "end": 9.26,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w18",
+    "text": "channel.",
+    "start": 9.36,
+    "end": 9.74,
+    "speaker": "speaker_0"
+  },
+  {
+    "id": "w19",
+    "text": "Okay,",
+    "start": 10.18,
+    "end": 10.34,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w20",
+    "text": "bye.",
+    "start": 10.44,
+    "end": 10.66,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w21",
+    "text": "You",
+    "start": 10.88,
+    "end": 10.98,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w22",
+    "text": "do",
+    "start": 11.02,
+    "end": 11.12,
+    "speaker": "speaker_1"
+  },
+  {
+    "id": "w23",
+    "text": "it.",
+    "start": 11.18,
+    "end": 11.32,
+    "speaker": "speaker_1"
+  }
+]
