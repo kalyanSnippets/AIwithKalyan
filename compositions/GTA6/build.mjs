@@ -407,7 +407,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   // 32. night drive, rain, reflections — freeze + labels
   const n0 = at("now imagine you are driving"), nF = at("streetlights reflect"), n1 = at("and here is something people") - 0.05;
   foot("el_night", n0, n1, { freeze: nF, kb: "in" });
-  ring({ x: 500, y: 200, r: 130, teal: true, t: at("streetlights reflect"), t1: n1, label: "LIGHT", lx: 680, ly: 150 });
+  ring({ x: 1290, y: 175, r: 120, teal: true, t: at("streetlights reflect"), t1: n1, label: "LIGHT", lx: 900, ly: 300 });
   ring({ x: 960, y: 860, r: 190, t: at("across the surface"), t1: n1, label: "SURFACE", lx: 1200, ly: 820 });
   kinetic({ x: 1100, y: 120, w: 760, size: 84, align: "right", t1: n1, parts: [{ text: "WEATHER", t: at("atmosphere changes"), cls: "t" }, { text: "RAY TRACING", t: at("rate-traced"), cls: "hl" }] });
   // 33. graphics ≠ AI
