@@ -1,0 +1,19 @@
+{
+  "video": "GTA 6 — Six Technologies Behind the World",
+  "slug": "GTA6",
+  "updated": "2026-11-20",
+  "stages": {
+    "idea":      { "status": "approved",          "date": "2026-11-20", "note": "Kalyan supplied script and asset manifest" },
+    "value":     { "status": "not-started",       "date": null, "note": "" },
+    "script":    { "status": "awaiting-approval", "date": "2026-11-20", "note": "Script pasted by Kalyan; recorded as IMG_1825.MOV. Confirm it is final. Some claims need fact-check (see edits/context-map.md)." },
+    "brief":     { "status": "not-started",       "date": null, "note": "Waiting on reference-style pick and answers; context map v0 written" },
+    "assets":    { "status": "not-started",       "date": null, "note": "Only A-roll in Drive; official footage/stills not collected" },
+    "edit":      { "status": "not-started",       "date": null, "note": "" },
+    "packaging": { "status": "not-started",       "date": null, "note": "" },
+    "upload":    { "status": "not-started",       "date": null, "note": "" }
+  },
+  "sources": {
+    "drive_folder": "1RooD6bO_AEImPQlYKoZ7ze6AjIGFyS9X",
+    "a_roll": { "file": "IMG_1825.MOV", "drive_id": "1jopmfE3_vReSsk10IbVkWFFKj-1PuutU", "bytes": 2286825850 }
+  }
+}

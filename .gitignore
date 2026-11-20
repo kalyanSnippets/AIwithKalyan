@@ -42,3 +42,12 @@ REA/remotion/out/
 
 # REA proofs build output
 REA/proofs/*/dist/
+
+# GTA6 video project (same rules as the root media/ and renders/)
+GTA6/media/**
+!GTA6/media/**/
+!GTA6/media/**/.gitkeep
+!GTA6/media/broll/SOURCES.md
+GTA6/renders/**
+!GTA6/renders/.gitkeep
+GTA6/compositions/**/media/
