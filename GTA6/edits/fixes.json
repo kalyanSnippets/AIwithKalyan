@@ -1,0 +1,43 @@
+{
+ "max_gap": 0.35,
+ "pause": 0.22,
+ "remove": [
+  [
+   252,
+   256,
+   "false start: 'he there is one thing' (kept the second 'there is one thing')"
+  ],
+  [
+   389,
+   389,
+   "doubled 'npc'"
+  ],
+  [
+   1364,
+   1364,
+   "stumble: 'raging' before 'rage engine'"
+  ],
+  [
+   2147,
+   2148,
+   "doubled 'or would'"
+  ]
+ ],
+ "extend": [
+  [
+   "which is NPC behaviour",
+   391,
+   "include 'npc behavior' (second npc)"
+  ],
+  [
+   "Or someone with different body proportions?",
+   913,
+   "include 'proportion'"
+  ],
+  [
+   "Because there's a lot more happening behind the screen",
+   2199,
+   "include 'scene than we realize' (last words)"
+  ]
+ ]
+}
