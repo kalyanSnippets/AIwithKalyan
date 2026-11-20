@@ -58,3 +58,22 @@ The space/Earth punchline was skipped: it wasn't generated, and space already fe
 
 - **Upscale:** a free lanczos upscale with a light sharpen, from 720p. It won't add real detail. Higgsfield's upscaler would look better if credits allow.
 - **Clip 7 wording:** "and I started with my normal studio videos in these exact prompts I used" is how the Higgsfield clip says it. It's slightly garbled; re-voice with Kalyan's own recording if wanted.
+
+---
+
+# v2 (2026-11-20): re-ordered per Kalyan's review
+
+Rebuild with `bash edits/myroom/build_v2.sh`.
+Output: `renders/myroom/MyRoomWentCrazy_v2_1080p.mp4`, 1:30, −14.2 LUFS, −1.0 dB peak.
+Music: new 90 s bed, `media/music/myroom/bed_v2.mp3`, written to turn upbeat at about 68 s for the reveal.
+
+| Start | Segment (source in → out) | Transition into the next segment |
+|---|---|---|
+| 0:00.0 | 1 Fire 0.00 → 18.95 (ends as the spark vanishes) | 0.2 s dissolve |
+| 0:18.8 | 2 Portal 2.20 → 8.75 (starts as the glow begins; ends while the chair floats back) | 0.5 s dissolve |
+| 0:24.8 | 6 Clones 0.80 → 19.00 (ends once they've vanished; rings and "come on" dropped) | 0.4 s dissolve |
+| 0:42.7 | 3 Robot 1.40 → 13.20 ("No, no, no, wait, not again" → armour → snap) | 0.3 s white flash |
+| 0:54.2 | 5 Keyboard 5.25 → 19.25 (shrink-in-studio, "Finally", lightning dropped) | 0.2 s dissolve |
+| 1:08.0 | 7 Reveal 0.00 → end | |
+
+SFX in v2: fire 8.7 · portal 18.8 · whoosh 24.2 · clone pop 26.6 · vanish 42.1 · robot 45.3 · snap/teleport 54.1 · ESC zap 65.7 · reassemble 68.0.
