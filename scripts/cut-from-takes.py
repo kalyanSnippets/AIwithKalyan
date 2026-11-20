@@ -94,8 +94,8 @@ for e in tight:
     a, b = int(e["src_in"] * 100), int(e["src_out"] * 100)
     act = np.where(env[a:b] >= SIL)[0]
     if len(act):
-        e["src_in"] = round(max(e["src_in"], (a + act[0]) / 100 - .08), 3)
-        e["src_out"] = round(min(e["src_out"], (a + act[-1]) / 100 + .12), 3)
+        e["src_in"] = round(max(e["src_in"], (a + act[0]) / 100 - F.get("lead", .08)), 3)
+        e["src_out"] = round(min(e["src_out"], (a + act[-1]) / 100 + F.get("tail", .12)), 3)
 edl = [e for e in tight if e["src_out"] - e["src_in"] > .08]
 # source-time additions (words the ASR lumped into a neighbour, e.g. 'rage' inside 'RAGE engine')
 for t0, t1, why in F.get("keep_time", []):
@@ -114,27 +114,60 @@ for t0, t1, why in F.get("remove_time", []):
         if e["src_in"] < t0: out.append({**e, "src_out": round(t0, 3)})
         if e["src_out"] > t1: out.append({**e, "src_in": round(t1, 3)})
     edl = [e for e in out if e["src_out"] - e["src_in"] > .08]
+# cap the quiet across every join (tail of one piece + head of the next) at join_max seconds
+JM, JDB = F.get("join_max"), F.get("join_db", -45.0)
+if JM:
+    def q_tail(e):
+        a, b = int(e["src_in"] * 100), int(e["src_out"] * 100); k = 0
+        while b - k - 1 > a and env[b - k - 1] < JDB: k += 1
+        return k / 100
+    def q_head(e):
+        a, b = int(e["src_in"] * 100), int(e["src_out"] * 100); k = 0
+        while a + k < b - 1 and env[a + k] < JDB: k += 1
+        return k / 100
+    for x, y in zip(edl, edl[1:]):
+        t, h = q_tail(x), q_head(y)
+        if t + h > JM:
+            keep_t = min(t, JM * .6); keep_h = min(h, JM - keep_t)
+            x["src_out"] = round(x["src_out"] - (t - keep_t), 3)
+            y["src_in"] = round(y["src_in"] + (h - keep_h), 3)
+    edl = [e for e in edl if e["src_out"] - e["src_in"] > .08]
 dur = sum(e["src_out"] - e["src_in"] for e in edl)
 json.dump({"source": "IMG_1825", "segments": edl, "duration": round(dur, 2)}, open(edl_p, "w"), indent=1)
 print(f"{len(edl)} segments, {dur/60:.2f} min")
 
 if "--render" in sys.argv:
-    # one accurate-seek encode per segment, then a stream-copy concat (low memory, frame-exact cuts)
+    # Video: one accurate-seek encode per segment with an exact frame count taken from the running
+    # total (no drift), then stream-copy concat. Audio: one sample-accurate render of the whole EDL.
+    # --punch Z alternates framing between 1.0 and Z (face-centred) at every join to hide jump cuts.
     import os, tempfile
     i = sys.argv.index("--render"); src, out = sys.argv[i + 1], sys.argv[i + 2]
     sc = int(sys.argv[sys.argv.index("--scale") + 1]) if "--scale" in sys.argv else 1920
+    Z = float(sys.argv[sys.argv.index("--punch") + 1]) if "--punch" in sys.argv else 1.0
+    FPS = 30000 / 1001
     tmp = tempfile.mkdtemp(prefix="cut_", dir=os.path.dirname(os.path.abspath(out)))
-    lst = []
+    lst, cum = [], 0.0
     for k, e in enumerate(edl):
-        d = e["src_out"] - e["src_in"]; f = os.path.join(tmp, f"s{k:04d}.mp4")
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{e['src_in']:.3f}", "-i", src, "-t", f"{d:.3f}",
-                        "-vf", f"scale={sc}:-2,fps=30000/1001", "-af",
-                        f"afade=t=in:d=0.012,afade=t=out:st={max(0, d - .015):.3f}:d=0.015,aresample=48000",
-                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "27", "-pix_fmt", "yuv420p",
-                        "-c:a", "aac", "-b:a", "128k", "-ac", "2", f], check=True)
+        d = e["src_out"] - e["src_in"]
+        nf = round((cum + d) * FPS) - round(cum * FPS); cum += d
+        if nf <= 0: continue
+        f = os.path.join(tmp, f"s{k:04d}.mp4")
+        vf = "fps=30000/1001"
+        if Z > 1 and k % 2 == 1:   # punch-in, framed a little above centre (face)
+            vf += f",crop=iw/{Z}:ih/{Z}:(iw-iw/{Z})/2:(ih-ih/{Z})*0.35"
+        vf += f",scale={sc}:-2,setsar=1"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{e['src_in']:.3f}", "-i", src, "-an",
+                        "-vf", vf, "-frames:v", str(nf), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                        "-pix_fmt", "yuv420p", f], check=True)
         lst.append(f"file '{f}'")
     open(os.path.join(tmp, "list.txt"), "w").write("\n".join(lst))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(tmp, "list.txt"),
-                    "-c", "copy", "-movflags", "+faststart", out], check=True)
+                    "-c", "copy", os.path.join(tmp, "v.mp4")], check=True)
+    audio_src = sys.argv[4]
+    subprocess.run([sys.executable, os.path.join(os.path.dirname(__file__), "render-cut-audio.py"), edl_p, audio_src,
+                    os.path.join(tmp, "a.wav")], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(tmp, "v.mp4"), "-i", os.path.join(tmp, "a.wav"),
+                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
+                    "-movflags", "+faststart", out], check=True)
     subprocess.run(["rm", "-rf", tmp])
     print("rendered", out)

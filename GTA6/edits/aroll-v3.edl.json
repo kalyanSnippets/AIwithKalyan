@@ -1,0 +1,961 @@
+{
+ "source": "IMG_1825",
+ "segments": [
+  {
+   "src_in": 31.77,
+   "src_out": 32.41,
+   "text": "Guys,"
+  },
+  {
+   "src_in": 32.71,
+   "src_out": 34.68,
+   "text": "GTA 6 is finally here,"
+  },
+  {
+   "src_in": 46.77,
+   "src_out": 49.51,
+   "text": "and honestly, after all these years of waiting, the technology behind this game is just fascinating."
+  },
+  {
+   "src_in": 49.98,
+   "src_out": 52.8,
+   "text": "'the technology behind this game is just fascinating' (to end of word)"
+  },
+  {
+   "src_in": 138.08,
+   "src_out": 138.83,
+   "text": "But wait,"
+  },
+  {
+   "src_in": 138.91,
+   "src_out": 141.15,
+   "text": "here is something that might actually surprise you."
+  },
+  {
+   "src_in": 142.81,
+   "src_out": 147.12,
+   "text": "Rockstar says they didn't use generative AI to build GTA 6 world."
+  },
+  {
+   "src_in": 147.52,
+   "src_out": 148.01,
+   "text": "Yeah,"
+  },
+  {
+   "src_in": 148.24,
+   "src_out": 149.23,
+   "text": "you heard that right."
+  },
+  {
+   "src_in": 150.29,
+   "src_out": 155.35,
+   "text": "no ChatGPT generating an entire city. No single AI prompt creating the whole game."
+  },
+  {
+   "src_in": 167.97,
+   "src_out": 171.83,
+   "text": "So then how did they make a world where people can notice you following them,"
+  },
+  {
+   "src_in": 172.4,
+   "src_out": 174.87,
+   "text": "police can react to your criminal history,"
+  },
+  {
+   "src_in": 175.08,
+   "src_out": 177.7,
+   "text": "and thousands of characters move so naturally?"
+  },
+  {
+   "src_in": 179.15,
+   "src_out": 179.63,
+   "text": "Well,"
+  },
+  {
+   "src_in": 179.71,
+   "src_out": 181.87,
+   "text": "that's where things really gets interesting."
+  },
+  {
+   "src_in": 198.73,
+   "src_out": 200.16,
+   "text": "Because today, I'm going to"
+  },
+  {
+   "src_in": 202.42,
+   "src_out": 206.28,
+   "text": "break down six technologies behind GTA"
+  },
+  {
+   "src_in": 206.58,
+   "src_out": 207.4,
+   "text": "And trust me,"
+  },
+  {
+   "src_in": 207.49,
+   "src_out": 210.86,
+   "text": "the last one changes how you might think about the future of gaming."
+  },
+  {
+   "src_in": 226.13,
+   "src_out": 228.68,
+   "text": "okay, before we get into those six technologies,"
+  },
+  {
+   "src_in": 230.7,
+   "src_out": 232.56,
+   "text": "there is one thing you need to understand."
+  },
+  {
+   "src_in": 239.03,
+   "src_out": 239.53,
+   "text": "see,"
+  },
+  {
+   "src_in": 239.66,
+   "src_out": 241.13,
+   "text": "whenever we hear the word"
+  },
+  {
+   "src_in": 241.17,
+   "src_out": 242.29,
+   "text": "AI nowadays,"
+  },
+  {
+   "src_in": 243.69,
+   "src_out": 248.18,
+   "text": "we immediately think about ChatGPT, Claude, or AI-generated videos, right?"
+  },
+  {
+   "src_in": 248.64,
+   "src_out": 249.72,
+   "text": "But here is the thing."
+  },
+  {
+   "src_in": 249.96,
+   "src_out": 252.27,
+   "text": "Games have been using AI for decades."
+  },
+  {
+   "src_in": 252.73,
+   "src_out": 255.27,
+   "text": "For example, imagine you are playing GTA."
+  },
+  {
+   "src_in": 255.39,
+   "src_out": 258.17,
+   "text": "You steal a car, a police officer notices you,"
+  },
+  {
+   "src_in": 258.6,
+   "src_out": 259.34,
+   "text": "and suddenly"
+  },
+  {
+   "src_in": 262.92,
+   "src_out": 264.69,
+   "text": "police vehicles start chasing you."
+  },
+  {
+   "src_in": 267.62,
+   "src_out": 270.96,
+   "text": "now somebody has to decide how those police officers behave, right?"
+  },
+  {
+   "src_in": 271.22,
+   "src_out": 273.05,
+   "text": "Well, that's traditional game AI."
+  },
+  {
+   "src_in": 273.53,
+   "src_out": 277.64,
+   "text": "It's combination of programmed rules, decision-making systems, and simulations."
+  },
+  {
+   "src_in": 286.38,
+   "src_out": 287.06,
+   "text": "And GTA"
+  },
+  {
+   "src_in": 287.26,
+   "src_out": 287.44,
+   "text": "And GTA"
+  },
+  {
+   "src_in": 287.72,
+   "src_out": 290.15,
+   "text": "And GTA"
+  },
+  {
+   "src_in": 290.66,
+   "src_out": 292.89,
+   "text": "So let's start with technology number one,"
+  },
+  {
+   "src_in": 302.65,
+   "src_out": 303.22,
+   "text": "which is"
+  },
+  {
+   "src_in": 304.65,
+   "src_out": 305.97,
+   "text": "NPC behavior."
+  },
+  {
+   "src_in": 310.17,
+   "src_out": 311.34,
+   "text": "Okay, imagine this."
+  },
+  {
+   "src_in": 311.46,
+   "src_out": 313.48,
+   "text": "You are casually walking through a Vice City."
+  },
+  {
+   "src_in": 313.9,
+   "src_out": 316.08,
+   "text": "You notice two people having a conversation,"
+  },
+  {
+   "src_in": 316.47,
+   "src_out": 318.73,
+   "text": "so you stop nearby just to listen."
+  },
+  {
+   "src_in": 326.26,
+   "src_out": 328.87,
+   "text": "But instead of standing there and ignoring you,"
+  },
+  {
+   "src_in": 337.49,
+   "src_out": 340.56,
+   "text": "those characters might actually notice that you are eavesdropping."
+  },
+  {
+   "src_in": 357.67,
+   "src_out": 358.21,
+   "text": "Bro,"
+  },
+  {
+   "src_in": 358.32,
+   "src_out": 361.36,
+   "text": "imagine getting caught being nosy by a video game character,"
+  },
+  {
+   "src_in": 365.97,
+   "src_out": 369.04,
+   "text": "And that's one of the interesting details Rockstar has discussed."
+  },
+  {
+   "src_in": 369.69,
+   "src_out": 373.608,
+   "text": "NPCs are designed to respond to situations like being followed"
+  },
+  {
+   "src_in": 375.49,
+   "src_out": 377.65,
+   "text": "or having their personal space interrupted."
+  },
+  {
+   "src_in": 378.16,
+   "src_out": 379.38,
+   "text": "Now, why does this matter?"
+  },
+  {
+   "src_in": 390.08,
+   "src_out": 391.15,
+   "text": "Because normally,"
+  },
+  {
+   "src_in": 391.3,
+   "src_out": 395.76,
+   "text": "you can walk around a game world and most background characters barely acknowledge you."
+  },
+  {
+   "src_in": 396.12,
+   "src_out": 398.53,
+   "text": "But when characters respond to your actions,"
+  },
+  {
+   "src_in": 398.69,
+   "src_out": 401.27,
+   "text": "even small interactions feel more believable."
+  },
+  {
+   "src_in": 402.33,
+   "src_out": 404.24,
+   "text": "And if you think that's interesting,"
+  },
+  {
+   "src_in": 404.45,
+   "src_out": 406.85,
+   "text": "wait until you hear how police system works."
+  },
+  {
+   "src_in": 410.15,
+   "src_out": 411.47,
+   "text": "because this next one"
+  },
+  {
+   "src_in": 411.608,
+   "src_out": 414.35,
+   "text": "could completely change the way you escape a crime."
+  },
+  {
+   "src_in": 447.08,
+   "src_out": 449.63,
+   "text": "Okay, picture this. You are driving around Vice City."
+  },
+  {
+   "src_in": 449.9,
+   "src_out": 451.03,
+   "text": "You commit a crime."
+  },
+  {
+   "src_in": 457.97,
+   "src_out": 461.17,
+   "text": "The police see your car, your clothes, maybe even your face,"
+  },
+  {
+   "src_in": 461.38,
+   "src_out": 463.08,
+   "text": "and somehow you manage to escape."
+  },
+  {
+   "src_in": 463.44,
+   "src_out": 465.01,
+   "text": "Now, in a typical game,"
+  },
+  {
+   "src_in": 465.12,
+   "src_out": 466.98,
+   "text": "once the wanted level disappears,"
+  },
+  {
+   "src_in": 467.12,
+   "src_out": 469.33,
+   "text": "you might feel like everything's back to normal."
+  },
+  {
+   "src_in": 488.9,
+   "src_out": 493.26,
+   "text": "But GTA 6 introduces something called the criminal profile system."
+  },
+  {
+   "src_in": 496.43,
+   "src_out": 502.04,
+   "text": "The idea is that details associated with your crime behavior can affect how the world responds to you."
+  },
+  {
+   "src_in": 502.51,
+   "src_out": 505.37,
+   "text": "So, for example, an outfit connected to a crime"
+  },
+  {
+   "src_in": 505.448,
+   "src_out": 507.48,
+   "text": "could become something you need to think about."
+  },
+  {
+   "src_in": 509.27,
+   "src_out": 512.57,
+   "text": "I mean, suddenly escaping isn't just about driving faster."
+  },
+  {
+   "src_in": 514.75,
+   "src_out": 518.61,
+   "text": "it's also about what people saw and what information might still matter."
+  },
+  {
+   "src_in": 520.2,
+   "src_out": 522.76,
+   "text": "and that's a fascinating direction for game AI."
+  },
+  {
+   "src_in": 522.96,
+   "src_out": 523.78,
+   "text": "But okay,"
+  },
+  {
+   "src_in": 524.27,
+   "src_out": 526.11,
+   "text": "NPC behavior is one thing."
+  },
+  {
+   "src_in": 526.23,
+   "src_out": 529.86,
+   "text": "How do you make thousands of completely different people move naturally?"
+  },
+  {
+   "src_in": 565.928,
+   "src_out": 567.61,
+   "text": "that's technology number three,"
+  },
+  {
+   "src_in": 567.888,
+   "src_out": 569.69,
+   "text": "which is animation retargeting."
+  },
+  {
+   "src_in": 571.23,
+   "src_out": 574.77,
+   "text": "Now, here is something most people probably won't even notice while playing."
+  },
+  {
+   "src_in": 584.06,
+   "src_out": 587.74,
+   "text": "But developers spend incredible amount of time solving this problem."
+  },
+  {
+   "src_in": 593.66,
+   "src_out": 597.41,
+   "text": "imagine you have created one animation of a character sitting inside a car."
+  },
+  {
+   "src_in": 598.41,
+   "src_out": 599.52,
+   "text": "Sounds simple, right?"
+  },
+  {
+   "src_in": 616.5,
+   "src_out": 620.54,
+   "text": "But what happens when a much taller character tries to use that same animation,"
+  },
+  {
+   "src_in": 620.71,
+   "src_out": 622.84,
+   "text": "or someone with a different body proportion?"
+  },
+  {
+   "src_in": 629.58,
+   "src_out": 632.45,
+   "text": "Their hands might not reach the steering wheel properly."
+  },
+  {
+   "src_in": 632.84,
+   "src_out": 634.86,
+   "text": "Their legs might not line up with the seat."
+  },
+  {
+   "src_in": 635.12,
+   "src_out": 637.32,
+   "text": "And suddenly, the animation looks weird."
+  },
+  {
+   "src_in": 637.78,
+   "src_out": 641.8,
+   "text": "So the Rockstar developed technology called runtime animation retargeting."
+  },
+  {
+   "src_in": 651.6,
+   "src_out": 656.1,
+   "text": "basically, it helps adapt animations to different characters while the game is still running."
+  },
+  {
+   "src_in": 668.18,
+   "src_out": 671.38,
+   "text": "And when you multiply that across a huge population of characters,"
+  },
+  {
+   "src_in": 680.22,
+   "src_out": 684.3,
+   "text": "You start to understand how much engineering goes into making a city feel natural."
+  },
+  {
+   "src_in": 688.71,
+   "src_out": 691.13,
+   "text": "but here is where it gets even more interesting."
+  },
+  {
+   "src_in": 699.81,
+   "src_out": 702.79,
+   "text": "Because Rockstar is not just simulating individual characters."
+  },
+  {
+   "src_in": 712.97,
+   "src_out": 716.54,
+   "text": "it is also building systems around how characters interact with each other."
+  },
+  {
+   "src_in": 744.73,
+   "src_out": 746.98,
+   "text": "And that is where technology four comes in,"
+  },
+  {
+   "src_in": 747.138,
+   "src_out": 748.79,
+   "text": "which is character relationships."
+  },
+  {
+   "src_in": 763.31,
+   "src_out": 766.138,
+   "text": "Now, you already know GTA 6 has two main characters,"
+  },
+  {
+   "src_in": 766.36,
+   "src_out": 767.53,
+   "text": "Jason and Lucia."
+  },
+  {
+   "src_in": 767.718,
+   "src_out": 769.05,
+   "text": "But here is the interesting part."
+  },
+  {
+   "src_in": 776.118,
+   "src_out": 780.58,
+   "text": "Rockstar has discussed AI systems designed to support their interactions as a couple."
+  },
+  {
+   "src_in": 793.48,
+   "src_out": 794.96,
+   "text": "think about that for a second."
+  },
+  {
+   "src_in": 795.078,
+   "src_out": 795.95,
+   "text": "In a normal game, a character might just follow you because the mis-mission says so."
+  },
+  {
+   "src_in": 800.15,
+   "src_out": 803.0,
+   "text": "clean retake 'a character might just follow you because the mission says so'"
+  },
+  {
+   "src_in": 804.51,
+   "src_out": 807.04,
+   "text": "But when you are designing a believable relationship,"
+  },
+  {
+   "src_in": 807.42,
+   "src_out": 808.94,
+   "text": "you might need much more than that."
+  },
+  {
+   "src_in": 809.498,
+   "src_out": 815.31,
+   "text": "Characters need to move together, react to situations, and participate in activities in ways that make sense."
+  },
+  {
+   "src_in": 817.9,
+   "src_out": 821.33,
+   "text": "for example, imagine two characters arriving at a location together."
+  },
+  {
+   "src_in": 824.24,
+   "src_out": 828.84,
+   "text": "One might need to wait, reposition, or react to what the other character is doing."
+  },
+  {
+   "src_in": 830.03,
+   "src_out": 833.15,
+   "text": "That's the kind of coordination game developers have to solve."
+  },
+  {
+   "src_in": 836.14,
+   "src_out": 837.69,
+   "text": "And here is the important thing."
+  },
+  {
+   "src_in": 846.13,
+   "src_out": 847.066,
+   "text": "This doesn't mean Jason and Lucia are secretly powered by ChatGPT."
+  },
+  {
+   "src_in": 847.286,
+   "src_out": 850.15,
+   "text": "This doesn't mean Jason and Lucia are secretly powered by ChatGPT."
+  },
+  {
+   "src_in": 854.38,
+   "src_out": 857.5,
+   "text": "It's about carefully designed gameplay and character systems."
+  },
+  {
+   "src_in": 861.0,
+   "src_out": 863.41,
+   "text": "Now, let's move from characters to actual world,"
+  },
+  {
+   "src_in": 863.92,
+   "src_out": 867.8,
+   "text": "because technology number five is something you can see almost everywhere,"
+  },
+  {
+   "src_in": 878.76,
+   "src_out": 880.6,
+   "text": "And that technology is called"
+  },
+  {
+   "src_in": 881.62,
+   "src_out": 882.58,
+   "text": "RAGE Engine,"
+  },
+  {
+   "src_in": 882.64,
+   "src_out": 883.78,
+   "text": "lighting, and weather."
+  },
+  {
+   "src_in": 892.85,
+   "src_out": 893.33,
+   "text": "Okay,"
+  },
+  {
+   "src_in": 893.37,
+   "src_out": 895.15,
+   "text": "have you seen the lighting in GTA 6?"
+  },
+  {
+   "src_in": 895.6,
+   "src_out": 898.89,
+   "text": "The reflections on cars, the neon lights, the weather?"
+  },
+  {
+   "src_in": 906.71,
+   "src_out": 909.08,
+   "text": "I mean some of these scenes look incredible."
+  },
+  {
+   "src_in": 909.42,
+   "src_out": 911.38,
+   "text": "But how does all of that actually work?"
+  },
+  {
+   "src_in": 911.78,
+   "src_out": 915.04,
+   "text": "Well, Rockstar uses its own game engine called RAGE."
+  },
+  {
+   "src_in": 916.42,
+   "src_out": 920.93,
+   "text": "And a game engine is basically the technology that helps bring the entire game together,"
+  },
+  {
+   "src_in": 926.71,
+   "src_out": 930.18,
+   "text": "Graphics, physics, animation, and the systems running behind the scenes."
+  },
+  {
+   "src_in": 937.25,
+   "src_out": 939.91,
+   "text": "Now imagine you are driving through Vice City at night."
+  },
+  {
+   "src_in": 940.23,
+   "src_out": 941.29,
+   "text": "It starts raining."
+  },
+  {
+   "src_in": 941.51,
+   "src_out": 942.61,
+   "text": "The road becomes wet."
+  },
+  {
+   "src_in": 942.89,
+   "src_out": 944.73,
+   "text": "Streetlights reflect across the surface."
+  },
+  {
+   "src_in": 947.56,
+   "src_out": 948.97,
+   "text": "And the atmosphere changes."
+  },
+  {
+   "src_in": 952.158,
+   "src_out": 953.83,
+   "text": "to make that look believable,"
+  },
+  {
+   "src_in": 953.95,
+   "src_out": 958.83,
+   "text": "the engine has to coordinate rendering, lighting, materials, and environmental simulations."
+  },
+  {
+   "src_in": 977.18,
+   "src_out": 978.644,
+   "text": "Rockstar has discussed advanced rate-traced rendering and weather technology."
+  },
+  {
+   "src_in": 978.824,
+   "src_out": 981.77,
+   "text": "Rockstar has discussed advanced rate-traced rendering and weather technology."
+  },
+  {
+   "src_in": 995.63,
+   "src_out": 998.04,
+   "text": "And here is something people often misunderstand."
+  },
+  {
+   "src_in": 1010.76,
+   "src_out": 1013.58,
+   "text": "Realistic graphics don't automatically mean AI."
+  },
+  {
+   "src_in": 1014.05,
+   "src_out": 1019.24,
+   "text": "A lot of this comes from graphics programming, physics, and incredibly detailed artistic work."
+  },
+  {
+   "src_in": 1020.03,
+   "src_out": 1022.178,
+   "text": "But when you combine all of these technologies"
+  },
+  {
+   "src_in": 1041.5,
+   "src_out": 1043.556,
+   "text": "You get something much more powerful than just good-looking graphics."
+  },
+  {
+   "src_in": 1043.816,
+   "src_out": 1045.05,
+   "text": "You get something much more powerful than just good-looking graphics."
+  },
+  {
+   "src_in": 1046.26,
+   "src_out": 1048.14,
+   "text": "You get a world that feels believable."
+  },
+  {
+   "src_in": 1064.42,
+   "src_out": 1065.13,
+   "text": "and now,"
+  },
+  {
+   "src_in": 1065.218,
+   "src_out": 1066.39,
+   "text": "technology number six."
+  },
+  {
+   "src_in": 1066.96,
+   "src_out": 1069.28,
+   "text": "This one is not just about GTA 6."
+  },
+  {
+   "src_in": 1073.61,
+   "src_out": 1075.15,
+   "text": "It's about what comes next."
+  },
+  {
+   "src_in": 1083.2,
+   "src_out": 1084.904,
+   "text": "And that technology is machine learning and the future of gaming."
+  },
+  {
+   "src_in": 1085.084,
+   "src_out": 1087.24,
+   "text": "And that technology is machine learning and the future of gaming."
+  },
+  {
+   "src_in": 1112.44,
+   "src_out": 1114.57,
+   "text": "Okay, here is the really interesting question."
+  },
+  {
+   "src_in": 1114.98,
+   "src_out": 1118.69,
+   "text": "If Rockstar can build such a detailed world using hand-crafted design,"
+  },
+  {
+   "src_in": 1118.888,
+   "src_out": 1121.31,
+   "text": "traditional AI, animation, and simulation,"
+  },
+  {
+   "src_in": 1122.18,
+   "src_out": 1126.02,
+   "text": "what happens when future games combine those systems with generative AI?"
+  },
+  {
+   "src_in": 1133.7,
+   "src_out": 1137.2,
+   "text": "Imagine walking into a shop in a future GTA-style game."
+  },
+  {
+   "src_in": 1137.86,
+   "src_out": 1140.568,
+   "text": "Instead of choosing from three fixed dialogue options,"
+  },
+  {
+   "src_in": 1141.36,
+   "src_out": 1144.03,
+   "text": "you could actually talk to the shopkeeper naturally."
+  },
+  {
+   "src_in": 1145.85,
+   "src_out": 1150.27,
+   "text": "or imagine an NPC remembering a conversation you had with them yesterday."
+  },
+  {
+   "src_in": 1156.35,
+   "src_out": 1157.6,
+   "text": "Maybe they recognize you."
+  },
+  {
+   "src_in": 1164.4,
+   "src_out": 1166.908,
+   "text": "maybe they react differently because of what you said"
+  },
+  {
+   "src_in": 1174.12,
+   "src_out": 1177.0,
+   "text": "Or imagine side missions that adapt to your decisions."
+  },
+  {
+   "src_in": 1178.09,
+   "src_out": 1178.65,
+   "text": "I mean,"
+  },
+  {
+   "src_in": 1178.81,
+   "src_out": 1180.45,
+   "text": "the possibilities are fascinating."
+  },
+  {
+   "src_in": 1188.27,
+   "src_out": 1191.17,
+   "text": "Now, to be clear, these are future gaming possibilities."
+  },
+  {
+   "src_in": 1191.728,
+   "src_out": 1193.88,
+   "text": "They are not confirmed GTA 6 features."
+  },
+  {
+   "src_in": 1194.59,
+   "src_out": 1197.09,
+   "text": "Rockstar has machine learning research teams,"
+  },
+  {
+   "src_in": 1197.26,
+   "src_out": 1200.68,
+   "text": "but that doesn't mean every character is running a language model."
+  },
+  {
+   "src_in": 1201.38,
+   "src_out": 1203.9,
+   "text": "And there is a reason developers have to be very careful."
+  },
+  {
+   "src_in": 1205.11,
+   "src_out": 1207.74,
+   "text": "if every character could say absolutely anything,"
+  },
+  {
+   "src_in": 1207.88,
+   "src_out": 1209.33,
+   "text": "how would you control the story?"
+  },
+  {
+   "src_in": 1218.98,
+   "src_out": 1222.61,
+   "text": "how would you make sure the game stays consistent, fun, and safe?"
+  },
+  {
+   "src_in": 1239.25,
+   "src_out": 1243.51,
+   "text": "That's a much harder problem than simply connecting an NPC to a chatbot."
+  },
+  {
+   "src_in": 1251.06,
+   "src_out": 1253.98,
+   "text": "And this brings us to the biggest lesson of GTA"
+  },
+  {
+   "src_in": 1254.148,
+   "src_out": 1254.28,
+   "text": "6."
+  },
+  {
+   "src_in": 1287.19,
+   "src_out": 1290.37,
+   "text": "See, here is what I find most fascinating about GTA 6."
+  },
+  {
+   "src_in": 1290.86,
+   "src_out": 1295.09,
+   "text": "The breakthrough isn't necessarily that AI can create an entire game for us."
+  },
+  {
+   "src_in": 1305.72,
+   "src_out": 1311.21,
+   "text": "It's that human creativity and sophisticated technology can work together to make a world feel alive."
+  },
+  {
+   "src_in": 1311.73,
+   "src_out": 1312.63,
+   "text": "And honestly,"
+  },
+  {
+   "src_in": 1312.77,
+   "src_out": 1315.27,
+   "text": "that's something we can apply outside gaming too."
+  },
+  {
+   "src_in": 1315.62,
+   "src_out": 1319.22,
+   "text": "Whether you are building an app, creating content, or learning AI,"
+  },
+  {
+   "src_in": 1324.23,
+   "src_out": 1326.34,
+   "text": "Don't just ask, \"How can I add AI?\""
+  },
+  {
+   "src_in": 1326.58,
+   "src_out": 1329.34,
+   "text": "Ask, \"What experience can I make genuinely better?\""
+  },
+  {
+   "src_in": 1333.19,
+   "src_out": 1333.622,
+   "text": "now,"
+  },
+  {
+   "src_in": 1333.802,
+   "src_out": 1335.07,
+   "text": "now,"
+  },
+  {
+   "src_in": 1335.42,
+   "src_out": 1336.38,
+   "text": "Imagine GTA"
+  },
+  {
+   "src_in": 1336.5,
+   "src_out": 1341.11,
+   "text": "7 had NPCs that could actually remember you and have natural conversations."
+  },
+  {
+   "src_in": 1344.54,
+   "src_out": 1346.74,
+   "text": "would that make the game more exciting"
+  },
+  {
+   "src_in": 1348.48,
+   "src_out": 1350.18,
+   "text": "or would it be a little creepy?"
+  },
+  {
+   "src_in": 1350.87,
+   "src_out": 1352.57,
+   "text": "Comment \"exciting\" or \"creepy\""
+  },
+  {
+   "src_in": 1352.69,
+   "src_out": 1353.62,
+   "text": "and tell me why."
+  },
+  {
+   "src_in": 1358.31,
+   "src_out": 1362.49,
+   "text": "And if you enjoy discovering the technology behind the things we use every day,"
+  },
+  {
+   "src_in": 1362.69,
+   "src_out": 1367.75,
+   "text": "subscribe to AI with Kalyan because there's a lot more happening behind the scene than we realize."
+  }
+ ],
+ "duration": 464.48
+}

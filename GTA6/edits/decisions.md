@@ -31,3 +31,12 @@
   from two takes, "polices, police, police vehicles" → "police vehicles", "mis-mission" swapped for clean retake.
 - Spoken chapter names ("which is animation retargeting", …) are kept; dropping them saves ~20 s.
 - Review copy `GTA6/renders/GTA6_aroll_v2_review.mp4` (26.7 MB, not committed).
+
+## A-roll cut v3 (2026-11-20, detail clean)
+- EDL `edits/aroll-v3.edl.json` (191 pieces), **7:44**. Scribe check: 98.8% script match, no fillers,
+  stutters or doubled words; silence scan finds no gap >= 0.25 s at -50 dB.
+- Fixed since v2: aborted "just fasc-" in the opening (kept the complete "fascinating"), "raging- RAGE",
+  7 in-phrase pauses shortened, every join capped at 0.20 s of quiet (`join_max`).
+- Picture: alternating 1.0 / 1.1 face-centred framing at each join (`--punch 1.1`) to hide jump cuts.
+- Renderer now uses exact frame counts per piece + one sample-accurate audio render (no drift, no clicks).
+- Not fixable by cutting: "where things really gets interesting" (one take), "stimulating" (one take).

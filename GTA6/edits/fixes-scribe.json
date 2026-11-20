@@ -1,7 +1,7 @@
 {
  "transcript": "GTA6/transcripts/IMG_1825-scribe (ElevenLabs Scribe)",
  "max_gap": 0.3,
- "pause": 0.18,
+ "pause": 0.14,
  "silence_db": -50,
  "remove": [
   [
@@ -69,11 +69,6 @@
  ],
  "keep_time": [
   [
-   46.8,
-   52.3,
-   "'and honestly\u2026 just fascinating' (Scribe gave 15 words one timestamp at 49.7)"
-  ],
-  [
    286.38,
    290.18,
    "'And GTA 6 takes that kind of world-building much further' whole (soft '6' was trimmed)"
@@ -82,6 +77,16 @@
    800.15,
    803.0,
    "clean retake 'a character might just follow you because the mission says so'"
+  ],
+  [
+   46.8,
+   49.55,
+   "'and honestly, after all these years of waiting,'"
+  ],
+  [
+   49.98,
+   52.85,
+   "'the technology behind this game is just fascinating' (to end of word)"
   ]
  ],
  "remove_time": [
@@ -89,6 +94,50 @@
    795.95,
    800.15,
    "'a character \u2026 mis-mission says so' (stumble; clean retake follows)"
+  ],
+  [
+   880.6,
+   881.62,
+   "stumble 'raging-' before 'RAGE engine'"
+  ],
+  [
+   287.06,
+   287.26,
+   "pause 0.36s 'GTA \u2026 6' \u2192 ~0.16s"
+  ],
+  [
+   287.44,
+   287.72,
+   "pause 0.44s '6 \u2026 takes' \u2192 ~0.16s"
+  ],
+  [
+   847.066,
+   847.286,
+   "pause 0.38s 'mean \u2026 Jason' \u2192 ~0.16s"
+  ],
+  [
+   978.644,
+   978.824,
+   "pause 0.34s 'discussed \u2026 advanced' \u2192 ~0.16s"
+  ],
+  [
+   1043.556,
+   1043.816,
+   "pause 0.42s 'than \u2026 just' \u2192 ~0.16s"
+  ],
+  [
+   1084.904,
+   1085.084,
+   "pause 0.34s 'is \u2026 machine' \u2192 ~0.16s"
+  ],
+  [
+   1333.622,
+   1333.802,
+   "pause 0.34s 'Now, \u2026 I' \u2192 ~0.16s"
   ]
- ]
+ ],
+ "lead": 0.06,
+ "tail": 0.09,
+ "join_max": 0.2,
+ "join_db": -45
 }
