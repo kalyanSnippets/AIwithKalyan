@@ -160,5 +160,47 @@
   "t1": 18.43,
   "label": "NPC turns to look",
   "margin": true
+ },
+ "el_chase": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 942.1,
+  "t1": 943.15,
+  "label": "Police cars give chase (gameplay)",
+  "margin": true
+ },
+ "el_heli": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 944.0,
+  "t1": 946.6,
+  "label": "Police helicopter, wanted stars (gameplay)",
+  "margin": true
+ },
+ "el_police": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 947.4,
+  "t1": 949.7,
+  "label": "Police car up close (gameplay)",
+  "margin": true
+ },
+ "el_drive": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 926.0,
+  "t1": 933.0,
+  "label": "Driving through Vice City with a wanted level (gameplay)",
+  "margin": true
+ },
+ "el_night": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1119.45,
+  "t1": 1122.25,
+  "label": "Night drive, wet road reflections (gameplay)",
+  "margin": true
+ },
+ "el_sunset": {
+  "src": "GTAVI_An_Extended_Look",
+  "t0": 1570.1,
+  "t1": 1572.6,
+  "label": "Vice City skyline at sunset",
+  "margin": true
  }
 }

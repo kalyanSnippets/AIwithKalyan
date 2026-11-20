@@ -229,7 +229,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const g0 = at("games have been using"), g1 = at("now somebody has") - 0.05;
   kinetic({ x: 1120, y: 120, w: 720, size: 120, align: "right", t1: at("for example") - 0.05, parts: [{ text: "GAME AI:", t: at("games have been"), cls: "sm" }, { text: "DECADES", t: at("decades"), cls: "hl" }] });
   const f0 = at("for example");
-  montage([{ shot: "jason_drive", t: f0 }, { shot: "police_view", t: at("a police officer") }, { shot: "highway_day", t: at("police vehicles start") }], f0, g1);
+  montage([{ shot: "jason_drive", t: f0 }, { shot: "police_view", t: at("a police officer") }, { shot: "el_chase", t: at("police vehicles start") }], f0, g1);
   {
     const id = nid("flow"); const y = 150;
     clipDiv(id, "", f0 + 0.3, g1, ["CRIME", "WITNESS", "RESPONSE"].map((l, k) => `<div class="alab${k === 1 ? " t" : ""}" id="${id}-${k}" style="left:${200 + k * 560}px;top:${y}px"><div class="v">${l}</div></div>`).join(""), "position:absolute;inset:0;z-index:21", 21);
@@ -278,7 +278,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   chapter(2, "The police remember", "shield-alert", at("okay picture this") - 0.1);
   // 17. car… clothes… face — freeze on Jason & Lucia by the car
   const c0 = at("you are driving around", find("okay picture this")), cF = at("the police see your car"), c1 = at("now in a typical game") - 0.05;
-  foot("jason_drive", c0, cF, { kb: "in" });
+  montage([{ shot: "el_drive", t: c0 }, { shot: "el_heli", t: at("you commit a crime") }], c0, cF);
   foot("jl_stand", cF, c1, { freeze: cF + 0.05, kb: "none" });
   ring({ x: 1560, y: 780, r: 230, t: at("your car"), t1: c1, label: "CAR", lx: 1180, ly: 860 });
   ring({ x: 440, y: 560, r: 200, teal: true, t: at("your clothes"), t1: c1, label: "CLOTHES", lx: 120, ly: 820 });
@@ -388,7 +388,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   chapter(5, "The world itself", "cloud-sun-rain", wC);
   // 30. beauty shots: reflections, neon, weather
   const b0 = at("okay have you seen"), b1 = at("but how does all") - 0.05;
-  montage([{ shot: "neon_street", t: b0 }, { shot: "night_street", t: at("the neon lights") }, { shot: "sunset_hwy", t: at("the weather", find("the neon lights")) }, { shot: "bridge_aerial", t: at("some of these scenes") }], b0, b1);
+  montage([{ shot: "neon_street", t: b0 }, { shot: "night_street", t: at("the neon lights") }, { shot: "sunset_hwy", t: at("the weather", find("the neon lights")) }, { shot: "el_sunset", t: at("some of these scenes") }], b0, b1);
   // 31. RAGE engine stack
   const e0 = at("but how does all"), e1 = at("now imagine you are driving") - 0.05;
   scene(e0 - 0.2, e1);
@@ -406,9 +406,9 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   }
   // 32. night drive, rain, reflections — freeze + labels
   const n0 = at("now imagine you are driving"), nF = at("streetlights reflect"), n1 = at("and here is something people") - 0.05;
-  foot("neon_street", n0, n1, { freeze: nF, kb: "in" });
-  ring({ x: 600, y: 760, r: 160, teal: true, t: at("streetlights reflect"), t1: n1, label: "LIGHT", lx: 160, ly: 560 });
-  ring({ x: 1200, y: 840, r: 170, t: at("across the surface"), t1: n1, label: "SURFACE", lx: 1380, ly: 640 });
+  foot("el_night", n0, n1, { freeze: nF, kb: "in" });
+  ring({ x: 500, y: 200, r: 130, teal: true, t: at("streetlights reflect"), t1: n1, label: "LIGHT", lx: 680, ly: 150 });
+  ring({ x: 960, y: 860, r: 190, t: at("across the surface"), t1: n1, label: "SURFACE", lx: 1200, ly: 820 });
   kinetic({ x: 1100, y: 120, w: 760, size: 84, align: "right", t1: n1, parts: [{ text: "WEATHER", t: at("atmosphere changes"), cls: "t" }, { text: "RAY TRACING", t: at("rate-traced"), cls: "hl" }] });
   // 33. graphics ≠ AI
   kinetic({ x: 1100, y: 130, w: 740, size: 104, align: "right", t1: at("a lot of this comes") - 0.05, parts: [{ text: "GRAPHICS", t: at("realistic graphics") }, { text: "≠ AI", t: at("automatically mean ai"), cls: "hl" }] });
