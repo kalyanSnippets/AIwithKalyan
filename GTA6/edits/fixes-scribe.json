@@ -1,0 +1,94 @@
+{
+ "transcript": "GTA6/transcripts/IMG_1825-scribe (ElevenLabs Scribe)",
+ "max_gap": 0.3,
+ "pause": 0.18,
+ "silence_db": -50,
+ "remove": [
+  [
+   281,
+   285,
+   "false start: 'he-- there is one thing'"
+  ],
+  [
+   354,
+   357,
+   "stumble: 'polices, police, police vehicles'"
+  ],
+  [
+   563,
+   563,
+   "doubled 'or'"
+  ],
+  [
+   428,
+   428,
+   "doubled 'NPC'"
+  ],
+  [
+   2391,
+   2392,
+   "doubled 'or would'"
+  ],
+  [
+   236,
+   241,
+   "abandoned 'break-- But today, I'm going to' (rejoins at 'break down')"
+  ]
+ ],
+ "extend": [
+  [
+   "Because today, I'm going to break down",
+   231,
+   "start at 'Because today, I'm going to' (198.8)"
+  ],
+  [
+   "And suddenly, police vehicles start chasing you.",
+   352,
+   "include 'and suddenly'"
+  ],
+  [
+   "which is NPC behaviour",
+   430,
+   "include 'NPC behavior'"
+  ],
+  [
+   "Or someone with different body proportions?",
+   1024,
+   "include 'proportion'"
+  ],
+  [
+   "Because there's a lot more happening behind the screen",
+   2443,
+   "include 'realize'"
+  ],
+  [
+   "To make that look believable",
+   1683,
+   "include 'simulations' (script says 'simulation')"
+  ]
+ ],
+ "keep_time": [
+  [
+   46.8,
+   52.3,
+   "'and honestly\u2026 just fascinating' (Scribe gave 15 words one timestamp at 49.7)"
+  ],
+  [
+   286.38,
+   290.18,
+   "'And GTA 6 takes that kind of world-building much further' whole (soft '6' was trimmed)"
+  ],
+  [
+   800.15,
+   803.0,
+   "clean retake 'a character might just follow you because the mission says so'"
+  ]
+ ],
+ "remove_time": [
+  [
+   795.95,
+   800.15,
+   "'a character \u2026 mis-mission says so' (stumble; clean retake follows)"
+  ]
+ ]
+}
