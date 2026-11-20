@@ -1,0 +1,1875 @@
+1
+00:00:31,310 --> 00:00:34,090
+Guys, GTA 6 is finally
+
+2
+00:00:34,090 --> 00:00:34,470
+here.
+
+3
+00:00:35,090 --> 00:00:36,890
+And honestly, after all those
+
+4
+00:00:36,890 --> 00:00:38,590
+years of waiting, the technology
+
+5
+00:00:38,590 --> 00:00:40,130
+behind this game is just
+
+6
+00:00:43,040 --> 00:00:52,440
+fascinating.
+
+7
+00:00:52,980 --> 00:00:55,200
+But wait, here is something
+
+8
+00:00:55,200 --> 00:00:57,020
+that might actually surprise you.
+
+9
+00:00:59,880 --> 00:01:01,620
+The technology behind this game
+
+10
+00:01:01,620 --> 00:01:02,860
+is just fascinating.
+
+11
+00:01:02,860 --> 00:01:07,940
+but wait here is something
+
+12
+00:01:07,940 --> 00:01:10,100
+here is something that might
+
+13
+00:01:10,100 --> 00:01:45,080
+actually surprise you rockstar says
+
+14
+00:01:45,080 --> 00:01:47,740
+that rockstar says they didn't
+
+15
+00:01:47,740 --> 00:01:49,320
+use generative ai to build
+
+16
+00:01:49,320 --> 00:01:52,260
+gts6 world yeah you heard
+
+17
+00:01:52,260 --> 00:02:19,510
+but wait here is something
+
+18
+00:02:19,510 --> 00:02:21,010
+that might actually surprise you
+
+19
+00:02:21,010 --> 00:02:24,550
+rockstar says they didn't use
+
+20
+00:02:24,550 --> 00:02:26,570
+generative ai to build gts6
+
+21
+00:02:26,570 --> 00:02:28,790
+world yeah you heard that
+
+22
+00:02:28,790 --> 00:02:30,790
+right no gp no chat
+
+23
+00:02:30,790 --> 00:02:32,650
+gpt generating an entire city
+
+24
+00:02:32,650 --> 00:02:34,490
+no single ai prompt creating
+
+25
+00:02:34,490 --> 00:02:35,970
+the whole game so then
+
+26
+00:02:35,970 --> 00:02:37,910
+so then how did they
+
+27
+00:02:37,910 --> 00:02:39,550
+make so then how did
+
+28
+00:02:39,550 --> 00:02:40,710
+they even make a world
+
+29
+00:02:40,710 --> 00:02:42,070
+where people can notice you
+
+30
+00:02:42,070 --> 00:02:48,500
+following them so then how
+
+31
+00:02:48,500 --> 00:02:49,620
+did they make a world
+
+32
+00:02:49,620 --> 00:02:50,940
+where people can notice you
+
+33
+00:02:50,940 --> 00:02:53,300
+following them police can react
+
+34
+00:02:53,300 --> 00:02:55,240
+to your criminal history and
+
+35
+00:02:55,240 --> 00:02:56,860
+thousands of characters move so
+
+36
+00:02:56,860 --> 00:02:57,460
+naturally.
+
+37
+00:02:58,640 --> 00:03:00,760
+Well that's where things really
+
+38
+00:03:00,760 --> 00:03:03,340
+gets interesting because today I'm
+
+39
+00:03:03,340 --> 00:03:04,480
+going to break down six
+
+40
+00:03:04,480 --> 00:03:06,520
+technologies behind GTS 6.
+
+41
+00:03:07,640 --> 00:03:09,660
+Because today I'm going to
+
+42
+00:03:09,660 --> 00:03:11,960
+break six technologies behind GTS
+
+43
+00:03:11,960 --> 00:03:14,720
+6 with simple examples and
+
+44
+00:03:14,720 --> 00:03:19,750
+trust me because today I'm
+
+45
+00:03:19,750 --> 00:03:21,770
+going to break but today
+
+46
+00:03:21,770 --> 00:03:22,790
+I'm going to break down
+
+47
+00:03:22,790 --> 00:03:24,890
+six technologies behind GTS 6
+
+48
+00:03:24,890 --> 00:03:26,910
+with simple examples and trust
+
+49
+00:03:26,910 --> 00:03:28,450
+me the last one changes
+
+50
+00:03:28,450 --> 00:03:29,650
+how you might think about
+
+51
+00:03:29,650 --> 00:03:31,590
+the future of gaming okay
+
+52
+00:03:44,680 --> 00:03:46,340
+before we get into okay
+
+53
+00:03:46,340 --> 00:03:47,580
+before we get into those
+
+54
+00:03:47,580 --> 00:03:49,660
+six technologies he there is
+
+55
+00:03:49,660 --> 00:03:51,260
+one thing there is one
+
+56
+00:03:51,260 --> 00:03:52,420
+thing you need to understand
+
+57
+00:03:52,420 --> 00:03:55,300
+see whenever we whenever he
+
+58
+00:03:55,300 --> 00:03:57,440
+see whenever we hear the
+
+59
+00:03:57,440 --> 00:04:00,160
+world so see whenever we
+
+60
+00:04:00,160 --> 00:04:01,860
+hear the word ai nowadays
+
+61
+00:04:03,240 --> 00:04:05,240
+we immediately think about chat
+
+62
+00:04:05,240 --> 00:04:07,120
+gpt cloud or ai generated
+
+63
+00:04:07,120 --> 00:04:09,180
+videos right but here is
+
+64
+00:04:09,180 --> 00:04:10,720
+the thing Games have been
+
+65
+00:04:10,720 --> 00:04:12,080
+using AI for decades.
+
+66
+00:04:12,480 --> 00:04:14,140
+For example, imagine you are
+
+67
+00:04:14,140 --> 00:04:15,960
+playing GTA, you steal a
+
+68
+00:04:15,960 --> 00:04:17,680
+car, a police officer notices
+
+69
+00:04:17,680 --> 00:04:18,020
+you.
+
+70
+00:04:18,420 --> 00:04:23,800
+And suddenly police vehicles start
+
+71
+00:04:23,800 --> 00:04:24,480
+chasing you.
+
+72
+00:04:24,780 --> 00:04:26,200
+Now somebody has to decide
+
+73
+00:04:26,200 --> 00:04:30,480
+how those police officers behave,
+
+74
+00:04:30,600 --> 00:04:30,720
+right?
+
+75
+00:04:31,080 --> 00:04:32,820
+Well, that's traditional game AI.
+
+76
+00:04:33,340 --> 00:04:35,340
+It's combination of programmed rules,
+
+77
+00:04:35,520 --> 00:04:37,400
+decision -making systems and simulations.
+
+78
+00:04:38,520 --> 00:04:41,840
+and gps and gts and
+
+79
+00:04:41,840 --> 00:04:43,640
+gta6 takes the kind of
+
+80
+00:04:43,640 --> 00:04:47,940
+world building and gta6 takes
+
+81
+00:04:47,940 --> 00:04:49,240
+that kind of world building
+
+82
+00:04:49,240 --> 00:04:51,400
+much further so let's start
+
+83
+00:04:51,400 --> 00:05:02,830
+with technology number one which
+
+84
+00:05:02,830 --> 00:05:06,730
+is npc npc behavior okay
+
+85
+00:05:09,900 --> 00:05:11,680
+okay imagine this you are
+
+86
+00:05:11,680 --> 00:05:13,080
+casually walking through a vice
+
+87
+00:05:13,080 --> 00:05:14,860
+city you notice two people
+
+88
+00:05:14,860 --> 00:05:16,760
+having a conversation so you
+
+89
+00:05:16,760 --> 00:05:18,480
+stop nearby just to listen
+
+90
+00:05:18,480 --> 00:05:21,200
+but instead of standing you
+
+91
+00:05:23,540 --> 00:05:25,160
+stop nearby just to listen
+
+92
+00:05:25,160 --> 00:05:27,620
+but instead of standing there
+
+93
+00:05:27,620 --> 00:05:29,600
+and ignoring you those characters
+
+94
+00:05:29,600 --> 00:05:31,560
+might actually notice that you
+
+95
+00:05:31,560 --> 00:05:36,120
+are those can those characters
+
+96
+00:05:36,120 --> 00:05:38,300
+might actually those characters might
+
+97
+00:05:38,300 --> 00:05:39,640
+actually notice that you are
+
+98
+00:05:39,640 --> 00:05:43,960
+eavesdropping bro imagine getting caught
+
+99
+00:05:43,960 --> 00:05:49,920
+being nosy with bro imagine
+
+100
+00:05:49,920 --> 00:05:51,460
+getting caught being nosy by
+
+101
+00:05:51,460 --> 00:05:52,400
+a video game character?
+
+102
+00:05:53,000 --> 00:05:59,500
+Bro, imagine getting caught being
+
+103
+00:05:59,500 --> 00:06:00,680
+nosy by a video game
+
+104
+00:06:00,680 --> 00:06:01,120
+character?
+
+105
+00:06:01,620 --> 00:06:02,700
+And that's one of the
+
+106
+00:06:02,700 --> 00:06:05,600
+interesting details Rockstar has discussed.
+
+107
+00:06:06,060 --> 00:06:06,840
+And that's one of the
+
+108
+00:06:06,840 --> 00:06:08,920
+interesting details Rockstar has discussed.
+
+109
+00:06:09,640 --> 00:06:11,420
+NPCs are designed to respond
+
+110
+00:06:11,420 --> 00:06:13,400
+to situations like being followed
+
+111
+00:06:13,400 --> 00:06:16,880
+or having their personal space
+
+112
+00:06:16,880 --> 00:06:17,420
+interrupted.
+
+113
+00:06:17,920 --> 00:06:19,220
+Now why does this matter?
+
+114
+00:06:19,620 --> 00:06:23,640
+Because normally you can you
+
+115
+00:06:23,640 --> 00:06:24,860
+can walk around a game
+
+116
+00:06:24,860 --> 00:06:31,550
+world because normally you can
+
+117
+00:06:31,550 --> 00:06:32,850
+walk around the game world
+
+118
+00:06:32,850 --> 00:06:34,830
+and most background characters barely
+
+119
+00:06:34,830 --> 00:06:36,950
+acknowledge you but when characters
+
+120
+00:06:36,950 --> 00:06:38,890
+respond to your actions even
+
+121
+00:06:38,890 --> 00:06:41,090
+small interactions feel more believable
+
+122
+00:06:41,090 --> 00:06:43,490
+and if you think that's
+
+123
+00:06:43,490 --> 00:06:45,450
+interesting wait until you hear
+
+124
+00:06:45,450 --> 00:06:47,550
+how police system works because
+
+125
+00:06:47,550 --> 00:06:51,210
+this because this next one
+
+126
+00:06:51,210 --> 00:06:53,070
+could completely change the way
+
+127
+00:06:53,070 --> 00:06:54,930
+you escape a crime and
+
+128
+00:07:08,310 --> 00:07:10,030
+that's where the and that's
+
+129
+00:07:10,030 --> 00:07:13,470
+where the technologies and that's
+
+130
+00:07:13,470 --> 00:07:15,050
+where the technology 2 comes
+
+131
+00:07:15,050 --> 00:07:18,770
+in with and that's where
+
+132
+00:07:18,770 --> 00:07:20,210
+the technology 2 comes in
+
+133
+00:07:20,210 --> 00:07:22,030
+which is criminal profile system
+
+134
+00:07:22,030 --> 00:07:28,340
+okay picture this you are
+
+135
+00:07:28,340 --> 00:07:30,000
+driving around y city you
+
+136
+00:07:30,000 --> 00:07:31,500
+commit a crime the police
+
+137
+00:07:31,500 --> 00:07:38,100
+see your car your the
+
+138
+00:07:38,100 --> 00:07:39,300
+police see your car your
+
+139
+00:07:39,300 --> 00:07:41,020
+clothes maybe even your face
+
+140
+00:07:41,020 --> 00:07:42,520
+and somehow you manage to
+
+141
+00:07:42,520 --> 00:07:44,300
+escape Now in a typical
+
+142
+00:07:44,300 --> 00:07:46,140
+game, once the wanted level
+
+143
+00:07:46,140 --> 00:07:47,900
+disappears, you might feel like
+
+144
+00:07:47,900 --> 00:07:49,160
+everything is back to normal.
+
+145
+00:07:52,440 --> 00:07:53,960
+Now in a typical game,
+
+146
+00:07:54,340 --> 00:07:57,460
+once the wanted level disappears,
+
+147
+00:07:58,000 --> 00:08:00,180
+you might feel like everything
+
+148
+00:08:01,910 --> 00:08:08,350
+is back to normal.
+
+149
+00:08:08,550 --> 00:08:10,930
+But GTA 6 introduces something
+
+150
+00:08:10,930 --> 00:08:13,110
+called the criminal profile system.
+
+151
+00:08:15,890 --> 00:08:17,770
+The idea is that details
+
+152
+00:08:17,770 --> 00:08:19,670
+associated with your crime behavior
+
+153
+00:08:19,670 --> 00:08:21,130
+can affect how the world
+
+154
+00:08:21,130 --> 00:08:21,950
+responds to you.
+
+155
+00:08:22,290 --> 00:08:24,010
+So for example, an outfit
+
+156
+00:08:24,010 --> 00:08:25,570
+connected to a crime could
+
+157
+00:08:25,570 --> 00:08:26,830
+become something you need to
+
+158
+00:08:26,830 --> 00:08:27,350
+think about.
+
+159
+00:08:28,090 --> 00:08:30,950
+I mean suddenly escaping isn't
+
+160
+00:08:30,950 --> 00:08:32,370
+just about driving faster.
+
+161
+00:08:32,690 --> 00:08:36,070
+It's also about what people
+
+162
+00:08:36,070 --> 00:08:37,770
+saw and what information might
+
+163
+00:08:37,770 --> 00:08:38,470
+still matter.
+
+164
+00:08:38,750 --> 00:08:41,650
+And that's a fascinating direction
+
+165
+00:08:41,650 --> 00:08:42,530
+for game AI.
+
+166
+00:08:42,530 --> 00:08:45,430
+But okay, NPC behavior is
+
+167
+00:08:45,430 --> 00:08:45,890
+one thing.
+
+168
+00:08:46,090 --> 00:08:47,270
+How do you make thousands
+
+169
+00:08:47,270 --> 00:08:49,090
+of completely different people move
+
+170
+00:08:49,090 --> 00:08:49,630
+naturally?
+
+171
+00:08:50,590 --> 00:08:52,030
+That's technology number three.
+
+172
+00:08:53,950 --> 00:08:55,890
+And that's technology number three.
+
+173
+00:08:56,090 --> 00:09:04,730
+And that's technology number three,
+
+174
+00:09:04,830 --> 00:09:06,690
+which is realistic human movement.
+
+175
+00:09:06,950 --> 00:09:21,310
+And that's technology number three,
+
+176
+00:09:21,470 --> 00:09:23,410
+which is animation retargeting.
+
+177
+00:09:25,480 --> 00:09:27,300
+And that's technology number three,
+
+178
+00:09:27,600 --> 00:09:29,580
+which is animation retargeting.
+
+179
+00:09:30,700 --> 00:09:32,320
+Now here is something most
+
+180
+00:09:32,320 --> 00:09:34,020
+people probably won't even notice
+
+181
+00:09:34,020 --> 00:09:34,540
+while playing.
+
+182
+00:09:35,120 --> 00:09:40,840
+But developers spend an incredible
+
+183
+00:09:40,840 --> 00:09:47,160
+amount of time solving this
+
+184
+00:09:47,160 --> 00:09:47,600
+problem.
+
+185
+00:09:48,640 --> 00:09:50,320
+Imagine you have created one
+
+186
+00:09:50,320 --> 00:09:56,540
+animation of a character sitting
+
+187
+00:09:56,540 --> 00:09:57,320
+inside a car.
+
+188
+00:09:57,980 --> 00:09:59,260
+Sounds simple right?
+
+189
+00:09:59,500 --> 00:10:00,940
+But what happens when a
+
+190
+00:10:00,940 --> 00:10:02,560
+much taller character tries to
+
+191
+00:10:02,560 --> 00:10:03,740
+use that same animation?
+
+192
+00:10:09,440 --> 00:10:11,520
+same animation or someone with
+
+193
+00:10:11,520 --> 00:10:16,990
+different body proportions but what
+
+194
+00:10:16,990 --> 00:10:18,150
+happens when a much taller
+
+195
+00:10:18,150 --> 00:10:19,470
+character tries to use that
+
+196
+00:10:19,470 --> 00:10:21,410
+same animation or someone with
+
+197
+00:10:21,410 --> 00:10:27,670
+a different body proportion their
+
+198
+00:10:27,670 --> 00:10:31,250
+hands might not reach the
+
+199
+00:10:31,250 --> 00:10:33,270
+steering wheel properly their legs
+
+200
+00:10:33,270 --> 00:10:34,390
+might not line up with
+
+201
+00:10:34,390 --> 00:10:35,930
+the seat and suddenly the
+
+202
+00:10:35,930 --> 00:10:38,050
+animation looks weird so the
+
+203
+00:10:38,050 --> 00:10:40,290
+rockstar developed technology called runtime
+
+204
+00:10:40,290 --> 00:10:43,710
+animation retargeting basically it it
+
+205
+00:10:43,710 --> 00:10:45,510
+helps adapt animations to different
+
+206
+00:10:45,510 --> 00:10:47,110
+characters when the game is
+
+207
+00:10:47,110 --> 00:10:50,910
+still running basically it basically
+
+208
+00:10:50,910 --> 00:10:53,390
+basically it helps adapt animations
+
+209
+00:10:53,390 --> 00:10:55,050
+to different characters while the
+
+210
+00:10:55,050 --> 00:10:56,830
+game is still running and
+
+211
+00:10:58,140 --> 00:10:59,440
+when you multiply that across
+
+212
+00:10:59,440 --> 00:11:01,040
+a huge population of characters
+
+213
+00:11:01,040 --> 00:11:02,540
+you might start to understand
+
+214
+00:11:02,540 --> 00:11:04,200
+how much engineering goes into
+
+215
+00:11:04,200 --> 00:11:08,460
+how much engine and when
+
+216
+00:11:08,460 --> 00:11:09,760
+you multiply that across a
+
+217
+00:11:09,760 --> 00:11:11,740
+huge population of characters you
+
+218
+00:11:11,740 --> 00:11:13,040
+start to understand how much
+
+219
+00:11:13,040 --> 00:11:14,700
+engineering goes into making a
+
+220
+00:11:14,700 --> 00:11:15,720
+city feel natural.
+
+221
+00:11:19,670 --> 00:11:21,350
+You start to understand how
+
+222
+00:11:21,350 --> 00:11:22,870
+much engineering goes into making
+
+223
+00:11:22,870 --> 00:11:24,050
+a city feel natural.
+
+224
+00:11:25,250 --> 00:11:29,670
+But here is where it
+
+225
+00:11:29,670 --> 00:11:30,950
+gets even more interesting.
+
+226
+00:11:31,290 --> 00:11:33,190
+Because Rockstar is not just
+
+227
+00:11:33,190 --> 00:11:34,890
+stimulating individual characters.
+
+228
+00:11:42,630 --> 00:11:44,590
+It also building systems around
+
+229
+00:11:44,590 --> 00:11:46,270
+how characters interact with each
+
+230
+00:11:46,270 --> 00:11:50,170
+other it also building systems
+
+231
+00:11:50,170 --> 00:11:52,710
+around how it is also
+
+232
+00:11:52,710 --> 00:11:54,130
+it is also building systems
+
+233
+00:11:54,130 --> 00:11:55,950
+around how characters interact with
+
+234
+00:11:55,950 --> 00:12:22,220
+each other and that is
+
+235
+00:12:22,220 --> 00:12:25,220
+where character and that is
+
+236
+00:12:25,220 --> 00:12:26,820
+where technology 4 comes in
+
+237
+00:12:26,820 --> 00:12:32,710
+which is character relationships now
+
+238
+00:12:32,710 --> 00:12:34,310
+you already know gta 6
+
+239
+00:12:34,310 --> 00:12:36,490
+has two main characters jason
+
+240
+00:12:36,490 --> 00:12:39,150
+and lucia but here is
+
+241
+00:12:39,150 --> 00:12:43,640
+the interesting part Now you
+
+242
+00:12:43,640 --> 00:12:45,140
+already know GTA 6 has
+
+243
+00:12:45,140 --> 00:12:46,940
+two main characters, Jason and
+
+244
+00:12:46,940 --> 00:12:48,300
+Lucia, but here is the
+
+245
+00:12:48,300 --> 00:12:48,960
+interesting part.
+
+246
+00:12:49,460 --> 00:12:51,240
+Rockstar has discussed AI systems
+
+247
+00:12:51,240 --> 00:12:59,690
+designed to support their interactions
+
+248
+00:12:59,690 --> 00:13:00,410
+as a couple.
+
+249
+00:13:00,630 --> 00:13:01,990
+Think about that for a
+
+250
+00:13:01,990 --> 00:13:02,190
+second.
+
+251
+00:13:02,530 --> 00:13:03,710
+In a normal game, a
+
+252
+00:13:03,710 --> 00:13:05,090
+character might just follow you
+
+253
+00:13:05,090 --> 00:13:06,510
+because the mission says no.
+
+254
+00:13:11,230 --> 00:13:14,410
+Think about that for a
+
+255
+00:13:14,410 --> 00:13:14,630
+second.
+
+256
+00:13:14,630 --> 00:13:16,110
+In a normal game, a
+
+257
+00:13:16,110 --> 00:13:17,530
+character might just follow you
+
+258
+00:13:17,530 --> 00:13:19,110
+because the mission says so.
+
+259
+00:13:19,730 --> 00:13:21,390
+A character might just follow
+
+260
+00:13:21,390 --> 00:13:22,610
+you because the mission says
+
+261
+00:13:22,610 --> 00:13:22,870
+so.
+
+262
+00:13:24,130 --> 00:13:25,470
+But when you are designing
+
+263
+00:13:25,470 --> 00:13:27,730
+a believable relationship, you might
+
+264
+00:13:27,730 --> 00:13:28,850
+need much more than that.
+
+265
+00:13:29,410 --> 00:13:30,910
+Characters need to move together,
+
+266
+00:13:31,150 --> 00:13:32,850
+react to situations and participate
+
+267
+00:13:32,850 --> 00:13:34,470
+in activities in ways that
+
+268
+00:13:34,470 --> 00:13:35,110
+make sense.
+
+269
+00:13:35,930 --> 00:13:39,550
+For example, imagine two characters
+
+270
+00:13:39,550 --> 00:13:41,070
+arriving at a location together.
+
+271
+00:13:41,070 --> 00:13:42,950
+one might need to wait
+
+272
+00:13:42,950 --> 00:13:45,330
+one might need to wait
+
+273
+00:13:45,330 --> 00:13:47,250
+reposition or react to what
+
+274
+00:13:47,250 --> 00:13:48,570
+the other character is doing
+
+275
+00:13:48,570 --> 00:13:51,270
+that's a kind of coordination
+
+276
+00:13:51,270 --> 00:13:52,970
+game developers have to solve
+
+277
+00:13:52,970 --> 00:13:56,250
+and here is the and
+
+278
+00:13:56,250 --> 00:13:57,470
+here is the important thing
+
+279
+00:13:57,470 --> 00:13:59,830
+this doesn't mean Jason and
+
+280
+00:13:59,830 --> 00:14:03,710
+Lucia are secretly this doesn't
+
+281
+00:14:03,710 --> 00:14:05,090
+mean Jason and Lucia are
+
+282
+00:14:05,090 --> 00:14:07,530
+secretly this doesn't mean Jason
+
+283
+00:14:07,530 --> 00:14:09,050
+and Lucia are secretly powered
+
+284
+00:14:09,050 --> 00:14:11,230
+by chat GPT it's about
+
+285
+00:14:11,230 --> 00:14:13,510
+carefully designed gameplay and characters
+
+286
+00:14:13,510 --> 00:14:16,090
+it's about carefully designed gameplay
+
+287
+00:14:16,090 --> 00:14:21,480
+and character systems now let's
+
+288
+00:14:21,480 --> 00:14:22,820
+move from characters to actual
+
+289
+00:14:22,820 --> 00:14:25,340
+world because technology number five
+
+290
+00:14:25,340 --> 00:14:26,600
+is something you can see
+
+291
+00:14:26,600 --> 00:14:29,920
+almost everywhere which is technology
+
+292
+00:14:29,920 --> 00:14:40,340
+and that technology is called
+
+293
+00:14:40,340 --> 00:14:43,340
+raging rage engine lighting and
+
+294
+00:14:43,340 --> 00:14:50,540
+weather so okay have you
+
+295
+00:14:50,540 --> 00:14:53,620
+seen the okay have you
+
+296
+00:14:53,620 --> 00:14:54,740
+seen the lighting in gta
+
+297
+00:14:54,740 --> 00:14:56,960
+6 the reflections from cars
+
+298
+00:14:56,960 --> 00:14:58,500
+the neon lights the weather
+
+299
+00:14:58,500 --> 00:15:01,020
+I mean I mean some
+
+300
+00:15:01,020 --> 00:15:05,500
+of these I mean some
+
+301
+00:15:05,500 --> 00:15:07,020
+of these things I mean
+
+302
+00:15:07,020 --> 00:15:08,220
+some of these scenes look
+
+303
+00:15:08,220 --> 00:15:10,240
+incredible but how does all
+
+304
+00:15:10,240 --> 00:15:11,940
+of that actually work well
+
+305
+00:15:11,940 --> 00:15:13,760
+Rockstar uses its own game
+
+306
+00:15:13,760 --> 00:15:16,700
+engine called rage and a
+
+307
+00:15:16,700 --> 00:15:18,180
+game engine is basically the
+
+308
+00:15:18,180 --> 00:15:19,720
+technology that helps bring the
+
+309
+00:15:19,720 --> 00:15:23,800
+entire game together like graphics
+
+310
+00:15:23,800 --> 00:15:25,640
+physics animation and the systems
+
+311
+00:15:25,640 --> 00:15:28,460
+from graphics physics animation and
+
+312
+00:15:28,460 --> 00:15:29,800
+the systems running behind the
+
+313
+00:15:29,800 --> 00:15:33,760
+scenes now image now imagine
+
+314
+00:15:33,760 --> 00:15:35,480
+you're driving through the YCT
+
+315
+00:15:35,480 --> 00:15:38,060
+at night now imagine you
+
+316
+00:15:38,060 --> 00:15:39,520
+are driving through YCT at
+
+317
+00:15:39,520 --> 00:15:41,640
+night it starts raining the
+
+318
+00:15:41,640 --> 00:15:43,360
+road becomes wet street lights
+
+319
+00:15:43,360 --> 00:15:45,580
+reflect across the surface and
+
+320
+00:15:47,720 --> 00:15:50,180
+the atmosphere changes to make
+
+321
+00:15:50,180 --> 00:15:52,680
+to make to make that
+
+322
+00:15:52,680 --> 00:15:54,620
+look believable the engine has
+
+323
+00:15:54,620 --> 00:15:57,000
+to coordinate rendering lighting materials
+
+324
+00:15:57,000 --> 00:15:58,640
+and environmental simulations.
+
+325
+00:16:00,860 --> 00:16:02,860
+The engine has to coordinate
+
+326
+00:16:02,860 --> 00:16:05,640
+rendering, lighting, materials and environmental
+
+327
+00:16:05,640 --> 00:16:06,580
+simulations.
+
+328
+00:16:06,960 --> 00:16:14,500
+Rockstar has discussed advanced ray
+
+329
+00:16:14,500 --> 00:16:21,700
+traced rendering and weather technology.
+
+330
+00:16:21,940 --> 00:16:24,780
+And here is something people
+
+331
+00:16:24,780 --> 00:16:25,660
+often misunderstand.
+
+332
+00:16:25,660 --> 00:16:36,780
+And here is something people
+
+333
+00:16:36,780 --> 00:16:37,780
+often misunderstand.
+
+334
+00:16:42,840 --> 00:16:52,940
+Realistic graphics don't automatically mean
+
+335
+00:16:52,940 --> 00:16:53,340
+AI.
+
+336
+00:16:53,700 --> 00:16:55,060
+A lot of this comes
+
+337
+00:16:55,060 --> 00:16:57,160
+from graphics programming, physics and
+
+338
+00:16:57,160 --> 00:16:59,160
+incredibly detailed artistic work.
+
+339
+00:16:59,160 --> 00:17:01,100
+But when you combine all
+
+340
+00:17:01,100 --> 00:17:03,020
+of these technologies together, you
+
+341
+00:17:03,020 --> 00:17:07,060
+get something much more powerful
+
+342
+00:17:07,060 --> 00:17:08,740
+than just looking graphics.
+
+343
+00:17:10,520 --> 00:17:12,180
+you get something much more
+
+344
+00:17:12,180 --> 00:17:14,220
+powerful than just looking graphics
+
+345
+00:17:14,220 --> 00:17:17,400
+you get something you get
+
+346
+00:17:17,400 --> 00:17:18,880
+something much more powerful than
+
+347
+00:17:18,880 --> 00:17:22,180
+just looking you get something
+
+348
+00:17:22,180 --> 00:17:23,980
+much more powerful than just
+
+349
+00:17:23,980 --> 00:17:26,500
+good -looking graphics you get
+
+350
+00:17:26,500 --> 00:17:27,940
+a world that feels believable
+
+351
+00:17:27,940 --> 00:17:31,500
+and now technology number six
+
+352
+00:17:31,500 --> 00:17:36,290
+this is this one is
+
+353
+00:17:36,290 --> 00:17:37,830
+not just about gta 6
+
+354
+00:17:37,830 --> 00:17:39,870
+it's about what comes next
+
+355
+00:17:39,870 --> 00:17:45,680
+and now and now technology
+
+356
+00:17:45,680 --> 00:17:47,680
+number six this one is
+
+357
+00:17:47,680 --> 00:17:49,140
+not just about gta 6
+
+358
+00:17:49,140 --> 00:17:54,360
+it's about it's about what
+
+359
+00:17:54,360 --> 00:18:04,280
+comes next and that technology
+
+360
+00:18:04,280 --> 00:18:06,200
+is machine learning and the
+
+361
+00:18:06,200 --> 00:18:12,650
+future of gaming and that
+
+362
+00:18:12,650 --> 00:18:14,570
+technology is machine learning in
+
+363
+00:18:14,570 --> 00:18:17,670
+the future of gaming okay
+
+364
+00:18:17,670 --> 00:18:20,150
+here is the okay here
+
+365
+00:18:20,150 --> 00:18:21,490
+is the really interesting question
+
+366
+00:18:21,490 --> 00:18:23,270
+if rockstar can build such
+
+367
+00:18:23,270 --> 00:18:24,910
+a detailed world using and
+
+368
+00:18:24,910 --> 00:18:30,710
+crafter design okay here is
+
+369
+00:18:30,710 --> 00:18:33,270
+the okay here is the
+
+370
+00:18:33,270 --> 00:18:35,570
+really interesting question if rockstar
+
+371
+00:18:35,570 --> 00:18:36,750
+can build such a detailed
+
+372
+00:18:36,750 --> 00:18:38,490
+world using and crafter design
+
+373
+00:18:38,490 --> 00:18:40,950
+traditional ai animation and simulation
+
+374
+00:18:40,950 --> 00:18:43,730
+what happens when future games
+
+375
+00:18:43,730 --> 00:18:45,530
+combine those systems with generative
+
+376
+00:18:45,530 --> 00:18:49,010
+ai imagine imagine Imagine walking
+
+377
+00:18:49,010 --> 00:18:55,470
+into a shop in a
+
+378
+00:18:55,470 --> 00:18:58,150
+future GTA style game, instead
+
+379
+00:18:58,150 --> 00:18:59,550
+of choosing from 3 fixed
+
+380
+00:18:59,550 --> 00:19:02,030
+dialogue options, you could actually
+
+381
+00:19:02,030 --> 00:19:03,830
+talk to the shopkeeper naturally.
+
+382
+00:19:04,430 --> 00:19:07,790
+Or imagine an NPC remembering
+
+383
+00:19:07,790 --> 00:19:09,370
+a conversation you had with
+
+384
+00:19:09,370 --> 00:19:10,090
+them yesterday.
+
+385
+00:19:10,090 --> 00:19:12,550
+day maybe they recognize you
+
+386
+00:19:12,550 --> 00:19:16,590
+maybe they react different maybe
+
+387
+00:19:16,590 --> 00:19:18,570
+they recognize you maybe they
+
+388
+00:19:18,570 --> 00:19:20,310
+react differently because what of
+
+389
+00:19:22,100 --> 00:19:24,880
+maybe they react maybe they
+
+390
+00:19:24,880 --> 00:19:26,400
+react differently because of what
+
+391
+00:19:26,400 --> 00:19:28,860
+you said earlier or imagine
+
+392
+00:19:28,860 --> 00:19:34,280
+side missions that adapt or
+
+393
+00:19:34,280 --> 00:19:36,020
+imagine side missions that adapt
+
+394
+00:19:36,020 --> 00:19:38,400
+to your decisions i mean
+
+395
+00:19:38,400 --> 00:19:40,880
+the possibilities are fascinating now
+
+396
+00:19:40,880 --> 00:19:42,240
+to be clear there are
+
+397
+00:19:42,240 --> 00:19:42,920
+future game.
+
+398
+00:19:45,070 --> 00:19:47,310
+Now to be clear, these
+
+399
+00:19:47,310 --> 00:19:51,090
+are future gaming possibilities.
+
+400
+00:19:51,430 --> 00:19:53,050
+They are not confirmed GTA
+
+401
+00:19:53,050 --> 00:19:53,670
+6 features.
+
+402
+00:19:54,570 --> 00:19:56,370
+Rockstar has machine learning research
+
+403
+00:19:56,370 --> 00:19:58,290
+teams but that doesn't mean
+
+404
+00:19:58,290 --> 00:19:59,830
+every character is running a
+
+405
+00:19:59,830 --> 00:20:00,530
+language model.
+
+406
+00:20:00,910 --> 00:20:02,210
+And there is a reason
+
+407
+00:20:02,210 --> 00:20:03,470
+developers have to be very
+
+408
+00:20:03,470 --> 00:20:03,850
+careful.
+
+409
+00:20:04,330 --> 00:20:06,430
+If every character could say
+
+410
+00:20:06,430 --> 00:20:08,330
+absolutely anything, how would you
+
+411
+00:20:08,330 --> 00:20:09,110
+control the story?
+
+412
+00:20:09,430 --> 00:20:10,870
+How would you make sure
+
+413
+00:20:10,870 --> 00:20:13,030
+the game stays consistent how
+
+414
+00:20:15,080 --> 00:20:15,940
+would you make sure the
+
+415
+00:20:15,940 --> 00:20:18,560
+game safe how how would
+
+416
+00:20:18,560 --> 00:20:19,700
+you how would you make
+
+417
+00:20:19,700 --> 00:20:21,220
+sure the game stays consistent
+
+418
+00:20:21,220 --> 00:20:23,960
+fun and safe that's a
+
+419
+00:20:23,960 --> 00:20:25,500
+much harder problem than simply
+
+420
+00:20:25,500 --> 00:20:29,220
+connecting an ncp that's a
+
+421
+00:20:29,220 --> 00:20:31,440
+much that that's a much
+
+422
+00:20:31,440 --> 00:20:33,200
+hard that's a much harder
+
+423
+00:20:33,200 --> 00:20:35,440
+problem than simply connecting an
+
+424
+00:20:35,440 --> 00:20:39,580
+npc to a chatbot that's
+
+425
+00:20:39,580 --> 00:20:41,020
+a much harder problem than
+
+426
+00:20:41,020 --> 00:20:42,860
+simply connecting an npc to
+
+427
+00:20:42,860 --> 00:20:45,080
+a chatbot And this brings
+
+428
+00:20:45,080 --> 00:20:50,840
+us to the biggest lesson
+
+429
+00:20:52,980 --> 00:20:54,020
+of GTA 6.
+
+430
+00:21:13,620 --> 00:21:24,890
+See, here is what I
+
+431
+00:21:24,890 --> 00:21:29,990
+find most fascinating about GTA
+
+432
+00:21:29,990 --> 00:21:30,310
+6.
+
+433
+00:21:30,470 --> 00:21:32,870
+The breakthrough isn't necessarily that
+
+434
+00:21:32,870 --> 00:21:34,290
+AI can create an entire
+
+435
+00:21:34,290 --> 00:21:35,030
+game for us.
+
+436
+00:21:35,030 --> 00:21:37,450
+it's that it's that human
+
+437
+00:21:37,450 --> 00:21:39,830
+creativity and sophisticated technology can
+
+438
+00:21:39,830 --> 00:21:41,090
+work together to make a
+
+439
+00:21:41,090 --> 00:21:46,120
+world feel real it's that
+
+440
+00:21:46,120 --> 00:21:48,420
+human creativity and sophisticated technology
+
+441
+00:21:48,420 --> 00:21:49,920
+can work together to make
+
+442
+00:21:49,920 --> 00:21:51,880
+a world feel alive and
+
+443
+00:21:51,880 --> 00:21:53,780
+honestly that's something we can
+
+444
+00:21:53,780 --> 00:21:55,820
+apply outside gaming too whether
+
+445
+00:21:55,820 --> 00:21:56,960
+you are building an app
+
+446
+00:21:56,960 --> 00:21:58,940
+creating content or learning ai
+
+447
+00:21:58,940 --> 00:22:02,000
+just don't just ask how
+
+448
+00:22:02,000 --> 00:22:04,520
+can I add AI don't
+
+449
+00:22:04,520 --> 00:22:05,600
+just ask how can I
+
+450
+00:22:05,600 --> 00:22:07,720
+add AI ask what experience
+
+451
+00:22:07,720 --> 00:22:09,160
+can I make genuinely better
+
+452
+00:22:09,160 --> 00:22:14,180
+now now I have a
+
+453
+00:22:14,180 --> 00:22:16,200
+question for you imagine GTA
+
+454
+00:22:16,200 --> 00:22:18,020
+7 had NPCs that could
+
+455
+00:22:18,020 --> 00:22:19,820
+actually remember you and have
+
+456
+00:22:19,820 --> 00:22:23,820
+natural conversations would that make
+
+457
+00:22:23,820 --> 00:22:25,440
+the would that make the
+
+458
+00:22:25,440 --> 00:22:27,300
+game more exciting or would
+
+459
+00:22:27,300 --> 00:22:29,280
+or would it be a
+
+460
+00:22:29,280 --> 00:22:31,940
+little creepy comment exciting or
+
+461
+00:22:31,940 --> 00:22:33,440
+creepy and tell me why
+
+462
+00:22:33,440 --> 00:22:36,480
+and if you enjoy this
+
+463
+00:22:37,880 --> 00:22:39,640
+and if you enjoy discovering
+
+464
+00:22:39,640 --> 00:22:41,100
+the technology behind the things
+
+465
+00:22:41,100 --> 00:22:43,000
+we use every day subscribe
+
+466
+00:22:43,000 --> 00:22:44,360
+to AI with Kalyan because
+
+467
+00:22:44,360 --> 00:22:45,760
+there's a lot more happening
+
+468
+00:22:45,760 --> 00:22:47,280
+behind the scene then we
+
+469
+00:22:47,280 --> 00:22:47,580
+realize

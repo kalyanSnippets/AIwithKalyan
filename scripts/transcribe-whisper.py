@@ -27,17 +27,37 @@ import subprocess, numpy as np
 pcm = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", a.audio, "-ac", "1", "-ar", "16000",
                       "-f", "f32le", "-"], check=True, capture_output=True).stdout
 audio = np.frombuffer(pcm, dtype=np.float32)
-segs, info = model.transcribe(
-    audio, language=a.language, word_timestamps=True, beam_size=5,
-    initial_prompt=a.prompt or None, vad_filter=True, condition_on_previous_text=False,
-)
-words, lines = [], []
-for s in segs:
-    lines.append(f"[{s.start:8.2f} - {s.end:8.2f}] {s.text.strip()}")
-    for w in s.words or []:
-        words.append({"text": w.word.strip(), "start": round(w.start, 2), "end": round(w.end, 2),
-                      "speaker": "speaker_0", "p": round(w.probability, 3)})
-    print(lines[-1], flush=True)
+# Retake-heavy recordings: one long pass lets Whisper skip repeated lines and stretch nearby words
+# over them. Transcribe short chunks cut at pauses (<= MAXC s) so every take gets its own words.
+MAXC, SR = 15.0, 16000
+fr = 160; nfr = len(audio) // fr
+env = 20 * np.log10(np.sqrt((audio[:nfr * fr].reshape(nfr, fr) ** 2).mean(1)) + 1e-9)
+sp = env > -50
+regions, k = [], 0
+while k < nfr:
+    if sp[k]:
+        j = k
+        while j < nfr and (sp[j] or (j + 40 < nfr and sp[j:j + 40].any())): j += 1   # bridge gaps < 0.4 s
+        regions.append((k, j)); k = j
+    else: k += 1
+chunks = []
+for r0, r1 in regions:
+    if chunks and (r1 - chunks[-1][0]) / 100 <= MAXC and (r0 - chunks[-1][1]) / 100 < 1.5: chunks[-1] = (chunks[-1][0], r1)
+    else: chunks.append((r0, r1))
+info = None; words, lines = [], []
+for c0, c1 in chunks:
+    a0, a1 = max(0, c0 * fr - 3200), min(len(audio), c1 * fr + 3200)   # 0.2 s padding
+    off = a0 / SR
+    segs, info = model.transcribe(audio[a0:a1], language=a.language, word_timestamps=True, beam_size=5,
+                                  initial_prompt=a.prompt or None, vad_filter=False,
+                                  condition_on_previous_text=False)
+    for s in segs:
+        lines.append(f"[{s.start + off:8.2f} - {s.end + off:8.2f}] {s.text.strip()}")
+        for w in s.words or []:
+            words.append({"text": w.word.strip(), "start": round(w.start + off, 2), "end": round(w.end + off, 2),
+                          "speaker": "speaker_0", "p": round(w.probability, 3)})
+        print(lines[-1], flush=True)
+info.duration = len(audio) / SR
 
 def fmt(t):
     h, r = divmod(t, 3600); m, s = divmod(r, 60)

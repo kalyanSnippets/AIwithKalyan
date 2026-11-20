@@ -1,0 +1,150 @@
+[   31.31 -    62.86] Guys, GTA 6 is finally here. And honestly, after all those years of waiting, the technology behind this game is just fascinating. But wait, here is something that might actually surprise you. The technology behind this game is just fascinating.
+[   62.86 -   105.08] but wait here is something here is something that might actually surprise you rockstar says
+[  105.08 -   138.57] that rockstar says they didn't use generative ai to build gts6 world yeah you heard but wait
+[  138.57 -   145.59] here is something that might actually surprise you rockstar says they didn't use generative ai to
+[  145.59 -   153.39] build gts6 world yeah you heard that right no gp no chat gpt generating an entire city no single
+[  153.39 -   160.49] ai prompt creating the whole game so then so then how did they make so then how did they even make a
+[  160.49 -   170.44] world where people can notice you following them so then how did they make a world where people can
+[  170.44 -   176.60] notice you following them police can react to your criminal history and thousands of characters move
+[  176.60 -   184.14] so naturally. Well that's where things really gets interesting because today I'm going to break down
+[  184.14 -   192.36] six technologies behind GTS 6. Because today I'm going to break six technologies behind GTS 6
+[  192.36 -   202.61] with simple examples and trust me because today I'm going to break but today I'm going to break
+[  202.61 -   208.71] down six technologies behind GTS 6 with simple examples and trust me the last one changes how
+[  208.71 -   227.58] you might think about the future of gaming okay before we get into okay before we get into those
+[  227.58 -   234.04] six technologies he there is one thing there is one thing you need to understand see whenever we
+[  234.60 -   241.86] whenever he see whenever we hear the world so see whenever we hear the word ai nowadays
+[  243.24 -   249.50] we immediately think about chat gpt cloud or ai generated videos right but here is the thing
+[  249.50 -   258.02] Games have been using AI for decades. For example, imagine you are playing GTA, you steal a car, a police officer notices you.
+[  258.42 -   270.72] And suddenly police vehicles start chasing you. Now somebody has to decide how those police officers behave, right?
+[  271.08 -   277.40] Well, that's traditional game AI. It's combination of programmed rules, decision-making systems and simulations.
+[  278.52 -   288.90] and gps and gts and gta6 takes the kind of world building and gta6 takes that kind of world
+[  288.90 -   310.34] building much further so let's start with technology number one which is npc npc behavior okay okay
+[  310.34 -   315.30] imagine this you are casually walking through a vice city you notice two people having a
+[  315.30 -   324.88] conversation so you stop nearby just to listen but instead of standing you stop nearby just to
+[  324.88 -   331.00] listen but instead of standing there and ignoring you those characters might actually notice that
+[  331.00 -   339.54] you are those can those characters might actually those characters might actually notice that you
+[  339.54 -   351.28] are eavesdropping bro imagine getting caught being nosy with bro imagine getting caught being nosy
+[  351.28 -   361.12] by a video game character? Bro, imagine getting caught being nosy by a video game character?
+[  361.62 -   366.84] And that's one of the interesting details Rockstar has discussed. And that's one of the
+[  366.84 -   372.96] interesting details Rockstar has discussed. NPCs are designed to respond to situations like being
+[  372.96 -   380.52] followed or having their personal space interrupted. Now why does this matter? Because normally
+[  380.52 -   393.15] you can you can walk around a game world because normally you can walk around the game world and
+[  393.15 -   398.31] most background characters barely acknowledge you but when characters respond to your actions
+[  398.31 -   405.13] even small interactions feel more believable and if you think that's interesting wait until you
+[  405.13 -   413.27] hear how police system works because this because this next one could completely change the way you
+[  413.27 -   433.83] escape a crime and that's where the and that's where the technologies and that's where the
+[  433.83 -   441.57] technology 2 comes in with and that's where the technology 2 comes in which is criminal profile
+[  441.57 -   452.22] system okay picture this you are driving around y city you commit a crime the police see your car
+[  455.14 -   462.94] your the police see your car your clothes maybe even your face and somehow you manage to escape
+[  462.94 -   469.16] Now in a typical game, once the wanted level disappears, you might feel like everything is back to normal.
+[  472.44 -   488.35] Now in a typical game, once the wanted level disappears, you might feel like everything is back to normal.
+[  488.55 -   493.11] But GTA 6 introduces something called the criminal profile system.
+[  495.89 -   501.95] The idea is that details associated with your crime behavior can affect how the world responds to you.
+[  502.29 -   507.35] So for example, an outfit connected to a crime could become something you need to think about.
+[  508.09 -   512.37] I mean suddenly escaping isn't just about driving faster.
+[  512.69 -   518.47] It's also about what people saw and what information might still matter.
+[  518.75 -   522.53] And that's a fascinating direction for game AI.
+[  522.53 -   525.89] But okay, NPC behavior is one thing.
+[  526.09 -   529.63] How do you make thousands of completely different people move naturally?
+[  530.59 -   532.03] That's technology number three.
+[  533.95 -   535.89] And that's technology number three.
+[  536.09 -   546.69] And that's technology number three, which is realistic human movement.
+[  546.95 -   563.41] And that's technology number three, which is animation retargeting.
+[  565.48 -   569.58] And that's technology number three, which is animation retargeting.
+[  570.70 -   574.54] Now here is something most people probably won't even notice while playing.
+[  575.12 -   587.60] But developers spend an incredible amount of time solving this problem.
+[  588.64 -   597.32] Imagine you have created one animation of a character sitting inside a car.
+[  597.98 -   603.74] Sounds simple right? But what happens when a much taller character tries to use that same animation?
+[  609.44 -   618.15] same animation or someone with different body proportions but what happens when a much taller
+[  618.15 -   622.57] character tries to use that same animation or someone with a different body proportion
+[  626.57 -   634.51] their hands might not reach the steering wheel properly their legs might not line up with the
+[  634.51 -   640.29] seat and suddenly the animation looks weird so the rockstar developed technology called runtime
+[  640.29 -   645.51] animation retargeting basically it it helps adapt animations to different
+[  645.51 -   652.25] characters when the game is still running basically it basically basically it
+[  652.25 -   655.61] helps adapt animations to different characters while the game is still
+[  655.61 -   661.04] running and when you multiply that across a huge population of characters
+[  661.04 -   666.02] you might start to understand how much engineering goes into how much engine and
+[  668.28 -   672.18] when you multiply that across a huge population of characters you start to
+[  672.18 -   681.35] understand how much engineering goes into making a city feel natural. You start to understand how
+[  681.35 -   690.51] much engineering goes into making a city feel natural. But here is where it gets even more
+[  690.51 -   703.57] interesting. Because Rockstar is not just stimulating individual characters. It also
+[  703.57 -   710.51] building systems around how characters interact with each other it also building systems around
+[  710.51 -   742.02] how it is also it is also building systems around how characters interact with each other and that
+[  742.02 -   748.58] is where character and that is where technology 4 comes in which is character relationships
+[  752.38 -   759.95] now you already know gta 6 has two main characters jason and lucia but here is the interesting part
+[  762.54 -   768.62] Now you already know GTA 6 has two main characters, Jason and Lucia, but here is the interesting
+[  768.62 -   768.96] part.
+[  769.46 -   780.41] Rockstar has discussed AI systems designed to support their interactions as a couple.
+[  780.63 -   782.19] Think about that for a second.
+[  782.53 -   786.51] In a normal game, a character might just follow you because the mission says no.
+[  791.23 -   794.63] Think about that for a second.
+[  794.63 -   799.11] In a normal game, a character might just follow you because the mission says so.
+[  799.73 -   802.87] A character might just follow you because the mission says so.
+[  804.13 -   808.85] But when you are designing a believable relationship, you might need much more than that.
+[  809.41 -   815.11] Characters need to move together, react to situations and participate in activities in ways that make sense.
+[  815.93 -   821.07] For example, imagine two characters arriving at a location together.
+[  821.07 -   827.49] one might need to wait one might need to wait reposition or react to what the
+[  827.49 -   832.63] other character is doing that's a kind of coordination game developers have to
+[  832.63 -   839.59] solve and here is the and here is the important thing this doesn't mean Jason
+[  839.59 -   846.25] and Lucia are secretly this doesn't mean Jason and Lucia are secretly this
+[  846.25 -   851.23] doesn't mean Jason and Lucia are secretly powered by chat GPT it's about
+[  851.23 -   856.93] carefully designed gameplay and characters it's about carefully designed gameplay and character
+[  856.93 -   865.92] systems now let's move from characters to actual world because technology number five is something
+[  865.92 -   882.30] you can see almost everywhere which is technology and that technology is called raging rage engine
+[  882.30 -   895.80] lighting and weather so okay have you seen the okay have you seen the lighting in gta 6 the
+[  895.80 -   901.48] reflections from cars the neon lights the weather I mean I mean some of these
+[  901.48 -   909.78] I mean some of these things I mean some of these scenes look incredible but how
+[  909.78 -   914.38] does all of that actually work well Rockstar uses its own game engine called
+[  914.38 -   920.08] rage and a game engine is basically the technology that helps bring the entire
+[  920.08 -   927.16] game together like graphics physics animation and the systems from graphics
+[  927.16 -   933.26] physics animation and the systems running behind the scenes now image now
+[  933.26 -   938.44] imagine you're driving through the YCT at night now imagine you are driving
+[  938.44 -   943.36] through YCT at night it starts raining the road becomes wet street lights
+[  943.36 -   952.22] reflect across the surface and the atmosphere changes to make to make to
+[  952.22 -   956.30] make that look believable the engine has to coordinate rendering lighting
+[  956.30 -   963.42] materials and environmental simulations. The engine has to coordinate rendering,
+[  963.72 -   975.26] lighting, materials and environmental simulations. Rockstar has discussed advanced ray traced rendering
+[  980.00 -   985.66] and weather technology. And here is something people often misunderstand.
+[  985.66 -  1019.16] And here is something people often misunderstand. Realistic graphics don't automatically mean AI. A lot of this comes from graphics programming, physics and incredibly detailed artistic work.
+[ 1019.16 -  1028.74] But when you combine all of these technologies together, you get something much more powerful than just looking graphics.
+[ 1030.52 -  1036.24] you get something much more powerful than just looking graphics you get
+[ 1036.24 -  1041.80] something you get something much more powerful than just looking you get
+[ 1041.80 -  1047.12] something much more powerful than just good-looking graphics you get a world that
+[ 1047.12 -  1056.83] feels believable and now technology number six this is this one is not just
+[ 1056.83 -  1068.20] about gta 6 it's about what comes next and now and now technology number six this one is not just
+[ 1068.20 -  1086.20] about gta 6 it's about it's about what comes next and that technology is machine learning and the
+[ 1086.20 -  1098.13] future of gaming and that technology is machine learning in the future of gaming okay here is
+[ 1098.13 -  1104.59] the okay here is the really interesting question if rockstar can build such a detailed world using
+[ 1104.59 -  1115.79] and crafter design okay here is the okay here is the really interesting question if rockstar can
+[ 1115.79 -  1120.95] build such a detailed world using and crafter design traditional ai animation and simulation
+[ 1120.95 -  1128.55] what happens when future games combine those systems with generative ai imagine imagine
+[ 1128.55 -  1139.55] Imagine walking into a shop in a future GTA style game, instead of choosing from 3 fixed
+[ 1139.55 -  1143.83] dialogue options, you could actually talk to the shopkeeper naturally.
+[ 1144.43 -  1150.09] Or imagine an NPC remembering a conversation you had with them yesterday.
+[ 1150.09 -  1158.57] day maybe they recognize you maybe they react different maybe they recognize you maybe they
+[ 1158.57 -  1166.22] react differently because what of maybe they react maybe they react differently because of
+[ 1166.22 -  1176.02] what you said earlier or imagine side missions that adapt or imagine side missions that adapt
+[ 1176.02 -  1182.64] to your decisions i mean the possibilities are fascinating now to be clear there are future
+[ 1182.64 -  1193.31] game. Now to be clear, these are future gaming possibilities. They are not confirmed GTA 6
+[ 1193.31 -  1199.27] features. Rockstar has machine learning research teams but that doesn't mean every character is
+[ 1199.27 -  1205.57] running a language model. And there is a reason developers have to be very careful. If every
+[ 1205.57 -  1210.61] character could say absolutely anything, how would you control the story? How would you make
+[ 1210.61 -  1219.48] sure the game stays consistent how would you make sure the game safe how how would you how would you
+[ 1219.48 -  1225.98] make sure the game stays consistent fun and safe that's a much harder problem than simply connecting
+[ 1225.98 -  1235.44] an ncp that's a much that that's a much hard that's a much harder problem than simply connecting an
+[ 1235.44 -  1243.44] npc to a chatbot that's a much harder problem than simply connecting an npc to a chatbot
+[ 1244.14 -  1254.02] And this brings us to the biggest lesson of GTA 6.
+[ 1273.62 -  1290.31] See, here is what I find most fascinating about GTA 6.
+[ 1290.47 -  1295.03] The breakthrough isn't necessarily that AI can create an entire game for us.
+[ 1295.03 -  1300.47] it's that it's that human creativity and sophisticated technology can work together
+[ 1300.47 -  1308.76] to make a world feel real it's that human creativity and sophisticated technology can
+[ 1308.76 -  1314.52] work together to make a world feel alive and honestly that's something we can apply outside
+[ 1314.52 -  1322.00] gaming too whether you are building an app creating content or learning ai just don't just ask how
+[ 1322.00 -  1328.38] can I add AI don't just ask how can I add AI ask what experience can I make
+[ 1328.38 -  1337.62] genuinely better now now I have a question for you imagine GTA 7 had NPCs
+[ 1337.62 -  1343.58] that could actually remember you and have natural conversations would that
+[ 1343.58 -  1349.28] make the would that make the game more exciting or would or would it be a
+[ 1349.28 -  1356.48] little creepy comment exciting or creepy and tell me why and if you enjoy this
+[ 1357.88 -  1361.64] and if you enjoy discovering the technology behind the things we use
+[ 1361.64 -  1365.76] every day subscribe to AI with Kalyan because there's a lot more happening
+[ 1365.76 -  1367.58] behind the scene then we realize
