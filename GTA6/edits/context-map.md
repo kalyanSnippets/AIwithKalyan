@@ -50,3 +50,13 @@ to calm for the lesson and warm for the CTA. Effects should taper off toward the
 | "Rockstar has discussed advanced ray-traced rendering and weather technology" | Needs a source; wet-road footage must actually show it. |
 | "Rockstar has machine-learning research teams" | Credits page (R9) is a likely source; confirm. |
 | On-screen "13 YEARS OF HYPE" (T02) | GTA V 2013 → GTA VI 2026; fine if launch date holds. |
+
+## A-roll first measurements (IMG_1825.MOV, 2026-11-20)
+
+- iPhone HEVC 10-bit **HLG HDR**, 1920×1080, 29.97 fps, AAC 48 kHz stereo, **23:00** long.
+  Editing proxy is tone-mapped to SDR BT.709 (zscale + hable) → `media/proxies/IMG_1825_sdr_proxy.mp4`.
+  The final render must use the same tone-map so graphics and footage match.
+- Audio: integrated **−26.7 LUFS** (needs about +12 dB to hit the −14 LUFS target).
+- Silence (≤ −38 dB, ≥ 0.35 s): 328 gaps, 10:13 in total; 77 longer than 2 s, 18 longer than 5 s
+  (longest 31.8 s). That leaves about 12:47 of speech for a ~6:05 script, so expect roughly two
+  takes per line. The best take for each line gets picked from the transcript.
