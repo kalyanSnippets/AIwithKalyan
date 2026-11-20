@@ -60,3 +60,24 @@ to calm for the lesson and warm for the CTA. Effects should taper off toward the
 - Silence (≤ −38 dB, ≥ 0.35 s): 328 gaps, 10:13 in total; 77 longer than 2 s, 18 longer than 5 s
   (longest 31.8 s). That leaves about 12:47 of speech for a ~6:05 script, so expect roughly two
   takes per line. The best take for each line gets picked from the transcript.
+
+## Delivery measured on A-roll v3 (2026-11-20)
+
+| Scene | v3 time | WPM | RMS dBFS | Loudness spread (p90–p10, dB) |
+|---|---|---|---|---|
+| 1 Hook | 0:00–0:43 | 180 | −26.2 | 15.0 |
+| 2 What AI? | 0:43–1:19 | 171 | −26.1 | 14.8 |
+| 3 Tech 1 NPC | 1:19–2:01 | 174 | −26.7 | 14.4 |
+| 3 police tease | 2:01–2:09 | 203 | −26.9 | 15.0 |
+| 4 Tech 2 Profile | 2:09–2:48 | 187 | −26.7 | 14.3 |
+| 5 Tech 3 Retarget | 2:48–3:39 | 180 | −26.9 | 14.2 |
+| 6 Tech 4 Relations | 3:39–4:36 | 187 | −27.0 | 13.6 |
+| 7 Tech 5 RAGE | 4:36–5:44 | 175 | −27.0 | 14.6 |
+| 8 Tech 6 Future | 5:44–6:54 | 177 | −26.9 | 14.1 |
+| 9 Takeaway | 6:54–7:22 | 185 | −27.2 | 14.0 |
+| 9 CTA | 7:22–7:45 | 194 | −27.0 | 13.2 |
+
+Disagreements with the script's intent:
+- Hook: the script asks for excitement, but the voice is no louder or faster than the explainer sections. Visual energy (cuts, kinetic text) carries the hook. No effect is used to fake vocal energy.
+- Takeaway: the script asks for "music softens, calm", but this is one of the faster scenes. Proposed: allow pauses up to 0.35 s here.
+- All pauses are capped at 0.2 s, so emotion pauses ("[Pause. Smile.]") are gone. Candidates to restore: after "Yeah… you heard that right!", before "the biggest lesson".
