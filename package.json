@@ -27,7 +27,8 @@
   "devDependencies": {
     "hyperframes": "^0.8.160",
     "lucide-static": "^1.57.0",
-    "playwright-core": "^1.64.0"
+    "playwright-core": "^1.64.0",
+    "three": "^0.181.2"
   },
   "dependencies": {
     "@elevenlabs/elevenlabs-js": "^2.71.0",
