@@ -536,7 +536,7 @@ const SPELL = [];
   const env = (d, fi, fo, level = BED, dips = []) => { const p = [[0, fi ? 0 : level], [fi || 0.01, level]]; for (const [a, b] of dips) p.push([a - 0.3, level], [a, level * 0.35], [b, level * 0.35], [b + 0.4, level]); p.push([d - fo, level], [d, 0]); return p.sort((x, y) => x[0] - y[0]); };
   const c1 = at("okay before we get"), c3 = at("and now technology number six"), c4 = at("and this brings us");
   const tR = at("rockstar says"), tL = at("biggest lesson");
-  audio("m0", "m0.mp3", 0, I + 0.6, 0, [[0, 1.0], [I - 0.4, 1.0], [I + 0.6, 0]], 29);
+  audio("m0", "m0.mp3", 0, I + 0.2, 0, [[0, 1.0], [I - 0.5, 1.0], [I - 0.05, 0.15], [I + 0.2, 0]], 29);
   audio("m1", "m1.mp3", I - 0.2, c1 - I + 1.7, 0, env(c1 - I + 1.7, 0.6, 1.5, 0.055, [[tR - I - 0.1, tR - I + 1.4]]), 30);
   audio("m2", "m2.mp3", c1 - 0.2, Math.min(330, c3 - c1 + 1.7), 0, env(Math.min(330, c3 - c1 + 1.7), 1.5, 1.5), 31);
   audio("m3", "m3.mp3", c3, Math.min(69, c4 - c3 + 1.2), 0, env(Math.min(69, c4 - c3 + 1.2), 1.0, 1.2), 32);
