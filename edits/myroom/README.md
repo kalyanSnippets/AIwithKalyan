@@ -98,3 +98,33 @@ Output: `renders/myroom/MyRoomWentCrazy_v3_1080p.mp4`, 1:29, −14.2 LUFS, −0.
 - **Animation:** an FFmpeg composite. Hold for 0.45 s, then ease the scale down to about 1.5 %, anchored on the chair seat at (960, 940). The original frames cross-fade into the composite at 0.3–0.6 s.
 
 Working files are in `renders/myroom/shrink/` (git-ignored).
+
+---
+
+# v4 (2026-11-20, review 3): smooth chair → clones, original ending + montage
+
+Rebuild with `bash edits/myroom/build_v4.sh`.
+Output: `renders/myroom/MyRoomWentCrazy_v4_1080p.mp4`, 1:36, −14.1 LUFS, −1.0 dB peak.
+Music: `media/music/myroom/bed_v4.mp3` (100 s, turns upbeat at about 73 s).
+
+**Changes from v3**
+
+- **Chair → clones:** clip 2 now ends at 8.10 s, with the chair at mid-distance. Clip 6 starts at 2.45 s, where the sparks swirl in and form the clones, at the same subject size. This removes the repeated close-up that made the chair look like it "appeared twice".
+- **Reveal:** clip 7 is used only from 0.00 to 5.45 s: blue particles rebuild him in his room, then "Finally, I'm back".
+- **Ending:** the original Take B reveal (`renders/higgsfield/S7_reveal.mp4`), replacing Higgsfield's out-of-sync ending.
+  - **Colour:** matched with a measured per-channel LUT. The differences were tiny, because Higgsfield had kept the grade.
+  - **Frame rate:** conformed to 24 fps.
+  - **Montage:** a fast 6-shot montage (17 frames each) covers "I made all of these crazy videos using Higgsfield AI": fire, portal, clones, robot, shrink in space, ESC zap. It also hides jump cut 1.
+  - **Jump cut 2:** a gentle 1.10× punch-in from "So, in this video…" makes it read as a camera change.
+
+**Timeline**
+
+| Start | Segment |
+|---|---|
+| 0:00 | Fire |
+| 0:18.8 | Portal |
+| 0:24.2 | Clones |
+| 0:40.4 | Robot + shrink |
+| 0:54.4 | Keyboard |
+| 1:08.1 | Particles → "Finally, I'm back" |
+| 1:13.3 | Original reveal; montage at 1:16.4–1:20.7 |
