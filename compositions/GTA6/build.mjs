@@ -536,12 +536,12 @@ const SPELL = [];
   const env = (d, fi, fo, level = BED, dips = []) => { const p = [[0, fi ? 0 : level], [fi || 0.01, level]]; for (const [a, b] of dips) p.push([a - 0.3, level], [a, level * 0.35], [b, level * 0.35], [b + 0.4, level]); p.push([d - fo, level], [d, 0]); return p.sort((x, y) => x[0] - y[0]); };
   const c1 = at("okay before we get"), c3 = at("and now technology number six"), c4 = at("and this brings us");
   const tR = at("rockstar says"), tL = at("biggest lesson");
-  audio("m0", "m0.mp3", 0, I + 0.6, 0, [[0, 0.5], [I - 0.4, 0.5], [I + 0.6, 0]], 29);
+  audio("m0", "m0.mp3", 0, I + 0.6, 0, [[0, 1.0], [I - 0.4, 1.0], [I + 0.6, 0]], 29);
   audio("m1", "m1.mp3", I - 0.2, c1 - I + 1.7, 0, env(c1 - I + 1.7, 0.6, 1.5, 0.055, [[tR - I - 0.1, tR - I + 1.4]]), 30);
   audio("m2", "m2.mp3", c1 - 0.2, Math.min(330, c3 - c1 + 1.7), 0, env(Math.min(330, c3 - c1 + 1.7), 1.5, 1.5), 31);
   audio("m3", "m3.mp3", c3, Math.min(69, c4 - c3 + 1.2), 0, env(Math.min(69, c4 - c3 + 1.2), 1.0, 1.2), 32);
   const m4d = Math.min(86, TOTAL - (c4 - 0.2));
-  audio("m4", "m4.mp3", c4 - 0.2, m4d, 0, [[0, 0], [0.8, BED], [tL - c4 - 0.4, BED], [tL - c4, BED * 0.35], [tL - c4 + 0.4, BED], [AEND - c4 - 0.2, BED], [AEND - c4 + 0.5, 0.32], [m4d - 2.0, 0.32], [m4d, 0]], 33);
+  audio("m4", "m4.mp3", c4 - 0.2, m4d, 0, [[0, 0], [0.8, BED], [tL - c4 - 0.4, BED], [tL - c4, BED * 0.35], [tL - c4 + 0.4, BED], [AEND - c4 - 0.2, BED], [AEND - c4 + 0.5, 0.6], [m4d - 2.0, 0.6], [m4d, 0]], 33);
   const DUR = { whoosh: 1.0, pop: 0.5, tick: 0.5 };
   const keepS = [];
   for (const s of sfxList.sort((a, b) => a[0] - b[0])) { const gap = keepS.length ? s[0] - keepS.at(-1)[0] : 99; if (gap >= (s[1] === "whoosh" ? 1.5 : 6.5)) keepS.push(s); }
