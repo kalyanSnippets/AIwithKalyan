@@ -77,3 +77,24 @@ Music: new 90 s bed, `media/music/myroom/bed_v2.mp3`, written to turn upbeat at 
 | 1:08.0 | 7 Reveal 0.00 → end | |
 
 SFX in v2: fire 8.7 · portal 18.8 · whoosh 24.2 · clone pop 26.6 · vanish 42.1 · robot 45.3 · snap/teleport 54.1 · ESC zap 65.7 · reassemble 68.0.
+
+---
+
+# v3 (2026-11-20): shrink in space, then straight to "Finally, I'm back"
+
+Rebuild with `bash edits/myroom/build_v3.sh`, which calls `make_shrink.sh`.
+Output: `renders/myroom/MyRoomWentCrazy_v3_1080p.mp4`, 1:29, −14.2 LUFS, −0.9 dB peak.
+
+**What changed from v2**
+
+- **Robot:** the robot segment now ends at 13.10 s, just after the armour snaps off, and runs with no transition into a new **2.6 s shrink insert**. Kalyan shrinks down into the empty chair in space, a small glint flashes, then a white flash cuts to the keyboard.
+- **Shrink line:** "Wait, why am I getting smaller?" from clip 5 (2.60–4.75 s) plays over the shrink, with the ElevenLabs `shrink` SFX.
+- **Reveal:** clip 7 now starts at 3.15 s, so the ESC zap whites out straight into "Finally, I'm back" (the particle reassembly is dropped). A teleport SFX sits on that cut.
+
+**How the shrink insert was made** (`make_shrink.sh`)
+
+- **Cutout:** `npx hyperframes remove-background` on clip 3 at 13.10–15.05 s gave `matte.mov`, using the local u2net model. It needed `onnxruntime-node` installed with `--onnxruntime-node-install-cuda=skip`.
+- **Clean background:** Higgsfield `gpt_image_2_6` edit of one frame ("remove the man, keep the empty chair and nebula"), saved as `plate.png`. Cost: 0.25 credits.
+- **Animation:** an FFmpeg composite. Hold for 0.45 s, then ease the scale down to about 1.5 %, anchored on the chair seat at (960, 940). The original frames cross-fade into the composite at 0.3–0.6 s.
+
+Working files are in `renders/myroom/shrink/` (git-ignored).
