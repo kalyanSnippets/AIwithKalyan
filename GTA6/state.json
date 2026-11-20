@@ -24,14 +24,14 @@
       "note": "Kalyan: Approve. Defaults for unanswered: recommended ref mix, takeaway pauses 0.35 s, local voice cleanup (no Studio Sound), spoken chapter names kept"
     },
     "assets": {
-      "status": "not-started",
-      "date": null,
-      "note": "Editor gathering: shot log, stills, page captures, music, SFX, outro voice"
+      "status": "awaiting-approval",
+      "date": "2026-11-20",
+      "note": "Gathered by the editor under the approved brief: Rockstar official media, GamesRadar capture, ElevenLabs music/SFX/outro voice. Kalyan to confirm."
     },
     "edit": {
-      "status": "not-started",
-      "date": null,
-      "note": ""
+      "status": "awaiting-approval",
+      "date": "2026-11-20",
+      "note": "v1 long-form review copy; self-review in edits/self-review.md; Shorts after feedback"
     },
     "packaging": {
       "status": "not-started",
