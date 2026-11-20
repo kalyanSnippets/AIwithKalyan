@@ -189,3 +189,4 @@ svg.lines { position: absolute; inset: 0; z-index: 15; }
 
 .hero { position: absolute; z-index: 15; left: 0; width: 1920px; top: 300px; display: flex; flex-direction: column; align-items: center; gap: 30px; opacity: 0; }
 .hero b { font-size: 190px; font-weight: 900; letter-spacing: -0.04em; line-height: 1; }
+.desc { position: absolute; inset: 0; z-index: 16; }

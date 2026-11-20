@@ -535,7 +535,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const o = OUTRO_AT, oe = TOTAL;
   const ow = (phrase, from = 0) => { const p = toks(phrase); for (let i = from; i <= OUTRO.length - p.length; i++) if (p.every((t, k) => norm(OUTRO[i + k].text) === t)) return i; throw new Error(`outro phrase not found: ${phrase}`); };
   const ot = (phrase, from = 0) => r3(o + OUTRO[ow(phrase, from)].start);
-  scene(o - 0.4, oe, { pip: false });
+  scene(RC_LEN - 0.35, oe, { pip: false });
   set("#cam", { opacity: 0 }, o - 0.1);
   html.push(`<audio id="outro-voice" class="clip" src="media/outro-voice.mp3" data-start="${o}" data-duration="${OUTRO_DUR}" data-volume="1" data-track-index="3"></audio>`);
   // recap
@@ -629,13 +629,13 @@ let coverCount = 0;
 
 // ── music + SFX ─────────────────────────────────────────────────────────────
 {
-  const BED = 0.11;
+  const BED = 0.09;
   const lane = (pts) => J({ version: 1, lanes: [{ target: "volume", points: pts.map(([t, v]) => ({ t: r3(Math.max(0, t)), v })) }] });
   const audio = (aid, src, start, dur, ms, pts, track) => html.push(`<audio id="${aid}" class="clip" src="media/${src}" data-start="${r3(start)}" data-duration="${r3(dur)}" data-media-start="${r3(ms)}" data-volume="1" data-track-index="${track}" data-automation='${lane(pts)}'></audio>`);
   const env = (d, fi, fo, level = BED, dips = []) => { const p = [[0, fi ? 0 : level], [fi || 0.01, level]]; for (const [a, b] of dips) p.push([a - 0.3, level], [a, level * 0.35], [b, level * 0.35], [b + 0.4, level]); p.push([d - fo, level], [d, 0]); return p.sort((x, y) => x[0] - y[0]); };
   const c1 = at("okay before we get"), c3 = at("and now technology number six"), c4 = at("and this brings us");
   const tR = at("rockstar says"), tL = at("biggest lesson");
-  audio("m1", "m1.mp3", 0, c1 + 1.5, 0, env(c1 + 1.5, 0.3, 1.5, 0.14, [[tR - 0.3, tR + 1.2]]), 30);
+  audio("m1", "m1.mp3", 0, c1 + 1.5, 0, env(c1 + 1.5, 0.3, 1.5, 0.055, [[tR - 0.3, tR + 1.2]]), 30);
   // m2 (330 s) covers c1 → c3; loop is not needed (c3 - c1 ≈ 301 s)
   audio("m2", "m2.mp3", c1 - 0.2, c3 - c1 + 1.7, 0, env(c3 - c1 + 1.7, 1.5, 1.5), 31);
   audio("m3", "m3.mp3", c3, Math.min(69, c4 - c3 + 1.2), 0, env(Math.min(69, c4 - c3 + 1.2), 1.0, 1.2), 32);
