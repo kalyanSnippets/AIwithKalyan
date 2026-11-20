@@ -13,3 +13,12 @@
 | Ending | Usual outro over full-screen graphics: recap → Like → Subscribe → bell → end card. |
 | Length | 6–8 min, whatever remains after retakes and pauses are cut. |
 | Reference styles | Proposed (awaiting pick): Tech Burner (hook energy), Corridor Crew (freeze + annotate), Sanchit Gamedev (diagrams). Page: https://claude.ai/artifact/1xmvnCXPaMNWFQk58D3skm |
+
+## A-roll cut v1 (2026-11-20)
+- Takes: `edits/takes.json` (last clean take of every script line, `scripts/pick-takes.py`),
+  word fixes and source-time fixes in `edits/fixes.json`, EDL `edits/aroll-v1.edl.json` (201 segments).
+- Length **8:15**, pauses over 0.30 s cut to 0.18 s. Transcript of the cut matches the script at 97.3%
+  (`scripts/verify-cut.py`); leftovers are single words (ASR variants or natural additions).
+- Review copy: `GTA6/renders/GTA6_aroll_v1_review.mp4` (960×540, 27.7 MB, not committed).
+- Open: "Rockstar is not just *stimulating* individual characters" (only take). Graphic can carry "simulating".
+- No audio cleanup, graphics, music or B-roll yet; brief needs the reference-style approval first.

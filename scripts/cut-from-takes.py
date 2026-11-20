@@ -119,19 +119,22 @@ json.dump({"source": "IMG_1825", "segments": edl, "duration": round(dur, 2)}, op
 print(f"{len(edl)} segments, {dur/60:.2f} min")
 
 if "--render" in sys.argv:
+    # one accurate-seek encode per segment, then a stream-copy concat (low memory, frame-exact cuts)
+    import os, tempfile
     i = sys.argv.index("--render"); src, out = sys.argv[i + 1], sys.argv[i + 2]
     sc = int(sys.argv[sys.argv.index("--scale") + 1]) if "--scale" in sys.argv else 1920
-    fg = []
+    tmp = tempfile.mkdtemp(prefix="cut_", dir=os.path.dirname(os.path.abspath(out)))
+    lst = []
     for k, e in enumerate(edl):
-        d = e["src_out"] - e["src_in"]
-        fg.append(f"[0:v]trim={e['src_in']}:{e['src_out']},setpts=PTS-STARTPTS[v{k}];"
-                  f"[0:a]atrim={e['src_in']}:{e['src_out']},asetpts=PTS-STARTPTS,"
-                  f"afade=t=in:d=0.012,afade=t=out:st={max(0, d - .015):.3f}:d=0.015[a{k}];")
-    fg.append("".join(f"[v{k}][a{k}]" for k in range(len(edl))) + f"concat=n={len(edl)}:v=1:a=1[cv][ca];"
-              f"[cv]scale={sc}:-2[ov]")
-    script = edl_p + ".filter"
-    open(script, "w").write("\n".join(fg))
-    subprocess.run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-i", src, "-filter_complex_script", script,
-                    "-map", "[ov]", "-map", "[ca]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "27",
-                    "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", out], check=True)
+        d = e["src_out"] - e["src_in"]; f = os.path.join(tmp, f"s{k:04d}.mp4")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{e['src_in']:.3f}", "-i", src, "-t", f"{d:.3f}",
+                        "-vf", f"scale={sc}:-2,fps=30000/1001", "-af",
+                        f"afade=t=in:d=0.012,afade=t=out:st={max(0, d - .015):.3f}:d=0.015,aresample=48000",
+                        "-c:v", "libx264", "-preset", "veryfast", "-crf", "27", "-pix_fmt", "yuv420p",
+                        "-c:a", "aac", "-b:a", "128k", "-ac", "2", f], check=True)
+        lst.append(f"file '{f}'")
+    open(os.path.join(tmp, "list.txt"), "w").write("\n".join(lst))
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(tmp, "list.txt"),
+                    "-c", "copy", "-movflags", "+faststart", out], check=True)
+    subprocess.run(["rm", "-rf", tmp])
     print("rendered", out)
