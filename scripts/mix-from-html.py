@@ -72,7 +72,7 @@ for a in clips:
     mix[kind][i0:i0 + n] += seg[:n]
 
 # sidechain-style ducking: music drops DUCK dB while the voice is speaking (50 ms attack, 350 ms release)
-DUCK = arg("--duck", 4.0)
+DUCK = arg("--duck", 2.5)
 hop = 480
 vv = mix["voice"][: len(mix["voice"]) // hop * hop].reshape(-1, hop, 2)
 vdb = 20 * np.log10(np.sqrt((vv ** 2).mean((1, 2))) + 1e-12)

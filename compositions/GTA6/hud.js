@@ -75,6 +75,15 @@ const MODES = {
     const L = live(h, m, ["person"]).slice(0, h.o.max ?? 8);
     L.forEach((it, k) => { const app = clamp((u - 0.3 - k * 0.18) / 0.3); if (app <= 0) return; bracket(it.x, it.y, it.w, it.h, TEAL, Math.min(26, it.w * 0.3), 3); tag(it.x, it.y - 4, "✓ RETARGETED", "rgba(25,227,211,0.92)", "#0d0818", 16); });
   },
+  wanted(h, u) {
+    // five wanted stars that flash, then drain away one by one at o.clear
+    const c0 = h.o.clear ?? 1.0; const x0 = 1440, y0 = 120;
+    for (let i = 0; i < 5; i++) { const off = clamp((u - c0 - (4 - i) * 0.18) / 0.25); const on = u < c0 ? (Math.floor(u * 4) % 2 ? 1 : 0.55) : 1 - off;
+      if (on <= 0.01) continue; g.save(); g.globalAlpha *= on; g.translate(x0 + i * 92, y0); g.rotate(-Math.PI / 2); g.beginPath();
+      for (let k = 0; k < 10; k++) { const r = k % 2 ? 18 : 40, a = (k * Math.PI) / 5; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); } g.closePath();
+      g.fillStyle = u < c0 ? "#ffd166" : "#ffffff"; g.fill(); g.lineWidth = 4; g.strokeStyle = "#0d0818"; g.stroke(); g.restore(); }
+    tag(1440, y0 + 90, u < c0 ? "WANTED" : "WANTED LEVEL CLEARED", u < c0 ? "rgba(255,61,154,0.92)" : "rgba(25,227,211,0.92)", "#0d0818", 24);
+  },
   rain(h, u) {
     g.strokeStyle = "rgba(200,220,255,0.35)"; g.lineWidth = 2; g.beginPath();
     for (let i = 0; i < 260; i++) { const x = (i * 97.13) % 1920, sp = 900 + (i % 7) * 120, y = ((i * 211.7 + u * sp) % 1180) - 100; g.moveTo(x, y); g.lineTo(x - 8, y + 34); } g.stroke();

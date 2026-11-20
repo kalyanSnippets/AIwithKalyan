@@ -55,7 +55,7 @@ function palm(s, x, z) {
   for (let k = 0; k < 6; k++) { const l = new THREE.Mesh(new THREE.ConeGeometry(0.22, 1.8, 4), new THREE.MeshStandardMaterial({ color: 0x1fbf7a, emissive: 0x06301c })); l.geometry.translate(0, 0.9, 0); l.position.y = 3.2; l.rotation.z = Math.PI / 2.6; l.rotation.y = (k / 6) * Math.PI * 2; p.add(l); }
   p.position.set(x, 0, z); s.add(p); return p;
 }
-function city(s, opts = {}) { ground(s); road(s, 0, 4, 160, 4); road(s, -6, 0, 4, 160); buildings(s, opts.n ?? 60, { avoid: (x, z) => Math.abs(z - 4) < 4 || Math.abs(x + 6) < 4 || (Math.abs(x) < (opts.clear ?? 7) && Math.abs(z) < (opts.clearZ ?? 4)), night: opts.night, maxH: opts.maxH ?? 10, spread: opts.spread ?? 60 }); for (const [x, z] of opts.palms ?? [[-14, -2.6], [-9, -2.6], [9, -2.6], [14, -2.6], [-16, 8.8], [16, 8.8]]) palm(s, x, z); }
+function city(s, opts = {}) { ground(s); road(s, 0, 4, 160, 4); road(s, -6, 0, 4, 160); const R = opts.clearR ?? 21; buildings(s, opts.n ?? 90, { avoid: (x, z) => Math.hypot(x, z) < R || Math.abs(z - 4) < 4 || Math.abs(x + 6) < 4 || (Math.abs(x) < (opts.clear ?? 7) && Math.abs(z) < (opts.clearZ ?? 4)), spread: opts.spread ?? 90, night: opts.night, maxH: opts.maxH ?? 12 }); for (const [x, z] of opts.palms ?? [[-14, -2.6], [-9, -2.6], [9, -2.6], [14, -2.6], [-16, 8.8], [16, 8.8]]) palm(s, x, z); }
 function person(color, h = 1.7) {
   const g = new THREE.Group(); const k = h / 1.7;
   const mat = new THREE.MeshStandardMaterial({ color, roughness: 0.5, emissive: color, emissiveIntensity: 0.15 });
@@ -132,7 +132,7 @@ SCENES.prompt = () => {
 // beat 6 — roadmap: six monoliths, the sixth locked
 SCENES.roadmap = () => {
   seed = 21; const s = baseScene({ night: true }); ground(s, 60); const c = cam(40);
-  const names = ["NPC behaviour", "Criminal profile", "Animation retargeting", "Character relationships", "RAGE engine & weather", "???"];
+  const names = ["NPC behaviour", "Criminal profiling", "Animation retargeting", "Character relationships", "RAGE engine", "???"];
   const cols = [PINK, ORANGE, GOLD, TEAL, PURPLE, RED];
   const items = names.map((n, k) => {
     const g = new THREE.Group(); const x = (k - 2.5) * 3.3;
@@ -441,6 +441,50 @@ SCENES.merge = () => {
     const on = clamp((u - t3) / 1.0); mats.forEach((m, i) => m.emissive.setHex(i / mats.length < on ? [PINK, TEAL, ORANGE, GOLD][i % 4] : 0x000000));
     pop(L3, at(u, t3, 0.5)); cityG.rotation.y = u * 0.2;
     orbit(c, 0, 0, 0, 17, Math.sin(u * 0.2) * 0.2, 7, 3);
+  } };
+};
+
+
+// 6:10 — handcrafted world, then generative AI arrives
+SCENES.handgen = () => {
+  seed = 171; const s = baseScene({ night: true }); ground(s, 40); road(s, 0, 0, 30, 2.4); road(s, 0, 0, 2.4, 30); const c = cam(40);
+  const spots = []; for (let i = -2; i <= 2; i++) for (let j = -2; j <= 2; j++) if (i && j) spots.push([i * 2.6, j * 2.6]);
+  const B = spots.map(([x, z], k) => { const h = 1 + ((k * 37) % 7) * 0.5; const m = new THREE.Mesh(new THREE.BoxGeometry(1.6, h, 1.6), new THREE.MeshStandardMaterial({ color: 0x2a1748, emissive: k % 3 ? 0x12081f : 0x3b1f6b })); m.position.set(x, h / 2, z); s.add(m); const e = new THREE.LineSegments(new THREE.EdgesGeometry(m.geometry), new THREE.LineBasicMaterial({ color: k % 2 ? TEAL : PINK })); e.position.copy(m.position); s.add(e); return { m, e, h }; });
+  const hand = new THREE.Mesh(new THREE.ConeGeometry(0.35, 1.0, 12), new THREE.MeshStandardMaterial({ color: GOLD, emissive: GOLD, emissiveIntensity: 0.6 })); hand.rotation.x = Math.PI; s.add(hand);
+  const L1 = label([{ t: "HANDCRAFTED", size: 110, color: "#0d0818" }], { w: 1200, h: 220, bg: "#ffd166" }, 3.2); L1.position.set(-5.5, 6.2, 0); s.add(L1);
+  const L1b = label([{ t: "building by building", size: 80, weight: 700 }], { w: 1200, h: 160 }, 3.0); L1b.position.set(-5.5, 5.1, 0); s.add(L1b);
+  const core = new THREE.Mesh(new THREE.IcosahedronGeometry(1.0, 1), new THREE.MeshStandardMaterial({ color: 0x241046, emissive: PINK, emissiveIntensity: 0.8, wireframe: true })); s.add(core);
+  const beam = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 3.5, 7, 24, 1, true), new THREE.MeshBasicMaterial({ color: PINK, transparent: true, opacity: 0, side: THREE.DoubleSide })); beam.position.set(0, 3.5, 0); s.add(beam);
+  const npcs = [[-1.3, -1.3], [1.3, 1.3], [-1.3, 3.9], [3.9, -1.3]].map(([x, z], i) => { const p = person([ORANGE, PURPLE, TEAL, GOLD][i], 1.2); p.position.set(x, 0, z); s.add(p); const b = label([{ t: ["Hey!", "Remember me?", "Nice car…", "???"][i], size: 90, color: "#0d0818" }], { w: 900, h: 200, bg: "rgba(255,255,255,0.95)" }, 1.6); b.position.set(x, 2.3, z); s.add(b); return { p, b }; });
+  const L2 = label([{ t: "+ GENERATIVE AI ?", size: 110 }], { w: 1400, h: 220, bg: "#ff3d9a" }, 3.8); L2.position.set(5.5, 6.2, 0); s.add(L2);
+  return { s, c, render(u, A) {
+    const gen = A.gen ?? 4.5, place = Math.max(1.5, gen - 0.6);
+    B.forEach((b, k) => { const t = 0.3 + (k / B.length) * place; const v = ease((u - t) / 0.35); b.m.scale.y = Math.max(0.001, v); b.m.position.y = b.h / 2 * v; b.e.scale.y = Math.max(0.001, v); b.e.position.y = b.h / 2 * v; b.m.visible = b.e.visible = v > 0.01; });
+    const k = Math.min(B.length - 1, Math.floor(clamp((u - 0.3) / place) * B.length)); const tgt = B[k].m.position; hand.position.set(tgt.x, B[k].h + 1.2 + Math.abs(Math.sin(u * 10)) * 0.3, tgt.z); hand.visible = u < gen;
+    pop(L1, at(u, 0.2, 0.4)); pop(L1b, at(u, 0.5, 0.4));
+    const g = at(u, gen, 0.8); core.position.set(0, lerp(12, 7, g), 0); core.rotation.y = u * 1.5; core.visible = u > gen - 0.2; beam.material.opacity = 0.25 * g + (g > 0.9 ? Math.sin(u * 12) * 0.05 : 0);
+    npcs.forEach((n, i) => { pop(n.b, at(u, gen + 0.6 + i * 0.25, 0.3)); n.p.userData.head.rotation.y = Math.sin(u * 2 + i) * 0.6; });
+    pop(L2, at(u, gen + 0.2, 0.4));
+    orbit(c, 0, 0, 0, 17, -0.4 + u * 0.06, 10, 1.5);
+  } };
+};
+
+// 7:41 — GTA 7: an NPC that remembers you
+SCENES.remember = () => {
+  seed = 181; const s = baseScene({ night: true }); city(s, { n: 70, night: true, clearR: 16 }); const c = cam(36);
+  const npc = person(ORANGE), me = person(TEAL); npc.position.set(1.2, 0, 1.2); npc.rotation.y = -Math.PI / 2; me.position.set(-4, 0, 1.6); s.add(npc, me);
+  const title = extruded("GTA 7", 1.3, [PINK, ORANGE]); title.position.set(0, 6.4, -1); s.add(title);
+  const mem = panel([{ t: "MEMORY", size: 70, color: "#19e3d3" }, { t: "Yesterday: you said you", size: 66, weight: 700 }, { t: "were heading to the Keys", size: 66, weight: 700 }], { w: 1400, h: 520, bg: "rgba(21,11,38,0.94)", border: "#19e3d3" }, 4.2); mem.position.set(3.2, 3.6, 1.2); s.add(mem); mem.userData.base = mem.scale.clone();
+  const dots = [0, 1, 2].map((k) => { const d = new THREE.Mesh(new THREE.SphereGeometry(0.1 + k * 0.05, 10, 8), new THREE.MeshBasicMaterial({ color: TEAL })); d.position.set(1.5 + k * 0.45, 2.2 + k * 0.35, 1.2); s.add(d); return d; });
+  const say = label([{ t: "Hey… I remember you!", size: 96, color: "#0d0818" }], { w: 1400, h: 220, bg: "rgba(255,255,255,0.96)" }, 3.6); say.position.set(-1.0, 3.2, 1.2); s.add(say);
+  return { s, c, render(u, A) {
+    const r = A.remember ?? 2.0;
+    const w = ease(u / 1.8); me.position.x = lerp(-4, -0.6, w); me.rotation.y = Math.PI / 2; walk(me, u, w < 1 ? 9 : 0);
+    npc.userData.head.rotation.y = lerp(0, -0.6, at(u, 1.2, 0.4));
+    pop(title, at(u, 0.2, 0.6)); title.rotation.y = Math.sin(u * 0.8) * 0.25;
+    dots.forEach((d, k) => { d.visible = u > r - 0.6 + k * 0.15; });
+    pop(mem, at(u, r, 0.5)); pop(say, at(u, r + 1.0, 0.4));
+    orbit(c, 0, 0, 1.2, 10.5, lerp(-0.35, 0.05, ease(u / 6)), 4.4, 2.2);
   } };
 };
 

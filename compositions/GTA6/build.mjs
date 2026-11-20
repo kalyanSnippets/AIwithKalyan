@@ -15,7 +15,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "../..");
 const rd = (p) => JSON.parse(readFileSync(join(ROOT, p), "utf-8"));
 const words = rd("GTA6/transcripts/IMG_1825-scribe/words.json");
-const EDL = rd("GTA6/edits/aroll-v4.edl.json").segments;
+const EDL = rd("GTA6/edits/aroll-v5.edl.json").segments;
 const SHOTS = JSON.parse(readFileSync(join(HERE, "shots.json"), "utf-8"));
 const gaze = existsSync(join(ROOT, "GTA6/edits/gaze-v4.json")) ? rd("GTA6/edits/gaze-v4.json") : { windows: [] };
 const I = 8.0;            // hype intro length; the A-roll starts here
@@ -30,7 +30,7 @@ const J = JSON.stringify;
 const pieces = []; { let o = 0; for (const e of EDL) { pieces.push({ src: e.src_in, dur: e.src_out - e.src_in, out: o }); o += e.src_out - e.src_in; } }
 const RC_LEN = r3(pieces.reduce((s, p) => s + p.dur, 0));
 const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
-const kept = (i) => pieces.some((p) => words[i].start >= p.src - 0.02 && words[i].start <= p.src + p.dur);
+const kept = (i) => words[i].end - words[i].start > 0.005 && pieces.some((p) => words[i].start >= p.src - 0.02 && words[i].start <= p.src + p.dur);
 const rc = (src) => { for (const p of pieces) if (src >= p.src - 0.02 && src <= p.src + p.dur + 0.001) return r3(I + p.out + Math.max(0, Math.min(src - p.src, p.dur))); const n = pieces.find((p) => p.src > src); return r3(I + (n ? n.out : RC_LEN)); };
 const toks = (phrase) => phrase.split(/\s+/).map(norm).filter(Boolean);
 function find(phrase, from = 0) {
@@ -89,6 +89,7 @@ function scene(t0, t1, { pip = true } = {}) {
  *  fade: cross-dissolve in (s). kb: in | out | left | right | none | punch | whip. Returns {id,t0,t1,rate,play,shot}. */
 function foot(shot, t0, t1, { kb = "in", freeze = null, dim = false, track = 8, fade = 0.22, hold = false } = {}) {
   const s = SHOTS[shot]; if (!s) throw new Error(`no shot ${shot}`);
+  (USES[shot] ||= []).push(t0);
   const sd = s.t1 - s.t0, slot = t1 - t0;
   const rate = hold ? 1 : Math.max(0.5, Math.min(1, sd / slot));
   const play = freeze ? Math.min(freeze - t0, sd / rate) : Math.min(slot, sd / rate);
@@ -115,7 +116,7 @@ function montage(list, t0, t1, opts = {}) {
 /** White flash frame (impact). */
 function flash(t) { const id = nid("fl"); clipDiv(id, "flash", t, t + 0.3, "", "", 47); fromTo(`#${id}`, { opacity: 0.9 }, { opacity: 0, duration: 0.28, ease: "power2.out" }, t); }
 /** Three.js scene from scenes3d.js on the shared canvas. Anchors are film times (converted to scene-relative). */
-const S3D = [], HUDS = [];
+const S3D = [], HUDS = [], BROLL = [], USES = {};
 function s3d(name, t0, t1, a = {}, { pip = true } = {}) {
   S3D.push({ name, t0: r3(t0), t1: r3(t1), a: Object.fromEntries(Object.entries(a).map(([k, v]) => [k, r3(v - t0)])) });
   covered.push([t0, t1]); if (pip) { mode(t0, "pip"); mode(t1 - 0.4, "full"); }
@@ -126,7 +127,7 @@ function hudOn(f, mode, o = {}) { HUDS.push({ t0: f.t0, t1: f.t1, shot: f.shot, 
 function chapter3d(n, title, t) {
   const d = 2.2; s3d("chapter" + n, t, t + d, {}, { pip: false });
   const id = nid("ch3");
-  clipDiv(id, "ch3", t, t + d, `<div class="lab">TECHNOLOGY ${n} OF 6</div><div class="ttl">${title.toUpperCase().split("").map((c) => `<span>${c === " " ? "&nbsp;" : esc(c)}</span>`).join("")}</div>`, "", 46);
+  const fs = Math.min(116, Math.floor(1750 / (title.length * 0.6))); clipDiv(id, "ch3", t, t + d, `<div class="lab">TECHNOLOGY ${n} OF 6</div><div class="ttl" style="font-size:${fs}px">${title.toUpperCase().split("").map((c) => `<span>${c === " " ? "&nbsp;" : esc(c)}</span>`).join("")}</div>`, "", 46);
   fromTo(`#${id} .lab`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.35 }, t + 1.0);
   js.push(`tl.fromTo(${J(`#${id} .ttl span`)},{opacity:0,y:60,rotationX:-80},{opacity:1,y:0,rotationX:0,duration:0.4,stagger:0.025,ease:"back.out(2)"},${r3(t + 1.1)});`);
   leave(`#${id}`, t + d - 0.25, {}, 0.25);
@@ -207,7 +208,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const step = (I - 1.55) / HY.length;
   HY.forEach((s, k) => { const t0 = 1.55 + k * step; foot(s, t0, t0 + step + (k + 1 < HY.length ? 0.04 : 0), { kb: k % 2 ? "punch" : "whip", fade: 0, hold: true }); if (k % 3 === 0) flash(t0); });
   kinetic({ x: 0, y: 380, w: 1920, size: 170, align: "center", t1: 3.45, parts: [{ text: "13 YEARS", t: 1.62, cls: "hl" }] });
-  kinetic({ x: 0, y: 380, w: 1920, size: 170, align: "center", t1: 5.4, parts: [{ text: "OF HYPE", t: 3.5 }] });
+  kinetic({ x: 0, y: 380, w: 1920, size: 170, align: "center", t1: 5.4, parts: [{ text: "OF WAITING", t: 3.5 }] });
   kinetic({ x: 0, y: 380, w: 1920, size: 170, align: "center", t1: I - 0.05, parts: [{ text: "IT'S", t: 5.45, cls: "t" }, { text: "HERE", t: 5.75, cls: "hl" }] });
   flash(I - 0.06); sfx(I - 0.1, "whoosh", 0.3);
   noCaps.push([0, I]);
@@ -218,10 +219,10 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   // "after all these years of waiting… fascinating" — the city
   const tAnd = at("and honestly"), tTech = at("the technology behind this game");
   montage([{ shot: "sunset_hwy", t: tAnd }, { shot: "night_aerial", t: tTech - 0.6 }], tAnd, at("but wait") - 0.1);
-  kinetic({ x: 120, y: 760, w: 1200, size: 110, t1: at("but wait") - 0.1, parts: [{ text: "13", t: at("years"), cls: "hl" }, { text: "YEARS", t: at("years") + 0.15, cls: "hl" }, { text: "OF HYPE", t: at("waiting") }] });
+  kinetic({ x: 120, y: 760, w: 1200, size: 110, t1: at("but wait") - 0.1, parts: [{ text: "13", t: at("years"), cls: "hl" }, { text: "YEARS", t: at("years") + 0.15, cls: "hl" }, { text: "OF WAITING", t: at("waiting") }] });
   // twist — ZERO? beside him, then the real headline tilting in
   kinetic({ x: 1180, y: 120, w: 660, size: 170, align: "right", t1: at("yeah you heard"), parts: [{ text: "GENERATIVE AI", t: at("generative ai"), cls: "sm" }, { text: "ZERO?", t: at("generative ai") + 0.3, cls: "hl" }] });
-  foot("night_aerial", at("yeah you heard"), at("no chatgpt") - 0.05, { kb: "in", dim: true });
+  foot("bridge_aerial", at("yeah you heard"), at("no chatgpt") - 0.05, { kb: "in", dim: true });
   source({ t0: at("yeah you heard"), t1: at("no chatgpt") - 0.05, img: "gamesradar.png", by: "GamesRadar+ · Take-Two CEO Strauss Zelnick · Feb 2026", hl: [[0, 175, 1300, 330, at("you heard that right")]] });
   // "no ChatGPT generating an entire city… no single prompt" — 3D: a prompt beam grows a city that glitches apart
   const p0 = at("no chatgpt"), p1 = at("so then how") - 0.05;
@@ -264,12 +265,12 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const d0 = at("now somebody has"), d1 = at("so let's start") - 0.05;
   s3d("brain", d0 - 0.2, d1, { rules: at("programmed rules"), decisions: at("decision-making"), sim: at("simulations") });
   hd(d0, at("and gta 6 takes") - 0.05, "Traditional game AI", "HOW THE POLICE DECIDE", 60);
-  kinetic({ x: 0, y: 860, w: 1920, size: 72, align: "center", t1: d1, parts: [{ text: "GTA 6 TAKES IT", t: at("and gta 6 takes") }, { text: "MUCH FURTHER", t: at("much further"), cls: "hl" }] });
+  kinetic({ x: 0, y: 150, w: 1920, size: 84, align: "center", t1: d1, parts: [{ text: "GTA 6 TAKES IT", t: at("and gta 6 takes") }, { text: "MUCH FURTHER", t: at("much further"), cls: "hl" }] });
 }
 
 // ═══════════════════════════ SCENE 3 — TECH 1: NPC BEHAVIOUR ═══════════════
 {
-  chapter3d(1, "NPCs that notice you", at("let's start with technology") - 0.1);
+  chapter3d(1, "NPC Behaviour", at("let's start with technology") - 0.1);
   // walking → two people talking → you stop nearby
   const w0 = at("okay imagine this"), w1 = at("so you stop nearby") - 0.05;
   const W = montage([{ shot: "el_walk", t: w0 }, { shot: "el_talk", t: at("you notice two people") }], w0, w1);
@@ -294,7 +295,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 
 // ═══════════════════════════ SCENE 4 — TECH 2: CRIMINAL PROFILE ════════════
 {
-  chapter3d(2, "The police remember", at("okay picture this") - 0.1);
+  chapter3d(2, "Criminal Profiling", at("okay picture this") - 0.1);
   const c0 = at("you are driving around", find("okay picture this")), cF = at("the police see your car"), c1 = at("now in a typical game") - 0.05;
   const C = montage([{ shot: "el_drive2", t: c0 }, { shot: "el_crime", t: at("you commit a crime") }], c0, cF);
   hudOn(C[0], "track", { label: "YOU", lockText: " · DRIVING", max: 2, radar: true });
@@ -305,9 +306,12 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   foot("el_chase", at("and somehow you manage") - 0.05, c1, { kb: "in" });
   // wanted level disappears → Criminal Profile database (3D)
   const p0 = at("now in a typical game"), pP = at("criminal profile"), p1 = at("i mean suddenly escaping") - 0.05;
-  const Hh = foot("el_heli", p0, pP - 0.3, { kb: "in" });
-  hudOn(Hh, "track", { label: "UNIT", lockText: " · SEARCHING", radar: true });
-  kinetic({ x: 0, y: 760, w: 1920, size: 84, align: "center", t1: pP - 0.3, parts: [{ text: "WANTED LEVEL GONE", t: at("wanted level disappears") }, { text: "= SAFE?", t: at("back to normal"), cls: "hl" }] });
+  const pN = at("you might feel like") - 0.05;
+  const Hh = foot("el_heli", p0, pN, { kb: "in" });
+  hudOn(Hh, "wanted", { clear: at("wanted level disappears") - p0 });
+  kinetic({ x: 0, y: 760, w: 1920, size: 84, align: "center", t1: pN, parts: [{ text: "WANTED LEVEL", t: at("wanted level disappears") - 0.2 }, { text: "GONE", t: at("disappears"), cls: "hl" }] });
+  foot("street_cars", pN, pP - 0.3, { kb: "in" });
+  kinetic({ x: 0, y: 760, w: 1920, size: 100, align: "center", t1: pP - 0.3, parts: [{ text: "BACK TO", t: at("back to normal") }, { text: "NORMAL?", t: at("normal", find("back to normal")), cls: "t" }] });
   s3d("profile", pP - 0.3, p1, { profile: pP, r0: at("details associated"), r1: at("details associated") + 0.6, r2: at("affect how the world"), r3: at("an outfit connected") });
   sfx(pP, "whoosh", 0.22);
   // not just speed — what people saw
@@ -321,7 +325,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const b0 = at("but okay npc behavior"), bC = at("that's technology number three") - 0.1;
   const B = montage([{ shot: "beach_gym", t: b0 }, { shot: "beach_crowd", t: at("how do you make thousands") }], b0, bC);
   hudOn(B[1], "track", { label: "NPC", lock: false, max: 8 });
-  chapter3d(3, "Realistic human movement", bC);
+  chapter3d(3, "Animation Retargeting", bC);
   // "one animation of a character sitting inside a car"
   const a0 = at("now here is something most"), a1 = at("but what happens when") - 0.05;
   const A1 = montage([{ shot: "el_incar", t: a0 }, { shot: "hands_wheel", t: at("imagine you have created") }], a0, a1, { freezeLast: at("sitting inside a car") });
@@ -329,8 +333,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   // tall vs short in 3D car seats → mismatch → retargeted
   const r0 = at("but what happens when"), r1 = at("and when you multiply") - 0.05;
   s3d("retarget", r0 - 0.2, r1, { tall: at("much taller"), short: at("different body proportion"), miss: at("their hands might not"), fix: at("runtime animation retargeting") });
-  hd(at("so the rockstar developed"), r1, "Runtime animation retargeting", "ROCKSTAR", 50);
-  // × a whole city
+    // × a whole city
   const m0 = at("and when you multiply"), m1 = at("but here is where it gets") - 0.05;
   const Mm = montage([{ shot: "beach_crowd", t: m0 }, { shot: "bar_crowd", t: at("you start to understand") }], m0, m1);
   Mm.forEach((f) => hudOn(f, "retargeted", {}));
@@ -343,7 +346,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 
 // ═══════════════════════════ SCENE 6 — TECH 4: RELATIONSHIPS ═══════════════
 {
-  chapter3d(4, "Characters with relationships", at("and that is where technology four") - 0.1);
+  chapter3d(4, "Character Relationships", at("and that is where technology four") - 0.1);
   const j0 = at("now you already know gta 6"), j1 = at("think about that for") - 0.05;
   const Jc = foot("el_couple", j0, at("rockstar has discussed ai") - 0.05, { kb: "in" });
   hudOn(Jc, "names", { names: ["LUCIA", "JASON"] });
@@ -353,7 +356,6 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   // follow because the mission says so vs move together
   const f0 = at("think about that for"), f1 = at("for example imagine two") - 0.05;
   s3d("follow", f0 - 0.2, f1, { together: at("move together") });
-  hd(f0, f1, "Following vs. being together", "", 60);
   // arriving together: wait, reposition, react
   const a0 = at("for example imagine two"), a1 = at("and here is the important") - 0.05;
   s3d("arrive", a0 - 0.2, a1, { wait: at("one might need to wait"), repo: at("reposition"), react: at("or react") });
@@ -365,7 +367,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 {
   const w0 = at("now let's move from"), wC = at("because technology number five") + 2.6;
   foot("night_aerial", w0, wC, { kb: "out" });
-  chapter3d(5, "The world itself", wC);
+  chapter3d(5, "RAGE · Rockstar Advanced Game Engine", wC);
   const b0 = at("okay have you seen"), b1 = at("but how does all") - 0.05;
   montage([{ shot: "neon_street", t: b0 }, { shot: "el_neon", t: at("the neon lights") }, { shot: "sunset_hwy", t: at("the weather", find("the neon lights")) }, { shot: "el_sunset", t: at("some of these scenes") }], b0, b1);
   const e0 = at("but how does all"), e1 = at("now imagine you are driving") - 0.05;
@@ -382,15 +384,14 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 
 // ═══════════════════════════ SCENE 8 — TECH 6: FUTURE ══════════════════════
 {
-  chapter3d(6, "What comes next?", at("and now technology number six"));
+  chapter3d(6, "Machine Learning & the Future of Gaming", at("and now technology number six"));
   {
     const f0 = Math.max(at("and now technology number six") + 2.2, at("this one is not just")), f1 = at("okay here is the really") - 0.05;
     foot("el_sunset", f0, f1, { kb: "in", dim: true });
     kinetic({ x: 0, y: 360, w: 1920, size: 110, align: "center", t1: f1, parts: [{ text: "WHAT COMES NEXT", t: at("what comes next") }, { text: "MACHINE LEARNING", t: at("machine learning", find("what comes next")), cls: "hl" }, { text: "+ THE FUTURE OF GAMING", t: at("future of gaming"), cls: "t" }] });
   }
   const h0 = at("okay here is the really"), h1 = at("imagine walking into a shop") - 0.05;
-  foot("bridge_aerial", h0, h1, { kb: "in", dim: true });
-  kinetic({ x: 0, y: 380, w: 1920, size: 100, align: "center", t1: h1, parts: [{ text: "HANDCRAFTED", t: at("hand-crafted") }, { text: "+", t: at("combine those systems") }, { text: "GENERATIVE AI?", t: at("generative ai", find("combine those")), cls: "hl" }] });
+  s3d("handgen", h0 - 0.1, h1, { gen: at("generative ai", find("combine those")) });
   // shop: the real store, with a future dialogue UI over it
   const c0 = at("imagine walking into a shop"), c1 = at("or imagine side missions") - 0.05;
   foot("el_shop", c0, c1, { kb: "in", dim: true });
@@ -430,8 +431,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   kinetic({ x: 1100, y: 140, w: 760, size: 84, align: "right", t1: at("don't just ask") - 0.05, parts: [{ text: "APPS", t: at("building an app"), cls: "t" }, { text: "CONTENT", t: at("creating content") }, { text: "AI", t: at("learning ai"), cls: "hl" }] });
   kinetic({ x: 1080, y: 140, w: 780, size: 76, align: "right", t1: at("now i have a question") - 0.05, parts: [{ text: "DON'T ASK", t: at("don't just ask"), cls: "sm" }, { text: "“How can I add AI?”", t: at("how can i add"), cls: "x" }, { text: "ASK", t: at("ask what experience"), cls: "sm" }, { text: "“What can I make better?”", t: at("genuinely better"), cls: "hl" }] });
   const q0 = at("imagine gta 7"), q1 = at("would that make") - 0.05;
-  foot("bridge_aerial", q0, q1, { kb: "in", dim: true });
-  kinetic({ x: 0, y: 380, w: 1920, size: 110, align: "center", t1: q1, parts: [{ text: "GTA 7:", t: at("gta 7"), cls: "t" }, { text: "NPCs THAT", t: at("had npcs") }, { text: "REMEMBER YOU?", t: at("remember you", find("imagine gta 7")), cls: "hl" }] });
+  s3d("remember", q0 - 0.1, q1, { remember: at("remember you", find("imagine gta 7")) });
   const e0 = q1, e1 = at("and if you enjoy") - 0.05;
   const bid = nid("cta");
   clipDiv(bid, "", e0, e1, `<div class="btn2 ex" id="${bid}-a" style="left:1240px;top:180px">${icon("party-popper", 64, "#0d0818")}EXCITING</div><div class="btn2 cr" id="${bid}-b" style="left:1240px;top:380px">${icon("ghost", 64, "#fff")}CREEPY</div><div class="lt" id="${bid}-c" style="left:1240px;top:600px;bottom:auto">${icon("message-circle", 34, TEAL)}Comment below</div>`, "position:absolute;inset:0;z-index:18", 18);
@@ -461,6 +461,39 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   noCaps.push([o, oe + 1]); covered.push([o, oe]);
 }
 
+// ── more GTA 6 B-roll: fill face-only stretches (≥3 s), keeping his face for the key lines ──
+{
+  const keepFace = [[I, at("and honestly")], [at("rockstar says"), at("yeah you heard")], [at("bro imagine"), at("one of the interesting details")],
+    [at("now to be clear"), at("rockstar has machine learning")], [at("see here is what i find"), at("it's that human creativity")],
+    [at("now i have a question"), at("imagine gta 7")], [at("would that make"), AEND]];
+  const pools = [[at("okay before we get"), ["night_aerial", "neon_street", "el_sunset"]], [at("let's start with technology"), ["el_drive2", "street_cars", "highway_day"]],
+    [at("okay picture this"), ["ocean_drive", "el_walk", "beach_crowd", "el_neon"]], [at("that's technology number three"), ["el_police", "el_chase", "el_drive"]],
+    [at("and that is where technology four"), ["beach_gym", "beach_crowd", "bar_crowd", "el_incar"]], [at("because technology number five"), ["el_couple", "jl_car", "jetski", "el_arrive"]],
+    [at("and now technology number six"), ["night_street", "neon_street", "el_sunset", "el_neon"]], [at("and this brings us"), ["el_race", "el_airboat", "jetski", "el_shop"]], [AEND, ["el_sunset", "night_aerial"]]];
+  const poolAt = (t) => pools.find(([e]) => t < e)[1];
+  const merged = []; for (const [a, b] of [...covered].sort((x, y) => x[0] - y[0])) { if (merged.length && a <= merged.at(-1)[1] + 0.05) merged.at(-1)[1] = Math.max(merged.at(-1)[1], b); else merged.push([a, b]); }
+  const gaps = []; let p = I; for (const [a, b] of merged) { if (a > p) gaps.push([p, a]); p = Math.max(p, b); } if (p < AEND) gaps.push([p, AEND]);
+  let used = 0;
+  for (let [a, b] of gaps) {
+    if (b - a < 2.6) continue;
+    let s0 = a + 0.9, s1 = b - 0.5;
+    for (const [k0, k1] of keepFace) { if (k0 <= s0 && k1 > s0) s0 = k1 + 0.3; if (k0 < s1 && k1 >= s1) s1 = k0 - 0.3; }
+    if (keepFace.some(([k0, k1]) => k0 >= s0 && k1 <= s1)) { const k = keepFace.find(([k0, k1]) => k0 >= s0 && k1 <= s1); s1 = k[0] - 0.3; }
+    if (s1 - s0 < 1.5) continue;
+    const pool = poolAt(s0); const n = Math.max(1, Math.round((s1 - s0) / 3.2));
+    // least-used shot first: section pool, then any scenic shot; never one already shown within 90 s
+    const ALL = ["night_aerial", "neon_street", "el_sunset", "el_drive2", "street_cars", "highway_day", "ocean_drive", "el_walk", "beach_crowd", "el_neon",
+      "el_police", "el_chase", "el_drive", "beach_gym", "bar_crowd", "el_incar", "el_couple", "jl_car", "jetski", "el_arrive", "night_street", "el_race",
+      "el_airboat", "el_shop", "bridge_aerial", "sunset_hwy", "el_night", "el_talk", "two_men", "jl_stand"].filter((x) => SHOTS[x]);
+    const pick = (t) => {
+      const score = (x) => (USES[x] || []).length * 10 + (pool.includes(x) ? 0 : 5) + ((USES[x] || []).some((u) => Math.abs(u - t) < 90) ? 100 : 0);
+      return [...ALL].sort((x, y) => score(x) - score(y))[0];
+    };
+    for (let k = 0; k < n; k++) { const t0 = s0 + ((s1 - s0) * k) / n, t1 = s0 + ((s1 - s0) * (k + 1)) / n + (k + 1 < n ? 0.2 : 0); foot(pick(t0), t0, t1, { kb: ["in", "left", "out", "right"][(used + k) % 4] }); }
+    used += n; BROLL.push([r3(s0), r3(s1), n]);
+  }
+}
+
 // ── chapter tags: top-right on the wall, between chapters (hidden under full-screen cards) ──
 {
   const ends = CHAPS.map((c, k) => (k + 1 < CHAPS.length ? CHAPS[k + 1].t0 - 2.2 : at("and this brings us")));
@@ -475,7 +508,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 let coverCount = 0;
 {
   const coveredAt = (a, b) => covered.some(([c0, c1]) => c0 <= a + 0.05 && c1 >= b - 0.05);
-  const pool = ["night_aerial", "neon_street", "bridge_aerial", "street_cars", "beach_crowd", "highway_day"];
+  const pool = ["street_cars", "neon_street", "highway_day", "el_night", "beach_crowd", "night_aerial"];
   for (const wnd of gaze.windows ?? []) {
     let a = I + wnd.start - 0.2, b = I + wnd.end + 0.2;
     if (a > AEND || coveredAt(a, b)) continue;
@@ -530,14 +563,14 @@ const SPELL = [];
 
 // ── music + SFX ─────────────────────────────────────────────────────────────
 {
-  const BED = 0.09;
+  const BED = 0.16;
   const lane = (pts) => J({ version: 1, lanes: [{ target: "volume", points: pts.map(([t, v]) => ({ t: r3(Math.max(0, t)), v })) }] });
   const audio = (aid, src, start, dur, ms, pts, track) => html.push(`<audio id="${aid}" class="clip" src="media/${src}" data-start="${r3(start)}" data-duration="${r3(dur)}" data-media-start="${r3(ms)}" data-volume="1" data-track-index="${track}" data-automation='${lane(pts)}'></audio>`);
   const env = (d, fi, fo, level = BED, dips = []) => { const p = [[0, fi ? 0 : level], [fi || 0.01, level]]; for (const [a, b] of dips) p.push([a - 0.3, level], [a, level * 0.35], [b, level * 0.35], [b + 0.4, level]); p.push([d - fo, level], [d, 0]); return p.sort((x, y) => x[0] - y[0]); };
   const c1 = at("okay before we get"), c3 = at("and now technology number six"), c4 = at("and this brings us");
   const tR = at("rockstar says"), tL = at("biggest lesson");
   audio("m0", "m0.mp3", 0, I + 0.2, 0, [[0, 1.0], [I - 0.5, 1.0], [I - 0.05, 0.15], [I + 0.2, 0]], 29);
-  audio("m1", "m1.mp3", I - 0.2, c1 - I + 1.7, 0, env(c1 - I + 1.7, 0.6, 1.5, 0.055, [[tR - I - 0.1, tR - I + 1.4]]), 30);
+  audio("m1", "m1.mp3", I - 0.2, c1 - I + 1.7, 0, env(c1 - I + 1.7, 0.6, 1.5, 0.11, [[tR - I - 0.1, tR - I + 1.4]]), 30);
   audio("m2", "m2.mp3", c1 - 0.2, Math.min(330, c3 - c1 + 1.7), 0, env(Math.min(330, c3 - c1 + 1.7), 1.5, 1.5), 31);
   audio("m3", "m3.mp3", c3, Math.min(69, c4 - c3 + 1.2), 0, env(Math.min(69, c4 - c3 + 1.2), 1.0, 1.2), 32);
   const m4d = Math.min(86, TOTAL - (c4 - 0.2));
@@ -590,5 +623,5 @@ ${html.map((h) => "  " + h).join("\n")}
 </html>
 `;
 writeFileSync(join(HERE, "index.html"), page);
-writeFileSync(join(HERE, "meta.json"), J({ total: TOTAL, intro: I, aroll: RC_LEN, aend: AEND, chapters: CHAPS, covers: coverCount, sfx: sfxList.length, s3d: S3D.length, hud: HUDS.length, spelling: SPELL, covered }, null, 1));
+writeFileSync(join(HERE, "meta.json"), J({ total: TOTAL, intro: I, aroll: RC_LEN, aend: AEND, chapters: CHAPS, covers: coverCount, sfx: sfxList.length, s3d: S3D.length, hud: HUDS.length, broll: BROLL, spelling: SPELL, covered }, null, 1));
 console.log(`index.html: ${TOTAL.toFixed(2)} s · ${html.length} nodes · ${js.length} tweens · ${sfxList.length} SFX · ${coverCount} look-away covers`);

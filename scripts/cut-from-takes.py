@@ -140,16 +140,27 @@ if F.get("protect_words", True):
             ov = max(0, min(w["end"], t1) - max(w["start"], t0))
             if ov > 0.6 * max(0.01, w["end"] - w["start"]): return True
         return False
-    need = []
+    need = []; keepset = set(keep)
     for i in keep:
         w = W[i]
         if not w["text"].strip() or intentionally_removed(w): continue
-        need.append({"src_in": round(w["start"] - F.get("word_lead", 0.03), 3), "src_out": round(w["end"] + F.get("word_tail", 0.10), 3), "text": w["text"]})
+        lo = w["start"] - F.get("word_lead", 0.03); hi = w["end"] + F.get("word_tail", 0.10)
+        if i - 1 >= 0 and (i - 1) not in keepset and W[i - 1]["text"].strip(): lo = max(lo, W[i - 1]["end"] + 0.01)
+        if i + 1 < len(W) and (i + 1) not in keepset and W[i + 1]["text"].strip(): hi = min(hi, W[i + 1]["start"] - 0.01)
+        need.append({"src_in": round(lo, 3), "src_out": round(hi, 3), "text": w["text"]})
     allp = sorted(edl + need, key=lambda e: e["src_in"]); merged = []
     for e in allp:
         if merged and e["src_in"] <= merged[-1]["src_out"] + 0.02: merged[-1]["src_out"] = max(merged[-1]["src_out"], e["src_out"])
         else: merged.append(dict(e))
     edl = merged
+    # never let a piece run into the first syllable of a removed word ("break--")
+    removed_words = [W[j] for j in range(len(W)) if W[j]["text"].strip() and j not in keepset and W[j]["end"] - W[j]["start"] > 0.01]
+    for e in edl:
+        for rw in removed_words:
+            if e["src_in"] < rw["start"] < e["src_out"] and rw["end"] > e["src_out"] - 0.001:
+                e["src_out"] = round(max(e["src_in"] + 0.05, rw["start"] - 0.01), 3)
+            if e["src_in"] < rw["end"] < e["src_out"] and rw["start"] < e["src_in"] + 0.001:
+                e["src_in"] = round(min(e["src_out"] - 0.05, rw["end"] + 0.01), 3)
 dur = sum(e["src_out"] - e["src_in"] for e in edl)
 json.dump({"source": "IMG_1825", "segments": edl, "duration": round(dur, 2)}, open(edl_p, "w"), indent=1)
 print(f"{len(edl)} segments, {dur/60:.2f} min")
@@ -174,9 +185,20 @@ if "--render" in sys.argv:
         if Z > 1 and k % 2 == 1:   # punch-in, framed a little above centre (face)
             vf += f",crop=iw/{Z}:ih/{Z}:(iw-iw/{Z})/2:(ih-ih/{Z})*0.35"
         vf += f",scale={sc}:-2,setsar=1"
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{e['src_in']:.3f}", "-i", src, "-an",
-                        "-vf", vf, "-frames:v", str(nf), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
-                        "-pix_fmt", "yuv420p", f], check=True)
+        XF = float(sys.argv[sys.argv.index("--xfade") + 1]) if "--xfade" in sys.argv else 0
+        jump = k > 0 and abs(edl[k - 1]["src_out"] - e["src_in"]) > 0.02
+        if XF > 0 and jump and nf > XF * 30 + 2:
+            # dissolve from the frames that followed the previous piece into this one (a short "morph" over the jump)
+            p0 = edl[k - 1]["src_out"]
+            fc = (f"[0:v]{vf},trim=duration={XF:.3f},setpts=PTS-STARTPTS[a];[1:v]{vf},setpts=PTS-STARTPTS[b];"
+                  f"[a][b]xfade=transition=fade:duration={XF:.3f}:offset=0,format=yuv420p[v]")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{p0:.3f}", "-t", f"{XF + 0.1:.3f}", "-i", src,
+                            "-ss", f"{e['src_in']:.3f}", "-i", src, "-an", "-filter_complex", fc, "-map", "[v]",
+                            "-frames:v", str(nf), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", f], check=True)
+        else:
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{e['src_in']:.3f}", "-i", src, "-an",
+                            "-vf", vf, "-frames:v", str(nf), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                            "-pix_fmt", "yuv420p", f], check=True)
         lst.append(f"file '{f}'")
     open(os.path.join(tmp, "list.txt"), "w").write("\n".join(lst))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", os.path.join(tmp, "list.txt"),
