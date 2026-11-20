@@ -51,3 +51,4 @@ GTA6/media/**
 GTA6/renders/**
 !GTA6/renders/.gitkeep
 GTA6/compositions/**/media/
+compositions/GTA6/index.html

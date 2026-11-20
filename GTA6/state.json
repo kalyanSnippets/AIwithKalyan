@@ -19,14 +19,14 @@
       "note": "Kalyan confirmed the pasted script; claims kept as written at his request"
     },
     "brief": {
-      "status": "awaiting-approval",
+      "status": "approved",
       "date": "2026-11-20",
-      "note": "edit-brief.md v1 written on A-roll v3 (7:44); 5 open questions in \u00a711"
+      "note": "Kalyan: Approve. Defaults for unanswered: recommended ref mix, takeaway pauses 0.35 s, local voice cleanup (no Studio Sound), spoken chapter names kept"
     },
     "assets": {
       "status": "not-started",
       "date": null,
-      "note": "Fetching official Rockstar trailers (Out Now, cover art, Trailer 1, Launch, Trailer 2, Extended Look)"
+      "note": "Editor gathering: shot log, stills, page captures, music, SFX, outro voice"
     },
     "edit": {
       "status": "not-started",

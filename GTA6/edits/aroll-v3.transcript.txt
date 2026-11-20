@@ -1,0 +1,123 @@
+0:00.1 Guys, GTA 6 is finally here, and honestly, after all these years of waiting, the you.
+0:05.4 The technology behind this game is just fascinating.
+0:08.3 But wait, here is something that might actually surprise you.
+0:11.3 Rockstar says they didn't use generative AI to build GTA 6 world.
+0:15.6 Yeah, you heard that right.
+0:17.1 no ChatGPT generating an entire city.
+0:19.6 No single AI prompt creating the whole game.
+0:22.1 So then how did they make a world where people can notice you following them, police can react to your criminal history, and thousands of characters move so naturally?
+0:31.0 Well, that's where things really gets interesting.
+0:33.7 Because today, I'm going to break-- break down six technologies behind GTA 6 with simple examples.
+0:38.9 And trust me, the last one changes how you might think about the future of gaming.
+0:43.2 okay, before we get into those six technologies, there is one thing you need to understand.
+0:47.6 see, whenever we hear the word AI nowadays, we immediately think about ChatGPT, Claude, or AI-generated videos, right?
+0:55.2 But here is the thing.
+0:56.3 Games have been using AI for decades.
+0:58.5 For example, imagine you are playing GTA.
+1:01.1 You steal a car, a police officer notices you, and suddenly police vehicles start chasing you.
+1:06.3 now somebody has to decide how those police officers behave, right?
+1:09.7 Well, that's traditional game AI.
+1:11.5 It's combination of programmed rules, decision-making systems, and simulations.
+1:15.6 And GTA 6 takes that kind of world-building much further.
+1:18.9 So let's start with technology number one, which is NPC behavior.
+1:23.0 Okay, imagine this.
+1:24.2 You are casually walking through a Vice City.
+1:26.3 You notice two people having a conversation, so you stop nearby just to listen.
+1:30.7 But instead of standing there and ignoring you, those characters might actually notice that you are eavesdropping.
+1:36.4 Bro, imagine getting caught being nosy by a video game character, And that's one of the interesting details Rockstar has discussed.
+1:43.0 NPCs are designed to respond to situations like being followed or having their personal space interrupted.
+1:49.1 Now, why does this matter?
+1:50.3 Because normally, you can walk around a game world and most background characters barely acknowledge you.
+1:55.8 But when characters respond to your actions, even small interactions feel more believable.
+2:00.9 And if you think that's interesting, wait until you hear how police system works.
+2:05.1 because this next one could completely change the way you escape a crime.
+2:09.2 Okay, picture this.
+2:10.3 You are driving around Vice City.
+2:11.7 You commit a crime.
+2:12.9 The police see your car, your clothes, maybe even your face, and somehow you manage to escape.
+2:17.8 Now, in a typical game, once the wanted level disappears, you might feel like everything's back to normal.
+2:23.4 But GTA 6 introduces something called the criminal profile system.
+2:27.8 The idea is that details associated with your crime behavior can affect how the world responds to you.
+2:33.4 So, for example, an outfit connected to a crime could become something you need to think about.
+2:38.3 I mean, suddenly escaping isn't just about driving faster.
+2:41.6 it's also about what people saw and what information might still matter.
+2:45.4 and that's a fascinating direction for game AI.
+2:48.0 But okay, NPC behavior is one thing.
+2:50.7 How do you make thousands of completely different people move naturally?
+2:54.3 that's technology number three, which is animation retargeting.
+2:57.8 Now, here is something most people probably won't even notice while playing.
+3:01.3 But developers spend incredible amount of time solving this problem.
+3:05.0 imagine you have created one animation of a character sitting inside a car.
+3:08.8 Sounds simple, right?
+3:09.9 But what happens when a much taller character tries to use that same animation, or someone with a different body proportion?
+3:16.1 Their hands might not reach the steering wheel properly.
+3:18.9 Their legs might not line up with the seat.
+3:20.9 And suddenly, the animation looks weird.
+3:23.1 So the Rockstar developed technology called runtime animation retargeting.
+3:27.1 basically, it helps adapt animations to different characters while the game is still running.
+3:31.6 And when you multiply that across a huge population of characters, You start to understand how much engineering goes into making a city feel natural.
+3:38.9 but here is where it gets even more interesting.
+3:41.3 Because Rockstar is not just simulating individual characters.
+3:44.3 it is also building systems around how characters interact with each other.
+3:47.9 And that is where technology four comes in, which is character relationships.
+3:51.8 Now, you already know GTA 6 has two main characters, Jason and Lucia.
+3:55.8 But here is the interesting part.
+3:57.1 Rockstar has discussed AI systems designed to support their interactions as a couple.
+4:01.5 think about that for a second.
+4:03.0 In a normal game, A character might just follow you because the mission says so.
+4:06.8 But when you are designing a believable relationship, you might need much more than that.
+4:10.8 Characters need to move together, react to situations, and participate in activities in ways that make sense.
+4:16.6 for example, imagine two characters arriving at a location together.
+4:20.1 One might need to wait, reposition, or react to what the other character is doing.
+4:24.7 That's the kind of coordination game developers have to solve.
+4:27.8 And here is the important thing.
+4:29.4 This doesn't mean Jason and Lucia are secretly powered by ChatGPT.
+4:33.2 It's about carefully designed gameplay and character systems.
+4:36.3 Now, let's move from characters to actual world, because technology number five is something you can see almost everywhere, And that technology is called RAGE Engine, lighting, and weather.
+4:46.5 Okay, have you seen the lighting in GTA 6?
+4:48.8 The reflections on cars, the neon lights, the weather?
+4:52.1 I mean some of these scenes look incredible.
+4:54.4 But how does all of that actually work?
+4:56.4 Well, Rockstar uses its own game engine called RAGE.
+4:59.6 And a game engine is basically the technology that helps bring the entire game together, Graphics, physics, animation, and the systems running behind the scenes.
+5:07.6 Now imagine you are driving through Vice City at night.
+5:10.3 It starts raining.
+5:11.4 The road becomes wet.
+5:12.4 Streetlights reflect across the surface.
+5:14.3 And the atmosphere changes.
+5:15.7 to make that look believable, the engine has to coordinate rendering, lighting, materials, and environmental simulations.
+5:22.3 Rockstar has discussed advanced rate-traced rendering and weather technology.
+5:26.7 And here is something people often misunderstand.
+5:29.1 Realistic graphics don't automatically mean AI.
+5:31.9 A lot of this comes from graphics programming, physics, and incredibly detailed artistic work.
+5:37.1 But when you combine all of these technologies together, You get something much more powerful than just good-looking graphics.
+5:42.5 You get a world that feels believable.
+5:44.4 and now, technology number six.
+5:46.3 This one is not just about GTA 6.
+5:48.6 It's about what comes next.
+5:50.2 And that technology is machine learning and the future of gaming.
+5:54.0 Okay, here is the really interesting question.
+5:56.1 If Rockstar can build such a detailed world using hand-crafted design, traditional AI, animation, and simulation, what happens when future games combine those systems with generative AI?
+6:06.1 Imagine walking into a shop in a future GTA-style game.
+6:09.6 Instead of choosing from three fixed dialogue options, you could actually talk to the shopkeeper naturally.
+6:15.0 or imagine an NPC remembering a conversation you had with them yesterday.
+6:19.4 Maybe they recognize you.
+6:20.7 maybe they react differently because of what you said earlier.
+6:23.2 Or imagine side missions that adapt to your decisions.
+6:26.0 I mean, the possibilities are fascinating.
+6:28.2 Now, to be clear, these are future gaming possibilities.
+6:31.1 They are not confirmed GTA 6 features.
+6:33.3 Rockstar has machine learning research teams, but that doesn't mean every character is running a language model.
+6:39.2 And there is a reason developers have to be very careful.
+6:41.7 if every character could say absolutely anything, how would you control the story?
+6:45.8 how would you make sure the game stays consistent, fun, and safe?
+6:49.5 That's a much harder problem than simply connecting an NPC to a chatbot.
+6:53.7 And this brings us to the biggest lesson of GTA See, here is what I find most fascinating about GTA 6.
+6:60.0 The breakthrough isn't necessarily that AI can create an entire game for us.
+7:04.1 It's that human creativity and sophisticated technology can work together to make a world feel alive.
+7:09.6 And honestly, that's something we can apply outside gaming too.
+7:13.0 Whether you are building an app, creating content, or learning AI, Don't just ask, "How can I add AI?" Ask, "What experience can I make genuinely better?" now, I have a question for you.
+7:23.2 Imagine GTA 7 had NPCs that could actually remember you and have natural conversations.
+7:28.9 would that make the game more exciting or would it be a little creepy?
+7:32.7 Comment "exciting" or "creepy" and tell me why.
+7:35.3 And if you enjoy discovering the technology behind the things we use every day, subscribe to AI with Kalyan because there's a lot more happening behind the scene than we realize.
