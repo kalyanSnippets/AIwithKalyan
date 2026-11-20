@@ -132,6 +132,24 @@ if JM:
             x["src_out"] = round(x["src_out"] - (t - keep_t), 3)
             y["src_in"] = round(y["src_in"] + (h - keep_h), 3)
     edl = [e for e in edl if e["src_out"] - e["src_in"] > .08]
+# protect every kept word: its full span (+ a small tail) must be in the cut, whatever the silence trims did
+if F.get("protect_words", True):
+    rt = F.get("remove_time", [])
+    def intentionally_removed(w):
+        for t0, t1, _ in rt:
+            ov = max(0, min(w["end"], t1) - max(w["start"], t0))
+            if ov > 0.6 * max(0.01, w["end"] - w["start"]): return True
+        return False
+    need = []
+    for i in keep:
+        w = W[i]
+        if not w["text"].strip() or intentionally_removed(w): continue
+        need.append({"src_in": round(w["start"] - F.get("word_lead", 0.03), 3), "src_out": round(w["end"] + F.get("word_tail", 0.10), 3), "text": w["text"]})
+    allp = sorted(edl + need, key=lambda e: e["src_in"]); merged = []
+    for e in allp:
+        if merged and e["src_in"] <= merged[-1]["src_out"] + 0.02: merged[-1]["src_out"] = max(merged[-1]["src_out"], e["src_out"])
+        else: merged.append(dict(e))
+    edl = merged
 dur = sum(e["src_out"] - e["src_in"] for e in edl)
 json.dump({"source": "IMG_1825", "segments": edl, "duration": round(dur, 2)}, open(edl_p, "w"), indent=1)
 print(f"{len(edl)} segments, {dur/60:.2f} min")
