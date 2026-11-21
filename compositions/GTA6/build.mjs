@@ -462,6 +462,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
 }
 
 // ── more GTA 6 B-roll: fill face-only stretches (≥3 s), keeping his face for the key lines ──
+const BROLL_FILL = false;
 {
   const keepFace = [[I, at("and honestly")], [at("rockstar says"), at("yeah you heard")], [at("bro imagine"), at("one of the interesting details")],
     [at("now to be clear"), at("rockstar has machine learning")], [at("see here is what i find"), at("it's that human creativity")],
@@ -475,7 +476,7 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   const gaps = []; let p = I; for (const [a, b] of merged) { if (a > p) gaps.push([p, a]); p = Math.max(p, b); } if (p < AEND) gaps.push([p, AEND]);
   let used = 0;
   for (let [a, b] of gaps) {
-    if (b - a < 2.6) continue;
+    if (!BROLL_FILL || b - a < 2.6) continue;  // v3.1: Kalyan said too much game B-roll — fills off
     let s0 = a + 0.9, s1 = b - 0.5;
     for (const [k0, k1] of keepFace) { if (k0 <= s0 && k1 > s0) s0 = k1 + 0.3; if (k0 < s1 && k1 >= s1) s1 = k0 - 0.3; }
     if (keepFace.some(([k0, k1]) => k0 >= s0 && k1 <= s1)) { const k = keepFace.find(([k0, k1]) => k0 >= s0 && k1 <= s1); s1 = k[0] - 0.3; }
