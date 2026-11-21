@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face { font-family: "Inter"; src: url("fonts/Inter-var-latin.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+:root { --ink: #0d0818; --pink: #ff3d9a; --orange: #ff8a3d; --teal: #19e3d3; --yt: #ff2d2d; }
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); font-family: "Inter", sans-serif; color: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+.full { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.grad { background: linear-gradient(90deg, var(--pink), var(--orange)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.shadeT { position: absolute; left: 0; right: 0; top: 0; height: 640px; background: linear-gradient(180deg, rgba(13,8,24,0.85), rgba(13,8,24,0)); z-index: 3; }
+.shadeB { position: absolute; left: 0; right: 0; bottom: 0; height: 760px; background: linear-gradient(0deg, rgba(13,8,24,0.92), rgba(13,8,24,0)); z-index: 3; }
+.tag { position: absolute; left: 50%; transform: translateX(-50%); padding: 14px 30px; border-radius: 999px; background: var(--teal); color: #071318; font-weight: 900; font-size: 40px; letter-spacing: 0.14em; z-index: 10; white-space: nowrap; }
+.big { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; letter-spacing: -0.03em; line-height: 0.92; z-index: 10; text-shadow: 0 10px 40px rgba(0,0,0,0.6); }
+.kin { position: absolute; left: 60px; right: 60px; top: 1250px; text-align: center; font-weight: 900; font-size: 104px; line-height: 0.98; letter-spacing: -0.02em; z-index: 10; text-shadow: 0 8px 30px rgba(0,0,0,0.7); }
+.kin .hl { color: var(--teal); }
+.ff { position: absolute; right: 60px; top: 300px; z-index: 11; display: flex; align-items: center; gap: 14px; padding: 14px 26px; border-radius: 20px; background: rgba(13,8,24,0.72); border: 2px solid rgba(255,255,255,0.25); font-weight: 900; font-size: 44px; }
+.ff svg { width: 64px; height: 44px; }
+.pills { position: absolute; left: 0; right: 0; top: 1560px; display: flex; justify-content: center; gap: 18px; z-index: 11; }
+.pill { width: 120px; height: 72px; border-radius: 18px; display: grid; place-items: center; font-weight: 900; font-size: 38px; background: rgba(13,8,24,0.7); border: 2px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.55); }
+.pill.on { background: linear-gradient(135deg, var(--pink), var(--orange)); color: #fff; border-color: transparent; }
+#end { position: absolute; inset: 0; z-index: 20; }
+#end .bg { position: absolute; inset: 0; background: url(media/bg.jpg) center/cover; filter: brightness(0.2) saturate(1.2); }
+#end .tint { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 20%, rgba(255,61,154,0.35), transparent 60%), radial-gradient(ellipse at 50% 100%, rgba(25,227,211,0.25), transparent 55%); }
+#end .grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 72px 72px; }
+.yt { position: absolute; left: 0; right: 0; top: 730px; display: flex; justify-content: center; align-items: center; gap: 22px; font-weight: 800; font-size: 64px; z-index: 22; }
+.yt .logo { width: 116px; height: 82px; border-radius: 24px; background: var(--yt); display: grid; place-items: center; box-shadow: 0 10px 40px rgba(255,45,45,0.5); }
+.search { position: absolute; left: 70px; right: 70px; top: 900px; height: 140px; border-radius: 70px; background: #fff; display: flex; align-items: center; gap: 26px; padding: 0 30px 0 44px; z-index: 22; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.search .q { flex: 1; color: #111; font-weight: 700; font-size: 52px; white-space: nowrap; overflow: hidden; }
+.search .caret { display: inline-block; width: 5px; height: 58px; background: var(--pink); vertical-align: -10px; margin-left: 4px; }
+.search .btn { width: 96px; height: 96px; border-radius: 50%; background: var(--pink); display: grid; place-items: center; }
+.result { position: absolute; left: 70px; right: 70px; top: 1085px; border-radius: 30px; overflow: hidden; background: rgba(22,12,38,0.92); border: 2px solid rgba(255,255,255,0.18); z-index: 22; box-shadow: 0 24px 70px rgba(0,0,0,0.55); }
+.result img { display: block; width: 100%; height: 528px; object-fit: cover; }
+.result .play { position: absolute; left: 50%; top: 264px; transform: translate(-50%,-50%); width: 140px; height: 100px; border-radius: 28px; background: var(--yt); display: grid; place-items: center; }
+.result .meta { padding: 24px 32px 28px; }
+.result .t { font-weight: 800; font-size: 42px; line-height: 1.15; }
+.result .c { margin-top: 10px; font-size: 32px; color: rgba(255,255,255,0.7); font-weight: 600; }
+.flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 30; }
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="gta6teaser" data-start="0" data-duration="15" data-fps="30" data-width="1080" data-height="1920">
+  <video id="mont" class="clip full" src="media/montage.mp4" muted playsinline data-start="0" data-duration="10.5" data-media-start="0" data-track-index="0"></video>
+  <audio id="m1" class="clip" src="media/music.mp3" data-start="0" data-duration="14.5" data-media-start="0.5" data-volume="1" data-track-index="1"></audio>
+  <audio id="sfx-w1" class="clip" src="media/sfx-whoosh.mp3" data-start="3.3" data-duration="1.2" data-media-start="0" data-volume="0.5" data-track-index="2"></audio>
+  <audio id="sfx-w2" class="clip" src="media/sfx-whoosh.mp3" data-start="10.25" data-duration="1.2" data-media-start="0" data-volume="0.55" data-track-index="3"></audio>
+  <audio id="sfx-p1" class="clip" src="media/sfx-pop.mp3" data-start="13.15" data-duration="0.8" data-media-start="0" data-volume="0.5" data-track-index="4"></audio>
+
+  <div id="shT" class="clip shadeT" data-start="0" data-duration="10.5" data-track-index="5"></div>
+  <div id="shB" class="clip shadeB" data-start="0" data-duration="10.5" data-track-index="6"></div>
+
+  <!-- 0–3.5: intro -->
+  <div id="i-tag" class="clip tag" style="top:420px" data-start="0.3" data-duration="3.1" data-track-index="7">NEW VIDEO</div>
+  <div id="i-big" class="clip big" style="top:1180px;font-size:250px" data-start="0.6" data-duration="2.8" data-track-index="8"><span class="grad">GTA 6</span></div>
+  <div id="i-sub" class="clip big" style="top:1430px;font-size:76px;letter-spacing:0" data-start="1.3" data-duration="2.1" data-track-index="9">the tech behind it</div>
+
+  <!-- 3.5–10.5: fast-forward montage -->
+  <div id="ff" class="clip ff" data-start="3.5" data-duration="7.0" data-track-index="10"><svg viewBox="0 0 64 44"><path d="M2 2 L30 22 L2 42 Z M32 2 L60 22 L32 42 Z" fill="#19e3d3"/></svg>4×</div>
+  <div id="k1" class="clip kin" data-start="3.55" data-duration="1.75" data-track-index="11">NO <span class="hl">GENERATIVE AI?</span></div>
+  <div id="k2" class="clip kin" data-start="5.3" data-duration="1.75" data-track-index="12">SO HOW IS IT <span class="hl">THIS ALIVE?</span></div>
+  <div id="k3" class="clip kin" data-start="7.05" data-duration="1.75" data-track-index="13"><span class="hl">6</span> TECHNOLOGIES</div>
+  <div id="k4" class="clip kin" data-start="8.8" data-duration="1.6" data-track-index="14">EXPLAINED <span class="hl">SIMPLY</span></div>
+  <div id="pills" class="clip pills" data-start="3.6" data-duration="6.9" data-track-index="15">
+    <div class="pill" id="p0">01</div><div class="pill" id="p1">02</div><div class="pill" id="p2">03</div><div class="pill" id="p3">04</div><div class="pill" id="p4">05</div><div class="pill" id="p5">06</div>
+  </div>
+
+  <!-- 10.5–15: end card -->
+  <div id="end" class="clip" data-start="10.4" data-duration="4.6" data-track-index="16">
+    <div class="bg"></div><div class="tint"></div><div class="grid"></div>
+    <div class="tag" id="e-tag" style="top:270px">NEW VIDEO</div>
+    <div class="big" id="e-big" style="top:400px;font-size:176px"><span class="grad">OUT NOW</span></div>
+    <div class="yt" id="e-yt"><div class="logo"><svg width="46" height="50" viewBox="0 0 46 50"><path d="M4 3 L43 25 L4 47 Z" fill="#fff"/></svg></div>on YouTube</div>
+    <div class="search" id="e-search">
+      <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L21.5 21.5"/></svg>
+      <div class="q"><span id="e-q"></span><span class="caret" id="e-caret"></span></div>
+      <div class="btn" id="e-btn"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="7"/><path d="M16 16 L21.5 21.5"/></svg></div>
+    </div>
+    <div class="result" id="e-res">
+      <img src="media/thumb.jpg" alt="" />
+      <div class="play"><svg width="50" height="54" viewBox="0 0 46 50"><path d="M4 3 L43 25 L4 47 Z" fill="#fff"/></svg></div>
+      <div class="meta"><div class="t">GTA 6 Didn't Use Generative AI. So How Is the World This Alive?</div><div class="c">AI with Kalyan</div></div>
+    </div>
+  </div>
+  <div id="fl" class="clip flash" data-start="10.2" data-duration="0.6" data-track-index="17"></div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const pop = (sel, t, from = {}) => tl.fromTo(sel, { opacity: 0, scale: 0.6, y: 40, ...from }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(1.8)" }, t);
+    const out = (sel, t) => tl.to(sel, { opacity: 0, scale: 1.08, duration: 0.2, ease: "power2.in" }, t);
+    // intro
+    pop("#i-tag", 0.3); pop("#i-big", 0.6, { scale: 1.6, y: 0 }); pop("#i-sub", 1.3);
+    tl.to("#i-big", { scale: 1.06, duration: 2.2, ease: "none" }, 1.05);
+    out("#i-tag", 3.2); out("#i-big", 3.2); out("#i-sub", 3.2);
+    // montage
+    tl.fromTo("#ff", { opacity: 0, x: 80 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 3.5);
+    tl.to("#ff svg", { x: 8, duration: 0.25, yoyo: true, repeat: 25, ease: "sine.inOut" }, 3.6);
+    out("#ff", 10.25);
+    [["#k1", 3.55, 5.1], ["#k2", 5.3, 6.85], ["#k3", 7.05, 8.6], ["#k4", 8.8, 10.2]].forEach(([s, a, b]) => { pop(s, a); out(s, b); });
+    tl.fromTo("#pills", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 3.6);
+    for (let k = 0; k < 6; k++) {
+      const t = 4.1 + k * 1.0;
+      tl.set(`#p${k}`, { className: "pill on" }, t);
+      tl.fromTo(`#p${k}`, { scale: 1.35 }, { scale: 1, duration: 0.35, ease: "back.out(2)" }, t);
+    }
+    out("#pills", 10.25);
+    // flash into the end card
+    tl.fromTo("#fl", { opacity: 0 }, { opacity: 0.85, duration: 0.15, ease: "power2.out" }, 10.25);
+    tl.to("#fl", { opacity: 0, duration: 0.3, ease: "power2.in" }, 10.42);
+    // end card
+    pop("#e-tag", 10.5); pop("#e-big", 10.65, { scale: 1.5, y: 0 }); pop("#e-yt", 11.0);
+    tl.fromTo("#e-search", { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 11.2);
+    const q = "AI with Kalyan GTA 6", qs = { n: 0 };
+    tl.to(qs, { n: q.length, duration: 1.5, ease: "none", onUpdate: () => { document.getElementById("e-q").textContent = q.slice(0, Math.round(qs.n)); } }, 11.5);
+    tl.to("#e-caret", { opacity: 0, duration: 0.01, repeat: 7, yoyo: true, repeatDelay: 0.25 }, 13.0);
+    tl.fromTo("#e-btn", { scale: 1 }, { scale: 0.82, duration: 0.1, yoyo: true, repeat: 1, ease: "power2.inOut" }, 13.15);
+    tl.fromTo("#e-res", { opacity: 0, y: 120, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: "back.out(1.4)" }, 13.35);
+    tl.to("#e-big", { scale: 1.04, duration: 0.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, 11.2);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["gta6teaser"] = tl;
+  </script>
+</div>
+</body>
+</html>
