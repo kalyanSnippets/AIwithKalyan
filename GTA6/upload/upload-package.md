@@ -70,7 +70,7 @@ GTA VI footage and artwork © Rockstar Games / Take-Two Interactive, used for co
 #GTA6 #GTAVI #GameAI
 ```
 
-### Tags (≈480 characters, under the 500 limit)
+### Tags (397 characters, under the 500 limit)
 ```
 gta 6, gta 6 ai, gta vi, gta 6 npc ai, gta 6 police ai, gta 6 npcs, gta 6 features, gta 6 details, gta 6 technology, gta 6 generative ai, grand theft auto 6, grand theft auto vi, rockstar games, rage engine, gta 6 criminal profile, gta 6 wanted system, animation retargeting, game ai explained, ai in video games, how gta 6 was made, jason and lucia, vice city, future of gaming ai, ai with kalyan
 ```
