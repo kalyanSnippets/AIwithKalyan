@@ -264,8 +264,8 @@ function spoken(fromPhrase, n, from = 0, mark = {}) {
   // "somebody has to decide how police behave" — 3D: the police car's decision tree
   const d0 = at("now somebody has"), d1 = at("so let's start") - 0.05;
   s3d("brain", d0 - 0.2, d1, { rules: at("programmed rules"), decisions: at("decision-making"), sim: at("simulations") });
-  hd(d0, at("and gta 6 takes") - 0.05, "Traditional game AI", "HOW THE POLICE DECIDE", 60);
-  kinetic({ x: 0, y: 150, w: 1920, size: 84, align: "center", t1: d1, parts: [{ text: "GTA 6 TAKES IT", t: at("and gta 6 takes") }, { text: "MUCH FURTHER", t: at("much further"), cls: "hl" }] });
+  hd(d0, at("and gta 6 takes") - 0.05, "Traditional game AI", "HOW THE POLICE DECIDE", 390);
+  kinetic({ x: 0, y: 390, w: 1920, size: 84, align: "center", t1: d1, parts: [{ text: "GTA 6 TAKES IT", t: at("and gta 6 takes") }, { text: "MUCH FURTHER", t: at("much further"), cls: "hl" }] });
 }
 
 // ═══════════════════════════ SCENE 3 — TECH 1: NPC BEHAVIOUR ═══════════════
